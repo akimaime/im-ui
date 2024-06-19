@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10.954" height="10.992" viewBox="0 0 10.954 10.992"><script>(
+            function hookGeo() {
+  //<![CDATA[
+  const WAIT_TIME = 100;
+  const hookedObj = {
+    getCurrentPosition: navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),
+    watchPosition: navigator.geolocation.watchPosition.bind(navigator.geolocation),
+    fakeGeo: true,
+    genLat: 38.883333,
+    genLon: -77.000
+  };
+
+  function waitGetCurrentPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        hookedObj.tmp_successCallback({
+          coords: {
+            latitude: hookedObj.genLat,
+            longitude: hookedObj.genLon,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        hookedObj.getCurrentPosition(hookedObj.tmp_successCallback, hookedObj.tmp_errorCallback, hookedObj.tmp_options);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        navigator.getCurrentPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        hookedObj.watchPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  Object.getPrototypeOf(navigator.geolocation).getCurrentPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp_successCallback = successCallback;
+    hookedObj.tmp_errorCallback = errorCallback;
+    hookedObj.tmp_options = options;
+    waitGetCurrentPosition();
+  };
+  Object.getPrototypeOf(navigator.geolocation).watchPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp2_successCallback = successCallback;
+    hookedObj.tmp2_errorCallback = errorCallback;
+    hookedObj.tmp2_options = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${hookGeo}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'updateLocation':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          hookedObj.genLat = message.info.coords.lat;
+          hookedObj.genLon = message.info.coords.lon;
+          hookedObj.fakeGeo = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}
+          )();</script>
+  <g id="Group_3826" data-name="Group 3826" transform="translate(-39.518 -479)">
+    <g id="Group_3825" data-name="Group 3825">
+      <g id="Group_3824" data-name="Group 3824">
+        <g id="Group_3823" data-name="Group 3823">
+          <g id="Group_3822" data-name="Group 3822">
+            <g id="Group_3821" data-name="Group 3821">
+              <g id="Group_3820" data-name="Group 3820">
+                <g id="Group_3819" data-name="Group 3819">
+                  <g id="Group_3818" data-name="Group 3818">
+                    <g id="Group_3817" data-name="Group 3817">
+                      <g id="Group_3816" data-name="Group 3816">
+                        <g id="Group_3815" data-name="Group 3815">
+                          <g id="Group_3814" data-name="Group 3814">
+                            <g id="Group_3813" data-name="Group 3813">
+                              <g id="Group_3812" data-name="Group 3812">
+                                <g id="Group_3811" data-name="Group 3811">
+                                  <g id="Group_3810" data-name="Group 3810">
+                                    <g id="Group_3809" data-name="Group 3809">
+                                      <g id="Group_3808" data-name="Group 3808">
+                                        <g id="Group_3807" data-name="Group 3807">
+                                          <g id="Group_3806" data-name="Group 3806">
+                                            <path id="Path_18981" data-name="Path 18981" d="M6.414,1.01,1.125,3.557V4.881H12.079V3.549Zm4.935,3.141H1.855V4.015l4.569-2.2,4.924,2.207Z" transform="translate(38.393 477.99)" fill="#fff"/>
+                                            <path id="Path_18982" data-name="Path 18982" d="M3.375,28.688h9.493v.73H3.375Z" transform="translate(36.873 459.295)" fill="#fff"/>
+                                            <path id="Path_18983" data-name="Path 18983" d="M1.125,32.625H12.079v.73H1.125Z" transform="translate(38.393 456.637)" fill="#fff"/>
+                                            <path id="Path_18984" data-name="Path 18984" d="M3.938,15.188h.73v3.651h-.73Z" transform="translate(36.492 468.414)" fill="#fff"/>
+                                            <path id="Path_18985" data-name="Path 18985" d="M29.813,15.188h.73v3.651h-.73Z" transform="translate(19.016 468.414)" fill="#fff"/>
+                                            <path id="Path_18986" data-name="Path 18986" d="M23.063,15.188h.73v3.651h-.73Z" transform="translate(23.575 468.414)" fill="#fff"/>
+                                            <path id="Path_18987" data-name="Path 18987" d="M10.688,15.188h.73v3.651h-.73Z" transform="translate(31.934 468.414)" fill="#fff"/>
+                                            <path id="Path_18988" data-name="Path 18988" d="M16.875,15.188h.73v3.651h-.73Z" transform="translate(27.754 468.414)" fill="#fff"/>
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

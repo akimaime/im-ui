@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1630.952" height="841.519" viewBox="0 0 1630.952 841.519">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.256" y1="-0.529" x2="0.263" y2="0.761" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1aa5b5"/>
+      <stop offset="1" stop-color="#243d94"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_3766" data-name="Group 3766" transform="translate(16 21)">
+    <rect id="Rectangle_227" data-name="Rectangle 227" width="1396" height="835" transform="translate(-16 -21)" fill="url(#linear-gradient)"/>
+    <g id="Group_3711" data-name="Group 3711" transform="translate(14.998 12.364)" opacity="0.7">
+      <g id="Group_3765" data-name="Group 3765">
+        <g id="Group_3707" data-name="Group 3707" transform="translate(679.049 -74.883)" opacity="0.999">
+          <path id="Path_2801" data-name="Path 2801" d="M395.16-142.725A83.193,83.193,0,0,1,473.355-88.7l204.706,548.48A83.189,83.189,0,0,0,756.244,513.8H460.809a83.166,83.166,0,0,1-78.184-54.021L177.908-88.7a83.172,83.172,0,0,0-78.195-54.021Z" transform="translate(164.661 317.079)" fill="#98f4ff" opacity="0.059"/>
+          <path id="Path_2820" data-name="Path 2820" d="M395.16-142.725A83.193,83.193,0,0,1,473.355-88.7l204.706,548.48A83.189,83.189,0,0,0,756.244,513.8H460.809a83.166,83.166,0,0,1-78.184-54.021L177.908-88.7a83.172,83.172,0,0,0-78.195-54.021Z" transform="translate(-68.713 205.244)" fill="#98f4ff" opacity="0.038"/>
+          <path id="Path_2819" data-name="Path 2819" d="M442.107-142.725a96.413,96.413,0,0,1,90.62,62.6L769.962,555.514a96.408,96.408,0,0,0,90.606,62.6H518.187a96.381,96.381,0,0,1-90.608-62.6L190.333-80.12a96.389,96.389,0,0,0-90.62-62.6Z" transform="translate(24.03 264.919)" fill="#98f4ff" opacity="0.07"/>
+        </g>
+        <path id="Path_19241" data-name="Path 19241" d="M395.16-142.725A83.193,83.193,0,0,1,473.355-88.7l204.706,548.48A83.189,83.189,0,0,0,756.244,513.8H460.809a83.166,83.166,0,0,1-78.184-54.021L177.908-88.7a83.172,83.172,0,0,0-78.195-54.021Z" transform="translate(843.709 242.196)" fill="#98f4ff" opacity="0.059"/>
+      </g>
+    </g>
+  </g>
+</svg>

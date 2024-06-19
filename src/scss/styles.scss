@@ -1,0 +1,119 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=poppins,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+// Then add additional custom code here
+
+$theme-colors: (
+        "info": $info,
+        "primary": $primary
+);
+body{
+  background-color: $gray-200;
+}
+.bg-color-height::before {
+  content: "";
+  display: block;
+  height: 37%;
+  width: 100%;
+  background-color: #179AA9;
+  background-image: url(../assets/logo_primary.png);
+  background-position: center;
+  background-repeat:  repeat-x;
+  background-size: auto;
+  position: absolute;
+  z-index: -1;
+}
+.corp-bg{
+  content: "";
+  display: block;
+  height: 37%;
+  width: 100%;
+  background-color: $primary;
+  background-image: url(../assets/logo_primary.png);
+  background-position: center;
+  background-repeat:  repeat-x;
+  background-size: auto;
+  position: absolute;
+  z-index: 0;
+}
+.nav-pills .nav-link {
+  color: $white;
+  background-color: var(--bs-nav-pills-link-bg);
+  border-radius: 0;
+  border-bottom: 1px solid $gray-400;
+  margin-right: 0 !important;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: $white ;
+  margin-right:0 !important;
+  font-weight: bolder;
+  background: transparent;
+  border-radius: 0;
+  border-bottom: 3px solid $white !important;
+}
+
+.nav-pills .nav-link.active .onboard-heading,
+.nav-pills .nav-link.active p,
+.nav-pills .nav-link.active svg,
+.nav-pills .show > .nav-link {
+  color: var(--bs-nav-pills-link-active-color) !important;
+  background-color: $cyan !important;
+  margin-right: 0 !important;
+}
+.nav-tabs .nav-link {
+  border-radius:0;
+  border: 3px;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 0.01px;
+  margin-bottom: 10px !important;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .show > .nav-link {
+  color: $info;
+  border-bottom: 5px solid $info;
+  background-color: $gray-300;
+  border-radius: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 10px !important;
+  margin-left: 0;
+}
+.text-sm{
+  font-size: 0.8rem;
+}
+.text-xs{
+  font-size: 0.7rem;
+}
+.carousel-indicators-bottom {
+  position: absolute !important;
+  bottom: 0!important;
+  left: 0!important;
+  right: 0!important;
+  display: flex!important;
+  justify-content: center!important;
+  padding: 10px 0!important;
+}
+
+.carousel-indicators-bottom button {
+  margin: 0 3px!important;
+  background-color: $primary;
+}
+//make hover effect on carousel indicators
+.quick-actions a:hover{
+  background-color: rgba(red($primary), green($primary), blue($primary), 0.2);
+  border-radius: 10px;
+}
+.quick-actions a>div:hover{
+  border-color: $primary;
+}
+//make green shadow on tab-content div
+.car-cards{
+  box-shadow: 0 0px 100px -30px $green!important;
+}

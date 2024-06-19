@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+
+    <g id="Group_4207" data-name="Group 4207" transform="translate(-599 -569)">
+        <g id="Ellipse_73" data-name="Ellipse 73" transform="translate(599 569)" fill="none" stroke="#179aa9"
+           stroke-width="1">
+            <circle cx="14" cy="14" r="14" stroke="none"/>
+            <circle cx="14" cy="14" r="13.5" fill="none"/>
+        </g>
+        <path id="bx-transfer-alt"
+              d="M14.8,9.805a.553.553,0,0,0-.12-.6L11.918,6.439l-.782.782,1.82,1.82H6v1.105h8.291a.553.553,0,0,0,.511-.341Zm-8.76,1.788a.553.553,0,0,0,.12.6l2.764,2.764.782-.782-1.82-1.82h6.957V11.252H6.553A.552.552,0,0,0,6.042,11.593Z"
+              transform="translate(602.578 572.164)" fill="#179aa9"/>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "name": "i-m-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "watch": "sass --watch src/scss/styles.scss src/css/custom.css"
+  },
+  "devDependencies": {
+    "sass": "^1.77.4",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "flickity": "^3.0.0",
+    "slick-carousel": "^1.8.1"
+  }
+}
