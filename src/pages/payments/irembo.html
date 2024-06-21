@@ -126,7 +126,7 @@
                                                             <input type="text" class="form-control bg-transparent border-0   border-0 shadow-none"
                                                                    id="ref_number" name="search"/>
                                                             <button type="button"
-                                                                    class="btn btn-info text-white rounded-default flex-shrink-0 js-verify-2">
+                                                                    class="btn btn-info text-white rounded-default flex-shrink-0 js-verify">
                                                                 <i class="bi bi-plus"></i>
                                                                 Validate / Add
                                                             </button>
@@ -894,16 +894,15 @@
                     let amount = Math.floor(Math.random() * 100000) + 1000;
                     let $tdAmount = $(`<td class="fs-13px js-amount-tobe-paid">${amount.toLocaleString("en-US")}</td>`);
                     // create a cell for amount to be edited
-                    let $tdAmountToEdit = $(`<td class="w-150px"><input type="text" required class="form-control form-control-sm" value=""></td>`);
                     // create a cell for tax type as read only span
-                    let taxType = Math.random() < 0.5 ? 'VAT' : 'WHT';
-                    let $tdTaxType = $(`<td class="fs-13px"><span class="">${taxType}</span></td>`);
+                    let currency = currencies[Math.floor(Math.random() * currencies.length)];
+                    let $tdCurrency = $(`<td class="fs-13px"><span class="">Rwf</span></td>`);
                     // create a cell for company name as read only span
                     // generate random company from companies array
                     let company = companies[Math.floor(Math.random() * companies.length)];
                     let $tdCompanyName = $(`<td class="fs-13px"><span class="">${company}</span></td>`);
                     // append the cells to the row
-                    $tr.append(checkbox, $tdRefNumber, $tdAmount, $tdAmountToEdit, $tdTaxType, $tdCompanyName);
+                    $tr.append(checkbox, $tdRefNumber, $tdAmount, $tdCurrency, $tdCompanyName);
                     // append the row to the table body
                     $tbody.append($tr);
 
