@@ -11961,4 +11961,37 @@ body {
   box-shadow: 0 0px 100px -30px #02B2A3 !important;
 }
 
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #179AA9;
+  border-color: #179AA9;
+}
+
+.breadcrumb-item a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: #dee2e6 !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: white;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 0.8rem;
+}
+
+.one-digit:focus {
+  outline: none !important;
+}
+
+.one-digit {
+  width: 69px;
+}
+
 /*# sourceMappingURL=custom.css.map */

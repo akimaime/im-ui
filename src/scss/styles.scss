@@ -117,3 +117,30 @@ body{
 .car-cards{
   box-shadow: 0 0px 100px -30px $green!important;
 }
+.page-item.active .page-link {
+  z-index: 1;
+  color: $white;
+  background-color: $info;
+  border-color: $info;
+}
+.breadcrumb-item a{
+  color: $white !important;
+  text-decoration: none;
+}
+.breadcrumb-item.active{
+  color: $gray-300 !important;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  color: white;
+}
+.error{
+  color: $red;
+  font-size: 0.8rem;
+}
+.one-digit:focus{
+  outline: none!important;
+
+}
+.one-digit{
+  width: 69px;
+}
