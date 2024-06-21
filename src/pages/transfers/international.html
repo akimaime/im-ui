@@ -86,7 +86,7 @@
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item "><a href="../../index.html">Dashboard</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Own account Transfer</li>
+                    <li class="breadcrumb-item active" aria-current="page">Transfer to International Bank</li>
                 </ol>
             </nav>
         </div>
@@ -100,7 +100,7 @@
                                 <div class="tab-pane card-body  active" id="pills-own-accounts" role="tabpanel">
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <h4 class="text-primary fw-bold "> Transfer to International Banks</h4>
+                                            <h4 class="text-info fw-bold "> Transfer to International Banks</h4>
                                             <p class="text-muted small">
                                                 Transfer money to any bank account in the world
                                             </p>
@@ -108,14 +108,9 @@
                                         <div class="col-lg-6">
                                             <div class="card  bg-secondary bg-opacity-10 border-0">
                                                 <div class=" ">
-                                                    <div class="text-primary d-flex  flex-column card-body">
+                                                    <div class="text-info d-flex  flex-column card-body">
                                                         <div class="d-flex gap-2 justify-content-between">
                                                             <span class="text-info fw-bold text-xs">DAILY LIMIT 2,000,000RWF</span>
-                                                            <div class="d-flex justify-content-start">
-                                                    <span class="border-top text-success fw-semibold py-1 text-xs">
-                                                      250,000 RWF LIMIT ON EACH TRANSACTION
-                                                    </span>
-                                                            </div>
                                                         </div>
 
                                                         <div class="bg-primary-subtle mb-2 w-100 rounded-pill"
@@ -144,10 +139,10 @@
                                         <div class="col-lg-6">
                                             <div class=" mb-3">
                                                 <label for="international_from_account"
-                                                       class="text-primary fw-normal text-sm form-label">
+                                                       class="text-info fw-normal text-sm form-label">
                                                     Make payment from:
                                                 </label>
-                                                <select class="form-select py-3 bg-secondary border-0 bg-opacity-10  text-primary  js-transfer-from"
+                                                <select class="form-select py-3 bg-secondary border-0 bg-opacity-10  text-info  js-transfer-from"
                                                         required id="international_from_account"
                                                         name="from_account">
                                                     <option value="">Select Account</option>
@@ -157,7 +152,7 @@
                                                  class=" justify-content-between align-items-center mb-3 js-account-balance">
                                                 <div class="d-flex flex-column">
                                                     <div class=" text-muted  small ">Account Balance</div>
-                                                    <span class="text-primary  small js-balance">*** *** ***
+                                                    <span class="text-info  small js-balance">*** *** ***
                                                                 ***</span>
                                                 </div>
                                                 <button type="button"
@@ -170,7 +165,7 @@
                                             <div class="mb-3">
                                                 <div class="d-flex justify-content-between">
                                                     <label for="international_beneficiary"
-                                                           class="text-primary text-sm fw-normal form-label">
+                                                           class="text-info text-sm fw-normal form-label">
                                                         Beneficiary Full Name:
                                                     </label>
                                                     <div class="form-check ">
@@ -179,7 +174,7 @@
                                                                 type="checkbox" name="select_beneficiary"
                                                                 id="international_beneficiary">
                                                         <label
-                                                                class="form-check-label text-sm text-primary fw-normal cursor-pointer"
+                                                                class="form-check-label text-sm text-info fw-normal cursor-pointer"
                                                                 for="international_beneficiary">
                                                             Select From Saved Beneficiaries
                                                         </label>
@@ -187,7 +182,7 @@
                                                 </div>
                                                 <div style="display: none" class="js-select-beneficiary">
                                                     <select id="beneficiary" name="beneficiary" required
-                                                            class="  py-3 bg-secondary border-0 bg-opacity-10 px-3 border fw-semibold text-primary form-select js-beneficiaries">
+                                                            class="  py-3 bg-secondary border-0 bg-opacity-10 px-3 border fw-semibold text-info form-select js-beneficiaries">
                                                         <option value="">Select Beneficiary</option>
                                                     </select>
                                                     <label id="beneficiary-error" class="error"
@@ -197,7 +192,7 @@
                                                 <div class=" js-search-beneficiary">
                                                     <div class="mb-3">
                                                         <input type="text" name="names" id="name" required
-                                                               class="form-control  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-primary" />
+                                                               class="form-control  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -207,9 +202,9 @@
                                         <div class="col-lg-6">
                                             <div class="mb-3">
                                                 <label for="country"
-                                                       class="form-label fw-normal text-primary text-sm">Country:</label>
+                                                       class="form-label fw-normal text-info text-sm">Country:</label>
                                                 <select id="country" name="country" required
-                                                        class="  py-3 bg-secondary border-0 bg-opacity-10 px-3 border fw-semibold text-primary form-select js-countries">
+                                                        class="  py-3 bg-secondary border-0 bg-opacity-10 px-3 border fw-semibold text-info form-select js-countries">
                                                     <option value="">Select Country</option>
                                                 </select>
                                                 <label id="country-error" class="error" for="country"></label>
@@ -218,9 +213,9 @@
                                         <div class="col-lg-6">
                                             <div class="mb-3">
                                                 <label for="international_bank"
-                                                       class="form-label fw-normal text-primary text-sm">Bank:</label>
+                                                       class="form-label fw-normal text-info text-sm">Bank:</label>
                                                 <select id="international_bank" name="bank" required
-                                                        class=" py-3 bg-secondary border-0 bg-opacity-10 px-3 border fw-semibold text-primary form-select js-banks">
+                                                        class=" py-3 bg-secondary border-0 bg-opacity-10 px-3 border fw-semibold text-info form-select js-banks">
                                                     <option value="">Select Bank</option>
                                                     <option value="1">1233456-Equity Bank</option>
                                                     <option value="2">1233457- BK </option>
@@ -237,41 +232,41 @@
                                         <div class="col-lg-6">
                                             <div class="mb-3">
                                                 <label for="international_account_number"
-                                                       class="form-label fw-normal text-primary text-sm">
+                                                       class="form-label fw-normal text-info text-sm">
                                                     Beneficiary Account Number:
                                                 </label>
                                                 <input type="text" name="international_account_number" required
                                                        id="international_account_number"
-                                                       class="form-control   py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-primary" />
+                                                       class="form-control   py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info" />
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="mb-3">
                                                 <label for="international_beneficiary_email"
-                                                       class="form-label fw-normal text-primary text-sm">
+                                                       class="form-label fw-normal text-info text-sm">
                                                     Beneficiary email <small
                                                         class="text-muted">(optional)</small>
                                                 </label>
                                                 <input type="email" name="beneficiary_email" required
                                                        id="international_beneficiary_email"
-                                                       class="form-control   py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-primary" />
+                                                       class="form-control   py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info" />
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="mb-3">
                                                 <label for="international_amount"
-                                                       class="form-label fw-normal  text-primary text-sm">Amount:</label>
+                                                       class="form-label fw-normal  text-info text-sm">Amount:</label>
                                                 <div class="input-group">
 
                                                     <input type="text" name="amount" required
                                                            id="international_amount"
-                                                           class="form-control flex-grow-1  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-primary js-amount" />
+                                                           class="form-control flex-grow-1  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info js-amount" />
                                                 </div>
                                                 <div class="js-conversion p-0" >
                                                     <div
                                                             class="d-flex  flex-column flex-md-row gap-3  ">
                                                         <div>
-                                                            <div class="fw-normal text-primary text-sm">
+                                                            <div class="fw-normal text-info text-sm">
                                                                 Total Conversion:
                                                             </div>
                                                             <div
@@ -279,14 +274,14 @@
                                                                     <span
                                                                             class="text-muted fw-semibold small js-converted-currency">USD</span>
                                                                 <span
-                                                                        class="fs-13px fw-semibold small text-primary js-converted-amount">2763.38</span>
+                                                                        class="fs-13px fw-semibold small text-info js-converted-amount">2763.38</span>
                                                             </div>
                                                         </div>
                                                         <div>
-                                                            <div class="fw-normal text-primary text-sm">
+                                                            <div class="fw-normal text-info text-sm">
                                                                 Conversion Rate:
                                                             </div>
-                                                            <div class="text-primary">
+                                                            <div class="text-info">
                                                                 (<span
                                                                     class="text-info small js-conversion-rate">0.000092</span>)
                                                             </div>
@@ -299,35 +294,50 @@
                                         <div class="col-lg-6">
                                             <div class="mb-3">
                                                 <label for="international_reason"
-                                                       class="form-label text-primary fw-normal">Reason:</label>
+                                                       class="form-label text-info fw-normal">Reason:</label>
                                                 <textarea rows="3" required
-                                                          class="form-control py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-primary"
+                                                          class="form-control py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info"
                                                           name="reason" id="international_reason"></textarea>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6">
-                                            <div class="py-2">
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input" type="checkbox" role="switch"
-                                                           id="flexSwitchCheckChecked">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="py-2">
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input js-payment-schedule   " type="checkbox" role="switch"
+                                                               id="international_payment_schedule">
 
-                                                    <label class="form-check-label text-primary small fw-normal "
-                                                           for="flexSwitchCheckChecked">
-                                                        Schedule Payment <span class="text-muted small">(To be
+                                                        <label class="form-check-label text-info small fw-normal "
+                                                               for="international_payment_schedule">
+                                                            Schedule Payment <span class="text-muted small">(To be
                                                         processed
                                                         on a specific date)</span>
-                                                    </label>
+                                                        </label>
 
+                                                    </div>
+
+                                                    <div class="mb-1 js-schedule-container" style="display: none">
+                                                        <label for="own_date"
+                                                               class="form-label fw-normal text-info fs-6">
+                                                            Date to process payment:
+                                                        </label>
+                                                        <input type="date" name="own_date" id="own_date"
+                                                               required
+                                                               class="form-control   bg-secondary border-0 bg-opacity-10 py-3 px-3  fw-semibold text-info"/>
+                                                    </div>
                                                 </div>
-
-                                                <div class="mb-1 js-schedule-container" style="display: none">
-                                                    <label for="own_date"
-                                                           class="form-label fw-normal text-primary fs-6">
-                                                        Date to process payment:
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-check save_beneficiary" >
+                                                    <input
+                                                            class="form-check-input rounded-0 border-info  "
+                                                            type="checkbox" name="select_beneficiary"
+                                                            id="save_ben">
+                                                    <label
+                                                            class="form-check-label text-info fw-normal cursor-pointer"
+                                                            for="save_ben">
+                                                        Save As Beneficiary
                                                     </label>
-                                                    <input type="date" name="own_date" id="own_date"
-                                                           required
-                                                           class="form-control   py-2 px-3  fw-semibold text-primary"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -345,11 +355,11 @@
                                         <div
                                                 class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
                                             <button type="reset"
-                                                    class="btn btn-outline-primary rounded-4 py-2   px-lg-5">
+                                                    class="btn btn-outline-primary rounded py-2   px-lg-5">
                                                 Clear
                                             </button>
                                             <button type="submit"
-                                                    class="btn btn-info rounded-4 py-2 text-white px-lg-5">
+                                                    class="btn btn-info rounded py-2 text-white px-lg-5">
                                                 Continue
                                             </button>
 
@@ -781,15 +791,18 @@
             let selectBeneficiary = parent.siblings('div.js-select-beneficiary');
             console.log(selectBeneficiary);
             let searchBeneficiary = parent.siblings('div.js-search-beneficiary');
+            let save_beneficiary = $('.save_beneficiary');
 
             if ($(this).prop('checked')) {
                 console.log(true)
                 selectBeneficiary.slideDown();
                 searchBeneficiary.slideUp()
+                save_beneficiary.slideUp()
             } else {
                 console.log(false)
                 selectBeneficiary.slideUp()
                 searchBeneficiary.slideDown();
+                save_beneficiary.slideDown()
             }
 
         })

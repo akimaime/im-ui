@@ -86,7 +86,7 @@
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item "><a href="../../index.html">Dashboard</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Own account Transfer</li>
+                    <li class="breadcrumb-item active" aria-current="page">Transfer to Local Bank</li>
                 </ol>
             </nav>
         </div>
@@ -100,7 +100,7 @@
                                 <div class="tab-pane card-body  active" id="pills-own-accounts" role="tabpanel">
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <h4 class="text-primary fw-bold ">Transfer to Local Banks</h4>
+                                            <h4 class="text-info fw-bold ">Transfer to Local Banks</h4>
                                             <p class="text-muted small">
                                                 Transfer money to any local bank account in Rwanda
                                             </p>
@@ -145,10 +145,10 @@
                                             <div class="col-lg-6">
                                                 <div class=" mb-3">
                                                     <label for="local_from_account"
-                                                           class="text-primary fw-normal text-sm form-label">
+                                                           class="text-info fw-normal text-sm form-label">
                                                         Make payment from:
                                                     </label>
-                                                    <select class="form-select py-3 bg-secondary border-0 bg-opacity-10  text-primary  js-transfer-from"
+                                                    <select class="form-select py-3 bg-secondary border-0 bg-opacity-10  text-info  js-transfer-from"
                                                             required id="local_from_account" name="from_account">
                                                         <option value="">Select Account</option>
                                                     </select>
@@ -157,7 +157,7 @@
                                                      class=" justify-content-between align-items-center mb-3 js-account-balance">
                                                     <div class="d-flex flex-column">
                                                         <div class=" text-muted  small ">Account Balance</div>
-                                                        <span class="text-primary  small js-balance">*** *** ***
+                                                        <span class="text-info  small js-balance">*** *** ***
                                                                 ***</span>
                                                     </div>
                                                     <button type="button"
@@ -166,70 +166,12 @@
                                                     </button>
                                                 </div>
                                             </div>
-
-                                            <div class="col-lg-6">
-                                                <div class=" mb-3">
-                                                    <div class="d-flex justify-content-between">
-                                                        <label class="text-primary fw-normal text-sm form-label">
-                                                            Beneficiary Account Number:
-                                                        </label>
-                                                        <div class="form-check ">
-                                                            <input
-                                                                    class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"
-                                                                    type="checkbox" name="select_beneficiary"
-                                                                    id="local_beneficiary">
-                                                            <label
-                                                                    class="form-check-label text-primary fw-normal text-sm cursor-pointer"
-                                                                    for="local_beneficiary">
-                                                                Select From Saved Beneficiaries
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div style="display: none" class="js-select-beneficiary">
-                                                        <select
-                                                                class=" py-3 bg-secondary border-0 bg-opacity-10 px-3 border fw-semibold text-primary form-select js-beneficiaries">
-                                                            <option value="">Select Beneficiary</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="mb-3 js-search-beneficiary">
-                                                        <input type="text" name="account_number" id="account_number"
-                                                               class="form-control  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-primary" />
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="confirm_account_number"
-                                                           class="form-label fw-normal text-sm text-primary ">
-                                                        Confirm Beneficiary Account Number:
-                                                    </label>
-                                                    <input type="text" name="confirm_account_number"
-                                                           id="confirm_account_number"
-                                                           class="form-control   py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-primary" />
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="names"
-                                                           class="form-label fw-normal text-sm text-primary">
-                                                        Full Name:
-                                                    </label>
-                                                    <input type="text" name="names" id="names"
-                                                           class="form-control   py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-primary" />
-                                                </div>
-                                            </div>
                                             <div class="col-lg-6">
                                                 <div class="mb-3">
                                                     <label for="bank"
-                                                           class="form-label fw-normal text-primary text-sm">Bank:</label>
+                                                           class="form-label fw-normal text-info text-sm">Bank:</label>
                                                     <select id="bank" name="bank"
-                                                            class="   py-3 bg-secondary border-0 bg-opacity-10 px-3 border fw-semibold text-primary form-select">
+                                                            class="   py-3 bg-secondary border-0 bg-opacity-10 px-3 border fw-semibold text-info form-select">
                                                         <option value="">Select Bank</option>
                                                         <option value="">BK</option>
                                                         <option value="">Equity Bank</option>
@@ -239,27 +181,86 @@
                                                     </select>
                                                 </div>
                                             </div>
+                                            <div class="col-lg-6">
+                                                <div class=" mb-3">
+                                                    <div class="d-flex justify-content-between">
+                                                        <label class="text-info fw-normal text-sm form-label">
+                                                            Beneficiary Account Number:
+                                                        </label>
+                                                        <div class="form-check ">
+                                                            <input
+                                                                    class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"
+                                                                    type="checkbox" name="select_beneficiary"
+                                                                    id="local_beneficiary">
+                                                            <label
+                                                                    class="form-check-label text-info fw-normal text-sm cursor-pointer"
+                                                                    for="local_beneficiary">
+                                                                Select From Saved Beneficiaries
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div style="display: none" class="js-select-beneficiary">
+                                                        <select
+                                                                class=" py-3 bg-secondary border-0 bg-opacity-10 px-3 border fw-semibold text-info form-select js-beneficiaries">
+                                                            <option value="">Select Beneficiary</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3 js-search-beneficiary">
+                                                        <input type="text" name="account_number" id="account_number"
+                                                               class="form-control  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info" />
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label for="confirm_account_number"
+                                                           class="form-label fw-normal text-sm text-info ">
+                                                        Confirm Beneficiary Account Number:
+                                                    </label>
+                                                    <input type="text" name="confirm_account_number"
+                                                           id="confirm_account_number"
+                                                           class="form-control   py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+
+
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label for="names"
+                                                           class="form-label fw-normal text-sm text-info">
+                                                        Full Name:
+                                                    </label>
+                                                    <input type="text" name="names" id="names"
+                                                           class="form-control   py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info" />
+                                                </div>
+                                            </div>
+
 
                                             <div class="col-lg-6">
                                                 <div class="mb-3">
                                                     <label for="beneficiary_email"
-                                                           class="form-label fw-normal text-primary text-sm">
+                                                           class="form-label fw-normal text-info text-sm">
                                                         Beneficiary email <small
                                                             class="text-muted">(optional)</small>
                                                     </label>
                                                     <input type="email" name="beneficiary_email"
                                                            id="beneficiary_email"
-                                                           class="form-control   py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-primary" />
+                                                           class="form-control   py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info" />
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="mb-3">
                                                     <label for="local_amount"
-                                                           class="form-label fw-normal  text-primary text-sm">Amount:</label>
+                                                           class="form-label fw-normal  text-info text-sm">Amount:</label>
                                                     <div class="input-group">
 
                                                         <input type="text" name="amount" required id="local_amount"
-                                                               class="form-control flex-grow-1  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-primary js-amount" />
+                                                               class="form-control flex-grow-1  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info js-amount" />
                                                     </div>
                                                     <div class="js-conversion p-0" >
                                                         <div
@@ -293,24 +294,23 @@
                                             <div class="col-lg-6">
                                                 <div class="mb-3">
                                                     <label for="local_reason"
-                                                           class="form-label text-primary text-sm fw-normal">Reason:</label>
+                                                           class="form-label text-info text-sm fw-normal">Reason:</label>
                                                     <textarea rows="3" required
-                                                              class="form-control  p-3  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-primary"
+                                                              class="form-control  p-3  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info"
                                                               name="reason" id="local_reason"></textarea>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="row">
-
                                             <div class="col-lg-6">
                                                 <div class="py-2">
                                                     <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox" role="switch"
-                                                               id="flexSwitchCheckChecked">
+                                                        <input class="form-check-input js-payment-schedule   " type="checkbox" role="switch"
+                                                               id="international_payment_schedule">
 
-                                                        <label class="form-check-label text-primary small fw-normal "
-                                                               for="flexSwitchCheckChecked">
+                                                        <label class="form-check-label text-info small fw-normal "
+                                                               for="international_payment_schedule">
                                                             Schedule Payment <span class="text-muted small">(To be
                                                         processed
                                                         on a specific date)</span>
@@ -320,13 +320,26 @@
 
                                                     <div class="mb-1 js-schedule-container" style="display: none">
                                                         <label for="own_date"
-                                                               class="form-label fw-normal text-primary text-sm">
+                                                               class="form-label fw-normal text-info fs-6">
                                                             Date to process payment:
                                                         </label>
                                                         <input type="date" name="own_date" id="own_date"
                                                                required
-                                                               class="form-control   py-2 px-3  fw-semibold text-primary"/>
+                                                               class="form-control   bg-secondary border-0 bg-opacity-10 py-3 px-3  fw-semibold text-info"/>
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-check save_beneficiary" >
+                                                    <input
+                                                            class="form-check-input rounded-0 border-info  "
+                                                            type="checkbox" name="select_beneficiary"
+                                                            id="save_ben">
+                                                    <label
+                                                            class="form-check-label text-info fw-normal cursor-pointer"
+                                                            for="save_ben">
+                                                        Save As Beneficiary
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
@@ -347,11 +360,11 @@
                                         <div
                                                 class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
                                             <button type="reset"
-                                                    class="btn btn-outline-primary rounded-4 py-2   px-lg-5">
+                                                    class="btn btn-outline-primary rounded py-2   px-lg-5">
                                                 Clear
                                             </button>
                                             <button type="submit"
-                                                    class="btn btn-info rounded-4 py-2 text-white px-lg-5">
+                                                    class="btn btn-info rounded py-2 text-white px-lg-5">
                                                 Continue
                                             </button>
 
@@ -783,15 +796,18 @@
             let selectBeneficiary = parent.siblings('div.js-select-beneficiary');
             console.log(selectBeneficiary);
             let searchBeneficiary = parent.siblings('div.js-search-beneficiary');
+            let save_beneficiary = $('.save_beneficiary');
 
             if ($(this).prop('checked')) {
                 console.log(true)
                 selectBeneficiary.slideDown();
                 searchBeneficiary.slideUp()
+                save_beneficiary.slideUp()
             } else {
                 console.log(false)
                 selectBeneficiary.slideUp()
                 searchBeneficiary.slideDown();
+                save_beneficiary.slideDown()
             }
 
         })
