@@ -105,8 +105,8 @@
 
                                             </button>
                                             <button class="nav-link text-start px-2 mb-5 " id="nav-international-tab"
-                                                    data-bs-toggle="tab" data-bs-target="#nav-external" type="button"
-                                                    role="tab" aria-controls="nav-external" aria-selected="true">International banks
+                                                    data-bs-toggle="tab" data-bs-target="#nav-international" type="button"
+                                                    role="tab" aria-controls="nav-international" aria-selected="true">International banks
 
                                             </button>
                                             <button class="nav-link text-start px-2  mb-5" id="nav-profile-tab" data-bs-toggle="tab"
@@ -485,241 +485,208 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                        <div class="tab-pane fade" id="nav-international" role="tabpanel"
                                              aria-labelledby="nav-profile-tab" tabindex="0">
-                                            <h4 class="mx-3">Airtime Beneficiaries</h4>
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="mx-3">International banks Transfer Beneficiaries</h5>
+                                                <button class="btn btn-info text-white rounded-pill px-4 py-1"><i class="bi bi-plus-circle me-2"></i>Add Beneficiary</button>
+                                            </div>
                                             <div class="container-fluid ">
-                                                <div class="row ">
-                                                    <div class="col-lg-6 mb-2">
-                                                        <div class="card border-0 border-start border-4 shadow-sm border-success  card-body">
-                                                            <div class="d-flex justify-content-between mb-2">
-                                                                <div class="d-flex flex-column">
-                                                                    <span class="text-white">
-                                                                        <span class="text-primary text-sm">Name:</span>
-                                                                        <span class="text-dark text-sm">Jon Doe</span>
-                                                                    </span>
-                                                                    <span class="text-white">
-                                                                        <span class="text-primary text-sm">Phone number:</span>
-                                                                        <span class="text-dark text-sm">0788007201</span>
-                                                                    </span>
-
-                                                                </div>
-                                                                <div class="d-flex flex-column">
-                                                                    <div class="dropdown">
-                                                                        <button class="btn border-0  bg-opacity-75 btn-sm py-0 rounded px-4 dropdown-toggle"
-                                                                                type="button" id="dropdownMenuButton1"
-                                                                                data-bs-toggle="dropdown"
-                                                                                aria-expanded="false">
-                                                                            Actions
-                                                                        </button>
-                                                                        <ul class="dropdown-menu"
-                                                                            aria-labelledby="dropdownMenuButton1">
-                                                                            <li><a class="dropdown-item"
-                                                                                   href="#">Edit</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                   href="#">Delete</a></li>
-                                                                        </ul>
+                                                <div class="table-responsive">
+                                                    <table class="table my-2 table-accounts  ">
+                                                        <thead>
+                                                        <tr class="">
+                                                            <th class="text-info text-sm border-0  border-3 border-bottom  border-info cursor-pointer">
+                                                                <div class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                                    <span>Beneficiary Name</span>
+                                                                    <div class="d-flex flex-column text-sm">
+                                                                        <i class="bi bi-chevron-up"></i>
+                                                                        <i class="bi bi-chevron-down"></i>
                                                                     </div>
                                                                 </div>
-                                                            </div>
 
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 mb-2">
-                                                        <div class="card border-0 border-start border-4 shadow-sm border-success  card-body">
-                                                            <div class="d-flex justify-content-between mb-2">
-                                                                <div class="d-flex flex-column">
-                                                                    <span class="text-white">
-                                                                        <span class="text-primary text-sm">Name:</span>
-                                                                        <span class="text-dark text-sm">Jon Doe</span>
-                                                                    </span>
-                                                                    <span class="text-white">
-                                                                        <span class="text-primary text-sm">Phone number:</span>
-                                                                        <span class="text-dark text-sm">0788007201</span>
-                                                                    </span>
-
-                                                                </div>
-                                                                <div class="d-flex flex-column">
-                                                                    <div class="dropdown">
-                                                                        <button class="btn border-0  bg-opacity-75 btn-sm py-0 rounded px-4 dropdown-toggle"
-                                                                                type="button" id="dropdownMenuButton1"
-                                                                                data-bs-toggle="dropdown"
-                                                                                aria-expanded="false">
-                                                                            Actions
-                                                                        </button>
-                                                                        <ul class="dropdown-menu"
-                                                                            aria-labelledby="dropdownMenuButton1">
-                                                                            <li><a class="dropdown-item"
-                                                                                   href="#">Edit</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                   href="#">Delete</a></li>
-                                                                        </ul>
+                                                            </th>
+                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                                <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                    <span>Account Number</span>
+                                                                    <div class="d-flex flex-column fs-9px">
+                                                                        <i class="bi bi-chevron-up "></i>
+                                                                        <i class="bi bi-chevron-down"></i>
                                                                     </div>
                                                                 </div>
-                                                            </div>
+                                                            </th>
+                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                                <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                    <span>Country</span>
+                                                                    <div class="d-flex flex-column fs-9px">
+                                                                        <i class="bi bi-chevron-up "></i>
+                                                                        <i class="bi bi-chevron-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                                <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                    <span>Bank Name</span>
+                                                                    <div class="d-flex flex-column fs-9px">
+                                                                        <i class="bi bi-chevron-up "></i>
+                                                                        <i class="bi bi-chevron-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
 
-                                                        </div>
-                                                    </div>
+
+                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer">
+                                                                <div class=" d-flex align-items-center justify-content-between ">
+                                                                    <span>Email</span>
+                                                                    <div class="d-flex flex-column fs-9px">
+                                                                        <i class="bi bi-chevron-up "></i>
+                                                                        <i class="bi bi-chevron-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            <th class="text-info  border-0  text-sm  border-3 border-bottom  border-info">
+                                                                Actions
+                                                            </th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr class="cursor-pointer js-account py-5">
+                                                            <td class="small">Peter Musoni</td>
+                                                            <td class="small">42652678-36373-8383</td>
+                                                            <td class="small">Rwanda</td>
+                                                            <td class="small">Equity</td>
+                                                            <td class="small">jeanpaul@gmail.com</td>
+
+                                                            <td class="small">
+                                                                <div class="dropdown">
+                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                            type="button" data-bs-toggle="dropdown">
+                                                                        Options
+                                                                    </button>
+                                                                    <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                        <li><a class="dropdown-item" href="#">
+                                                                            Update
+                                                                        </a></li>
+                                                                        <li class=""><a class="dropdown-item " href="#">
+                                                                            Delete
+                                                                        </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cursor-pointer js-account py-5">
+                                                            <td class="small">John Peter</td>
+                                                            <td class="small">42652678-36373-8383</td>
+                                                            <td class="small">Nigeria</td>
+                                                            <td class="small">Equity</td>
+                                                            <td class="small">jeanpaul@gmail.com</td>
+                                                            <td class="small">
+                                                                <div class="dropdown">
+                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                            type="button" data-bs-toggle="dropdown">
+                                                                        Options
+                                                                    </button>
+                                                                    <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                        <li><a class="dropdown-item" href="#">
+                                                                            Update
+                                                                        </a></li>
+                                                                        <li class=""><a class="dropdown-item " href="#">
+                                                                            Delete
+                                                                        </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cursor-pointer js-account py-5">
+                                                            <td class="small">Musoni Business</td>
+                                                            <td class="small">42652678-36373-8383</td>
+                                                            <td class="small">Tanzania</td>
+                                                            <td class="small">Bank of Kigali</td>
+                                                            <td class="small">jeanpaul@gmail.com</td>
+
+                                                            <td class="small">
+                                                                <div class="dropdown">
+                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                            type="button" data-bs-toggle="dropdown">
+                                                                        Options
+                                                                    </button>
+                                                                    <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                        <li><a class="dropdown-item" href="#">
+                                                                            Update
+                                                                        </a></li>
+                                                                        <li class=""><a class="dropdown-item " href="#">
+                                                                            Delete
+                                                                        </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cursor-pointer js-account py-5">
+                                                            <td class="small">John Peter</td>
+                                                            <td class="small">42652678-36373-8383</td>
+                                                            <td class="small">Kenya</td>
+                                                            <td class="small">Coge Bank</td>
+                                                            <td class="small">jeanpaul@gmail.com</td>
+
+                                                            <td class="fs-12px">
+                                                                <div class="dropdown">
+                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                            type="button" data-bs-toggle="dropdown">
+                                                                        Options
+                                                                    </button>
+                                                                    <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                        <li><a class="dropdown-item" href="#">
+                                                                            Update
+                                                                        </a></li>
+                                                                        <li class=""><a class="dropdown-item " href="#">
+                                                                            Delete
+                                                                        </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cursor-pointer js-account py-5">
+                                                            <td class="small">Musoni Business</td>
+                                                            <td class="small">42652678-36373-8383</td>
+                                                            <td class="small">Ghana</td>
+                                                            <td class="small">Bank of Kigali</td>
+                                                            <td class="small">jeanpaul@gmail.com</td>
+                                                            <td class="small">
+                                                                <div class="dropdown">
+                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                            type="button" data-bs-toggle="dropdown">
+                                                                        Options
+                                                                    </button>
+                                                                    <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                        <li><a class="dropdown-item" href="#">
+                                                                            Update
+                                                                        </a></li>
+                                                                        <li class=""><a class="dropdown-item " href="#">
+                                                                            Delete
+                                                                        </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                    <nav aria-label="..." class="float-end mt-2">
+                                                        <ul class="pagination">
+                                                            <li class="page-item disabled">
+                                                                <a class="page-link">Previous</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item active" aria-current="page">
+                                                                <a class="page-link" href="#">2</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" href="#">Next</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
                                                 </div>
-                                                <div class="row ">
-                                                    <div class="col-lg-6 mb-2">
-                                                        <div class="card border-0 border-start border-4 shadow-sm border-success  card-body">
-                                                            <div class="d-flex justify-content-between mb-2">
-                                                                <div class="d-flex flex-column">
-                                                                    <span class="text-white">
-                                                                        <span class="text-primary text-sm">Name:</span>
-                                                                        <span class="text-dark text-sm">Jon Doe</span>
-                                                                    </span>
-                                                                    <span class="text-white">
-                                                                        <span class="text-primary text-sm">Phone number:</span>
-                                                                        <span class="text-dark text-sm">0788007201</span>
-                                                                    </span>
-
-                                                                </div>
-                                                                <div class="d-flex flex-column">
-                                                                    <div class="dropdown">
-                                                                        <button class="btn border-0  bg-opacity-75 btn-sm py-0 rounded px-4 dropdown-toggle"
-                                                                                type="button" id="dropdownMenuButton1"
-                                                                                data-bs-toggle="dropdown"
-                                                                                aria-expanded="false">
-                                                                            Actions
-                                                                        </button>
-                                                                        <ul class="dropdown-menu"
-                                                                            aria-labelledby="dropdownMenuButton1">
-                                                                            <li><a class="dropdown-item"
-                                                                                   href="#">Edit</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                   href="#">Delete</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 mb-2">
-                                                        <div class="card border-0 border-start border-4 shadow-sm border-success  card-body">
-                                                            <div class="d-flex justify-content-between mb-2">
-                                                                <div class="d-flex flex-column">
-                                                                    <span class="text-white">
-                                                                        <span class="text-primary text-sm">Name:</span>
-                                                                        <span class="text-dark text-sm">Jon Doe</span>
-                                                                    </span>
-                                                                    <span class="text-white">
-                                                                        <span class="text-primary text-sm">Phone number:</span>
-                                                                        <span class="text-dark text-sm">0788007201</span>
-                                                                    </span>
-
-                                                                </div>
-                                                                <div class="d-flex flex-column">
-                                                                    <div class="dropdown">
-                                                                        <button class="btn border-0  bg-opacity-75 btn-sm py-0 rounded px-4 dropdown-toggle"
-                                                                                type="button" id="dropdownMenuButton1"
-                                                                                data-bs-toggle="dropdown"
-                                                                                aria-expanded="false">
-                                                                            Actions
-                                                                        </button>
-                                                                        <ul class="dropdown-menu"
-                                                                            aria-labelledby="dropdownMenuButton1">
-                                                                            <li><a class="dropdown-item"
-                                                                                   href="#">Edit</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                   href="#">Delete</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row ">
-                                                    <div class="col-lg-6 mb-2">
-                                                        <div class="card border-0 border-start border-4 shadow-sm border-success  card-body">
-                                                            <div class="d-flex justify-content-between mb-2">
-                                                                <div class="d-flex flex-column">
-                                                                    <span class="text-white">
-                                                                        <span class="text-primary text-sm">Name:</span>
-                                                                        <span class="text-dark text-sm">Jon Doe</span>
-                                                                    </span>
-                                                                    <span class="text-white">
-                                                                        <span class="text-primary text-sm">Phone number:</span>
-                                                                        <span class="text-dark text-sm">0788007201</span>
-                                                                    </span>
-
-                                                                </div>
-                                                                <div class="d-flex flex-column">
-                                                                    <div class="dropdown">
-                                                                        <button class="btn border-0  bg-opacity-75 btn-sm py-0 rounded px-4 dropdown-toggle"
-                                                                                type="button" id="dropdownMenuButton1"
-                                                                                data-bs-toggle="dropdown"
-                                                                                aria-expanded="false">
-                                                                            Actions
-                                                                        </button>
-                                                                        <ul class="dropdown-menu"
-                                                                            aria-labelledby="dropdownMenuButton1">
-                                                                            <li><a class="dropdown-item"
-                                                                                   href="#">Edit</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                   href="#">Delete</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 mb-2">
-                                                        <div class="card border-0 border-start border-4 shadow-sm border-success  card-body">
-                                                            <div class="d-flex justify-content-between mb-2">
-                                                                <div class="d-flex flex-column">
-                                                                    <span class="text-white">
-                                                                        <span class="text-primary text-sm">Name:</span>
-                                                                        <span class="text-dark text-sm">Jon Doe</span>
-                                                                    </span>
-                                                                    <span class="text-white">
-                                                                        <span class="text-primary text-sm">Phone number:</span>
-                                                                        <span class="text-dark text-sm">0788007201</span>
-                                                                    </span>
-
-                                                                </div>
-                                                                <div class="d-flex flex-column">
-                                                                    <div class="dropdown">
-                                                                        <button class="btn border-0  bg-opacity-75 btn-sm py-0 rounded px-4 dropdown-toggle"
-                                                                                type="button" id="dropdownMenuButton1"
-                                                                                data-bs-toggle="dropdown"
-                                                                                aria-expanded="false">
-                                                                            Actions
-                                                                        </button>
-                                                                        <ul class="dropdown-menu"
-                                                                            aria-labelledby="dropdownMenuButton1">
-                                                                            <li><a class="dropdown-item"
-                                                                                   href="#">Edit</a></li>
-                                                                            <li><a class="dropdown-item"
-                                                                                   href="#">Delete</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <nav aria-label="..." class="float-end mt-2">
-                                                    <ul class="pagination">
-                                                        <li class="page-item disabled">
-                                                            <a class="page-link">Previous</a>
-                                                        </li>
-                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                        <li class="page-item active" aria-current="page">
-                                                            <a class="page-link" href="#">2</a>
-                                                        </li>
-                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#">Next</a>
-                                                        </li>
-                                                    </ul>
-                                                </nav>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="nav-contact" role="tabpanel"
