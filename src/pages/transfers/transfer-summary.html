@@ -350,7 +350,7 @@
                 </span>
 
             </div>
-            <form action="../../index.html">
+            <form action="">
                 <div class="modal-body py-0 px-lg-5">
 
 
@@ -384,7 +384,7 @@
 
                 </div>
                 <div class="modal-footer border-top-0 px-lg-5 py-4 justify-content-between">
-                    <button type="submit" class="btn btn-success w-100 px-5 py-2 text-white fw-semibold  ">
+                    <button type="button" class="btn btn-success w-100 px-5 js-confirm py-2 text-white fw-semibold  ">
                         Confirm
                     </button>
                 </div>
@@ -439,6 +439,12 @@
             let accountText = `${abbr}-4000-0000-0001-200${index}-Ntare`;
             jsBeneficiaries.append(`<option value="${abbr}">${accountText}</option>`);
 
+        });
+        $('.js-confirm').on('click', function () {
+            Swal.fire({
+                text: "Record is updated successfully!",
+                icon: 'success',
+            });
         });
 
 

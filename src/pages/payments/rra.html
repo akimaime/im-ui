@@ -95,10 +95,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card rounded-4 ">
-                        <form action="" class="" id="ownAccountsForm">
+                        <form action="" class="" id="rraPaymentForm">
                             <div class="card-body ">
                                 <div class="tab-pane card-body  active" id="pills-own-accounts" role="tabpanel">
-                                    <form action="rra_payment_summary.html" class="" id="rraPaymentForm">
                                         <h4>
                                             RRA Payment
                                         </h4>
@@ -116,17 +115,17 @@
                                                 <div class="row  justify-content-center">
                                                     <div class=" ">
                                                         <div class="mb-3">
-                                                            <label for="ref_number" class="form-label text-info ">Enter
+                                                            <label for="ref_number" class="form-label small text-info ">Enter
                                                                 RRA
                                                                 E-bill(reference) number:</label>
                                                             <div
-                                                                    class=" rounded-default bg-white    border d-flex align-items-center p-1">
+                                                                    class=" rounded-default  bg-secondary border-0 bg-opacity-10    border d-flex align-items-center p-1">
                                                                 <div
                                                                         class="small d-flex align-items-center flex-shrink-0 gap-2 ms-2 pe-2 border-end">
                                                                     <i class="bi bi-search text-muted"
                                                                        style="transform: rotate(90deg)"></i>
                                                                 </div>
-                                                                <input type="text" class="form-control border-0 shadow-none"
+                                                                <input type="text" class="form-control bg-transparent border-0   border-0 shadow-none"
                                                                        id="ref_number" name="search"/>
                                                                 <button type="button"
                                                                         class="btn btn-info text-white rounded-default flex-shrink-0 js-verify">
@@ -140,11 +139,11 @@
                                                         <div class="">
                                                             <div class="mb-3">
                                                                 <label for="own_from_account"
-                                                                       class="text-info fw-normal form-label">
+                                                                       class="text-info small fw-normal form-label">
                                                                     Make payment from:
                                                                 </label>
                                                                 <select
-                                                                        class="form-select py-2  text-info  js-transfer-from"
+                                                                        class="form-select py-3 bg-secondary border-0 bg-opacity-10   js-transfer-from"
                                                                         required id="own_from_account" name="from_account">
                                                                     <option value="">Select Account</option>
                                                                 </select>
@@ -194,15 +193,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-8"><div class="js-account-found mt-3">
-
                                                 <div class="table-responsive">
                                                     <table class="table mb-3 table-accounts">
                                                         <thead>
                                                         <tr class="">
-                                                            <th
-                                                                    class="text-info  border-top-0  border-0 border-bottom  border-info cursor-pointer">
-                                                                <div
-                                                                        class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                            <th class="text-info text-sm  border-top-0  border-0 border-bottom  border-info cursor-pointer">
+                                                                <div class=" d-flex align-items-center justify-content-between border-end pe-2">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input rounded-0"
                                                                                type="checkbox" value=""
@@ -215,39 +211,34 @@
                                                                 </div>
 
                                                             </th>
-                                                            <th
-                                                                    class="text-info  border-top-0  border-0 border-bottom  border-info cursor-pointer">
-                                                                <div
-                                                                        class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                            <th class="text-info text-sm  border-top-0  border-0 border-bottom  border-info cursor-pointer">
+                                                                <div class=" d-flex align-items-center justify-content-between border-end pe-2">
                                                                     <span>Document Number</span>
                                                                 </div>
 
                                                             </th>
-                                                            <th
-                                                                    class="text-info  border-top-0    border-0 border-bottom  border-info cursor-pointer ">
-                                                                <div
-                                                                        class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                            <th class="text-info text-sm  border-top-0    border-0 border-bottom  border-info cursor-pointer ">
+                                                                <div class="d-flex align-items-center justify-content-between border-end pe-2">
                                                                     <span>Amount to be Paid</span>
                                                                 </div>
                                                             </th>
 
 
                                                             <th
-                                                                    class="text-info  border-top-0    border-0 border-bottom  border-info cursor-pointer">
-                                                                <div
-                                                                        class=" d-flex align-items-center justify-content-between ">
+                                                                    class="text-info text-sm  border-top-0    border-0 border-bottom  border-info cursor-pointer">
+                                                                <div class=" d-flex align-items-center justify-content-between ">
                                                                     <span>Amount To Pay</span>
                                                                 </div>
                                                             </th>
                                                             <th
-                                                                    class="text-info  border-top-0    border-0 border-bottom  border-info cursor-pointer">
+                                                                    class="text-info text-sm  border-top-0    border-0 border-bottom  border-info cursor-pointer">
                                                                 <div
                                                                         class=" d-flex align-items-center justify-content-between ">
                                                                     <span>Tax Type</span>
                                                                 </div>
                                                             </th>
                                                             <th
-                                                                    class="text-info  border-top-0    border-0 border-bottom  border-info cursor-pointer">
+                                                                    class="text-info text-sm  border-top-0    border-0 border-bottom  border-info cursor-pointer">
                                                                 <div
                                                                         class=" d-flex align-items-center justify-content-between ">
                                                                     <span>Company</span>
@@ -263,8 +254,8 @@
 
                                                 <!--                                            add a summary of the total amount to be paid-->
                                                 <div class="row justify-content-end">
-                                                    <div class="col-lg-6">
-                                                        <div class="card border-info rounded-0 shadow-none">
+                                                    <div class="col-lg-8">
+                                                        <div class="card bg-secondary border-0 bg-opacity-10  rounded-2 shadow-none">
                                                             <div class="card-body p-2">
                                                                 <div
                                                                         class="d-flex gap-2 justify-content-between flex-column flex-md-row">
@@ -291,13 +282,8 @@
                                                     </div>
                                                 </div>
 
-
-
-
                                             </div></div>
                                         </div>
-                                    </form>
-
 
                                 </div>
 
@@ -395,45 +381,59 @@
 <div class="modal fade" id="otpModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content rounded-4">
-            <div class="modal-header border-bottom-0 align-items-center py-4 px-lg-5">
-                <h1 class="modal-title fs-4 text-info fw-semibold mb-0">
-                    OTP Verification
-                </h1>
+            <div class="d-flex justify-content-center flex-column border-0 align-items-center py-4 px-lg-5">
+                <div class="position-relative">
+                    <div class="d-flex justify-content-center  align-items-center bg-primary rounded-circle"
+                         style="height: 84px;width: 84px">
+                        <i class="text-white bi bi-arrow-counterclockwise tw-object-cover display-2">
+                        </i>
+                        <span id="secondsRemain" class="position-absolute text-white tw-top-2 tw-right-2"></span>
+                    </div>
+                </div>
+                <span class="text-dark  display-5 fw-bold ">
+                        OTP
+                </span>
+                <span class="text-muted  mb-1  ">
+                        Please check your 4 digits sent to *********6723
+                </span>
 
             </div>
-            <form action="./transfer_made.html">
+            <form action="../../index.html">
                 <div class="modal-body py-0 px-lg-5">
-                    <h6 class="text-dark fw-bold py-3 border-top border-3 border-info">
-                        We have just sent you a verification code to
-                        <a href="" class="text-info text-decoration-none">johnm@gmail.com</a> and
-                        <a href="" class="text-info text-decoration-none">+250 788 789 348</a>
-                    </h6>
 
-                    <div class="d-flex justify-content-between">
-                        <input type="text" class="form-control fs-3  p-2 w-7 h-7 text-center one-digit" required
+
+                    <div class="d-flex justify-content-between card-body gap-3">
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
                                maxlength="1" minlength="1" max="9" min="0"/>
-                        <input type="text" class="form-control fs-3  p-2 w-7 h-7 text-center one-digit" required
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
                                maxlength="1" minlength="1" max="9" min="0"/>
-                        <input type="text" class="form-control fs-3  p-2 w-7 h-7 text-center one-digit" required
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
                                maxlength="1" minlength="1" max="9" min="0"/>
-                        <input type="text" class="form-control fs-3  p-2 w-7 h-7 text-center one-digit" required
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
                                maxlength="1" minlength="1" max="9" min="0"/>
                     </div>
 
-                    <p class="mt-3">
-                        <span class="text-info fw-bold" id="minutesRemain">5</span> minutes and
-                        <span class="text-info fw-bold" id="secondsRemain">00</span> seconds left to enter the
-                        code.
-                    </p>
 
                 </div>
                 <div class="modal-footer border-top-0 px-lg-5 py-4 justify-content-between">
-                    <a href="" class="text-decoration-none fs-6 fw-semibold">
-                        <i class="bi bi-send"></i>
-                        Send the code again
-                    </a>
-                    <button type="submit" class="btn btn-info  px-5 py-2 text-info fw-semibold  ">
-                        Verify
+                    <button type="submit" class="btn btn-success w-100 px-5 py-2 text-white fw-semibold  ">
+                        Confirm
                     </button>
                 </div>
             </form>
@@ -442,154 +442,155 @@
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../js/main.js"></script>
+<script src="../../js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
+    document.addEventListener("DOMContentLoaded", function() {
 
-    let accountFrom = null;
-    let currency = null;
-    let amount = null;
+        let accountFrom = null;
+        let currency = null;
+        let amount = null;
 
-    let jsFromAccountElement = $('.js-transfer-from');
-    let jsCurrency = $('.js-currency');
-    let ownAmount = $('.js-amount');
-    let toggleConversion = function () {
-        if (accountFrom) {
-            $('.js-conversion').slideDown();
-        } else {
-            $('.js-conversion').slideUp();
+        let jsFromAccountElement = $('.js-transfer-from');
+        let jsCurrency = $('.js-currency');
+        let ownAmount = $('.js-amount');
+        let toggleConversion = function () {
+            if (accountFrom) {
+                $('.js-conversion').slideDown();
+            } else {
+                $('.js-conversion').slideUp();
+            }
         }
-    }
 
 
-    $(function () {
+        $(function () {
 
-        $('#utility_type').on('change', function (e) {
-            let $waterDiv = $('.js-water');
-            let $electricityDiv = $('.js-electricity');
-            let $tvDiv = $('.js-tv');
+            $('#utility_type').on('change', function (e) {
+                let $waterDiv = $('.js-water');
+                let $electricityDiv = $('.js-electricity');
+                let $tvDiv = $('.js-tv');
 
-            if ($(this).val() === 'Water') {
-                $waterDiv.show();
-                $electricityDiv.hide();
-                $tvDiv.hide();
-            } else if ($(this).val() === 'Electricity') {
-                $waterDiv.hide();
-                $electricityDiv.show();
-                $tvDiv.hide();
-            } else if ($(this).val() === 'tv') {
-                $waterDiv.hide();
-                $electricityDiv.hide();
-                $tvDiv.show();
-            } else {
-                $waterDiv.hide();
-                $electricityDiv.hide();
-                $tvDiv.hide();
-            }
-        });
+                if ($(this).val() === 'Water') {
+                    $waterDiv.show();
+                    $electricityDiv.hide();
+                    $tvDiv.hide();
+                } else if ($(this).val() === 'Electricity') {
+                    $waterDiv.hide();
+                    $electricityDiv.show();
+                    $tvDiv.hide();
+                } else if ($(this).val() === 'tv') {
+                    $waterDiv.hide();
+                    $electricityDiv.hide();
+                    $tvDiv.show();
+                } else {
+                    $waterDiv.hide();
+                    $electricityDiv.hide();
+                    $tvDiv.hide();
+                }
+            });
 
-        $('.js-check-balance').on('click', function () {
-            // find input sibling text
-            let btn = $(this);
-            let input = btn.siblings('input');
-            if (input.val() === '') {
-                return;
-            }
-            // find the parent div with class .js-parent
-            let parent = btn.parents('.js-parent');
-            // find the span with class .js-balance
-            let owner = parent.find('.js-owner');
-            let amount = parent.find('.js-amount');
-            // add spinner using bootstrap and simulate a request for 1 second and then remove spinner
-            btn.append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>')
-                .prop('disabled', true);
-            setTimeout(() => {
-                owner.val('John Doe');
-                // generate random amount between 100 and 10000
-                amount.val(Math.floor(Math.random() * 10000) + 100);
-                btn.find('.spinner-border').remove();
-                btn.prop('disabled', false);
-            }, 1000);
+            $('.js-check-balance').on('click', function () {
+                // find input sibling text
+                let btn = $(this);
+                let input = btn.siblings('input');
+                if (input.val() === '') {
+                    return;
+                }
+                // find the parent div with class .js-parent
+                let parent = btn.parents('.js-parent');
+                // find the span with class .js-balance
+                let owner = parent.find('.js-owner');
+                let amount = parent.find('.js-amount');
+                // add spinner using bootstrap and simulate a request for 1 second and then remove spinner
+                btn.append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>')
+                    .prop('disabled', true);
+                setTimeout(() => {
+                    owner.val('John Doe');
+                    // generate random amount between 100 and 10000
+                    amount.val(Math.floor(Math.random() * 10000) + 100);
+                    btn.find('.spinner-border').remove();
+                    btn.prop('disabled', false);
+                }, 1000);
 
-        });
-        $('#tv_packages').on('change', function () {
-            let value = $(this).val();
-            let $tvAmount = $('#tv_amount');
-            $tvAmount.val("");
-            if (value === '')
-                return;
-            // get selected option and get data from data-amount attribute
-            let amount = $(this).find('option:selected').data('amount');
+            });
+            $('#tv_packages').on('change', function () {
+                let value = $(this).val();
+                let $tvAmount = $('#tv_amount');
+                $tvAmount.val("");
+                if (value === '')
+                    return;
+                // get selected option and get data from data-amount attribute
+                let amount = $(this).find('option:selected').data('amount');
 
-            $tvAmount.val(amount.toLocaleString());
+                $tvAmount.val(amount.toLocaleString());
 
-        });
+            });
 
-        $('#checkAll').on('change', function () {
-            // find add all check boxes with class js-check-tax and check them all
+            $('#checkAll').on('change', function () {
+                // find add all check boxes with class js-check-tax and check them all
 
-        });
+            });
 
-        // select a radio button with name frequency
-        $('input[name="frequency"]').on('change', function () {
-            if ($(this).val() === 'Once') {
-                $('.js-one-time').removeClass('hide');
-                $('.js-recurring').addClass('hide');
-            } else {
-                $('.js-one-time').addClass('hide');
-                $('.js-recurring').removeClass('hide');
-            }
-        });
+            // select a radio button with name frequency
+            $('input[name="frequency"]').on('change', function () {
+                if ($(this).val() === 'Once') {
+                    $('.js-one-time').removeClass('hide');
+                    $('.js-recurring').addClass('hide');
+                } else {
+                    $('.js-one-time').addClass('hide');
+                    $('.js-recurring').removeClass('hide');
+                }
+            });
 
-        $('.js-bulk-toggle').on('change', function () {
-            if ($(this).is(':checked')) {
-                $('.js-bulk-payments').slideDown();
-                $('.js-single-payment').slideUp();
-            } else {
-                $('.js-bulk-payments').slideUp();
-                $('.js-single-payment').slideDown();
-            }
-        });
-        $(document).on('click', '.js-remove', function () {
-            $(this).closest('tr').remove();
-        });
+            $('.js-bulk-toggle').on('change', function () {
+                if ($(this).is(':checked')) {
+                    $('.js-bulk-payments').slideDown();
+                    $('.js-single-payment').slideUp();
+                } else {
+                    $('.js-bulk-payments').slideUp();
+                    $('.js-single-payment').slideDown();
+                }
+            });
+            $(document).on('click', '.js-remove', function () {
+                $(this).closest('tr').remove();
+            });
 //show div after click on add button
 
 
-        $('.btnAddPhoneNumbers').on('click', function (e) {
-            e.preventDefault();
-            let btn = $(this);
-            // add spinner to button
-            let s = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            $('.btnAddPhoneNumbers').on('click', function (e) {
+                e.preventDefault();
+                let btn = $(this);
+                // add spinner to button
+                let s = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
             <span class="visually-hidden">Loading...</span>`;
-            btn.append(s)
-                .prop('disabled', true);
+                btn.append(s)
+                    .prop('disabled', true);
 
-            // simulate a request for 1 second and then remove spinner
-            setTimeout(() => {
-                //show the div with class js-name
-                $('.js-name-found').removeClass('d-none');
-                $('.js-name-found').addClass('d-block');
+                // simulate a request for 1 second and then remove spinner
+                setTimeout(() => {
+                    //show the div with class js-name
+                    $('.js-name-found').removeClass('d-none');
+                    $('.js-name-found').addClass('d-block');
 
 
-                let $parentDiv = $(this).parents('.formAddNumbers');
-                let $phone = $parentDiv.find('input[name="phone"]').val()||$parentDiv.find('select[name="phon"]').val();
-                let phone = $phone;
-                let $amount = $parentDiv.find('input[name="amount"]');
-                let amount = $amount.val();
-                //
-                if (phone === '' || amount === '') {
-                    return;
+                    let $parentDiv = $(this).parents('.formAddNumbers');
+                    let $phone = $parentDiv.find('input[name="phone"]').val()||$parentDiv.find('select[name="phon"]').val();
+                    let phone = $phone;
+                    let $amount = $parentDiv.find('input[name="amount"]');
+                    let amount = $amount.val();
+                    //
+                    if (phone === '' || amount === '') {
+                        return;
 
-                }
+                    }
 //get the name from select when check box else get the name from input
-                //if the checkbox is checked display the name from select
-                if($parentDiv.find('input[name="select_beneficiary"]').is(':checked')){
-                    let $beneficial_name = $parentDiv.find('select[name="phon"]').find('option:selected').data('name');
-                    let beneficial_name = $beneficial_name;
-                    let html = `<tr>
+                    //if the checkbox is checked display the name from select
+                    if($parentDiv.find('input[name="select_beneficiary"]').is(':checked')){
+                        let $beneficial_name = $parentDiv.find('select[name="phon"]').find('option:selected').data('name');
+                        let beneficial_name = $beneficial_name;
+                        let html = `<tr>
                             <td>
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox"/>
@@ -601,17 +602,17 @@
                             </td>
  //
                         </tr>`;
-                    $('.js-bulk-table tbody').append(html);
-                    $('#phone').val('');
-                    $('#amount').val('');
-                    $('#phon').val('');
-                    $('#amounts').val('');
+                        $('.js-bulk-table tbody').append(html);
+                        $('#phone').val('');
+                        $('#amount').val('');
+                        $('#phon').val('');
+                        $('#amounts').val('');
 
-                }else {
-                    // get the random name from the array below
-                    let names = ['John Doe', 'Jane Doe', 'John Smith', 'Jane Smith'];
-                    let name = names[Math.floor(Math.random() * names.length)];
-                    let html = `<tr>
+                    }else {
+                        // get the random name from the array below
+                        let names = ['John Doe', 'Jane Doe', 'John Smith', 'Jane Smith'];
+                        let name = names[Math.floor(Math.random() * names.length)];
+                        let html = `<tr>
                             <td>
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox"/>
@@ -623,396 +624,397 @@
                             </td>
 
                         </tr>`;
-                    $('.js-bulk-table tbody').append(html);
-                    $('#phone').val('');
-                    $('#amount').val('');
-                    $('#phon').val('');
-                    $('#amounts').val('');
+                        $('.js-bulk-table tbody').append(html);
+                        $('#phone').val('');
+                        $('#amount').val('');
+                        $('#phon').val('');
+                        $('#amounts').val('');
+                    }
+                    btn.prop('disabled', false).find('.spinner-border')
+                        .remove();
+                }, 1000);
+
+            });
+
+
+
+
+            currencies.forEach(function (currency, index) {
+                let abbr = currency.abbr;
+                let innerText = `${abbr}-4000-0000-0000-000${index}-Jean Paul`;
+                jsFromAccountElement.append(`<option value="${abbr}">${innerText}</option>`);
+                jsCurrency.append(`<option value="${abbr}">${abbr}</option>`);
+            });
+
+            jsFromAccountElement.on('change', function () {
+                let value = $(this).val();
+                accountFrom = value;
+                if (value)
+                    toggleConversion();
+            });
+
+
+            let $ownFromAccount = $('.js-transfer-from');
+            let hideBalanceSymbol = '*** *** *** ***';
+            $ownFromAccount.on('change', function () {
+                // find the sibling of parent div
+                $('.js-balance').text(hideBalanceSymbol)
+                $('.js-toggle-balance').text('Show Balance')
+                let accountBalance = $(this).parent().siblings('.js-account-balance');
+                if ($(this).val()) {
+                    accountBalance.addClass('d-flex')
+                } else {
+                    accountBalance.removeClass('d-flex')
                 }
-                btn.prop('disabled', false).find('.spinner-border')
-                    .remove();
-            }, 1000);
-
-        });
-
-
-
-
-        currencies.forEach(function (currency, index) {
-            let abbr = currency.abbr;
-            let innerText = `${abbr}-4000-0000-0000-000${index}-Jean Paul`;
-            jsFromAccountElement.append(`<option value="${abbr}">${innerText}</option>`);
-            jsCurrency.append(`<option value="${abbr}">${abbr}</option>`);
-        });
-
-        jsFromAccountElement.on('change', function () {
-            let value = $(this).val();
-            accountFrom = value;
-            if (value)
-                toggleConversion();
-        });
-
-
-        let $ownFromAccount = $('.js-transfer-from');
-        let hideBalanceSymbol = '*** *** *** ***';
-        $ownFromAccount.on('change', function () {
-            // find the sibling of parent div
-            $('.js-balance').text(hideBalanceSymbol)
-            $('.js-toggle-balance').text('Show Balance')
-            let accountBalance = $(this).parent().siblings('.js-account-balance');
-            if ($(this).val()) {
-                accountBalance.addClass('d-flex')
-            } else {
-                accountBalance.removeClass('d-flex')
-            }
-        });
-        $('.js-toggle-balance').on('click', function () {
-            let currency = $ownFromAccount.val();
-            let balanceElement = $(this).siblings('div').find('.js-balance');
-            if (balanceElement.text() === hideBalanceSymbol) {
-                balanceElement.text(currency + ' 1,000,000.00');
-                $(this).text('Hide Balance');
-            } else {
-                balanceElement.text(hideBalanceSymbol);
-                $(this).text('Show Balance');
-            }
-        });
-        $('.select2').select2({
-            theme: 'bootstrap-5',
-            allowClear: false
-        });
-        $('.js-check-saved-beneficiaries').on('click', function () {
-
-
-            let parent = $(this).parent().parent();
-            console.log(parent);
-            // find sibling with class js-select-beneficiary
-            let selectBeneficiary = parent.siblings('div.js-select-beneficiary');
-            console.log(selectBeneficiary);
-            let searchBeneficiary = parent.siblings('div.js-search-beneficiary');
-
-            if ($(this).prop('checked')) {
-                console.log(true)
-                selectBeneficiary.slideDown();
-                searchBeneficiary.slideUp()
-            } else {
-                console.log(false)
-                selectBeneficiary.slideUp()
-                searchBeneficiary.slideDown();
-            }
-
-        });
-
-
-        jQuery.validator.addMethod("alphanumeric", function (value, element) {
-            // return this.optional(element) || /^[a-zA-Z0-9\s]+$/.test(value);
-            // allow only letters, numbers,  whitespace
-            return /^[a-zA-Z0-9\s']+$/.test(value) || this.optional(element);
-        }, "Letters and numbers  only please");
-        let $rraPayment = $('#rraPaymentForm');
-        $rraPayment.validate({
-            rules: {
-                reason: {
-                    alphanumeric: true
+            });
+            $('.js-toggle-balance').on('click', function () {
+                let currency = $ownFromAccount.val();
+                let balanceElement = $(this).siblings('div').find('.js-balance');
+                if (balanceElement.text() === hideBalanceSymbol) {
+                    balanceElement.text(currency + ' 1,000,000.00');
+                    $(this).text('Hide Balance');
+                } else {
+                    balanceElement.text(hideBalanceSymbol);
+                    $(this).text('Show Balance');
                 }
-            }
-        });
-        let $iremboPayment= $('#iremboPaymentForm');
-        $iremboPayment.validate({
-            rules: {
-                reason: {
-                    alphanumeric: true
+            });
+            $('.select2').select2({
+                theme: 'bootstrap-5',
+                allowClear: false
+            });
+            $('.js-check-saved-beneficiaries').on('click', function () {
+
+
+                let parent = $(this).parent().parent();
+                console.log(parent);
+                // find sibling with class js-select-beneficiary
+                let selectBeneficiary = parent.siblings('div.js-select-beneficiary');
+                console.log(selectBeneficiary);
+                let searchBeneficiary = parent.siblings('div.js-search-beneficiary');
+
+                if ($(this).prop('checked')) {
+                    console.log(true)
+                    selectBeneficiary.slideDown();
+                    searchBeneficiary.slideUp()
+                } else {
+                    console.log(false)
+                    selectBeneficiary.slideUp()
+                    searchBeneficiary.slideDown();
                 }
-            }
-        });
 
-        let $airtimePaymentForm = $('#airtimePaymentForm');
+            });
 
-        $airtimePaymentForm.validate({
-            ignore: ".ignore",
-            rules: {
-                reason: {
-                    alphanumeric: true
+
+            jQuery.validator.addMethod("alphanumeric", function (value, element) {
+                // return this.optional(element) || /^[a-zA-Z0-9\s]+$/.test(value);
+                // allow only letters, numbers,  whitespace
+                return /^[a-zA-Z0-9\s']+$/.test(value) || this.optional(element);
+            }, "Letters and numbers  only please");
+            let $rraPayment = $('#rraPaymentForm');
+            $rraPayment.validate({
+                rules: {
+                    reason: {
+                        alphanumeric: true
+                    }
                 }
-            }
-        });
-        let $utilityPaymentForm = $('#utilityPaymentForm');
-        $utilityPaymentForm.validate();
-        $utilityPaymentForm.on('submit', function (e) {
-            e.preventDefault();
-            if ($utilityPaymentForm.valid()) {
-                $('#exampleModal').modal('show');
-            }
-        });
-
-
-        $rraPayment.on('submit', function (e) {
-            e.preventDefault();
-            if ($rraPayment.valid()) {
-                e.target.submit();
-            }
-        });
-        $iremboPayment.on('submit', function (e) {
-            e.preventDefault();
-            if ($rraPayment.valid()) {
-                e.target.submit();
-            }
-        });
-
-
-        $airtimePaymentForm.on('submit', function (e) {
-            e.preventDefault();
-            if ($airtimePaymentForm.valid()) {
-                e.target.submit();
-            }
-        });
-        let $mobileMoneyPaymentForm = $('#mobileMoneyPaymentForm');
-        $mobileMoneyPaymentForm.validate({
-            ignore: ".ignore",
-        });
-        $mobileMoneyPaymentForm.on('submit', function (e) {
-            e.preventDefault();
-            if ($mobileMoneyPaymentForm.valid()) {
-                e.target.submit();
-            }
-        });
-
-        $('.one-digit').on('keyup', function () {
-            if ($(this).val().length === 1) {
-                setTimeout(() => {
-                    $(this).next('.one-digit').focus();
-                }, 100);
-            }
-        });
-
-
-        $('.submitTransferForm').on('submit', function (e) {
-            e.preventDefault();
-            // find modal parent of this form
-            let modal = $(this).closest('.modal');
-            // hide modal
-            modal.modal('hide');
-            $('#otpModal').modal('show');
-
-            let $minutesRemain = $('#minutesRemain');
-            let minutes = Number($minutesRemain.text());
-            let seconds = 0;
-            let interval = setInterval(function () {
-                if (seconds === 0) {
-                    minutes--;
-                    seconds = 60;
+            });
+            let $iremboPayment= $('#iremboPaymentForm');
+            $iremboPayment.validate({
+                rules: {
+                    reason: {
+                        alphanumeric: true
+                    }
                 }
-                seconds--;
-                $minutesRemain.text(minutes);
-                $('#secondsRemain').text(seconds);
-                if (minutes === 0 && seconds === 0) {
-                    clearInterval(interval);
+            });
+
+            let $airtimePaymentForm = $('#airtimePaymentForm');
+
+            $airtimePaymentForm.validate({
+                ignore: ".ignore",
+                rules: {
+                    reason: {
+                        alphanumeric: true
+                    }
                 }
-            }, 1000);
-        });
+            });
+            let $utilityPaymentForm = $('#utilityPaymentForm');
+            $utilityPaymentForm.validate();
+            $utilityPaymentForm.on('submit', function (e) {
+                e.preventDefault();
+                if ($utilityPaymentForm.valid()) {
+                    $('#exampleModal').modal('show');
+                }
+            });
+
+
+            $rraPayment.on('submit', function (e) {
+                e.preventDefault();
+                if ($rraPayment.valid()) {
+                    $('#otpModal').modal('show');
+                }
+            });
+            $iremboPayment.on('submit', function (e) {
+                e.preventDefault();
+                if ($rraPayment.valid()) {
+                    e.target.submit();
+                }
+            });
+
+
+            $airtimePaymentForm.on('submit', function (e) {
+                e.preventDefault();
+                if ($airtimePaymentForm.valid()) {
+                    e.target.submit();
+                }
+            });
+            let $mobileMoneyPaymentForm = $('#mobileMoneyPaymentForm');
+            $mobileMoneyPaymentForm.validate({
+                ignore: ".ignore",
+            });
+            $mobileMoneyPaymentForm.on('submit', function (e) {
+                e.preventDefault();
+                if ($mobileMoneyPaymentForm.valid()) {
+                    e.target.submit();
+                }
+            });
+
+            $('.one-digit').on('keyup', function () {
+                if ($(this).val().length === 1) {
+                    setTimeout(() => {
+                        $(this).next('.one-digit').focus();
+                    }, 100);
+                }
+            });
+
+
+            $('#rraPaymentForm').on('submit', function (e) {
+                e.preventDefault();
+                // find modal parent of this form
+                let modal = $(this).closest('.modal');
+                // hide modal
+                modal.modal('hide');
+                $('#otpModal').modal('show');
+
+                let $minutesRemain = $('#minutesRemain');
+                let minutes = Number($minutesRemain.text());
+                let seconds = 0;
+                let interval = setInterval(function () {
+                    if (seconds === 0) {
+                        minutes--;
+                        seconds = 60;
+                    }
+                    seconds--;
+                    $minutesRemain.text(minutes);
+                    $('#secondsRemain').text(seconds);
+                    if (minutes === 0 && seconds === 0) {
+                        clearInterval(interval);
+                    }
+                }, 1000);
+            });
 
 
 
-        $('.js-check-saved-beneficiaries').on('click', function () {
+            $('.js-check-saved-beneficiaries').on('click', function () {
 
-            if ($(this).prop('checked')) {
-                $('.js-non-beneficiaries').addClass('hide');
-                $('.js-beneficiary').removeClass('hide');
-            } else {
-                $('.js-non-beneficiaries').removeClass('hide');
-                $('.js-beneficiary').addClass('hide');
-            }
-        });
-
-
-        $('.js-payment-schedule').on('change', function () {
-            let scheduleContainer = $(this).parent().siblings('.js-schedule-container');
-
-            if ($(this).prop('checked')) {
-                scheduleContainer.slideDown();
-            } else {
-                scheduleContainer.slideUp();
-            }
-        });
-
-        $('.js-verify').on('click', function () {
-            let ref_number = $('#ref_number').val();
-            //clear input field
-            $('#ref_number').val('');
-            if (!ref_number) {
-                return;
-            }
+                if ($(this).prop('checked')) {
+                    $('.js-non-beneficiaries').addClass('hide');
+                    $('.js-beneficiary').removeClass('hide');
+                } else {
+                    $('.js-non-beneficiaries').removeClass('hide');
+                    $('.js-beneficiary').addClass('hide');
+                }
+            });
 
 
-            let loadBeneficiaries = function () {
-                let beneficiariesInput = $('.js-transfer-to');
+            $('.js-payment-schedule').on('change', function () {
+                let scheduleContainer = $(this).parent().siblings('.js-schedule-container');
 
-                currencies.forEach(function (currency, index) {
-                    beneficiariesInput.append(`<option value="${currency.abbr}">${currency.abbr}-4590-7838-7989-7890-name${index + 1}</option>`);
-                });
-                beneficiariesInput.trigger('change');
-            }
+                if ($(this).prop('checked')) {
+                    scheduleContainer.slideDown();
+                } else {
+                    scheduleContainer.slideUp();
+                }
+            });
 
-            loadBeneficiaries();
+            $('.js-verify').on('click', function () {
+                let ref_number = $('#ref_number').val();
+                //clear input field
+                $('#ref_number').val('');
+                if (!ref_number) {
+                    return;
+                }
 
-            //simulate ajax call
-            let btn = $(this);
-            // add spinner to button
-            let s = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+
+                let loadBeneficiaries = function () {
+                    let beneficiariesInput = $('.js-transfer-to');
+
+                    currencies.forEach(function (currency, index) {
+                        beneficiariesInput.append(`<option value="${currency.abbr}">${currency.abbr}-4590-7838-7989-7890-name${index + 1}</option>`);
+                    });
+                    beneficiariesInput.trigger('change');
+                }
+
+                loadBeneficiaries();
+
+                //simulate ajax call
+                let btn = $(this);
+                // add spinner to button
+                let s = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
             <span class="visually-hidden">Loading...</span>`;
-            btn.append(s)
-                .prop('disabled', true);
-            setTimeout(function () {
-                let $jsReferenceFound = $('.js-account-found');
-                $jsReferenceFound.slideDown();
-                // find table inside the reference found div
-                let $table = $jsReferenceFound.find('table');
-                // find the tbody of the table
-                let $tbody = $table.find('tbody');
+                btn.append(s)
+                    .prop('disabled', true);
+                setTimeout(function () {
+                    let $jsReferenceFound = $('.js-account-found');
+                    $jsReferenceFound.slideDown();
+                    // find table inside the reference found div
+                    let $table = $jsReferenceFound.find('table');
+                    // find the tbody of the table
+                    let $tbody = $table.find('tbody');
 
-                // split the reference number by comma
-                // loop through the reference numbers and append to the table body as a row
+                    // split the reference number by comma
+                    // loop through the reference numbers and append to the table body as a row
 
-                // create a row
-                let $tr = $('<tr></tr>');
-                //create a checkbox column
-                let checkbox = `<td><input type="checkbox" class="form-check-input rounded-0" checked></td>`;
-                // create a cell for the reference number
-                let $tdRefNumber = $(`<td>${ref_number}</td>`);
-                // create a cell for the amount
-                // generate a random amount between 1000 and 100000
-                let amount = Math.floor(Math.random() * 100000) + 1000;
-                let $tdAmount = $(`<td class="fs-13px js-amount-tobe-paid">${amount.toLocaleString("en-US")}</td>`);
-                // create a cell for amount to be edited
-                let $tdAmountToEdit = $(`<td class="w-150px"><input type="text" required class="form-control form-control-sm" value=""></td>`);
-                // create a cell for tax type as read only span
-                let taxType = Math.random() < 0.5 ? 'VAT' : 'WHT';
-                let $tdTaxType = $(`<td class="fs-13px"><span class="">${taxType}</span></td>`);
-                // create a cell for company name as read only span
-                // generate random company from companies array
-                let company = companies[Math.floor(Math.random() * companies.length)];
-                let $tdCompanyName = $(`<td class="fs-13px"><span class="">${company}</span></td>`);
-                // append the cells to the row
-                $tr.append(checkbox, $tdRefNumber, $tdAmount, $tdAmountToEdit, $tdTaxType, $tdCompanyName);
-                // append the row to the table body
-                $tbody.append($tr);
+                    // create a row
+                    let $tr = $('<tr></tr>');
+                    //create a checkbox column
+                    let checkbox = `<td><input type="checkbox" class="form-check-input rounded-0" checked></td>`;
+                    // create a cell for the reference number
+                    let $tdRefNumber = $(`<td>${ref_number}</td>`);
+                    // create a cell for the amount
+                    // generate a random amount between 1000 and 100000
+                    let amount = Math.floor(Math.random() * 100000) + 1000;
+                    let $tdAmount = $(`<td class="fs-13px js-amount-tobe-paid">${amount.toLocaleString("en-US")}</td>`);
+                    // create a cell for amount to be edited
+                    let $tdAmountToEdit = $(`<td class="w-150px"><input type="text" required class="form-control form-control-sm" value=""></td>`);
+                    // create a cell for tax type as read only span
+                    let taxType = Math.random() < 0.5 ? 'VAT' : 'WHT';
+                    let $tdTaxType = $(`<td class="fs-13px"><span class="">${taxType}</span></td>`);
+                    // create a cell for company name as read only span
+                    // generate random company from companies array
+                    let company = companies[Math.floor(Math.random() * companies.length)];
+                    let $tdCompanyName = $(`<td class="fs-13px"><span class="">${company}</span></td>`);
+                    // append the cells to the row
+                    $tr.append(checkbox, $tdRefNumber, $tdAmount, $tdAmountToEdit, $tdTaxType, $tdCompanyName);
+                    // append the row to the table body
+                    $tbody.append($tr);
 
-                // find .js-amount-tobe-paid
-                let amountToBePaidInputs = document.querySelectorAll('.js-amount-tobe-paid');
-                let totalAmount = 0;
-                console.log(amountToBePaidInputs);
-                amountToBePaidInputs.forEach((element, index) => {
-                    let amountWithComma = $(element).text();
-                    // remove commas from amountWithComma
-                    totalAmount += Number(amountWithComma.replace(",", ""))
-                });
-                let amountFormatted = totalAmount.toLocaleString("en-US");
-                $('#totalTaxToBePaid').text(amountFormatted);
-                $('#taxToPay').text(amountFormatted);
+                    // find .js-amount-tobe-paid
+                    let amountToBePaidInputs = document.querySelectorAll('.js-amount-tobe-paid');
+                    let totalAmount = 0;
+                    console.log(amountToBePaidInputs);
+                    amountToBePaidInputs.forEach((element, index) => {
+                        let amountWithComma = $(element).text();
+                        // remove commas from amountWithComma
+                        totalAmount += Number(amountWithComma.replace(",", ""))
+                    });
+                    let amountFormatted = totalAmount.toLocaleString("en-US");
+                    $('#totalTaxToBePaid').text(amountFormatted);
+                    $('#taxToPay').text(amountFormatted);
 
-                btn.prop('disabled', false).find('.spinner-border')
-                    .remove();
-            }, 2000);
-        });
-        $('.js-verify-2').on('click', function () {
+                    btn.prop('disabled', false).find('.spinner-border')
+                        .remove();
+                }, 2000);
+            });
+            $('.js-verify-2').on('click', function () {
 
-            let refs_number = $('#reference_number').val();
-            //make sure the input field is not empty
-            $('#reference_number').val('');
-            $('#refs_number').val('');
-            if (!refs_number) {
-                return;
-            }
+                let refs_number = $('#reference_number').val();
+                //make sure the input field is not empty
+                $('#reference_number').val('');
+                $('#refs_number').val('');
+                if (!refs_number) {
+                    return;
+                }
 
 //clear input field
-            $('#refs_number').val('');
-            let loadBeneficiaries = function () {
-                let beneficiariesInput = $('.js-transfer-to');
+                $('#refs_number').val('');
+                let loadBeneficiaries = function () {
+                    let beneficiariesInput = $('.js-transfer-to');
 
-                currencies.forEach(function (currency, index) {
-                    beneficiariesInput.append(`<option value="${currency.abbr}">${currency.abbr}-4590-7838-7989-7890-name${index + 1}</option>`);
-                });
-                beneficiariesInput.trigger('change');
-            }
+                    currencies.forEach(function (currency, index) {
+                        beneficiariesInput.append(`<option value="${currency.abbr}">${currency.abbr}-4590-7838-7989-7890-name${index + 1}</option>`);
+                    });
+                    beneficiariesInput.trigger('change');
+                }
 
-            loadBeneficiaries();
+                loadBeneficiaries();
 
-            //simulate ajax call
-            let btn = $(this);
-            // add spinner to button
-            let s = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                //simulate ajax call
+                let btn = $(this);
+                // add spinner to button
+                let s = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
             <span class="visually-hidden">Loading...</span>`;
-            btn.append(s)
-                .prop('disabled', true);
-            setTimeout(function () {
-                let $jsReferenceFound = $('.js-account-found-2');
-                $jsReferenceFound.slideDown();
-                // find table inside the reference found div
-                let $table = $jsReferenceFound.find('table');
-                // find the tbody of the table
-                let $tbody = $table.find('tbody');
+                btn.append(s)
+                    .prop('disabled', true);
+                setTimeout(function () {
+                    let $jsReferenceFound = $('.js-account-found-2');
+                    $jsReferenceFound.slideDown();
+                    // find table inside the reference found div
+                    let $table = $jsReferenceFound.find('table');
+                    // find the tbody of the table
+                    let $tbody = $table.find('tbody');
 
-                // split the reference number by comma
-                // loop through the reference numbers and append to the table body as a row
+                    // split the reference number by comma
+                    // loop through the reference numbers and append to the table body as a row
 
-                // create a row
-                let $tr = $('<tr></tr>');
-                //create a checkbox column
-                let checkbox = `<td><input type="checkbox" class="form-check-input rounded-0" checked></td>`;
-                // create a cell for the reference number
-                let $tdRefNumber = $(`<td>${refs_number}</td>`);
-                // create a cell for the amount
-                // generate a random amount between 1000 and 100000
-                let amount = Math.floor(Math.random() * 100000) + 1000;
-                let $tdAmount = $(`<td class="fs-13px js-amount-tobe-paid">${amount.toLocaleString("en-US")}</td>`);
-                //generate random currency from currencies array
-
-
-                // create a cell for company name as read only span
-                // generate random company from companies array
-                let company = companies[Math.floor(Math.random() * companies.length)];
-                let $tdCompanyName = $(`<td class="fs-13px"><span class="">${company}</span></td>`);
-                //generate random currency from currencies array
-                let currency = currencies[Math.floor(Math.random() * currencies.length)];
-                let $tdCurrency = $(`<td class="fs-13px"><span class="">${currency.abbr}</span></td>`);
+                    // create a row
+                    let $tr = $('<tr></tr>');
+                    //create a checkbox column
+                    let checkbox = `<td><input type="checkbox" class="form-check-input rounded-0" checked></td>`;
+                    // create a cell for the reference number
+                    let $tdRefNumber = $(`<td>${refs_number}</td>`);
+                    // create a cell for the amount
+                    // generate a random amount between 1000 and 100000
+                    let amount = Math.floor(Math.random() * 100000) + 1000;
+                    let $tdAmount = $(`<td class="fs-13px js-amount-tobe-paid">${amount.toLocaleString("en-US")}</td>`);
+                    //generate random currency from currencies array
 
 
-                // append the cells to the row
-                $tr.append(checkbox, $tdRefNumber, $tdAmount, $tdCurrency,$tdCompanyName);
-                // append the row to the table body
-                $tbody.append($tr);
-
-                // find .js-amount-tobe-paid
-                let amountToBePaidInputs = document.querySelectorAll('.js-amount-tobe-paid');
-                let totalAmount = 0;
-                console.log(amountToBePaidInputs);
-                amountToBePaidInputs.forEach((element, index) => {
-                    let amountWithComma = $(element).text();
-                    // remove commas from amountWithComma
-                    totalAmount += Number(amountWithComma.replace(",", ""))
-                });
-                let amountFormatted = totalAmount.toLocaleString("en-US");
-                $('#totalAmoun_ToBePaid').text(amountFormatted);
-
-                btn.prop('disabled', false).find('.spinner-border')
-                    .remove();
-                //clear input field
-
-            }, 2000);
-
-        });
+                    // create a cell for company name as read only span
+                    // generate random company from companies array
+                    let company = companies[Math.floor(Math.random() * companies.length)];
+                    let $tdCompanyName = $(`<td class="fs-13px"><span class="">${company}</span></td>`);
+                    //generate random currency from currencies array
+                    let currency = currencies[Math.floor(Math.random() * currencies.length)];
+                    let $tdCurrency = $(`<td class="fs-13px"><span class="">${currency.abbr}</span></td>`);
 
 
-        jsCurrency.on('change', function () {
-            currency = $(this).val();
-            toggleConversion();
-        });
-        ownAmount.on('change', function () {
-            amount = $(this).val();
-            toggleConversion();
-        });
+                    // append the cells to the row
+                    $tr.append(checkbox, $tdRefNumber, $tdAmount, $tdCurrency,$tdCompanyName);
+                    // append the row to the table body
+                    $tbody.append($tr);
 
-    });
+                    // find .js-amount-tobe-paid
+                    let amountToBePaidInputs = document.querySelectorAll('.js-amount-tobe-paid');
+                    let totalAmount = 0;
+                    console.log(amountToBePaidInputs);
+                    amountToBePaidInputs.forEach((element, index) => {
+                        let amountWithComma = $(element).text();
+                        // remove commas from amountWithComma
+                        totalAmount += Number(amountWithComma.replace(",", ""))
+                    });
+                    let amountFormatted = totalAmount.toLocaleString("en-US");
+                    $('#totalAmoun_ToBePaid').text(amountFormatted);
+
+                    btn.prop('disabled', false).find('.spinner-border')
+                        .remove();
+                    //clear input field
+
+                }, 2000);
+
+            });
+
+
+            jsCurrency.on('change', function () {
+                currency = $(this).val();
+                toggleConversion();
+            });
+            ownAmount.on('change', function () {
+                amount = $(this).val();
+                toggleConversion();
+            });
+
+        });    });
+
 </script>
 
 </body>
