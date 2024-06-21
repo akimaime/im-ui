@@ -130,13 +130,7 @@ let buildChart = function () {
     });
 };
 
-window.addEventListener("resize", function () {
-    if (window.innerWidth > 992) {
-        sidebar.classList.remove("close");
-    } else {
-        sidebar.classList.add("close");
-    }
-});
+
 
 (function () {
     initSideBar();
@@ -153,7 +147,6 @@ window.addEventListener("resize", function () {
     // find an element with  href value equal to last part of url after the slash and add active class to it
     const url = window.location.href;
     const activePage = url.substring(url.lastIndexOf('/') + 1);
-    console.log(activePage);
     const sidebarLinks = document.querySelectorAll('.sidebar-link');
     sidebarLinks.forEach(link => {
             if (link.getAttribute('href') === activePage) {
