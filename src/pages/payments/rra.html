@@ -387,7 +387,7 @@
                          style="height: 84px;width: 84px">
                         <i class="text-white bi bi-arrow-counterclockwise tw-object-cover display-2">
                         </i>
-                        <span id="secondsRemain" class="position-absolute text-white tw-top-2 tw-right-2"></span>
+                        <span id="secondsRemain" class="position-absolute text-white tw-top-2 tw-right-2">65</span>
                     </div>
                 </div>
                 <span class="text-dark  display-5 fw-bold ">
@@ -398,7 +398,7 @@
                 </span>
 
             </div>
-            <form action="../../index.html">
+            <form action="">
                 <div class="modal-body py-0 px-lg-5">
 
 
@@ -432,7 +432,7 @@
 
                 </div>
                 <div class="modal-footer border-top-0 px-lg-5 py-4 justify-content-between">
-                    <button type="submit" class="btn btn-success w-100 px-5 py-2 text-white fw-semibold  ">
+                    <button type="button" class="btn btn-success w-100 px-5 js-confirm py-2 text-white fw-semibold  ">
                         Confirm
                     </button>
                 </div>
@@ -784,6 +784,15 @@
                         $(this).next('.one-digit').focus();
                     }, 100);
                 }
+            });
+            $('.js-confirm').on('click', function () {
+                Swal.fire({
+                    text: "Pay is made successfully!",
+                    icon: 'success',
+                }).then(
+                    function () {
+                        window.location.href = '../../index.html';
+                    });
             });
 
 
