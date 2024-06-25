@@ -10,14 +10,15 @@
 <div class="d-flex min-vh-100 justify-content-between flex-column">
     <div class="bg-color-height mb-4">
         <div class="container">
-            <div class="d-flex justify-content-between py-4">
-                <div class="d-flex flex-column">
-                    <img src="../assets/logo.png" alt="logo">
-                    <span class="text-white px-4 fs-4">Retail</span>
-
+            <div class="d-flex justify-content-between align-items-start py-4">
+                <div>
+                    <div class="d-flex col-lg-2 p-2 flex-column bg-white  rounded-1">
+                        <img src="../assets/b_logo.png" class="img-fluid" alt="logo">
+                    </div>
+                    <span class="text-white  fw-bold fs-2">Retail</span>
                 </div>
-                <div class="d-flex align-items-center gap-2">
-                    <h5 class="text-white ">Welcome back,Jon Doe</h5>
+                <div class="d-flex col-lg-3 align-items-center justify-content-end gap-2">
+                    <h5 class="text-white ">Welcome ,Jon Doe</h5>
                     <div class="d-flex rounded-circle bg-dark bg-opacity-50 p-4 justify-content-center align-items-center"
                          style="height: 16px;width: 16px">
                         <i class="bi bi-person fs-5 text-white"></i>
@@ -25,38 +26,46 @@
                 </div>
             </div>
             <nav class="mb-4 navbar navbar-expand-lg">
-                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="navbar-toggler-icon text-white"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="corporate-dashboard.html"
+                            <a class="nav-link " href="/"
                                type="button" role="tab" aria-controls="pills-home"
                                aria-selected="true">
                                 Dashboard
                             </a>
                         </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="../pages/corporate-dashboard.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">Corporate Dashboard
+                            </a>
+                        </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Transfers
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="corporate-dashboard.html">Own Account Transfer</a>
-                                </li>
-                                <li><a class="dropdown-item" href="../index.html">Internal Transfer</a></li>
-                                <li><a class="dropdown-item" href="../index.html">External Transfer</a></li>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/transfers/own-account.html">Transfer to your own Accounts </a></li>
+                                <li><a class="dropdown-item" href="../pages/transfers/internal.html">Transfer from I&M to I&M </a></li>
+                                <li><a class="dropdown-item" href="../pages/transfers/local-bank.html">Transfer to Local Banks </a></li>
+                                <li><a class="dropdown-item" href="../pages/transfers/international.html">Transfer to International </a></li>
                             </ul>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="BillPayments" data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-                                BillPayments
-                            </button>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Payments
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/payments/rra.html">RRA Payment </a></li>
+                                <li><a class="dropdown-item" href="../pages/payments/irembo.html">Irembo Payment </a></li>
+                                <li><a class="dropdown-item" href="../pages/payments/airtime.html">Airtime Top Up</a></li>
+                                <li><a class="dropdown-item" href="../pages/transfers/local-bank.html">Mobile Money Payment </a></li>
+                                <li><a class="dropdown-item" href="../pages/payments/utilities.html">Utilities Payment </a></li>
+                            </ul>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="Cards" data-bs-toggle="pill" data-bs-target="#pills-contact"
@@ -70,11 +79,11 @@
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="Beneficiaries" data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                            <a class="nav-link active" href="beneficiaries.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
                                 Beneficiaries
-                            </button>
+                            </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="Mails" data-bs-toggle="pill" data-bs-target="#pills-contact"
@@ -101,15 +110,19 @@
                                             </button>
                                             <button class="nav-link text-start px-2 mb-5 " id="nav-external-tab"
                                                     data-bs-toggle="tab" data-bs-target="#nav-external" type="button"
-                                                    role="tab" aria-controls="nav-external" aria-selected="true">Local banks
+                                                    role="tab" aria-controls="nav-external" aria-selected="true">Local
+                                                banks
 
                                             </button>
                                             <button class="nav-link text-start px-2 mb-5 " id="nav-international-tab"
-                                                    data-bs-toggle="tab" data-bs-target="#nav-international" type="button"
-                                                    role="tab" aria-controls="nav-international" aria-selected="true">International banks
+                                                    data-bs-toggle="tab" data-bs-target="#nav-international"
+                                                    type="button"
+                                                    role="tab" aria-controls="nav-international" aria-selected="true">
+                                                International banks
 
                                             </button>
-                                            <button class="nav-link text-start px-2  mb-5" id="nav-profile-tab" data-bs-toggle="tab"
+                                            <button class="nav-link text-start px-2  mb-5" id="nav-profile-tab"
+                                                    data-bs-toggle="tab"
                                                     data-bs-target="#nav-profile" type="button" role="tab"
                                                     aria-controls="nav-profile" aria-selected="false">Utilities
 
@@ -123,7 +136,12 @@
                                              aria-labelledby="nav-home-tab" tabindex="0">
                                             <div class="d-flex justify-content-between">
                                                 <h5 class="mx-3">I&M to I&M Transfer Beneficiaries</h5>
-                                                <button class="btn btn-info text-white rounded-pill px-4 py-1"><i class="bi bi-plus-circle me-2"></i>Add Beneficiary</button>
+                                                <form action="" id="addImForm">
+                                                    <button type="submit"
+                                                            class="btn btn-info text-white rounded-pill px-4 py-1">
+                                                        <i class="bi bi-plus-circle me-2"></i>Add Beneficiary
+                                                    </button>
+                                                </form>
                                             </div>
                                             <div class="container-fluid ">
                                                 <div class="table-responsive">
@@ -282,11 +300,13 @@
                                                             <li class="page-item disabled">
                                                                 <a class="page-link">Previous</a>
                                                             </li>
-                                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a>
+                                                            </li>
                                                             <li class="page-item active" aria-current="page">
                                                                 <a class="page-link" href="#">2</a>
                                                             </li>
-                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">3</a>
+                                                            </li>
                                                             <li class="page-item">
                                                                 <a class="page-link" href="#">Next</a>
                                                             </li>
@@ -299,11 +319,15 @@
                                              aria-labelledby="nav-external-tab" tabindex="0">
                                             <div class="d-flex justify-content-between">
                                                 <h5 class="mx-3">Local banks Transfer Beneficiaries</h5>
-                                                <button class="btn btn-info text-white rounded-pill px-4 py-1"><i class="bi bi-plus-circle me-2"></i>Add Beneficiary</button>
+                                                <form action="" id="addLocalForm">
+                                                <button class="btn btn-info text-white rounded-pill px-4 py-1"><i
+                                                        class="bi bi-plus-circle me-2"></i>Add Beneficiary
+                                                </button>
+                                                </form>
                                             </div>
                                             <div class="container-fluid ">
                                                 <div class="table-responsive">
-                                                    <table class="table my-2 table-accounts  ">
+                                                    <table class="table my-2 table-accounts">
                                                         <thead>
                                                         <tr class="">
                                                             <th class="text-info text-sm border-0  border-3 border-bottom  border-info cursor-pointer">
@@ -472,11 +496,13 @@
                                                             <li class="page-item disabled">
                                                                 <a class="page-link">Previous</a>
                                                             </li>
-                                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a>
+                                                            </li>
                                                             <li class="page-item active" aria-current="page">
                                                                 <a class="page-link" href="#">2</a>
                                                             </li>
-                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">3</a>
+                                                            </li>
                                                             <li class="page-item">
                                                                 <a class="page-link" href="#">Next</a>
                                                             </li>
@@ -489,7 +515,11 @@
                                              aria-labelledby="nav-profile-tab" tabindex="0">
                                             <div class="d-flex justify-content-between">
                                                 <h5 class="mx-3">International banks Transfer Beneficiaries</h5>
-                                                <button class="btn btn-info text-white rounded-pill px-4 py-1"><i class="bi bi-plus-circle me-2"></i>Add Beneficiary</button>
+                                                <form action="" id="addInternationalForm">
+                                                <button class="btn btn-info text-white rounded-pill px-4 py-1"><i
+                                                        class="bi bi-plus-circle me-2"></i>Add Beneficiary
+                                                </button>
+                                                </form>
                                             </div>
                                             <div class="container-fluid ">
                                                 <div class="table-responsive">
@@ -676,11 +706,13 @@
                                                             <li class="page-item disabled">
                                                                 <a class="page-link">Previous</a>
                                                             </li>
-                                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a>
+                                                            </li>
                                                             <li class="page-item active" aria-current="page">
                                                                 <a class="page-link" href="#">2</a>
                                                             </li>
-                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">3</a>
+                                                            </li>
                                                             <li class="page-item">
                                                                 <a class="page-link" href="#">Next</a>
                                                             </li>
@@ -704,7 +736,8 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-6 quick-actions border-bottom border-end">
-                                    <a href="#" class="mb-1 py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                                    <a href="#"
+                                       class="mb-1 py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
                                         <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
                                              style="height: 54px;width: 54px">
                                             <img src="../assets/images/login/RRA.svg" class="h-75" alt="rra">
@@ -714,7 +747,8 @@
                                     </a>
                                 </div>
                                 <div class="col-6 quick-actions border-bottom">
-                                    <a href="#" class=" mb-1 py-1 text-decoration-none d-flex justify-content-center align-items-center flex-column">
+                                    <a href="#"
+                                       class=" mb-1 py-1 text-decoration-none d-flex justify-content-center align-items-center flex-column">
                                         <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
                                              style="height: 54px;width: 54px">
                                             <img src="../assets/images/dashboard/irembo.svg" class="h-75" alt="rra">
@@ -726,7 +760,8 @@
                             </div>
                             <div class="row mb-4">
                                 <div class="col-6 py-2 quick-actions  border-end">
-                                    <a href="#" class=" py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                                    <a href="#"
+                                       class=" py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
                                         <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
                                              style="height: 54px;width: 54px">
                                             <i class="bi bi-meta"></i>
@@ -736,7 +771,8 @@
                                     </a>
                                 </div>
                                 <div class="col-6 quick-actions py-2 ">
-                                    <a href="#" class="d-flex py-1 text-decoration-none justify-content-center align-items-center flex-column">
+                                    <a href="#"
+                                       class="d-flex py-1 text-decoration-none justify-content-center align-items-center flex-column">
                                         <div class="bg-white-subtle   d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
                                              style="height: 54px;width: 54px;">
                                             <i class="bi bi-droplet"></i>
@@ -790,7 +826,620 @@
         </div>
     </footer>
 </div>
+<div class="modal w-100 fade" id="addIM" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content px-4 rounded-4">
+            <div class="modal-header justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
+                <h1 class="modal-title fs-4 text-info fw-semibold mb-0">
+                    Add Beneficiary
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" class="" id="Imform">
+                <div class="js-parent">
+                    <div class="form-group mb-2">
+                        <label for="Acc_Number">Account Number</label>
+                        <div
+                                class="rounded-default   pe-1 mb-3 py-2 bg-secondary border-0 bg-opacity-10    border d-flex align-items-center ">
+
+                            <input type="text"
+                                   class="form-control bg-transparent border-0 shadow-none"
+                                   id="Acc_number" placeholder="Enter Account" required
+                                   name="biller_number"/>
+                            <button type="button"
+                                    class="btn btn-info text-white btn-sm  py-2 px-3 js-check-balance">
+                                Verify
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="beneficiaryName">Beneficiary Name</label>
+                        <input type="text" class="form-control py-3 bg-secondary border-0 bg-opacity-10 js-owner mb-3" id="BeneficiaryName" readonly name="owner"
+                               placeholder="Enter Beneficiary Name">
+
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control py-3 bg-secondary border-0 bg-opacity-10" id="email" placeholder="Enter Beneficiary Email">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div
+                                    class="mb-3 d-flex gap-2 align-items-center  justify-content-end">
+                                <button type="reset"
+                                        class="btn btn-outline-primary px-3 close  ">
+                                    Clear
+                                </button>
+                                <button type="submit"
+                                        class="btn  btn-info text-white px-3 ">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+<!-- end of add I&M beneficial modal-->
+<!--star of add local transfer beneficial modal-->
+<div class="modal w-100 fade" id="addLocal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content px-4 rounded-4">
+            <div class="modal-header justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
+                <h1 class="modal-title fs-4 text-info fw-semibold mb-0">
+                    Add Beneficiary
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+            <form action="" class="" id="localForm">
+
+
+                <div class="row mb-4 js-parent">
+                    <div class="col-lg-12">
+                        <div class="form-group mb-2">
+                            <label for="LocalbankName">Bank Name</label>
+                            <input type="text" class="form-control py-3 bg-secondary border-0 bg-opacity-10 mb-4" id="LocalbankName"
+                                   placeholder="Enter Bank Name">
+                            <label for="biller_Number">Account Number</label>
+                            <div
+                                    class="rounded-default py-2 rounded bg-secondary border-0 bg-opacity-10   pe-1 mb-3    border d-flex align-items-center ">
+
+                                <input type="text"
+                                       class="form-control bg-transparent border-0 shadow-none"
+                                       id="biller_number" placeholder="Enter Account Number" required
+                                       name="biller_number"/>
+                                <button type="button"
+                                        class="btn btn-info text-white btn-sm py-2   px-3 js-check-balance">
+                                    Verify
+                                </button>
+                            </div>
+
+
+                        </div>
+                        <div class="form-group mb-2">
+
+                            <label for="beneficiaryName">Beneficiary Name</label>
+                            <input type="text" class="form-control py-3 bg-secondary border-0 bg-opacity-10 js-owner mb-3" id="localBeneficiaryName" readonly
+                                   name="owner" placeholder="Enter Beneficiary Name">
+
+
+                            <label for="localEmail">Email</label>
+                            <input type="text" class="form-control py-3 bg-secondary border-0 bg-opacity-10 mb-4" id="localEmail" placeholder="Enter Email">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div
+                                    class="mb-3 d-flex gap-2 align-items-center  justify-content-end">
+
+                                <button type="reset"
+                                        class="btn btn-outline-primary px-3 close  ">
+                                    Clear
+                                </button>
+                                <button type="submit"
+                                        class="btn  btn-info text-white px-3 ">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<!--end of add local transfer beneficial modal-->
+<!--star of add international transfer beneficial modal-->
+<div class="modal w-100 fade" id="addInternational" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content px-4 rounded-4">
+            <div class="modal-header justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
+                <h1 class="modal-title fs-4 text-info fw-semibold mb-0">
+                    Add Beneficiary
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+            <form action="" class="" id="InternationalForm">
+
+                <div class="row mb-4 js-parent">
+                    <div class="col-lg-6">
+                        <div class="form-group
+                        mb-2">
+                            <label for="Account_number">Account Number</label>
+                            <div
+                                    class="rounded-default rounded  pe-1 mb-3  py-2 bg-secondary border-0 bg-opacity-10  border d-flex align-items-center ">
+
+                                <input type="text"
+                                       class="form-control bg-transparent border-0 shadow-none"
+                                       id="Account_number" placeholder="Enter Account Number" required
+                                       name="biller_number"/>
+                                <button type="button"
+                                        class="btn btn-info text-white btn-sm  py-2 px-3 js-check-balance">
+                                    Verify
+                                </button>
+                            </div>
+                            <lebel for="country">Country</lebel>
+                            <select class="form-select py-3 bg-secondary border-0 bg-opacity-10 mb-3" aria-label="Default select example">
+                                <option selected>Select Country</option>
+                                <option value="1">Kenya</option>
+                                <option value="2">Uganda</option>
+                                <option value="3">Tanzania</option>
+                                <option value="4">Rwanda</option>
+                                <option value="5">Burundi</option>
+                            </select>
+                            <label for="LocalbankName">IBAN/Account Number</label>
+                            <input type="text" class="form-control py-3 bg-secondary border-0 bg-opacity-10 mb-4" id="internbankName"
+                                   placeholder="Enter IBAN/Account NUmber">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group
+                        mb-2">
+                            <label for="beneficiaryName">Beneficiary Name</label>
+                            <input type="text" class="form-control py-3 bg-secondary border-0 bg-opacity-10 js-owner mb-3" id="internBeneficiaryName" readonly
+                                   name="owner" placeholder="Enter Beneficiary Name">
+
+
+                            <label for="localEmail">Beneficiary Bank</label>
+                            <select id="bank" name="bank"
+                                    class=" select2  py-3 bg-secondary border-0 bg-opacity-10 px-3 border mb-3  form-select">
+                                <option value="">Select Bank</option>
+                                <option value="">BK</option>
+                                <option value="">Equity Bank</option>
+                                <option value="">KCB</option>
+                                <option value="">BPR</option>
+                                <option value="">Ecobank</option>
+                            </select>
+                            <label for="localEmail">Email</label>
+                            <input type="text" class="form-control py-3 bg-secondary border-0 bg-opacity-10 mb-4" id="InternEmail"
+                                   placeholder="Enter Beneficiary Email">
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div class="mb-3 d-flex gap-2 align-items-center  justify-content-end">
+                                <button type="reset"
+                                        class="btn btn-outline-primary px-3 close  ">
+                                    Clear
+                                </button>
+                                <button type="submit"
+                                        class="btn  btn-info text-white px-3 ">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<!--end of add international transfer beneficial modal-->
+<!--star of add airtime beneficial modal-->
+<div class="modal w-100 fade" id="addAirtime" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content px-4 rounded-4">
+            <div class="modal-header justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
+                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
+                    Add Beneficiary
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+            <form action="" class="" id="airtimeForm">
+
+
+                <div class="js-parent">
+                    <div class="form-group mb-2">
+                        <label for="phone_Number">Phone Number</label>
+                        <div
+                                class="rounded-default  bg-white pe-1 mb-3    border d-flex align-items-center ">
+
+                            <input type="phone"
+                                   class="form-control border-0 shadow-none"
+                                   id="phone_Number" placeholder="Enter Phone Number" required
+                                   name="biller_number"/>
+                            <button type="button"
+                                    class="btn btn-primary btn-sm  py-1 px-3 js-check-balance">
+                                Verify
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="beneficiaryName">Beneficiary Name</label>
+                        <input type="text" class="form-control js-owner mb-3" id="airtimeBenName" readonly name="owner"
+                               placeholder="Enter Beneficiary Name">
+
+                    </div>
+
+
+                    <div class="form-group mb-3">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="airtimeBenEmail"
+                               placeholder="Enter Beneficiary Email">
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div
+                                    class="mb-3 d-flex gap-2 align-items-center  justify-content-end">
+                                <button type="submit"
+                                        class="btn  btn-info text-white px-3 ">
+                                    Save
+                                </button>
+                                <button type="reset"
+                                        class="btn btn-primary px-3 close  ">
+                                    Clear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+<!--end of add airtime beneficial modal-->
+<!--star of add electricity beneficial modal-->
+<div class="modal w-100 fade" id="addElectricity" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content px-4 rounded-4">
+            <div class="modal-header justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
+                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
+                    Add Beneficiary
+                </h1>
+                <button type="button" data-bs-dismiss="modal" aria-hidden="true"
+                        class="btn  bg-transparent text-dark  close btn-sm ">
+                    X
+                </button>
+
+            </div>
+            <form action="" class="" id="ElectricityForm">
+
+
+                <div class="js-parent">
+                    <div class="form-group mb-2">
+                        <label for="phone_Number">Meter Number</label>
+                        <div
+                                class="rounded-default  bg-white pe-1 mb-3    border d-flex align-items-center ">
+
+                            <input type="phone"
+                                   class="form-control border-0 shadow-none"
+                                   id="Meter_Number" placeholder="Enter Meter Number" required
+                                   name="biller_number"/>
+                            <button type="button"
+                                    class="btn btn-primary btn-sm  py-1 px-3 js-check-balance">
+                                Verify
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="beneficiaryName">Meter owner</label>
+                        <input type="text" class="form-control js-owner mb-3" id="owner" readonly name="owner"
+                               placeholder="Enter Beneficiary Name">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div
+                                    class="mb-3 d-flex gap-2 align-items-center  justify-content-end">
+                                <button type="submit"
+                                        class="btn  btn-info text-white px-3 ">
+                                    Save
+                                </button>
+                                <button type="reset"
+                                        class="btn btn-primary px-3 close  ">
+                                    Clear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+<!--end of add electricity beneficial modal-->
+<!--star of add water beneficial modal-->
+<div class="modal w-100 fade" id="addWater" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content px-4 rounded-4">
+            <div class="modal-header justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
+                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
+                    Add Beneficiary
+                </h1>
+                <button type="button" data-bs-dismiss="modal" aria-hidden="true"
+                        class="btn  bg-transparent text-dark  close btn-sm ">
+                    X
+                </button>
+
+            </div>
+            <form action="" class="" id="water_Form">
+
+
+                <div class="js-parent">
+                    <div class="form-group mb-2">
+                        <label for="poc_Number">POC Number</label>
+                        <div
+                                class="rounded-default  bg-white pe-1 mb-3    border d-flex align-items-center ">
+
+                            <input type="text"
+                                   class="form-control border-0 shadow-none"
+                                   id="poc_Number" placeholder="Enter POC Number" required
+                                   name="biller_number"/>
+                            <button type="button"
+                                    class="btn btn-primary btn-sm  py-1 px-3 js-check-balance">
+                                Verify
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="beneficiaryName">POC owner</label>
+                        <input type="text" class="form-control js-owner mb-3" id="p_owner" readonly name="owner"
+                               placeholder="Enter Beneficiary Name">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div
+                                    class="mb-3 d-flex gap-2 align-items-center  justify-content-end">
+                                <button type="submit"
+                                        class="btn  btn-info text-white px-3 ">
+                                    Save
+                                </button>
+                                <button type="reset"
+                                        class="btn btn-primary px-3 close  ">
+                                    Clear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+<!--end of add water beneficial modal-->
+<!--star of add cable tv beneficial modal-->
+<div class="modal w-100 fade" id="addTv" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content px-4 rounded-4">
+            <div class="modal-header justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
+                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
+                    Add Beneficiary
+                </h1>
+                <button type="button" data-bs-dismiss="modal" aria-hidden="true"
+                        class="btn  bg-transparent text-dark  close btn-sm ">
+                    X
+                </button>
+
+            </div>
+            <form action="" class="" id="TvForm">
+
+
+                <div class="js-parent">
+                    <div class="form-group mb-2">
+                        <label for="card_Number">Card Number</label>
+                        <div
+                                class="rounded-default  bg-white pe-1 mb-3    border d-flex align-items-center ">
+
+                            <input type="text"
+                                   class="form-control border-0 shadow-none"
+                                   id="card_Number" placeholder="Enter Card Number" required
+                                   name="biller_number"/>
+                            <button type="button"
+                                    class="btn btn-primary btn-sm  py-1 px-3 js-check-balance">
+                                Verify
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="beneficiaryName">Card owner</label>
+                        <input type="text" class="form-control js-owner mb-3" id="card_owner" readonly name="owner"
+                               placeholder="Card owner">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div
+                                    class="mb-3 d-flex gap-2 align-items-center  justify-content-end">
+                                <button type="submit"
+                                        class="btn  btn-info text-white px-3 ">
+                                    Save
+                                </button>
+                                <button type="reset"
+                                        class="btn btn-primary px-3 close  ">
+                                    Clear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+/script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // $(function () {
+        //     $('.js-account').on('click', function () {
+        //         $('.js-account').find('td').removeClass('bg-primary text-white')
+        //             .find('.dropdown-toggle').removeClass('btn-outline-info').addClass('btn-outline-primary');
+        //         $(this).find('td').addClass('bg-primary text-white')
+        //             .find('.dropdown-toggle').addClass('btn-outline-info').removeClass('btn-outline-primary');
+        //
+        //         let $spinner = $('#spinner');
+        //         $spinner.show();
+        //         let $recentTransactionsTable = $('#recentTransactionsTable');
+        //         $recentTransactionsTable.hide();
+        //
+        //         setTimeout(function () {
+        //             $('#spinner').hide();
+        //             $recentTransactionsTable.show();
+        //             // scroll to $recentTransactionsTable
+        //         }, 2000);
+        //         $('html, body').animate({
+        //             scrollTop: $spinner.offset().top
+        //         }, 100);
+        //     });
+        // });
+
+        $('.js-check-balance').on('click', function () {
+            // find input sibling text
+            let btn = $(this);
+            let input = btn.siblings('input');
+            if (input.val() === '') {
+                return;
+            }
+            // find the parent div with class .js-parent
+            let parent = btn.parents('.js-parent');
+            // find the span with class .js-balance
+            let owner = parent.find('.js-owner');
+            let amount = parent.find('.js-amount');
+            // add spinner using bootstrap and simulate a request for 1 second and then remove spinner
+            btn.append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>')
+                .prop('disabled', true);
+            setTimeout(() => {
+                owner.val('John Fally Ipupa');
+                // generate random amount between 100 and 10000
+                amount.val(Math.floor(Math.random() * 10000) + 100);
+                btn.find('.spinner-border').remove();
+                btn.prop('disabled', false);
+            }, 1000);
+
+        });
+        let select1 = document.querySelector(".tab-select1");
+        let select = select1;
+        let tabs = document.getElementsByClassName("tab-contents");
+        // let selectedValue = select.options[select.selectedIndex].value;
+        // document.getElementById(selectedValue).style.display = "block";
+
+        // select.addEventListener("change", function () {
+        //     for (let i = 0; i < tabs.length; i++) {
+        //         tabs[i].style.display = "none";
+        //     }
+        //     document.getElementById(this.value).style.display = "block";
+        // });
+        let select2 = document.querySelector(".tab-select2");
+
+        let tabs2 = document.getElementsByClassName("tab-contents2");
+        // let selectedValue2 = select2.options[select2.selectedIndex].value;
+        // document.getElementById(selectedValue2).style.display = "block";
+
+        // select2.addEventListener("change", function () {
+        //     for (let i = 0; i < tabs2.length; i++) {
+        //         tabs2[i].style.display = "none";
+        //     }
+        //     document.getElementById(this.value).style.display = "block";
+        // });
+
+        let $showImModel = $('#addImForm');
+
+        $showImModel.on('submit', function (e) {
+            e.preventDefault();
+            $('#addIM').modal('show');
+            showOtpTimer();
+        });
+        let $showLocalModel = $('#addLocalForm');
+        $showLocalModel.on('submit', function (e) {
+            e.preventDefault();
+            $('#addLocal').modal('show');
+            showOtpTimer();
+        });
+        let $showInternationalModel = $('#addInternationalForm');
+        $showInternationalModel.on('submit', function (e) {
+            e.preventDefault();
+            $('#addInternational').modal('show');
+            showOtpTimer();
+        });
+        let $showAirtimeModel = $('#addAirtimeForm, #addMomoForm');
+        $showAirtimeModel.on('submit', function (e) {
+            e.preventDefault();
+            $('#addAirtime').modal('show');
+            showOtpTimer();
+        });
+        let $showElectricityModel = $('#postPaidForm, #prePaidForm');
+        $showElectricityModel.on('submit', function (e) {
+            e.preventDefault();
+            $('#addElectricity').modal('show');
+            showOtpTimer();
+        });
+        let $showWaterModel = $('#waterForm');
+        $showWaterModel.on('submit', function (e) {
+            e.preventDefault();
+            $('#addWater').modal('show');
+            showOtpTimer();
+        });
+        let $showTvModel = $('#dstvForm,#starTimesForm');
+        $showTvModel.on('submit', function (e) {
+            e.preventDefault();
+            $('#addTv').modal('show');
+            showOtpTimer();
+        });
+    });
+
+
+</script>
 </body>
 </html>
