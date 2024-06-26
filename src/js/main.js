@@ -1,3 +1,4 @@
+
 const toggleIcon = document.querySelector(".toggle-icon");
 const sidebar = document.querySelector(".sidebar");
 
