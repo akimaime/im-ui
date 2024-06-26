@@ -9,53 +9,62 @@
 <div class="d-flex min-vh-100 justify-content-between flex-column">
     <div class="bg-color-height mb-4">
         <div class="container">
-            <div class="d-flex justify-content-between py-4">
-                <div class="d-flex flex-column">
-                    <img src="../../assets/logo.png" alt="logo">
-                    <span class="text-white px-4 fs-4">Retail</span>
-
+            <div class="d-flex justify-content-between align-items-start py-4">
+                <div>
+                    <div class="d-flex col-lg-2 p-2 flex-column bg-white  rounded-1">
+                        <img src="../../assets/b_logo.png" class="img-fluid" alt="logo">
+                    </div>
+                    <span class="text-white  fw-bold fs-2">Retail</span>
                 </div>
-                <div class="d-flex align-items-center gap-2">
-                    <h5 class="text-white ">Welcome back,Jon Doe</h5>
+                <div class="d-flex col-lg-3 align-items-center justify-content-end gap-2">
+                    <h5 class="text-white ">Welcome ,Jon Doe</h5>
                     <div class="d-flex rounded-circle bg-dark bg-opacity-50 p-4 justify-content-center align-items-center"
                          style="height: 16px;width: 16px">
                         <i class="bi bi-person fs-5 text-white"></i>
                     </div>
                 </div>
             </div>
-            <nav class=" navbar navbar-expand-lg">
-                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="mb-4 navbar navbar-expand-lg">
+                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="navbar-toggler-icon text-white"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="../../index.html"
+                            <a class="nav-link active" href="/"
                                type="button" role="tab" aria-controls="pills-home"
                                aria-selected="true">
                                 Dashboard
                             </a>
                         </li>
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="pages/corporate-dashboard.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">Corporate Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Transfers
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../transfers/own-account.html">Transfer to your own Accounts </a></li>
-                                <li><a class="dropdown-item" href="../transfers/internal.html">Transfer from I&M to I&M </a></li>
-                                <li><a class="dropdown-item" href="../transfers/local-bank.html">Transfer to Local Banks </a></li>
-                                <li><a class="dropdown-item" href="../transfers/international.html">Transfer to International </a></li>
+                                <li><a class="dropdown-item" href="pages/transfers/own-account.html">Transfer to your own Accounts </a></li>
+                                <li><a class="dropdown-item" href="pages/transfers/internal.html">Transfer from I&M to I&M </a></li>
+                                <li><a class="dropdown-item" href="pages/transfers/local-bank.html">Transfer to Local Banks </a></li>
+                                <li><a class="dropdown-item" href="pages/transfers/international.html">Transfer to International </a></li>
                             </ul>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="BillPayments" data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-                                BillPayments
-                            </button>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Payments
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pages/payments/rra.html">RRA Payment </a></li>
+                                <li><a class="dropdown-item" href="pages/payments/irembo.html">Irembo Payment </a></li>
+                                <li><a class="dropdown-item" href="pages/payments/airtime.html">Airtime Top Up</a></li>
+                                <li><a class="dropdown-item" href="pages/transfers/local-bank.html">Mobile Money Payment </a></li>
+                                <li><a class="dropdown-item" href="pages/payments/utilities.html">Utilities Payment </a></li>
+                            </ul>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="Cards" data-bs-toggle="pill" data-bs-target="#pills-contact"
@@ -69,11 +78,11 @@
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link " id="Beneficiaries" data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                            <a class="nav-link " href="pages/beneficiaries.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
                                 Beneficiaries
-                            </button>
+                            </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="Mails" data-bs-toggle="pill" data-bs-target="#pills-contact"
@@ -82,12 +91,6 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item "><a href="../../index.html">Dashboard</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Transfer to Local Bank</li>
-                </ol>
             </nav>
         </div>
 
