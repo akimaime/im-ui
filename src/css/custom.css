@@ -11886,6 +11886,36 @@ body {
   margin-right: 0 !important;
 }
 
+.v-cards .nav-pills .nav-link {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.v-cards .nav-pills .nav-link.active {
+  border: 0 !important;
+  margin: 0;
+  padding: 0;
+}
+
+.v-cards .nav-pills {
+  border: 0;
+}
+
+.v-cards .nav-pills .nav-link .bn .card {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  color: black !important;
+}
+
+.v-cards .nav-pills .nav-link.active .bn .card {
+  background-image: url("../assets/images/dashboard/cards_bg.png") !important;
+  color: #fff !important;
+  border: 0;
+}
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;

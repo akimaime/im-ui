@@ -176,270 +176,538 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 overflow-y-scroll scrollbar" style="height: 510px">
-                    <div class="row  mb-3">
-                        <!--                        <div class="col-lg-1 ">-->
-                        <!--                            <div class="h-100 d-flex align-items-center">-->
-                        <!--                                <button class="btn border-0 d-flex flex-column justify-content-center px-0 align-items-center " data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">-->
-                        <!--                                    <span class="text-info text-sm" >Previous</span>-->
-                        <!--                                    <i class="bi bi-arrow-left-circle fs-4 text-primary"></i>-->
-                        <!--                                </button>-->
-                        <!--                            </div>-->
-                        <!--                        </div>-->
-                        <div class="col-lg-11 mb-2">
-                            <div class="card h-100  border-0  shadow-md overflow-hidden rounded-4"
-                                 style="background-image: url('../assets/images/dashboard/cards_bg.png');background-repeat: no-repeat;background-size: cover">
-                                <div class="card-body d-flex justify-content-between flex-column gap-2 bg-primary bg-opacity-10 ">
-                                    <div class="d-flex align-items-start justify-content-between">
-                                        <div>
-                                            <h5 class="text-white  mb-0">
-                                                Master Card
-                                            </h5>
-                                        </div>
-                                        <div class="d-flex">
-                                            <img src="../assets/n_logo.png" class="" style="height: 25px" alt="master">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex gap-2 justify-content-center">
-                                            <span class="text-white text-opacity-75 fw-bolder">4568 **** **** 7557</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex justify-content-between flex-column">
-                                            <span class="text-white text-opacity-75 fw-semibold small">Valid until</span>
-                                            <span class="text-white text-opacity-75 small fw-bolder">7/25</span>
-                                        </div>
-                                        <div class="d-flex  gap-3 align-items-center">
-                                            <span class="text-primary text-sm ">Cvv</span>
-                                            <span class="text-muted text-sm">***</span>
-                                            <span class="text-success">
+                    <div class="v-cards">
+                        <div class="nav flex-column   nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+
+                                <div class="col-lg-12 bn mb-2">
+                                    <div class="card h-100  border-0   shadow-md overflow-hidden rounded-4">
+                                        <div class="card-body d-flex justify-content-between flex-column gap-3 ">
+                                            <div class="d-flex align-items-start justify-content-between">
+                                                <div>
+                                                    <h5 class="  mb-0">
+                                                        Master Card
+                                                    </h5>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <img src="../assets/b_logo.png" class="" style="height: 25px" alt="master">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex gap-2 justify-content-center">
+                                                    <span class=" text-opacity-75 fw-bolder">4568 **** **** 7557</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex justify-content-between flex-column">
+                                                    <span class=" text-opacity-75 fw-semibold small">Valid until</span>
+                                                    <span class=" text-opacity-75 small fw-bolder">7/25</span>
+                                                </div>
+                                                <div class="d-flex  gap-3 align-items-center">
+                                                    <span class="text-primary text-sm ">Cvv</span>
+                                                    <span class="text-muted text-sm">***</span>
+                                                    <span class="text-success">
                                                                 <i class="bi bi-eye"></i>
                                                             </span>
-                                        </div>
-                                        <div class="d-flex align-items-center flex-column">
-                                            <span class="text-white fw-bolder">Master</span>
-                                            <img src="../assets/master.png" class="img-fluid" style="height: 30px"
-                                                 alt="master">
+                                                </div>
+                                                <div class="d-flex align-items-center flex-column">
+                                                    <span class=" fw-bolder">Master</span>
+                                                    <img src="../assets/master.png" class="img-fluid" style="height: 30px"
+                                                         alt="master">
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
-
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-11 mb-2">
-                            <div class="card h-100  border-0 shadow-md overflow-hidden rounded-4">
-                                <div class="card-body d-flex justify-content-between flex-column gap-2 bg-primary bg-white ">
-                                    <div class="d-flex align-items-start justify-content-between">
-                                        <div>
-                                            <h5 class="text-black  mb-0">
-                                                Visa Card
-                                            </h5>
-                                            <p class="py-0 text-black text-opacity-75">Primary</p>
-                                        </div>
-                                        <div class="d-flex">
-                                            <img src="../assets/b_logo.png" class="" style="height: 25px" alt="master">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex gap-2 justify-content-center">
-                                            <span class="text-black text-opacity-75 fw-bolder">4568 **** **** 7557</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex justify-content-between flex-column">
-                                            <span class="text-black text-opacity-75 fw-semibold small">Valid until</span>
-                                            <span class="text-black text-opacity-75 small fw-bolder">7/25</span>
-                                        </div>
-                                        <div class="d-flex align-items-center flex-column">
-                                            <span class="text-black fw-bolder">Visa</span>
-                                            <img src="../assets/master.png" class="img-fluid" style="height: 30px"
-                                                 alt="master">
-                                        </div>
-                                    </div>
+                            </button>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                <div class="col-lg-12 bn mb-2">
+                                    <div class="card h-100  border-0 shadow-md overflow-hidden rounded-4">
+                                        <div class="card-body  d-flex justify-content-between gap-2 flex-column   ">
+                                            <div class="d-flex align-items-start justify-content-between">
+                                                <div>
+                                                    <h5 class="  mb-0">
+                                                        Visa Card
+                                                    </h5>
+                                                    <span class="py-0 text-sm">Primary</span>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <img src="../assets/b_logo.png" class="" style="height: 25px" alt="master">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex gap-2 justify-content-center">
+                                                    <span class=" text-opacity-75 fw-bolder">4568 **** **** 7557</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex justify-content-between flex-column">
+                                                    <span class=" text-opacity-75 fw-semibold text-sm">Valid until</span>
+                                                    <span class=" text-opacity-75 small fw-bolder">7/25</span>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-column">
+                                                    <span class=" fw-bolder">Visa</span>
+                                                    <img src="../assets/master.png" class="img-fluid" style="height: 30px"
+                                                         alt="master">
+                                                </div>
+                                            </div>
 
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-11 mb-2">
-                            <div class="card h-100  border-0 shadow-md overflow-hidden rounded-4">
-                                <div class="card-body d-flex justify-content-between flex-column gap-2 bg-primary bg-white ">
-                                    <div class="d-flex align-items-start justify-content-between">
-                                        <div>
-                                            <h5 class="text-black  mb-0">
-                                                Visa Card
-                                            </h5>
-                                            <p class="py-0 text-black text-opacity-75">Primary</p>
-                                        </div>
-                                        <div class="d-flex">
-                                            <img src="../assets/b_logo.png" class="" style="height: 25px" alt="master">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex gap-2 justify-content-center">
-                                            <span class="text-black text-opacity-75 fw-bolder">4568 **** **** 7557</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex justify-content-between flex-column">
-                                            <span class="text-black text-opacity-75 fw-semibold small">Valid until</span>
-                                            <span class="text-black text-opacity-75 small fw-bolder">7/25</span>
-                                        </div>
-                                        <div class="d-flex align-items-center flex-column">
-                                            <span class="text-black fw-bolder">Visa</span>
-                                            <img src="../assets/master.png" class="img-fluid" style="height: 30px"
-                                                 alt="master">
-                                        </div>
-                                    </div>
+                            </button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                <div class="col-lg-12 bn mb-2">
+                                    <div class="card h-100  border-0 shadow-md overflow-hidden rounded-4">
+                                        <div class="card-body gap-2  d-flex justify-content-between flex-column   ">
+                                            <div class="d-flex align-items-start  justify-content-between">
+                                                <div>
+                                                    <h5 class="  mb-0">
+                                                        Visa Card
+                                                    </h5>
+                                                    <span class="py-0 text-sm">Primary</span>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <img src="../assets/b_logo.png" class="" style="height: 25px" alt="master">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex gap-2 justify-content-center">
+                                                    <span class=" text-opacity-75 fw-bolder">4568 **** **** 7557</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex justify-content-between flex-column">
+                                                    <span class=" text-opacity-75 fw-semibold text-sm">Valid until</span>
+                                                    <span class=" text-opacity-75 small fw-bolder">7/25</span>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-column">
+                                                    <span class=" fw-bolder">Visa</span>
+                                                    <img src="../assets/master.png" class="img-fluid" style="height: 30px"
+                                                         alt="master">
+                                                </div>
+                                            </div>
 
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </button>
                         </div>
-
-                        <!--                        <div class="col-lg-1">-->
-                        <!--                            <div class="h-100 d-flex align-items-center">-->
-                        <!--                                <button class="btn border-0 d-flex flex-column justify-content-center px-0 align-items-center " data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">-->
-                        <!--                                    <span class="text-info text-sm" >Next</span>-->
-                        <!--                                    <i class="bi bi-arrow-right-circle fs-4 text-primary"></i>-->
-                        <!--                                </button>-->
-                        <!--                            </div>-->
-                        <!--                        </div>-->
                     </div>
                 </div>
                 <div class="col-lg-5 ">
-                    <div class="card rounded-4 border-0 h-100">
-                        <div class="card-body">
-                            <div class="row  ">
-                                <div class="d-flex justify-content-between border-bottom mb-3 align-items-center">
-                                    <div>
-                                        <h3 class="uppercase fw-bolder  text-gray-700 ">
-                                            Card Details
-                                        </h3>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <div class="card rounded-4 border-0 h-100">
+                            <div class="card-body">
+                                <div class="row  ">
+                                    <div class="d-flex justify-content-between border-bottom mb-3 align-items-center">
+                                        <div>
+                                            <h3 class="uppercase fw-bolder  text-gray-700 ">
+                                                Card Details
+                                            </h3>
+                                        </div>
+                                        <p class="small mb-0 fw-bold">Card Number : 4568 **** **** 7557</p>
+                                        <span class=" bg-danger bg-opacity-50 px-1 text-danger fw-bold rounded text-sm  unactive ">Blocked</span>
                                     </div>
-                                    <p class="small mb-0 fw-bold">Card Number : 4568 **** **** 7557</p>
-                                    <span class=" bg-danger bg-opacity-50 px-1 text-danger fw-bold rounded text-sm  unactive ">Blocked</span>
-                                </div>
-                                <div class="row mb-4">
-                                    <div class=" col-lg-12 mb-2">
-                                        <div class="    border-0">
-                                            <div class="d-flex gap-2 align-items-center">
-                                                <div class="flex-grow-1">
-                                                    <div class="d-flex  gap-3 mb-3 align-items-center">
-                                                        <h5 class="text-black fw-bold fs-5 mb-1">Master card</h5>
+                                    <div class="row mb-4">
+                                        <div class=" col-lg-12 mb-2">
+                                            <div class="    border-0">
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex  gap-3 mb-3 align-items-center">
+                                                            <h5 class="text-black fw-bold fs-5 mb-1">Master card</h5>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="d-flex gap-2 align-items-center">
-                                                <div class="flex-grow-1">
-                                                    <div class="d-flex mb-2  gap-1 align-items-center">
-                                                        <span class="text-black text-sm fw-semibold ">Card Type :</span>
-                                                        <span class="text-black  small">Platinum</span>
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex mb-2  gap-1 align-items-center">
+                                                            <span class="text-black text-sm fw-semibold ">Card Type :</span>
+                                                            <span class="text-black  small">Platinum</span>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="d-flex gap-2 align-items-center">
-                                                <div class="flex-grow-1">
-                                                    <div class="d-flex mb-2  gap-1 ">
-                                                        <span class="text-black fw-semibold text-sm ">Name :</span>
-                                                        <span class="text-black  text-sm">KALISA JOHN</span>
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex mb-2  gap-1 ">
+                                                            <span class="text-black fw-semibold text-sm ">Name :</span>
+                                                            <span class="text-black  text-sm">KALISA JOHN</span>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="d-flex gap-2 align-items-center">
-                                                <div class="flex-grow-1">
-                                                    <div class="d-flex  gap-3 justify-content-center     align-items-center">
-                                                        <span class="text-primary fw-semibold fs-5 mb-1">Balance</span>
-                                                        <span class="text-black fs-5">5000Rwf</span>
-                                                        <span class="text-success">
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex  gap-3 justify-content-center     align-items-center">
+                                                            <span class="text-primary fw-semibold fs-5 mb-1">Balance</span>
+                                                            <span class="text-black fs-5">5000Rwf</span>
+                                                            <span class="text-success">
                                                                 <i class="bi bi-eye-slash"></i>
                                                             </span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
+                                <div class="container">
+                                    <h5 class="text-primary fw-bolder">Card Management Options:</h5>
 
-                            </div>
-                            <div class="container">
-                                <h5 class="text-primary fw-bolder">Card Management Options:</h5>
-
-                                <div class="row rounded ">
-                                    <div class="col-lg-3  ">
-                                        <a href="#"
-                                           class="d-flex js-delete flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
-                                            <div class="d-flex  align-items-start">
-                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
-                                                     style="height: 44px;width: 44px">
-                                                    <i class="bi bi-tools fw-bolder text-primary"></i>
+                                    <div class="row rounded ">
+                                        <div class="col-lg-3  ">
+                                            <a href="#"
+                                               class="d-flex js-delete flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <span class="text-xs">Block Card Temporary</span>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3  ">
-                                        <a href="#" data-bs-target="#pinRest" data-bs-toggle="modal"
-                                           class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
-                                            <div class="d-flex  align-items-start">
-                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
-                                                     style="height: 44px;width: 44px">
-                                                    <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                <span class="text-xs">Block Card Temporary</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="#" data-bs-target="#pinRest" data-bs-toggle="modal"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <span class="text-xs">Reset pin</span>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3  ">
-                                        <a href="wallet.html"
-                                           class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
-                                            <div class="d-flex  align-items-start">
-                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
-                                                     style="height: 44px;width: 44px">
-                                                    <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                <span class="text-xs">Reset pin</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="wallet.html"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <span class="text-xs">Manage wallets</span>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3  ">
-                                        <a href="#" data-bs-target="#cardToCard" data-bs-toggle="modal"
-                                           class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
-                                            <div class="d-flex  align-items-start">
-                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
-                                                     style="height: 44px;width: 44px">
-                                                    <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                <span class="text-xs">Manage wallets</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="#" data-bs-target="#cardToCard" data-bs-toggle="modal"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <span class="text-xs">Card to card transfer</span>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3  ">
-                                        <a href="#" data-bs-target="#load_prepaidCard" data-bs-toggle="modal"
-                                           class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
-                                            <div class="d-flex  align-items-start">
-                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
-                                                     style="height: 44px;width: 44px">
-                                                    <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                <span class="text-xs">Card to card transfer</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="#" data-bs-target="#load_prepaidCard" data-bs-toggle="modal"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <span class="text-xs">Load Prepaid Card</span>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3  ">
-                                        <a href="manage_restrictions.html"
-                                           class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
-                                            <div class="d-flex  align-items-start">
-                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
-                                                     style="height: 44px;width: 44px">
-                                                    <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                <span class="text-xs">Load Prepaid Card</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="manage_restrictions.html"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <span class="text-xs">Manage Restrictions</span>
-                                        </a>
+                                                <span class="text-xs">Manage Restrictions</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <div class="card rounded-4 border-0 h-100">
+                            <div class="card-body">
+                                <div class="row  ">
+                                    <div class="d-flex justify-content-between border-bottom mb-3 align-items-center">
+                                        <div>
+                                            <h3 class="uppercase fw-bolder  text-gray-700 ">
+                                                Card Details
+                                            </h3>
+                                        </div>
+                                        <p class="small mb-0 fw-bold">Card Number : 4568 **** **** 7557</p>
+                                        <span class=" bg-danger bg-opacity-50 px-1 text-danger fw-bold rounded text-sm  unactive ">Blocked</span>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class=" col-lg-12 mb-2">
+                                            <div class="    border-0">
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex  gap-3 mb-3 align-items-center">
+                                                            <h5 class="text-black fw-bold fs-5 mb-1">Visa card</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex mb-2  gap-1 align-items-center">
+                                                            <span class="text-black text-sm fw-semibold ">Card Type :</span>
+                                                            <span class="text-black  small">Platinum</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex mb-2  gap-1 ">
+                                                            <span class="text-black fw-semibold text-sm ">Name :</span>
+                                                            <span class="text-black  text-sm">KALISA JOHN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex  gap-3 justify-content-center     align-items-center">
+                                                            <span class="text-primary fw-semibold fs-5 mb-1">Balance</span>
+                                                            <span class="text-black fs-5">5000Rwf</span>
+                                                            <span class="text-success">
+                                                                <i class="bi bi-eye-slash"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="container">
+                                    <h5 class="text-primary fw-bolder">Card Management Options:</h5>
+
+                                    <div class="row rounded ">
+                                        <div class="col-lg-3  ">
+                                            <a href="#"
+                                               class="d-flex js-delete flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <span class="text-xs">Block Card Temporary</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="#" data-bs-target="#pinRest" data-bs-toggle="modal"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <span class="text-xs">Reset pin</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="wallet.html"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <span class="text-xs">Manage wallets</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="#" data-bs-target="#cardToCard" data-bs-toggle="modal"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <span class="text-xs">Card to card transfer</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="#" data-bs-target="#load_prepaidCard" data-bs-toggle="modal"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <span class="text-xs">Load Prepaid Card</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="manage_restrictions.html"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <span class="text-xs">Manage Restrictions</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                            <div class="card rounded-4 border-0 h-100">
+                            <div class="card-body">
+                                <div class="row  ">
+                                    <div class="d-flex justify-content-between border-bottom mb-3 align-items-center">
+                                        <div>
+                                            <h3 class="uppercase fw-bolder  text-gray-700 ">
+                                                Card Details
+                                            </h3>
+                                        </div>
+                                        <p class="small mb-0 fw-bold">Card Number : 4568 **** **** 7557</p>
+                                        <span class=" bg-danger bg-opacity-50 px-1 text-danger fw-bold rounded text-sm  unactive ">Blocked</span>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class=" col-lg-12 mb-2">
+                                            <div class="    border-0">
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex  gap-3 mb-3 align-items-center">
+                                                            <h5 class="text-black fw-bold fs-5 mb-1">Visa card</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex mb-2  gap-1 align-items-center">
+                                                            <span class="text-black text-sm fw-semibold ">Card Type :</span>
+                                                            <span class="text-black  small">Platinum</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex mb-2  gap-1 ">
+                                                            <span class="text-black fw-semibold text-sm ">Name :</span>
+                                                            <span class="text-black  text-sm">KALISA JOHN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex  gap-3 justify-content-center     align-items-center">
+                                                            <span class="text-primary fw-semibold fs-5 mb-1">Balance</span>
+                                                            <span class="text-black fs-5">9000Rwf</span>
+                                                            <span class="text-success">
+                                                                <i class="bi bi-eye-slash"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="container">
+                                    <h5 class="text-primary fw-bolder">Card Management Options:</h5>
+
+                                    <div class="row rounded ">
+                                        <div class="col-lg-3  ">
+                                            <a href="#"
+                                               class="d-flex js-delete flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <span class="text-xs">Block Card Temporary</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="#" data-bs-target="#pinRest" data-bs-toggle="modal"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <span class="text-xs">Reset pin</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="wallet.html"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <span class="text-xs">Manage wallets</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="#" data-bs-target="#cardToCard" data-bs-toggle="modal"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <span class="text-xs">Card to card transfer</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="#" data-bs-target="#load_prepaidCard" data-bs-toggle="modal"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <span class="text-xs">Load Prepaid Card</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3  ">
+                                            <a href="manage_restrictions.html"
+                                               class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                <div class="d-flex  align-items-start">
+                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                         style="height: 44px;width: 44px">
+                                                        <i class="bi bi-tools fw-bolder text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <span class="text-xs">Manage Restrictions</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
+
                 </div>
                 <div class="col-lg-4 mb-2">
                     <div class="card  rounded-4 h-100  border-0">
@@ -1710,36 +1978,6 @@
 
            loadBanks(); */
 
-    });
-</script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Select the card
-        let card = document.querySelector('.card');
-
-        // Add click event listener
-        card.addEventListener('click', function () {
-            // Toggle background image
-            if (this.style.backgroundImage.includes('cards_bg.png')) {
-                this.style.backgroundImage = '';
-            } else {
-                this.style.backgroundImage = "url('../assets/images/dashboard/cards_bg.png')";
-                this.style.backgroundRepeat = 'no-repeat';
-                this.style.backgroundSize = 'cover';
-            }
-
-            // Select all text elements within the card
-            let textElements = this.querySelectorAll('h5, p, span');
-
-            // Toggle text color
-            textElements.forEach(function (element) {
-                if (element.style.color === 'white' || element.style.color === 'rgba(255, 255, 255, 0.75)') {
-                    element.style.color = 'black';
-                } else {
-                    element.style.color = 'white';
-                }
-            });
-        });
     });
 </script>
 </body>
