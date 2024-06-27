@@ -80,7 +80,7 @@
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active" href="beneficiaries.html"
+                            <a class="nav-link " href="beneficiaries.html"
                                type="button" role="tab" aria-controls="pills-home"
                                aria-selected="true">
                                 Beneficiaries
@@ -101,61 +101,62 @@
                 <div class="col-lg-9">
                     <div class="card rounded-4 ">
                         <div class="mb-3 card-body" id="result">
-                            <div class="row ">
+                            <div class="row justify-content-end">
                                 <div class="col-lg-4  p-4">
                                     <h6 class="text-info small mb-0 mb-2 rounded bg-info text-white p-2 fw-semibold">Account Statement</h6>
                                     <p class="text-info small mb-0 mb-2 px-1">Account Name:<span class="text-muted">John Peter Muson</span></p>
                                     <p class="text-info small mb-0 mb-2 px-1">Account Number:<span class="text-muted">1234567890</span></p>
                                     <p class="text-info small mb-0 mb-2 px-1">Statement Date:<span class="text-muted">03-02-2023</span></p>
                                     <p class="text-info small mb-0 mb-2 px-1">Currency:<span class="text-muted">RWF</span></p>
-
-
                                 </div>
-                                <div class="row justify-content-between  align-items-end mb-2">
-                                    <div class="d-flex p-3 gap-3 flex-row">
-                                        <button class="btn rounded px-2 py-0 btn-outline-info" id="btn-2months">2Month</button>
-                                        <button class="btn rounded px-2 py-0 btn-outline-info" id="btn-3months">3 Months</button>
-                                        <button class="btn rounded px-2 py-0 btn-outline-info"  id="btn-4months">4 Months</button>
-                                        <button class="btn rounded px-2 py-0 btn-outline-info"  id="btn-6months">6 Months</button>
-                                        <button class="btn rounded px-2 py-0 btn-outline-info" id="btn-1year">1 year</button>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <label class="text-primary">Start date</label>
-                                        <div
-                                                class="input-group border-1 datepicker py-2 align-items-center gap-1 date"
-                                                data-date-format="yyyy-mm-dd">
-                                            <input class="form-control position-relative  shadow-lg py-2  rounded shadow-lg small form-control-sm shadow-none"
-                                                   type="text" id="start-month" value="" placeholder="mm-dd-yyyy" autocomplete=""  />
-                                            <span class="input-group-addon position-absolute  justify-content-center border-1" style="right: 10px;">
-				<i class="bi bi-calendar"></i>
-			</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 justify-content-center">
-
-                                        <lebel class="text-primary px-2">End date</lebel>
-                                        <div
-                                                class="input-group border-1 datepicker align-items-center  gap-1 date"
-                                                data-date-format="yyyy-mm-dd">
-                                            <input class="form-control position-relative shadow-lg  py-2  px-3  rounded shadow-lg small form-control-sm shadow-none"
-                                                   type="text" id="end-month" placeholder="mm-dd-yyyy" autocomplete=""  />
-                                            <span class="input-group-addon position-absolute  justify-content-center border-1" style="right: 10px;">
-				<i class="bi bi-calendar"></i>
-			</span>
+                                <div class="col-lg-8">
+                                    <div class="row justify-content-between  align-items-end mb-2">
+                                        <div class="d-flex p-3 gap-2 flex-row">
+                                            <button class="btn rounded px-2 py-0  btn-outline-info" id="btn-2months">2Month</button>
+                                            <button class="btn rounded px-2 py-0 btn-outline-info" id="btn-3months">3 Months</button>
+                                            <button class="btn rounded px-2 py-0 text-white btn-info"  id="btn-4months">4 Months</button>
+                                            <button class="btn rounded px-2 py-0 btn-outline-info"  id="btn-6months">6 Months</button>
+                                            <button class="btn rounded px-2 py-0 btn-outline-info" id="btn-1year">1 year</button>
                                         </div>
 
+                                        <div class="col-lg-6">
+                                            <label class="text-primary">Start date</label>
+                                            <div
+                                                    class="input-group border-1 datepicker py-2 align-items-center gap-1 date"
+                                                    data-date-format="yyyy-mm-dd">
+                                                <input class="form-control position-relative  shadow-lg py-2  rounded shadow-lg small form-control-sm shadow-none"
+                                                       type="text" id="start-month" value="" placeholder="mm-dd-yyyy" autocomplete=""  />
+                                                <span class="input-group-addon position-absolute  justify-content-center border-1" style="right: 10px;">
+				<i class="bi bi-calendar"></i>
+			</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 justify-content-center">
+
+                                            <lebel class="text-primary px-2">End date</lebel>
+                                            <div
+                                                    class="input-group border-1 datepicker align-items-center  gap-1 date"
+                                                    data-date-format="yyyy-mm-dd">
+                                                <input class="form-control position-relative shadow-lg  py-2  px-3  rounded shadow-lg small form-control-sm shadow-none"
+                                                       type="text" id="end-month" placeholder="mm-dd-yyyy" autocomplete=""  />
+                                                <span class="input-group-addon position-absolute  justify-content-center border-1" style="right: 10px;">
+				<i class="bi bi-calendar"></i>
+			</span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="py-2 col-lg-12  justify-content-end gap-2 d-flex">
+                                            <button class="btn btn-info float-end text-white" id="filter-button">Search</button>
+                                            <button class="btn btn-info float-end text-white" >Export Excel</button>
+                                            <button class="btn btn-info float-end text-white"><i class="bi bi-filetype-pdf"></i></button>
+                                        </div>
+
+
                                     </div>
-
-                                    <div class="py-2 col-lg-4  justify-content-start gap-2 d-flex">
-                                        <button class="btn btn-info float-end text-white" id="filter-button">Search</button>
-                                        <button class="btn btn-info float-end text-white" >Export Excel</button>
-                                        <button class="btn btn-info float-end text-white"><i class="bi bi-filetype-pdf"></i></button>
-                                    </div>
-
-
                                 </div>
+
                             </div>
 
                             <div class="table-responsive" id="table">
