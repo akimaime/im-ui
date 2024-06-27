@@ -141,3 +141,6 @@ body{
   outline: none!important;
 
 }
+.scrollbar::-webkit-scrollbar {
+  width: 0;
+}
