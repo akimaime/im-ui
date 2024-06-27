@@ -417,7 +417,7 @@
                                         </a>
                                     </div>
                                     <div class="col-lg-3  ">
-                                        <a href="#" data-bs-target="#cardToCard" data-bs-toggle="modal"
+                                        <a href="#" data-bs-target="#load_prepaidCard" data-bs-toggle="modal"
                                            class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
                                             <div class="d-flex  align-items-start">
                                                 <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
@@ -429,7 +429,7 @@
                                         </a>
                                     </div>
                                     <div class="col-lg-3  ">
-                                        <a href="#" data-bs-target="#cardToCard" data-bs-toggle="modal"
+                                        <a href="manage_restrictions.html"
                                            class="d-flex flex-column align-items-center text-decoration-none  border-0  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
                                             <div class="d-flex  align-items-start">
                                                 <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
@@ -597,7 +597,8 @@
                             <div class="col-lg-6">
                                 <div class="form-group mb-2">
                                     <label for="datepicker" class="text-sm">Card Expiry Date</label>
-                                    <input type='text' class="form-control py-3 text-sm bg-secondary border-0 bg-opacity-10"
+                                    <input type='text'
+                                           class="form-control py-3 text-sm bg-secondary border-0 bg-opacity-10"
                                            placeholder="MM/YYYY" id='datepicker'>
 
                                 </div>
@@ -605,7 +606,8 @@
                             <div class="col-lg-6">
                                 <div class="form-group mb-3">
                                     <label for="cvv" class="text-sm">Card Cvv</label>
-                                    <input type="text" class="form-control py-3 text-sm bg-secondary border-0 bg-opacity-10"
+                                    <input type="text"
+                                           class="form-control py-3 text-sm bg-secondary border-0 bg-opacity-10"
                                            minlength="3" maxlength="3" id="cvv" placeholder="Enter CVV Number">
                                 </div>
                             </div>
@@ -641,81 +643,82 @@
 <!-- end of add I&M beneficial modal-->
 <div class="modal   fade" id="load_prepaidCard" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog   modal-dialog-centered">
-        <div class="modal-content px-3 rounded-4">
-            <div class="modal-header   justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
-                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
+        <div class="modal-content  rounded-4">
+            <div class="modal-header   justify-content-between  align-items-center ">
+                <h1 class="modal-title fs-4 text-info fw-semibold mb-0">
                     Load Prepaid Card
                 </h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+                <form action="" class="" id="internationalForm">
+                    <div class="row">
 
-
-            <form action="" class="" id="internationalForm">
-                <div class="row">
-
-                    <div class=" mb-3">
-                        <label for="international_from_account"
-                               class="text-primary fw-normal form-label">
-                            Make payment from:
-                        </label>
-                        <select class="form-select py-2 js-beneficiaries  text-primary  "
-                                required id="international_from_account"
-                                name="from_account">
-                            <option value="">Select Account</option>
-                            <option value="RWF">RWF-4000-0000-0001-200</option>
-                            <option value="USD">USD-4000-0000-0001-200</option>
-                            <option value="EUR">EUR-4000-0000-0001-200</option>
-                            <option value="GBP">GBP-4000-0000-0001-200</option>
-                        </select>
-                    </div>
-                    <div style="display: none"
-                         class=" justify-content-between align-items-center mb-3 js-account-balance">
-                        <div class="d-flex flex-column">
-                            <div class=" text-muted  small ">Account Balance</div>
-                            <span class="text-primary  small js-balance">*** *** ***
+                        <div class=" mb-3">
+                            <label for="international_from_account"
+                                   class="text-sm fw-normal form-label">
+                                Make payment from:
+                            </label>
+                            <select class="form-select py-3 bg-secondary text-sm border-0 bg-opacity-10 js-beneficiaries    "
+                                    required id="international_from_account"
+                                    name="from_account">
+                                <option value="">Select Account</option>
+                                <option value="RWF">RWF-4000-0000-0001-200</option>
+                                <option value="USD">USD-4000-0000-0001-200</option>
+                                <option value="EUR">EUR-4000-0000-0001-200</option>
+                                <option value="GBP">GBP-4000-0000-0001-200</option>
+                            </select>
+                        </div>
+                        <div style="display: none"
+                             class=" justify-content-between align-items-center mb-3 js-account-balance">
+                            <div class="d-flex flex-column">
+                                <div class=" text-muted  small ">Account Balance</div>
+                                <span class="text-primary  small js-balance">*** *** ***
                                                                 ***</span>
+                            </div>
+                            <button type="button"
+                                    class=" btn btn-outline-primary border  js-toggle-balance">
+                                Show Balance
+                            </button>
                         </div>
-                        <button type="button"
-                                class=" btn btn-outline-primary border  js-toggle-balance">
-                            Show Balance
-                        </button>
-                    </div>
 
-                    <div class="row ">
-                        <div class="col-lg-6">
-                            <div class="mb-3">
-                                <label for="international_amount"
-                                       class="form-label fw-normal  text-primary fs-6">Card number:</label>
-                                <div class="input-group">
+                        <div class="row ">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="international_amount"
+                                           class="form-label fw-normal  text-sm">Card number:</label>
+                                    <div class="input-group">
 
-                                    <input type="text" name="amount" required readonly value="333 XXXX XXXX 3333"
-                                           class="form-control fw-semibold text-primary "/>
+                                        <input type="text" name="amount" required readonly value="333 XXXX XXXX 3333"
+                                               class="form-control py-3 bg-secondary text-sm border-0 bg-opacity-10 "/>
+                                    </div>
+
+
                                 </div>
-
 
                             </div>
 
-                        </div>
+                            <div class="col-lg-6 px-0">
+                                <div class="mb-3">
+                                    <label for="international_amount"
+                                           class="form-label fw-normal  text-sm">Card Holder:</label>
+                                    <div class="input-group">
 
-                        <div class="col-lg-6">
-                            <div class="mb-3">
-                                <label for="international_amount"
-                                       class="form-label fw-normal  text-primary fs-6">Card Holder:</label>
-                                <div class="input-group">
+                                        <input type="text" name="amount" readonly value="John Doe"
+                                               class="form-control   py-3 bg-secondary text-sm border-0 bg-opacity-10 "/>
+                                    </div>
 
-                                    <input type="text" name="amount" readonly value="John Doe"
-                                           class="form-control   fw-semibold text-primary "/>
+
                                 </div>
-
-
                             </div>
+
                         </div>
                         <div class=" mb-3">
                             <label for="international_from_account"
-                                   class="text-primary fw-normal form-label">
+                                   class="text-sm fw-normal form-label">
                                 Currency
                             </label>
-                            <select class="form-select py-2  text-primary  "
+                            <select class="form-select py-3 bg-secondary text-sm border-0 bg-opacity-10 "
                                     required id="currency"
                                     name="currency">
                                 <option value="" disabled selected>Select Currency</option>
@@ -725,66 +728,61 @@
                                 <option value="GBP">GBP</option>
                             </select>
                         </div>
-                    </div>
 
 
-                    <div class="mb-3">
-                        <label for="international_amount"
-                               class="form-label fw-normal  text-primary fs-6">Amount:</label>
-                        <div class="input-group">
+                        <div class="mb-3">
+                            <label for="international_amount"
+                                   class="form-label fw-normal  text-sm">Amount:</label>
+                            <div class="input-group">
 
-                            <input type="text" name="amount" required
-                                   id="international_amount"
-                                   class="form-control flex-grow-1  py-2 px-3  fw-semibold text-primary js-amount"/>
-                        </div>
-                        <div class=" p-0">
-                            <div
-                                    class="d-flex  flex-column flex-md-row gap-3  ">
-                                <div>
-                                    <div class="fw-normal text-primary fs-6">
-                                        Total Conversion:
-                                    </div>
-                                    <div
-                                            class="d-flex flex-shrink-0 align-items-center gap-2">
+                                <input type="text" name="amount" required
+                                       id="international_amount"
+                                       class="form-control flex-grow-1 mb-1 py-3 bg-secondary text-sm border-0 bg-opacity-10 js-amount"/>
+                            </div>
+                            <div class=" p-0">
+                                <div
+                                        class="d-flex  flex-column flex-md-row gap-3  ">
+                                    <div>
+                                        <div class="fw-normal text-info text-sm">
+                                            Total Conversion:
+                                        </div>
+                                        <div
+                                                class="d-flex flex-shrink-0 align-items-center gap-2">
                                                                     <span
                                                                             class="text-muted fw-semibold small js-converted-currency">USD</span>
-                                        <span
-                                                class="fs-13px fw-semibold small text-primary js-converted-amount">2763.38</span>
+                                            <span
+                                                    class="fs-13px fw-semibold small text-primary js-converted-amount">2763.38</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div>
-                                    <div class="fw-normal text-primary fs-6">
-                                        Conversion Rate:
-                                    </div>
-                                    <div class="text-primary">
-                                        (<span
-                                            class="text-info small js-conversion-rate">0.000092</span>)
+                                    <div>
+                                        <div class="fw-normal text-info text-sm">
+                                            Conversion Rate:
+                                        </div>
+                                        <div class="text-primary">
+                                            (<span
+                                                class="text-info small js-conversion-rate">0.000092</span>)
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
-                </div>
-                <div class="border-top border-3 mb-3"></div>
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-6">
-                        <div
-                                class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
-                            <button type="submit" data-bs-target="" class="btn btn-info text-white px-lg-5">
-                                Continue
-                            </button>
-                            <button type="reset" class="btn btn-outline-primary   px-lg-5">
-                                Clear
-                            </button>
+                    <div class="border-top border-3 mb-3"></div>
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
+                                <button type="reset" class="btn btn-outline-primary   px-lg-5">
+                                    Clear
+                                </button>
+                                <button type="submit" data-bs-target="" class="btn btn-info text-white px-lg-5">
+                                    Continue
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            </form>
-            </form>
-
+                </form>
+            </div>
         </div>
     </div>
 </div>
@@ -810,7 +808,9 @@
                                                class="fw-normal text-sm form-label">
                                             Card Number
                                         </label>
-                                        <input type="text" class="py-3 bg-secondary text-sm border-0 bg-opacity-10 mb-2 form-control" readonly
+                                        <input type="text"
+                                               class="py-3 bg-secondary text-sm border-0 bg-opacity-10 mb-2 form-control"
+                                               readonly
                                                value="3535 XXXX XXXX 6535">
 
                                     </div>
@@ -901,7 +901,7 @@
                                             </div>
                                             <div
                                                     class="d-flex flex-shrink-0 align-items-center gap-2">
-                                                                    <span class="text-muted fw-semibold small js-converted-currency">USD</span>
+                                                <span class="text-muted fw-semibold small js-converted-currency">USD</span>
                                                 <span
                                                         class="fs-13px fw-semibold text-sm text-primary js-converted-amount">2763.38</span>
                                             </div>
@@ -1025,7 +1025,7 @@
             </div>
             <form action="" method="post" class="submitTransferForm">
                 <div class="modal-body py-0 px-lg-5"
-                     style="background-image: url(../images/payments/bg_details.svg);background-position: top;background-repeat: no-repeat;background-size: 80%">
+                     style="background-image: url(../assets/images/payments/bg_details.svg);background-position: top;background-repeat: no-repeat;background-size: 80%">
                     <h6 class="text-info fw-bold py-3 border-top border-3 border-info">
                         Transfer From I&M Bank to I&M Bank
                     </h6>
