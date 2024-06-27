@@ -1,10 +1,966 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I&M Internet bank</title>
+    <link href="../css/custom.css" rel="stylesheet">
 </head>
-<body>
+<body class="">
+<div class="d-flex min-vh-100 justify-content-between flex-column">
+    <div class="bg-color-height mb-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-start py-4">
+                <div>
+                    <div class="d-flex col-lg-2 p-2 flex-column bg-white  rounded-1">
+                        <img src="../assets/b_logo.png" class="img-fluid" alt="logo">
+                    </div>
+                    <span class="text-white  fw-bold fs-2">Retail</span>
+                </div>
+                <div class="d-flex col-lg-3 align-items-center justify-content-end gap-2">
+                    <h5 class="text-white ">Welcome ,Jon Doe</h5>
+                    <div class="d-flex rounded-circle bg-dark bg-opacity-50 p-4 justify-content-center align-items-center"
+                         style="height: 16px;width: 16px">
+                        <i class="bi bi-person fs-5 text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <nav class="mb-4 navbar navbar-expand-lg">
+                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="/"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="../pages/corporate-dashboard.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">Corporate Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Transfers
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/transfers/own-account.html">Transfer to your own Accounts </a></li>
+                                <li><a class="dropdown-item" href="../pages/transfers/internal.html">Transfer from I&M to I&M </a></li>
+                                <li><a class="dropdown-item" href="../pages/transfers/local-bank.html">Transfer to Local Banks </a></li>
+                                <li><a class="dropdown-item" href="../pages/transfers/international.html">Transfer to International </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Payments
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/payments/rra.html">RRA Payment </a></li>
+                                <li><a class="dropdown-item" href="../pages/payments/irembo.html">Irembo Payment </a></li>
+                                <li><a class="dropdown-item" href="../pages/payments/airtime.html">Airtime Top Up</a></li>
+                                <li><a class="dropdown-item" href="../pages/transfers/local-bank.html">Mobile Money Payment </a></li>
+                                <li><a class="dropdown-item" href="../pages/payments/utilities.html">Utilities Payment </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" href="card-management.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
+                                Manage Cards
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
+                                Requests
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="beneficiaries.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
+                                Beneficiaries
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Mails" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mails
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 ">
+                    <div class="card border-0 h-100 rounded-4">
+                        <div class=" card-body mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="text-black fw-bold ">Cards wallet </h5>
+                                <form action="" id="DebitCard_applicationForm">
+                                    <button type="submit"
+                                            data-bs-target="#wallet_create" data-bs-toggle="modal"
+                                            class="btn btn-info text-white rounded-pill px-4 py-1">
+                                        <i class="bi bi-plus-circle me-2"></i>Add New
+                                    </button>
+                                </form>
+                            </div>
 
+                            <div class="table-responsive">
+                                <table class="table my-2 table-accounts  ">
+                                    <thead>
+                                    <tr class="">
+
+
+                                        <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer">
+                                            <div class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                <span>Wallet Number</span>
+                                                <div class="d-flex flex-column fs-9px">
+                                                    <i class="bi bi-chevron-up"></i>
+                                                    <i class="bi bi-chevron-down"></i>
+                                                </div>
+                                            </div>
+
+                                        </th>
+                                        <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                <span>Wallet Currency</span>
+                                                <div class="d-flex flex-column fs-9px">
+                                                    <i class="bi bi-chevron-up "></i>
+                                                    <i class="bi bi-chevron-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                <span>Wallet Priority</span>
+                                                <div class="d-flex flex-column fs-9px">
+                                                    <i class="bi bi-chevron-up "></i>
+                                                    <i class="bi bi-chevron-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                <span>Balance</span>
+                                                <div class="d-flex flex-column fs-9px">
+                                                    <i class="bi bi-chevron-up "></i>
+                                                    <i class="bi bi-chevron-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                <span>Created At</span>
+                                                <div class="d-flex flex-column fs-9px">
+                                                    <i class="bi bi-chevron-up "></i>
+                                                    <i class="bi bi-chevron-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+
+
+                                        <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer">
+                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                <span>Wallet Status</span>
+                                                <div class="d-flex flex-column fs-9px">
+                                                    <i class="bi bi-chevron-up "></i>
+                                                    <i class="bi bi-chevron-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info">Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="cursor-pointer js-account py-5">
+                                        <td class="small">42424355424535</td>
+                                        <td class="small">RWF</td>
+                                        <td class="small">3</td>
+
+
+                                        <td class="small">15,000</td>
+                                        <td class="small">2021-05-05</td>
+                                        <td class="small"><span class="badge start text-bg-success">Active</span>
+                                            <span class="badge text-bg-danger stop d-none">Deactivated</span>
+                                        </td>
+
+                                        <td class="small">
+                                            <div class="dropdown">
+                                                <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                        type="button" data-bs-toggle="dropdown">
+                                                    Options
+                                                </button>
+                                                <ul class="dropdown-menu  dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="./wallet_transfers.html">Manage Top up</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-target="#wallet_update" data-bs-toggle="modal">Wallet change priority</a></li>
+                                                    <li ><a class="dropdown-item " href="./wallet_statement.html"> Wallet Statement</a></li>
+                                                    <li ><a class="dropdown-item js-delete d-none  "> Activate</a></li>
+                                                    <li ><a class="dropdown-item js-start   "> Deactivate</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="cursor-pointer js-account py-5">
+                                        <td class="small">636373638362</td>
+                                        <td class="small">RWF</td>
+                                        <td class="small">5</td>
+
+
+                                        <td class="small">1,000,000</td>
+                                        <td class="small">2021-05-05</td>
+                                        <td class="small"><span class="badge active text-bg-success">Active</span>
+                                            <span class="badge text-bg-danger unactive d-none">Deactivated</span>
+                                        </td>
+                                        <td class="small">
+                                            <div class="dropdown">
+                                                <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                        type="button" data-bs-toggle="dropdown">
+                                                    Options
+                                                </button>
+                                                <ul class="dropdown-menu  dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="./wallet_transfers.html">Manage Top up</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-target="#updateIM" data-bs-toggle="modal">Wallet change priority</a></li>
+                                                    <li ><a class="dropdown-item " href="./wallet_statement"> wallet Statement</a></li>
+                                                    <li ><a class="dropdown-item js-delete d-none  "> Activate</a></li>
+                                                    <li ><a class="dropdown-item js-start   "> Deactivate</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="cursor-pointer js-account py-5">
+                                        <td class="small">2626372632627 </td>
+                                        <td class="small">AUD</td>
+                                        <td class="small">4</td>
+
+                                        <td class="small">300,0000</td>
+                                        <td class="small">2023-08-07</td>
+                                        <td class="small"><span class="badge start d-none text-bg-success">Active</span>
+                                            <span class="badge text-bg-danger stop ">Deactivated</span>
+                                        </td>
+
+                                        <td class="small">
+                                            <div class="dropdown">
+                                                <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                        type="button" data-bs-toggle="dropdown">
+                                                    Options
+                                                </button>
+                                                <ul class="dropdown-menu  dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="./wallet_transfers.html">Manage Top up</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-target="#updateIM" data-bs-toggle="modal">Wallet change priority</a></li>
+                                                    <li ><a class="dropdown-item js-delete d-none  "> Activate</a></li>
+                                                    <li ><a class="dropdown-item js-start   "> Deactivate</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="cursor-pointer js-account py-5">
+
+                                        <td class="small">33552525262536</td>
+                                        <td class="small">RWF</td>
+                                        <td class="small">6</td>
+
+                                        <td class="small">4000</td>
+                                        <td class="small">2021-05-05</td>
+                                        <td class="small"><span class="badge active text-bg-danger">Deactivated</span>
+                                            <span class="badge text-bg-success unactive d-none">Activate</span>
+                                        </td>
+
+                                        <td class="fs-12px">
+                                            <div class="dropdown">
+                                                <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                        type="button" data-bs-toggle="dropdown">
+                                                    Options
+                                                </button>
+                                                <ul class="dropdown-menu  dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="./wallet_transfers.html">Manage Top up</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-target="#updateIM" data-bs-toggle="modal">Wallet change priority</a></li>
+                                                    <li ><a class="dropdown-item js-delete d-none  "> Activate</a></li>
+                                                    <li ><a class="dropdown-item js-start   "> Deactivate</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="cursor-pointer js-account py-5">
+                                        <td class="small">176262627277</td>
+                                        <td class="small">USD</td>
+                                        <td class="small">2</td>
+
+                                        <td class="small">Payment</td>
+                                        <td class="small">2022-05-05</td>
+                                        <td class="small"><span class="badge start text-bg-success">Active</span>
+                                            <span class="badge text-bg-danger stop d-none">Deactivated</span>
+                                        </td>
+                                        <td class="small">
+                                            <div class="dropdown">
+                                                <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                        type="button" data-bs-toggle="dropdown">
+                                                    Options
+                                                </button>
+                                                <ul class="dropdown-menu  dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="./wallet_transfers.html">Manage Top up</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-target="#updateIM" data-bs-toggle="modal">Wallet change priority</a></li>
+                                                    <li ><a class="dropdown-item js-delete d-none  "> Activate</a></li>
+                                                    <li ><a class="dropdown-item js-start   "> Deactivate</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-2">
+                    <div class="card h-100 rounded-4  border-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6 quick-actions border-bottom border-end">
+                                    <a href="#"
+                                       class="mb-1 py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                                        <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                             style="height: 54px;width: 54px">
+                                            <img src="../assets/images/login/RRA.svg" class="h-75" alt="rra">
+                                        </div>
+                                        <span class="small text-primary fw-bold">Pay to</span>
+                                        <span class="small text-info fw-semibold">RRA</span>
+                                    </a>
+                                </div>
+                                <div class="col-6 quick-actions border-bottom">
+                                    <a href="#"
+                                       class=" mb-1 py-1 text-decoration-none d-flex justify-content-center align-items-center flex-column">
+                                        <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                             style="height: 54px;width: 54px">
+                                            <img src="../assets/images/dashboard/irembo.svg" class="h-75" alt="rra">
+                                        </div>
+                                        <span class="small text-primary fw-bold">Pay to</span>
+                                        <span class="small text-info fw-semibold">Irembo</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-6 py-2 quick-actions  border-end">
+                                    <a href="#"
+                                       class=" py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                                        <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                             style="height: 54px;width: 54px">
+                                            <i class="bi bi-meta"></i>
+                                        </div>
+                                        <span class="small text-primary fw-bold">Pay </span>
+                                        <span class="small text-info fw-semibold">Electricity</span>
+                                    </a>
+                                </div>
+                                <div class="col-6 quick-actions py-2 ">
+                                    <a href="#"
+                                       class="d-flex py-1 text-decoration-none justify-content-center align-items-center flex-column">
+                                        <div class="bg-white-subtle   d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                             style="height: 54px;width: 54px;">
+                                            <i class="bi bi-droplet"></i>
+
+                                        </div>
+                                        <span class="small text-primary fw-bold">Pay </span>
+                                        <span class=" text-info small fw-semibold">Water</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class=" bg-white bg-opacity-25  rounded-circle d-flex justify-content-center align-items-center"
+                                          style="height: 30px;width: 30px" aria-hidden="true">
+                                        <i class="bi bi-chevron-left fs-5"></i>
+                                    </span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                </div>
+                                <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class=" bg-white bg-opacity-25  rounded-circle d-flex justify-content-center align-items-center"
+                                      style="height: 30px;width: 30px" aria-hidden="true">
+                                        <i class="bi bi-chevron-right fs-5"></i>
+                                    </span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="bg-info d-flex justify-content-center w-100">
+            <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
+        </div>
+    </footer>
+</div>
+<div class="modal   fade"   id="wallet_create" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog  modal-dialog-centered"  >
+        <div class="modal-content  rounded-4" >
+            <div class="modal-header   justify-content-between  align-items-center">
+                <h1 class="modal-title fs-4 text-info fw-semibold mb-0">
+                    Create New Wallet
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="" id="">
+                    <div class=" mb-3">
+                        <label for="wallet_currency"
+                               class="text-sm  fw-normal form-label">
+                            Wallet Currency
+                        </label>
+                        <select class="form-select   py-3 bg-secondary text-sm border-0 bg-opacity-10  js-transfer-from"
+                                required id="wallet_currency"
+                                name="from_account">
+                            <option value="">Select Currency</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="wallet_priority"
+                               class="text-primary fw-normal form-label">
+                            Wallet Priority
+                        </label>
+                        <select class="form-select py-3 bg-secondary mb-4 text-sm border-0 bg-opacity-10"
+                                required id="wallet_priority"
+                                name="priority">
+                            <option value="">Select Priority number</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+
+
+
+
+                    <div class="border-top border-3 my-3"></div>
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div
+                                    class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
+                                <button type="reset" class="btn btn-outline-primary   ">
+                                    Clear
+                                </button>
+                                <a  data-bs-target="#otpModal" data-bs-toggle="modal" class="btn btn-info text-white ">
+                                    Continue
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal   fade"   id="wallet_update" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog  modal-dialog-centered"  >
+        <div class="modal-content px-3 rounded-4" >
+            <div class="modal-header   justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
+                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
+                    Change Wallet priority
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+
+
+            <form action="" class="">
+
+                <div class=" mb-3">
+                    <label for="wallet_currency"
+                           class="text-primary fw-normal form-label">
+                        Wallet Currency
+                    </label>
+                    <input type="text" class="form-control" value="RWF" readonly>
+                </div>
+                <div class=" mb-3">
+                    <label for="wallet_priority"
+                           class="text-primary fw-normal form-label">
+                        Wallet Priority
+                    </label>
+                    <select class="form-select py-2  text-primary  "
+                            required id="wallet2_priority"
+                            name="priority">
+                        <option value="">Select Priority number</option>
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+
+
+
+
+                <div class="border-top border-3 my-3"></div>
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-6">
+                        <div
+                                class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
+                            <a  data-bs-target="#otpModal" data-bs-toggle="modal" class="btn btn-info text-white px-lg-5">
+                                Continue
+                            </a>
+                            <button type="reset" class="btn btn-outline-primary   px-lg-5">
+                                Clear
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="otpModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+            <div class="d-flex justify-content-center flex-column border-0 align-items-center py-4 px-lg-5">
+                <div class="position-relative">
+                    <div class="d-flex justify-content-center  align-items-center bg-primary rounded-circle"
+                         style="height: 84px;width: 84px">
+                        <i class="text-white bi bi-arrow-counterclockwise tw-object-cover display-2">
+                        </i>
+                        <span id="secondsRemain" class="position-absolute text-white tw-top-2 tw-right-2"></span>
+                    </div>
+                </div>
+                <span class="text-dark  display-5 fw-bold ">
+                        OTP
+                </span>
+                <span class="text-muted  mb-1  ">
+                        Please check your 4 digits sent to *********6723
+                </span>
+
+            </div>
+            <form action="../payments/payment-success.html">
+                <div class="modal-body py-0 px-lg-5">
+
+
+                    <div class="d-flex justify-content-between card-body gap-3">
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-info  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-info  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-info  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-info  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-info  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-info  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer border-top-0 px-lg-5 py-4 justify-content-end">
+                    <button type="button" class="btn btn-outline-primary    py-2  fw-semibold  ">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn btn-info  px-5 js-verifyOtp  py-2 text-white fw-semibold  ">
+                        Confirm
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+
+    let jsFromAccountElement = $('.js-transfer-from');
+    let toggleConversion = function () {
+        let to = $('.js-transfer-to').val();
+        let from = jsFromAccountElement.val();
+
+        if (to && from && to !== from) {
+            $('.js-conversion').slideDown();
+        } else {
+            $('.js-conversion').slideUp();
+        }
+    }
+
+
+
+
+    $(function () {
+
+
+        let jsCurrency = $('.js-currency');
+        let jsBeneficiaries = $('.js-beneficiaries');
+
+        currencies.forEach(function (currency, index) {
+            let abbr = currency.abbr;
+            let innerText = `${abbr}`;
+            jsFromAccountElement.append(`<option value="${abbr}">${innerText}</option>`);
+            jsCurrency.append(`<option value="${abbr}">${abbr}</option>`);
+
+            let accountText = `${abbr}`;
+            jsBeneficiaries.append(`<option value="${abbr}">${accountText}</option>`);
+
+        });
+
+        //use sweet alert function
+
+
+
+
+        jQuery.validator.addMethod("alphanumeric", function (value, element) {
+            // return this.optional(element) || /^[a-zA-Z0-9\s]+$/.test(value);
+            // allow only letters, numbers,  whitespace
+            return /^[a-zA-Z0-9\s']+$/.test(value) || this.optional(element);
+        }, "Letters and numbers  only please");
+
+        let $ownFromAccount = $('.js-transfer-from');
+        let hideBalanceSymbol = '*** *** *** ***';
+        $ownFromAccount.on('change', function () {
+            // find the sibling of parent div
+            $('.js-balance').text(hideBalanceSymbol)
+            $('.js-toggle-balance').text('Show Balance')
+            let accountBalance = $(this).parent().siblings('.js-account-balance');
+            if ($(this).val()) {
+                accountBalance.addClass('d-flex')
+            } else {
+                accountBalance.removeClass('d-flex')
+            }
+        });
+        function sweetAlert() {
+            Swal.fire({
+                text: "Wallet is created successfully!",
+                icon: 'success',
+            });
+        }
+        //use sweet alert function
+        $('.js-verifyOtp ').on('click', function () {
+            $('#otpModal').modal('hide');
+            sweetAlert();
+
+
+        });
+        $('.js-delete').on('click', function () {
+            $('.js-delete').addClass('d-none');
+            $('.js-start').removeClass('d-none');
+
+        });
+        $('.js-start').on('click', function () {
+            $('.js-delete').addClass('d-none');
+            $('.js-start').removeClass('d-none');
+        });
+
+
+
+        $('.js-toggle-balance').on('click', function () {
+            let currency = $ownFromAccount.val();
+            let balanceElement = $(this).siblings('div').find('.js-balance');
+            if (balanceElement.text() === hideBalanceSymbol) {
+                balanceElement.text(currency + ' 1,000,000.00');
+                $(this).text('Hide Balance');
+            } else {
+                balanceElement.text(hideBalanceSymbol);
+                $(this).text('Show Balance');
+            }
+        });
+
+
+        let $imForm = $('#imForm');
+        $imForm.validate({
+            rules: {
+                reason: {
+                    required: true,
+                    alphanumeric: true,
+                }
+            },
+        });
+
+        $imForm.on('submit', function (e) {
+            e.preventDefault();
+            if ($imForm.valid()) {
+                $('#exampleModal').modal('show');
+            }
+        });
+
+        let $ownAccountsForm = $('#ownAccountsForm');
+        $ownAccountsForm.validate({
+            rules: {
+                reason: {
+                    required: true,
+                    alphanumeric: true,
+                }
+            },
+        });
+
+        $ownAccountsForm.on('submit', function (e) {
+            e.preventDefault();
+            if ($ownAccountsForm.valid()) {
+                $('#exampleModal').modal('show');
+            }
+        });
+
+        let $internationalForm = $('#internationalForm');
+        $internationalForm.validate({
+            rules: {
+                reason: {
+                    required: true,
+                    alphanumeric: true,
+                }
+            },
+        });
+        $internationalForm.on('submit', function (e) {
+            e.preventDefault();
+            if ($internationalForm.valid()) {
+                $('#otpModal').modal('show');
+            }
+        });
+
+        let $applyForm = $('#applicationForm');
+        $applyForm.validate({
+            rules: {
+                reason: {
+                    required: true,
+                    alphanumeric: true,
+                }
+            },
+        });
+
+
+        $applyForm.on('submit', function (e) {
+            e.preventDefault();
+            if ($internationalForm.valid()) {
+                $('#DebitCard_apply').modal('show');
+            }
+        });
+        let $DebitapplyForm = $('#DebitCard_applicationForm');
+        $DebitapplyForm.validate({
+            rules: {
+                reason: {
+                    required: true,
+                    alphanumeric: true,
+                }
+            },
+        });
+
+
+        $DebitapplyForm.on('submit', function (e) {
+            e.preventDefault();
+            if ($internationalForm.valid()) {
+                $('#creditCard_apply').modal('show');
+            }
+        });
+
+        jsFromAccountElement.on('change', function () {
+            if ($(this).val())
+                toggleConversion();
+        });
+        $('.js-transfer-to').on('change', function () {
+            let value = $(this).val();
+            if (value) {
+                toggleConversion();
+                $('.js-converted-currency').text(value);
+            }
+        });
+
+
+        $('.one-digit').on('keyup', function () {
+            if ($(this).val().length === 1) {
+                setTimeout(() => {
+                    $(this).next('.one-digit').focus();
+                }, 100);
+            }
+        });
+//use select option to slide up and down the div when select option with value own and other have value international
+        $('.js-select-card').on('change', function () {
+            let value = $(this).val();
+            if (value === 'classic') {
+                //a
+
+
+                $('.js-classic-card').removeClass('d-none');
+                $('.js-gold').addClass('d-none');
+                $('.js-classic-card').slideDown();
+                $('.js-gold-card').slideUp();
+            } else if(value === 'gold') {
+
+                $('.js-classic').addClass('d-none');
+                $('.js-gold').removeClass('d-none');
+                $('.js-gold-card').slideDown();
+                $('.js-classic-card').slideUp();
+
+            }
+        });
+
+        $('.submitTransferForm').on('submit', function (e) {
+            e.preventDefault();
+            // find modal parent of this form
+            let modal = $(this).closest('.modal');
+            // hide modal
+            modal.modal('hide');
+            $('#otpModal').modal('show');
+
+            let $minutesRemain = $('#minutesRemain');
+            let minutes = Number($minutesRemain.text());
+            let seconds = 0;
+            let interval = setInterval(function () {
+                if (seconds === 0) {
+                    minutes--;
+                    seconds = 60;
+                }
+                seconds--;
+                $minutesRemain.text(minutes);
+                $('#secondsRemain').text(seconds);
+                if (minutes === 0 && seconds === 0) {
+                    clearInterval(interval);
+                }
+            }, 1000);
+        });
+
+
+        $('.select2').select2({
+            theme: 'bootstrap-5',
+            allowClear: false
+        });
+
+        $('.js-check-saved-beneficiaries').on('click', function () {
+
+
+            let parent = $(this).parent().parent();
+            console.log(parent);
+            // find sibling with class js-select-beneficiary
+            let selectBeneficiary = parent.siblings('div.js-select-beneficiary');
+            console.log(selectBeneficiary);
+            let searchBeneficiary = parent.siblings('div.js-search-beneficiary');
+
+            if ($(this).prop('checked')) {
+                console.log(true)
+                selectBeneficiary.slideDown();
+                searchBeneficiary.slideUp()
+            } else {
+                console.log(false)
+                selectBeneficiary.slideUp()
+                searchBeneficiary.slideDown();
+            }
+
+        })
+
+
+        $('.js-payment-schedule').on('change', function () {
+            let scheduleContainer = $(this).parent().siblings('.js-schedule-container');
+
+            if ($(this).prop('checked')) {
+                scheduleContainer.slideDown();
+            } else {
+                scheduleContainer.slideUp();
+            }
+        });
+
+        $('.js-verify').on('click', function () {
+            //simulate ajax call
+            let btn = $(this);
+            // add spinner to button
+            btn.html(
+                `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                <span class="visually-hidden">Loading...</span>`
+            )
+                .prop('disabled', true);
+            setTimeout(function () {
+                $('.js-account-found').slideDown();
+                btn.html('Verify').prop('disabled', false);
+            }, 2000);
+        });
+
+        let loadBeneficiaries = function () {
+            let beneficiariesInput = $('.js-transfer-to');
+
+            currencies.forEach(function (currency, index) {
+                beneficiariesInput.append(`<option value="${currency.abbr}">${currency.abbr}{index + 1}</option>`);
+            });
+            beneficiariesInput.trigger('change');
+        }
+
+        loadBeneficiaries();
+
+        let loadCountries = function () {
+            let url = 'https://restcountries.com/v3.1/all';
+            let countriesInput = $('.js-countries');
+            $.ajax({
+                url: url,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    $.each(data, function (index, country) {
+                        countriesInput.append(`<option value="${country.cca2}">${country.name.common}</option>`);
+                    });
+                    countriesInput.trigger('change');
+                }
+            });
+        }
+
+        loadCountries();
+
+        /*    let loadBanks = function () {
+               let url = 'https://api.paystack.co/bank';
+               let banksInput = $('.js-banks');
+               banksInput.empty();
+               banksInput.trigger('change');
+               $.ajax({
+                   url: url,
+                   type: 'GET',
+                   dataType: 'json',
+                   success: function (data) {
+                       $.each(data.data, function (index, bank) {
+                           banksInput.append(`<option value="${bank.code}">${bank.code}-${bank.name}</option>`);
+                       });
+                       banksInput.trigger('change');
+                   }
+               });
+           }
+
+           loadBanks(); */
+
+    });
+</script>
 </body>
 </html>
