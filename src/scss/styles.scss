@@ -65,14 +65,21 @@ body {
 .v-cards .nav-pills  {
   border: 0!important;
 }
-
+.badge {
+  color: $white!important;
+}
+.btn-info{
+    background-color: $info;
+    border-color: $info;
+  color: white;
+}
 
 .v-cards .nav-pills .nav-link .bn .card{
   border: 0!important;
   padding: 0!important;
   margin: 0!important;
   background-color: white!important;
-  color: black !important;
+  color: $gray-700 !important;
 }
 .v-cards .nav-pills  .nav-link.active .bn .card{
   background-image: url("../assets/images/dashboard/cards_bg.png") !important;
@@ -194,6 +201,6 @@ body {
 .dropdown-menu {
   border-radius: 10px;
   border: 0;
-  box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 40px 0 rgba(0, 0, 0, 0.1);
   margin-top: 10px;
 }

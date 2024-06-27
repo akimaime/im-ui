@@ -11902,12 +11902,22 @@ body {
   border: 0 !important;
 }
 
+.badge {
+  color: #fff !important;
+}
+
+.btn-info {
+  background-color: #0099A8;
+  border-color: #0099A8;
+  color: white;
+}
+
 .v-cards .nav-pills .nav-link .bn .card {
   border: 0 !important;
   padding: 0 !important;
   margin: 0 !important;
   background-color: white !important;
-  color: black !important;
+  color: #495057 !important;
 }
 
 .v-cards .nav-pills .nav-link.active .bn .card {
@@ -12027,7 +12037,7 @@ body {
 .dropdown-menu {
   border-radius: 10px;
   border: 0;
-  box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 40px 0 rgba(0, 0, 0, 0.1);
   margin-top: 10px;
 }
 
