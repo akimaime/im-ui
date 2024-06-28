@@ -103,49 +103,15 @@
                                             <h4 class="text-info fw-bold ">Own Account Transfer</h4>
                                             <p class="text-muted small">Transfer money between your own accounts</p>
                                         </div>
-                                        <div class="col-lg-6">
-                                            <div class="card  bg-secondary bg-opacity-10 border-0">
-                                                <div class=" ">
-                                                    <div class="text-primary d-flex  flex-column card-body">
-                                                        <div class="d-flex gap-2 justify-content-between">
-                                                            <span class="text-info fw-bold text-xs">DAILY LIMIT 2,000,000RWF</span>
-                                                            <div class="d-flex justify-content-start">
-                                                    <span class="border-top text-success fw-semibold py-1 text-xs">
-                                                      250,000 RWF LIMIT ON EACH TRANSACTION
-                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="bg-primary-subtle mb-2 w-100 rounded-pill"
-                                                             style="height: 6px">
-                                                            <div class="bg-primary w-50 rounded-pill"
-                                                                 style="height: 6px"></div>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between ">
-                                                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                                                <span class="text-info fw-semibold text-xs">amount Transferred</span>
-                                                                <span class="text-primary  text-xs">1000RWF</span>
-                                                            </div>
-                                                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                                                <span class="text-info fw-semibold text-sm">Remaining amount </span>
-                                                                <span class="text-primary  text-sm">1,000,000RWF</span>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class=" mb-1">
                                                 <label for="own_from_account"
-                                                       class="text-info fw-normal form-label">
+                                                       class="text-sm fw-normal form-label">
                                                     Make payment from:
                                                 </label>
-                                                <select class="form-select py-3 bg-secondary border-0 bg-opacity-10  text-info  js-transfer-from"
+                                                <select class="form-select py-3 bg-secondary border-0 bg-opacity-10    js-transfer-from"
                                                         required id="own_from_account" name="from_account">
                                                     <option value="">Select Account</option>
                                                 </select>
@@ -167,11 +133,11 @@
                                             <div class=" mb-1">
                                                 <div>
                                                     <label for="own_to_account"
-                                                           class="text-info fw-normal form-label">
+                                                           class="text-sm fw-normal form-label">
                                                         Make payment to:
                                                     </label>
                                                     <select id="own_to_account" name="own_to_account" required
-                                                            class="   py-3  bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info form-select js-transfer-to">
+                                                            class="   py-3  bg-secondary border-0 bg-opacity-10 px-3    form-select js-transfer-to">
                                                         <option value="">Select Account</option>
                                                     </select>
                                                 </div>
@@ -185,11 +151,11 @@
                                         <div class="col-lg-6">
                                             <div class="mb-1">
                                                 <label for="own_amount"
-                                                       class="form-label fw-normal  text-info fs-6">Amount:</label>
+                                                       class="form-label fw-normal  text-sm">Amount:</label>
                                                 <div class="input-group">
 
                                                     <input type="text" name="amount" id="own_amount" required
-                                                           class="form-control flex-grow-1 py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info js-amount"/>
+                                                           class="form-control flex-grow-1 py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold js-amount"/>
                                                 </div>
                                                 <div class="js-conversion p-0" style="display:none">
                                                     <div
@@ -225,9 +191,9 @@
 
                                             <div class="mb-1">
                                                 <label for="own_reason"
-                                                       class="form-label text-info fw-normal">Reason:</label>
-                                                <textarea rows="4" required
-                                                          class="form-control bg-secondary border-0 bg-opacity-10     py-2 px-3  fw-semibold text-primary"
+                                                       class="form-label text-sm">Reason:</label>
+                                                <textarea rows="1" required
+                                                          class="form-control bg-secondary border-0 bg-opacity-10     py-3 px-3  fw-semibold text-primary"
                                                           name="reason" id="own_reason"></textarea>
                                             </div>
                                         </div>
@@ -251,12 +217,12 @@
 
                                                 <div class="mb-1 js-schedule-container" style="display: none">
                                                     <label for="own_date"
-                                                           class="form-label fw-normal text-info fs-6">
+                                                           class="form-label fw-normal text-sm">
                                                         Date to process payment:
                                                     </label>
                                                     <input type="date" name="own_date" id="own_date"
                                                            required
-                                                           class="form-control   bg-secondary border-0 bg-opacity-10 py-3 px-3  fw-semibold text-info"/>
+                                                           class="form-control   bg-secondary border-0 bg-opacity-10 py-3 px-3"/>
                                                 </div>
                                             </div>
                                         </div>
