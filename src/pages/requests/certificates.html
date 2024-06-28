@@ -120,7 +120,7 @@
                                     <thead>
                                     <tr class="">
 
-                                        <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer">
+                                        <th class="text-info  border-0 text-sm border-3 border-bottom  border-info cursor-pointer">
                                             <div class=" d-flex align-items-center justify-content-between border-end pe-2">
                                                 <span>Collector ID Type</span>
                                                 <div class="d-flex flex-column fs-9px">
@@ -198,6 +198,26 @@
                                         <td class="fs-13px"><span
                                                 class="badge active text-bg-warning">Pending</span>
                                             <span class="badge text-bg-danger unactive d-none">Deactivated</span>
+                                        </td>
+                                        <td class="fs-13px">Bank Opinion</td>
+                                    </tr>
+                                    <tr class="cursor-pointer js-account py-5">
+                                        <td class="fs-13px">National ID</td>
+                                        <td class="fs-13px">119998023456789</td>
+                                        <td class="fs-13px">John Doe</td>
+                                        <td class="fs-13px">Bank Opinion</td>
+                                        <td class="fs-13px"><span class="badge start text-bg-warning">pending</span>
+                                            <span class="badge text-bg-danger stop d-none">Deactivated</span>
+                                        </td>
+                                        <td class="fs-13px">Bank Opinion</td>
+                                    </tr>
+                                    <tr class="cursor-pointer js-account py-5">
+                                        <td class="fs-13px">National ID</td>
+                                        <td class="fs-13px">119998023456789</td>
+                                        <td class="fs-13px">John Doe</td>
+                                        <td class="fs-13px">Bank Opinion</td>
+                                        <td class="fs-13px"><span class="badge start text-bg-warning">pending</span>
+                                            <span class="badge text-bg-danger stop d-none">Deactivated</span>
                                         </td>
                                         <td class="fs-13px">Bank Opinion</td>
                                     </tr>
@@ -335,176 +355,176 @@
 <div class="modal   fade" id="certificateRequest" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content px-3 rounded-4">
-            <div class="modal-header   justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
-                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
+            <div class="modal-header   justify-content-between  align-items-center py-3 mb-3 px-0 ">
+                <h1 class="modal-title fs-4 text-info fw-semibold mb-0">
                     Certificate Application Form
                 </h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form action="" class="" id="applyCertificate">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="">
-                            <label class="form-label fw-normal text-sm" for="certificate_types">Certificate Type:</label>
-                            <select id="certificate_types" required
-                                    class="  py-3 bg-secondary text-sm border-0 bg-opacity-10   js-select-card form-select ">
-                                <option value="hid" selected disabled>Select Certificate Type</option>
-                                <option value="classic">Auditors Certificate Approval</option>
-                                <option value="gold">Balance Certificate</option>
-                                <option value="suppCard"> Interest Certificate</option>
-                                <option value="no">No dues Certificate</option>
-                                <option value="tax">Withholding Tax Certificate</option>
-                                <option value="other">Others</option>
-                            </select>
+            <div class="modal-body">
+                <form action="" class="" id="applyCertificate">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="">
+                                <label class="form-label fw-normal text-sm" for="certificate_types">Certificate Type:</label>
+                                <select id="certificate_types" required
+                                        class="  py-3 bg-secondary text-sm border-0 bg-opacity-10   js-select-card form-select ">
+                                    <option value="hid" selected disabled>Select Certificate Type</option>
+                                    <option value="classic">Auditors Certificate Approval</option>
+                                    <option value="gold">Balance Certificate</option>
+                                    <option value="suppCard"> Interest Certificate</option>
+                                    <option value="no">No dues Certificate</option>
+                                    <option value="tax">Withholding Tax Certificate</option>
+                                    <option value="other">Others</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="">
-                            <label for="branches2"
-                                   class="form-label fw-normal text-sm">Branch:</label>
-                            <select id="branches2" name="bank" required
-                                    class="py-3 bg-secondary text-sm border-0 bg-opacity-10 form-select js-banks">
-                                <option value="">Select Branch</option>
-                                <option value="1">INM BANK KIGALI HQ</option>
-                                <option value="2">INM BANK KIGALI KCM</option>
-                                <option value="3">INM BANK KIGALI HEIGHTS</option>
-                                <option value="4">INM BANK REMERA</option>
-                                <option value="5">INM BANK HUYE</option>
-                                <option value="6">INM BANK NYAMIRAMBO</option>
-                                <option value="7">INM BANK CHIC</option>
-                                <option value="8">INM BANK RUSIZI</option>
-                                <option value="9">INM BANK HEAD OFFICE</option>
-                            </select>
+                        <div class="col-lg-6">
+                            <div class="">
+                                <label for="branches2"
+                                       class="form-label fw-normal text-sm">Branch:</label>
+                                <select id="branches2" name="bank" required
+                                        class="py-3 bg-secondary text-sm border-0 bg-opacity-10 form-select js-banks">
+                                    <option value="">Select Branch</option>
+                                    <option value="1">INM BANK KIGALI HQ</option>
+                                    <option value="2">INM BANK KIGALI KCM</option>
+                                    <option value="3">INM BANK KIGALI HEIGHTS</option>
+                                    <option value="4">INM BANK REMERA</option>
+                                    <option value="5">INM BANK HUYE</option>
+                                    <option value="6">INM BANK NYAMIRAMBO</option>
+                                    <option value="7">INM BANK CHIC</option>
+                                    <option value="8">INM BANK RUSIZI</option>
+                                    <option value="9">INM BANK HEAD OFFICE</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="row">
-                            <div class=" py-3">
-                                <label for="international_bank"
-                                       class="form-label fw-normal text-sm">Attach ID Document:</label>
-                                <div class="input-group ">
-                                    <input type="file" class="form-control" required
-                                           id="idAttchment2">
-                                    <button class="btn btn-info" type="button">
-                                        Upload
-                                        <span class="bi bi-cloud-upload"></span>
-                                    </button>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class=" py-3">
+                                    <label for="international_bank"
+                                           class="form-label fw-normal text-sm">Attach ID Document:</label>
+                                    <div class="input-group ">
+                                        <input type="file" class="form-control" required
+                                               id="idAttchment2">
+                                        <button class="btn btn-info" type="button">
+                                            Upload
+                                            <span class="bi bi-cloud-upload"></span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
+                        <div class="col-lg-6">
 
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="mb-3">
-                            <div class="d-flex gap-3 col-lg-4 justify-content-between">
-                                <label for="international_beneficiary"
-                                       class="text-primary fw-normal form-label">
-                                    Collection by:
-                                </label>
-                                <div class="form-check col-lg-3 ">
-                                    <input
-                                            class="form-check-input rounded-0 border-info                                       "
-                                            type="checkbox">
-                                    <label
-                                            class="form-check-label text-primary fw-normal cursor-pointer"
-                                    >
-                                        Self
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="mb-3">
+                                <div class="d-flex gap-3 col-lg-6 justify-content-between">
+                                    <label for="self"
+                                           class="text-primary fw-normal form-label">
+                                        Collection by:
                                     </label>
-                                </div>
-                                <div class="form-check ">
-                                    <input
-                                            class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"
-                                            id="ben"
-                                            type="checkbox" name="select_beneficiary"
-                                    >
-                                    <label
-                                            class="form-check-label text-primary fw-normal cursor-pointer"
-                                            for="international_beneficiary">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div style="display: none" class="js-select-beneficiary row">
-                                <div class="col-lg-6">
-                                    <div class="">
-                                        <label for="international_beneficiary_email"
-                                               class="form-label fw-normal text-primary fs-6">
-                                            Collector's Name<small class="text-muted"></small>
+                                    <div class="form-check col-lg-3 ">
+                                        <input
+                                                class="form-check-input rounded-0 border-info "
+                                                id="self"
+                                                type="checkbox">
+                                        <label
+                                                class="form-check-label text-primary fw-normal cursor-pointer"
+                                        >
+                                            Self
                                         </label>
-                                        <input type="text" name="beneficiary_email" required
-                                               id="cName"
-                                               class="form-control   py-2 px-3  fw-semibold text-primary"/>
                                     </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="">
-                                        <label for="international_bank"
-                                               class="form-label fw-normal text-primary fs-6">collector's Id
-                                            Type:</label>
-                                        <select id="collect_id" name="bank" required
-                                                class=" py-3 bg-secondary text-sm border-0 bg-opacity-10 form-select js-banks">
-                                            <option value="">Select</option>
-                                            <option value="1">Driving License</option>
-                                            <option value="2">National ID</option>
-                                            <option value="3">PassPort</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="mb-3">
-                                        <label for="international_beneficiary_email"
-                                               class="form-label fw-normal text-primary fs-6">
-                                            Collector's ID<small
-                                                class="text-muted"></small>
+                                    <div class="form-check ">
+                                        <input
+                                                class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"
+                                                id="ben"
+                                                type="checkbox" name="select_beneficiary"
+                                        >
+                                        <label
+                                                class="form-check-label text-primary fw-normal cursor-pointer"
+                                                for="international_beneficiary">
+                                            Other
                                         </label>
-                                        <input type="text" name="beneficiary_email" required
-                                               id="id"
-                                               class="form-control   py-2 px-3  fw-semibold text-primary"/>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="row">
-
+                                <div style="display: none" class="js-select-beneficiary row">
+                                    <div class="col-lg-6">
                                         <div class="">
-                                            <label for="international_bank"
-                                                   class="form-label fw-normal text-primary fs-6">Attach Collector's
-                                                Id:</label>
-                                            <div class="input-group ">
-                                                <input type="file" class="form-control" required
-                                                       id="idFile2">
-                                                <button class="btn btn-primary" type="button">
-                                                    Upload
-                                                    <span class="bi bi-cloud-upload"></span>
-                                                </button>
+                                            <label for="cName"
+                                                   class="form-label fw-normal text-sm">
+                                                Collector's Name<small class="text-muted"></small>
+                                            </label>
+                                            <input type="text" name="beneficiary_email" required
+                                                   id="cName"
+                                                   class="form-control   py-3 bg-secondary text-sm border-0 bg-opacity-10"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="">
+                                            <label for="collect_id"
+                                                   class="form-label fw-normal text-sm">collector's Id
+                                                Type:</label>
+                                            <select id="collect_id" name="bank" required
+                                                    class=" py-3 bg-secondary text-sm border-0 bg-opacity-10 form-select js-banks">
+                                                <option value="">Select</option>
+                                                <option value="1">Driving License</option>
+                                                <option value="2">National ID</option>
+                                                <option value="3">PassPort</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="id"
+                                                   class="form-label fw-normal text-sm">
+                                                Collector's ID<small
+                                                    class="text-muted"></small>
+                                            </label>
+                                            <input type="text" name="beneficiary_email" required
+                                                   id="id"
+                                                   class="form-control   py-3 bg-secondary text-sm border-0 bg-opacity-10"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+
+                                            <div class="">
+                                                <label for="idFile2"
+                                                       class="form-label fw-normal text-sm">Attach Collector's
+                                                    Id:</label>
+                                                <div class="input-group ">
+                                                    <input type="file" class="form-control" required
+                                                           id="idFile2">
+                                                    <button class="btn btn-primary" type="button">
+                                                        Upload
+                                                        <span class="bi bi-cloud-upload"></span>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class=" js-search-beneficiary">
-
+                        </div>
+                    </div>
+                    <div class="border-top border-3 mb-3"></div>
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div
+                                    class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
+                                <button type="submit" class="btn btn-info text-white px-lg-5">
+                                    Continue
+                                </button>
+                                <button type="reset" class="btn btn-outline-primary   px-lg-5">
+                                    Clear
+                                </button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="border-top border-3 mb-3"></div>
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-6">
-                        <div
-                                class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
-                            <button type="submit" class="btn btn-info text-white px-lg-5">
-                                Continue
-                            </button>
-                            <button type="reset" class="btn btn-outline-primary   px-lg-5">
-                                Clear
-                            </button>
-                        </div>
-                    </div>
-                </div>
 
-            </form>
+                </form>
+            </div>
 
         </div>
     </div>
@@ -635,7 +655,30 @@
         }
     }
 
+    $('.js-check-saved-beneficiaries').on('click', function () {
 
+
+        let parent = $(this).parent().parent();
+        console.log(parent);
+        // find sibling with class js-select-beneficiary
+        let selectBeneficiary = parent.siblings('div.js-select-beneficiary');
+        console.log(selectBeneficiary);
+        let searchBeneficiary = parent.siblings('div.js-search-beneficiary');
+        let save_beneficiary = $('.save_beneficiary');
+
+        if ($(this).prop('checked')) {
+            console.log(true)
+            selectBeneficiary.slideDown();
+            searchBeneficiary.slideUp()
+            save_beneficiary.slideUp()
+        } else {
+            console.log(false)
+            selectBeneficiary.slideUp()
+            searchBeneficiary.slideDown();
+            save_beneficiary.slideDown()
+        }
+
+    })
     $(function () {
 
 
@@ -755,6 +798,7 @@
             Swal.fire({
                 text: "Request is sent successfully!",
                 icon: 'success',
+                confirmButtonColor: '#0099A8',
             });
         }
 
@@ -826,7 +870,7 @@
         $(document).on('click', '.js-remove', function () {
             $(this).closest('tr').remove();
         });
-        
+
         let $showCertificate = $('#applyCertificate');
         $showCertificate.on('submit', function (e) {
             e.preventDefault();
