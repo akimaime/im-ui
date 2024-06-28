@@ -86,6 +86,9 @@ body {
   color: $white !important;
   border: 0!important;
 }
+.card-bg{
+    background-image: url("../assets/images/dashboard/cards_bg.png") !important;
+}
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
