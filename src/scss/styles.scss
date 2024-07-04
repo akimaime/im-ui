@@ -6,6 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=poppins,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Orbitron:wght@400..900&display=swap');
 
 // Then add additional custom code here
 
@@ -15,6 +17,11 @@ $theme-colors: (
 );
 body {
   background-color: $gray-200;
+  font-family: "Inter", sans-serif;
+}
+
+.card-number {
+  font-family: "Orbitron", sans-serif;
 }
 
 .bg-color-height::before {
@@ -52,42 +59,55 @@ body {
   border-bottom: 1px solid $gray-400;
   margin-right: 0;
 }
+
 .v-cards .nav-pills .nav-link {
-  border: 0!important;
-  margin: 0!important;
-  padding: 0!important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
+
 .v-cards .nav-pills .nav-link.active {
   border: 0 !important;
-  margin: 0!important;
-  padding: 0!important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
-.v-cards .nav-pills  {
-  border: 0!important;
+
+.v-cards .nav-pills {
+  border: 0 !important;
 }
+
 .badge {
-  color: $white!important;
+  color: $white !important;
 }
-.btn-info{
-    background-color: $info;
-    border-color: $info;
+
+.btn-info {
+  background-color: $info;
+  border-color: $info;
   color: white;
 }
 
-.v-cards .nav-pills .nav-link .bn .card{
-  border: 0!important;
-  padding: 0!important;
-  margin: 0!important;
-  background-color: white!important;
-  color: $gray-700 !important;
+.v-cards .nav-pills .nav-link .bn .card {
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-image: url("../assets/images/login/login_bg.png") !important;
+  background-size: cover ;
+    background-repeat: no-repeat;
+  background-position: left top;
 }
-.v-cards .nav-pills  .nav-link.active .bn .card{
-  background-image: url("../assets/images/dashboard/cards_bg.png") !important;
+
+
+.v-cards .nav-pills .nav-link.active .bn .card {
+
   color: $white !important;
-  border: 0!important;
+  border: 4px solid $info !important;
 }
-.card-bg{
-    background-image: url("../assets/images/dashboard/cards_bg.png") !important;
+
+.card-bg {
+  background-image: url("../assets/images/login/login_bg.png") !important;
+  background-size: cover ;
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 .nav-pills .nav-link.active,
@@ -206,4 +226,7 @@ body {
   border: 0;
   box-shadow: 2px 0 40px 0 rgba(0, 0, 0, 0.1);
   margin-top: 10px;
+}
+.bg-opacity-80 {
+  background-color: rgba(0, 0, 0, 0.9);
 }
