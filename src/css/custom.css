@@ -6,6 +6,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Orbitron:wght@400..900&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #243D94;
@@ -11848,6 +11850,11 @@ textarea.form-control-lg {
 }
 body {
   background-color: #e9ecef;
+  font-family: "Inter", sans-serif;
+}
+
+.card-number {
+  font-family: "Orbitron", sans-serif;
 }
 
 .bg-color-height::before {
@@ -11916,18 +11923,22 @@ body {
   border: 0 !important;
   padding: 0 !important;
   margin: 0 !important;
-  background-color: white !important;
-  color: #495057 !important;
+  background-image: url("../assets/images/login/login_bg.png") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 .v-cards .nav-pills .nav-link.active .bn .card {
-  background-image: url("../assets/images/dashboard/cards_bg.png") !important;
   color: #fff !important;
-  border: 0 !important;
+  border: 4px solid #0099A8 !important;
 }
 
 .card-bg {
-  background-image: url("../assets/images/dashboard/cards_bg.png") !important;
+  background-image: url("../assets/images/login/login_bg.png") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 .nav-pills .nav-link.active,
@@ -12043,6 +12054,10 @@ body {
   border: 0;
   box-shadow: 2px 0 40px 0 rgba(0, 0, 0, 0.1);
   margin-top: 10px;
+}
+
+.bg-opacity-80 {
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 /*# sourceMappingURL=custom.css.map */
