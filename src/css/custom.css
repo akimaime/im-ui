@@ -12049,6 +12049,11 @@ body {
   width: 0;
 }
 
+.custom-btn:hover {
+  background-color: #0099A8;
+  color: #fff;
+}
+
 .dropdown-menu {
   border-radius: 10px;
   border: 0;

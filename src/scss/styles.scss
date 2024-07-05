@@ -220,6 +220,10 @@ body {
 .scrollbar::-webkit-scrollbar {
   width: 0;
 }
+.custom-btn:hover {
+  background-color: $info;
+  color: $white;
+}
 
 .dropdown-menu {
   border-radius: 10px;
