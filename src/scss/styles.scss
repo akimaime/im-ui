@@ -8,6 +8,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 // Then add additional custom code here
 
@@ -17,7 +19,9 @@ $theme-colors: (
 );
 body {
   background-color: $gray-200;
-  font-family: "Inter", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
 }
 
 .card-number {
