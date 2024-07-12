@@ -105,9 +105,9 @@
                                     <div
                                             class="callout callout-info callout-sm mb-2  d-flex align-items-center">
                                         <p class="mb-0 alert alert-info border-0">
-                                            Please enter RRA reference number and click on Validate / Add button to
-                                            validate the reference number. For more than one RRA Payment you can
-                                            keep entering and validate RRA references
+                                            Please enter Payment number and click on Validate / Add button to
+                                            validate the reference number. For more than one RSSB Payment you can
+                                            keep entering and validate Payment references
                                         </p>
                                     </div>
                                     <div class="row">
@@ -116,8 +116,7 @@
                                                 <div class=" ">
                                                     <div class="mb-3">
                                                         <label for="ref_number" class="form-label small text-info ">Enter
-                                                            RRA
-                                                            E-bill(reference) number:</label>
+                                                            Payment number:</label>
                                                         <div
                                                                 class=" rounded-default  bg-secondary border-0 bg-opacity-10    border d-flex align-items-center p-1">
                                                             <div
@@ -197,53 +196,55 @@
                                                 <table class="table mb-3 table-accounts">
                                                     <thead>
                                                     <tr class="">
-                                                        <th class="text-info text-sm  border-top-0  border-0 border-bottom  border-info cursor-pointer">
-                                                            <div class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                        <th
+                                                                class="text-primary  border-top-0  text-info text-sm border-bottom  border-info cursor-pointer">
+                                                            <div
+                                                                    class=" d-flex align-items-center justify-content-between border-end pe-2">
                                                                 <div class="form-check">
                                                                     <input class="form-check-input rounded-0"
                                                                            type="checkbox" value=""
-                                                                           id="checkAll"/>
+                                                                           id="check_all"/>
                                                                     <label class="form-check-label"
-                                                                           for="checkAll">
+                                                                           for="check_all">
                                                                         All
                                                                     </label>
                                                                 </div>
                                                             </div>
 
                                                         </th>
-                                                        <th class="text-info text-sm  border-top-0  border-0 border-bottom  border-info cursor-pointer">
-                                                            <div class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                        <th
+                                                                class="text-primary  border-top-0  text-info text-sm border-bottom  border-info cursor-pointer">
+                                                            <div
+                                                                    class=" d-flex align-items-center justify-content-between border-end pe-2">
                                                                 <span>Document Number</span>
                                                             </div>
 
                                                         </th>
-                                                        <th class="text-info text-sm  border-top-0    border-0 border-bottom  border-info cursor-pointer ">
-                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
-                                                                <span>Amount to be Paid</span>
+                                                        <th
+                                                                class="text-primary  border-top-0    text-info text-sm border-bottom  border-info cursor-pointer ">
+                                                            <div
+                                                                    class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Bill Amount</span>
                                                             </div>
                                                         </th>
 
 
                                                         <th
-                                                                class="text-info text-sm  border-top-0    border-0 border-bottom  border-info cursor-pointer">
-                                                            <div class=" d-flex align-items-center justify-content-between ">
-                                                                <span>Amount To Pay</span>
-                                                            </div>
-                                                        </th>
-                                                        <th
-                                                                class="text-info text-sm  border-top-0    border-0 border-bottom  border-info cursor-pointer">
+                                                                class="text-primary  border-top-0  text-info text-sm border-bottom  border-info cursor-pointer ">
                                                             <div
                                                                     class=" d-flex align-items-center justify-content-between ">
-                                                                <span>Tax Type</span>
+                                                                <span>Currency</span>
                                                             </div>
                                                         </th>
+
                                                         <th
-                                                                class="text-info text-sm  border-top-0    border-0 border-bottom  border-info cursor-pointer">
+                                                                class="text-primary  border-top-0    text-info text-sm border-bottom  border-info cursor-pointer">
                                                             <div
                                                                     class=" d-flex align-items-center justify-content-between ">
-                                                                <span>Company</span>
+                                                                <span>Description</span>
                                                             </div>
                                                         </th>
+
                                                     </tr>
                                                     </thead>
 
@@ -260,8 +261,7 @@
                                                             <div
                                                                     class="d-flex gap-2 justify-content-between flex-column flex-md-row">
                                                                 <div class="d-flex justify-content-between">
-                                                                        <span class="text-muted fw-semibold">Amount to Be
-                                                                            Paid:</span>
+                                                                        <span class="text-muted fw-semibold">Bill Amount:</span>
                                                                     <span class="fw-semibold">
                                                                             <span id="totalTaxToBePaid"
                                                                                   class="ms-2">0</span>
