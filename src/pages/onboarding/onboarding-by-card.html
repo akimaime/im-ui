@@ -186,39 +186,155 @@
                         </div>
                     </nav>
                     <div class="d-flex justify-content-between  flex-column ">
-                        <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center align-items-center mb-3">
                             <img src="../../assets/b_logo.png" class="img-fluid w-50 " alt="tablet">
                         </div>
-                        <h1 class="text-info text-center">Self-onboarding</h1>
-                        <div class=" text-decoration-none d-flex rounded-4 gap-2  align-items-center my-2 p-3 onboard-item shadow">
-                            <div class="d-flex rounded-circle bg-dark bg-opacity-10 p-4 justify-content-center align-items-center"
-                                 style="height: 16px;width: 16px">
-                                <i class="bi bi-person fs-5 text-black"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="text-info onboard-heading">Use I&M Account number&<br> ID Number to
-                                        onboard</h6>
-                                    <i class="bi bi-chevron-double-right"></i>
+                        <div id="steps"
+                             class="d-flex flex-wrap justify-content-center align-items-start gap-2 position-relative">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <div class="border border-2 text-primary border-primary rounded-circle h-6 w-6 d-flex justify-content-center align-items-center fw-bold">
+                                    1
                                 </div>
-                                <p class="text-xs fw-normal">Onboard easily and faster Using I&M Account
-                                    number & <br>
-                                    ID Number</p>
+                                <span class="text-sm text-primary fw-semibold text-center">
+                                Enter Card <br> Details
+                            </span>
+                            </div>
+                            <div class="text-extra-secondary mt-3"
+                                 style="border-bottom: 2px dotted;width: 40px ;"></div>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <div class="border border-2 text-extra-secondary border-extra-secondary rounded-circle h-6 w-6 d-flex justify-content-center align-items-center fw-bold">
+                                    2
+                                </div>
+                                <span class="text-sm text-extra-secondary fw-bold text-center">
+                             Confirm <br> OTP
+                            </span>
+                            </div>
+                            <div class="text-extra-secondary mt-3"
+                                 style="border-bottom: 2px dotted;width: 40px ;"></div>
+                            <!--                        <div class="d-flex flex-column justify-content-center align-items-center">-->
+                            <!--                            <div class="border border-2 text-extra-secondary border-extra-secondary rounded-circle h-6 w-6 d-flex justify-content-center align-items-center fw-bold">-->
+                            <!--                                3-->
+                            <!--                            </div>-->
+                            <!--                            <span class="text-sm text-extra-secondary fw-bold text-center">-->
+                            <!--                              Choose Security <br> Questions-->
+                            <!--                            </span>-->
+                            <!--                        </div>-->
+                            <!--                        <div class="text-extra-secondary mt-3"-->
+                            <!--                             style="border-bottom: 2px dotted;width: 40px ;"></div>-->
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <div class="border border-2 text-extra-secondary border-extra-secondary rounded-circle h-6 w-6 d-flex justify-content-center align-items-center fw-bold">
+                                    3
+                                </div>
+                                <span class="text-sm  text-extra-secondary fw-bold text-center">
+                            Set <br> Password
+                            </span>
+                            </div>
+                            <div class="text-extra-secondary mt-3"
+                                 style="border-bottom: 2px dotted;width: 40px ;"></div>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <div class="border border-2 text-extra-secondary border-extra-secondary rounded-circle h-6 w-6 d-flex justify-content-center align-items-center fw-bold">
+                                    4
+                                </div>
+                                <span class="text-sm text-extra-secondary fw-bold text-center">
+                              Log in<br>To finish
+                            </span>
                             </div>
                         </div>
-                        <div class=" text-decoration-none d-flex rounded-4  align-items-center my-2 p-3 onboard-item shadow">
-                            <div class="d-flex rounded-circle gap-2 bg-dark bg-opacity-10 p-4 justify-content-center align-items-center"
-                                 style="height: 16px;width: 16px">
-                                <i class="bi bi-geo-alt fs-5 text-black"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="text-info onboard-heading">Use ATM Card to Onboard</h6>
-                                    <i class="bi bi-chevron-double-right"></i>
+                        <div class="">
+                            <img src="../images/onboard/phone1.png" class="h-6" alt=""
+                                 style="height: 3rem;"/>
+                            <h6 class="text-info text-center">
+                                Use ATM Card to onboard </h6>
+                        </div>
+                        <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                            <form action="" id="submitForm3" style="width: 80%">
+                                <div class="mb-3 position-relative">
+                                    <label for="cardNumber"
+                                           class="form-label text-sm">ATM Card
+                                        Number:</label>
+                                    <input type="text" class="form-control py-3 bg-secondary bg-opacity-10 border-0" required
+                                           id="cardNumber"
+                                           placeholder="Card Number" minlength="16" maxlength="16"/>
+
                                 </div>
-                                <p class="text-xs fw-normal my-0 ">Onboard easily and faster Using I&M ATM Card
-                                    credentials.</p>
+
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="expDate"
+                                               class="form-label text-sm">Expiry
+                                            Date:</label>
+                                        <input type="text" class="form-control py-3 bg-secondary bg-opacity-10 border-0"
+                                               placeholder="MM/YY" id="expDate" maxlength="8"
+                                               minlength="3" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="cvcNumber"
+                                               class="form-label text-sm">CVV:</label>
+                                        <input type="text" class="form-control py-3 bg-secondary bg-opacity-10 border-0"
+                                               id="cvcNumber" required maxlength="3" minlength="3">
+                                    </div>
+                                </div>
+
+
+
+
+                                <button type="submit"
+                                        class="btn  btn-info w-100 py-3 text-white px-5">
+                                    Verify
+
+                                    <span id="loader3" class="hide">
+                                                        <span class="spinner-border spinner-border-sm" role="status">
+                                                        <span class="visually-hidden">Loading...</span>
+                                                    </span>
+                                                    </span>
+                                </button>
+
+                            </form>
+
+                            <div style="width: 100%">
+                                <div class="alert alert-success d-flex mt-3 flex-column hide" id="results2"
+                                     role="alert">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                             class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+
+                                        You are welcome onboard
+                                    </div>
+                                    <hr class="my-1">
+                                    <div class="row">
+                                        <label for="staticEmail" class="col-sm-5 fw-bold col-form-label">Full
+                                            Name:</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" readonly class="form-control-plaintext"
+                                                   id="staticEmail2" value="Peter Musoni">
+                                        </div>
+                                    </div>
+                                    <hr class="my-1">
+                                    <div class=" row">
+                                        <label for="phone_number" class="col-sm-5 fw-bold col-form-label">Phone
+                                            Number:</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" readonly class="form-control-plaintext"
+                                                   id="phone_number2" value="0788 890 342">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column gap-2 mt-3 flex-md-row justify-content-end align-items-center ">
+
+                                    <a href="confirm_otp.html?tab=atm"
+                                       class="btn  btn-info rounded px-5 hide"
+                                       id="continue2">
+                                        Continue
+                                    </a>
+                                </div>
                             </div>
+
+
                         </div>
                     </div>
                     <div class="">
@@ -270,30 +386,51 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-<script type="module" src="../../js/main.js"></script>
+
 <script>
-    $('.show-password').on('click', function () {
-        let input = $(this).parents().find('input[name="password"]');
-        if (input.attr('type') === 'password') {
-            input.attr('type', 'text');
-            $(this).addClass('bi-eye-slash-fill').removeClass('bi-eye-fill');
-        } else {
-            input.attr('type', 'password');
-            $(this).addClass('bi-eye-fill').removeClass('bi-eye-slash-fill');
-        }
+    $(function () {
+        $('#validateContinueForm').validate();
+        $('#submitForm,#submitForm2,#submitForm3').on('submit', function (e) {
+            e.preventDefault();
+            let form = $(this);
+            if (!form.valid()) return;
+            let btn = form.find(':submit');
+            btn.prop('disabled', true);
+            let loader = $('#loader,#loader2,#loader3');
+            loader.removeClass('hide');
+            let continueBtn = $('#continue,#continue2,#continue3');
+            continueBtn.addClass('hide');
+
+            // simulate ajax request
+            setTimeout(function () {
+                let results = $('#results,#results2,#results3');
+                results.removeClass('hide');
+                btn.prop('disabled', false);
+                loader.addClass('hide');
+                continueBtn.removeClass('hide');
+
+                let scrollDiv = document.getElementById("scrollDiv").offsetTop;
+                window.scrollTo({top: scrollDiv, behavior: 'smooth'});
+            }, 1000);
+
+        });
+
+        $('div[data-bs-toggle="pill"]').on('shown.bs.tab', function () {
+            $('#steps')
+                .removeClass('d-none')
+                .addClass('d-flex');
+        });
+
+        $(document).ready(function () {
+            $('#expDate').mask('00/22');
+            $('#phone-number').mask('0000-0000');
+        });
+
     });
 
-    $('form').validate({
-        rules: {
-            password: {
-                required: true,
-            },
-            username: {
-                required: true,
-            },
-        },
-    });
 </script>
 </body>
 </html>
