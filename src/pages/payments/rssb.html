@@ -105,9 +105,8 @@
                                     <div
                                             class="callout callout-info callout-sm mb-2  d-flex align-items-center">
                                         <p class="mb-0 alert alert-info border-0">
-                                            Please enter Payment number and click on Validate / Add button to
-                                            validate the reference number. For more than one RSSB Payment you can
-                                            keep entering and validate Payment references
+                                            Please enter Payment number and click on Validate  button to
+                                            validate the Payment number.
                                         </p>
                                     </div>
                                     <div class="row">
@@ -129,7 +128,7 @@
                                                             <button type="button"
                                                                     class="btn btn-info text-white rounded-default flex-shrink-0 js-verify">
                                                                 <i class="bi bi-plus"></i>
-                                                                Validate / Add
+                                                                Validate
                                                             </button>
                                                         </div>
                                                     </div>
@@ -254,33 +253,7 @@
                                             </div>
 
                                             <!--                                            add a summary of the total amount to be paid-->
-                                            <div class="row justify-content-end">
-                                                <div class="col-lg-8">
-                                                    <div class="card bg-secondary border-0 bg-opacity-10  rounded-2 shadow-none">
-                                                        <div class="card-body p-2">
-                                                            <div
-                                                                    class="d-flex gap-2 justify-content-between flex-column flex-md-row">
-                                                                <div class="d-flex justify-content-between">
-                                                                        <span class="text-muted fw-semibold">Bill Amount:</span>
-                                                                    <span class="fw-semibold">
-                                                                            <span id="totalTaxToBePaid"
-                                                                                  class="ms-2">0</span>
-                                                                            RWF</span>
-                                                                </div>
-                                                                <div class="d-flex justify-content-between">
-                                                                        <span class="text-muted fw-semibold">Amount to
-                                                                            Pay:</span>
-                                                                    <span class="fw-semibold">
-                                                                            <span id="taxToPay"
-                                                                                  class="ms-2">0</span>
-                                                                            RWF
-                                                                        </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+
 
                                         </div></div>
                                     </div>
@@ -894,16 +867,14 @@
                     let amount = Math.floor(Math.random() * 100000) + 1000;
                     let $tdAmount = $(`<td class="fs-13px js-amount-tobe-paid">${amount.toLocaleString("en-US")}</td>`);
                     // create a cell for amount to be edited
-                    let $tdAmountToEdit = $(`<td class="w-150px"><input type="text" required class="form-control form-control-sm" value=""></td>`);
-                    // create a cell for tax type as read only span
-                    let taxType = Math.random() < 0.5 ? 'VAT' : 'WHT';
-                    let $tdTaxType = $(`<td class="fs-13px"><span class="">${taxType}</span></td>`);
+                    let $tdAmountToEdit = $(`<td class="w-150px"><select class="form-select"><option>RWF</option> <option>USD</option></select></td>`);
+
                     // create a cell for company name as read only span
                     // generate random company from companies array
                     let company = companies[Math.floor(Math.random() * companies.length)];
                     let $tdCompanyName = $(`<td class="fs-13px"><span class="">${company}</span></td>`);
                     // append the cells to the row
-                    $tr.append(checkbox, $tdRefNumber, $tdAmount, $tdAmountToEdit, $tdTaxType, $tdCompanyName);
+                    $tr.append(checkbox, $tdRefNumber, $tdAmount, $tdAmountToEdit,  $tdCompanyName);
                     // append the row to the table body
                     $tbody.append($tr);
 
