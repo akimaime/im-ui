@@ -266,7 +266,6 @@
             if (loanTenureType === 'years') {
                 loanTenure *= 12;  // Convert years to months
             }
-
             let monthlyInterestRate = interestRate / 12;
 
             if (loanAmount && loanTenure && interestRate) {
@@ -279,7 +278,6 @@
                 $('#totalAmount').text(`Total Amount to be Paid: Rwf${numberWithCommas(totalAmount.toFixed(2))}`);
             }
         }
-
         $('input, select').on('input change', function() {
             calculateLoan();
         });
