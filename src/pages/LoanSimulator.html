@@ -25,21 +25,21 @@
                     </div>
                 </div>
             </div>
-            <nav class="mb-4 navbar navbar-expand-lg">
+            <nav class="mb-4 navbar rounded-4 bg-info mb-1 bg-opacity-50 navbar-expand-lg">
                 <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="navbar-toggler-icon text-white"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="/"
+                            <a class="nav-link" href="dashboard.html"
                                type="button" role="tab" aria-controls="pills-home"
                                aria-selected="true">
                                 Dashboard
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="../pages/corporate-dashboard.html"
+                            <a class="nav-link " href="corporate-dashboard.html"
                                type="button" role="tab" aria-controls="pills-home"
                                aria-selected="true">Corporate Dashboard
                             </a>
@@ -49,10 +49,11 @@
                                 Transfers
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../pages/transfers/own-account.html">Transfer to your own Accounts </a></li>
-                                <li><a class="dropdown-item" href="../pages/transfers/internal.html">Transfer from I&M to I&M </a></li>
-                                <li><a class="dropdown-item" href="../pages/transfers/local-bank.html">Transfer to Local Banks </a></li>
-                                <li><a class="dropdown-item" href="../pages/transfers/international.html">Transfer to International </a></li>
+                                <li><a class="dropdown-item" href="transfers/own-account.html">Transfer to your own Accounts </a></li>
+                                <li><a class="dropdown-item" href="transfers/internal.html">Transfer from I&M to I&M </a></li>
+                                <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to Local Banks </a></li>
+                                <li><a class="dropdown-item" href="transfers/international.html">Transfer to International </a></li>
+                                <li><a class="dropdown-item" href="transfers/momo.html">Transfer to Mobile </a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -60,11 +61,11 @@
                                 Payments
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../pages/payments/rra.html">RRA Payment </a></li>
-                                <li><a class="dropdown-item" href="../pages/payments/irembo.html">Irembo Payment </a></li>
-                                <li><a class="dropdown-item" href="../pages/payments/airtime.html">Airtime Top Up</a></li>
-                                <li><a class="dropdown-item" href="../pages/transfers/local-bank.html">Mobile Money Payment </a></li>
-                                <li><a class="dropdown-item" href="../pages/payments/utilities.html">Utilities Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/rra.html">RRA Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/irembo.html">Irembo Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/rssb.html">ISHEMA-RSSB Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/airtime.html">Airtime Top Up</a></li>
+                                <li><a class="dropdown-item" href="payments/utilities.html">Utilities Payment </a></li>
                             </ul>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -74,12 +75,18 @@
                                 Manage Cards
                             </a>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
-                                Requests
-                            </button>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Service Requests
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="requests/chequebook.html">Chequebook Requests </a></li>
+                                <li><a class="dropdown-item" href="requests/certificates.html">Certificates Requests </a></li>
+                                <li><a class="dropdown-item" href="requests/paper-statement.html">Paper Statement Requests</a></li>
+                                <li><a class="dropdown-item" href="requests/overdraft.html">Bankers cheques/overdraft Demand Request </a></li>
+                            </ul>
                         </li>
+
                         <li class="nav-item" role="presentation">
                             <a class="nav-link " href="beneficiaries.html"
                                type="button" role="tab" aria-controls="pills-home"
@@ -95,9 +102,11 @@
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Mails" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mails
-                            </button>
+                            <a class="nav-link " href="mail.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
+                                Mails
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -109,36 +118,146 @@
                     <div class="card rounded-4 border-0 h-100">
                         <div class="card-body">
                             <div class="container ">
-                                <h2>Loan Simulator</h2>
-                                <div class="row align-items-center">
-                                    <div class="col-lg-6">
 
-                                        <div class="form-group mb-3">
-                                            <label for="loanAmount">Loan Amount:</label>
-                                            <input type="number" class="form-control py-3 bg-secondary border-0 bg-opacity-10" id="loanAmount" placeholder="Enter loan amount">
-                                        </div>
-                                        <div class="row mb-3 align-items-end">
-                                            <div class="col-6">
-                                                <div class="form-group ">
-                                                    <label for="loanTenureType">Loan Tenure:</label>
-                                                    <select id="loanTenureType" class="form-select py-3 bg-secondary border-0 bg-opacity-10">
-                                                        <option value="years">Years</option>
-                                                        <option value="months">Months</option>
-                                                    </select>
+                                <div class="row align-items-start">
+                                    <div class="col-lg-5 border border-secondary border-opacity-25 rounded-3">
+                                        <div class="py-2">
+                                            <h3>Loan Simulator</h3>
+                                            <p class="text-sm">
+                                                Enter your loan details and we'll calculate your monthly payment.
+                                            </p>
+                                            <div class="form-group mb-3">
+                                                <label class="text-sm" for="loanAmount">Loan Amount:</label>
+                                                <input type="number" class="form-control py-3 text-sm bg-secondary border-0 bg-opacity-10" id="loanAmount" placeholder="Enter loan amount">
+                                            </div>
+                                            <div class="row mb-3 align-items-end">
+                                                <div class="col-lg-4 mb-2">
+                                                    <div class="form-group ">
+                                                        <label class="text-sm" for="loanTenureType">Loan Tenure:</label>
+                                                        <select id="loanTenureType" class="form-select text-sm py-3 bg-secondary border-0 bg-opacity-10">
+                                                            <option value="years">Years</option>
+                                                            <option value="months">Months</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 mb-2">
+                                                    <input type="number"  class="form-control py-3 text-sm bg-secondary border-0 bg-opacity-10" id="loanTenure" placeholder="Enter number of years/months">
                                                 </div>
                                             </div>
-                                            <div class="col-6">
-                                                <input type="number"  class="form-control py-3 bg-secondary border-0 bg-opacity-10" id="loanTenure" placeholder="Enter number of years/months">
+                                            <div class="form-group mb-3">
+                                                <label for="interestRate" class="text-sm">Interest Rate (%):</label>
+                                                <input type="number" class="form-control py-3 text-sm bg-secondary border-0 bg-opacity-10" id="interestRate" step="0.01" placeholder="Enter interest rate">
                                             </div>
                                         </div>
-                                        <div class="form-group mb-3">
-                                            <label for="interestRate">Interest Rate (%):</label>
-                                            <input type="number" class="form-control py-3 bg-secondary border-0 bg-opacity-10" id="interestRate" step="0.01" placeholder="Enter interest rate">
+
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="card border-secondary border-opacity-25 mb-3 card-body">
+                                            <h5>Loan Calculation summary</h5>
+                                            <div class="results">
+                                                <p id="monthlyRepayment" class="small">Monthly Repayment: Rwf0.00</p>
+                                                <p id="totalInterest" class="small">Total Interest: Rwf0.00</p>
+                                                <p id="totalAmount" class="small">Total Amount to be Paid: Rwf0.00</p>
+                                            </div>
                                         </div>
-                                        <div class="results">
-                                            <p id="monthlyRepayment">Monthly Repayment: Rwf0.00</p>
-                                            <p id="totalInterest">Total Interest: Rwf0.00</p>
-                                            <p id="totalAmount">Total Amount to be Paid: Rwf0.00</p>
+                                        <div class="card border-secondary border-opacity-25 card-body">
+                                            <h5>Payment Schedule</h5>
+                                            <div class="table-responsive">
+                                                <table class="table my-2 table-accounts  ">
+                                                    <thead>
+                                                    <tr class="">
+                                                        <th class="text-info text-sm border-0  border-3 border-bottom  border-info cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Month</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up"></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                        <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Payment</span>
+                                                                <div class="d-flex flex-column fs-9px">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Interest</span>
+                                                                <div class="d-flex flex-column fs-9px">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Principal</span>
+                                                                <div class="d-flex flex-column fs-9px">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+
+
+                                                        <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span>Balance</span>
+                                                                <div class="d-flex flex-column fs-9px">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="small">1</td>
+                                                        <td class="small">$500</td>
+                                                        <td class="small">$208.33</td>
+                                                        <td class="small">$291.67</td>
+                                                        <td class="small">$49,708.33</td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="small">2</td>
+                                                        <td class="small">$500</td>
+                                                        <td class="small">$207.12</td>
+                                                        <td class="small">$292.88</td>
+                                                        <td class="small">$49,415.45</td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="small">3</td>
+                                                        <td class="small">$500</td>
+                                                        <td class="small">$205.90</td>
+                                                        <td class="small">$294.10</td>
+                                                        <td class="small">$49,121.35</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <nav aria-label="..." class="float-end mt-2">
+                                                    <ul class="pagination">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link">Previous</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        </li>
+                                                        <li class="page-item active" aria-current="page">
+                                                            <a class="page-link" href="#">2</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        </li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
