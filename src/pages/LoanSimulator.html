@@ -148,6 +148,8 @@
                                                 <label for="interestRate" class="text-sm">Interest Rate (%):</label>
                                                 <input type="number" class="form-control py-3 text-sm bg-secondary border-0 bg-opacity-10" id="interestRate" step="0.01" placeholder="Enter interest rate">
                                             </div>
+
+                                            <button id="calculateLoanBtn" class="btn py-2 w-100 btn-info mb-3 text-white">Calculate</button>
                                         </div>
 
                                     </div>
@@ -371,36 +373,32 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    $(document).ready(function() {
-        function numberWithCommas(x) {
-            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    function updatePaymentSchedule(loanAmount, monthlyRepayment, loanTenure, monthlyInterestRate) {
+        let balance = loanAmount;
+        let paymentScheduleBody = $('.table-accounts tbody');
+        paymentScheduleBody.empty(); // Clear existing schedule
+
+        // Determine the number of rows to display (max 7 or loanTenure if less than 7)
+        let rowsToDisplay = Math.min(loanTenure, 7);
+
+        for (let month = 1; month <= rowsToDisplay; month++) {
+            let interestForThisMonth = balance * monthlyInterestRate;
+            let principalForThisMonth = monthlyRepayment - interestForThisMonth;
+            balance -= principalForThisMonth;
+
+            // Create a new row
+            let row = `<tr class="cursor-pointer js-account py-5">
+            <td class="small">${month}</td>
+            <td class="small">$${numberWithCommas(monthlyRepayment.toFixed(2))}</td>
+            <td class="small">$${numberWithCommas(interestForThisMonth.toFixed(2))}</td>
+            <td class="small">$${numberWithCommas(principalForThisMonth.toFixed(2))}</td>
+            <td class="small">$${numberWithCommas(balance.toFixed(2))}</td>
+        </tr>`;
+
+            // Append the row to the table
+            paymentScheduleBody.append(row);
         }
-
-        function calculateLoan() {
-            let loanAmount = parseFloat($('#loanAmount').val());
-            let loanTenureType = $('#loanTenureType').val();
-            let loanTenure = parseFloat($('#loanTenure').val());
-            let interestRate = parseFloat($('#interestRate').val()) / 100;
-
-            if (loanTenureType === 'years') {
-                loanTenure *= 12;  // Convert years to months
-            }
-            let monthlyInterestRate = interestRate / 12;
-
-            if (loanAmount && loanTenure && interestRate) {
-                let monthlyRepayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -loanTenure));
-                let totalAmount = monthlyRepayment * loanTenure;
-                let totalInterest = totalAmount - loanAmount;
-
-                $('#monthlyRepayment').text(`Monthly Repayment: Rwf${numberWithCommas(monthlyRepayment.toFixed(2))}`);
-                $('#totalInterest').text(`Total Interest: Rwf${numberWithCommas(totalInterest.toFixed(2))}`);
-                $('#totalAmount').text(`Total Amount to be Paid: Rwf${numberWithCommas(totalAmount.toFixed(2))}`);
-            }
-        }
-        $('input, select').on('input change', function() {
-            calculateLoan();
-        });
-    });
+    }
 
 
 </script>
