@@ -91,57 +91,46 @@
                 </div>
             </div>
             <nav class="mb-4 navbar navbar-expand-lg">
-                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="navbar-toggler-icon text-white"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="/"
+                            <a class="nav-link " href="dashboard.html"
                                type="button" role="tab" aria-controls="pills-home"
                                aria-selected="true">
                                 Dashboard
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="../pages/corporate-dashboard.html"
+                            <a class="nav-link " href="corporate-dashboard.html"
                                type="button" role="tab" aria-controls="pills-home"
                                aria-selected="true">Corporate Dashboard
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Transfers
                             </a>
-                            <ul class="dropdown-menu ">
-                                <li><a class="dropdown-item" href="../pages/transfers/own-account.html">Transfer to your
-                                    own Accounts </a></li>
-                                <li><a class="dropdown-item" href="../pages/transfers/internal.html">Transfer from I&M
-                                    to I&M </a></li>
-                                <li><a class="dropdown-item" href="../pages/transfers/local-bank.html">Transfer to Local
-                                    Banks </a></li>
-                                <li><a class="dropdown-item" href="../pages/transfers/international.html">Transfer to
-                                    International </a></li>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="transfers/own-account.html">Transfer to your own Accounts </a></li>
+                                <li><a class="dropdown-item" href="transfers/internal.html">Transfer from I&M to I&M </a></li>
+                                <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to Local Banks </a></li>
+                                <li><a class="dropdown-item" href="transfers/international.html">Transfer to International </a></li>
+                                <li><a class="dropdown-item" href="transfers/momo.html">Transfer to Mobile </a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Payments
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../pages/payments/rra.html">RRA Payment </a></li>
-                                <li><a class="dropdown-item" href="../pages/payments/irembo.html">Irembo Payment </a>
-                                </li>
-                                <li><a class="dropdown-item" href="../pages/payments/airtime.html">Airtime Top Up</a>
-                                </li>
-                                <li><a class="dropdown-item" href="../pages/transfers/local-bank.html">Mobile Money
-                                    Payment </a></li>
-                                <li><a class="dropdown-item" href="../pages/payments/utilities.html">Utilities
-                                    Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/rra.html">RRA Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/irembo.html">Irembo Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/rssb.html">ISHEMA-RSSB Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/airtime.html">Airtime Top Up</a></li>
+                                <li><a class="dropdown-item" href="payments/utilities.html">Utilities Payment </a></li>
                             </ul>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -151,12 +140,18 @@
                                 Manage Cards
                             </a>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
-                                Requests
-                            </button>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Service Requests
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="requests/chequebook.html">Chequebook Requests </a></li>
+                                <li><a class="dropdown-item" href="requests/certificates.html">Certificates Requests </a></li>
+                                <li><a class="dropdown-item" href="requests/paper-statement.html">Paper Statement Requests</a></li>
+                                <li><a class="dropdown-item" href="requests/overdraft.html">Bankers cheques/overdraft Demand Request </a></li>
+                            </ul>
                         </li>
+
                         <li class="nav-item" role="presentation">
                             <a class="nav-link " href="beneficiaries.html"
                                type="button" role="tab" aria-controls="pills-home"
@@ -165,9 +160,18 @@
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Mails" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mails
-                            </button>
+                            <a class="nav-link " href="LoanSimulator.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
+                                Loans
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="mail.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
+                                Mails
+                            </a>
                         </li>
                     </ul>
                 </div>
