@@ -10,10 +10,11 @@
     <div class="bg-color-height mb-4">
         <div class="container">
             <div class="d-flex justify-content-between py-4">
-                <div class="d-flex flex-column">
-                    <img src="../../assets/logo.png" alt="logo">
-                    <span class="text-white px-4 fs-4">Retail</span>
-
+                <div>
+                    <div class="d-flex col-lg-2 p-2 flex-column bg-white  rounded-1">
+                        <img src="../../assets/b_logo.png" class="img-fluid" alt="logo">
+                    </div>
+                    <span class="text-white  fw-bold fs-2">Retail</span>
                 </div>
                 <div class="d-flex align-items-center gap-2">
                     <h5 class="text-white ">Welcome back,Jon Doe</h5>
@@ -270,6 +271,21 @@
                                                           class="form-control py-3 bg-secondary border-0 bg-opacity-10 px-3"
                                                           name="reason" id="international_reason"></textarea>
                                             </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-3">
+                                            <label for="idFile"
+                                                   class="form-label fw-normal text-sm">Payment Proof (optional):</label>
+                                            <div class="input-group ">
+                                                <input type="file" class="form-control" required
+                                                       id="idFile">
+                                                <button class="btn btn-info " type="button">
+                                                    Upload
+                                                    <span class="bi bi-cloud-upload"></span>
+                                                </button>
+
+                                            </div>
+                                            <label id="idFile-error" class="error"
+                                                   for="idFile"></label>
                                         </div>
                                         <div class="row">
                                             <div class="col-lg-6">

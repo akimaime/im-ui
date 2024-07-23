@@ -1,123 +1,488 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loan Simulator</title>
-    <link rel="stylesheet" href="styles.css">
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
-
-    .container {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 300px;
-        text-align: center;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-        color: #333;
-    }
-
-    .input-group {
-        margin-bottom: 15px;
-        text-align: left;
-    }
-
-    label {
-        display: block;
-        margin-bottom: 5px;
-        color: #333;
-    }
-
-    input, select {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-
-    .results p {
-        margin: 10px 0;
-        color: #333;
-        font-weight: bold;
-    }
-
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I&M Internet bank</title>
+    <link href="../css/custom.css" rel="stylesheet">
 </head>
-<body>
-<div class="container">
-    <h2>Loan Simulator</h2>
-    <div class="input-group">
-        <label for="loanAmount">Loan Amount:</label>
-        <input type="number" id="loanAmount" placeholder="Enter loan amount">
+<body class="bg-white">
+<div class="container-fluid min-vh-100">
+    <div class="row">
+        <!--        <div class="col-lg-5 order-1 order-lg-0  p-0">-->
+        <!--            <div class="card bg-info min-vh-100 rounded-0 border-0">-->
+        <!--                <div class="card-body d-flex justify-content-center flex-column align-items-center">-->
+        <!--                    &lt;!&ndash;                <h1 class="text-white text-center">Get Smart with money</h1>&ndash;&gt;-->
+        <!--                    <img src="../../assets/images/login/tablet.png" class="img-fluid" alt="tablet">-->
+        <!--                    <div class="d-flex justify-content-center">-->
+        <!--                        <div class="row">-->
+        <!--                            <h2 class="text-white text-center fw-bold mb-4">-->
+        <!--                                Key Internet Banking Features-->
+        <!--                            </h2>-->
+        <!--                            <div class="row d-flex justify-content-center">-->
+        <!--                                <div class="col-6 col-xl-2 col-md-4">-->
+        <!--                                    <div-->
+        <!--                                            class="d-flex flex-column justify-content-start align-items-center mx-0 px-0 ">-->
+        <!--                                        <div class="d-flex justify-content-center align-items-center bg-white rounded-circle bg-opacity-75 p-2">-->
+        <!--                                            <img-->
+        <!--                                                    src="../../assets/images/login/transfer.svg"-->
+        <!--                                                    alt="Transfer"-->
+        <!--                                                    class="feature-icon"-->
+        <!--                                            />-->
+        <!--                                        </div>-->
+        <!--                                        <h6 class="text-white fw-bold">Transfer</h6>-->
+        <!--                                        <p class="text-white text-justify  text-center text-xs">-->
+        <!--                                            Easily Move money <br/>-->
+        <!--                                            online-->
+        <!--                                        </p>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="col-6 col-xl-2 col-md-4">-->
+        <!--                                    <div-->
+        <!--                                            class="d-flex flex-column justify-content-start align-items-center mx-0 px-0 "-->
+        <!--                                    >-->
+        <!--                                        <div class="d-flex justify-content-center align-items-center bg-white rounded-circle bg-opacity-75 p-2">-->
+        <!--                                            <img-->
+        <!--                                                    src="../../assets/images/login/mobile_money.svg"-->
+        <!--                                                    alt="Transfer"-->
+        <!--                                                    class="feature-icon"-->
+        <!--                                            />-->
+        <!--                                        </div>-->
+        <!--                                        <h6 class="text-white text-center fw-bold">Bills</h6>-->
+        <!--                                        <p class="text-white text-justify  text-center text-xs">-->
+        <!--                                            Easily access <br/>-->
+        <!--                                            Your Bills from-->
+        <!--                                            the platform-->
+        <!--                                        </p>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="col-6 col-xl-2 col-md-4 px-0 mx-0">-->
+        <!--                                    <div-->
+        <!--                                            class="d-flex flex-column justify-content-start align-items-center mx-0 px-0"-->
+        <!--                                    >-->
+        <!--                                        <div class="d-flex justify-content-center align-items-center bg-white rounded-circle bg-opacity-75 p-2">-->
+        <!--                                            <img-->
+        <!--                                                    src="../../assets/images/login/mobile_money.svg"-->
+        <!--                                                    alt="Transfer"-->
+        <!--                                                    class="feature-icon"-->
+        <!--                                            />-->
+        <!--                                        </div>-->
+        <!--                                        <h6 class="text-white fw-bold">Mobile Money</h6>-->
+        <!--                                        <p class="text-white text-justify text-truncate text-center text-xs">-->
+        <!--                                            store, send, and receive <br/>-->
+        <!--                                            money to/from your <br/>-->
+        <!--                                            mobile phone-->
+        <!--                                        </p>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="col-6 col-xl-2 col-md-4">-->
+        <!--                                    <div-->
+        <!--                                            class="d-flex flex-column justify-content-start align-items-center mx-0 px-0"-->
+        <!--                                    >-->
+        <!--                                        <div class="d-flex justify-content-center align-items-center bg-white rounded-circle bg-opacity-75 p-2">-->
+        <!--                                            <img-->
+        <!--                                                    src="../../assets/images/login/irembo.svg"-->
+        <!--                                                    alt="Transfer"-->
+        <!--                                                    class="feature-icon"-->
+        <!--                                            />-->
+        <!--                                        </div>-->
+        <!--                                        <h6 class="text-white fw-bold">Irembo</h6>-->
+        <!--                                        <p class="text-white text-justify text-truncate text-center text-xs">-->
+        <!--                                            Easily access <br/>-->
+        <!--                                            Government <br/>-->
+        <!--                                            Services-->
+        <!--                                        </p>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="col-6 col-xl-2 col-md-4">-->
+        <!--                                    <div-->
+        <!--                                            class="d-flex flex-column justify-content-start align-items-center"-->
+        <!--                                    >-->
+        <!--                                        <div class="d-flex justify-content-center align-items-center bg-white rounded-circle bg-opacity-75 p-2">-->
+        <!--                                            <img-->
+        <!--                                                    src="../../assets/images/login/RRA.svg"-->
+        <!--                                                    alt="Transfer"-->
+        <!--                                                    class="feature-icon"-->
+        <!--                                            />-->
+        <!--                                        </div>-->
+        <!--                                        <h6 class="text-white fw-bold">RRA</h6>-->
+        <!--                                        <p class="text-white text-justify text-truncate text-center text-xs">-->
+        <!--                                            Paying taxes <br/>-->
+        <!--                                            made easier<br/>-->
+        <!--                                            close to you.-->
+        <!--                                        </p>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+
+        <!--                            </div>-->
+
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <div class="col-lg-12 order-0 order-lg-1">
+            <div class="card  min-vh-100 bg-transparent rounded-0 border-0">
+                <div class="card-body  d-flex justify-content-between flex-column">
+                    <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+                        <div class="container ">
+                            <button
+                                    class="navbar-toggler border-info border-2 text-info"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent"
+                                    aria-controls="navbarSupportedContent"
+                                    aria-expanded="false"
+                                    aria-label="Toggle navigation"
+                            >
+                                <!--                <span class="navbar-toggler-icon"></span>-->
+
+                                <i class="bi bi-list text-info"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                                    <li class="nav-item">
+                                        <a
+                                                class="nav-link d-flex align-items-center gap-1 text-info text-md-white fw-bold"
+                                                aria-current="page"
+                                                href="#"
+                                        >
+                                            <img src="../../assets/images/login/headphone.svg" alt=""/>
+                                            SUPPORT
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                                class="nav-link d-flex align-items-center gap-1 text-info text-md-white fw-bold"
+                                                aria-current="page"
+                                                href="../security_tips.html"
+                                        >
+                                            <img src="../../assets/images/login/security.svg" alt=""/>
+                                            SECURITY TIPS
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                                class="nav-link d-flex align-items-center gap-1 text-info text-md-white fw-bold"
+                                                aria-current="page"
+                                                href="#"
+                                        >
+                                            <img src="../../assets/images/login/question.svg" alt=""/>
+                                            FAQs
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                                class="nav-link d-flex align-items-center gap-1 text-info text-md-white fw-bold"
+                                                aria-current="page"
+                                                href="#"
+                                        >
+                                            <img src="../../assets/images/login/lang.svg" alt=""/>
+                                            EN
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="d-flex justify-content-between  flex-column ">
+                        <div class="d-flex justify-content-center align-items-center ">
+                            <img src="../assets/b_logo.png" class="img-fluid w-50 " alt="tablet">
+                        </div>
+                        <div class="card card-body border-0 mx-5">
+                            <!--                            <h5 class="text-info fw-bold mb-1 text-center">OTP verification</h5>-->
+
+                            <div class="row pt-5">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="d-flex gap-2">
+                                                <div>
+                                                    <div class="position-relative">
+                                                        <img src="../assets/images/security/material-security@2x.png" class="w-6" alt=""/>
+                                                        <h4 class="position-absolute position-absolute-center" style="">1</h4>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5 class="text-primary"> Accessing IClick</h5>
+                                                    <ul class="text-primary small gap-2 d-flex flex-column">
+                                                        <li> Always access IClick by typing URL www.imbank.co.rw and then going to Online
+                                                            Banking link.
+                                                        </li>
+                                                        <li>
+                                                            Never click on a link in an email to take you to a website and enter personal
+                                                            details either in the
+                                                            email or website.
+                                                        </li>
+                                                        <li>
+                                                            Whenever possible avoid login to IClick on public computers or cybercafés. If it
+                                                            is urgent, and
+                                                            you find yourself doing it, change your password immediately you get your home
+                                                            computer
+                                                        </li>
+                                                        <li>
+                                                            Note that some Wi-Fi connections are just like cybercafés. So do not access
+                                                            IClick services from
+                                                            an open unsecure Wi-Fi hotspot. If you do not know the business responsible for
+                                                            maintaining
+                                                            the Wi-Fi hotspot, do not access Internet banking services from it. Access
+                                                            Internet banking
+                                                            services only from a Wi-Fi hotspot maintained by reputable organizations
+                                                        </li>
+                                                        <li>
+                                                            Always use the Virtual Keyboard (onscreen) when log-in to I-click. The system
+                                                            has been designed
+                                                            to enforce this.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="d-flex gap-2">
+                                                <div>
+                                                    <div class="position-relative">
+                                                        <img src="../assets/images/security/material-security@2x.png" class="w-6" alt=""/>
+                                                        <h4 class="position-absolute position-absolute-center" style="">2</h4>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5 class="text-primary">Password Security</h5>
+                                                    <ul class="text-primary small gap-2 d-flex flex-column">
+                                                        <li>
+                                                            You should always be cautious if you receive unsolicited emails or calls asking
+                                                            you to disclose
+                                                            any personal details or card numbers. This information should be kept secret at
+                                                            all times.
+                                                        </li>
+                                                        <li>
+                                                            Never disclose personal information to individuals you do not know.
+                                                        </li>
+                                                        <li>
+                                                            I M Bank would never contact you directly to ask you to disclose your PIN or all
+                                                            your password
+                                                            information
+                                                        </li>
+                                                        <li>
+                                                            Never write down or store your passwords in a file on your computer. Don't share
+                                                            your
+                                                            username and password with others. Be cautious of sharing your usernames and
+                                                            passwords
+                                                            with sites, software, or services- especially when your personal information and
+                                                            money is
+                                                            involved
+                                                        </li>
+                                                        <li>
+                                                            Never use online password storage.
+                                                        </li>
+                                                        <li>
+                                                            Make your password lengthy. Your password should be 8 characters or more and a
+                                                            combination
+                                                            of alphabets and numbers. Don’t use a password that is easy to guess e.g. family
+                                                            name.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="d-flex gap-2">
+                                                <div>
+                                                    <div class="position-relative">
+                                                        <img src="../assets/images/security/material-security@2x.png" class="w-6" alt=""/>
+                                                        <h4 class="position-absolute position-absolute-center" style="">3</h4>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5 class="text-primary">Ensure IClick session is secure</h5>
+                                                    <ul class="text-primary small gap-2 d-flex flex-column">
+                                                        <li>
+                                                            When undertaking any banking on I-click, check that the session is secure. There
+                                                            are two simple
+                                                            indicators that will tell you if your session is secure
+                                                        </li>
+                                                        <li>
+                                                            The first is the use of https:// in the URL (address box). Some browsers such as
+                                                            Mozilla Firefox
+                                                            change the colour of the URL window when you are in a secure session.
+                                                        </li>
+                                                        <li>
+                                                            The other indicator is the presence of a digital certificate represented by a
+                                                            padlock or key in the
+                                                            bottom right hand corner. If you double click on this icon it should provide you
+                                                            with information
+                                                            about the organization with which you have entered in to a secure session.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="d-flex gap-2">
+                                                <div>
+                                                    <div class="position-relative">
+                                                        <img src="../assets/images/security/material-security@2x.png" class="w-6" alt=""/>
+                                                        <h4 class="position-absolute position-absolute-center" style="">4</h4>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h5 class="text-primary">Computer Security</h5>
+                                                    <ul class="text-primary small gap-2 d-flex flex-column">
+                                                        <li>
+                                                            It is important to use up-to-date Anti-virus software. If your computer uses
+                                                            Microsoft Windows
+                                                            operating system, it is important to keep it updated via the Windows Update
+                                                            feature, equally if
+                                                            you use another PC operating system or have an Apple Mac you should check
+                                                            regularly for
+                                                            updates. You should be vigilant if you use Internet cafés or a computer that is
+                                                            not your own and
+                                                            over which you have no control
+                                                        </li>
+                                                        <li>
+                                                            In addition to being protected by using up-to-date antivirus software you should
+                                                            also regularly
+                                                            use software to remove Spyware from your computer, as these programs record
+                                                            information
+                                                            about your Internet use and transmit it without your permission. In some
+                                                            circumstances this
+                                                            can compromise your PC security.
+                                                        </li>
+                                                        <li>
+                                                            Avoid downloading files from unknown sources. Malicious software (also known as
+                                                            'malware')
+                                                            and computer viruses can be hidden in email attachments and other files
+                                                            downloaded from the
+                                                            Internet. Before you download anything, verify you trust the source. Even when
+                                                            you receive
+                                                            files from friends and family, make sure your antivirus software scans the
+                                                            files before opening
+                                                            them
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="row">
+                            <div class="col-12 order-1 order-md-0">
+                                <div class="text-primary text-md-white">
+                                    <div class="d-flex justify-content-between align-items-center mt-4"
+                                    >
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-primary rounded-circle p-2 d-flex justify-content-center align-items-center">
+                                                <img
+                                                        src="../../assets/images/login/call.svg"
+                                                        alt="Call"
+                                                        class="d-none d-lg-block"
+                                                />
+                                            </div>
+                                            <div class="ms-3">
+                                                <strong class="small">24Hour Call Centre:</strong>
+                                                <br/>
+                                                <span>+250 788 162 006</span>
+                                            </div>
+                                        </div>
+                                        <p class="text-xs text-md-white text-dark">
+                                            To find out more about our products, <br/>
+                                            visit any I&M Bank Branch or email
+                                            <a
+                                                    href="mailto:info@imbank.co.rw"
+                                                    class="text-md-white text-dark"
+                                            >info@imbank.co.rw</a
+                                            >
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-8 order-0 order-md-1 ">
+                                <div class="w-100 position-relative">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-    <div class="input-group">
-        <label for="loanTenureType">Loan Tenure:</label>
-        <select id="loanTenureType">
-            <option value="years">Years</option>
-            <option value="months">Months</option>
-        </select>
-        <input type="number" id="loanTenure" placeholder="Enter number of years/months">
-    </div>
-    <div class="input-group">
-        <label for="interestRate">Interest Rate (%):</label>
-        <input type="number" id="interestRate" step="0.01" placeholder="Enter interest rate">
-    </div>
-    <div class="results">
-        <p id="monthlyRepayment">Monthly Repayment: $0.00</p>
-        <p id="totalInterest">Total Interest: $0.00</p>
-        <p id="totalAmount">Total Amount to be Paid: $0.00</p>
-    </div>
+
 </div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
-    $(document).ready(function() {
-        function numberWithCommas(x) {
-            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        }
 
-        function calculateLoan() {
-            let loanAmount = parseFloat($('#loanAmount').val());
-            let loanTenureType = $('#loanTenureType').val();
-            let loanTenure = parseFloat($('#loanTenure').val());
-            let interestRate = parseFloat($('#interestRate').val()) / 100;
-
-            if (loanTenureType === 'years') {
-                loanTenure *= 12;  // Convert years to months
+    function showOtpTimer() {
+        let $minutesRemain = $('#minutesRemain');
+        let minutes = Number($minutesRemain.text());
+        let seconds = 0;
+        let interval = setInterval(function () {
+            if (seconds === 0) {
+                minutes--;
+                seconds = 60;
             }
-
-            let monthlyInterestRate = interestRate / 12;
-
-            if (loanAmount && loanTenure && interestRate) {
-                let monthlyRepayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -loanTenure));
-                let totalAmount = monthlyRepayment * loanTenure;
-                let totalInterest = totalAmount - loanAmount;
-
-                $('#monthlyRepayment').text(`Monthly Repayment: $${numberWithCommas(monthlyRepayment.toFixed(2))}`);
-                $('#totalInterest').text(`Total Interest: $${numberWithCommas(totalInterest.toFixed(2))}`);
-                $('#totalAmount').text(`Total Amount to be Paid: $${numberWithCommas(totalAmount.toFixed(2))}`);
+            seconds--;
+            $minutesRemain.text(minutes);
+            $('#secondsRemain').text(seconds);
+            if (minutes === 0 && seconds === 0) {
+                clearInterval(interval);
             }
-        }
+        }, 1000);
+    }
 
-        $('input, select').on('input change', function() {
-            calculateLoan();
+    $(function () {
+
+        let $rraPayment = $('');
+
+        $rraPayment.on('submit', function (e) {
+            e.preventDefault();
+            $('#otpModal').modal('show');
+            showOtpTimer();
         });
+
+
+        $('.one-digit').on('keyup', function () {
+            if ($(this).val().length === 1) {
+                setTimeout(() => {
+                    $(this).next('.one-digit').focus();
+                }, 100);
+            }
+        });
+
+
     });
-
-
+</script>
+<script>
+    $(function () {
+        // get selected tab
+        let urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('tab')) {
+            let tab = urlParams.get('tab');
+            $('#' + tab).addClass('active');
+        }
+    });
 </script>
 </body>
 </html>
