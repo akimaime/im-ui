@@ -750,8 +750,8 @@
                                         <div class="tab-pane fade" id="nav-momo" role="tabpanel"
                                              aria-labelledby="nav-contact-tab" tabindex="0">
                                             <div class="d-flex justify-content-between">
-                                                <h5 class="mx-3">International banks Transfer Beneficiaries</h5>
-                                                <form action="" id="addMomo">
+                                                <h5 class="mx-3">Mobile Money Beneficiaries</h5>
+                                                <form action="" id="addAirtimeForm">
                                                     <button class="btn btn-info text-white rounded-pill px-4 py-1"><i
                                                             class="bi bi-plus-circle me-2"></i>Add Beneficiary
                                                     </button>
@@ -800,9 +800,7 @@
                                                         <tbody>
                                                         <tr class="cursor-pointer js-account py-5">
                                                             <td class="small">Peter Musoni</td>
-                                                            <td class="small">42652678-36373-8383</td>
-                                                            <td class="small">Rwanda</td>
-                                                            <td class="small">Equity</td>
+                                                            <td class="small">0780007202</td>
                                                             <td class="small">jeanpaul@gmail.com</td>
 
                                                             <td class="small">
@@ -824,9 +822,7 @@
                                                         </tr>
                                                         <tr class="cursor-pointer js-account py-5">
                                                             <td class="small">John Peter</td>
-                                                            <td class="small">42652678-36373-8383</td>
-                                                            <td class="small">Nigeria</td>
-                                                            <td class="small">Equity</td>
+                                                            <td class="small">0789999478</td>
                                                             <td class="small">jeanpaul@gmail.com</td>
                                                             <td class="small">
                                                                 <div class="dropdown">
@@ -847,9 +843,7 @@
                                                         </tr>
                                                         <tr class="cursor-pointer js-account py-5">
                                                             <td class="small">Musoni Business</td>
-                                                            <td class="small">42652678-36373-8383</td>
-                                                            <td class="small">Tanzania</td>
-                                                            <td class="small">Bank of Kigali</td>
+                                                            <td class="small">0780007101</td>
                                                             <td class="small">jeanpaul@gmail.com</td>
 
                                                             <td class="small">
@@ -871,9 +865,7 @@
                                                         </tr>
                                                         <tr class="cursor-pointer js-account py-5">
                                                             <td class="small">John Peter</td>
-                                                            <td class="small">42652678-36373-8383</td>
-                                                            <td class="small">Kenya</td>
-                                                            <td class="small">Coge Bank</td>
+                                                            <td class="small">0732947493</td>
                                                             <td class="small">jeanpaul@gmail.com</td>
 
                                                             <td class="fs-12px">
@@ -895,9 +887,7 @@
                                                         </tr>
                                                         <tr class="cursor-pointer js-account py-5">
                                                             <td class="small">Musoni Business</td>
-                                                            <td class="small">42652678-36373-8383</td>
-                                                            <td class="small">Ghana</td>
-                                                            <td class="small">Bank of Kigali</td>
+                                                            <td class="small">0728159330</td>
                                                             <td class="small">jeanpaul@gmail.com</td>
                                                             <td class="small">
                                                                 <div class="dropdown">
@@ -1274,7 +1264,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content px-4 rounded-4">
             <div class="modal-header justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
-                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
+                <h1 class="modal-title fs-4 text-info fw-semibold mb-0">
                     Add Beneficiary
                 </h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1286,15 +1276,14 @@
                 <div class="js-parent">
                     <div class="form-group mb-2">
                         <label for="phone_Number">Phone Number</label>
-                        <div
-                                class="rounded-default  bg-white pe-1 mb-3    border d-flex align-items-center ">
+                        <div class="rounded-default py-2  rounded bg-secondary border-0 bg-opacity-10 pe-1 mb-3    border d-flex align-items-center ">
 
                             <input type="phone"
-                                   class="form-control border-0 shadow-none"
+                                   class="form-control border-0 bg-transparent shadow-none"
                                    id="phone_Number" placeholder="Enter Phone Number" required
                                    name="biller_number"/>
                             <button type="button"
-                                    class="btn btn-primary btn-sm  py-1 px-3 js-check-balance">
+                                    class="btn btn-info btn-sm  py-2 px-3 js-check-balance">
                                 Verify
                             </button>
                         </div>
@@ -1302,7 +1291,7 @@
                     </div>
                     <div class="form-group mb-2">
                         <label for="beneficiaryName">Beneficiary Name</label>
-                        <input type="text" class="form-control js-owner mb-3" id="airtimeBenName" readonly name="owner"
+                        <input type="text" class="form-control py-3  rounded bg-secondary border-0 bg-opacity-10 js-owner mb-3" id="airtimeBenName" readonly name="owner"
                                placeholder="Enter Beneficiary Name">
 
                     </div>
@@ -1310,7 +1299,7 @@
 
                     <div class="form-group mb-3">
                         <label for="email">Email</label>
-                        <input type="text" class="form-control" id="airtimeBenEmail"
+                        <input type="text" class="form-control py-3  rounded bg-secondary border-0 bg-opacity-10" id="airtimeBenEmail"
                                placeholder="Enter Beneficiary Email">
 
 
@@ -1319,13 +1308,14 @@
                         <div class="col-lg-6 offset-lg-6">
                             <div
                                     class="mb-3 d-flex gap-2 align-items-center  justify-content-end">
+
+                                <button type="reset"
+                                        class="btn btn-outline-primary px-3 close  ">
+                                    Clear
+                                </button>
                                 <button type="submit"
                                         class="btn  btn-info text-white px-3 ">
                                     Save
-                                </button>
-                                <button type="reset"
-                                        class="btn btn-primary px-3 close  ">
-                                    Clear
                                 </button>
                             </div>
                         </div>
