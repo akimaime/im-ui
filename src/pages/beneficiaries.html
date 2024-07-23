@@ -141,7 +141,7 @@
                                             </button>
                                             <button class="nav-link text-start px-2  mb-5" id="nav-profile-momo"
                                                     data-bs-toggle="tab"
-                                                    data-bs-target="#nav-profile" type="button" role="tab"
+                                                    data-bs-target="#nav-momo" type="button" role="tab"
                                                     aria-controls="nav-profile" aria-selected="false">Mobile Money
 
                                             </button>
@@ -746,6 +746,197 @@
                                         </div>
                                         <div class="tab-pane fade" id="nav-contact" role="tabpanel"
                                              aria-labelledby="nav-contact-tab" tabindex="0">hh
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-momo" role="tabpanel"
+                                             aria-labelledby="nav-contact-tab" tabindex="0">
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="mx-3">International banks Transfer Beneficiaries</h5>
+                                                <form action="" id="addMomo">
+                                                    <button class="btn btn-info text-white rounded-pill px-4 py-1"><i
+                                                            class="bi bi-plus-circle me-2"></i>Add Beneficiary
+                                                    </button>
+                                                </form>
+                                            </div>
+                                            <div class="container-fluid ">
+                                                <div class="table-responsive">
+                                                    <table class="table my-2 table-accounts  ">
+                                                        <thead>
+                                                        <tr class="">
+                                                            <th class="text-info text-sm border-0  border-3 border-bottom  border-info cursor-pointer">
+                                                                <div class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                                    <span>Beneficiary Name</span>
+                                                                    <div class="d-flex flex-column text-sm">
+                                                                        <i class="bi bi-chevron-up"></i>
+                                                                        <i class="bi bi-chevron-down"></i>
+                                                                    </div>
+                                                                </div>
+
+                                                            </th>
+                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                                <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                    <span>Phone Number</span>
+                                                                    <div class="d-flex flex-column fs-9px">
+                                                                        <i class="bi bi-chevron-up "></i>
+                                                                        <i class="bi bi-chevron-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+
+
+                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer">
+                                                                <div class=" d-flex align-items-center justify-content-between ">
+                                                                    <span>Email</span>
+                                                                    <div class="d-flex flex-column fs-9px">
+                                                                        <i class="bi bi-chevron-up "></i>
+                                                                        <i class="bi bi-chevron-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            <th class="text-info  border-0  text-sm  border-3 border-bottom  border-info">
+                                                                Actions
+                                                            </th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr class="cursor-pointer js-account py-5">
+                                                            <td class="small">Peter Musoni</td>
+                                                            <td class="small">42652678-36373-8383</td>
+                                                            <td class="small">Rwanda</td>
+                                                            <td class="small">Equity</td>
+                                                            <td class="small">jeanpaul@gmail.com</td>
+
+                                                            <td class="small">
+                                                                <div class="dropdown">
+                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                            type="button" data-bs-toggle="dropdown">
+                                                                        Options
+                                                                    </button>
+                                                                    <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                        <li><a class="dropdown-item" href="#">
+                                                                            Update
+                                                                        </a></li>
+                                                                        <li class=""><a class="dropdown-item " href="#">
+                                                                            Delete
+                                                                        </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cursor-pointer js-account py-5">
+                                                            <td class="small">John Peter</td>
+                                                            <td class="small">42652678-36373-8383</td>
+                                                            <td class="small">Nigeria</td>
+                                                            <td class="small">Equity</td>
+                                                            <td class="small">jeanpaul@gmail.com</td>
+                                                            <td class="small">
+                                                                <div class="dropdown">
+                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                            type="button" data-bs-toggle="dropdown">
+                                                                        Options
+                                                                    </button>
+                                                                    <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                        <li><a class="dropdown-item" href="#">
+                                                                            Update
+                                                                        </a></li>
+                                                                        <li class=""><a class="dropdown-item " href="#">
+                                                                            Delete
+                                                                        </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cursor-pointer js-account py-5">
+                                                            <td class="small">Musoni Business</td>
+                                                            <td class="small">42652678-36373-8383</td>
+                                                            <td class="small">Tanzania</td>
+                                                            <td class="small">Bank of Kigali</td>
+                                                            <td class="small">jeanpaul@gmail.com</td>
+
+                                                            <td class="small">
+                                                                <div class="dropdown">
+                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                            type="button" data-bs-toggle="dropdown">
+                                                                        Options
+                                                                    </button>
+                                                                    <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                        <li><a class="dropdown-item" href="#">
+                                                                            Update
+                                                                        </a></li>
+                                                                        <li class=""><a class="dropdown-item " href="#">
+                                                                            Delete
+                                                                        </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cursor-pointer js-account py-5">
+                                                            <td class="small">John Peter</td>
+                                                            <td class="small">42652678-36373-8383</td>
+                                                            <td class="small">Kenya</td>
+                                                            <td class="small">Coge Bank</td>
+                                                            <td class="small">jeanpaul@gmail.com</td>
+
+                                                            <td class="fs-12px">
+                                                                <div class="dropdown">
+                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                            type="button" data-bs-toggle="dropdown">
+                                                                        Options
+                                                                    </button>
+                                                                    <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                        <li><a class="dropdown-item" href="#">
+                                                                            Update
+                                                                        </a></li>
+                                                                        <li class=""><a class="dropdown-item " href="#">
+                                                                            Delete
+                                                                        </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cursor-pointer js-account py-5">
+                                                            <td class="small">Musoni Business</td>
+                                                            <td class="small">42652678-36373-8383</td>
+                                                            <td class="small">Ghana</td>
+                                                            <td class="small">Bank of Kigali</td>
+                                                            <td class="small">jeanpaul@gmail.com</td>
+                                                            <td class="small">
+                                                                <div class="dropdown">
+                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                            type="button" data-bs-toggle="dropdown">
+                                                                        Options
+                                                                    </button>
+                                                                    <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                        <li><a class="dropdown-item" href="#">
+                                                                            Update
+                                                                        </a></li>
+                                                                        <li class=""><a class="dropdown-item " href="#">
+                                                                            Delete
+                                                                        </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <nav aria-label="..." class="float-end mt-2">
+                                                        <ul class="pagination">
+                                                            <li class="page-item disabled">
+                                                                <a class="page-link">Previous</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a>
+                                                            </li>
+                                                            <li class="page-item active" aria-current="page">
+                                                                <a class="page-link" href="#">2</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">3</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" href="#">Next</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
