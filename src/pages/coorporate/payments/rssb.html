@@ -1,0 +1,1001 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I&M Internet bank</title>
+    <link href="../../css/custom.css" rel="stylesheet">
+</head>
+<body class="">
+<div class="d-flex min-vh-100 justify-content-between flex-column">
+    <div class="bg-color-height mb-4">
+        <div class="container">
+            <div class="d-flex justify-content-between py-4">
+                <div class="d-flex flex-column">
+                    <img src="../../assets/logo.png" alt="logo">
+                    <span class="text-white px-4 fs-4">Retail</span>
+
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <h5 class="text-white ">Welcome back,Jon Doe</h5>
+                    <div class="d-flex rounded-circle bg-dark bg-opacity-50 p-4 justify-content-center align-items-center"
+                         style="height: 16px;width: 16px">
+                        <i class="bi bi-person fs-5 text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <nav class=" navbar navbar-expand-lg">
+                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="../../index.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Transfers
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="own-account.html">Transfer to your own Accounts </a></li>
+                                <li><a class="dropdown-item" href="internal.html">Transfer from I&M to I&M </a></li>
+                                <li><a class="dropdown-item" href="local-bank.html">Transfer to Local Banks </a></li>
+                                <li><a class="dropdown-item" href="international.html">Transfer to International </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="BillPayments" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                BillPayments
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Cards" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cards
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
+                                Requests
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link " id="Beneficiaries" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                Beneficiaries
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Mails" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mails
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--            <nav style="&#45;&#45;bs-breadcrumb-divider: '>';" aria-label="breadcrumb">-->
+            <!--                <ol class="breadcrumb">-->
+            <!--                    <li class="breadcrumb-item "><a href="../../index.html">Dashboard</a></li>-->
+            <!--                    <li class="breadcrumb-item active" aria-current="page">Own account Transfer</li>-->
+            <!--                </ol>-->
+            <!--            </nav>-->
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card rounded-4 ">
+                        <form action="" class="" id="rraPaymentForm">
+                            <div class="card-body ">
+                                <div class="tab-pane card-body  active" id="pills-own-accounts" role="tabpanel">
+                                    <h4>
+                                         ISHEMA-RSSB Payment
+                                    </h4>
+
+                                    <div
+                                            class="callout callout-info callout-sm mb-2  d-flex align-items-center">
+                                        <p class="mb-0 alert alert-info border-0">
+                                            Please enter Payment number and click on Validate  button to
+                                            validate the Payment number.
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="row  justify-content-center">
+                                                <div class=" ">
+                                                    <div class="mb-3">
+                                                        <label for="ref_number" class="form-label small text-info ">Enter
+                                                            Payment number:</label>
+                                                        <div
+                                                                class=" rounded-default  bg-secondary border-0 bg-opacity-10    border d-flex align-items-center p-1">
+                                                            <div
+                                                                    class="small d-flex align-items-center flex-shrink-0 gap-2 ms-2 pe-2 border-end">
+                                                                <i class="bi bi-search text-muted"
+                                                                   style="transform: rotate(90deg)"></i>
+                                                            </div>
+                                                            <input type="text" class="form-control bg-transparent border-0   border-0 shadow-none"
+                                                                   id="ref_number" name="search"/>
+                                                            <button type="button"
+                                                                    class="btn btn-info text-white rounded-default flex-shrink-0 js-verify">
+                                                                <i class="bi bi-plus"></i>
+                                                                Validate
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row align-items-center">
+                                                    <div class="">
+                                                        <div class="mb-3">
+                                                            <label for="own_from_account"
+                                                                   class="text-info small fw-normal form-label">
+                                                                Make payment from:
+                                                            </label>
+                                                            <select
+                                                                    class="form-select py-3 bg-secondary border-0 bg-opacity-10   js-transfer-from"
+                                                                    required id="own_from_account" name="from_account">
+                                                                <option value="">Select Account</option>
+                                                            </select>
+                                                            <div style="display: block"
+                                                                 class="d-flex justify-content-between align-items-center my-1 mb-lg-0 js-account-balance">
+                                                                <div class="d-flex flex-column">
+                                                                <span class="text-info  small js-balance">*** *** ***
+                                                                    ***</span>
+                                                                </div>
+                                                                <button type="button"
+                                                                        class="btn-sm btn btn-outline-primary border  js-toggle-balance">
+                                                                    Show Balance
+                                                                </button>
+                                                            </div>
+                                                            <div class="js-conversion p-0" >
+                                                                <div
+                                                                        class="d-flex  flex-column flex-md-row gap-3  ">
+                                                                    <div>
+                                                                        <div class="fw-normal text-info fs-6">
+                                                                            Total Conversion:
+                                                                        </div>
+                                                                        <div
+                                                                                class="d-flex flex-shrink-0 align-items-center gap-2">
+                                                                    <span
+                                                                            class="text-muted fw-semibold small js-converted-currency">USD</span>
+                                                                            <span
+                                                                                    class="fs-13px fw-semibold small text-info js-converted-amount">2763.38</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="fw-normal text-info fs-6">
+                                                                            Conversion Rate:
+                                                                        </div>
+                                                                        <div class="text-info">
+                                                                            (<span
+                                                                                class="text-info small js-conversion-rate">0.000092</span>)
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-6"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div class="js-account-found mt-3">
+                                            <div class="table-responsive">
+                                                <table class="table mb-3 table-accounts">
+                                                    <thead>
+                                                    <tr class="">
+                                                        <th
+                                                                class="text-primary  border-top-0  text-info text-sm border-bottom  border-info cursor-pointer">
+                                                            <div
+                                                                    class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input rounded-0"
+                                                                           type="checkbox" value=""
+                                                                           id="check_all"/>
+                                                                    <label class="form-check-label"
+                                                                           for="check_all">
+                                                                        All
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                        <th
+                                                                class="text-primary  border-top-0  text-info text-sm border-bottom  border-info cursor-pointer">
+                                                            <div
+                                                                    class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Document Number</span>
+                                                            </div>
+
+                                                        </th>
+                                                        <th
+                                                                class="text-primary  border-top-0    text-info text-sm border-bottom  border-info cursor-pointer ">
+                                                            <div
+                                                                    class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Bill Amount</span>
+                                                            </div>
+                                                        </th>
+
+
+                                                        <th
+                                                                class="text-primary  border-top-0  text-info text-sm border-bottom  border-info cursor-pointer ">
+                                                            <div
+                                                                    class=" d-flex align-items-center justify-content-between ">
+                                                                <span>Currency</span>
+                                                            </div>
+                                                        </th>
+
+                                                        <th
+                                                                class="text-primary  border-top-0    text-info text-sm border-bottom  border-info cursor-pointer">
+                                                            <div
+                                                                    class=" d-flex align-items-center justify-content-between ">
+                                                                <span>Description</span>
+                                                            </div>
+                                                        </th>
+
+                                                    </tr>
+                                                    </thead>
+
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <!--                                            add a summary of the total amount to be paid-->
+
+
+                                        </div></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="row">
+
+
+                                    <div class="col-lg-6 py-3 offset-lg-6">
+                                        <div
+                                                class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
+                                            <button type="reset"
+                                                    class="btn btn-outline-primary rounded py-2   px-lg-5">
+                                                Clear
+                                            </button>
+                                            <button type="submit"
+                                                    class="btn btn-info rounded py-2 text-white px-lg-5">
+                                                Continue
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="bg-info d-flex justify-content-center w-100">
+            <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
+        </div>
+    </footer>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+            <div class="modal-header border-bottom-0 align-items-center py-4 px-lg-5">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="post" class="submitTransferForm">
+                <div class="modal-body py-0 px-lg-5"
+                     style="background-image: url(../../assets/images/payments/bg_details.svg);background-position: top;background-repeat: no-repeat;background-size: 80%">
+                    <h5 class="text-center">Confirm</h5>
+                    <span class="text-muted  py-3 mb-3 ">
+                        Check well if all information you entered is correct !
+                    </span>
+                    <span class="text-muted mb-2 px-0">
+                       Make payment to
+                    </span>
+                    <div class="row border rounded card-body py-3 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="">
+                                <div class="fw-normal text-muted fs-6">4004 7680 7689 0456</div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="">
+                                <div class="fw-normal text-muted fs-6">BYIRINGIRO EMMANUEL</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center">
+                        <span class="fs-3 fw-bold">3,000,0000 RWF</span>
+                    </div>
+                    <div class="border-bottom border-3 mt-4 "></div>
+                    <div class="  border-top-0  py-4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <button type="button" data-bs-dismiss="modal" class="btn btn-outline-primary w-100 px-4 py-2 ">
+                                    Cancel
+                                </button>
+                            </div>
+                            <div class="col-lg-6">
+                                <button type="submit" class="btn btn-success w-100  px-4 py-2 text-white"
+                                >
+                                    Make Transfer
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="otpModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+            <div class="d-flex justify-content-center flex-column border-0 align-items-center py-4 px-lg-5">
+                <div class="position-relative">
+                    <div class="d-flex justify-content-center  align-items-center bg-primary rounded-circle"
+                         style="height: 84px;width: 84px">
+                        <i class="text-white bi bi-arrow-counterclockwise tw-object-cover display-2">
+                        </i>
+                        <span id="secondsRemain" class="position-absolute text-white tw-top-2 tw-right-2">65</span>
+                    </div>
+                </div>
+                <span class="text-dark  display-5 fw-bold ">
+                        OTP
+                </span>
+                <span class="text-muted  mb-1  ">
+                        Please check your 4 digits sent to *********6723
+                </span>
+
+            </div>
+            <form action="">
+                <div class="modal-body py-0 px-lg-5">
+
+
+                    <div class="d-flex justify-content-between card-body gap-3">
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer border-top-0 px-lg-5 py-4 justify-content-between">
+                    <button type="button" class="btn btn-success w-100 px-5 js-confirm py-2 text-white fw-semibold  ">
+                        Confirm
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        let accountFrom = null;
+        let currency = null;
+        let amount = null;
+
+        let jsFromAccountElement = $('.js-transfer-from');
+        let jsCurrency = $('.js-currency');
+        let ownAmount = $('.js-amount');
+        let toggleConversion = function () {
+            if (accountFrom) {
+                $('.js-conversion').slideDown();
+            } else {
+                $('.js-conversion').slideUp();
+            }
+        }
+
+
+        $(function () {
+
+            $('#utility_type').on('change', function (e) {
+                let $waterDiv = $('.js-water');
+                let $electricityDiv = $('.js-electricity');
+                let $tvDiv = $('.js-tv');
+
+                if ($(this).val() === 'Water') {
+                    $waterDiv.show();
+                    $electricityDiv.hide();
+                    $tvDiv.hide();
+                } else if ($(this).val() === 'Electricity') {
+                    $waterDiv.hide();
+                    $electricityDiv.show();
+                    $tvDiv.hide();
+                } else if ($(this).val() === 'tv') {
+                    $waterDiv.hide();
+                    $electricityDiv.hide();
+                    $tvDiv.show();
+                } else {
+                    $waterDiv.hide();
+                    $electricityDiv.hide();
+                    $tvDiv.hide();
+                }
+            });
+
+            $('.js-check-balance').on('click', function () {
+                // find input sibling text
+                let btn = $(this);
+                let input = btn.siblings('input');
+                if (input.val() === '') {
+                    return;
+                }
+                // find the parent div with class .js-parent
+                let parent = btn.parents('.js-parent');
+                // find the span with class .js-balance
+                let owner = parent.find('.js-owner');
+                let amount = parent.find('.js-amount');
+                // add spinner using bootstrap and simulate a request for 1 second and then remove spinner
+                btn.append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>')
+                    .prop('disabled', true);
+                setTimeout(() => {
+                    owner.val('John Doe');
+                    // generate random amount between 100 and 10000
+                    amount.val(Math.floor(Math.random() * 10000) + 100);
+                    btn.find('.spinner-border').remove();
+                    btn.prop('disabled', false);
+                }, 1000);
+
+            });
+            $('#tv_packages').on('change', function () {
+                let value = $(this).val();
+                let $tvAmount = $('#tv_amount');
+                $tvAmount.val("");
+                if (value === '')
+                    return;
+                // get selected option and get data from data-amount attribute
+                let amount = $(this).find('option:selected').data('amount');
+
+                $tvAmount.val(amount.toLocaleString());
+
+            });
+
+            $('#checkAll').on('change', function () {
+                // find add all check boxes with class js-check-tax and check them all
+
+            });
+
+            // select a radio button with name frequency
+            $('input[name="frequency"]').on('change', function () {
+                if ($(this).val() === 'Once') {
+                    $('.js-one-time').removeClass('hide');
+                    $('.js-recurring').addClass('hide');
+                } else {
+                    $('.js-one-time').addClass('hide');
+                    $('.js-recurring').removeClass('hide');
+                }
+            });
+
+            $('.js-bulk-toggle').on('change', function () {
+                if ($(this).is(':checked')) {
+                    $('.js-bulk-payments').slideDown();
+                    $('.js-single-payment').slideUp();
+                } else {
+                    $('.js-bulk-payments').slideUp();
+                    $('.js-single-payment').slideDown();
+                }
+            });
+            $(document).on('click', '.js-remove', function () {
+                $(this).closest('tr').remove();
+            });
+//show div after click on add button
+
+
+            $('.btnAddPhoneNumbers').on('click', function (e) {
+                e.preventDefault();
+                let btn = $(this);
+                // add spinner to button
+                let s = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="visually-hidden">Loading...</span>`;
+                btn.append(s)
+                    .prop('disabled', true);
+
+                // simulate a request for 1 second and then remove spinner
+                setTimeout(() => {
+                    //show the div with class js-name
+                    $('.js-name-found').removeClass('d-none');
+                    $('.js-name-found').addClass('d-block');
+
+
+                    let $parentDiv = $(this).parents('.formAddNumbers');
+                    let $phone = $parentDiv.find('input[name="phone"]').val()||$parentDiv.find('select[name="phon"]').val();
+                    let phone = $phone;
+                    let $amount = $parentDiv.find('input[name="amount"]');
+                    let amount = $amount.val();
+                    //
+                    if (phone === '' || amount === '') {
+                        return;
+
+                    }
+//get the name from select when check box else get the name from input
+                    //if the checkbox is checked display the name from select
+                    if($parentDiv.find('input[name="select_beneficiary"]').is(':checked')){
+                        let $beneficial_name = $parentDiv.find('select[name="phon"]').find('option:selected').data('name');
+                        let beneficial_name = $beneficial_name;
+                        let html = `<tr>
+                            <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox"/>
+                            </div>
+                            </td>
+                            <td>${beneficial_name}</td>
+                            <td>${phone}</td>
+                            <td><input type="text" value="${amount}" class="form-control w-25">
+                            </td>
+ //
+                        </tr>`;
+                        $('.js-bulk-table tbody').append(html);
+                        $('#phone').val('');
+                        $('#amount').val('');
+                        $('#phon').val('');
+                        $('#amounts').val('');
+
+                    }else {
+                        // get the random name from the array below
+                        let names = ['John Doe', 'Jane Doe', 'John Smith', 'Jane Smith'];
+                        let name = names[Math.floor(Math.random() * names.length)];
+                        let html = `<tr>
+                            <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox"/>
+                            </div>
+                            </td>
+                            <td>${name}</td>
+                            <td>${phone}</td>
+                            <td><input type="text" value="${amount}" class="form-control w-25">
+                            </td>
+
+                        </tr>`;
+                        $('.js-bulk-table tbody').append(html);
+                        $('#phone').val('');
+                        $('#amount').val('');
+                        $('#phon').val('');
+                        $('#amounts').val('');
+                    }
+                    btn.prop('disabled', false).find('.spinner-border')
+                        .remove();
+                }, 1000);
+
+            });
+
+
+
+
+            currencies.forEach(function (currency, index) {
+                let abbr = currency.abbr;
+                let innerText = `${abbr}-4000-0000-0000-000${index}-Jean Paul`;
+                jsFromAccountElement.append(`<option value="${abbr}">${innerText}</option>`);
+                jsCurrency.append(`<option value="${abbr}">${abbr}</option>`);
+            });
+
+            jsFromAccountElement.on('change', function () {
+                let value = $(this).val();
+                accountFrom = value;
+                if (value)
+                    toggleConversion();
+            });
+
+
+            let $ownFromAccount = $('.js-transfer-from');
+            let hideBalanceSymbol = '*** *** *** ***';
+            $ownFromAccount.on('change', function () {
+                // find the sibling of parent div
+                $('.js-balance').text(hideBalanceSymbol)
+                $('.js-toggle-balance').text('Show Balance')
+                let accountBalance = $(this).parent().siblings('.js-account-balance');
+                if ($(this).val()) {
+                    accountBalance.addClass('d-flex')
+                } else {
+                    accountBalance.removeClass('d-flex')
+                }
+            });
+            $('.js-toggle-balance').on('click', function () {
+                let currency = $ownFromAccount.val();
+                let balanceElement = $(this).siblings('div').find('.js-balance');
+                if (balanceElement.text() === hideBalanceSymbol) {
+                    balanceElement.text(currency + ' 1,000,000.00');
+                    $(this).text('Hide Balance');
+                } else {
+                    balanceElement.text(hideBalanceSymbol);
+                    $(this).text('Show Balance');
+                }
+            });
+            $('.select2').select2({
+                theme: 'bootstrap-5',
+                allowClear: false
+            });
+            $('.js-check-saved-beneficiaries').on('click', function () {
+
+
+                let parent = $(this).parent().parent();
+                console.log(parent);
+                // find sibling with class js-select-beneficiary
+                let selectBeneficiary = parent.siblings('div.js-select-beneficiary');
+                console.log(selectBeneficiary);
+                let searchBeneficiary = parent.siblings('div.js-search-beneficiary');
+
+                if ($(this).prop('checked')) {
+                    console.log(true)
+                    selectBeneficiary.slideDown();
+                    searchBeneficiary.slideUp()
+                } else {
+                    console.log(false)
+                    selectBeneficiary.slideUp()
+                    searchBeneficiary.slideDown();
+                }
+
+            });
+
+
+            jQuery.validator.addMethod("alphanumeric", function (value, element) {
+                // return this.optional(element) || /^[a-zA-Z0-9\s]+$/.test(value);
+                // allow only letters, numbers,  whitespace
+                return /^[a-zA-Z0-9\s']+$/.test(value) || this.optional(element);
+            }, "Letters and numbers  only please");
+            let $rraPayment = $('#rraPaymentForm');
+            $rraPayment.validate({
+                rules: {
+                    reason: {
+                        alphanumeric: true
+                    }
+                }
+            });
+            let $iremboPayment= $('#iremboPaymentForm');
+            $iremboPayment.validate({
+                rules: {
+                    reason: {
+                        alphanumeric: true
+                    }
+                }
+            });
+
+            let $airtimePaymentForm = $('#airtimePaymentForm');
+
+            $airtimePaymentForm.validate({
+                ignore: ".ignore",
+                rules: {
+                    reason: {
+                        alphanumeric: true
+                    }
+                }
+            });
+            let $utilityPaymentForm = $('#utilityPaymentForm');
+            $utilityPaymentForm.validate();
+            $utilityPaymentForm.on('submit', function (e) {
+                e.preventDefault();
+                if ($utilityPaymentForm.valid()) {
+                    $('#exampleModal').modal('show');
+                }
+            });
+
+
+            $rraPayment.on('submit', function (e) {
+                e.preventDefault();
+                if ($rraPayment.valid()) {
+                    $('#otpModal').modal('show');
+                }
+            });
+            $iremboPayment.on('submit', function (e) {
+                e.preventDefault();
+                if ($rraPayment.valid()) {
+                    e.target.submit();
+                }
+            });
+
+
+            $airtimePaymentForm.on('submit', function (e) {
+                e.preventDefault();
+                if ($airtimePaymentForm.valid()) {
+                    e.target.submit();
+                }
+            });
+            let $mobileMoneyPaymentForm = $('#mobileMoneyPaymentForm');
+            $mobileMoneyPaymentForm.validate({
+                ignore: ".ignore",
+            });
+            $mobileMoneyPaymentForm.on('submit', function (e) {
+                e.preventDefault();
+                if ($mobileMoneyPaymentForm.valid()) {
+                    e.target.submit();
+                }
+            });
+
+            $('.one-digit').on('keyup', function () {
+                if ($(this).val().length === 1) {
+                    setTimeout(() => {
+                        $(this).next('.one-digit').focus();
+                    }, 100);
+                }
+            });
+            $('.js-confirm').on('click', function () {
+                Swal.fire({
+                    text: "Pay is made successfully!",
+                    icon: 'success',
+                }).then(
+                    function () {
+                        window.location.href = '../../index.html';
+                    });
+            });
+
+
+            $('#rraPaymentForm').on('submit', function (e) {
+                e.preventDefault();
+                // find modal parent of this form
+                let modal = $(this).closest('.modal');
+                // hide modal
+                modal.modal('hide');
+                $('#otpModal').modal('show');
+
+                let $minutesRemain = $('#minutesRemain');
+                let minutes = Number($minutesRemain.text());
+                let seconds = 0;
+                let interval = setInterval(function () {
+                    if (seconds === 0) {
+                        minutes--;
+                        seconds = 60;
+                    }
+                    seconds--;
+                    $minutesRemain.text(minutes);
+                    $('#secondsRemain').text(seconds);
+                    if (minutes === 0 && seconds === 0) {
+                        clearInterval(interval);
+                    }
+                }, 1000);
+            });
+
+
+
+            $('.js-check-saved-beneficiaries').on('click', function () {
+
+                if ($(this).prop('checked')) {
+                    $('.js-non-beneficiaries').addClass('hide');
+                    $('.js-beneficiary').removeClass('hide');
+                } else {
+                    $('.js-non-beneficiaries').removeClass('hide');
+                    $('.js-beneficiary').addClass('hide');
+                }
+            });
+
+
+            $('.js-payment-schedule').on('change', function () {
+                let scheduleContainer = $(this).parent().siblings('.js-schedule-container');
+
+                if ($(this).prop('checked')) {
+                    scheduleContainer.slideDown();
+                } else {
+                    scheduleContainer.slideUp();
+                }
+            });
+
+            $('.js-verify').on('click', function () {
+                let ref_number = $('#ref_number').val();
+                //clear input field
+                $('#ref_number').val('');
+                if (!ref_number) {
+                    return;
+                }
+
+
+                let loadBeneficiaries = function () {
+                    let beneficiariesInput = $('.js-transfer-to');
+
+                    currencies.forEach(function (currency, index) {
+                        beneficiariesInput.append(`<option value="${currency.abbr}">${currency.abbr}-4590-7838-7989-7890-name${index + 1}</option>`);
+                    });
+                    beneficiariesInput.trigger('change');
+                }
+
+                loadBeneficiaries();
+
+                //simulate ajax call
+                let btn = $(this);
+                // add spinner to button
+                let s = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="visually-hidden">Loading...</span>`;
+                btn.append(s)
+                    .prop('disabled', true);
+                setTimeout(function () {
+                    let $jsReferenceFound = $('.js-account-found');
+                    $jsReferenceFound.slideDown();
+                    // find table inside the reference found div
+                    let $table = $jsReferenceFound.find('table');
+                    // find the tbody of the table
+                    let $tbody = $table.find('tbody');
+
+                    // split the reference number by comma
+                    // loop through the reference numbers and append to the table body as a row
+
+                    // create a row
+                    let $tr = $('<tr></tr>');
+                    //create a checkbox column
+                    let checkbox = `<td><input type="checkbox" class="form-check-input rounded-0" checked></td>`;
+                    // create a cell for the reference number
+                    let $tdRefNumber = $(`<td>${ref_number}</td>`);
+                    // create a cell for the amount
+                    // generate a random amount between 1000 and 100000
+                    let amount = Math.floor(Math.random() * 100000) + 1000;
+                    let $tdAmount = $(`<td class="fs-13px js-amount-tobe-paid">${amount.toLocaleString("en-US")}</td>`);
+                    // create a cell for amount to be edited
+                    let $tdAmountToEdit = $(`<td class="w-150px"><select class="form-select"><option>RWF</option> <option>USD</option></select></td>`);
+
+                    // create a cell for company name as read only span
+                    // generate random company from companies array
+                    let company = companies[Math.floor(Math.random() * companies.length)];
+                    let $tdCompanyName = $(`<td class="fs-13px"><span class="">${company}</span></td>`);
+                    // append the cells to the row
+                    $tr.append(checkbox, $tdRefNumber, $tdAmount, $tdAmountToEdit,  $tdCompanyName);
+                    // append the row to the table body
+                    $tbody.append($tr);
+
+                    // find .js-amount-tobe-paid
+                    let amountToBePaidInputs = document.querySelectorAll('.js-amount-tobe-paid');
+                    let totalAmount = 0;
+                    console.log(amountToBePaidInputs);
+                    amountToBePaidInputs.forEach((element, index) => {
+                        let amountWithComma = $(element).text();
+                        // remove commas from amountWithComma
+                        totalAmount += Number(amountWithComma.replace(",", ""))
+                    });
+                    let amountFormatted = totalAmount.toLocaleString("en-US");
+                    $('#totalTaxToBePaid').text(amountFormatted);
+                    $('#taxToPay').text(amountFormatted);
+
+                    btn.prop('disabled', false).find('.spinner-border')
+                        .remove();
+                }, 2000);
+            });
+            $('.js-verify-2').on('click', function () {
+
+                let refs_number = $('#reference_number').val();
+                //make sure the input field is not empty
+                $('#reference_number').val('');
+                $('#refs_number').val('');
+                if (!refs_number) {
+                    return;
+                }
+
+//clear input field
+                $('#refs_number').val('');
+                let loadBeneficiaries = function () {
+                    let beneficiariesInput = $('.js-transfer-to');
+
+                    currencies.forEach(function (currency, index) {
+                        beneficiariesInput.append(`<option value="${currency.abbr}">${currency.abbr}-4590-7838-7989-7890-name${index + 1}</option>`);
+                    });
+                    beneficiariesInput.trigger('change');
+                }
+
+                loadBeneficiaries();
+
+                //simulate ajax call
+                let btn = $(this);
+                // add spinner to button
+                let s = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="visually-hidden">Loading...</span>`;
+                btn.append(s)
+                    .prop('disabled', true);
+                setTimeout(function () {
+                    let $jsReferenceFound = $('.js-account-found-2');
+                    $jsReferenceFound.slideDown();
+                    // find table inside the reference found div
+                    let $table = $jsReferenceFound.find('table');
+                    // find the tbody of the table
+                    let $tbody = $table.find('tbody');
+
+                    // split the reference number by comma
+                    // loop through the reference numbers and append to the table body as a row
+
+                    // create a row
+                    let $tr = $('<tr></tr>');
+                    //create a checkbox column
+                    let checkbox = `<td><input type="checkbox" class="form-check-input rounded-0" checked></td>`;
+                    // create a cell for the reference number
+                    let $tdRefNumber = $(`<td>${refs_number}</td>`);
+                    // create a cell for the amount
+                    // generate a random amount between 1000 and 100000
+                    let amount = Math.floor(Math.random() * 100000) + 1000;
+                    let $tdAmount = $(`<td class="fs-13px js-amount-tobe-paid">${amount.toLocaleString("en-US")}</td>`);
+                    //generate random currency from currencies array
+
+
+                    // create a cell for company name as read only span
+                    // generate random company from companies array
+                    let company = companies[Math.floor(Math.random() * companies.length)];
+                    let $tdCompanyName = $(`<td class="fs-13px"><span class="">${company}</span></td>`);
+                    //generate random currency from currencies array
+                    let currency = currencies[Math.floor(Math.random() * currencies.length)];
+                    let $tdCurrency = $(`<td class="fs-13px"><span class="">${currency.abbr}</span></td>`);
+
+
+                    // append the cells to the row
+                    $tr.append(checkbox, $tdRefNumber, $tdAmount, $tdCurrency,$tdCompanyName);
+                    // append the row to the table body
+                    $tbody.append($tr);
+
+                    // find .js-amount-tobe-paid
+                    let amountToBePaidInputs = document.querySelectorAll('.js-amount-tobe-paid');
+                    let totalAmount = 0;
+                    console.log(amountToBePaidInputs);
+                    amountToBePaidInputs.forEach((element, index) => {
+                        let amountWithComma = $(element).text();
+                        // remove commas from amountWithComma
+                        totalAmount += Number(amountWithComma.replace(",", ""))
+                    });
+                    let amountFormatted = totalAmount.toLocaleString("en-US");
+                    $('#totalAmoun_ToBePaid').text(amountFormatted);
+
+                    btn.prop('disabled', false).find('.spinner-border')
+                        .remove();
+                    //clear input field
+
+                }, 2000);
+
+            });
+
+
+            jsCurrency.on('change', function () {
+                currency = $(this).val();
+                toggleConversion();
+            });
+            ownAmount.on('change', function () {
+                amount = $(this).val();
+                toggleConversion();
+            });
+
+        });    });
+
+</script>
+
+</body>
+</html>

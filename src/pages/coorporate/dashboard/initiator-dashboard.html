@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>I&M Internet bank</title>
-    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../../../css/custom.css" rel="stylesheet">
 </head>
 <body class="">
 <div class="d-flex min-vh-100 justify-content-between flex-column">
     <div class="corp-bg mb-4">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center py-2">
-                <div class="d-flex col-3 flex-column">
-                    <img src="../assets/n_logo.png" class="img-fluid" alt="logo">
+                <div class="d-flex flex-column">
+                    <img src="../../../assets/logo_info.png" alt="logo">
                     <span class="text-white px-4 fs-4">Corporate</span>
 
                 </div>
@@ -25,7 +25,7 @@
 
                     <div class="d-flex rounded-circle bg-dark bg-opacity-50 p-4 justify-content-center overflow-hidden align-items-center"
                          style="height: 26px;width: 26px">
-                        <img src="../assets/prfl.png" alt="profile" class="object-fit-cover">
+                        <img src="../../../assets/prfl.png" alt="profile" class="object-fit-cover">
                     </div>
 
                 </div>
@@ -38,19 +38,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                                Dashboard
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" href="corporate-dashboard.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">Dashboard
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="corporate-dashboard.html">Initiator
-                                    Dashboard</a></li>
-                                <li><a class="dropdown-item" href="../pages/coorporate/dashboard/verifier-dashboard.html">Verifier Dashboard</a></li>
-                                <li><a class="dropdown-item" href="../pages/coorporate/dashboard/approver-dashboard.html">Approver Dashboard </a></li>
-                                <li><a class="dropdown-item" href="dashboard.html">Retail Dashboard</a></li>
-
-                            </ul>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link " href="dashboard.html"
@@ -59,22 +51,12 @@
                             </a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                                Transfers
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../transfers/own-account.html">Transfer to your own
-                                    Accounts </a></li>
-                                <li><a class="dropdown-item" href="../transfers/internal.html">Transfer from I&M to
-                                    I&M </a></li>
-                                <li><a class="dropdown-item" href="../transfers/local-bank.html">Transfer to Local
-                                    Banks </a></li>
-                                <li><a class="dropdown-item" href="../transfers/international.html">Transfer to
-                                    International </a></li>
-                                <li><a class="dropdown-item" href="../transfers/momo.html">Transfer to Mobile </a></li>
-                            </ul>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile"
+                                    aria-selected="false">Transfers
+                            </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="BillPayments" data-bs-toggle="pill"
@@ -343,117 +325,165 @@
                             <div class=" card h-100 rounded-4 ">
                                 <div class="card-body">
                                     <h5 class="mb-4">
-                                        Authorization <i class="bi bi-info-circle fs-6"></i>
+                                        Pending Transactions <i class="bi bi-info-circle fs-6"></i>
                                     </h5>
-                                    <div class="table-responsive overflow-visible">
-                                        <table class="table my-2 table-accounts ">
-                                            <thead>
-                                            <tr>
-                                                <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
-                                                    <div class="d-flex align-items-center justify-content-between border-end pe-2">
-                                                        <span>Date</span>
-                                                        <div class="d-flex flex-column text-sm">
-                                                            <i class="bi bi-chevron-up"></i>
-                                                            <i class="bi bi-chevron-down"></i>
-                                                        </div>
-                                                    </div>
+                                    <div class="list-group">
+                                        <ul class="list-group-flush">
+                                            <li class="list-group-item">
+                                                <div class="table-responsive">
+                                                    <table class="table table-borderless">
+                                                        <thead>
+                                                        <tr class="">
+                                                            <th></th>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Description</th>
+                                                            <th scope="col">Amount</th>
+                                                            <th scope="col">Type</th>
+                                                            <th scope="col">Status</th>
+                                                            <th scope="col">Reason</th>
+                                                            <th scope="col">Action</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr class="">
+                                                            <td>
+                                                                <div class="d-flex  align-items-start">
+                                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                                         style="height: 44px;width: 44px">
+                                                                        <img src="../../../assets/images/dashboard/mobile_money.svg"
+                                                                             class="h-50" alt="rra">
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center     pt-4">
+                                                                12/12/2021
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                Transfer to I&M
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                Rwf 12,000
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                Credited
+                                                            </td>
+                                                            <td>
+                                                                <div class="text-muted small object-fit-contain align-items-center pt-3">
+                                                                    <span class="text-warning">Pending</span>
+                                                                </div>
+                                                            </td>
 
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                Salary
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                <div class="nav-item dropdown">
+                                                                    <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                                       aria-expanded="false">
+                                                                        options
+                                                                    </a>
+                                                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                                                        <li><a class="dropdown-item" href="corporate-dashboard.html">Approve</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="../index.html">Reject</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="">
+                                                            <td>
+                                                                <div class="d-flex  align-items-start">
+                                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                                         style="height: 44px;width: 44px">
+                                                                        <img src="../../../assets/images/dashboard/mobile_money.svg"
+                                                                             class="h-50" alt="rra">
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center     pt-4">
+                                                                12/12/2021
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                Transfer to I&M
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                Rwf 12,000
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                Credited
+                                                            </td>
+                                                            <td>
+                                                                <div class="text-muted small object-fit-contain align-items-center pt-3">
+                                                                    <span class="text-warning">Pending</span>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                Salary
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                <div class="nav-item dropdown">
+                                                                    <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                                       aria-expanded="false">
+                                                                        options
+                                                                    </a>
+                                                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                                                        <li><a class="dropdown-item" href="corporate-dashboard.html">Approve</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="../index.html">Reject</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="">
+                                                            <td>
+                                                                <div class="d-flex  align-items-start">
+                                                                    <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                                         style="height: 44px;width: 44px">
+                                                                        <img src="../../../assets/images/dashboard/mobile_money.svg"
+                                                                             class="h-50" alt="rra">
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center     pt-4">
+                                                                12/12/2021
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                Transfer to I&M
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                Rwf 12,000
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                Credited
+                                                            </td>
+                                                            <td>
+                                                                <div class="text-muted small object-fit-contain align-items-center pt-3">
+                                                                    <span class="text-warning">Pending</span>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                Salary
+                                                            </td>
+                                                            <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                                                <div class="nav-item dropdown">
+                                                                    <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                                       aria-expanded="false">
+                                                                        options
+                                                                    </a>
+                                                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                                                        <li><a class="dropdown-item" href="corporate-dashboard.html">Approve</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="../index.html">Reject</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
 
-                                                </th>
-                                                <th class="text-primary  border-top-0   border-0 border-3 border-bottom  border-primary cursor-pointer ">
-                                                    <div class="d-flex align-items-center justify-content-between border-end pe-2">
-                                                        <span>Reference</span>
-                                                        <div class="d-flex flex-column text-sm">
-                                                            <i class="bi bi-chevron-up "></i>
-                                                            <i class="bi bi-chevron-down"></i>
-                                                        </div>
-                                                    </div>
-                                                </th>
-
-                                                <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer ">
-                                                    <div class="d-flex align-items-center justify-content-between border-end pe-2">
-                                                        <span>Amount</span>
-                                                        <div class="d-flex flex-column text-sm">
-                                                            <i class="bi bi-chevron-up "></i>
-                                                            <i class="bi bi-chevron-down"></i>
-                                                        </div>
-                                                    </div>
-                                                </th>
-
-                                                <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
-                                                    <div class=" d-flex align-items-center justify-content-between ">
-                                                        <span>Transactions Type</span>
-                                                        <div class="d-flex flex-column text-sm">
-                                                            <i class="bi bi-chevron-up "></i>
-                                                            <i class="bi bi-chevron-down"></i>
-                                                        </div>
-                                                    </div>
-
-                                                </th>
-                                                <th class="text-primary  border-top-0 border-0   border-3 border-bottom  border-primary cursor-pointer ">
-                                                    <div class="d-flex align-items-center justify-content-between border-end pe-2">
-                                                        <span> Status</span>
-                                                        <div class="d-flex flex-column text-sm">
-                                                            <i class="bi bi-chevron-up "></i>
-                                                            <i class="bi bi-chevron-down"></i>
-                                                        </div>
-                                                    </div>
-                                                </th>
-                                                <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
-                                                    <div class=" d-flex align-items-center justify-content-between ">
-                                                        <span> Details</span>
-                                                        <div class="d-flex flex-column text-sm">
-                                                            <i class="bi bi-chevron-up "></i>
-                                                            <i class="bi bi-chevron-down"></i>
-                                                        </div>
-                                                    </div>
-
-                                                </th>
-                                            </tr>
-                                            </thead>
-                                            <tbody id="statementsBody">
-                                            <tr class="cursor-pointer js-account tr1 py-5">
-                                                <td class="text-sm">2023-01-01</td>
-                                                <td class="text-sm">TRN-0001</td>
-                                                <td class="text-sm">19,000</td>
-                                                <td class="text-sm">Credit Transaction</td>
-                                                <td class="text-sm"><span
-                                                        class="badge bg-warning rounded-pill  bg-opacity-75">pending</span>
-                                                </td>
-                                                <td class="text-sm">Launch payment</td>
-                                            </tr>
-                                            <tr class="cursor-pointer js-account py-5">
-                                                <td class="text-sm">2023-01-01</td>
-                                                <td class="text-sm">TRN-02301</td>
-                                                <td class="text-sm">19,000</td>
-                                                <td class="text-sm">Credit Transaction</td>
-                                                <td class="text-sm"><span
-                                                        class="badge bg-warning rounded-pill  bg-opacity-75">pending</span>
-                                                </td>
-                                                <td class="text-sm">Launch payment</td>
-                                            </tr>
-                                            <tr class="cursor-pointer js-account py-5">
-                                                <td class="text-sm">2023-01-01</td>
-                                                <td class="text-sm">#F13450</td>
-                                                <td class="text-sm">19,000</td>
-                                                <td class="text-sm">Credit Transaction</td>
-                                                <td class="text-sm"><span
-                                                        class="badge bg-warning rounded-pill  bg-opacity-75">pending</span>
-                                                </td>
-                                                <td class="text-sm">Launch payment</td>
-                                            </tr>
-                                            <tr class="cursor-pointer js-account py-5">
-                                                <td class="text-sm">2023-01-01</td>
-                                                <td class="text-sm">#F13450</td>
-                                                <td class="text-sm">19,000</td>
-                                                <td class="text-sm">Credit Transaction</td>
-                                                <td class="text-sm"><span
-                                                        class="badge bg-warning rounded-pill  bg-opacity-75">pending</span>
-                                                </td>
-                                                <td class="text-sm">Launch payment</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -467,13 +497,13 @@
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                <img src="../../../assets/images/ads.png" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                <img src="../../../assets/images/ads.png" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                <img src="../../../assets/images/ads.png" class="d-block w-100" alt="...">
                             </div>
                         </div>
 
@@ -505,7 +535,7 @@
                                                     <div class="d-flex  align-items-start">
                                                         <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
                                                              style="height: 44px;width: 44px">
-                                                            <img src="../assets/images/dashboard/my_accounts_money.svg" class="h-50" alt="rra">
+                                                            <img src="../../../assets/images/dashboard/my_accounts_money.svg" class="h-50" alt="rra">
                                                         </div>
                                                     </div>
                                                 </td>
@@ -521,7 +551,7 @@
                                                     <div class="d-flex  align-items-start">
                                                         <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
                                                              style="height: 44px;width: 44px">
-                                                            <img src="../assets/images/dashboard/my_accounts_money.svg" class="h-50" alt="rra">
+                                                            <img src="../../../assets/images/dashboard/my_accounts_money.svg" class="h-50" alt="rra">
                                                         </div>
                                                     </div>
                                                 </td>
@@ -536,7 +566,7 @@
                                                     <div class="d-flex  align-items-start">
                                                         <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
                                                              style="height: 44px;width: 44px">
-                                                            <img src="../assets/images/dashboard/my_accounts_money.svg" class="h-50" alt="rra">
+                                                            <img src="../../../assets/images/dashboard/my_accounts_money.svg" class="h-50" alt="rra">
                                                         </div>
                                                     </div>
                                                 </td>
@@ -558,7 +588,7 @@
             </div>
         </div>
         <footer>
-            <div class="bg-info  d-flex justify-content-center w-100">
+            <div class="bg-info d-flex justify-content-center w-100">
                 <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
             </div>
         </footer>
