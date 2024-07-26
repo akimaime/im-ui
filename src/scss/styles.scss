@@ -17,6 +17,10 @@ $theme-colors: (
         "info": $info,
         "primary": $primary
 );
+.cursor-pointer{
+  font-weight: normal !important;
+  font-size: small;
+}
 body {
   background-color: $gray-200;
   font-family: "Rubik", sans-serif;

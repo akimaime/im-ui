@@ -11850,6 +11850,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.cursor-pointer {
+  font-weight: normal !important;
+  font-size: small;
+}
+
 body {
   background-color: #e9ecef;
   font-family: "Rubik", sans-serif;
