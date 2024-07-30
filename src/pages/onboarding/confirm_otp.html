@@ -9,7 +9,7 @@
 <body class="bg-white">
 <div class="container-fluid min-vh-100">
     <div class="row">
-        <div class="col-lg-6 order-1 order-lg-0  p-0">
+        <div class="col-lg-6 bg-info order-1 order-lg-0  p-0">
             <div class="card bg-info min-vh-100 rounded-0 border-0">
                 <div class="card-body d-flex justify-content-center flex-column align-items-center">
                     <!--                <h1 class="text-white text-center">Get Smart with money</h1>-->
@@ -186,9 +186,9 @@
                         </div>
                     </nav>
                     <div class="d-flex justify-content-between  flex-column ">
-                        <div class="d-flex justify-content-center align-items-center mb-3">
+                        <a href="/" class="d-flex justify-content-center align-items-center mb-3">
                             <img src="../../assets/b_logo.png" class="img-fluid w-50 " alt="tablet">
-                        </div>
+                        </a>
                         <div class="d-flex justify-content-center align-items-start gap-2 position-relative">
                             <div class="d-flex flex-column justify-content-center align-items-center">
                                 <div class="border border-2 text-info border-info rounded-circle h-6 w-6 d-flex justify-content-center align-items-center fw-bold">
@@ -236,9 +236,9 @@
                             <span class="text-muted text-xs text-center mb-2 py-3 ">
                                         We have just sent you a verification code to johnm@gmail.com and +250 xxx xxx 348.
                                     </span>
-                            <form action="./set_password.html" id="submitForm" style="width: 80%">
+<!--                            action="./set_password.html"-->
+                            <form action="" id="submitForm" style="width: 80%">
                                 <div class="modal-body py-0 ">
-
 
                                     <div class="d-flex  justify-content-between">
                                         <input type="text"
@@ -261,7 +261,7 @@
                                                maxlength="1" minlength="1" max="9" min="0"/>
                                     </div>
 
-                                    <p class="mt-3 text-center">
+                                    <p class="mt-3 verify text-center">
                                         <span class="text-primary fw-bold" id="minutesRemain">5</span> minutes and
                                         <span class="text-primary fw-bold" id="secondsRemain">00</span> seconds left to enter the
                                         code.
@@ -285,8 +285,13 @@
 
                                 <div class="modal-footer border-top-0  py-2 justify-content-between flex-column">
                                     <button type="submit"
-                                            class="btn continue show px-5 py-2 text-white w-75 btn-info fw-bold ">
+                                            class="btn verify show px-5 py-2 text-white w-75 btn-info fw-bold ">
                                         Verify
+                                        <span id="loader3" class="hide">
+                                                        <span class="spinner-border spinner-border-sm" role="status">
+                                                        <span class="visually-hidden">Loading...</span>
+                                                    </span>
+                                                    </span>
 
                                     </button>
                                     <a href="" class="text-decoration-none text-info my-3 fs-6 fw-info">
@@ -297,7 +302,48 @@
 
                                 </div>
                             </form>
+                            <div style="width: 100%">
+                            <div class="alert alert-success d-flex mt-3 flex-column hide" id="results2"
+                                 role="alert">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                         class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
 
+                                    You are welcome Continue to Set your password
+                                </div>
+                                <hr class="my-1">
+                                <div class="row">
+                                    <label for="staticEmail2" class="col-sm-5 fw-bold col-form-label">Full
+                                        Name:</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" readonly class="form-control-plaintext"
+                                               id="staticEmail2" value="Peter Musoni">
+                                    </div>
+                                </div>
+                                <hr class="my-1">
+                                <div class=" row">
+                                    <label for="phone_number2" class="col-sm-5 fw-bold col-form-label">Phone
+                                        Number:</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" readonly class="form-control-plaintext"
+                                               id="phone_number2" value="0788 890 342">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column gap-2 mt-3 flex-md-row justify-content-end align-items-center ">
+
+                                <a href="set_password.html"
+                                   class="btn  btn-info rounded px-5 hide"
+                                   id="continue2">
+                                    Continue
+                                </a>
+                            </div>
+                        </div>
 
                         </div>
                     </div>
@@ -392,6 +438,34 @@
                 }, 100);
             }
         });
+        $('#submitForm').on('submit', function (e) {
+            e.preventDefault();
+            let feedback = $('.invalid-feedback');
+            let form = $(this);
+            if (!form.valid()) return;
+            let btn = form.find(':submit');
+            btn.prop('disabled', true);
+            let loader = $('#loader,#loader2,#loader3');
+            loader.removeClass('hide');
+            let continueBtn = $('#continue,#continue2,#continue3');
+            continueBtn.addClass('hide');
+            feedback.addClass('d-none');
+            feedback.removeClass('d-block');
+            setTimeout(function () {
+                let results = $('#results,#results2,#results3');
+                results.removeClass('hide');
+                btn.prop('disabled', false);
+                loader.addClass('hide');
+                $('.verify').addClass('hide');
+                continueBtn.removeClass('hide');
+                // window.location.href = "confirm_otp.html?tab=atm";
+
+                let scrollDiv = document.getElementById("scrollDiv").offsetTop;
+                window.scrollTo({top: scrollDiv, behavior: 'smooth'});
+            }, 1000);
+
+        });
+
 
 
     });
