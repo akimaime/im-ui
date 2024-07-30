@@ -427,11 +427,12 @@
                 continueBtn.addClass('hide');
                 $('.invalid-feedback').slideUp();
                 setTimeout(function () {
-                    let results = $('#results,#results2,#results3');
-                    results.removeClass('hide');
+                    // let results = $('#results,#results2,#results3');
+                    // results.removeClass('hide');
                     btn.prop('disabled', false);
                     loader.addClass('hide');
-                    continueBtn.removeClass('hide');
+                    // continueBtn.removeClass('hide');
+                    window.location.href = 'confirm_otp.html?tab=account';
 
                     let scrollDiv = document.getElementById("scrollDiv").offsetTop;
                     window.scrollTo({top: scrollDiv, behavior: 'smooth'});
@@ -456,6 +457,19 @@
         $(document).ready(function () {
             $('#expDate').mask('00/22');
             $('#phone-number').mask('0000-0000');
+        });
+        $('#idType').change(function() {
+            let selectedValue = $(this).val();
+            let label = $('label[for="idNumber"]');
+            let input = $('#idNumber');
+
+            if (selectedValue === '2') {
+                label.text('Passport Number:');
+                input.attr('placeholder', 'Passport Number');
+            } else {
+                label.text('ID Number:');
+                input.attr('placeholder', 'ID Number');
+            }
         });
 
     });

@@ -672,9 +672,9 @@
                     $('#amount').addClass('is-invalid');
                     $('#amountErr').text('Amount is required')
                 }
-                else if (phone.length !== 10) {
+                else if (phone.length !== 9) {
                     $('#phone').addClass('is-invalid');
-                    $('.pherror').text('Phone number must be 10 digits');
+                    $('.pherror').text('Phone number must be 9 digits');
                 } else {
                     let s = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
             <span class="visually-hidden">Loading...</span>`;
