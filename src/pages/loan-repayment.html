@@ -254,13 +254,15 @@
                                   <div class="col-lg-5">
                                       <div id="mainMenu" class="menu">
                                           <!--                                        <button onclick="viewLoanDetails()">View Loan Details</button>-->
-                                          <button class="btn w-75 btn-info" onclick="showRepayLoanMenu()">Repay Loan</button>
+
+                                          <button class="btn btn-outline-info w-100 py-3 m-2" onclick="payLumpSum()">Pay Lump Sum <i class="bi bi-arrow-right ms-2"></i></button>
+                                          <button class="btn btn-outline-info w-100 py-3 m-2" onclick="payBeforePayday()">Pay Before Payday <i class="bi bi-arrow-right ms-2"></i></button>
                                       </div>
                                       <!-- Repay Loan Menu -->
                                       <div id="repayLoanMenu" class="menu">
-                                          <button class="btn btn-info m-2" onclick="payLumpSum()">Pay Lump Sum</button>
-                                          <button class="btn btn-info m-2" onclick="payBeforePayday()">Pay Before Payday</button>
-                                          <button class="btn btn-info m-2" onclick="showMainMenu()">Back to Main Menu</button>
+                                          <button class="btn btn-outline-info w-100 py-3 m-2" onclick="payLumpSum()">Pay Lump Sum <i class="bi bi-arrow-right ms-2"></i></button>
+                                          <button class="btn btn-outline-info w-100 py-3 m-2" onclick="payBeforePayday()">Pay Before Payday <i class="bi bi-arrow-right ms-2"></i></button>
+<!--                                          <button class="btn btn-info m-2" onclick="showMainMenu()">Back to Main Menu</button>-->
                                       </div>
 
                                       <!-- Pay Lump Sum -->
@@ -269,21 +271,30 @@
                                           <form>
                                               <div class="form-group mb-3">
                                                   <label for="lumpSumAmount">Enter the amount you wish to pay:</label>
-                                                  <input type="number" class=form-control id="lumpSumAmount">
+                                                  <input type="number" class="form-control bg-secondary bg-opacity-10 py-3 border-0" id="lumpSumAmount">
                                               </div>
-                                              <button onclick="confirmPayment('lumpSum')" class="btn btn-info">Confirm Payment</button>
-                                              <button onclick="showRepayLoanMenu()" class="btn btn-danger">Cancel</button>
+                                              <div class="d-flex gap-2">
+                                              <button onclick="confirmPayment('lumpSum')" class="btn w-100 py-2 btn-info">Confirm Payment</button>
+                                              <button onclick="showRepayLoanMenu()" class="btn w-100 py-2 btn-danger">Cancel</button>
+                                              </div>
                                           </form>
                                       </div>
 
                                       <!-- Pay Before Payday -->
                                       <div id="payBeforePaydayMenu" class="menu">
-                                          <label for="paydayAmount">Enter the amount you wish to pay:</label>
-                                          <input type="number" id="paydayAmount">
-                                          <label for="paydayDate">Enter the date of payment (format: YYYY-MM-DD):</label>
-                                          <input type="date" id="paydayDate">
-                                          <button onclick="confirmPayment('payday')">Confirm Payment</button>
-                                          <button onclick="showRepayLoanMenu()">Cancel</button>
+                                          <h4>Pay Before Payday</h4>
+                                          <div class="form-group mb-3">
+                                              <label for="paydayAmount">Enter the amount you wish to pay:</label>
+                                              <input type="number" class="form-control bg-secondary bg-opacity-10 py-3 border-0" id="paydayAmount">
+                                          </div>
+                                          <div class="form-group mb-3">
+                                              <label for="paydayDate">Enter the date of payment (format: YYYY-MM-DD):</label>
+                                              <input type="date" class="form-control bg-secondary bg-opacity-10 py-3 border-0" id="paydayDate">
+                                          </div>
+                                          <div class="d-flex gap-2">
+                                              <button class="btn btn-info w-100 py-2" onclick="confirmPayment('payday')">Confirm Payment</button>
+                                              <button class="btn btn-danger w-100 py-2" onclick="showRepayLoanMenu()">Cancel</button>
+                                          </div>
                                       </div>
 
                                       <!-- Confirmation -->
