@@ -75,11 +75,11 @@
                                     Transfers
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="own-account.html">Transfer to your own Accounts </a></li>
-                                    <li><a class="dropdown-item" href="internal.html">Transfer from I&M to I&M </a></li>
-                                    <li><a class="dropdown-item" href="local-bank.html">Transfer to Local Banks </a></li>
-                                    <li><a class="dropdown-item" href="international.html">Transfer to International </a></li>
-                                    <li><a class="dropdown-item" href="momo.html">Transfer to Mobile </a></li>
+                                    <li><a class="dropdown-item" href="../transfers/own-account.html">Transfer to your own Accounts </a></li>
+                                    <li><a class="dropdown-item" href="../transfers/internal.html">Transfer from I&M to I&M </a></li>
+                                    <li><a class="dropdown-item" href="../transfers/local-bank.html">Transfer to Local Banks </a></li>
+                                    <li><a class="dropdown-item" href="../transfers/international.html">Transfer to International </a></li>
+                                    <li><a class="dropdown-item" href="../transfers/momo.html">Transfer to Mobile </a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -87,11 +87,12 @@
                                     Payments
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../payments/rra.html">RRA Payment </a></li>
-                                    <li><a class="dropdown-item" href="../payments/irembo.html">Irembo Payment </a></li>
-                                    <li><a class="dropdown-item" href="../payments/rssb.html">ISHEMA-RSSB Payment </a></li>
-                                    <li><a class="dropdown-item" href="../payments/airtime.html">Airtime Top Up</a></li>
-                                    <li><a class="dropdown-item" href="../payments/utilities.html">Utilities Payment </a></li>
+                                    <li><a class="dropdown-item" href="rra.html">RRA Payment </a></li>
+                                    <li><a class="dropdown-item" href="irembo.html">Irembo Payment </a></li>
+                                    <li><a class="dropdown-item" href="rssb.html">ISHEMA-RSSB Payment </a></li>
+                                    <li><a class="dropdown-item" href="airtime.html">Airtime Top Up</a></li>
+                                    <li><a class="dropdown-item" href="eKash.html">eKash</a></li>
+                                    <li><a class="dropdown-item" href="utilities.html">Utilities Payment </a></li>
                                 </ul>
                             </li>
                             <li class="nav-item" role="presentation">
@@ -140,8 +141,8 @@
                 <nav class="mx-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item "><a href="../dashboard.html">Dashboard</a></li>
-                        <li class="breadcrumb-item text-white" aria-current="page">Transfers</li>
-                        <li class="breadcrumb-item active" aria-current="page">I&M To I&M Transfer</li>
+                        <li class="breadcrumb-item text-white" aria-current="page">Payments</li>
+                        <li class="breadcrumb-item active" aria-current="page"> eKash Payments</li>
                     </ol>
                 </nav>
             </div>
@@ -156,52 +157,55 @@
                                 <div class="tab-pane card-body  active" id="pills-own-accounts" role="tabpanel">
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <h4 class="text-info fw-bold ">Transfer from I&M to I&M</h4>
+                                            <h4 class="text-info fw-bold ">eKash Payment</h4>
                                             <p class="text-muted small">
-                                                Transfer money from your I&M account to another I&M account
+                                                eKash is a mobile payment solution that allows you to send money to any mobile number in Rwanda.
                                             </p>
                                         </div>
                                         <div class="alert less alert-danger" style="display: none">
-                                            <span class="text-danger small">
+                                            <p class="text-danger small">
                                                 Please note that the minimum amount you can send is 1,000 RWF
-                                            </span>
+                                            </p>
                                         </div>
                                         <div class="alert greater alert-danger" style="display: none">
-                                            <span class="text-danger small">
+                                            <p class="text-danger small">
                                                 Please note that the maximum amount you can send is 1,000,000 RWF
-                                            </span>
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class=" mb-3">
-                                                <label for="im_from_account"
-                                                       class=" text-sm fw-normal form-label">
-                                                    Make payment from:
-                                                </label>
+                                                <div class="d-flex">
+                                                    <label for="im_from_account"
+                                                           class=" text-sm fw-normal form-label">
+                                                        Make payment from:
+                                                    </label>
+                                                    <div style="display: none"
+                                                         class=" justify-content-between align-items-center mb-3 js-account-balance">
+                                                        <div class="d-flex flex-column">
+                                                            <div class=" text-muted  small ">Account Balance</div>
+                                                            <span class="text-info  small js-balance">*** *** ***
+                                                                ***</span>
+                                                        </div>
+                                                        <button type="button"
+                                                                class=" btn btn-outline-primary border  js-toggle-balance">
+                                                            Show Balance
+                                                        </button>
+                                                    </div>
+                                                </div>
                                                 <select class="form-select  py-3 bg-secondary border-0 bg-opacity-10    js-transfer-from"
                                                         required id="im_from_account" name="from_account">
                                                     <option value="">Select Account</option>
                                                 </select>
                                             </div>
-                                            <div style="display: none"
-                                                 class=" justify-content-between align-items-center mb-3 js-account-balance">
-                                                <div class="d-flex flex-column">
-                                                    <div class=" text-muted  small ">Account Balance</div>
-                                                    <span class="text-info  small js-balance">*** *** ***
-                                                                ***</span>
-                                                </div>
-                                                <button type="button"
-                                                        class=" btn btn-outline-primary border  js-toggle-balance">
-                                                    Show Balance
-                                                </button>
-                                            </div>
+
                                             <div class="mb-3">
-                                                <label for="home_amount"
-                                                       class="form-label text-sm fw-normal  text-sm">Amount:</label>
+                                                <label for="account_name"
+                                                       class="form-label text-sm fw-normal  text-sm">Account Name:</label>
                                                 <div class="input-group">
 
-                                                    <input type="text" name="amount" required id="home_amount"
+                                                    <input type="text" name="amount" required id="account_name" disabled
                                                            class="form-control flex-grow-1   py-3 bg-secondary border-0 bg-opacity-10 px-3 fw-semibold js-amount" />
                                                 </div>
                                                 <div class="js-conversion p-0" style="display:none">
@@ -241,25 +245,25 @@
                                         <div class="col-lg-6">
                                             <div class=" ">
                                                 <div class="d-flex justify-content-between">
-                                                    <label class=" text-sm fw-normal form-label">
+                                                    <label for="pay_to" class=" text-sm fw-normal form-label">
                                                         Make payment to:
                                                     </label>
-                                                    <div class="form-check">
-                                                        <input
-                                                                class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"
-                                                                type="checkbox" name="select_beneficiary"
-                                                                id="home_beneficiary">
-                                                        <label
-                                                                class="form-check-label text-sm  fw-normal cursor-pointer"
-                                                                for="home_beneficiary">
-                                                            Select From Saved Beneficiaries
-                                                        </label>
-                                                    </div>
+<!--                                                    <div class="form-check">-->
+<!--                                                        <input-->
+<!--                                                                class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"-->
+<!--                                                                type="checkbox" name="select_beneficiary"-->
+<!--                                                                id="home_beneficiary">-->
+<!--                                                        <label-->
+<!--                                                                class="form-check-label text-sm  fw-normal cursor-pointer"-->
+<!--                                                                for="home_beneficiary">-->
+<!--                                                            Select From Saved Beneficiaries-->
+<!--                                                        </label>-->
+<!--                                                    </div>-->
                                                 </div>
 
                                                 <div style="display: none" class="js-select-beneficiary">
                                                     <select
-                                                            class="  text-sm  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info form-select js-beneficiaries">
+                                                            class="  text-sm  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold  form-select js-beneficiaries">
                                                         <option value="">Select Beneficiary</option>
 
                                                     </select>
@@ -268,26 +272,84 @@
                                                     <div class="rounded-default gap-2  d-flex align-items-center p-1">
 
                                                         <input type="text"
+                                                               id="pay_to"
                                                                class="form-control  py-3 bg-secondary border-0 bg-opacity-10 shadow-none"
                                                                name="search" />
                                                         <button type="button"
                                                                 class="btn btn-info  py-3 px-3 js-verify">
-                                                            Verify
+                                                            Validate
                                                         </button>
-                                                    </div>
-                                                </div>
-
-                                                <div class=" js-account-found" style="display: none">
-                                                    <div class="d-flex flex-shrink-0 align-items-center gap-2">
-                                                        <span class="text-muted small fw-semibold">USD</span>
-                                                        <span class=" fw-semibold small text-info">Byukusenge
-                                                                    Jean Paul</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="home_reason"
-                                                       class="form-label text-sm  fw-normal">Reason:</label>
+                                                       class="form-label text-sm  fw-normal">Beneficiary Bank:</label>
+                                                <input type="text" name="beneficiary_account" required id="ben_account" disabled
+                                                       class="form-control py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div style="display: none"
+                                                 class=" justify-content-between align-items-center mb-3 js-account-balance">
+                                                <div class="d-flex flex-column">
+                                                    <div class=" text-muted  small ">Account Balance</div>
+                                                    <span class="text-info  small js-balance">*** *** ***
+                                                                ***</span>
+                                                </div>
+                                                <button type="button"
+                                                        class=" btn btn-outline-primary border  js-toggle-balance">
+                                                    Show Balance
+                                                </button>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="amount"
+                                                       class="form-label text-sm fw-normal  text-sm">Transaction Amount:</label>
+                                                <div class="input-group">
+
+                                                    <input type="text" name="amount" required id="amount"
+                                                           class="form-control flex-grow-1   py-3 bg-secondary border-0 bg-opacity-10 px-3 fw-semibold js-amount" />
+                                                </div>
+                                                <div class="js-conversion p-0" style="display:none">
+                                                    <div
+                                                            class="d-flex  flex-column flex-md-row gap-3  ">
+                                                        <div>
+                                                            <div class="fw-normal text-info fs-6">
+                                                                Total Conversion:
+                                                            </div>
+                                                            <div
+                                                                    class="d-flex flex-shrink-0 align-items-center gap-2">
+                                                                    <span
+                                                                            class="text-muted fw-semibold text-xs js-converted-currency">USD</span>
+                                                                <span
+                                                                        class="fs-13px fw-semibold text-xs text-info js-converted-amount">2763.38</span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="fw-normal text-info fs-6">
+                                                                Conversion Rate:
+                                                            </div>
+                                                            <div class="text-info">
+                                                                (<span
+                                                                    class="text-info text-xs js-conversion-rate">0.000092</span>)
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="home_reason"
+                                                       class="form-label text-sm  fw-normal">Narration:</label>
                                                 <textarea rows="1" required
                                                           class="form-control py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold"
                                                           name="reason" id="home_reason"></textarea>
@@ -494,7 +556,8 @@
                     <div class="  border-top-0  py-4">
                         <div class="row">
                             <div class="col-lg-6">
-                                <button type="button" data-bs-dismiss="modal" class="btn btn-outline-primary w-100 px-4 py-2 ">
+                                <button type="button" data-bs-dismiss="modal"
+                                        class="btn btn-outline-info w-100 px-4 py-2 ">
                                     Cancel
                                 </button>
                             </div>
@@ -518,45 +581,58 @@
 <div class="modal fade" id="otpModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content rounded-4">
-            <div class="modal-header border-bottom-0 align-items-center py-4 px-lg-5">
-                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
-                    OTP Verification
-                </h1>
+            <div class="d-flex justify-content-center flex-column border-0 align-items-center py-4 px-lg-5">
+                <div class="position-relative">
+                    <div class="d-flex justify-content-center  align-items-center bg-info rounded-circle"
+                         style="height: 84px;width: 84px">
+                        <i class="text-white bi bi-arrow-counterclockwise tw-object-cover display-2">
+                        </i>
+                        <span id="secondsRemain" class="position-absolute text-white tw-top-2 tw-right-2">65</span>
+                    </div>
+                </div>
+                <span class="text-dark  display-5 fw-bold ">
+                        OTP
+                </span>
+                <span class="text-muted  mb-1  ">
+                        Please check your 4 digits sent to *********6723
+                </span>
 
             </div>
-            <form action="./transfer_made.html">
+            <form action="">
                 <div class="modal-body py-0 px-lg-5">
-                    <h6 class="text-dark fw-bold py-3 border-top border-3 border-info">
-                        We have just sent you a verification code to
-                        <a href="" class="text-info text-decoration-none">johnm@gmail.com</a> and
-                        <a href="" class="text-info text-decoration-none">+250 788 789 348</a>
-                    </h6>
 
-                    <div class="d-flex justify-content-between">
-                        <input type="text" class="form-control fs-3  p-2 w-7 h-7 text-center one-digit" required
+                    <div class="d-flex justify-content-between card-body gap-3">
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
                                maxlength="1" minlength="1" max="9" min="0"/>
-                        <input type="text" class="form-control fs-3  p-2 w-7 h-7 text-center one-digit" required
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
                                maxlength="1" minlength="1" max="9" min="0"/>
-                        <input type="text" class="form-control fs-3  p-2 w-7 h-7 text-center one-digit" required
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
                                maxlength="1" minlength="1" max="9" min="0"/>
-                        <input type="text" class="form-control fs-3  p-2 w-7 h-7 text-center one-digit" required
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-success  rounded-0 h-7 text-center one-digit"
+                               required
                                maxlength="1" minlength="1" max="9" min="0"/>
                     </div>
 
-                    <p class="mt-3">
-                        <span class="text-primary fw-bold" id="minutesRemain">5</span> minutes and
-                        <span class="text-primary fw-bold" id="secondsRemain">00</span> seconds left to enter the
-                        code.
-                    </p>
 
                 </div>
                 <div class="modal-footer border-top-0 px-lg-5 py-4 justify-content-between">
-                    <a href="" class="text-decoration-none fs-6 fw-semibold">
-                        <i class="bi bi-send"></i>
-                        Send the code again
-                    </a>
-                    <button type="submit" class="btn btn-primary  px-5 py-2 text-info fw-semibold  ">
-                        Verify
+                    <button type="button" class="btn btn-success w-100 px-5 js-confirm py-2 text-white fw-semibold  ">
+                        Confirm
                     </button>
                 </div>
             </form>
@@ -691,16 +767,14 @@
 
         $ownAccountsForm.on('submit', function (e) {
             e.preventDefault();
-            let amount = parseFloat($('#home_amount').val().replace(/,/g, ''));
+            let amount = parseFloat($('#amount').val().replace(/,/g, ''));
             if ($ownAccountsForm.valid()) {
                 if (amount < 1000) {
                     $('.less').slideDown();
-                    $('.greater').slideUp();
                 }else if (amount > 1000000) {
                     $('.greater').slideDown();
-                    $('.less').slideUp();
                 }else {
-                    window.location.href = 'transfer-summary.html';
+                    $('#exampleModal').modal('show');
                 }
             }
         });
@@ -822,6 +896,12 @@
         $('.js-verify').on('click', function () {
             //simulate ajax call
             let btn = $(this);
+            let accountNameField = $('#account_name');
+            let benAccountField = $('#ben_account');
+            let bankNames = ['Equity', 'Bank of Kigali', 'Access Bank', 'Cagebank'];
+            let Names = ['Byukusenge Jean Paul', 'Ntare Yvan', 'Mugabe Alex', 'Rugamba Jean'];
+            let randomIndex = Math.floor(Math.random() * bankNames.length);
+            let randomNameIndex = Math.floor(Math.random() * Names.length);
             // add spinner to button
             btn.html(
                 `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -830,6 +910,8 @@
                 .prop('disabled', true);
             setTimeout(function () {
                 $('.js-account-found').slideDown();
+                accountNameField.val(Names[randomNameIndex]);
+                benAccountField.val(bankNames[randomIndex]);
                 btn.html('Verify').prop('disabled', false);
             }, 2000);
         });
@@ -885,5 +967,6 @@
 
     });
 </script>
+
 </body>
 </html>

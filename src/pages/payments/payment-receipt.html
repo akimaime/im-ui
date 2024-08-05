@@ -50,316 +50,166 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-info mb-1 bg-opacity-50 rounded-4 p-1">
-                <nav class=" navbar navbar-expand-lg">
-                    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="navbar-toggler-icon text-white"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link" href="../dashboard.html"
-                                   type="button" role="tab" aria-controls="pills-home"
-                                   aria-selected="true">
-                                    Dashboard
-                                </a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link " href="../corporate-dashboard.html"
-                                   type="button" role="tab" aria-controls="pills-home"
-                                   aria-selected="true">Corporate Dashboard
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Transfers
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="own-account.html">Transfer to your own Accounts </a></li>
-                                    <li><a class="dropdown-item" href="internal.html">Transfer from I&M to I&M </a></li>
-                                    <li><a class="dropdown-item" href="local-bank.html">Transfer to Local Banks </a></li>
-                                    <li><a class="dropdown-item" href="international.html">Transfer to International </a></li>
-                                    <li><a class="dropdown-item" href="momo.html">Transfer to Mobile </a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Payments
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../payments/rra.html">RRA Payment </a></li>
-                                    <li><a class="dropdown-item" href="../payments/irembo.html">Irembo Payment </a></li>
-                                    <li><a class="dropdown-item" href="../payments/rssb.html">ISHEMA-RSSB Payment </a></li>
-                                    <li><a class="dropdown-item" href="../payments/airtime.html">Airtime Top Up</a></li>
-                                    <li><a class="dropdown-item" href="../payments/utilities.html">Utilities Payment </a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link " href="../card-management.html"
-                                   type="button" role="tab" aria-controls="pills-home"
-                                   aria-selected="true">
-                                    Manage Cards
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Service Requests
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../requests/chequebook.html">Chequebook Requests </a></li>
-                                    <li><a class="dropdown-item" href="../requests/certificates.html">Certificates Requests </a></li>
-                                    <li><a class="dropdown-item" href="../requests/paper-statement.html">Paper Statement Requests</a></li>
-                                    <li><a class="dropdown-item" href="../requests/overdraft.html">Bankers cheques/overdraft Demand Request </a></li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link" href="../beneficiaries.html"
-                                   type="button" role="tab" aria-controls="pills-home"
-                                   aria-selected="true">
-                                    Beneficiaries
-                                </a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link " href="../LoanSimulator.html"
-                                   type="button" role="tab" aria-controls="pills-home"
-                                   aria-selected="true">
-                                    Loans
-                                </a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link " href="../mail.html"
-                                   type="button" role="tab" aria-controls="pills-home"
-                                   aria-selected="true">
-                                    Mails
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <nav class="mx-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item "><a href="../dashboard.html">Dashboard</a></li>
-                        <li class="breadcrumb-item text-white" aria-current="page">Transfers</li>
-                        <li class="breadcrumb-item active" aria-current="page">I&M To I&M Transfer</li>
-                    </ol>
-                </nav>
-            </div>
+            <nav class="mb-4 navbar navbar-expand-lg">
+                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" href="/"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="pages/corporate-dashboard.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">Corporate Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Transfers
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pages/transfers/own-account.html">Transfer to your own Accounts </a></li>
+                                <li><a class="dropdown-item" href="pages/transfers/internal.html">Transfer from I&M to I&M </a></li>
+                                <li><a class="dropdown-item" href="pages/transfers/local-bank.html">Transfer to Local Banks </a></li>
+                                <li><a class="dropdown-item" href="pages/transfers/international.html">Transfer to International </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Payments
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pages/payments/rra.html">RRA Payment </a></li>
+                                <li><a class="dropdown-item" href="pages/payments/irembo.html">Irembo Payment </a></li>
+                                <li><a class="dropdown-item" href="pages/payments/airtime.html">Airtime Top Up</a></li>
+                                <li><a class="dropdown-item" href="pages/transfers/local-bank.html">Mobile Money Payment </a></li>
+                                <li><a class="dropdown-item" href="pages/payments/utilities.html">Utilities Payment </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Cards" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cards
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
+                                Requests
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="pages/beneficiaries.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
+                                Beneficiaries
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Mails" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mails
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 ">
                     <div class="card rounded-4 ">
-                        <form action="" class="" id="ownAccountsForm">
-                            <div class="card-body ">
-                                <div class="tab-pane card-body  active" id="pills-own-accounts" role="tabpanel">
+                        <div class=" card-body">
+                            <div class="card-body  p-lg-5 ">
+                                <h2 class="fw-light text-info">
+                                    Payment successfully!
+                                </h2>
+
+                                <div class="">
+
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <h4 class="text-info fw-bold ">Transfer from I&M to I&M</h4>
-                                            <p class="text-muted small">
-                                                Transfer money from your I&M account to another I&M account
-                                            </p>
-                                        </div>
-                                        <div class="alert less alert-danger" style="display: none">
-                                            <span class="text-danger small">
-                                                Please note that the minimum amount you can send is 1,000 RWF
-                                            </span>
-                                        </div>
-                                        <div class="alert greater alert-danger" style="display: none">
-                                            <span class="text-danger small">
-                                                Please note that the maximum amount you can send is 1,000,000 RWF
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class=" mb-3">
-                                                <label for="im_from_account"
-                                                       class=" text-sm fw-normal form-label">
-                                                    Make payment from:
-                                                </label>
-                                                <select class="form-select  py-3 bg-secondary border-0 bg-opacity-10    js-transfer-from"
-                                                        required id="im_from_account" name="from_account">
-                                                    <option value="">Select Account</option>
-                                                </select>
-                                            </div>
-                                            <div style="display: none"
-                                                 class=" justify-content-between align-items-center mb-3 js-account-balance">
-                                                <div class="d-flex flex-column">
-                                                    <div class=" text-muted  small ">Account Balance</div>
-                                                    <span class="text-info  small js-balance">*** *** ***
-                                                                ***</span>
-                                                </div>
-                                                <button type="button"
-                                                        class=" btn btn-outline-primary border  js-toggle-balance">
-                                                    Show Balance
-                                                </button>
+                                            <div class="mb-3">
+                                                <div class="text-primary fw-semibold">Payment made from:</div>
+                                                <div class="fw-normal text-muted fs-4">4004 7680 7689 0456</div>
+                                                <div class="fw-normal text-muted fs-6">Mugabo John</div>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="home_amount"
-                                                       class="form-label text-sm fw-normal  text-sm">Amount:</label>
-                                                <div class="input-group">
-
-                                                    <input type="text" name="amount" required id="home_amount"
-                                                           class="form-control flex-grow-1   py-3 bg-secondary border-0 bg-opacity-10 px-3 fw-semibold js-amount" />
-                                                </div>
-                                                <div class="js-conversion p-0" style="display:none">
-                                                    <div
-                                                            class="d-flex  flex-column flex-md-row gap-3  ">
-                                                        <div>
-                                                            <div class="fw-normal text-info fs-6">
-                                                                Total Conversion:
-                                                            </div>
-                                                            <div
-                                                                    class="d-flex flex-shrink-0 align-items-center gap-2">
-                                                                    <span
-                                                                            class="text-muted fw-semibold text-xs js-converted-currency">USD</span>
-                                                                <span
-                                                                        class="fs-13px fw-semibold text-xs text-info js-converted-amount">2763.38</span>
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="fw-normal text-info fs-6">
-                                                                Conversion Rate:
-                                                            </div>
-                                                            <div class="text-info">
-                                                                (<span
-                                                                    class="text-info text-xs js-conversion-rate">0.000092</span>)
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-
-
-
-                                        </div>
-
-                                        <div class="col-lg-6">
-                                            <div class=" ">
-                                                <div class="d-flex justify-content-between">
-                                                    <label class=" text-sm fw-normal form-label">
-                                                        Make payment to:
-                                                    </label>
-                                                    <div class="form-check">
-                                                        <input
-                                                                class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"
-                                                                type="checkbox" name="select_beneficiary"
-                                                                id="home_beneficiary">
-                                                        <label
-                                                                class="form-check-label text-sm  fw-normal cursor-pointer"
-                                                                for="home_beneficiary">
-                                                            Select From Saved Beneficiaries
-                                                        </label>
-                                                    </div>
-                                                </div>
-
-                                                <div style="display: none" class="js-select-beneficiary">
-                                                    <select
-                                                            class="  text-sm  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info form-select js-beneficiaries">
-                                                        <option value="">Select Beneficiary</option>
-
-                                                    </select>
-                                                </div>
-                                                <div class="mb-2 js-search-beneficiary">
-                                                    <div class="rounded-default gap-2  d-flex align-items-center p-1">
-
-                                                        <input type="text"
-                                                               class="form-control  py-3 bg-secondary border-0 bg-opacity-10 shadow-none"
-                                                               name="search" />
-                                                        <button type="button"
-                                                                class="btn btn-info  py-3 px-3 js-verify">
-                                                            Verify
-                                                        </button>
-                                                    </div>
-                                                </div>
-
-                                                <div class=" js-account-found" style="display: none">
-                                                    <div class="d-flex flex-shrink-0 align-items-center gap-2">
-                                                        <span class="text-muted small fw-semibold">USD</span>
-                                                        <span class=" fw-semibold small text-info">Byukusenge
-                                                                    Jean Paul</span>
-                                                    </div>
+                                                <div class="text-primary fw-semibold">Amount:</div>
+                                                <div class="fw-normal text-primary fs-5 d-flex align-items-center gap-2">
+                                                    <span class="text-muted">RWF</span>
+                                                    <img src="../../assets/images/payments/rwanda_flag.png" alt="" class="w-5 h-5"/>
+                                                    <span class="fs-4 fw-normal">3,000,0000</span>
                                                 </div>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="home_reason"
-                                                       class="form-label text-sm  fw-normal">Reason:</label>
-                                                <textarea rows="1" required
-                                                          class="form-control py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold"
-                                                          name="reason" id="home_reason"></textarea>
+                                                <div class="text-primary fw-semibold">Date & Time:</div>
+                                                <div class="fw-normal text-primary fs-6 mt-2 d-flex gap-4">
+                                                    <span class="text-muted">06/11/2022</span>
+                                                    <span>11:00 AM</span>
+                                                    <i class="bi bi-calendar text-info"></i>
+                                                </div>
                                             </div>
 
                                         </div>
-                                    </div>
-                                    <div class="row">
                                         <div class="col-lg-6">
-                                            <div class="py-2">
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input js-payment-schedule   " type="checkbox" role="switch"
-                                                           id="international_payment_schedule">
-
-                                                    <label class="form-check-label text-info small fw-normal "
-                                                           for="international_payment_schedule">
-                                                        Schedule Payment <span class="text-muted small">(To be
-                                                        processed
-                                                        on a specific date)</span>
-                                                    </label>
-
+                                            <div class="mb-3">
+                                                <div class="text-primary fw-semibold">Payment made to:</div>
+                                                <div class="fw-normal text-muted fs-4">4004 1299 7621 8261</div>
+                                                <div class="fw-normal text-muted fs-6">Rugamaba Alex</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="text-primary fw-semibold">Amount:</div>
+                                                <div class="fw-normal text-primary fs-5 d-flex align-items-center gap-2">
+                                                    <span class="text-muted">USD</span>
+                                                    <img src="../../assets/images/payments/us_flag.png" alt="" class="w-5 h-5"/>
+                                                    <span class="fs-4 fw-normal">
+                                        2763.38
+                                    </span>
                                                 </div>
-
-                                                <div class="mb-1 js-schedule-container" style="display: none">
-                                                    <label for="own_date"
-                                                           class="form-label fw-normal text-sm">
-                                                        Date to process payment:
-                                                    </label>
-                                                    <input type="date" name="own_date" id="own_date"
-                                                           required
-                                                           class="form-control bg-secondary border-0 bg-opacity-10 py-3 px-3"/>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="text-primary fw-semibold">Conversion rate:</div>
+                                                <div class="fw-normal text-primary fs-4">
+                                                    0.000897
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-check save_beneficiary" >
-                                                <input
-                                                        class="form-check-input rounded-0 border-info  "
-                                                        type="checkbox" name="select_beneficiary"
-                                                        id="save_ben">
-                                                <label
-                                                        class="form-check-label text-info fw-normal cursor-pointer"
-                                                        for="save_ben">
-                                                    Save As Beneficiary
-                                                </label>
-                                            </div>
-                                        </div>
                                     </div>
-
-
-                                </div>
-
-                            </div>
-                            <div class="card-footer bg-transparent">
-                                <div class="row">
-                                    <div class="col-lg-6 py-3 offset-lg-6">
-                                        <div
-                                                class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
-                                            <button type="reset"
-                                                    class="btn btn-outline-primary rounded py-2   px-lg-5">
-                                                Clear
-                                            </button>
-                                            <button type="submit"
-                                                    class="btn btn-info rounded py-2 text-white px-lg-5">
-                                                Continue
-                                            </button>
-
-                                        </div>
+                                    <div class="mb-3">
+                                        <div class="text-primary fw-semibold">Reason:</div>
+                                        <p class="text-muted">
+                                            Transfer to my account for my personal use and I will not use it for any illegal
+                                            or
+                                            any other purpose.
+                                        </p>
                                     </div>
                                 </div>
+                                <div class="modal-footer border-top-0 justify-content-between gap-2 pt-4">
+                                    <a href="../dashboard.html" class="btn btn-outline-primary px-4 py-2 fw-semibold rounded-default ">
+                                        Go to Dashboard
+                                    </a>
+                                    <div class="d-flex gap-2 flex-column flex-md-row">
+                                        <a href="" class="btn btn-info px-4 py-2 fw-semibold rounded-default text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor"
+                                                 class="bi bi-filetype-pdf" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                      d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/>
+                                            </svg>
+                                            Download Receipt
+                                        </a>
+                                    </div>
+                                </div>
+
+
                             </div>
-                        </form>
+                        </div>
                     </div>
 
                 </div>
@@ -477,13 +327,13 @@
                     <div class="row border rounded card-body py-3 align-items-center">
                         <div class="col-lg-6">
                             <div class="">
-                                <div class="fw-normal text-muted fs-6">4004 7680 7689 0456</div>
+                                <div class="fw-normal text-muted text-sm">4004 7680 7689 0456</div>
                             </div>
 
                         </div>
                         <div class="col-lg-6">
                             <div class="">
-                                <div class="fw-normal text-muted fs-6">BYIRINGIRO EMMANUEL</div>
+                                <div class="fw-normal text-muted text-sm">BYIRINGIRO EMMANUEL</div>
                             </div>
                         </div>
                     </div>
@@ -551,7 +401,7 @@
 
                 </div>
                 <div class="modal-footer border-top-0 px-lg-5 py-4 justify-content-between">
-                    <a href="" class="text-decoration-none fs-6 fw-semibold">
+                    <a href="" class="text-decoration-none text-sm fw-semibold">
                         <i class="bi bi-send"></i>
                         Send the code again
                     </a>
@@ -691,17 +541,8 @@
 
         $ownAccountsForm.on('submit', function (e) {
             e.preventDefault();
-            let amount = parseFloat($('#home_amount').val().replace(/,/g, ''));
             if ($ownAccountsForm.valid()) {
-                if (amount < 1000) {
-                    $('.less').slideDown();
-                    $('.greater').slideUp();
-                }else if (amount > 1000000) {
-                    $('.greater').slideDown();
-                    $('.less').slideUp();
-                }else {
-                    window.location.href = 'transfer-summary.html';
-                }
+                window.location.href = 'transfer-summary.html';
             }
         });
         let $internationalForm = $('#internationalForm');
