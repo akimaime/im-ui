@@ -129,48 +129,151 @@
 
                                 <!-- Loan Details -->
                               <div class="row">
-                                  <div class="col-lg-6">
-                                      <div id="loanDetailsMenu" class="card card-body" >
+                                  <div class="col-lg-7">
+                                      <div id="loanDetailsMenu" class="my-3" >
                                           <h2>Loan Details</h2>
                                           <table>
                                               <tr>
                                                   <th>Principal</th>
-                                                  <td id="principal">$10,000</td>
+                                                  <td id="principal">Rwf 10,000,000</td>
                                               </tr>
                                               <tr>
                                                   <th>Interest Rate</th>
-                                                  <td id="interestRate">5%</td>
+                                                  <td id="interestRate">18%</td>
                                               </tr>
                                               <tr>
                                                   <th>Outstanding Balance</th>
-                                                  <td id="outstandingBalance">$5,000</td>
+                                                  <td id="outstandingBalance">Rwf 4,000,000</td>
                                               </tr>
                                           </table>
                                           <!--                                    <button onclick="showMainMenu()">Back to Main Menu</button>-->
 
                                       </div>
+                                      <div class="card border-secondary border-opacity-25 card-body">
+                                          <h5>Payment Schedule</h5>
+                                          <div class="table-responsive">
+                                              <table class="table my-2 table-accounts  ">
+                                                  <thead>
+                                                  <tr class="">
+                                                      <th class="text-info text-sm border-0  border-3 border-bottom  border-info cursor-pointer">
+                                                          <div class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                              <span>Month</span>
+                                                              <div class="d-flex flex-column text-sm">
+                                                                  <i class="bi bi-chevron-up"></i>
+                                                                  <i class="bi bi-chevron-down"></i>
+                                                              </div>
+                                                          </div>
+
+                                                      </th>
+                                                      <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                          <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                              <span>Payment</span>
+                                                              <div class="d-flex flex-column fs-9px">
+                                                                  <i class="bi bi-chevron-up "></i>
+                                                                  <i class="bi bi-chevron-down"></i>
+                                                              </div>
+                                                          </div>
+                                                      </th>
+                                                      <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                          <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                              <span>Interest</span>
+                                                              <div class="d-flex flex-column fs-9px">
+                                                                  <i class="bi bi-chevron-up "></i>
+                                                                  <i class="bi bi-chevron-down"></i>
+                                                              </div>
+                                                          </div>
+                                                      </th>
+                                                      <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                          <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                              <span>Principal</span>
+                                                              <div class="d-flex flex-column fs-9px">
+                                                                  <i class="bi bi-chevron-up "></i>
+                                                                  <i class="bi bi-chevron-down"></i>
+                                                              </div>
+                                                          </div>
+                                                      </th>
+
+
+                                                      <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer">
+                                                          <div class=" d-flex align-items-center justify-content-between ">
+                                                              <span>Balance</span>
+                                                              <div class="d-flex flex-column fs-9px">
+                                                                  <i class="bi bi-chevron-up "></i>
+                                                                  <i class="bi bi-chevron-down"></i>
+                                                              </div>
+                                                          </div>
+                                                      </th>
+                                                  </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                  <tr class="cursor-pointer js-account py-5">
+                                                      <td class="small">1</td>
+                                                      <td class="small">$500</td>
+                                                      <td class="small">$208.33</td>
+                                                      <td class="small">$291.67</td>
+                                                      <td class="small">$49,708.33</td>
+                                                  </tr>
+                                                  <tr class="cursor-pointer js-account py-5">
+                                                      <td class="small">2</td>
+                                                      <td class="small">$500</td>
+                                                      <td class="small">$207.12</td>
+                                                      <td class="small">$292.88</td>
+                                                      <td class="small">$49,415.45</td>
+                                                  </tr>
+                                                  <tr class="cursor-pointer js-account py-5">
+                                                      <td class="small">3</td>
+                                                      <td class="small">$500</td>
+                                                      <td class="small">$205.90</td>
+                                                      <td class="small">$294.10</td>
+                                                      <td class="small">$49,121.35</td>
+                                                  </tr>
+                                                  </tbody>
+                                              </table>
+                                              <nav aria-label="..." class="float-end mt-2">
+                                                  <ul class="pagination">
+                                                      <li class="page-item disabled">
+                                                          <a class="page-link">Previous</a>
+                                                      </li>
+                                                      <li class="page-item"><a class="page-link" href="#">1</a>
+                                                      </li>
+                                                      <li class="page-item active" aria-current="page">
+                                                          <a class="page-link" href="#">2</a>
+                                                      </li>
+                                                      <li class="page-item"><a class="page-link" href="#">3</a>
+                                                      </li>
+                                                      <li class="page-item">
+                                                          <a class="page-link" href="#">Next</a>
+                                                      </li>
+                                                  </ul>
+                                              </nav>
+                                          </div>
+                                      </div>
 
 
                                   </div>
-                                  <div class="col-lg-6">
+                                  <div class="col-lg-5">
                                       <div id="mainMenu" class="menu">
                                           <!--                                        <button onclick="viewLoanDetails()">View Loan Details</button>-->
-                                          <button class="btn btn-info" onclick="showRepayLoanMenu()">Repay Loan</button>
-                                          <button class="btn" onclick="exitSystem()">Exit</button>
+                                          <button class="btn w-75 btn-info" onclick="showRepayLoanMenu()">Repay Loan</button>
                                       </div>
                                       <!-- Repay Loan Menu -->
                                       <div id="repayLoanMenu" class="menu">
-                                          <button onclick="payLumpSum()">Pay Lump Sum</button>
-                                          <button onclick="payBeforePayday()">Pay Before Payday</button>
-                                          <button onclick="showMainMenu()">Back to Main Menu</button>
+                                          <button class="btn btn-info m-2" onclick="payLumpSum()">Pay Lump Sum</button>
+                                          <button class="btn btn-info m-2" onclick="payBeforePayday()">Pay Before Payday</button>
+                                          <button class="btn btn-info m-2" onclick="showMainMenu()">Back to Main Menu</button>
                                       </div>
 
                                       <!-- Pay Lump Sum -->
                                       <div id="payLumpSumMenu" class="menu">
-                                          <label for="lumpSumAmount">Enter the amount you wish to pay:</label>
-                                          <input type="number" class=form-control id="lumpSumAmount">
-                                          <button onclick="confirmPayment('lumpSum')" class="btn btn-info">Confirm Payment</button>
-                                          <button onclick="showRepayLoanMenu()" class="btn btn-danger">Cancel</button>
+                                          <h4>Pay Lump Sum</h4>
+                                          <form>
+                                              <div class="form-group mb-3">
+                                                  <label for="lumpSumAmount">Enter the amount you wish to pay:</label>
+                                                  <input type="number" class=form-control id="lumpSumAmount">
+                                              </div>
+                                              <button onclick="confirmPayment('lumpSum')" class="btn btn-info">Confirm Payment</button>
+                                              <button onclick="showRepayLoanMenu()" class="btn btn-danger">Cancel</button>
+                                          </form>
                                       </div>
 
                                       <!-- Pay Before Payday -->
