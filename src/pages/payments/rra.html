@@ -64,6 +64,7 @@
                                     <li><a class="dropdown-item" href="irembo.html">Irembo Payment </a></li>
                                     <li><a class="dropdown-item" href="rssb.html">ISHEMA-RSSB Payment </a></li>
                                     <li><a class="dropdown-item" href="airtime.html">Airtime Top Up</a></li>
+                                    <li><a class="dropdown-item" href="eKash.html">eKash</a></li>
                                     <li><a class="dropdown-item" href="utilities.html">Utilities Payment </a></li>
                                 </ul>
                             </li>
@@ -283,7 +284,7 @@
                                                 <!--                                            add a summary of the total amount to be paid-->
                                                 <div class="row justify-content-end">
                                                     <div class="col-lg-8">
-                                                        <div class="card bg-secondary border-0 bg-opacity-10  rounded-2 shadow-none">
+                                                        <div class="card mb-4 bg-secondary border-0 bg-opacity-10  rounded-2 shadow-none">
                                                             <div class="card-body p-2">
                                                                 <div
                                                                         class="d-flex gap-2 justify-content-between flex-column flex-md-row">
@@ -307,6 +308,11 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+
+                                                    </div>
+                                                    <div class="alert num-error alert-danger" style="display: none">
+                                                            <span class="text-danger">Please add only three RRA reference
+                                                                numbers</span>
                                                     </div>
                                                 </div>
 
@@ -770,7 +776,14 @@
             $utilityPaymentForm.on('submit', function (e) {
                 e.preventDefault();
                 if ($utilityPaymentForm.valid()) {
-                    $('#exampleModal').modal('show');
+                    let $table = $('.table-accounts');
+                    let $tbody = $table.find('tbody');
+                    let $trs = $tbody.find('tr');
+                    if ($trs.length > 3) {
+                        $('.num-error').slideDown();
+                    }else{
+                        $('#otpModal').modal('show');
+                    }
                 }
             });
 
@@ -778,7 +791,17 @@
             $rraPayment.on('submit', function (e) {
                 e.preventDefault();
                 if ($rraPayment.valid()) {
-                    $('#otpModal').modal('show');
+                    let $table = $('.table-accounts');
+                    let $tbody = $table.find('tbody');
+                    let $trs = $tbody.find('tr');
+                    if ($trs.length > 3) {
+                        Swal.fire({
+                            text: "Please add at least one RRA reference number",
+                            icon: 'error',
+                        });
+                    }else{
+                        $('#otpModal').modal('show');
+                    }
                 }
             });
             $iremboPayment.on('submit', function (e) {
@@ -814,24 +837,25 @@
                 }
             });
             $('.js-confirm').on('click', function () {
-                Swal.fire({
-                    text: "Pay is made successfully!",
-                    icon: 'success',
-                }).then(
-                    function () {
-                        window.location.href = '../../index.html';
-                    });
+                window.location.href = 'payment-receipt.html';
             });
 
 
             $('#rraPaymentForm').on('submit', function (e) {
                 e.preventDefault();
                 // find modal parent of this form
+                let $table = $('.table-accounts');
+                let $tbody = $table.find('tbody');
+                let $trs = $tbody.find('tr');
+                if ($trs.length > 3) {
+                    $('.num-error').slideDown();
+                }else{
+                    $('#otpModal').modal('show');
+                }
+
                 let modal = $(this).closest('.modal');
                 // hide modal
                 modal.modal('hide');
-                $('#otpModal').modal('show');
-
                 let $minutesRemain = $('#minutesRemain');
                 let minutes = Number($minutesRemain.text());
                 let seconds = 0;
