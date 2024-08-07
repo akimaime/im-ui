@@ -24,7 +24,6 @@
                                   <span class="d-flex flex-column">
                                     <span class="text-sm fw-light">welcome</span>
                                     <small>John Doe</small>
-                                      <div class="badge bg-success ">Active</div>
                                   </span>
                             <img src="../assets/images/otp/avatar.png" class="img-fluid h-6" alt="John Peter Musoni"/>
                         </a>
@@ -151,27 +150,31 @@
                                         <div class="card h-100  border-0 shadow-sm  rounded-4"
                                              style="background-image: url('../assets/images/payments/bg_details.svg');background-repeat: no-repeat;background-size: contain">
                                             <div class="card-body">
-                                                <div class="d-flex justify-content-between">
+                                                <div class="d-flex justify-content-between align-items-center">
                                                     <h5 class="">
                                                         Current Account <i class="bi bi-info-circle fs-6"></i>
                                                     </h5>
+                                                    <span class="badge dormantAccount bg-secondary d-none">Dormant</span>
+                                                    <span class="badge inactiveAccount bg-danger d-none">Inactive</span>
                                                     <div class=" dropdown">
                                                         <a class="dropdown-toggle text-decoration-none text-info text-sm" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             Action
                                                         </a>
                                                         <ul class="dropdown-menu ">
-                                                            <li><a class="dropdown-item" href="#">Apply for chequebook</a></li>
-                                                            <li><a class="dropdown-item" href="#">Apply for card</a></li>
-                                                            <li><a class="dropdown-item" href="#">Add funds</a></li>
+                                                            <li><a class="dropdown-item other-menu" href="#">Apply for chequebook</a></li>
+                                                            <li><a class="dropdown-item other-menu" href="#">Apply for card</a></li>
+                                                            <li><a class="dropdown-item other-menu" href="#">Add funds</a></li>
+                                                            <li><a class="dropdown-item reactivate d-none" href="#">Reactivate</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
 
                                                 <label class="fw-medium">
                                                     Select Account
-                                                    <select class="form-select border-0 mx-0 ps-0 py-0" style="font-size: 0.8rem">
-                                                        <option class="" >Mugisha - 23612271897189</option>
-                                                        <option class="">Mcall - 10612271897189</option>
+                                                    <select id="dormantAccount" class="form-select border-0 mx-0 ps-0 py-0" style="font-size: 0.8rem">
+                                                        <option class="" value="acc1" >Mugisha - 23612271897189</option>
+                                                        <option class="" value="acc2" id="dormant" >Mcall - 10612271897189</option>
+                                                        <option class="" value="acc3" id="inactive">Castro - 30612271897189</option>
                                                     </select>
                                                 </label>
                                                 <div class="d-flex mb-4 justify-content-between align-items-center">
@@ -211,10 +214,11 @@
                                         <div class="card h-100  border-0 shadow-sm  rounded-4"
                                              style="background-image: url('../assets/images/payments/bg_details.svg');background-repeat: no-repeat;background-size: contain">
                                             <div class="card-body">
-                                                <div class="d-flex justify-content-between">
+                                                <div class="d-flex align-items-center justify-content-between">
                                                     <h5 class="">
                                                         Saving Account <i class="bi bi-info-circle fs-6"></i>
                                                     </h5>
+                                                    <div class="badge dormantSaving d-none bg-secondary">Dormant</div>
                                                     <div class=" dropdown">
                                                         <a class="dropdown-toggle text-decoration-none text-info text-sm" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             Action
@@ -224,13 +228,16 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <label class="fw-medium">
-                                                    Select Account
-                                                    <select class="form-select border-0 mx-0 ps-0 py-0" style="font-size: 0.8rem">
-                                                        <option class="" >Mugisha - 23612271897189</option>
-                                                        <option class="">Mcall - 10612271897189</option>
-                                                    </select>
-                                                </label>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <label class="fw-medium">
+                                                        Select Account
+                                                        <select  id="dormantSaving" class="form-select border-0 mx-0 ps-0 py-0" style="font-size: 0.8rem">
+                                                            <option class="1" value="1" >Mugisha - 23612271897189</option>
+                                                            <option class="0" value="0">Mcall - 10612271897189</option>
+                                                        </select>
+                                                    </label>
+
+                                                </div>
                                                 <div class="d-flex mb-4 justify-content-between align-items-center">
                                                     <button class="btn border-0 d-flex flex-column justify-content-center px-0 align-items-center " data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                                                         <span class="text-info text-sm" >Previous</span>
@@ -272,6 +279,7 @@
                                                     <h5 class="">
                                                         Loan Accounts <i class="bi bi-info-circle fs-6"></i>
                                                     </h5>
+
                                                     <div class=" dropdown">
                                                         <a class="dropdown-toggle text-decoration-none text-info text-sm" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             Action
@@ -283,9 +291,9 @@
                                                 </div>
                                                 <label class="fw-medium">
                                                     Select Account
-                                                    <select class="form-select border-0 mx-0 ps-0 py-0" style="font-size: 0.8rem">
-                                                        <option class="" >Mugisha - 23612271897189</option>
-                                                        <option class="">Mcall - 10612271897189</option>
+                                                    <select  class="form-select border-0 mx-0 ps-0 py-0" style="font-size: 0.8rem">
+                                                        <option class="" value="acc1" >Mugisha - 23612271897189</option>
+                                                        <option class="dormant" value="acc2">Mcall - 10612271897189</option>
                                                     </select>
                                                 </label>
                                                 <div class="d-flex justify-content-between align-items-center">
@@ -320,11 +328,11 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="d-flex justify-content-center mb-2 gap-2">
-                                                    <button class="btn btn-info text-sm text-white d-flex px-3 align-items-center">
-                                                        View Repayment Plan
-                                                    </button>
-                                                    <button class="btn btn-info text-sm py-2 text-white d-flex px-3 align-items-center">
+                                                <div class="d-flex justify-content-between   mb-2 gap-2">
+                                                    <a href="loan-repayment.html" class="btn w-100 d-flex justify-content-center btn-info  text-white d-flex px-3 align-items-center">
+                                                        Loan Repayment
+                                                    </a>
+                                                    <button class="btn w-100 d-flex justify-content-center btn-info  py-2 text-white d-flex px-3 align-items-center">
                                                         View Statement
                                                     </button>
                                                 </div>
@@ -673,6 +681,40 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#dormant').click(function () {
+            $('.dormant').addClass('bg-secondary');
+        });
+        $('#dormantAccount').change( function () {
+            if ($('#dormantAccount').val() === 'acc2') {
+                $('.dormantAccount').removeClass('d-none');
+                $('.inactiveAccount').addClass('d-none');
+                $('.reactivate').removeClass('d-none');
+                $('.other-menu').addClass('d-none');
+            }else if($(this).val()==='acc3'){
+                $('.inactiveAccount').removeClass('d-none');
+                $('.reactivate').removeClass('d-none');
+                $('.dormantAccount').addClass('d-none');
+                $('.other-menu').addClass('d-none');
+            }
+            else {
+                $('.dormantAccount').addClass('d-none');
+                $('.inactiveAccount').addClass('d-none');
+                $('.reactivate').addClass('d-none');
+                $('.other-menu').removeClass('d-none');
+            }
+        });
+        $('#dormantSaving').change( function () {
+            if ($('#dormantSaving').val() === 0) {
+                $('.dormantSaving').removeClass('d-none');
+            } else {
+                $('.dormantSaving').addClass('d-none');
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
