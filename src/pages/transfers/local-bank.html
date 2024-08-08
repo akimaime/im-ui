@@ -182,7 +182,7 @@
                                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="eft" value="option2">
                                                 <label class="form-check-label text-sm" for="eft">EFT</label>
                                             </div>
-                                            <div class="alert alert-info" style="display: none" id="rtgs_info">
+                                            <div class="alert alert-info rtgs_info" style="display: none" id="rtgs_info">
                                                 <p class="text-sm mb-0">
                                                     RTGS transactions are instant. A fee of RWF 600 applies.
                                                 </p>
@@ -343,7 +343,7 @@
 
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-6 rtgs_info">
                                                 <div class="mb-3">
                                                     <label for="local_reason"
                                                            class="form-label text-sm fw-normal">Reason:</label>
@@ -351,6 +351,21 @@
                                                               class="form-control  p-3  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold text-info"
                                                               name="reason" id="local_reason"></textarea>
                                                 </div>
+                                            </div>
+                                            <div class="col-lg-6 mb-3 rtgs_info" style="display: none" >
+                                                <label for="idFile"
+                                                       class="form-label fw-normal text-sm">Supporting document (optional):</label>
+                                                <div class="input-group ">
+                                                    <input type="file" class="form-control" required
+                                                           id="idFile">
+                                                    <button class="btn btn-info " type="button">
+                                                        Upload
+                                                        <span class="bi bi-cloud-upload"></span>
+                                                    </button>
+
+                                                </div>
+                                                <label id="idFile-error" class="error"
+                                                       for="idFile"></label>
                                             </div>
                                         </div>
 
@@ -659,7 +674,7 @@
             $('.js-conversion').slideUp();
         }
     }
-    let rtgsInfo = $('#rtgs_info');
+    let rtgsInfo = $('.rtgs_info');
     let eftInfo = $('#eft_info');
     $('#rtgs').on('change', function () {
         if ($(this).is(':checked')) {
