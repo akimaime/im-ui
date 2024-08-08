@@ -17,10 +17,11 @@ $theme-colors: (
         "info": $info,
         "primary": $primary
 );
-.cursor-pointer{
+.cursor-pointer {
   font-weight: normal !important;
   font-size: small;
 }
+
 body {
   background-color: $gray-200;
   font-family: "Rubik", sans-serif;
@@ -31,6 +32,7 @@ body {
 .card-number {
   font-family: "Orbitron", sans-serif;
 }
+
 .text-justify {
   text-align: justify;
 }
@@ -102,8 +104,8 @@ body {
   padding: 0 !important;
   margin: 0 !important;
   background-image: url("../assets/images/login/login_bg.png") !important;
-  background-size: cover ;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: left top;
 }
 
@@ -116,7 +118,7 @@ body {
 
 .card-bg {
   background-image: url("../assets/images/login/login_bg.png") !important;
-  background-size: cover ;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -129,6 +131,23 @@ body {
   background: transparent;
   border-radius: 0;
   border-bottom: 3px solid $white !important;
+}
+
+.admin .nav-pills .nav-link {
+  color: $primary;
+  padding: 7px;
+  font-size: 0.9rem !important;
+  font-weight: normal;
+  border-bottom: 1px solid $gray-400;
+  margin-right: 0;
+}
+
+.admin .nav-pills .nav-link.active,
+.admin .nav-pills .show > .nav-link {
+  color: $white !important;
+  margin-right: 0 !important;
+  font-weight: bolder;
+  background-color: $primary !important;
 }
 
 .nav-pills .nav-link.active .onboard-heading,
@@ -192,9 +211,11 @@ body {
 .quick-actions a > div:hover {
   border-color: $primary;
 }
+
 .w-6 {
   width: 2rem;
 }
+
 .hide {
   display: none !important;
 }
@@ -231,9 +252,11 @@ body {
 .car-cards {
   box-shadow: 0 0px 100px -30px $green !important;
 }
+
 .feature-icon {
   height: 2rem !important;
 }
+
 .onboard-item {
   margin-right: 3rem !important;
 }
@@ -255,6 +278,13 @@ body {
   color: $white;
   background-color: $info;
   border-color: $info;
+}
+
+.corp .page-item.active .page-link {
+  z-index: 1;
+  color: $white;
+  background-color: $primary;
+  border-color: $primary;
 }
 
 .breadcrumb-item a {
@@ -283,6 +313,7 @@ body {
 .scrollbar::-webkit-scrollbar {
   width: 0;
 }
+
 .custom-btn:hover {
   background-color: $info;
   color: $white;
@@ -294,6 +325,7 @@ body {
   box-shadow: 2px 0 40px 0 rgba(0, 0, 0, 0.1);
   margin-top: 10px;
 }
+
 .bg-opacity-80 {
   background-color: rgba(0, 0, 0, 0.9);
 }
@@ -313,7 +345,7 @@ body {
     content: '';
     position: absolute;
     width: 5px;
-    top:0;
+    top: 0;
     margin-top: 0.1rem;
     bottom: 0;
     left: 50%;
@@ -504,8 +536,8 @@ body {
         padding-right: 0 !important;
         padding-left: 2.85rem !important;;
         position: relative;
-        top: 0  !important;
-        bottom: 0  !important;
+        top: 0 !important;
+        bottom: 0 !important;
         margin-bottom: 1.5rem;
 
         &:after {
@@ -526,10 +558,30 @@ body {
         }
 
         &:last-child {
-          margin-bottom: 0  !important;
+          margin-bottom: 0 !important;
         }
       }
     }
   }
+}
+
+.dropdown-menu li {
+  position: relative;
+}
+
+.dropdown-menu .dropdown-submenu {
+  display: none;
+  position: absolute;
+  left: 20%;
+  top: 15px;
+}
+
+.dropdown-menu .dropdown-submenu-left {
+  right: 100%;
+  left: auto;
+}
+
+.dropdown-menu > li:hover > .dropdown-submenu {
+  display: block;
 }
 
