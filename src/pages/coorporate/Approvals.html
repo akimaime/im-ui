@@ -85,7 +85,7 @@
                             </ul>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="dashboard.html"
+                            <a class="nav-link " href="../dashboard.html"
                                type="button" role="tab" aria-controls="pills-home"
                                aria-selected="true">Retail Dashboard
                             </a>
@@ -831,6 +831,16 @@
                                                         </th>
                                                         <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
                                                             <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span>Operation</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
                                                                 <span> Requested By </span>
                                                                 <div class="d-flex flex-column text-sm">
                                                                     <i class="bi bi-chevron-up "></i>
@@ -862,6 +872,9 @@
                                                                 class="badge bg-warning rounded-pill  ">pending</span>
                                                         </td>
                                                         <td class="text-sm">
+                                                            Created
+                                                        </td>
+                                                        <td class="text-sm">
                                                             <span class="text-muted">
                                                         Muyoboke Alex
                                                           </span></td>
@@ -873,10 +886,12 @@
                                                                     Options
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
-
-
-                                                                    <li><a class="dropdown-item tr js-approve"
+                                                                    <li><a class="dropdown-item tr "
                                                                            href="#">Details</a></li>
+
+
+                                                                    <li><a class="dropdown-item tr js-approveA"
+                                                                           href="#">Approve</a></li>
 
                                                                 </ul>
                                                             </div>
@@ -892,6 +907,9 @@
                                                                 class="badge bg-warning rounded-pill  ">pending</span>
                                                         </td>
                                                         <td class="text-sm">
+                                                            Modified
+                                                        </td>
+                                                        <td class="text-sm">
                                                             <span class="text-muted">
                                                         Muyoboke Alex
                                                           </span></td>
@@ -903,10 +921,82 @@
                                                                     Options
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+                                                                    <li><a class="dropdown-item tr "
+                                                                           href="#">Details</a></li>
 
 
                                                                     <li><a class="dropdown-item tr js-approveA"
+                                                                           href="#">Approve</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account tr1 py-5">
+                                                        <td class="text-sm">2023-01-01</td>
+                                                        <td class="text-sm">
+                                                            TRN-0001
+                                                        </td>
+                                                        <td class="text-sm">Rule Maintenance</td>
+                                                        <td class="text-sm"><span
+                                                                class="badge bg-warning rounded-pill  ">pending</span>
+                                                        </td>
+                                                        <td class="text-sm">
+                                                            Created
+                                                        </td>
+                                                        <td class="text-sm">
+                                                            <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+                                                                    <li><a class="dropdown-item tr "
                                                                            href="#">Details</a></li>
+
+
+                                                                    <li><a class="dropdown-item tr js-approveA"
+                                                                           href="#">Approve</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account tr1 py-5">
+                                                        <td class="text-sm">2023-01-01</td>
+                                                        <td class="text-sm">
+                                                            TRN-0001
+                                                        </td>
+                                                        <td class="text-sm">Rule Maintenance</td>
+                                                        <td class="text-sm"><span
+                                                                class="badge bg-warning rounded-pill  ">pending</span>
+                                                        </td>
+                                                        <td class="text-sm">
+                                                            Modified
+                                                        </td>
+                                                        <td class="text-sm">
+                                                            <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span></td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+                                                                    <li><a class="dropdown-item tr "
+                                                                           href="#">Details</a></li>
+
+
+                                                                    <li><a class="dropdown-item tr js-approveA"
+                                                                           href="#">Approve</a></li>
 
                                                                 </ul>
                                                             </div>
@@ -1066,6 +1156,180 @@
     </div>
 </div>
 <div class="modal fade" id="exampleModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4">
+            <div class="modal-header border-bottom-0 align-items-center py-4 px-lg-5">
+                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0" id="exampleModalLabel">
+                    Transaction Details
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+            <form action="" method="post" class="submitTransferForm">
+                <div class="modal-body py-0 px-lg-5"
+                     style="background-image: url(../../../assets/images/payments/bg_details.svg);background-position: top;background-repeat: no-repeat;background-size: 80%">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mb-2">
+                                <div class="text-primary fw-semibold">Initiator ID:</div>
+                                <div class="fw-normal text-muted text-sm">#F13450</div>
+                            </div>
+                            <div class="mb-2">
+                                <div class="text-primary fw-semibold">From:</div>
+                                <div class="fw-normal text-muted text-sm">49484848484848493
+                                    <br>
+                                    <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <div class="text-primary fw-semibold">Amount :</div>
+                                <div class="fw-normal text-primary text-sm d-flex align-items-center gap-2">
+                                    <span class="text-muted">RWF</span>
+                                    <img src="../../../assets/images/payments/rwanda_flag.png" alt="" class="w-5 h-5"/>
+                                    <span class="text-sm fw-normal">10,000</span>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <div class="text-primary fw-semibold">Date & Time:</div>
+                                <div class="fw-normal text-primary fs-6 mt-2 d-flex gap-4">
+                                    <span class="text-muted">17/01/2023</span>
+                                    <i class="bi bi-calendar text-info"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-2">
+                                <div class="text-primary fw-semibold"> Initiator</div>
+                                <div class="fw-normal text-muted text-sm">
+                                    Butera John
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <div class="text-primary fw-semibold"> To</div>
+                                <div class="fw-normal text-muted text-sm">
+                                    89888888787998
+                                    <br>
+                                    <span class="text-muted">
+                                                        Mugabo Elie
+                                                          </span>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <div class="text-primary fw-semibold">Transaction Type:</div>
+                                <div class="fw-normal text-muted text-sm">
+                                    Local Banks Transfer
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <div class="text-primary fw-semibold">Transaction Details:</div>
+                                <p class="text-muted">
+                                    Launch payment
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex align-items-center js-">
+                        <h4 class="text-primary fw-semibold">Approval Log</h4>
+                        <div class="col-lg-1 justify-content-end p-2">
+                            <span class="btn float-end js-hide-filter"><i class="bi bi-caret-down-fill"></i></span>
+                            <span class="btn float-end d-none js-show-filter"><i class="bi bi-caret-up-fill"></i></span>
+                        </div>
+                    </div>
+                    <div class="js-history d-none">
+                        <div class="timeline timeline-justified timeline-4">
+                            <div class="timeline-bar"></div>
+                            <div class="timeline-items">
+                                <!--                                <div class="timeline-item">-->
+                                <!--                                    <div class="timeline-badge bg-white">-->
+                                <!--                                        <span class="bi bi-clock fw-bold text-primary"></span>-->
+                                <!--                                    </div>-->
+
+                                <!--                                    <div class="timeline-label">-->
+                                <!--                                        <span class="text-primary font-weight-bold">.</span>-->
+                                <!--                                    </div>-->
+
+                                <!--                                    <div class="timeline-content bg-transparent">-->
+                                <!--                                        <span class="text-primary font-weight-bold text-sm">Waiting for further Approval(s)</span>-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
+                                <div class="timeline-item">
+                                    <div class="timeline-badge bg-warning">
+                                        <i class="bi bi-check text-white"></i>
+                                    </div>
+
+                                    <div class="timeline-label">
+                                        <span class="text-info font-weight-bold text-sm">Jul 5,2024 at 11:35 AM</span>
+                                    </div>
+
+                                    <div class="timeline-content">
+                                        <span class="badge bg-warning rounded-pill">verified</span>
+                                        <br>
+                                        <p class="my-0">
+                                            <span class="text-primary fw-semibold">Comment:</span><br>
+                                            <span class="text-muted text-sm">
+                                                This transaction is valid. Please ensure all details are correct before proceeding.
+                                            </span>
+                                        </p>
+                                        <span class="text-primary fw-semibold">Done by:</span><br> Kalisa Jean
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-badge bg-primary">
+                                        <span class="bi bi-check fw-bold text-white"></span>
+                                    </div>
+
+                                    <div class="timeline-label">
+                                        <span class="text-primary font-weight-bold text-sm">Jul 24,2024 at 11:35 AM</span>
+                                    </div>
+
+                                    <div class="timeline-content">
+
+                                        <span class="badge bg-primary rounded-pill">Verified</span>
+                                        <br>
+                                        <p>
+                                            <span class="text-primary fw-semibold">Comment:</span><br>
+
+                                            <span class="text-muted text-sm">
+                                                This transaction is valid. Please ensure all details are correct before proceeding.
+                                            </span>
+                                        </p>
+                                        <span class="text-primary fw-semibold">Done by:</span><br> Butera John
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment" class="text-primary fw-semibold">Comment</label>
+                        <textarea class="form-control" id="comment" rows="3"></textarea>
+                    </div>
+
+                    <div class="border-bottom border-3 mt-4 "></div>
+                </div>
+                <div class="modal-footer border-top-0 px-lg-5 py-4">
+                    <button type="submit" class="btn btn-primary px-4 py-2 fw-semibold rounded-default text-white">
+                        Approve
+                    </button>
+                    <button type="submit" class="btn btn-outline-danger px-4 py-2 fw-semibold rounded-default ">
+                        Reject
+                    </button>
+                    <button type="button" class="btn btn-outline-primary rounded-default px-4 py-2 fw-semibold"
+                            data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModel3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content rounded-4">
             <div class="modal-header border-bottom-0 align-items-center py-4 px-lg-5">
@@ -2213,6 +2477,31 @@
                 $('#approveOtp').modal('hide');
 
             });
+        });
+        $('.js-approveA').on('click', function () {
+            let approveBtn = $(this);
+            $('#approveOtp').modal('show');
+
+            // function verifyAlert() {
+            //     Swal.fire({
+            //         title: 'Successful',
+            //         text: "Transaction is Verified",
+            //         icon: 'success',
+            //         confirmButtonColor: '#243D94',
+            //
+            //     }).then((result) => {
+            //         if (result.isConfirmed) {
+            //             $('#approveOtp').modal('hide');
+            //             approveBtn.closest("tr").remove();
+            //         }
+            //     })
+            // }
+            //
+            // $('.js-verif').on('click', function () {
+            //     verifyAlert();
+            //     $('#approveOtp').modal('hide');
+            //
+            // });
         });
         $('.js-details').on('click', function () {
             let approveBtn = $(this);
