@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I&M Internet bank</title>
+    <link href="../../../css/custom.css" rel="stylesheet">
+</head>
+<body class="">
+<div class="d-flex min-vh-100 justify-content-between flex-column">
+    <div class="corp-bg mb-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <div class="d-flex col-3 flex-column">
+                    <img src="../../../assets/n_logo.png" class="img-fluid" alt="logo">
+                    <span class="text-white px-4 fs-4">Corporate</span>
+
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <h5 class="text-white my-0 ">Welcome to , Paper Print LTD</h5>
+                    <div class="position-relative">
+                        <div class="d-flex rounded-circle  bg-white bg-opacity-10 p-4 justify-content-center overflow-hidden align-items-center"
+                             style="height: 26px;width: 26px">
+                            <i class="bi bi-bell text-white fs-3"></i>
+                            <div class="badge bg-danger rounded-circle position-absolute"
+                                 style="top: -5px;right: -10px">5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="d-flex align-items-end flex-column">
+                                    <span class="text-sm fw-light">John Doe</span>
+                                    <small><i class="bi bi-hammer me-2"></i>Initiator</small>
+                                  </span>
+                            <img src="../../../assets/prfl.png" alt="profile" class="object-fit-cover">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
+
+                            <!--                            <li class="my-2">-->
+                            <!--                                <a class="fw-normal dropdown-item" href="#">-->
+                            <!--                                    <i class="bi bi-gear"></i>-->
+                            <!--                                    Account Settings-->
+                            <!--                                </a>-->
+                            <!--                            </li>-->
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="#">
+                                    <i class="bi bi-gear"></i>
+                                    Account Settings
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="/">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <nav class=" navbar navbar-expand-lg">
+                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Dashboard
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../corporate-dashboard.html">Initiator
+                                    Dashboard</a></li>
+                                <li><a class="dropdown-item" href="../dashboard/verifier-dashboard.html">Verifier
+                                    Dashboard</a></li>
+                                <li><a class="dropdown-item" href="../dashboard/approver-dashboard.html">Approver
+                                    Dashboard </a></li>
+                                <li><a class="dropdown-item" href="../../dashboard.html">Retail Dashboard</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="../../dashboard.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">Retail Dashboard
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Transfers
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../transfers/own-account.html">Transfer to your own
+                                    Accounts </a></li>
+                                <li><a class="dropdown-item" href="../transfers/internal.html">Transfer from I&M to
+                                    I&M </a></li>
+                                <li><a class="dropdown-item" href="../transfers/local-bank.html">Transfer to Local
+                                    Banks </a></li>
+                                <li><a class="dropdown-item" href="../transfers/international.html">Transfer to
+                                    International </a></li>
+                                <li><a class="dropdown-item" href="../transfers/momo.html">Transfer to Mobile </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="BillPayments" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                Payments
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Cards" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cards
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
+                                Requests
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Beneficiaries" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                Beneficiaries
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Mails" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mails
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="../administration.html" class="nav-link active" id="administration"
+                               data-bs-toggle="pill" data-bs-target="#pills-contact"
+                               type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Administration
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="mx-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item "><a href="../../corporate-dashboard.html">Dashboard</a></li>
+                    <li class="breadcrumb-item text-white" aria-current="page"><a href="../administration.html">User
+                        Maintenance</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">User Registration</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="container mb-4">
+            <div class="row ">
+                <div class="col-lg-3  mb-2">
+                    <div class="card h-100   rounded-4 ">
+
+                        <div class="card-body   d-flex flex-column align-items-center ">
+                            <div class="d-flex admin mb-5 align-items-start">
+                                <div class="nav flex-column my-3 text-start nav-pills me-3" id="v-pills-tab"
+                                     role="tablist"
+                                     aria-orientation="vertical">
+                                    <button class="nav-link text-start" id="v-pills-home-tab"
+                                            data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
+                                            role="tab" aria-controls="v-pills-home" aria-selected="true">User
+                                        Maintenance
+                                    </button>
+                                    <button class="nav-link text-start active" id="v-pills-profile-tab"
+                                            data-bs-toggle="pill"
+                                            type="button" role="tab"
+                                            aria-controls="v-pills-profile" aria-selected="false">Workflow Role
+                                        Maintenance
+                                    </button>
+                                    <button class="nav-link text-start" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-messages" type="button" role="tab"
+                                            aria-controls="v-pills-messages" aria-selected="false">Rule Maintenance
+                                    </button>
+                                    <button class="nav-link text-start" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-settings" type="button" role="tab"
+                                            aria-controls="v-pills-settings" aria-selected="false">Financial workflow
+                                        maintenance
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div id="carouselExampleControls" class="carousel m-2 slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../../../assets/images/ads.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../../../assets/images/ads.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../../../assets/images/ads.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class=" bg-white bg-opacity-25  rounded-circle d-flex justify-content-center align-items-center"
+                                          style="height: 30px;width: 30px" aria-hidden="true">
+                                        <i class="bi bi-chevron-left fs-5"></i>
+                                    </span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                </div>
+                                <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class=" bg-white bg-opacity-25  rounded-circle d-flex justify-content-center align-items-center"
+                                      style="height: 30px;width: 30px" aria-hidden="true">
+                                        <i class="bi bi-chevron-right fs-5"></i>
+                                    </span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 ">
+                    <div class="row h-100">
+                        <div class=" col-lg-12 mb-2">
+                            <div class=" card h-100 rounded-4 ">
+                                <div class="card-body">
+                                    <div class="col-lg-6">
+
+                                        <h4 class="text-primary fw-bold ">
+                                            New Role Creation Form
+                                        </h4>
+                                        <p class="text-muted small">
+                                            Fill in the form below to create a new role
+                                        </p>
+
+                                    </div>
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                             aria-labelledby="v-pills-home-tab" tabindex="0">
+                                            <form action="" id="createForm">
+                                                <h5 class="text-primary fw-bold">Role Details</h5>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label for="role"
+                                                                   class="form-label fw-normal text-sm">
+                                                                Role Name:
+                                                            </label><span class="text-danger">*</span>
+                                                            <select class="form-select" id="role">
+                                                                <option selected>Select Role</option>
+                                                                <option value="Initiator">Initiator</option>
+                                                                <option value="Authorizer">Authorizer</option>
+                                                                <option value="Verifier">Verifier</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h5 class="text-primary fw-bold">User Details</h5>
+                                                <hr>
+                                                <div class="table-responsive overflow-visible">
+                                                    <table class="table my-2 table-accounts ">
+                                                        <thead>
+                                                        <tr>
+                                                            <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                                <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                    <span>Select</span>
+                                                                    <div class="d-flex flex-column text-sm">
+                                                                        <i class="bi bi-chevron-up"></i>
+                                                                        <i class="bi bi-chevron-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                                <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                    <span>Created At</span>
+                                                                    <div class="d-flex flex-column text-sm">
+                                                                        <i class="bi bi-chevron-up"></i>
+                                                                        <i class="bi bi-chevron-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                                <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                    <span>User Id</span>
+                                                                    <div class="d-flex flex-column text-sm">
+                                                                        <i class="bi bi-chevron-up"></i>
+                                                                        <i class="bi bi-chevron-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            <th class="text-primary  border-top-0   border-0 border-3 border-bottom  border-primary cursor-pointer ">
+                                                                <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                    <span>First Name</span>
+                                                                    <div class="d-flex flex-column text-sm">
+                                                                        <i class="bi bi-chevron-up "></i>
+                                                                        <i class="bi bi-chevron-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+
+                                                            <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer ">
+                                                                <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                    <span>Last Name</span>
+                                                                    <div class="d-flex flex-column text-sm">
+                                                                        <i class="bi bi-chevron-up "></i>
+                                                                        <i class="bi bi-chevron-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+
+                                                            <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                                <div class=" d-flex align-items-center justify-content-between ">
+                                                                    <span>Mobile Number</span>
+                                                                    <div class="d-flex flex-column text-sm">
+                                                                        <i class="bi bi-chevron-up "></i>
+                                                                        <i class="bi bi-chevron-down"></i>
+                                                                    </div>
+                                                                </div>
+
+                                                            </th>
+                                                            <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                                <div class=" d-flex align-items-center justify-content-between ">
+                                                                    <span> Roles </span>
+                                                                    <div class="d-flex flex-column text-sm">
+                                                                        <i class="bi bi-chevron-up "></i>
+                                                                        <i class="bi bi-chevron-down"></i>
+                                                                    </div>
+                                                                </div>
+
+                                                            </th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody id="userDetails">
+                                                        <tr class="cursor-pointer js-account tr1 py-5">
+                                                            <td>
+                                                                <input class="form-check-input border-primary"
+                                                                       type="checkbox" value="" id="flexCheckDefault">
+                                                            </td>
+                                                            <td class="text-sm">2022-11-06 11:00:00</td>
+                                                            <td class="text-sm">00037367</td>
+                                                            <td class="text-sm">John</td>
+                                                            <td class="text-sm">Butera</td>
+                                                            <td class="text-sm">0788888888</td>
+                                                            <td class="text-sm">
+                                                                <div class="dropup-center dropup">
+                                                                    <button class="btn badge  text-lg d-flex justify-content-center align-items-center  bg-primary rounded-circle text-white"
+                                                                            style="height: 28px;width: 28px"
+                                                                            type="button"
+                                                                            data-bs-toggle="dropdown"
+                                                                            aria-expanded="false">
+                                                                        2
+                                                                    </button>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item fw-semibold"
+                                                                               href="#">User
+                                                                            Roles</a></li>
+                                                                        <li>
+                                                                            <hr class="dropdown-divider">
+                                                                        </li>
+                                                                        <li><a class="dropdown-item align-items-start"
+                                                                               href="#">*Initiator</a></li>
+                                                                        <li><a class="dropdown-item align-items-start"
+                                                                               href="#">*Authorizer</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <button class="btn d-none btn-sm bottom-0 revert-btn"><i
+                                                                        class="bi text-danger bi-x-circle"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cursor-pointer js-account tr1 py-5">
+                                                            <td>
+                                                                <input class="form-check-input border-primary"
+                                                                       type="checkbox" value="" id="flexCheckDefault1">
+
+                                                            </td>
+                                                            <td class="text-sm">2022-11-06 11:00:00</td>
+                                                            <td class="text-sm">1200094</td>
+                                                            <td class="text-sm">John</td>
+                                                            <td class="text-sm">Butera</td>
+                                                            <td class="text-sm">0788888888</td>
+                                                            <td class="text-sm">
+                                                                <div class="dropup-center dropup">
+                                                                    <button class="btn badge  text-lg d-flex justify-content-center align-items-center  bg-primary rounded-circle text-white"
+                                                                            style="height: 28px;width: 28px"
+                                                                            type="button"
+                                                                            data-bs-toggle="dropdown"
+                                                                            aria-expanded="false">
+                                                                        2
+                                                                    </button>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item fw-semibold"
+                                                                               href="#">User
+                                                                            Roles</a></li>
+                                                                        <li>
+                                                                            <hr class="dropdown-divider">
+                                                                        </li>
+                                                                        <li><a class="dropdown-item align-items-start"
+                                                                               href="#">*Initiator</a></li>
+                                                                        <li><a class="dropdown-item align-items-start"
+                                                                               href="#">*Authorizer</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <button class="btn d-none btn-sm bottom-0 revert-btn">
+                                                                    <i class="bi text-danger bi-x-circle"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                    <div class="mb-5">
+                                                        <nav aria-label="..." class="float-end corp mt-2">
+                                                            <ul class="pagination corp">
+                                                                <li class="page-item disabled">
+                                                                    <a class="page-link">Previous</a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                                         href="#">1</a>
+                                                                </li>
+                                                                <li class="page-item active" aria-current="page">
+                                                                    <a class="page-link" href="#">2</a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                                         href="#">3</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">Next</a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                    <br>
+                                                    <div class="row d-flex justify-content-between border-top">
+                                                        <div class="col-lg-12 d-flex justify-content-end">
+                                                            <button type="submit"
+                                                                    class="btn btn-primary saveBtn text-white px-4 py-2 mt-3">
+                                                                Save Role
+                                                            </button>
+                                                            <button type="reset"
+                                                                    class="btn btn-outline-primary px-4 py-2 mt-3 ms-3">
+                                                                Reset
+                                                            </button>
+                                                            <a href="../administration.html"
+                                                               class=" btn btn-info px-4 py-2 mt-3 ms-3">Back</a>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="bg-info d-flex justify-content-center w-100">
+                <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
+            </div>
+        </footer>
+    </div>
+    <footer>
+        <div class="bg-info d-flex justify-content-center w-100">
+            <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    //make content of popover visible
+    $(function () {
+        let $createForm = $('#createForm');
+        $createForm.validate({
+            rules: {
+                reason: {
+                    required: true,
+                    alphanumeric: true,
+                }
+            },
+        });
+
+        $createForm.on('submit', function (e) {
+            e.preventDefault();
+            if ($createForm.valid()) {
+                $('.saveBtn').html('<span class="spinner-border spinner-border-sm"></span> Loading..');
+                setTimeout(() => {
+                    window.location.href = '../administration.html?added=true';
+                    $('.saveBtn').html('Save User');
+                }, 1000);
+            }
+        });
+    })
+</script>
+<script>
+    $(document).ready(function () {
+        $('.addUser').click(function (e) {
+            e.preventDefault();
+            $('#userDetails input[type="checkbox"]:checked').each(function () {
+                $(this).closest('td').html('<i class="bi bi-check-circle-fill text-success"></i>');
+                $('.revert-btn').removeClass('d-none');
+            });
+        });
+
+        $(document).on('click', '.revert-btn', function () {
+            $(this).closest('tr').find('td:first').html('<input class="form-check-input border-primary" type="checkbox" value="" id="flexCheckDefault1">');
+            $(this).closest('td').remove();
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1245 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I&M Internet bank</title>
+    <link href="../../css/custom.css" rel="stylesheet">
+</head>
+<body class="">
+<div class="d-flex min-vh-100 justify-content-between flex-column">
+    <div class="corp-bg ">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <div class="d-flex col-3 flex-column">
+                    <img src="../../assets/n_logo.png" class="img-fluid" alt="logo">
+                    <span class="text-white px-4 fs-4">Corporate</span>
+
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <h5 class="text-white my-0 ">Welcome to , Paper Print LTD</h5>
+                    <div class="position-relative">
+                        <div class="d-flex rounded-circle  bg-white bg-opacity-10 p-4 justify-content-center overflow-hidden align-items-center"
+                             style="height: 26px;width: 26px">
+                            <i class="bi bi-bell text-white fs-3"></i>
+                            <div class="badge bg-danger rounded-circle position-absolute" style="top: -5px;right: -10px">5</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="d-flex align-items-end flex-column">
+                                    <span class="text-sm fw-light">John Doe</span>
+                                    <small><i class="bi bi-hammer me-2"></i>Initiator</small>
+                                  </span>
+                            <img src="../../assets/prfl.png" alt="profile" class="object-fit-cover">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
+
+                            <!--                            <li class="my-2">-->
+                            <!--                                <a class="fw-normal dropdown-item" href="#">-->
+                            <!--                                    <i class="bi bi-gear"></i>-->
+                            <!--                                    Account Settings-->
+                            <!--                                </a>-->
+                            <!--                            </li>-->
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="#">
+                                    <i class="bi bi-gear"></i>
+                                    Account Settings
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="/">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <nav class="mb-4 navbar navbar-expand-lg">
+                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Dashboard
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="corporate-dashboard.html">Initiator
+                                    Dashboard</a></li>
+                                <li><a class="dropdown-item" href="dashboard/verifier-dashboard.html">Verifier Dashboard</a></li>
+                                <li><a class="dropdown-item" href="dashboard/approver-dashboard.html">Approver Dashboard </a></li>
+                                <li><a class="dropdown-item" href="dashboard.html">Retail Dashboard</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="dashboard.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">Retail Dashboard
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Transfers
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="transfers/own-account.html">Transfer to your own
+                                    Accounts </a></li>
+                                <li><a class="dropdown-item" href="transfers/internal.html">Transfer from I&M to
+                                    I&M </a></li>
+                                <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to Local
+                                    Banks </a></li>
+                                <li><a class="dropdown-item" href="transfers/international.html">Transfer to
+                                    International </a></li>
+                                <li><a class="dropdown-item" href="transfers/momo.html">Transfer to Mobile </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="BillPayments" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                Payments
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Cards" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cards
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
+                                Requests
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Beneficiaries" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                Beneficiaries
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Mails" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mails
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="administration.html" class="nav-link" id="administration">Administration
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Approval Center
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="initiated.html">Initiated </a></li>
+                                <li><a class="dropdown-item" href="Approvals.html">Pending</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="mx-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item "><a href="../dashboard.html">Dashboard</a></li>
+                    <li class="breadcrumb-item text-white" aria-current="page">Administration</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="container mb-4">
+            <div class="row ">
+                <div class="col-lg-3  mb-2">
+                    <div class="card h-100   rounded-4 ">
+                        <div class="d-flex card-header border-0 bg-transparent justify-content-between  align-items-center">
+
+                        </div>
+                        <div class="card-body mb-5  d-flex flex-column align-items-center ">
+                            <div class="d-flex admin align-items-start">
+                                <div class="nav flex-column  text-start nav-pills me-3" id="v-pills-tab" role="tablist"
+                                     aria-orientation="vertical">
+                                    <button class="nav-link text-start px-4 active" id="v-pills-home-tab"
+                                            data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
+                                            role="tab" aria-controls="v-pills-home" aria-selected="true">Payment Approvals
+                                    </button>
+                                    <button class="nav-link text-start px-4" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-profile" type="button" role="tab"
+                                            aria-controls="v-pills-profile" aria-selected="false">Transfer Approvals
+                                    </button>
+                                    <button class="nav-link text-start px-4" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-messages" type="button" role="tab"
+                                            aria-controls="v-pills-messages" aria-selected="false">Administration
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="carouselExampleControls" class="carousel m-2 slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../../assets/images/ads.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/images/ads.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/images/ads.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class=" bg-white bg-opacity-25  rounded-circle d-flex justify-content-center align-items-center"
+                                          style="height: 30px;width: 30px" aria-hidden="true">
+                                        <i class="bi bi-chevron-left fs-5"></i>
+                                    </span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                            </div>
+                            <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class=" bg-white bg-opacity-25  rounded-circle d-flex justify-content-center align-items-center"
+                                      style="height: 30px;width: 30px" aria-hidden="true">
+                                        <i class="bi bi-chevron-right fs-5"></i>
+                                    </span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 ">
+                    <div class="row h-100">
+                        <div class=" col-lg-12 mb-2">
+                            <div class=" card h-100 rounded-4 ">
+
+                                <div class="card-body">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                             aria-labelledby="v-pills-home-tab" tabindex="0">
+                                            <h5 class="mb-4">
+                                                Payments Pending Approvals
+                                            </h5>
+                                            <div class="table-responsive overflow-visible">
+                                                <table class="table my-2 table-accounts ">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Date</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up"></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </th>
+                                                        <th class="text-primary  border-top-0   border-0 border-3 border-bottom  border-primary cursor-pointer ">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Sequence Number</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+
+                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer ">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Amount</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+
+                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span>Product Type</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                        <th class="text-primary  border-top-0 border-0   border-3 border-bottom  border-primary cursor-pointer ">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span> Status</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span> From </span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span> To </span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span>Action</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="statementsBody">
+                                                    <tr class="cursor-pointer js-account tr1 py-5">
+                                                        <td class="text-sm">2023-01-01</td>
+                                                        <td class="text-sm">
+                                                            TRN-0001
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        casual payments
+                                                          </span>
+                                                        </td>
+                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">Airtime Top up</td>
+                                                        <td class="text-sm"><span
+                                                                class="badge bg-success rounded-pill  ">Approved</span>
+                                                        </td>
+                                                        <td class="text-sm">84384748383743
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span></td>
+                                                        <td class="text-sm">078000702
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Mugabo Elie
+                                                          </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+
+
+                                                                    <li><a class="dropdown-item tr js-details"
+                                                                           href="#">Details</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="text-sm">2023-01-01</td>
+                                                        <td class="text-sm">TRN-02301
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Home Electricity
+                                                          </span>
+                                                        </td>
+                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">Electricity</td>
+                                                        <td class="text-sm"><span
+                                                                class="badge bg-secondary rounded-pill ">verified</span>
+                                                        </td>
+                                                        <td class="text-sm">84384748383743
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span></td>
+                                                        <td class="text-sm">078000702
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Mugabo Elie
+                                                          </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+
+
+                                                                    <li><a class="dropdown-item tr js-approve"
+                                                                           href="#">Details</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="text-sm">2023-01-01</td>
+                                                        <td class="text-sm">#F13450
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        RRA Payment
+                                                          </span>
+                                                        </td>
+                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">RRA Payment</td>
+                                                        <td class="text-sm"><span
+                                                                class="badge bg-secondary rounded-pill  ">verified</span>
+                                                        </td>
+                                                        <td class="text-sm">84384748383743
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span></td>
+                                                        <td class="text-sm">89888888787998
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Mugabo Elie
+                                                          </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+
+
+                                                                    <li><a class="dropdown-item tr js-approve"
+                                                                           href="#">Details</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="text-sm">2023-01-01</td>
+                                                        <td class="text-sm">#F13450
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Airtime
+                                                          </span></td>
+                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">Airtime Top up</td>
+                                                        <td class="text-sm"><span
+                                                                class="badge bg-secondary rounded-pill  ">verified</span>
+                                                        </td>
+                                                        <td class="text-sm">84384748383743
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span></td>
+                                                        <td class="text-sm">89888888787998
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Mugabo Elie
+                                                          </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+
+
+                                                                    <li><a class="dropdown-item tr js-approve"
+                                                                           href="#">Details</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <nav aria-label="..." class="float-end corp mt-2">
+                                                    <ul class="pagination corp">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link">Previous</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        </li>
+                                                        <li class="page-item active" aria-current="page">
+                                                            <a class="page-link" href="#">2</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        </li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                             aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                            <h5 class="mb-4">
+                                                Transfer Pending Approvals
+                                            </h5>
+                                            <div class="table-responsive overflow-visible">
+                                                <table class="table my-2 table-accounts ">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Date</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up"></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </th>
+                                                        <th class="text-primary  border-top-0   border-0 border-3 border-bottom  border-primary cursor-pointer ">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Reference</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+
+                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer ">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Amount</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+
+                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span>Transactions Type</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                        <th class="text-primary  border-top-0 border-0   border-3 border-bottom  border-primary cursor-pointer ">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span> Status</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span> From </span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span> To </span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span>Action</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="transfer">
+                                                    <tr class="cursor-pointer js-account tr1 py-5">
+                                                        <td class="text-sm">2023-01-01</td>
+                                                        <td class="text-sm">
+                                                            TRN-0001
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        casual payments
+                                                          </span>
+                                                        </td>
+                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">Internal Transfer</td>
+                                                        <td class="text-sm"><span
+                                                                class="badge bg-success rounded-pill  ">Approved</span>
+                                                        </td>
+                                                        <td class="text-sm">84384748383743
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span></td>
+                                                        <td class="text-sm">078000702
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Mugabo Elie
+                                                          </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+
+
+                                                                    <li><a class="dropdown-item tr js-details"
+                                                                           href="#">Details</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="text-sm">2023-01-01</td>
+                                                        <td class="text-sm">TRN-02301
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        casual payments
+                                                          </span>
+                                                        </td>
+                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">Local banks</td>
+                                                        <td class="text-sm"><span
+                                                                class="badge bg-secondary rounded-pill ">verified</span>
+                                                        </td>
+                                                        <td class="text-sm">84384748383743
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span></td>
+                                                        <td class="text-sm">078000702
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Mugabo Elie
+                                                          </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+
+
+                                                                    <li><a class="dropdown-item tr js-approve"
+                                                                           href="#">Details</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="text-sm">2023-01-01</td>
+                                                        <td class="text-sm">#F13450
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        School fees
+                                                          </span>
+                                                        </td>
+                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">Transfer to Mobile</td>
+                                                        <td class="text-sm"><span
+                                                                class="badge bg-secondary rounded-pill  ">verified</span>
+                                                        </td>
+                                                        <td class="text-sm">84384748383743
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span></td>
+                                                        <td class="text-sm">89888888787998
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Mugabo Elie
+                                                          </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+
+
+                                                                    <li><a class="dropdown-item tr js-approve"
+                                                                           href="#">Details</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="text-sm">2023-01-01</td>
+                                                        <td class="text-sm">#F13450
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Simba super Market
+                                                          </span></td>
+                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">External Transfer</td>
+                                                        <td class="text-sm"><span
+                                                                class="badge bg-secondary rounded-pill  ">verified</span>
+                                                        </td>
+                                                        <td class="text-sm">84384748383743
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span></td>
+                                                        <td class="text-sm">89888888787998
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Mugabo Elie
+                                                          </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+
+
+                                                                    <li><a class="dropdown-item tr js-approve"
+                                                                           href="#">Details</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <nav aria-label="..." class="float-end corp mt-2">
+                                                    <ul class="pagination corp">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link">Previous</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        </li>
+                                                        <li class="page-item active" aria-current="page">
+                                                            <a class="page-link" href="#">2</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        </li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                             aria-labelledby="v-pills-messages-tab" tabindex="0">
+                                            <h5 class="mb-4">
+                                                Transfer Pending Approvals
+                                            </h5>
+                                            <div class="table-responsive overflow-visible">
+                                                <table class="table my-2 table-accounts ">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Requested on</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up"></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </th>
+                                                        <th class="text-primary  border-top-0   border-0 border-3 border-bottom  border-primary cursor-pointer ">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Reference Id</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span>Activity Type</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                        <th class="text-primary  border-top-0 border-0   border-3 border-bottom  border-primary cursor-pointer ">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span> Status</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span> Requested By </span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span>Action</span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="admin">
+                                                    <tr class="cursor-pointer js-account tr1 py-5">
+                                                        <td class="text-sm">2023-01-01</td>
+                                                        <td class="text-sm">
+                                                            TRN-0001
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        casual payments
+                                                          </span>
+                                                        </td>
+                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">Internal Transfer</td>
+                                                        <td class="text-sm"><span
+                                                                class="badge bg-success rounded-pill  ">Approved</span>
+                                                        </td>
+                                                        <td class="text-sm">84384748383743
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span></td>
+                                                        <td class="text-sm">078000702
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Mugabo Elie
+                                                          </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+
+
+                                                                    <li><a class="dropdown-item tr js-details"
+                                                                           href="#">Details</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="text-sm">2023-01-01</td>
+                                                        <td class="text-sm">TRN-02301
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        casual payments
+                                                          </span>
+                                                        </td>
+                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">Local banks</td>
+                                                        <td class="text-sm"><span
+                                                                class="badge bg-secondary rounded-pill ">verified</span>
+                                                        </td>
+                                                        <td class="text-sm">84384748383743
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span></td>
+                                                        <td class="text-sm">078000702
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Mugabo Elie
+                                                          </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+
+
+                                                                    <li><a class="dropdown-item tr js-approve"
+                                                                           href="#">Details</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="text-sm">2023-01-01</td>
+                                                        <td class="text-sm">#F13450
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        School fees
+                                                          </span>
+                                                        </td>
+                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">Transfer to Mobile</td>
+                                                        <td class="text-sm"><span
+                                                                class="badge bg-secondary rounded-pill  ">verified</span>
+                                                        </td>
+                                                        <td class="text-sm">84384748383743
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span></td>
+                                                        <td class="text-sm">89888888787998
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Mugabo Elie
+                                                          </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+
+
+                                                                    <li><a class="dropdown-item tr js-approve"
+                                                                           href="#">Details</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="text-sm">2023-01-01</td>
+                                                        <td class="text-sm">#F13450
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Simba super Market
+                                                          </span></td>
+                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">External Transfer</td>
+                                                        <td class="text-sm"><span
+                                                                class="badge bg-secondary rounded-pill  ">verified</span>
+                                                        </td>
+                                                        <td class="text-sm">84384748383743
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Muyoboke Alex
+                                                          </span></td>
+                                                        <td class="text-sm">89888888787998
+                                                            <br>
+                                                            <span class="text-muted">
+                                                        Mugabo Elie
+                                                          </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
+
+
+                                                                    <li><a class="dropdown-item tr js-approve"
+                                                                           href="#">Details</a></li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <nav aria-label="..." class="float-end corp mt-2">
+                                                    <ul class="pagination corp">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link">Previous</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        </li>
+                                                        <li class="page-item active" aria-current="page">
+                                                            <a class="page-link" href="#">2</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        </li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="bg-info d-flex justify-content-center w-100">
+                <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
+            </div>
+        </footer>
+    </div>
+    <footer>
+        <div class="bg-info d-flex justify-content-center w-100">
+            <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
+        </div>
+    </footer>
+</div>
+<div class="modal   fade" id="apply" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg  modal-dialog-centered">
+        <div class="modal-content px-3 rounded-4">
+            <div class="modal-header   justify-content-between  align-items-center  ">
+                <div>
+                    <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
+                        Financial Workflow Creation Form
+                    </h1>
+                    <p class="text-xs text-muted">
+                        Financial workflow maintenance involves assigning specific rules to different types of transactions.
+                    </p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="workFlow" id="workFlow">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class=" mb-3">
+                                <label class="text-sm fw-normal form-label" for="type">
+                                    Transaction Type
+                                </label>
+                                <select class="form-select py-2  py-3 bg-secondary text-sm border-0 bg-opacity-10 js-transfer-from"
+                                        required id="type"
+                                        name="type">
+                                    <option value="">Select type</option>
+                                    <option value="fund">Fund Transfer</option>
+                                    <option value="Initiate Bill Payment">Initiate Bill Payment</option>
+                                    <option value="International Adhoc">International Adhoc</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="">
+                                <label for="request_type"
+                                       class="form-label fw-normal text-sm">Default Rule:</label>
+                                <select id="request_type" required
+                                        class="  py-3 bg-secondary text-sm border-0 bg-opacity-10  js-select-card  form-select ">
+                                    <option value="hid">Select Rule</option>
+                                    <option value="e">General</option>
+                                    <option value="e">GNR</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-6">
+                            <div class="">
+                                <label for="no_cheques"
+                                       class="form-label fw-normal text-sm">Currency:</label>
+                                <select required
+                                        id="no_cheques"
+                                        class="py-3 bg-secondary text-sm border-0 bg-opacity-10  js-select-card form-select ">
+                                    <option value="hid">Select Currency</option>
+                                    <option value="1">RWF</option>
+                                    <option value="ugx">UGX</option>
+
+                                </select>
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="AmountF"
+                                       class="form-label fw-normal text-sm">
+                                    From Amount<small class="text-muted"></small>
+                                </label>
+                                <input type="text" name="AmountF" required
+                                       id="AmountF"
+                                       class="form-control   py-3 bg-secondary text-sm border-0 bg-opacity-10"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="AmountT"
+                                       class="form-label fw-normal text-sm">
+                                    To Amount<small class="text-muted"></small>
+                                </label>
+                                <input type="text" name="AmountT" required
+                                       id="AmountT"
+                                       class="form-control   py-3 bg-secondary text-sm border-0 bg-opacity-10"/>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="border-top border-3 mb-3"></div>
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
+                                <button type="submit"
+                                        class="btn btn-primary saveBtn text-white px-lg-5">
+                                    Save
+                                </button>
+                                <button type="reset" class="btn btn-outline-primary   px-lg-5">
+                                    Clear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    //make content of popover visible
+
+    //use parameter registered in url to show alert
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get('registered');
+    const roles = urlParams.get('added');
+    const ruleAdded = urlParams.get('ruleAdded');
+    const FlowAdded = urlParams.get('FlowAdded');
+    if (myParam) {
+        $('.alert').removeClass('d-none');
+        setTimeout(() => {
+            $('.alert').addClass('d-none');
+            window.history.replaceState({}, document.title, "/pages/coorporate/" + "administration.html");
+        }, 3000)
+    } else if (roles) {
+        $('#v-pills-profile-tab').trigger('click');
+        $('.alert').removeClass('d-none');
+        setTimeout(() => {
+            $('.alert').addClass('d-none');
+            window.history.replaceState({}, document.title, "/pages/coorporate/" + "administration.html");
+        }, 3000)
+    } else if (ruleAdded) {
+        $('#v-pills-messages-tab').trigger('click');
+        $('.alert').removeClass('d-none');
+        setTimeout(() => {
+            $('.alert').addClass('d-none');
+            window.history.replaceState({}, document.title, "/pages/coorporate/" + "administration.html");
+        }, 3000)
+    }else if (FlowAdded) {
+        $('#v-pills-settings-tab').trigger('click');
+        $('.alert').removeClass('d-none');
+        setTimeout(() => {
+            $('.alert').addClass('d-none');
+            window.history.replaceState({}, document.title, "/pages/coorporate/" + "administration.html");
+        }, 3000)
+    }
+    $(function () {
+        let $createForm = $('#workFlow');
+        $createForm.validate({
+            rules: {
+                reason: {
+                    required: true,
+                    alphanumeric: true,
+                }
+            },
+        });
+
+        $createForm.on('submit', function (e) {
+            e.preventDefault();
+            if ($createForm.valid()) {
+                $('.saveBtn').html('<span class="spinner-border spinner-border-sm"></span> Loading..');
+                setTimeout(() => {
+                    window.location.href = 'administration.html?FlowAdded=true';
+                    $('.saveBtn').html('Save Rule');
+                }, 1000);
+            }
+        });
+    })
+
+
+</script>
+
+
+</body>
+</html>
