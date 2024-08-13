@@ -150,7 +150,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="initiated.html">Initiated </a></li>
                                 <li><a class="dropdown-item" href="Approvals.html">Pending</a></li>
-                                <li><a class="dropdown-item" href="Initiated.html">Initiated</a></li>
+                                <li><a class="dropdown-item" href="approved.html">Approved</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -651,7 +651,7 @@
                                                                 <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
 
 
-                                                                    <li><a class="dropdown-item tr js-details"
+                                                                    <li><a class="dropdown-item tr js-approve"
                                                                            href="#">Details</a></li>
                                                                 </ul>
                                                             </div>
@@ -911,12 +911,11 @@
                                                                     Options
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
-                                                                    <li><a class="dropdown-item tr "
+                                                                    <li><a class="dropdown-item tr js-details"
                                                                            href="#">Details</a></li>
 
 
-                                                                    <li><a class="dropdown-item tr js-approveA"
-                                                                           href="#">Approve</a></li>
+                                                                    
 
                                                                 </ul>
                                                             </div>
@@ -946,12 +945,11 @@
                                                                     Options
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
-                                                                    <li><a class="dropdown-item tr "
+                                                                    <li><a class="dropdown-item tr js-details"
                                                                            href="#">Details</a></li>
 
 
-                                                                    <li><a class="dropdown-item tr js-approveA"
-                                                                           href="#">Approve</a></li>
+                                                                    
 
                                                                 </ul>
                                                             </div>
@@ -981,12 +979,11 @@
                                                                     Options
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
-                                                                    <li><a class="dropdown-item tr "
+                                                                    <li><a class="dropdown-item tr js-details"
                                                                            href="#">Details</a></li>
 
 
-                                                                    <li><a class="dropdown-item tr js-approveA"
-                                                                           href="#">Approve</a></li>
+                                                                    
 
                                                                 </ul>
                                                             </div>
@@ -1016,13 +1013,8 @@
                                                                     Options
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
-                                                                    <li><a class="dropdown-item tr "
+                                                                    <li><a class="dropdown-item tr js-details"
                                                                            href="#">Details</a></li>
-
-
-                                                                    <li><a class="dropdown-item tr js-approveA"
-                                                                           href="#">Approve</a></li>
-
                                                                 </ul>
                                                             </div>
                                                         </td>
@@ -2010,7 +2002,7 @@
         <div class="modal-content rounded-4">
             <div class="modal-header border-bottom-0 align-items-center py-4 px-lg-5">
                 <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
-                    Transaction Details
+                    Details
                 </h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -2024,20 +2016,8 @@
                                 <div class="fw-normal text-muted text-sm">#F13450</div>
                             </div>
                             <div class="mb-2">
-                                <div class="text-primary fw-semibold">From:</div>
-                                <div class="fw-normal text-muted text-sm">49484848484848493
-                                    <br>
-                                    <span class="text-muted">
-                                                        Muyoboke Alex
-                                                          </span>
-                                </div>
-                            </div>
-                            <div class="mb-2">
-                                <div class="text-primary fw-semibold">Amount :</div>
-                                <div class="fw-normal text-primary text-sm d-flex align-items-center gap-2">
-                                    <span class="text-muted">RWF</span>
-                                    <img src="../../../assets/images/payments/rwanda_flag.png" alt="" class="w-5 h-5"/>
-                                    <span class="text-sm fw-normal">10,000</span>
+                                <div class="text-primary fw-semibold">Activity Type:</div>
+                                <div class="fw-normal text-muted text-sm">User Maintenance
                                 </div>
                             </div>
                             <div class="mb-2">
@@ -2057,26 +2037,21 @@
                                 </div>
                             </div>
                             <div class="mb-2">
-                                <div class="text-primary fw-semibold"> To</div>
-                                <div class="fw-normal text-muted text-sm">
-                                    89888888787998
-                                    <br>
-                                    <span class="text-muted">
-                                                        Mugabo Elie
-                                                          </span>
+                                <div class="text-primary fw-semibold"> Operation</div>
+                                <div class="fw-normal text-muted text-sm">Created
                                 </div>
                             </div>
                             <div class="mb-2">
-                                <div class="text-primary fw-semibold">Transaction Type:</div>
+                                <div class="text-primary fw-semibold">Requested By:</div>
                                 <div class="fw-normal text-muted text-sm">
-                                    Local Banks Transfer
+                                    Castro
                                 </div>
                             </div>
 
                             <div class="mb-2">
-                                <div class="text-primary fw-semibold">Transaction Details:</div>
+                                <div class="text-primary fw-semibold">Comment:</div>
                                 <p class="text-muted">
-                                    Launch payment
+                                    Create users to maintain the system
                                 </p>
                             </div>
 
@@ -2100,7 +2075,7 @@
                                     </div>
 
                                     <div class="timeline-content">
-                                        <span class="badge bg-success rounded-pill">verified</span>
+                                        <span class="badge bg-success rounded-pill">Initiated</span>
                                         <br>
                                         <p class="my-0">
                                             <span class="text-primary fw-semibold">Comment:</span><br>
@@ -2112,49 +2087,16 @@
                                     </div>
                                 </div>
                                 <div class="timeline-item">
-                                    <div class="timeline-badge bg-primary">
-                                        <span class="bi bi-check fw-bold text-white"></span>
+                                    <div class="timeline-badge">
+                                        <div class="bg-success"></div>
                                     </div>
-
-                                    <div class="timeline-label">
-                                        <span class="text-primary font-weight-bold text-sm">Jul 24,2024 at 11:35 AM</span>
+                                    <div class="timeline-label text-primary">
+                                       <span class="text-white font-weight-bold">
+                                           <i class="bi bi-check-circle"></i>
+                                       </span>
                                     </div>
-
-                                    <div class="timeline-content">
-
-                                        <span class="badge bg-primary rounded-pill">Verified</span>
-                                        <br>
-                                        <p>
-                                            <span class="text-primary fw-semibold">Comment:</span><br>
-
-                                            <span class="text-muted text-sm">
-                                                This transaction is valid. Please ensure all details are correct before proceeding.
-                                            </span>
-                                        </p>
-                                        <span class="text-primary fw-semibold">Done by:</span><br> Butera John
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-badge bg-success">
-                                        <span class="bi bi-check fw-bold text-white"></span>
-                                    </div>
-
-                                    <div class="timeline-label">
-                                        <span class="text-primary font-weight-bold text-sm">Jul 26,2024 at 3:35 AM</span>
-                                    </div>
-
-                                    <div class="timeline-content">
-
-                                        <span class="badge bg-success rounded-pill">Initiated</span>
-                                        <br>
-                                        <p>
-                                            <span class="text-primary fw-semibold">Comment:</span><br>
-
-                                            <span class="text-muted text-sm">
-                                                This transaction is valid. Please ensure all details are correct before proceeding.
-                                            </span>
-                                        </p>
-                                        <span class="text-primary fw-semibold">Done by:</span><br> Butera John
+                                    <div class="timeline-content bg-transparent">
+                                        <span class="text-primary fw-bold">Next Approver : Akim Aime</span>
                                     </div>
                                 </div>
                             </div>
