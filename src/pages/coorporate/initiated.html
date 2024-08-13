@@ -7,8 +7,8 @@
     <link href="../../css/custom.css" rel="stylesheet">
 </head>
 <body class="">
-<div class="d-flex min-vh-100 justify-content-between flex-column">
-    <div class="corp-bg ">
+<div class="corp-bg">
+    <div class=" d-flex min-vh-100 flex-column justify-content-between">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center py-2">
                 <div class="d-flex col-3 flex-column">
@@ -62,7 +62,7 @@
 
                 </div>
             </div>
-            <nav class="mb-4 navbar navbar-expand-lg">
+            <nav class=" navbar navbar-expand-lg">
                 <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -76,11 +76,11 @@
                                 Dashboard
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="corporate-dashboard.html">Initiator
+                                <li><a class="dropdown-item" href="../corporate-dashboard.html">Initiator
                                     Dashboard</a></li>
                                 <li><a class="dropdown-item" href="dashboard/verifier-dashboard.html">Verifier Dashboard</a></li>
                                 <li><a class="dropdown-item" href="dashboard/approver-dashboard.html">Approver Dashboard </a></li>
-                                <li><a class="dropdown-item" href="dashboard.html">Retail Dashboard</a></li>
+                                <li><a class="dropdown-item" href="../dashboard.html">Retail Dashboard</a></li>
 
                             </ul>
                         </li>
@@ -149,7 +149,8 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="initiated.html">Initiated </a></li>
-                                <li><a class="dropdown-item" href="Approvals.html">initiated</a></li>
+                                <li><a class="dropdown-item" href="Approvals.html">Pending</a></li>
+                                <li><a class="dropdown-item" href="approved.html">Approved</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -158,7 +159,7 @@
             <nav class="mx-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item "><a href="../dashboard.html">Dashboard</a></li>
-                    <li class="breadcrumb-item text-white" aria-current="page">Administration</li>
+                    <li class="breadcrumb-item text-white" aria-current="page">Approval Center</li>
                 </ol>
             </nav>
         </div>
@@ -1033,17 +1034,13 @@
             </div>
         </div>
 
-        <footer>
+        <footer class="">
             <div class="bg-info d-flex justify-content-center w-100">
                 <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
             </div>
         </footer>
     </div>
-    <footer>
-        <div class="bg-info d-flex justify-content-center w-100">
-            <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
-        </div>
-    </footer>
+
 </div>
 <div class="modal   fade" id="apply" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-lg  modal-dialog-centered">
@@ -1235,7 +1232,7 @@
                     </div>
                     <hr>
                     <div class="d-flex align-items-center js-">
-                        <h4 class="text-primary fw-semibold">Approval Log</h4>
+                        <h4 class="text-primary fw-semibold">Approval History</h4>
                         <div class="col-lg-1 justify-content-end p-2">
                             <span class="btn float-end js-hide-filter"><i class="bi bi-caret-down-fill"></i></span>
                             <span class="btn float-end d-none js-show-filter"><i class="bi bi-caret-up-fill"></i></span>
@@ -1391,7 +1388,7 @@
                     </div>
                     <hr>
                     <div class="d-flex align-items-center js-">
-                        <h4 class="text-primary fw-semibold">Approval Log</h4>
+                        <h4 class="text-primary fw-semibold">Approval History</h4>
                         <div class="col-lg-1 justify-content-end p-2">
                             <span class="btn float-end js-hide-filter"><i class="bi bi-caret-down-fill"></i></span>
                             <span class="btn float-end d-none js-show-filter"><i class="bi bi-caret-up-fill"></i></span>
@@ -1564,7 +1561,7 @@
                     </div>
                     <hr>
                     <div class="d-flex align-items-center js-">
-                        <h4 class="text-primary fw-semibold">Approval Log</h4>
+                        <h4 class="text-primary fw-semibold">Approval History</h4>
                     </div>
                     <div class="">
                         <div class="timeline timeline-justified timeline-4">
