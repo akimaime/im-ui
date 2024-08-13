@@ -12365,4 +12365,8 @@ body {
   display: block;
 }
 
+.table-responsive {
+  overflow-x: scroll !important;
+}
+
 /*# sourceMappingURL=custom.css.map */
