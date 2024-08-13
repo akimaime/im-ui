@@ -186,15 +186,15 @@
                                             data-bs-target="#v-pills-messages" type="button" role="tab"
                                             aria-controls="v-pills-messages" aria-selected="false">Bulk Transfer
                                     </button>
-<!--                                    <button class="nav-link text-start px-4" id="v-pills-bulk-tab" data-bs-toggle="pill"-->
-<!--                                            data-bs-target="#v-pills-bulk" type="button" role="tab"-->
-<!--                                            aria-controls="v-pills-messages" aria-selected="false">Bulk Payments Approval-->
-<!--                                    </button>-->
-<!--                                    <button class="nav-link text-start px-4" id="v-pills-beneficiaries-tab"-->
-<!--                                            data-bs-toggle="pill"-->
-<!--                                            data-bs-target="#v-pills-beneficiaries" type="button" role="tab"-->
-<!--                                            aria-controls="v-pills-messages" aria-selected="false">Beneficiaries-->
-<!--                                    </button>-->
+                                    <!--                                    <button class="nav-link text-start px-4" id="v-pills-bulk-tab" data-bs-toggle="pill"-->
+                                    <!--                                            data-bs-target="#v-pills-bulk" type="button" role="tab"-->
+                                    <!--                                            aria-controls="v-pills-messages" aria-selected="false">Bulk Payments Approval-->
+                                    <!--                                    </button>-->
+                                    <!--                                    <button class="nav-link text-start px-4" id="v-pills-beneficiaries-tab"-->
+                                    <!--                                            data-bs-toggle="pill"-->
+                                    <!--                                            data-bs-target="#v-pills-beneficiaries" type="button" role="tab"-->
+                                    <!--                                            aria-controls="v-pills-messages" aria-selected="false">Beneficiaries-->
+                                    <!--                                    </button>-->
                                 </div>
 
                             </div>
@@ -240,115 +240,98 @@
                                     <div class="tab-content" id="v-pills-tabContent">
                                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                              aria-labelledby="v-pills-home-tab" tabindex="0">
-                                            <form action="bulk-summary.html">
-                                                <h3 class=" text-primary mb-3 "
-                                                    for="">
-                                                    Salary Payment
-                                                </h3>
-                                                <div class="js-bulk-payments">
-                                                    <div class="alert py-1 alert-info mb-3 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
-                                                        <p class="me-2 mb-0">
-                                                            Upload Excel file which contain Transfer Informations.<br>Please Note that the  format is flexible and may be changed in the future.
-                                                        </p>
-                                                        <a href="" class="btn btn-sm btn-primary rounded-1">
-                                                            <i class="bi bi-download"></i> Download Template
-                                                        </a>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-6">
-                                                            <div class="row">
-                                                                <div class="col-11">
-                                                                    <div class="">
-                                                                        <div class="input-group ">
-                                                                            <input type="file" class="form-control" required
-                                                                                   id="formFilec">
-                                                                            <button class="btn btn-primary" type="button">
-                                                                                Upload
-                                                                                <span class="bi bi-cloud-upload"></span>
-                                                                            </button>
+                                            <h3 class=" text-primary mb-3 "
+                                                for="">
+                                                Salary Payment
+                                            </h3>
+                                            <div class="js-account-found mt-3">
+                                                <form action="payments/payment-receipt.html">
+                                                    <div class="table-responsive">
+                                                        <table class="table mb-3 table-accounts">
+                                                            <thead>
+                                                            <tr class="">
 
-                                                                        </div>
-                                                                        <label id="formFile-errorc" class="error"
-                                                                        ></label>
+                                                                <th
+                                                                        class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                                    <div
+                                                                            class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                                        <span>Initiator</span>
                                                                     </div>
-                                                                </div>
-                                                                <div class="col-1">
-                                                               <span class="mt-2 d-inline-block"
-                                                                     data-bs-toggle="tooltip" data-bs-placement="right"
-                                                                     data-bs-custom-class="custom-tooltip"
-                                                                     data-bs-title="Upload file and click upload button.">
-                                                                <i class="bi bi-info-circle"></i>
-                                                            </span>
-                                                                </div>
-                                                            </div>
-                                                            <div class=" mb-3">
-                                                                <label
-                                                                        class="text-primary fw-normal form-label">
-                                                                    Make payment from:
-                                                                </label>
-                                                                <select class="form-select py-2  text-primary  js-transfer-from"
-                                                                        required id="im_bulk_account" name="from_account">
-                                                                    <option value="">Select Account</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="js-conversion p-0" >
-                                                                <div
-                                                                        class="d-flex  flex-column flex-md-row gap-3  ">
-                                                                    <div>
-                                                                        <div class="fw-normal text-primary fs-6">
-                                                                            Total Conversion:
-                                                                        </div>
-                                                                        <div
-                                                                                class="d-flex flex-shrink-0 align-items-center gap-2">
-                                                                    <span
-                                                                            class="text-muted fw-semibold small js-converted-currency">USD</span>
-                                                                            <span
-                                                                                    class="fs-13px fw-semibold small text-primary js-converted-amount">2763.38</span>
-                                                                        </div>
+
+                                                                </th>
+                                                                <th
+                                                                        class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                                    <div
+                                                                            class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                        <span>Intitiator ID</span>
                                                                     </div>
-                                                                    <div>
-                                                                        <div class="fw-normal text-primary fs-6">
-                                                                            Conversion Rate:
-                                                                        </div>
-                                                                        <div class="text-primary">
-                                                                            (<span
-                                                                                class="text-info small js-conversion-rate">0.000092</span>)
-                                                                        </div>
+                                                                </th>
+
+
+                                                                <th
+                                                                        class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                                    <div
+                                                                            class=" d-flex align-items-center justify-content-between ">
+                                                                        <span>Amount</span>
                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                            <div style="display: none"
-                                                                 class=" justify-content-between align-items-center mb-3 js-account-balance">
-                                                                <div class="d-flex flex-column">
-                                                                    <div class=" text-muted  small ">Account Balance</div>
-                                                                    <span class="text-primary  small js-balance">*** *** ***
-                                                                ***</span>
-                                                                </div>
-                                                                <button type="button"
-                                                                        class=" btn btn-outline-primary border  js-toggle-balance">
-                                                                    Show Balance
+                                                                </th>
+                                                                <th
+                                                                        class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                                    <div
+                                                                            class=" d-flex align-items-center justify-content-between ">
+                                                                        <span>Type of Transaction</span>
+                                                                    </div>
+                                                                </th>
+
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>Butera John</td>
+                                                                <td>#F13450</td>
+                                                                <td>19,000</td>
+                                                                <td>Salary Payment</td>
+                                                            <tr>
+                                                                <td>Jean Paul Byiringiro</td>
+                                                                <td>#F13450</td>
+                                                                <td>19,000</td>
+                                                                <td>Salary Payment</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Butera John</td>
+                                                                <td>#F13463</td>
+                                                                <td>400</td>
+                                                                <td>Salary Payment</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>John Peter Musoni</td>
+                                                                <td>#F13450</td>
+                                                                <td>19,000</td>
+                                                                <td>Salary Payment</td>
+                                                            </tr>
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="border-top border-2 my-3"></div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 offset-lg-6">
+                                                            <div
+                                                                    class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
+                                                                <button type="submit"
+                                                                        class="btn btn-info text-white px-lg-5">
+                                                                    Continue
+                                                                </button>
+                                                                <button type="reset"
+                                                                        class="btn btn-outline-primary   px-lg-5">
+                                                                    Clear
                                                                 </button>
                                                             </div>
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <div class="border-top border-2 mt-5 mb-3"></div>
-                                                <div class="row">
-                                                    <div class="col-lg-6 offset-lg-6">
-                                                        <div
-                                                                class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
-                                                            <button type="submit" class="btn btn-primary text-white px-lg-5">
-                                                                Continue
-                                                            </button>
-                                                            <button type="reset" class="btn btn-outline-primary   px-lg-5">
-                                                                Clear
-                                                            </button>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </form>
+                                                </form>
+                                            </div>
+
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                              aria-labelledby="v-pills-profile-tab" tabindex="0">
