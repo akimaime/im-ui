@@ -8,105 +8,151 @@
 </head>
 <body class="">
 <div class="d-flex min-vh-100 justify-content-between flex-column">
-    <div class="bg-color-height mb-4">
+    <div class="corp-bg mb-4">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-start py-4">
-                <div>
-                    <div class="d-flex col-lg-2 p-2 flex-column bg-white  rounded-1">
-                        <img src="../../assets/b_logo.png" class="img-fluid" alt="logo">
-                    </div>
-                    <span class="text-white  fw-bold fs-2">Retail</span>
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <div class="d-flex col-3 flex-column">
+                    <img src="../../assets/n_logo.png" class="img-fluid" alt="logo">
+                    <span class="text-white px-4 fs-4">Corporate</span>
+
                 </div>
-                <div class="d-flex col-lg-3 align-items-center justify-content-end gap-2">
-                    <h5 class="text-white ">Welcome ,Jon Doe</h5>
-                    <div class="d-flex rounded-circle bg-dark bg-opacity-50 p-4 justify-content-center align-items-center"
-                         style="height: 16px;width: 16px">
-                        <i class="bi bi-person fs-5 text-white"></i>
+                <div class="d-flex align-items-center gap-2">
+                    <h5 class="text-white my-0 ">Welcome to , Paper Print LTD</h5>
+                    <div class="position-relative">
+                        <div class="d-flex rounded-circle  bg-white bg-opacity-10 p-4 justify-content-center overflow-hidden align-items-center"
+                             style="height: 26px;width: 26px">
+                            <i class="bi bi-bell text-white fs-3"></i>
+                            <div class="badge bg-danger rounded-circle position-absolute"
+                                 style="top: -5px;right: -10px">5
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="d-flex align-items-end flex-column">
+                                    <span class="text-sm fw-light">John Doe</span>
+                                    <small><i class="bi bi-hammer me-2"></i>Initiator</small>
+                                  </span>
+                            <img src="../../assets/prfl.png" alt="profile" class="object-fit-cover">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
+
+                            <!--                            <li class="my-2">-->
+                            <!--                                <a class="fw-normal dropdown-item" href="#">-->
+                            <!--                                    <i class="bi bi-gear"></i>-->
+                            <!--                                    Account Settings-->
+                            <!--                                </a>-->
+                            <!--                            </li>-->
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="#">
+                                    <i class="bi bi-gear"></i>
+                                    Account Settings
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="/">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
-            <nav class="mb-4 navbar bg-info mb-1 bg-opacity-50 navbar-expand-lg">
-                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class=" navbar navbar-expand-lg">
+                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <i class="navbar-toggler-icon text-white"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" href="dashboard.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
                                 Dashboard
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../corporate-dashboard.html">Initiator
+                                    Dashboard</a></li>
+                                <li><a class="dropdown-item" href="dashboard/verifier-dashboard.html">Verifier
+                                    Dashboard</a></li>
+                                <li><a class="dropdown-item" href="dashboard/approver-dashboard.html">Approver
+                                    Dashboard </a></li>
+                                <li><a class="dropdown-item" href="../dashboard.html">Retail Dashboard</a></li>
+
+                            </ul>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="corporate-dashboard.html"
+                            <a class="nav-link " href="../dashboard.html"
                                type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">Corporate Dashboard
+                               aria-selected="true">Retail Dashboard
                             </a>
                         </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
                                 Transfers
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="transfers/own-account.html">Transfer to your own Accounts </a></li>
-                                <li><a class="dropdown-item" href="transfers/internal.html">Transfer from I&M to I&M </a></li>
-                                <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to Local Banks </a></li>
-                                <li><a class="dropdown-item" href="transfers/international.html">Transfer to International </a></li>
+                                <li><a class="dropdown-item" href="transfers/own-account.html">Transfer to your own
+                                    Accounts </a></li>
+                                <li><a class="dropdown-item" href="transfers/internal.html">Transfer from I&M to
+                                    I&M </a></li>
+                                <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to Local
+                                    Banks </a></li>
+                                <li><a class="dropdown-item" href="transfers/international.html">Transfer to
+                                    International </a></li>
                                 <li><a class="dropdown-item" href="transfers/momo.html">Transfer to Mobile </a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="BillPayments" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
                                 Payments
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="payments/rra.html">RRA Payment </a></li>
-                                <li><a class="dropdown-item" href="payments/irembo.html">Irembo Payment </a></li>
-                                <li><a class="dropdown-item" href="payments/rssb.html">ISHEMA-RSSB Payment </a></li>
-                                <li><a class="dropdown-item" href="payments/airtime.html">Airtime Top Up</a></li>
-                                <li><a class="dropdown-item" href="payments/utilities.html">Utilities Payment </a></li>
-                            </ul>
+                            </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="card-management.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Manage Cards
+                            <button class="nav-link" id="Cards" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cards
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
+                                Requests
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="beneficiaries.html" class="nav-link active" id="beneficiaries">Beneficiaries
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Mails" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mails
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="administration.html" class="nav-link" id="administration">Administration
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Service Requests
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Approval Center
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="requests/chequebook.html">Chequebook Requests </a></li>
-                                <li><a class="dropdown-item" href="requests/certificates.html">Certificates Requests </a></li>
-                                <li><a class="dropdown-item" href="requests/paper-statement.html">Paper Statement Requests</a></li>
-                                <li><a class="dropdown-item" href="requests/overdraft.html">Bankers cheques/overdraft Demand Request </a></li>
+                                <li><a class="dropdown-item" href="initiated.html">Initiated </a></li>
+                                <li><a class="dropdown-item" href="Approvals.html">Pending</a></li>
+                                <li><a class="dropdown-item" href="approved.html">Approved</a></li>
                             </ul>
-                        </li>
-
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" href="beneficiaries.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Beneficiaries
-                            </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="LoanSimulator.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Loans
-                            </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="mail.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Mails
-                            </a>
                         </li>
                     </ul>
                 </div>
@@ -114,47 +160,146 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 ">
+                <div class="col-lg-4  mb-2">
+                    <div class="card   rounded-4 mb-3 ">
+                        <div class="card-body justify-content-center d-flex flex-column align-items-center ">
+                            <div class="container mb-2">
+                                <div class="row mb-2">
+                                    <div class="col-lg-3  col-6">
+                                        <a href="../transfers/own-account.html" class="d-flex text-decoration-none flex-column justify-content-center align-items-center ">
+                                            <div class="border d-flex align-items-center rounded justify-content-center "
+                                                 style="height: 46px;width: 48px">
+                                                <i class=" fs-4  text-primary">
+                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 9H14.5" stroke="#20408F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M6 17H8" stroke="#20408F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M10.5 17H14.5" stroke="#20408F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M22 14.53V16.61C22 20.12 21.11 21 17.56 21H6.44C2.89 21 2 20.12 2 16.61V8.39C2 4.88 2.89 4 6.44 4H14.5" stroke="#20408F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M20 10V4L22 6" stroke="#20408F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M20 4L18 6" stroke="#20408F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+
+                                                </i>
+                                            </div>
+                                            <span class="text-primary text-sm text-center fw-bold">Own account</span>
+                                            <span class="text-xs text-info fw-semibold">transfer</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3  col-6">
+                                        <a href="../transfers/local-bank.html" class="d-flex text-decoration-none flex-column justify-content-center align-items-center">
+                                            <div class="border d-flex align-items-center rounded justify-content-center "
+                                                 style="height: 46px;width: 48px">
+                                                <i class=" fs-4  text-primary">
+                                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.3335 8.5H14.8335" stroke="#20408F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M6.3335 16.5H8.3335" stroke="#20408F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M10.8335 16.5H14.8335" stroke="#20408F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M22.3335 14.03V16.11C22.3335 19.62 21.4435 20.5 17.8935 20.5H6.7735C3.2235 20.5 2.3335 19.62 2.3335 16.11V7.89C2.3335 4.38 3.2235 3.5 6.7735 3.5H14.8335" stroke="#20408F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M20.3335 3.5V9.5L22.3335 7.5" stroke="#20408F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M20.3335 9.5L18.3335 7.5" stroke="#20408F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+
+
+                                                </i>
+                                            </div>
+                                            <span class=" text-primary text-sm fw-bold">Local</span>
+                                            <span class="text-xs text-info fw-semibold">Transfer</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3  col-6">
+                                        <a href="#" class="d-flex text-decoration-none flex-column justify-content-center align-items-center">
+                                            <div class="border d-flex align-items-center rounded justify-content-center "
+                                                 style="height: 46px;width: 48px">
+                                                <i class=" fs-4  text-primary">
+                                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.39626 19.7C8.21626 18.82 9.46626 18.89 10.1863 19.85L11.1963 21.2C12.0063 22.27 13.3163 22.27 14.1263 21.2L15.1363 19.85C15.8563 18.89 17.1063 18.82 17.9263 19.7C19.7063 21.6 21.1563 20.97 21.1563 18.31V7.04C21.1663 3.01 20.2263 2 16.4463 2H8.88626C5.10626 2 4.16626 3.01 4.16626 7.04V18.3C4.16626 20.97 5.62626 21.59 7.39626 19.7Z" stroke="#20408F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M8.66626 7H16.6663" stroke="#20408F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M9.66626 11H15.6663" stroke="#20408F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+
+
+                                                </i>
+                                            </div>
+                                            <span class=" text-primary text-sm fw-bold">File Upload</span>
+                                            <span class="text-xs text-info fw-semibold"></span>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3  col-6">
+                                        <a href="../approved.html" class="d-flex text-decoration-none flex-column justify-content-center align-items-center">
+                                            <div class="border d-flex align-items-center rounded justify-content-center "
+                                                 style="height: 46px;width: 48px">
+                                                <i class=" fs-4  text-primary">
+                                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.39626 19.7C8.21626 18.82 9.46626 18.89 10.1863 19.85L11.1963 21.2C12.0063 22.27 13.3163 22.27 14.1263 21.2L15.1363 19.85C15.8563 18.89 17.1063 18.82 17.9263 19.7C19.7063 21.6 21.1563 20.97 21.1563 18.31V7.04C21.1663 3.01 20.2263 2 16.4463 2H8.88626C5.10626 2 4.16626 3.01 4.16626 7.04V18.3C4.16626 20.97 5.62626 21.59 7.39626 19.7Z" stroke="#20408F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M8.66626 7H16.6663" stroke="#20408F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M9.66626 11H15.6663" stroke="#20408F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+
+
+                                                </i>
+                                            </div>
+                                            <span class=" text-primary text-sm fw-bold">Completed</span>
+                                            <span class="text-xs text-info fw-semibold">transactions</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../../../assets/images/ads.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../../assets/images/ads.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../../assets/images/ads.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-8 ">
                     <div class="card rounded-4 border-0 h-100">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-lg-3 bg-light p-4 rounded">
-                                    <nav>
-                                        <div class="nav  d-flex flex-column   nav-tabs" id="nav-tab" role="tablist">
-                                            <button class="nav-link text-start px-2 mb-5 active" id="nav-home-tab"
-                                                    data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
-                                                    role="tab" aria-controls="nav-home" aria-selected="true">I&M to I&M
+                                <nav>
+                                    <div class="nav   mb-3   nav-tabs" id="nav-tab" role="tablist">
+                                        <button class="nav-link text-start px-4 mb-5 active" id="nav-home-tab"
+                                                data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+                                                role="tab" aria-controls="nav-home" aria-selected="true">I&M to I&M
 
-                                            </button>
-                                            <button class="nav-link text-start px-2 mb-5 " id="nav-external-tab"
-                                                    data-bs-toggle="tab" data-bs-target="#nav-external" type="button"
-                                                    role="tab" aria-controls="nav-external" aria-selected="true">Local
-                                                banks
+                                        </button>
+                                        <button class="nav-link text-start px-4 mb-5 " id="nav-external-tab"
+                                                data-bs-toggle="tab" data-bs-target="#nav-external" type="button"
+                                                role="tab" aria-controls="nav-external" aria-selected="true">Local
+                                            banks
 
-                                            </button>
-                                            <button class="nav-link text-start px-2 mb-5 " id="nav-international-tab"
-                                                    data-bs-toggle="tab" data-bs-target="#nav-international"
-                                                    type="button"
-                                                    role="tab" aria-controls="nav-international" aria-selected="true">
-                                                International banks
+                                        </button>
+                                        <button class="nav-link text-start px-4 mb-5 " id="nav-international-tab"
+                                                data-bs-toggle="tab" data-bs-target="#nav-international"
+                                                type="button"
+                                                role="tab" aria-controls="nav-international" aria-selected="true">
+                                            International banks
 
-                                            </button>
-                                            <button class="nav-link text-start px-2  mb-5" id="nav-profile-momo"
-                                                    data-bs-toggle="tab"
-                                                    data-bs-target="#nav-momo" type="button" role="tab"
-                                                    aria-controls="nav-profile" aria-selected="false">Mobile Money
+                                        </button>
+                                        <button class="nav-link text-start px-4  mb-5" id="nav-profile-momo"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#nav-momo" type="button" role="tab"
+                                                aria-controls="nav-profile" aria-selected="false">Mobile Money
 
-                                            </button>
-                                            <button class="nav-link text-start px-2  mb-5" id="nav-profile-tab"
-                                                    data-bs-toggle="tab"
-                                                    data-bs-target="#nav-profile" type="button" role="tab"
-                                                    aria-controls="nav-profile" aria-selected="false">Utilities
+                                        </button>
+                                        <button class="nav-link text-start px-4  mb-5" id="nav-profile-tab"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#nav-profile" type="button" role="tab"
+                                                aria-controls="nav-profile" aria-selected="false">Utilities
 
-                                            </button>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div class="col-lg-9">
+                                        </button>
+                                    </div>
+                                </nav>
+                                <div class="col-lg-12">
                                     <div class="tab-content " id="nav-tabContent">
                                         <div class="tab-pane fade show active " id="nav-home" role="tabpanel"
                                              aria-labelledby="nav-home-tab" tabindex="0">
@@ -162,7 +307,7 @@
                                                 <h5 class="mx-3">I&M to I&M Transfer Beneficiaries</h5>
                                                 <form action="" id="addImForm">
                                                     <button type="submit"
-                                                            class="btn btn-info text-white rounded-pill px-4 py-1">
+                                                            class="btn btn-primary text-white rounded-pill px-4 py-1">
                                                         <i class="bi bi-plus-circle me-2"></i>Add Beneficiary
                                                     </button>
                                                 </form>
@@ -172,7 +317,7 @@
                                                     <table class="table my-2 table-accounts  ">
                                                         <thead>
                                                         <tr class="">
-                                                            <th class="text-info text-sm border-0  border-3 border-bottom  border-info cursor-pointer">
+                                                            <th class="text-primary text-sm border-0  border-3 border-bottom  border-primary cursor-pointer">
                                                                 <div class=" d-flex align-items-center justify-content-between border-end pe-2">
                                                                     <span>Beneficiary Name</span>
                                                                     <div class="d-flex flex-column text-sm">
@@ -182,7 +327,7 @@
                                                                 </div>
 
                                                             </th>
-                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                            <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer ">
                                                                 <div class="d-flex align-items-center justify-content-between border-end pe-2">
                                                                     <span>Account Number</span>
                                                                     <div class="d-flex flex-column fs-9px">
@@ -193,7 +338,7 @@
                                                             </th>
 
 
-                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer">
+                                                            <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer">
                                                                 <div class=" d-flex align-items-center justify-content-between ">
                                                                     <span>Email</span>
                                                                     <div class="d-flex flex-column fs-9px">
@@ -202,7 +347,7 @@
                                                                     </div>
                                                                 </div>
                                                             </th>
-                                                            <th class="text-info  border-0  text-sm  border-3 border-bottom  border-info">
+                                                            <th class="text-primary  border-0  text-sm  border-3 border-bottom  border-primary">
                                                                 Actions
                                                             </th>
                                                         </tr>
@@ -215,7 +360,7 @@
 
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -236,7 +381,7 @@
                                                             <td class="small">jeanpaul@gmail.com</td>
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -258,7 +403,7 @@
 
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -280,7 +425,7 @@
 
                                                             <td class="fs-12px">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -301,7 +446,7 @@
                                                             <td class="small">jeanpaul@gmail.com</td>
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -344,7 +489,7 @@
                                             <div class="d-flex justify-content-between">
                                                 <h5 class="mx-3">Local banks Transfer Beneficiaries</h5>
                                                 <form action="" id="addLocalForm">
-                                                <button class="btn btn-info text-white rounded-pill px-4 py-1"><i
+                                                <button class="btn btn-primary text-white rounded-pill px-4 py-1"><i
                                                         class="bi bi-plus-circle me-2"></i>Add Beneficiary
                                                 </button>
                                                 </form>
@@ -354,7 +499,7 @@
                                                     <table class="table my-2 table-accounts">
                                                         <thead>
                                                         <tr class="">
-                                                            <th class="text-info text-sm border-0  border-3 border-bottom  border-info cursor-pointer">
+                                                            <th class="text-primary text-sm border-0  border-3 border-bottom  border-primary cursor-pointer">
                                                                 <div class=" d-flex align-items-center justify-content-between border-end pe-2">
                                                                     <span>Beneficiary Name</span>
                                                                     <div class="d-flex flex-column text-sm">
@@ -364,7 +509,7 @@
                                                                 </div>
 
                                                             </th>
-                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                            <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer ">
                                                                 <div class="d-flex align-items-center justify-content-between border-end pe-2">
                                                                     <span>Account Number</span>
                                                                     <div class="d-flex flex-column fs-9px">
@@ -373,7 +518,7 @@
                                                                     </div>
                                                                 </div>
                                                             </th>
-                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                            <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer ">
                                                                 <div class="d-flex align-items-center justify-content-between border-end pe-2">
                                                                     <span>Bank Name</span>
                                                                     <div class="d-flex flex-column fs-9px">
@@ -384,7 +529,7 @@
                                                             </th>
 
 
-                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer">
+                                                            <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer">
                                                                 <div class=" d-flex align-items-center justify-content-between ">
                                                                     <span>Email</span>
                                                                     <div class="d-flex flex-column fs-9px">
@@ -393,7 +538,7 @@
                                                                     </div>
                                                                 </div>
                                                             </th>
-                                                            <th class="text-info  border-0  text-sm  border-3 border-bottom  border-info">
+                                                            <th class="text-primary  border-0  text-sm  border-3 border-bottom  border-primary">
                                                                 Actions
                                                             </th>
                                                         </tr>
@@ -407,7 +552,7 @@
 
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -429,7 +574,7 @@
                                                             <td class="small">jeanpaul@gmail.com</td>
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -452,7 +597,7 @@
 
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -475,7 +620,7 @@
 
                                                             <td class="fs-12px">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -497,7 +642,7 @@
                                                             <td class="small">jeanpaul@gmail.com</td>
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -540,7 +685,7 @@
                                             <div class="d-flex justify-content-between">
                                                 <h5 class="mx-3">International banks Transfer Beneficiaries</h5>
                                                 <form action="" id="addInternationalForm">
-                                                <button class="btn btn-info text-white rounded-pill px-4 py-1"><i
+                                                <button class="btn btn-primary text-white rounded-pill px-4 py-1"><i
                                                         class="bi bi-plus-circle me-2"></i>Add Beneficiary
                                                 </button>
                                                 </form>
@@ -550,7 +695,7 @@
                                                     <table class="table my-2 table-accounts  ">
                                                         <thead>
                                                         <tr class="">
-                                                            <th class="text-info text-sm border-0  border-3 border-bottom  border-info cursor-pointer">
+                                                            <th class="text-primary text-sm border-0  border-3 border-bottom  border-primary cursor-pointer">
                                                                 <div class=" d-flex align-items-center justify-content-between border-end pe-2">
                                                                     <span>Beneficiary Name</span>
                                                                     <div class="d-flex flex-column text-sm">
@@ -560,7 +705,7 @@
                                                                 </div>
 
                                                             </th>
-                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                            <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer ">
                                                                 <div class="d-flex align-items-center justify-content-between border-end pe-2">
                                                                     <span>Account Number</span>
                                                                     <div class="d-flex flex-column fs-9px">
@@ -569,7 +714,7 @@
                                                                     </div>
                                                                 </div>
                                                             </th>
-                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                            <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer ">
                                                                 <div class="d-flex align-items-center justify-content-between border-end pe-2">
                                                                     <span>Country</span>
                                                                     <div class="d-flex flex-column fs-9px">
@@ -578,7 +723,7 @@
                                                                     </div>
                                                                 </div>
                                                             </th>
-                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                            <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer ">
                                                                 <div class="d-flex align-items-center justify-content-between border-end pe-2">
                                                                     <span>Bank Name</span>
                                                                     <div class="d-flex flex-column fs-9px">
@@ -589,7 +734,7 @@
                                                             </th>
 
 
-                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer">
+                                                            <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer">
                                                                 <div class=" d-flex align-items-center justify-content-between ">
                                                                     <span>Email</span>
                                                                     <div class="d-flex flex-column fs-9px">
@@ -598,7 +743,7 @@
                                                                     </div>
                                                                 </div>
                                                             </th>
-                                                            <th class="text-info  border-0  text-sm  border-3 border-bottom  border-info">
+                                                            <th class="text-primary  border-0  text-sm  border-3 border-bottom  border-primary">
                                                                 Actions
                                                             </th>
                                                         </tr>
@@ -613,7 +758,7 @@
 
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -636,7 +781,7 @@
                                                             <td class="small">jeanpaul@gmail.com</td>
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -660,7 +805,7 @@
 
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -684,7 +829,7 @@
 
                                                             <td class="fs-12px">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -707,7 +852,7 @@
                                                             <td class="small">jeanpaul@gmail.com</td>
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -752,7 +897,7 @@
                                             <div class="d-flex justify-content-between">
                                                 <h5 class="mx-3">Mobile Money Beneficiaries</h5>
                                                 <form action="" id="addAirtimeForm">
-                                                    <button class="btn btn-info text-white rounded-pill px-4 py-1"><i
+                                                    <button class="btn btn-primary text-white rounded-pill px-4 py-1"><i
                                                             class="bi bi-plus-circle me-2"></i>Add Beneficiary
                                                     </button>
                                                 </form>
@@ -762,7 +907,7 @@
                                                     <table class="table my-2 table-accounts  ">
                                                         <thead>
                                                         <tr class="">
-                                                            <th class="text-info text-sm border-0  border-3 border-bottom  border-info cursor-pointer">
+                                                            <th class="text-primary text-sm border-0  border-3 border-bottom  border-primary cursor-pointer">
                                                                 <div class=" d-flex align-items-center justify-content-between border-end pe-2">
                                                                     <span>Beneficiary Name</span>
                                                                     <div class="d-flex flex-column text-sm">
@@ -772,7 +917,7 @@
                                                                 </div>
 
                                                             </th>
-                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                            <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer ">
                                                                 <div class="d-flex align-items-center justify-content-between border-end pe-2">
                                                                     <span>Phone Number</span>
                                                                     <div class="d-flex flex-column fs-9px">
@@ -783,7 +928,7 @@
                                                             </th>
 
 
-                                                            <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer">
+                                                            <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer">
                                                                 <div class=" d-flex align-items-center justify-content-between ">
                                                                     <span>Email</span>
                                                                     <div class="d-flex flex-column fs-9px">
@@ -792,7 +937,7 @@
                                                                     </div>
                                                                 </div>
                                                             </th>
-                                                            <th class="text-info  border-0  text-sm  border-3 border-bottom  border-info">
+                                                            <th class="text-primary  border-0  text-sm  border-3 border-bottom  border-primary">
                                                                 Actions
                                                             </th>
                                                         </tr>
@@ -805,7 +950,7 @@
 
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -826,7 +971,7 @@
                                                             <td class="small">jeanpaul@gmail.com</td>
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -848,7 +993,7 @@
 
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -870,7 +1015,7 @@
 
                                                             <td class="fs-12px">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -891,7 +1036,7 @@
                                                             <td class="small">jeanpaul@gmail.com</td>
                                                             <td class="small">
                                                                 <div class="dropdown">
-                                                                    <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
                                                                             type="button" data-bs-toggle="dropdown">
                                                                         Options
                                                                     </button>
@@ -935,97 +1080,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-2">
-                    <div class="card h-100 rounded-4  border-0">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-6 quick-actions border-bottom border-end">
-                                    <a href="#"
-                                       class="mb-1 py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
-                                        <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
-                                             style="height: 54px;width: 54px">
-                                            <img src="../assets/images/login/RRA.svg" class="h-75" alt="rra">
-                                        </div>
-                                        <span class="small text-primary fw-bold">Pay to</span>
-                                        <span class="small text-info fw-semibold">RRA</span>
-                                    </a>
-                                </div>
-                                <div class="col-6 quick-actions border-bottom">
-                                    <a href="#"
-                                       class=" mb-1 py-1 text-decoration-none d-flex justify-content-center align-items-center flex-column">
-                                        <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
-                                             style="height: 54px;width: 54px">
-                                            <img src="../assets/images/dashboard/irembo.svg" class="h-75" alt="rra">
-                                        </div>
-                                        <span class="small text-primary fw-bold">Pay to</span>
-                                        <span class="small text-info fw-semibold">Irembo</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row mb-4">
-                                <div class="col-6 py-2 quick-actions  border-end">
-                                    <a href="#"
-                                       class=" py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
-                                        <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
-                                             style="height: 54px;width: 54px">
-                                            <i class="bi bi-meta"></i>
-                                        </div>
-                                        <span class="small text-primary fw-bold">Pay </span>
-                                        <span class="small text-info fw-semibold">Electricity</span>
-                                    </a>
-                                </div>
-                                <div class="col-6 quick-actions py-2 ">
-                                    <a href="#"
-                                       class="d-flex py-1 text-decoration-none justify-content-center align-items-center flex-column">
-                                        <div class="bg-white-subtle   d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
-                                             style="height: 54px;width: 54px;">
-                                            <i class="bi bi-droplet"></i>
-
-                                        </div>
-                                        <span class="small text-primary fw-bold">Pay </span>
-                                        <span class=" text-info small fw-semibold">Water</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                    <span class=" bg-white bg-opacity-25  rounded-circle d-flex justify-content-center align-items-center"
-                                          style="height: 30px;width: 30px" aria-hidden="true">
-                                        <i class="bi bi-chevron-left fs-5"></i>
-                                    </span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                </div>
-                                <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                <span class=" bg-white bg-opacity-25  rounded-circle d-flex justify-content-center align-items-center"
-                                      style="height: 30px;width: 30px" aria-hidden="true">
-                                        <i class="bi bi-chevron-right fs-5"></i>
-                                    </span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
     <footer>
-        <div class="bg-info d-flex justify-content-center w-100">
+        <div class="bg-primary d-flex justify-content-center w-100">
             <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
         </div>
     </footer>
@@ -1034,7 +1093,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content px-4 rounded-4">
             <div class="modal-header justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
-                <h1 class="modal-title fs-4 text-info fw-semibold mb-0">
+                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
                     Add Beneficiary
                 </h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1051,7 +1110,7 @@
                                    id="Acc_number" placeholder="Enter Account" required
                                    name="biller_number"/>
                             <button type="button"
-                                    class="btn btn-info text-white btn-sm  py-2 px-3 js-check-balance">
+                                    class="btn btn-primary text-white btn-sm  py-2 px-3 js-check-balance">
                                 Verify
                             </button>
                         </div>
@@ -1076,7 +1135,7 @@
                                     Clear
                                 </button>
                                 <button type="submit"
-                                        class="btn  btn-info text-white px-3 ">
+                                        class="btn  btn-primary text-white px-3 ">
                                     Save
                                 </button>
                             </div>
@@ -1095,7 +1154,7 @@
     <div class="modal-dialog  modal-dialog-centered">
         <div class="modal-content px-4 rounded-4">
             <div class="modal-header justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
-                <h1 class="modal-title fs-4 text-info fw-semibold mb-0">
+                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
                     Add Beneficiary
                 </h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1119,7 +1178,7 @@
                                        id="biller_number" placeholder="Enter Account Number" required
                                        name="biller_number"/>
                                 <button type="button"
-                                        class="btn btn-info text-white btn-sm py-2   px-3 js-check-balance">
+                                        class="btn btn-primary text-white btn-sm py-2   px-3 js-check-balance">
                                     Verify
                                 </button>
                             </div>
@@ -1152,7 +1211,7 @@
                                     Clear
                                 </button>
                                 <button type="submit"
-                                        class="btn  btn-info text-white px-3 ">
+                                        class="btn  btn-primary text-white px-3 ">
                                     Save
                                 </button>
                             </div>
@@ -1172,7 +1231,7 @@
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content px-4 rounded-4">
             <div class="modal-header justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
-                <h1 class="modal-title fs-4 text-info fw-semibold mb-0">
+                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
                     Add Beneficiary
                 </h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1193,7 +1252,7 @@
                                        id="Account_number" placeholder="Enter Account Number" required
                                        name="biller_number"/>
                                 <button type="button"
-                                        class="btn btn-info text-white btn-sm  py-2 px-3 js-check-balance">
+                                        class="btn btn-primary text-white btn-sm  py-2 px-3 js-check-balance">
                                     Verify
                                 </button>
                             </div>
@@ -1244,7 +1303,7 @@
                                     Clear
                                 </button>
                                 <button type="submit"
-                                        class="btn  btn-info text-white px-3 ">
+                                        class="btn  btn-primary text-white px-3 ">
                                     Save
                                 </button>
                             </div>
@@ -1264,7 +1323,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content px-4 rounded-4">
             <div class="modal-header justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
-                <h1 class="modal-title fs-4 text-info fw-semibold mb-0">
+                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
                     Add Beneficiary
                 </h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1283,7 +1342,7 @@
                                    id="phone_Number" placeholder="Enter Phone Number" required
                                    name="biller_number"/>
                             <button type="button"
-                                    class="btn btn-info btn-sm  py-2 px-3 js-check-balance">
+                                    class="btn btn-primary btn-sm  py-2 px-3 js-check-balance">
                                 Verify
                             </button>
                         </div>
@@ -1314,7 +1373,7 @@
                                     Clear
                                 </button>
                                 <button type="submit"
-                                        class="btn  btn-info text-white px-3 ">
+                                        class="btn  btn-primary text-white px-3 ">
                                     Save
                                 </button>
                             </div>
@@ -1373,7 +1432,7 @@
                             <div
                                     class="mb-3 d-flex gap-2 align-items-center  justify-content-end">
                                 <button type="submit"
-                                        class="btn  btn-info text-white px-3 ">
+                                        class="btn  btn-primary text-white px-3 ">
                                     Save
                                 </button>
                                 <button type="reset"
@@ -1436,7 +1495,7 @@
                             <div
                                     class="mb-3 d-flex gap-2 align-items-center  justify-content-end">
                                 <button type="submit"
-                                        class="btn  btn-info text-white px-3 ">
+                                        class="btn  btn-primary text-white px-3 ">
                                     Save
                                 </button>
                                 <button type="reset"
@@ -1499,7 +1558,7 @@
                             <div
                                     class="mb-3 d-flex gap-2 align-items-center  justify-content-end">
                                 <button type="submit"
-                                        class="btn  btn-info text-white px-3 ">
+                                        class="btn  btn-primary text-white px-3 ">
                                     Save
                                 </button>
                                 <button type="reset"
@@ -1528,9 +1587,9 @@
         // $(function () {
         //     $('.js-account').on('click', function () {
         //         $('.js-account').find('td').removeClass('bg-primary text-white')
-        //             .find('.dropdown-toggle').removeClass('btn-outline-info').addClass('btn-outline-primary');
+        //             .find('.dropdown-toggle').removeClass('btn-outline-primary').addClass('btn-outline-primary');
         //         $(this).find('td').addClass('bg-primary text-white')
-        //             .find('.dropdown-toggle').addClass('btn-outline-info').removeClass('btn-outline-primary');
+        //             .find('.dropdown-toggle').addClass('btn-outline-primary').removeClass('btn-outline-primary');
         //
         //         let $spinner = $('#spinner');
         //         $spinner.show();
