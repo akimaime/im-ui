@@ -108,23 +108,22 @@
                                 <li><a class="dropdown-item" href="transfers/momo.html">Transfer to Mobile </a></li>
                             </ul>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="BillPayments" data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Payments
-                            </button>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="payments/rra.html">RRA Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/irembo.html">Irembo Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/rssb.html">ISHEMA-RSSB Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/airtime.html">Airtime Top Up</a></li>
+                                <li><a class="dropdown-item" href="payments/utilities.html">Utilities Payment </a></li>
+                            </ul>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Cards" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cards
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
-                                Requests
-                            </button>
+                            <a href="bulk-payments.html" class="nav-link" id="bulk">
+                                Bulk Payments
+                            </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="Beneficiaries" data-bs-toggle="pill"
@@ -186,15 +185,16 @@
                                             data-bs-target="#v-pills-messages" type="button" role="tab"
                                             aria-controls="v-pills-messages" aria-selected="false">Administration
                                     </button>
-                                    <button class="nav-link text-start px-4" id="v-pills-bulk-tab" data-bs-toggle="pill"
-                                            data-bs-target="#v-pills-bulk" type="button" role="tab"
-                                            aria-controls="v-pills-messages" aria-selected="false">Bulk Payments Approval
-                                    </button>
                                     <button class="nav-link text-start px-4" id="v-pills-beneficiaries-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#v-pills-beneficiaries" type="button" role="tab"
                                             aria-controls="v-pills-messages" aria-selected="false">Beneficiaries
                                     </button>
+                                    <button class="nav-link text-start px-4" id="v-pills-bulk-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-bulk" type="button" role="tab"
+                                            aria-controls="v-pills-messages" aria-selected="false">Bulk Payments Approval
+                                    </button>
+
                                 </div>
 
                             </div>
@@ -335,12 +335,8 @@
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">
                                                             TRN-0001
-                                                            <br>
-                                                            <span class="text-muted">
-                                                        casual payments
-                                                          </span>
                                                         </td>
-                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">  Rwf 19,000 </td>
                                                         <td class="text-sm">Airtime Top up</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-success rounded-pill  ">Initiated</span>
@@ -382,7 +378,7 @@
                                                         Home Electricity
                                                           </span>
                                                         </td>
-                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">  Rwf 19,000 </td>
                                                         <td class="text-sm">Electricity</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-success rounded-pill ">initiated</span>
@@ -426,7 +422,7 @@
                                                         RRA Payment
                                                           </span>
                                                         </td>
-                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">  Rwf 19,000 </td>
                                                         <td class="text-sm">RRA Payment</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-success rounded-pill  ">initiated</span>
@@ -468,7 +464,7 @@
                                                             <span class="text-muted">
                                                         Airtime
                                                           </span></td>
-                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">  Rwf 19,000 </td>
                                                         <td class="text-sm">Airtime Top up</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-success rounded-pill  ">initiated</span>
@@ -620,12 +616,8 @@
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">
                                                             TRN-0001
-                                                            <br>
-                                                            <span class="text-muted">
-                                                        casual payments
-                                                          </span>
                                                         </td>
-                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">  Rwf 19,000 </td>
                                                         <td class="text-sm">Internal Transfer</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-success rounded-pill  ">Initiated</span>
@@ -660,12 +652,9 @@
                                                     <tr class="cursor-pointer js-account py-5">
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">TRN-02301
-                                                            <br>
-                                                            <span class="text-muted">
-                                                        casual payments
-                                                          </span>
+
                                                         </td>
-                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">  Rwf 19,000 </td>
                                                         <td class="text-sm">Local banks</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-success rounded-pill ">initiated</span>
@@ -702,13 +691,10 @@
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
                                                         <td class="text-sm">2023-01-01</td>
-                                                        <td class="text-sm">#F13450
-                                                            <br>
-                                                            <span class="text-muted">
-                                                        School fees
-                                                          </span>
+                                                        <td class="text-sm">
+                                                            #F13450
                                                         </td>
-                                                        <td class="text-sm">19,000</td>
+                                                        <td class="text-sm">  Rwf 19,000 </td>
                                                         <td class="text-sm">Transfer to Mobile</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-success rounded-pill  ">initiated</span>
@@ -746,11 +732,8 @@
                                                     <tr class="cursor-pointer js-account py-5">
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">#F13450
-                                                            <br>
-                                                            <span class="text-muted">
-                                                        Simba super Market
-                                                          </span></td>
-                                                        <td class="text-sm">19,000</td>
+                                                            </td>
+                                                        <td class="text-sm">  Rwf 19,000 </td>
                                                         <td class="text-sm">External Transfer</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-success rounded-pill  ">initiated</span>
@@ -2493,11 +2476,14 @@
                         <span id="secondsRemain" class="position-absolute text-white tw-top-2 tw-right-2"></span>
                     </div>
                 </div>
-                <span class="text-dark  display-5 fw-bold ">
-                        OTP
+                <span class="text-dark fs-3 text-center fw-bold ">
+<!--                    (OTP)<br>-->
+                        One Time Password
+
+
                 </span>
-                <span class="text-muted  mb-1  ">
-                        Please check your 4 digits sent to *********6723
+                <span class="text-muted  mb-1  text-center">
+                        Please check your 4 digits sent to *********6723 and d********@gmail.com
                 </span>
 
             </div>

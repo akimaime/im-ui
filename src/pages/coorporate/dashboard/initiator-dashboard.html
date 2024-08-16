@@ -11,26 +11,58 @@
     <div class="corp-bg mb-4">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center py-2">
-                <div class="d-flex flex-column">
-                    <img src="../../../assets/logo_info.png" alt="logo">
+                <div class="d-flex col-3 flex-column">
+                    <img src="../../../assets/n_logo.png" class="img-fluid" alt="logo">
                     <span class="text-white px-4 fs-4">Corporate</span>
 
                 </div>
-                <h5 class="text-white ">Welcome back , Mugabo Jean Bosco</h5>
                 <div class="d-flex align-items-center gap-2">
-                    <div class="d-flex rounded-circle bg-white bg-opacity-10 p-4 justify-content-center overflow-hidden align-items-center"
-                         style="height: 26px;width: 26px">
-                        <i class="bi bi-bell text-white fs-3"></i>
+                    <h5 class="text-white my-0 ">Welcome to , Paper Print LTD</h5>
+                    <div class="position-relative">
+                        <div class="d-flex rounded-circle  bg-white bg-opacity-10 p-4 justify-content-center overflow-hidden align-items-center"
+                             style="height: 26px;width: 26px">
+                            <i class="bi bi-bell text-white fs-3"></i>
+                            <div class="badge bg-danger rounded-circle position-absolute" style="top: -5px;right: -10px">5</div>
+                        </div>
                     </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
 
-                    <div class="d-flex rounded-circle bg-dark bg-opacity-50 p-4 justify-content-center overflow-hidden align-items-center"
-                         style="height: 26px;width: 26px">
-                        <img src="../../../assets/prfl.png" alt="profile" class="object-fit-cover">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="d-flex align-items-end flex-column">
+                                    <span class="text-sm fw-light">John Doe</span>
+                                    <small><i class="bi bi-hammer me-2"></i>Initiator</small>
+                                  </span>
+                            <img src="../../../assets/prfl.png" alt="profile" class="object-fit-cover">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
+
+                            <!--                            <li class="my-2">-->
+                            <!--                                <a class="fw-normal dropdown-item" href="#">-->
+                            <!--                                    <i class="bi bi-gear"></i>-->
+                            <!--                                    Account Settings-->
+                            <!--                                </a>-->
+                            <!--                            </li>-->
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="#">
+                                    <i class="bi bi-gear"></i>
+                                    Account Settings
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="/">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
             </div>
-            <nav class="mb-4 navbar navbar-expand-lg">
+            <nav class=" navbar navbar-expand-lg">
                 <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -38,55 +70,85 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" href="corporate-dashboard.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">Dashboard
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Dashboard
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../corporate-dashboard.html">Initiator
+                                    Dashboard</a></li>
+                                <li><a class="dropdown-item" href="verifier-dashboard.html">Verifier Dashboard</a></li>
+                                <li><a class="dropdown-item" href="approver-dashboard.html">Approver Dashboard </a></li>
+                                <li><a class="dropdown-item" href="../../dashboard.html">Retail Dashboard</a></li>
+
+                            </ul>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="dashboard.html"
+                            <a class="nav-link " href="../../dashboard.html"
                                type="button" role="tab" aria-controls="pills-home"
                                aria-selected="true">Retail Dashboard
                             </a>
                         </li>
 
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-profile" type="button" role="tab"
-                                    aria-controls="pills-profile"
-                                    aria-selected="false">Transfers
-                            </button>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Transfers
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../transfers/own-account.html">Transfer to your own
+                                    Accounts </a></li>
+                                <li><a class="dropdown-item" href="../transfers/internal.html">Transfer from I&M to
+                                    I&M </a></li>
+                                <li><a class="dropdown-item" href="../transfers/local-bank.html">Transfer to Local
+                                    Banks </a></li>
+                                <li><a class="dropdown-item" href="../transfers/international.html">Transfer to
+                                    International </a></li>
+                                <li><a class="dropdown-item" href="../transfers/momo.html">Transfer to Mobile </a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="BillPayments" data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Payments
-                            </button>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../payments/rra.html">RRA Payment </a></li>
+                                <li><a class="dropdown-item" href="../payments/irembo.html">Irembo Payment </a></li>
+                                <li><a class="dropdown-item" href="../payments/rssb.html">ISHEMA-RSSB Payment </a></li>
+                                <li><a class="dropdown-item" href="../payments/airtime.html">Airtime Top Up</a></li>
+                                <li><a class="dropdown-item" href="../payments/utilities.html">Utilities Payment </a></li>
+                            </ul>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Cards" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cards
-                            </button>
+                            <a href="../bulk-payments.html" class="nav-link" id="bulk">
+                                Bulk Payments
+                            </a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
-                                Requests
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Beneficiaries" data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                            <a href="../beneficiaries.html" class="nav-link" id="beneficiary">
                                 Beneficiaries
-                            </button>
+                            </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="Mails" data-bs-toggle="pill" data-bs-target="#pills-contact"
                                     type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mails
                             </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="../administration.html" class="nav-link" id="administration">Administration
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Approval Center
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../initiated.html">Initiated </a></li>
+                                <li><a class="dropdown-item" href="../Approvals.html">Pending</a></li>
+                                <li><a class="dropdown-item" href="../approved.html">Approved</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -95,7 +157,7 @@
         <div class="container mb-4">
             <div class="row ">
                 <div class="col-lg-4  mb-2">
-                    <div class="card h-100  rounded-4  ">
+                    <div class="card h-100  rounded-4  ">Re
                         <div class="d-flex card-header border-0 bg-transparent justify-content-between mb-3 align-items-center">
                             <span class="fs-5 fw-bold">Accounts</span>
                             <button class="btn border-0 rounded-4"><i class="bi bi-three-dots text-muted"></i></button>
@@ -331,7 +393,7 @@
                                         <ul class="list-group-flush">
                                             <li class="list-group-item">
                                                 <div class="table-responsive">
-                                                    <table class="table table-borderless">
+                                                    <table class="table">
                                                         <thead>
                                                         <tr class="">
                                                             <th></th>
@@ -518,17 +580,65 @@
                             <ul class="list-group-flush">
                                 <li class="list-group-item">
                                     <div class="table-responsive">
-                                        <table class="table table-borderless">
+                                        <table class="table">
                                             <thead>
-                                            <tr class="">
-                                                <th></th>
-                                                <th scope="col">Date</th>
-                                                <th scope="col">Description</th>
-                                                <th scope="col">Amount</th>
-                                                <th scope="col">Type</th>
-                                                <th scope="col">Reason</th>
-                                            </tr>
-                                            </thead>
+                            <tr class="">
+                                <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                    <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                        <span></span>
+                                        <div class="d-flex flex-column text-sm">
+                                            <i class="bi bi-chevron-up"></i>
+                                            <i class="bi bi-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                    <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                        <span>Date</span>
+                                        <div class="d-flex flex-column text-sm">
+                                            <i class="bi bi-chevron-up"></i>
+                                            <i class="bi bi-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                    <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                        <span>Description</span>
+                                        <div class="d-flex flex-column text-sm">
+                                            <i class="bi bi-chevron-up"></i>
+                                            <i class="bi bi-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                    <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                        <span>Amount</span>
+                                        <div class="d-flex flex-column text-sm">
+                                            <i class="bi bi-chevron-up"></i>
+                                            <i class="bi bi-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                    <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                        <span>Type</span>
+                                        <div class="d-flex flex-column text-sm">
+                                            <i class="bi bi-chevron-up"></i>
+                                            <i class="bi bi-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                    <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                        <span>Reason</span>
+                                        <div class="d-flex flex-column text-sm">
+                                            <i class="bi bi-chevron-up"></i>
+                                            <i class="bi bi-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                            </thead>
                                             <tbody>
                                             <tr class="">
                                                 <td>
