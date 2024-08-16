@@ -130,10 +130,16 @@
                                 Beneficiaries
                             </a>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Mails" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mails
-                            </button>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Service Requests
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../requests/chequebook.html">Chequebook Requests </a></li>
+                                <li><a class="dropdown-item" href="../requests/certificates.html">Certificates Requests </a></li>
+                                <li><a class="dropdown-item" href="../requests/paper-statement.html">Paper Statement Requests</a></li>
+                                <li><a class="dropdown-item" href="../requests/overdraft.html">Bankers cheques/overdraft Demand Request </a></li>
+                            </ul>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a href="../administration.html" class="nav-link" id="administration">Administration
@@ -664,12 +670,19 @@
                             <h4 class="">
                                 Recent Transactions <i class="bi bi-info-circle fs-6"></i>
                             </h4>
-                            <button class="btn btn-outline-primary rounded-pill btn-sm py-0">View All</button>
+                            <a href="../full_statement.html" class="btn btn-outline-primary rounded-pill btn-sm py-0">View All</a>
                         </div>
+                        <button class=" btn btn-primary  rounded " type="button" aria-expanded="false" aria-controls="collapseWidthExample" id="hideTransactionsBtn">
+                            <i class="bi bi-eye-slash"></i>
+                            Hide Transactions
+                        </button>
                         <div class="d-flex justify-content-center ">
-                            <div class=" mt-5 bg-primary p-5 bg-opacity-50 text-white rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" id="showTransactionsBtn">Show Transactions</div>
+                            <div class=" mt-5 bg-primary p-5 d-none  text-white rounded fs-3" type="button" aria-expanded="false" aria-controls="collapseWidthExample" id="showTransactionsBtn">
+                                <i class="bi bi-eye"></i>
+                                Show Transactions
+                            </div>
                         </div>
-                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                        <div class="" id="collapseWidthExample">
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
@@ -1638,8 +1651,15 @@
 </script>
 <script>
     $(document).ready(function () {
+        $('#hideTransactionsBtn').on('click', function () {
+            $('#hideTransactionsBtn').addClass('d-none');
+            $('#showTransactionsBtn').removeClass('d-none');
+            $('#collapseWidthExample').addClass('d-none');
+        });
         $('#showTransactionsBtn').on('click', function () {
             $('#showTransactionsBtn').addClass('d-none');
+            $('#collapseWidthExample').removeClass('d-none');
+            $('#hideTransactionsBtn').removeClass('d-none');
         });
     });
 </script>
