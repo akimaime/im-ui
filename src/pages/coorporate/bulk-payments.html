@@ -352,10 +352,17 @@
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                              aria-labelledby="v-pills-profile-tab" tabindex="0">
+
+                                            <form action="bulk-summary.html">
                                             <div class="js-bulk-payments">
+                                                <h3 class=" text-primary mb-3 "
+                                                    for="">
+                                                    Mobile Money Bulk Payment
+                                                </h3>
                                                 <div class="alert py-1 alert-info mb-3 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
                                                     <p class="me-2 mb-0">
-                                                        Upload Excel file which contain Transfer Informations.<br>Please Note that the  format is flexible and may be changed in the future.
+                                                        Upload Excel file which contain phone numbers and amount.<br>
+                                                        Please Note that the format is flexible and may be changed in the future.
                                                     </p>
                                                     <a href="" class="btn btn-sm btn-primary rounded-1">
                                                         <i class="bi bi-download"></i> Download Template
@@ -455,240 +462,120 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            </form>
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                              aria-labelledby="v-pills-messages-tab" tabindex="0">
-                                            <h5 class="mb-4">
-                                                Administration initiated Approvals
-                                            </h5>
-                                            <div class="table-responsive overflow-visible">
-                                                <table class="table my-2 table-accounts ">
-                                                    <thead>
-                                                    <tr>
-                                                        <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
-                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
-                                                                <span>Requested on</span>
-                                                                <div class="d-flex flex-column text-sm">
-                                                                    <i class="bi bi-chevron-up"></i>
-                                                                    <i class="bi bi-chevron-down"></i>
-                                                                </div>
-                                                            </div>
+                                            <form action="bulk-summary.html">
+                                                <div class="js-bulk-payments">
+                                                    <h3 class=" text-primary mb-3 "
+                                                        for="">
+                                                        Transfer Bulk <Payment></Payment>
+                                                    </h3>
+                                                    <div class="alert py-1 alert-info mb-3 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                                                        <p class="me-2 mb-0">
+                                                            Upload Excel file which contain Transfer Informations.<br>
+                                                            Please Note that the format is flexible and may be changed in the future.
+                                                        </p>
+                                                        <a href="" class="btn btn-sm btn-primary rounded-1">
+                                                            <i class="bi bi-download"></i> Download Template
+                                                        </a>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <div class="row">
+                                                                <div class="col-11">
+                                                                    <div class="">
+                                                                        <div class="input-group ">
+                                                                            <input type="file" class="form-control" required
+                                                                                   id="formFilec">
+                                                                            <button class="btn btn-primary" type="button">
+                                                                                Upload
+                                                                                <span class="bi bi-cloud-upload"></span>
+                                                                            </button>
 
-
-                                                        </th>
-                                                        <th class="text-primary  border-top-0   border-0 border-3 border-bottom  border-primary cursor-pointer ">
-                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
-                                                                <span>Reference Id</span>
-                                                                <div class="d-flex flex-column text-sm">
-                                                                    <i class="bi bi-chevron-up "></i>
-                                                                    <i class="bi bi-chevron-down"></i>
+                                                                        </div>
+                                                                        <label id="formFile-errorc" class="error"
+                                                                        ></label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-1">
+                                                               <span class="mt-2 d-inline-block"
+                                                                     data-bs-toggle="tooltip" data-bs-placement="right"
+                                                                     data-bs-custom-class="custom-tooltip"
+                                                                     data-bs-title="Upload file and click upload button.">
+                                                                <i class="bi bi-info-circle"></i>
+                                                            </span>
                                                                 </div>
                                                             </div>
-                                                        </th>
-                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
-                                                            <div class=" d-flex align-items-center justify-content-between ">
-                                                                <span>Activity Type</span>
-                                                                <div class="d-flex flex-column text-sm">
-                                                                    <i class="bi bi-chevron-up "></i>
-                                                                    <i class="bi bi-chevron-down"></i>
+                                                            <div class=" mb-3">
+                                                                <label
+                                                                        class="text-primary fw-normal form-label">
+                                                                    Make payment from:
+                                                                </label>
+                                                                <select class="form-select py-2  text-primary  js-transfer-from"
+                                                                        required id="im_bulk_account" name="from_account">
+                                                                    <option value="">Select Account</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="js-conversion p-0" >
+                                                                <div
+                                                                        class="d-flex  flex-column flex-md-row gap-3  ">
+                                                                    <div>
+                                                                        <div class="fw-normal text-primary fs-6">
+                                                                            Total Conversion:
+                                                                        </div>
+                                                                        <div
+                                                                                class="d-flex flex-shrink-0 align-items-center gap-2">
+                                                                    <span
+                                                                            class="text-muted fw-semibold small js-converted-currency">USD</span>
+                                                                            <span
+                                                                                    class="fs-13px fw-semibold small text-primary js-converted-amount">2763.38</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="fw-normal text-primary fs-6">
+                                                                            Conversion Rate:
+                                                                        </div>
+                                                                        <div class="text-primary">
+                                                                            (<span
+                                                                                class="text-info small js-conversion-rate">0.000092</span>)
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-
-                                                        </th>
-                                                        <th class="text-primary  border-top-0 border-0   border-3 border-bottom  border-primary cursor-pointer ">
-                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
-                                                                <span> Status</span>
-                                                                <div class="d-flex flex-column text-sm">
-                                                                    <i class="bi bi-chevron-up "></i>
-                                                                    <i class="bi bi-chevron-down"></i>
+                                                            <div style="display: none"
+                                                                 class=" justify-content-between align-items-center mb-3 js-account-balance">
+                                                                <div class="d-flex flex-column">
+                                                                    <div class=" text-muted  small ">Account Balance</div>
+                                                                    <span class="text-primary  small js-balance">*** *** ***
+                                                                ***</span>
                                                                 </div>
-                                                            </div>
-                                                        </th>
-                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
-                                                            <div class=" d-flex align-items-center justify-content-between ">
-                                                                <span>Operation</span>
-                                                                <div class="d-flex flex-column text-sm">
-                                                                    <i class="bi bi-chevron-up "></i>
-                                                                    <i class="bi bi-chevron-down"></i>
-                                                                </div>
-                                                            </div>
-
-                                                        </th>
-                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
-                                                            <div class=" d-flex align-items-center justify-content-between ">
-                                                                <span> Requested By </span>
-                                                                <div class="d-flex flex-column text-sm">
-                                                                    <i class="bi bi-chevron-up "></i>
-                                                                    <i class="bi bi-chevron-down"></i>
-                                                                </div>
-                                                            </div>
-
-                                                        </th>
-                                                        <th class="text-primary  border-top-0  border-0  border-3 border-bottom  border-primary cursor-pointer">
-                                                            <div class=" d-flex align-items-center justify-content-between ">
-                                                                <span>Action</span>
-                                                                <div class="d-flex flex-column text-sm">
-                                                                    <i class="bi bi-chevron-up "></i>
-                                                                    <i class="bi bi-chevron-down"></i>
-                                                                </div>
-                                                            </div>
-
-                                                        </th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody id="admin">
-                                                    <tr class="cursor-pointer js-account tr1 py-5">
-                                                        <td class="text-sm">2023-01-01</td>
-                                                        <td class="text-sm">
-                                                            TRN-0001
-                                                        </td>
-                                                        <td class="text-sm">User Maintenance</td>
-                                                        <td class="text-sm"><span
-                                                                class="badge bg-success rounded-pill  ">initiated</span>
-                                                        </td>
-                                                        <td class="text-sm">
-                                                            Created
-                                                        </td>
-                                                        <td class="text-sm">
-                                                            <span class="text-muted">
-                                                        Muyoboke Alex
-                                                          </span></td>
-                                                        <td>
-                                                            <div class="dropdown">
-                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
-                                                                        type="button" data-bs-toggle="dropdown"
-                                                                        aria-expanded="false">
-                                                                    Options
+                                                                <button type="button"
+                                                                        class=" btn btn-outline-primary border  js-toggle-balance">
+                                                                    Show Balance
                                                                 </button>
-                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
-                                                                    <li><a class="dropdown-item tr js-details"
-                                                                           href="#">Details</a></li>
-
-
-
-
-                                                                </ul>
                                                             </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="cursor-pointer js-account tr1 py-5">
-                                                        <td class="text-sm">2023-01-01</td>
-                                                        <td class="text-sm">
-                                                            TRN-0001
-                                                        </td>
-                                                        <td class="text-sm">User Maintenance</td>
-                                                        <td class="text-sm"><span
-                                                                class="badge bg-success rounded-pill  ">initiated</span>
-                                                        </td>
-                                                        <td class="text-sm">
-                                                            Modified
-                                                        </td>
-                                                        <td class="text-sm">
-                                                            <span class="text-muted">
-                                                        Muyoboke Alex
-                                                          </span></td>
-                                                        <td>
-                                                            <div class="dropdown">
-                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
-                                                                        type="button" data-bs-toggle="dropdown"
-                                                                        aria-expanded="false">
-                                                                    Options
-                                                                </button>
-                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
-                                                                    <li><a class="dropdown-item tr js-details"
-                                                                           href="#">Details</a></li>
 
+                                                        </div>
 
-
-
-                                                                </ul>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="cursor-pointer js-account tr1 py-5">
-                                                        <td class="text-sm">2023-01-01</td>
-                                                        <td class="text-sm">
-                                                            TRN-0001
-                                                        </td>
-                                                        <td class="text-sm">Rule Maintenance</td>
-                                                        <td class="text-sm"><span
-                                                                class="badge bg-success rounded-pill  ">initiated</span>
-                                                        </td>
-                                                        <td class="text-sm">
-                                                            Created
-                                                        </td>
-                                                        <td class="text-sm">
-                                                            <span class="text-muted">
-                                                        Muyoboke Alex
-                                                          </span></td>
-                                                        <td>
-                                                            <div class="dropdown">
-                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
-                                                                        type="button" data-bs-toggle="dropdown"
-                                                                        aria-expanded="false">
-                                                                    Options
-                                                                </button>
-                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
-                                                                    <li><a class="dropdown-item tr js-details"
-                                                                           href="#">Details</a></li>
-
-
-
-
-                                                                </ul>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="cursor-pointer js-account tr1 py-5">
-                                                        <td class="text-sm">2023-01-01</td>
-                                                        <td class="text-sm">
-                                                            TRN-0001
-                                                        </td>
-                                                        <td class="text-sm">Rule Maintenance</td>
-                                                        <td class="text-sm"><span
-                                                                class="badge bg-success rounded-pill  ">initiated</span>
-                                                        </td>
-                                                        <td class="text-sm">
-                                                            Modified
-                                                        </td>
-                                                        <td class="text-sm">
-                                                            <span class="text-muted">
-                                                        Muyoboke Alex
-                                                          </span></td>
-                                                        <td>
-                                                            <div class="dropdown">
-                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
-                                                                        type="button" data-bs-toggle="dropdown"
-                                                                        aria-expanded="false">
-                                                                    Options
-                                                                </button>
-                                                                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
-                                                                    <li><a class="dropdown-item tr js-details"
-                                                                           href="#">Details</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                                <nav aria-label="..." class="float-end corp mt-2">
-                                                    <ul class="pagination corp">
-                                                        <li class="page-item disabled">
-                                                            <a class="page-link">Previous</a>
-                                                        </li>
-                                                        <li class="page-item"><a class="page-link" href="#">1</a>
-                                                        </li>
-                                                        <li class="page-item active" aria-current="page">
-                                                            <a class="page-link" href="#">2</a>
-                                                        </li>
-                                                        <li class="page-item"><a class="page-link" href="#">3</a>
-                                                        </li>
-                                                        <li class="page-item">
-                                                            <a class="page-link" href="#">Next</a>
-                                                        </li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
+                                                    </div>
+                                                </div>
+                                                <div class="border-top border-2 mt-5 mb-3"></div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 offset-lg-6">
+                                                        <div
+                                                                class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
+                                                            <button type="submit" class="btn btn-primary text-white px-lg-5">
+                                                                Continue
+                                                            </button>
+                                                            <button type="reset" class="btn btn-outline-primary   px-lg-5">
+                                                                Clear
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-bulk" role="tabpanel"
                                              aria-labelledby="v-pills-bulk-tab" tabindex="0">
@@ -2143,11 +2030,14 @@
                         <span id="secondsRemain" class="position-absolute text-white tw-top-2 tw-right-2"></span>
                     </div>
                 </div>
-                <span class="text-dark  display-5 fw-bold ">
-                        OTP
+                <span class="text-dark fs-3 text-center fw-bold ">
+<!--                    (OTP)<br>-->
+                        One Time Password
+
+
                 </span>
-                <span class="text-muted  mb-1  ">
-                        Please check your 4 digits sent to *********6723
+                <span class="text-muted  mb-1  text-center">
+                        Please check your 4 digits sent to *********6723 and d********@gmail.com
                 </span>
 
             </div>

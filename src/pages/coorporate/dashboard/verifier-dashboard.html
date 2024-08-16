@@ -16,21 +16,53 @@
                     <span class="text-white px-4 fs-4">Corporate</span>
 
                 </div>
-                <h5 class="text-white ">Welcome back , Mugabo Jean Bosco</h5>
                 <div class="d-flex align-items-center gap-2">
-                    <div class="d-flex rounded-circle bg-white bg-opacity-10 p-4 justify-content-center overflow-hidden align-items-center"
-                         style="height: 26px;width: 26px">
-                        <i class="bi bi-bell text-white fs-3"></i>
+                    <h5 class="text-white my-0 ">Welcome to , Paper Print LTD</h5>
+                    <div class="position-relative">
+                        <div class="d-flex rounded-circle  bg-white bg-opacity-10 p-4 justify-content-center overflow-hidden align-items-center"
+                             style="height: 26px;width: 26px">
+                            <i class="bi bi-bell text-white fs-3"></i>
+                            <div class="badge bg-danger rounded-circle position-absolute" style="top: -5px;right: -10px">5</div>
+                        </div>
                     </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
 
-                    <div class="d-flex rounded-circle bg-dark bg-opacity-50 p-4 justify-content-center overflow-hidden align-items-center"
-                         style="height: 26px;width: 26px">
-                        <img src="../../../assets/prfl.png" alt="profile" class="object-fit-cover">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="d-flex align-items-end flex-column">
+                                    <span class="text-sm fw-light">John Doe</span>
+                                    <small><i class="bi bi-hammer me-2"></i>Initiator</small>
+                                  </span>
+                            <img src="../../../assets/prfl.png" alt="profile" class="object-fit-cover">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
+
+                            <!--                            <li class="my-2">-->
+                            <!--                                <a class="fw-normal dropdown-item" href="#">-->
+                            <!--                                    <i class="bi bi-gear"></i>-->
+                            <!--                                    Account Settings-->
+                            <!--                                </a>-->
+                            <!--                            </li>-->
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="#">
+                                    <i class="bi bi-gear"></i>
+                                    Account Settings
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="/">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
             </div>
-            <nav class="mb-4 navbar navbar-expand-lg">
+            <nav class=" navbar navbar-expand-lg">
                 <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -76,35 +108,47 @@
                                 <li><a class="dropdown-item" href="../transfers/momo.html">Transfer to Mobile </a></li>
                             </ul>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="BillPayments" data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Payments
-                            </button>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../payments/rra.html">RRA Payment </a></li>
+                                <li><a class="dropdown-item" href="../payments/irembo.html">Irembo Payment </a></li>
+                                <li><a class="dropdown-item" href="../payments/rssb.html">ISHEMA-RSSB Payment </a></li>
+                                <li><a class="dropdown-item" href="../payments/airtime.html">Airtime Top Up</a></li>
+                                <li><a class="dropdown-item" href="../payments/utilities.html">Utilities Payment </a></li>
+                            </ul>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Cards" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cards
-                            </button>
+                            <a href="../bulk-payments.html" class="nav-link" id="bulk">
+                                Bulk Payments
+                            </a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
-                                Requests
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Beneficiaries" data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                            <a href="../beneficiaries.html" class="nav-link" id="beneficiary">
                                 Beneficiaries
-                            </button>
+                            </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="Mails" data-bs-toggle="pill" data-bs-target="#pills-contact"
                                     type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mails
                             </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="../administration.html" class="nav-link" id="administration">Administration
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Approval Center
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../initiated.html">Initiated </a></li>
+                                <li><a class="dropdown-item" href="../Approvals.html">Pending</a></li>
+                                <li><a class="dropdown-item" href="../approved.html">Approved</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -342,9 +386,12 @@
                         <div class=" col-lg-12 mb-2">
                             <div class=" card h-100 rounded-4 ">
                                 <div class="card-body">
-                                    <h5 class="mb-4">
-                                        Pending with me <i class="bi bi-info-circle fs-6"></i>
-                                    </h5>
+                                    <div class="d-flex mb-4 justify-content-between align-items-center">
+                                        <h4 class="">
+                                            Pending with Me <i class="bi bi-info-circle fs-6"></i>
+                                        </h4>
+                                        <button class="btn btn-outline-primary rounded-pill btn-sm py-0">View All</button>
+                                    </div>
                                     <div class="table-responsive overflow-visible">
                                         <table class="table my-2 table-accounts ">
                                             <thead>
@@ -436,12 +483,8 @@
                                                 <td class="text-sm">2023-01-01</td>
                                                 <td class="text-sm">
                                                     TRN-0001
-                                                    <br>
-                                                    <span class="text-muted">
-                                                        casual payments
-                                                          </span>
                                                 </td>
-                                                <td class="text-sm">19,000</td>
+                                                <td class="text-sm">  Rwf 19,000 </td>
                                                 <td class="text-sm">Internal Transfer</td>
                                                 <td class="text-sm"><span
                                                         class="badge bg-primary rounded-pill  ">initiated</span>
@@ -478,12 +521,8 @@
                                             <tr class="cursor-pointer js-account py-5">
                                                 <td class="text-sm">2023-01-01</td>
                                                 <td class="text-sm">TRN-02301
-                                                    <br>
-                                                    <span class="text-muted">
-                                                        casual payments
-                                                          </span>
                                                 </td>
-                                                <td class="text-sm">19,000</td>
+                                                <td class="text-sm">  Rwf 19,000 </td>
                                                 <td class="text-sm">RRA Payment</td>
                                                 <td class="text-sm"><span
                                                         class="badge bg-primary rounded-pill  ">initiated</span>
@@ -519,13 +558,10 @@
                                             </tr>
                                             <tr class="cursor-pointer js-account py-5">
                                                 <td class="text-sm">2023-01-01</td>
-                                                <td class="text-sm">#F13450
-                                                    <br>
-                                                    <span class="text-muted">
-                                                        School fees
-                                                          </span>
+                                                <td class="text-sm">
+                                                    #F13450
                                                 </td>
-                                                <td class="text-sm">19,000</td>
+                                                <td class="text-sm">  Rwf 19,000 </td>
                                                 <td class="text-sm">Transfer to Mobile</td>
                                                 <td class="text-sm"><span
                                                         class="badge bg-primary rounded-pill  ">initiated</span>
@@ -564,10 +600,10 @@
                                                 <td class="text-sm">#F13450
                                                     <br>
                                                     <span class="text-muted">
-                                                        Simba super Market
+
                                                     </span>
                                                 </td>
-                                                <td class="text-sm">19,000</td>
+                                                <td class="text-sm">  Rwf 19,000 </td>
                                                 <td class="text-sm">Airtime Top up</td>
                                                 <td class="text-sm"><span
                                                         class="badge bg-primary rounded-pill  ">initiated</span>
@@ -631,110 +667,154 @@
                 </div>
                 <div class="col-lg-8">
                     <div class=" card card-body h-100 shadow-sm rounded-4 border-0">
-                        <h4 class="mb-4">
-                            Recent Transactions <i class="bi bi-info-circle fs-6"></i>
-                        </h4>
-                        <div class="list-group">
-                            <ul class="list-group-flush">
-                                <li class="list-group-item">
-                                    <div class="table-responsive">
-                                        <table class="table table-borderless">
-                                            <thead>
-                                            <tr class="">
-                                                <th></th>
-                                                <th scope="col">Date</th>
-                                                <th scope="col">Description</th>
-                                                <th scope="col">Amount</th>
-                                                <th scope="col">Type</th>
-                                                <th scope="col">Reason</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr class="">
-                                                <td>
-                                                    <div class="d-flex  align-items-start">
-                                                        <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
-                                                             style="height: 44px;width: 44px">
-                                                            <img src="../../../assets/images/dashboard/my_accounts_money.svg"
-                                                                 class="h-50" alt="rra">
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center     pt-4">
-                                                    12/12/2021
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center pt-4">
-                                                    Transfer to I&M
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center pt-4">
-                                                    Rwf 12,000
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center pt-4">
-                                                    Credited
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center pt-4">
-                                                    Salary
-                                                </td>
+                        <div class="d-flex mb-4 justify-content-between align-items-center">
+                            <h4 class="">
+                                Recent Transactions <i class="bi bi-info-circle fs-6"></i>
+                            </h4>
+                            <button class="btn btn-outline-primary rounded-pill btn-sm py-0">View All</button>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr class="">
+                                    <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                        <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                            <span></span>
+                                            <div class="d-flex flex-column text-sm">
+                                                <i class="bi bi-chevron-up"></i>
+                                                <i class="bi bi-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                        <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                            <span>Date</span>
+                                            <div class="d-flex flex-column text-sm">
+                                                <i class="bi bi-chevron-up"></i>
+                                                <i class="bi bi-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                        <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                            <span>Description</span>
+                                            <div class="d-flex flex-column text-sm">
+                                                <i class="bi bi-chevron-up"></i>
+                                                <i class="bi bi-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                        <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                            <span>Amount</span>
+                                            <div class="d-flex flex-column text-sm">
+                                                <i class="bi bi-chevron-up"></i>
+                                                <i class="bi bi-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                        <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                            <span>Type</span>
+                                            <div class="d-flex flex-column text-sm">
+                                                <i class="bi bi-chevron-up"></i>
+                                                <i class="bi bi-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                        <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                            <span>Reason</span>
+                                            <div class="d-flex flex-column text-sm">
+                                                <i class="bi bi-chevron-up"></i>
+                                                <i class="bi bi-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="">
+                                    <td>
+                                        <div class="d-flex  align-items-start">
+                                            <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                 style="height: 44px;width: 44px">
+                                                <img src="../../../assets/images/dashboard/my_accounts_money.svg"
+                                                     class="h-50" alt="rra">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center     pt-4">
+                                        12/12/2021
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                        Transfer to I&M
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                        Rwf 12,000
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                        Credited
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                        Salary
+                                    </td>
 
-                                            </tr>
-                                            <tr class="">
-                                                <td>
-                                                    <div class="d-flex  align-items-start">
-                                                        <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
-                                                             style="height: 44px;width: 44px">
-                                                            <img src="../../../assets/images/dashboard/my_accounts_money.svg"
-                                                                 class="h-50" alt="rra">
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center     pt-4">
-                                                    12/12/2021
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center pt-4">
-                                                    Transfer to I&M
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center pt-4">
-                                                    Rwf 12,000
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center pt-4">
-                                                    Credited
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center pt-4">
-                                                    Salary
-                                                </td>
-                                            </tr>
-                                            <tr class="">
-                                                <td>
-                                                    <div class="d-flex  align-items-start">
-                                                        <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
-                                                             style="height: 44px;width: 44px">
-                                                            <img src="../../../assets/images/dashboard/my_accounts_money.svg"
-                                                                 class="h-50" alt="rra">
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center     pt-4">
-                                                    12/12/2021
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center pt-4">
-                                                    Transfer to I&M
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center pt-4">
-                                                    Rwf 12,000
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center pt-4">
-                                                    Credited
-                                                </td>
-                                                <td class="text-muted small object-fit-contain align-items-center pt-4">
-                                                    Salary
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                </li>
-                            </ul>
+                                </tr>
+                                <tr class="">
+                                    <td>
+                                        <div class="d-flex  align-items-start">
+                                            <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                 style="height: 44px;width: 44px">
+                                                <img src="../../../assets/images/dashboard/my_accounts_money.svg"
+                                                     class="h-50" alt="rra">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center     pt-4">
+                                        12/12/2021
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                        Transfer to I&M
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                        Rwf 12,000
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                        Credited
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                        Salary
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td>
+                                        <div class="d-flex  align-items-start">
+                                            <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                 style="height: 44px;width: 44px">
+                                                <img src="../../../assets/images/dashboard/my_accounts_money.svg"
+                                                     class="h-50" alt="rra">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center     pt-4">
+                                        12/12/2021
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                        Transfer to I&M
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                        Rwf 12,000
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                        Credited
+                                    </td>
+                                    <td class="text-muted small object-fit-contain align-items-center pt-4">
+                                        Salary
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -1326,11 +1406,14 @@
                         <span id="secondsRemain" class="position-absolute text-white tw-top-2 tw-right-2"></span>
                     </div>
                 </div>
-                <span class="text-dark  display-5 fw-bold ">
-                        OTP
+                <span class="text-dark fs-3 text-center fw-bold ">
+<!--                    (OTP)<br>-->
+                        One Time Password
+
+
                 </span>
-                <span class="text-muted  mb-1  ">
-                        Please check your 4 digits sent to *********6723
+                <span class="text-muted  mb-1  text-center">
+                        Please check your 4 digits sent to *********6723 and d********@gmail.com
                 </span>
 
             </div>

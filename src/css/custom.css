@@ -11899,9 +11899,10 @@ body {
 }
 
 .nav-pills .nav-link {
-  color: #fff;
+  color: #e9ecef;
   background-color: var(--bs-nav-pills-link-bg);
   border-radius: 0;
+  font-weight: lighter;
   border-bottom: 1px solid #ced4da;
   margin-right: 0;
 }
