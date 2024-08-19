@@ -834,6 +834,15 @@
                     $('.js-recurring').removeClass('hide');
                 }
             });
+            $('#amount').on('keyup', function () {
+                let amount = $(this).val();
+                // Remove any non-digit characters
+                amount = amount.replace(/\D/g, '');
+                // Format the number with commas
+                amount = Number(amount).toLocaleString();
+                // Set the formatted value back to the input
+                $(this).val(amount);
+            });
 
             $('.js-bulk-toggle').on('change', function () {
                 if ($(this).is(':checked')) {

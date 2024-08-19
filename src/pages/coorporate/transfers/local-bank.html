@@ -757,6 +757,15 @@
             jsBeneficiaries.append(`<option value="${abbr}">${accountText}</option>`);
 
         });
+        $('#local_amount').on('keyup', function () {
+            let amount = $(this).val();
+            // Remove any non-digit characters
+            amount = amount.replace(/\D/g, '');
+            // Format the number with commas
+            amount = Number(amount).toLocaleString();
+            // Set the formatted value back to the input
+            $(this).val(amount);
+        });
 
 
         jQuery.validator.addMethod("alphanumeric", function (value, element) {
