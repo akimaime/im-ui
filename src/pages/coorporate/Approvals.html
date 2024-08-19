@@ -192,16 +192,19 @@
                                     <button class="nav-link text-start px-4" id="v-pills-messages-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#v-pills-messages" type="button" role="tab"
-                                            aria-controls="v-pills-messages" aria-selected="false">Administration Approvals
+                                            aria-controls="v-pills-messages" aria-selected="false">Administration
+                                        Approvals
                                     </button>
                                     <button class="nav-link text-start px-4" id="v-pills-beneficiaries-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#v-pills-beneficiaries" type="button" role="tab"
-                                            aria-controls="v-pills-messages" aria-selected="false">Beneficiaries Approvals
+                                            aria-controls="v-pills-messages" aria-selected="false">Beneficiaries
+                                        Approvals
                                     </button>
                                     <button class="nav-link text-start px-4" id="v-pills-bulk-tab" data-bs-toggle="pill"
                                             data-bs-target="#v-pills-bulk" type="button" role="tab"
-                                            aria-controls="v-pills-messages" aria-selected="false">Bulk Payments Approvals
+                                            aria-controls="v-pills-messages" aria-selected="false">Bulk Payments
+                                        Approvals
                                     </button>
                                 </div>
 
@@ -256,6 +259,22 @@
                                                 <table class="table my-2 table-accounts ">
                                                     <thead>
                                                     <tr>
+                                                        <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>
+                                                                     <label>
+                                                                        <input
+                                                                                class="form-check-input me-2 rounded-0 border-info selectAll"
+                                                                                name="bulk_airtime_payment"
+                                                                                type="checkbox"/>
+                                                                     </label>
+                                                                </span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up"></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
                                                         <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
                                                             <div class="d-flex align-items-center justify-content-between border-end pe-2">
                                                                 <span>Date</span>
@@ -340,11 +359,19 @@
                                                     </thead>
                                                     <tbody id="statementsBody">
                                                     <tr class="cursor-pointer js-account tr1 py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">
                                                             TRN-0001
                                                         </td>
-                                                        <td class="text-sm">  Rwf 19,000 </td>
+                                                        <td class="text-sm"> Rwf 19,000</td>
                                                         <td class="text-sm">Airtime Top up</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-success rounded-pill  ">Approved</span>
@@ -377,6 +404,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">TRN-02301
                                                             <br>
@@ -384,7 +419,7 @@
                                                         Home Electricity
                                                           </span>
                                                         </td>
-                                                        <td class="text-sm">  Rwf 19,000 </td>
+                                                        <td class="text-sm"> Rwf 19,000</td>
                                                         <td class="text-sm">Electricity</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-warning rounded-pill ">pending</span>
@@ -418,6 +453,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">#F13450
                                                             <br>
@@ -425,7 +468,7 @@
                                                         RRA Payment
                                                           </span>
                                                         </td>
-                                                        <td class="text-sm">  Rwf 19,000 </td>
+                                                        <td class="text-sm"> Rwf 19,000</td>
                                                         <td class="text-sm">RRA Payment</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-warning rounded-pill  ">pending</span>
@@ -459,13 +502,21 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">#F13450
                                                             <br>
                                                             <span class="text-muted">
                                                         Airtime
                                                           </span></td>
-                                                        <td class="text-sm">  Rwf 19,000 </td>
+                                                        <td class="text-sm"> Rwf 19,000</td>
                                                         <td class="text-sm">Airtime Top up</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-warning rounded-pill  ">pending</span>
@@ -517,7 +568,23 @@
                                                         </li>
                                                     </ul>
                                                 </nav>
+
                                             </div>
+                                            <form class="submitTransferForm">
+                                                <div class="modal-footer d-none multipleApprove d-flex justify-content-start border-top-0 gap-2 py-4">
+                                                    <button type="submit" class="btn btn-primary px-4 mApprove  fw-semibold rounded-default text-white">
+                                                        Approve
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-primary rounded-default px-4 fw-semibold"
+                                                            data-bs-dismiss="modal">
+                                                        Send back to repair
+                                                    </button>
+                                                    <button type="submit" class="btn btn-outline-danger px-4  fw-semibold rounded-default ">
+                                                        Reject
+                                                    </button>
+                                                </div>
+                                            </form>
+
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                              aria-labelledby="v-pills-profile-tab" tabindex="0">
@@ -528,6 +595,22 @@
                                                 <table class="table my-2 table-accounts ">
                                                     <thead>
                                                     <tr>
+                                                        <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>
+                                                                     <label>
+                                                                        <input
+                                                                                class="form-check-input me-2 rounded-0 border-info selectAll"
+                                                                                name="bulk_airtime_payment"
+                                                                                type="checkbox"/>
+                                                                     </label>
+                                                                </span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up"></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
                                                         <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
                                                             <div class="d-flex align-items-center justify-content-between border-end pe-2">
                                                                 <span>Date</span>
@@ -610,11 +693,19 @@
                                                     </thead>
                                                     <tbody id="transfer">
                                                     <tr class="cursor-pointer js-account tr1 py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">
                                                             TRN-0001
                                                         </td>
-                                                        <td class="text-sm">  Rwf 19,000 </td>
+                                                        <td class="text-sm"> Rwf 19,000</td>
                                                         <td class="text-sm">Internal Transfer</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-success rounded-pill  ">Approved</span>
@@ -647,11 +738,19 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">TRN-02301
 
                                                         </td>
-                                                        <td class="text-sm">  Rwf 19,000 </td>
+                                                        <td class="text-sm"> Rwf 19,000</td>
                                                         <td class="text-sm">Local banks</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-warning rounded-pill ">pending</span>
@@ -685,11 +784,19 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">#F13450
                                                             <br>
                                                         </td>
-                                                        <td class="text-sm">  Rwf 19,000 </td>
+                                                        <td class="text-sm"> Rwf 19,000</td>
                                                         <td class="text-sm">Transfer to Mobile</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-warning rounded-pill  ">pending</span>
@@ -715,21 +822,32 @@
                                                                 <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
 
 
-                                                                    <li><a class="dropdown-item tr js-approve"
-                                                                           href="#">Details</a></li>
+                                                                    <li>
+                                                                        <a class="dropdown-item tr js-approve"
+                                                                           href="#">Details
+                                                                        </a>
+                                                                    </li>
 
                                                                 </ul>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">#F13450
                                                             <br>
                                                             <span class="text-muted">
 
                                                           </span></td>
-                                                        <td class="text-sm">  Rwf 19,000 </td>
+                                                        <td class="text-sm"> Rwf 19,000</td>
                                                         <td class="text-sm">External Transfer</td>
                                                         <td class="text-sm"><span
                                                                 class="badge bg-warning rounded-pill  ">pending</span>
@@ -782,6 +900,21 @@
                                                     </ul>
                                                 </nav>
                                             </div>
+
+                                            <form class="submitTransferForm">
+                                                <div class="modal-footer d-none multipleApprove d-flex justify-content-start border-top-0 gap-2 py-4">
+                                                    <button type="submit" class="btn btn-primary px-4 mApprove  fw-semibold rounded-default text-white">
+                                                        Approve
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-primary rounded-default px-4 fw-semibold"
+                                                            data-bs-dismiss="modal">
+                                                        Send back to repair
+                                                    </button>
+                                                    <button type="submit" class="btn btn-outline-danger px-4  fw-semibold rounded-default ">
+                                                        Reject
+                                                    </button>
+                                                </div>
+                                            </form>
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                              aria-labelledby="v-pills-messages-tab" tabindex="0">
@@ -888,12 +1021,8 @@
                                                                     Options
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
-                                                                    <li><a class="dropdown-item tr "
-                                                                           href="#">Details</a></li>
-
-
                                                                     <li><a class="dropdown-item tr js-approveA"
-                                                                           href="#">Approve</a></li>
+                                                                           href="#">Details</a></li>
 
                                                                 </ul>
                                                             </div>
@@ -923,12 +1052,8 @@
                                                                     Options
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
-                                                                    <li><a class="dropdown-item tr "
-                                                                           href="#">Details</a></li>
-
-
                                                                     <li><a class="dropdown-item tr js-approveA"
-                                                                           href="#">Approve</a></li>
+                                                                           href="#">Details</a></li>
 
                                                                 </ul>
                                                             </div>
@@ -958,12 +1083,8 @@
                                                                     Options
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
-                                                                    <li><a class="dropdown-item tr "
-                                                                           href="#">Details</a></li>
-
-
                                                                     <li><a class="dropdown-item tr js-approveA"
-                                                                           href="#">Approve</a></li>
+                                                                           href="#">Details</a></li>
 
                                                                 </ul>
                                                             </div>
@@ -993,12 +1114,8 @@
                                                                     Options
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow">
-                                                                    <li><a class="dropdown-item tr "
-                                                                           href="#">Details</a></li>
-
-
                                                                     <li><a class="dropdown-item tr js-approveA"
-                                                                           href="#">Approve</a></li>
+                                                                           href="#">Details</a></li>
 
                                                                 </ul>
                                                             </div>
@@ -1124,16 +1241,15 @@
                                                                     <li><a class="dropdown-item js-BulkDetails"
                                                                            href="#">Details</a>
                                                                     </li>
-                                                                            <li><a class="dropdown-item js-Bulapprove" href="#">Approve</a>
+                                                                    <li><a class="dropdown-item js-Bulapprove" href="#">Approve</a>
                                                                     </li>
-                                                                    
 
-                                                                    
+
                                                                     </li>
                                                                     <li><a class="dropdown-item js-start d-none  ">
                                                                         Start</a></li>
 
-                                                                    
+
                                                                 </ul>
                                                             </div>
                                                         </td>
@@ -1199,14 +1315,13 @@
                                                                     </li>
                                                                     <li><a class="dropdown-item js-Bulapprove" href="#">Approve</a>
                                                                     </li>
-                                                                    
 
-                                                                    
+
                                                                     </li>
                                                                     <li><a class="dropdown-item js-start d-none  ">
                                                                         Start</a></li>
 
-                                                                    
+
                                                                 </ul>
                                                             </div>
                                                         </td>
@@ -1244,7 +1359,7 @@
                                                                     <li><a class="dropdown-item js-start d-none  ">
                                                                         Start</a></li>
 
-                                                                    
+
                                                                 </ul>
                                                             </div>
                                                         </td>
@@ -1275,11 +1390,12 @@
                                                                     <li><a class="dropdown-item js-BulkDetails"
                                                                            href="#">Details</a>
                                                                     </li>
-                                                                    <li><a class="dropdown-item js-Bulapprove" href="#">Approve</a></li>
+                                                                    <li><a class="dropdown-item js-Bulapprove" href="#">Approve</a>
+                                                                    </li>
                                                                     <li><a class="dropdown-item js-start d-none  ">
                                                                         Start</a></li>
 
-                                                                    
+
                                                                 </ul>
                                                             </div>
                                                         </td>
@@ -1515,7 +1631,8 @@
                                                                     <li><a class="dropdown-item js-BulkDetails"
                                                                            href="#">Details</a>
                                                                     </li>
-                                                                    <li><a class="dropdown-item js-Bulapprove" href="#">Approve</a></li>
+                                                                    <li><a class="dropdown-item js-Bulapprove" href="#">Approve</a>
+                                                                    </li>
                                                                     <li><a class="dropdown-item js-start d-none  ">
                                                                         Start</a></li>
 
@@ -2019,7 +2136,7 @@
             </div>
             <form action="" method="post" class="submitTransferForm">
                 <div class="modal-body py-0 px-lg-5"
-                     style="background-image: url(../../assets/images/payments/bg_details.svg);background-position: top;background-repeat: no-repeat;background-size: 80%">
+                     style="background-position: top;background-repeat: no-repeat;background-size: 80%">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="mb-2">
@@ -2731,6 +2848,18 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
 <script>
+    $(document).ready(function () {
+        $('.checkbox').on('change', function () {
+            let checkedCount = $('.checkbox:checked').length;
+            if (checkedCount > 1 || $('.selectAll').prop('checked')) {
+                $('.multipleApprove').removeClass('d-none');
+            } else {
+                $('.multipleApprove').addClass('d-none');
+            }
+        });
+    });
+</script>
+<script>
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
     //make content of popover visible
@@ -2806,11 +2935,10 @@
         //if all checkboxes are checked then selectAllCheckbox add disabled class to dropdown
         if (selectAllCheckbox.checked) {
             $('.dropdown-toggle').addClass('disabled');
-            $('.multiple').removeClass('d-none');
-            $('.multiple').removeClass('disabled');
+            $('.multipleApprove').removeClass('d-none');
         } else {
             $('.dropdown-toggle').removeClass('disabled');
-            $('.multiple').addClass('d-none');
+            $('.multipleApprove').addClass('d-none');
         }
     });
     $('.js-BulkDetails').on('click', function () {

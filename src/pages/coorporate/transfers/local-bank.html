@@ -96,7 +96,7 @@
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                    aria-expanded="false">
                                     Transfers
                                 </a>
@@ -105,7 +105,7 @@
                                         Accounts </a></li>
                                     <li><a class="dropdown-item" href="../transfers/internal.html">Transfer from I&M to
                                         I&M </a></li>
-                                    <li><a class="dropdown-item" href="../transfers/local-bank.html">Transfer to Local
+                                    <li><a class="dropdown-item active" href="../transfers/local-bank.html">Transfer to Local
                                         Banks </a></li>
                                     <li><a class="dropdown-item" href="../transfers/international.html">Transfer to
                                         International </a></li>
@@ -124,17 +124,18 @@
                                     <li><a class="dropdown-item" href="../payments/utilities.html">Utilities Payment </a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="Cards" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cards
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
-                                    Requests
-                                </button>
-                            </li>
+
+                            <li class="nav-item  dropdown">
+                            <a class="nav-link   dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Service Requests
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../requests/chequebook.html">Chequebook Requests </a></li>
+                                <li><a class="dropdown-item" href="../requests/certificates.html">Certificates Requests </a></li>
+                                <li><a class="dropdown-item" href="../requests/paper-statement.html">Paper Statement Requests</a></li>
+                                <li><a class="dropdown-item" href="../requests/overdraft.html">Bankers cheques/overdraft Demand Request </a></li>
+                            </ul>
+                        </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="Beneficiaries" data-bs-toggle="pill"
                                         data-bs-target="#pills-contact"
@@ -183,7 +184,7 @@
                             <div class="container mb-2">
                                 <div class="row mb-2">
                                     <div class="col-lg-3  col-6">
-                                        <a href="#" class="d-flex text-decoration-none flex-column justify-content-center align-items-center">
+                                        <a href="../transfers/own-account.html" class="d-flex text-decoration-none flex-column justify-content-center align-items-center ">
                                             <div class="border d-flex align-items-center rounded justify-content-center "
                                                  style="height: 46px;width: 48px">
                                                 <i class=" fs-4  text-primary">
@@ -198,12 +199,12 @@
 
                                                 </i>
                                             </div>
-                                            <span class=" text-primary text-sm fw-bold">Transfer to</span>
-                                            <span class="text-xs text-info fw-semibold">I&M</span>
+                                            <span class="text-primary text-sm text-center fw-bold">Own account</span>
+                                            <span class="text-xs text-info fw-semibold">transfer</span>
                                         </a>
                                     </div>
                                     <div class="col-lg-3  col-6">
-                                        <a href="#" class="d-flex text-decoration-none flex-column justify-content-center align-items-center">
+                                        <a href="../transfers/local-bank.html" class="d-flex text-decoration-none flex-column justify-content-center align-items-center">
                                             <div class="border d-flex align-items-center rounded justify-content-center "
                                                  style="height: 46px;width: 48px">
                                                 <i class=" fs-4  text-primary">
@@ -219,8 +220,8 @@
 
                                                 </i>
                                             </div>
-                                            <span class=" text-primary text-sm fw-bold">Transfer to</span>
-                                            <span class="text-xs text-info fw-semibold">Another Bank</span>
+                                            <span class=" text-primary text-sm fw-bold">Local</span>
+                                            <span class="text-xs text-info fw-semibold">Transfer</span>
                                         </a>
                                     </div>
                                     <div class="col-lg-3  col-6">
@@ -237,12 +238,12 @@
 
                                                 </i>
                                             </div>
-                                            <span class=" text-primary text-sm fw-bold">Transfer to</span>
-                                            <span class="text-xs text-info fw-semibold">I&M</span>
+                                            <span class=" text-primary text-sm fw-bold">Bulk Payments</span>
+                                            <span class="text-xs text-info fw-semibold"></span>
                                         </a>
                                     </div>
                                     <div class="col-lg-3  col-6">
-                                        <a href="#" class="d-flex text-decoration-none flex-column justify-content-center align-items-center">
+                                        <a href="../approved.html" class="d-flex text-decoration-none flex-column justify-content-center align-items-center">
                                             <div class="border d-flex align-items-center rounded justify-content-center "
                                                  style="height: 46px;width: 48px">
                                                 <i class=" fs-4  text-primary">
@@ -255,8 +256,8 @@
 
                                                 </i>
                                             </div>
-                                            <span class=" text-primary text-sm fw-bold">Transfer to</span>
-                                            <span class="text-xs text-info fw-semibold">I&M</span>
+                                            <span class=" text-primary text-sm fw-bold">Completed</span>
+                                            <span class="text-xs text-info fw-semibold">transactions</span>
                                         </a>
                                     </div>
                                 </div>
