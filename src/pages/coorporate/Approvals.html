@@ -298,7 +298,8 @@
                                                             <div class="d-flex align-items-center justify-content-between border-end pe-2">
                                                                 <span>Amount</span>
                                                                 <div class="d-flex flex-column text-sm">
-                                                                    <i class="bi bi-funnel "></i>
+                                                                    <i class="bi bi-chevron-up"></i>
+                                                                    <i class="bi bi-chevron-down"></i>
                                                                 </div>
                                                             </div>
                                                         </th>
@@ -924,14 +925,28 @@
                                                     <tr>
                                                         <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
                                                             <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>
+                                                                     <label>
+                                                                        <input
+                                                                                class="form-check-input me-2 rounded-0 border-info selectAll"
+                                                                                name="bulk_airtime_payment"
+                                                                                type="checkbox"/>
+                                                                     </label>
+                                                                </span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up"></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
                                                                 <span>Requested on</span>
                                                                 <div class="d-flex flex-column text-sm">
                                                                     <i class="bi bi-chevron-up"></i>
                                                                     <i class="bi bi-chevron-down"></i>
                                                                 </div>
                                                             </div>
-
-
                                                         </th>
                                                         <th class="text-primary  border-top-0   border-0 border-3 border-bottom  border-primary cursor-pointer ">
                                                             <div class="d-flex align-items-center justify-content-between border-end pe-2">
@@ -995,6 +1010,14 @@
                                                     </thead>
                                                     <tbody id="admin">
                                                     <tr class="cursor-pointer js-account tr1 py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">
                                                             TRN-0001
@@ -1026,6 +1049,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account tr1 py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">
                                                             TRN-0001
@@ -1057,6 +1088,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account tr1 py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">
                                                             TRN-0001
@@ -1088,6 +1127,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account tr1 py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="text-sm">
                                                             TRN-0001
@@ -1138,6 +1185,20 @@
                                                     </ul>
                                                 </nav>
                                             </div>
+                                            <form class="submitTransferForm">
+                                                <div class="modal-footer d-none multipleApprove d-flex justify-content-start border-top-0 gap-2 py-4">
+                                                    <button type="submit" class="btn btn-primary px-4 mApprove  fw-semibold rounded-default text-white">
+                                                        Approve
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-primary rounded-default px-4 fw-semibold"
+                                                            data-bs-dismiss="modal">
+                                                        Send back to repair
+                                                    </button>
+                                                    <button type="submit" class="btn btn-outline-danger px-4  fw-semibold rounded-default ">
+                                                        Reject
+                                                    </button>
+                                                </div>
+                                            </form>
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-bulk" role="tabpanel"
                                              aria-labelledby="v-pills-bulk-tab" tabindex="0">
@@ -1148,6 +1209,22 @@
                                                 <table class="table my-2 table-accounts  ">
                                                     <thead>
                                                     <tr class="">
+                                                        <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>
+                                                                     <label>
+                                                                        <input
+                                                                                class="form-check-input me-2 rounded-0 border-info selectAll"
+                                                                                name="bulk_airtime_payment"
+                                                                                type="checkbox"/>
+                                                                     </label>
+                                                                </span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up"></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
                                                         <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
                                                             <div class=" d-flex align-items-center justify-content-between border-end pe-2">
                                                                 <span>Date</span>
@@ -1213,6 +1290,14 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="fs-13px">124234</td>
                                                         <td class="fs-13px">Salary Payment</td>
@@ -1252,6 +1337,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="fs-13px">124234</td>
                                                         <td class="fs-13px">Mobile money Payment</td>
@@ -1285,6 +1378,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="fs-13px">424234</td>
                                                         <td class="fs-13px">Airtime Top up</td>
@@ -1324,6 +1425,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="fs-13px">124234</td>
                                                         <td class="fs-13px">Salary Payment</td>
@@ -1362,6 +1471,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="fs-13px">124234</td>
                                                         <td class="fs-13px">Salary Payment</td>
@@ -1418,6 +1535,20 @@
                                                     </ul>
                                                 </nav>
                                             </div>
+                                            <form class="submitTransferForm">
+                                                <div class="modal-footer d-none multipleApprove d-flex justify-content-start border-top-0 gap-2 py-4">
+                                                    <button type="submit" class="btn btn-primary px-4 mApprove  fw-semibold rounded-default text-white">
+                                                        Approve
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-primary rounded-default px-4 fw-semibold"
+                                                            data-bs-dismiss="modal">
+                                                        Send back to repair
+                                                    </button>
+                                                    <button type="submit" class="btn btn-outline-danger px-4  fw-semibold rounded-default ">
+                                                        Reject
+                                                    </button>
+                                                </div>
+                                            </form>
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-beneficiaries" role="tabpanel"
                                              aria-labelledby="v-pills-bulk-tab" tabindex="0">
@@ -1429,6 +1560,22 @@
                                                     <thead>
                                                     <tr class="">
                                                         <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>
+                                                                     <label>
+                                                                        <input
+                                                                                class="form-check-input me-2 rounded-0 border-info selectAll"
+                                                                                name="bulk_airtime_payment"
+                                                                                type="checkbox"/>
+                                                                     </label>
+                                                                </span>
+                                                                <div class="d-flex flex-column text-sm">
+                                                                    <i class="bi bi-chevron-up"></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
                                                             <div class=" d-flex align-items-center justify-content-between border-end pe-2">
                                                                 <span>Date</span>
                                                                 <div class="d-flex flex-column fs-9px">
@@ -1436,8 +1583,6 @@
                                                                     <i class="bi bi-chevron-down"></i>
                                                                 </div>
                                                             </div>
-
-
                                                         </th>
                                                         <th class="text-primary  border-top-0 border-0 border-3 border-bottom  border-primary cursor-pointer">
                                                             <div class=" d-flex align-items-center justify-content-between border-end pe-2">
@@ -1491,6 +1636,14 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="fs-13px">Castro</td>
                                                         <td class="fs-13px">0780007101</td>
@@ -1517,6 +1670,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="fs-13px">Nicolas</td>
                                                         <td class="fs-13px">69848408308404</td>
@@ -1541,6 +1702,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="fs-13px">Mugabo</td>
                                                         <td class="fs-13px">0789874799</td>
@@ -1568,6 +1737,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="fs-13px">Irene</td>
                                                         <td class="fs-13px">087377384783</td>
@@ -1597,6 +1774,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">
+                                                            <label>
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info checkbox"
+                                                                        name="bulk_payment" type="checkbox"
+                                                                />
+                                                            </label>
+                                                        </td>
                                                         <td class="text-sm">2023-01-01</td>
                                                         <td class="fs-13px">Elvis</td>
                                                         <td class="fs-13px">958599484955</td>
@@ -1644,6 +1829,20 @@
                                                     </ul>
                                                 </nav>
                                             </div>
+                                            <form class="submitTransferForm">
+                                                <div class="modal-footer d-none multipleApprove d-flex justify-content-start border-top-0 gap-2 py-4">
+                                                    <button type="submit" class="btn btn-primary px-4 mApprove  fw-semibold rounded-default text-white">
+                                                        Approve
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-primary rounded-default px-4 fw-semibold"
+                                                            data-bs-dismiss="modal">
+                                                        Send back to repair
+                                                    </button>
+                                                    <button type="submit" class="btn btn-outline-danger px-4  fw-semibold rounded-default ">
+                                                        Reject
+                                                    </button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
