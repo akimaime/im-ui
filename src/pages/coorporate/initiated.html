@@ -368,7 +368,7 @@
                                                                     <li><a class="dropdown-item tr"
                                                                            href="#">Recall</a></li>
                                                                     <li>
-                                                                        <a class="dropdown-item tr "
+                                                                        <a class="dropdown-item tr  copyTransaction"
                                                                            href="#">Copy Transaction
                                                                         </a>
                                                                     </li>
@@ -415,7 +415,7 @@
                                                                     <li><a class="dropdown-item tr"
                                                                            href="#">Recall</a></li>
                                                                     <li>
-                                                                        <a class="dropdown-item tr "
+                                                                        <a class="dropdown-item tr  copyTransaction"
                                                                            href="#">Copy Transaction
                                                                         </a>
                                                                     </li>
@@ -464,7 +464,7 @@
                                                                     <li><a class="dropdown-item tr"
                                                                            href="#">Recall</a></li>
                                                                     <li>
-                                                                        <a class="dropdown-item tr "
+                                                                        <a class="dropdown-item tr  copyTransaction"
                                                                            href="#">Copy Transaction
                                                                         </a>
                                                                     </li>
@@ -511,7 +511,7 @@
                                                                     <li><a class="dropdown-item tr"
                                                                            href="#">Recall</a></li>
                                                                     <li>
-                                                                        <a class="dropdown-item tr "
+                                                                        <a class="dropdown-item tr  copyTransaction"
                                                                            href="#">Copy Transaction
                                                                         </a>
                                                                     </li>
@@ -706,7 +706,7 @@
                                                                     <li><a class="dropdown-item tr"
                                                                            href="#">Recall</a></li>
                                                                     <li>
-                                                                        <a class="dropdown-item tr "
+                                                                        <a class="dropdown-item tr  copyTransaction"
                                                                            href="#">Copy Transaction
                                                                         </a>
                                                                     </li>
@@ -751,7 +751,7 @@
                                                                     <li><a class="dropdown-item tr"
                                                                            href="#">Recall</a></li>
                                                                     <li>
-                                                                        <a class="dropdown-item tr "
+                                                                        <a class="dropdown-item tr  copyTransaction"
                                                                            href="#">Copy Transaction
                                                                         </a>
                                                                     </li>
@@ -795,7 +795,7 @@
                                                                     <li><a class="dropdown-item tr"
                                                                            href="#">Recall</a></li>
                                                                     <li>
-                                                                        <a class="dropdown-item tr "
+                                                                        <a class="dropdown-item tr  copyTransaction"
                                                                            href="#">Copy Transaction
                                                                         </a>
                                                                     </li>
@@ -1162,7 +1162,7 @@
                                                                            href="#">Recall</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a class="dropdown-item tr "
+                                                                        <a class="dropdown-item tr  copyTransaction"
                                                                            href="#">Copy Transaction
                                                                         </a>
                                                                     </li>
@@ -1237,7 +1237,7 @@
                                                                            href="#">Recall</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a class="dropdown-item tr "
+                                                                        <a class="dropdown-item tr  copyTransaction"
                                                                            href="#">Copy Transaction
                                                                         </a>
                                                                     </li>
@@ -1283,7 +1283,7 @@
                                                                            href="#">Recall</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a class="dropdown-item tr "
+                                                                        <a class="dropdown-item tr  copyTransaction"
                                                                            href="#">Copy Transaction
                                                                         </a>
                                                                     </li>
@@ -1327,7 +1327,7 @@
                                                                            href="#">Recall</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a class="dropdown-item tr "
+                                                                        <a class="dropdown-item tr  copyTransaction"
                                                                            href="#">Copy Transaction
                                                                         </a>
                                                                     </li>
@@ -2715,6 +2715,9 @@
                     $('.saveBtn').html('Save Rule');
                 }, 1000);
             }
+        });
+        $('.copyTransaction').on('click', function () {
+           window.location.href = 'transfers/copied-transaction.html';
         });
     })
 
