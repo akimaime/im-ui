@@ -128,11 +128,21 @@
                                     type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cards
                             </button>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
-                                Requests
-                            </button>
+                        <li class="nav-item  dropdown">
+                            <a class="nav-link   dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Service Requests
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../requests/chequebook.html">Chequebook
+                                    Requests </a></li>
+                                <li><a class="dropdown-item" href="../requests/certificates.html">Certificates
+                                    Requests </a></li>
+                                <li><a class="dropdown-item" href="../requests/paper-statement.html">Paper Statement
+                                    Requests</a></li>
+                                <li><a class="dropdown-item" href="../requests/overdraft.html">Bankers
+                                    cheques/overdraft Demand Request </a></li>
+                            </ul>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="Beneficiaries" data-bs-toggle="pill"
@@ -187,7 +197,7 @@
                                     <div
                                             class="callout callout-primary callout-sm mb-2  d-flex align-items-center">
                                         <p class="mb-0 alert alert-primary border-0">
-                                            Please enter Irembo Document reference number and click on Validate / Add button . The "Validate / Add" feature is used to validate reference numbers and retrieve payment details. The system will validate the reference number and return the details. The same process can be repeated for adding additional payments.
+                                            Please enter Irembo Document reference number and click on Validate button . The "Validate" feature is used to validate reference numbers and retrieve payment details. The system will validate the reference number and return the details. The same process can be repeated for adding additional payments.
                                         </p>
                                     </div>
                                     <div class="row">
@@ -210,7 +220,7 @@
                                                             <button type="button"
                                                                     class="btn btn-primary text-white rounded-default flex-shrink-0 js-verify">
                                                                 <i class="bi bi-plus"></i>
-                                                                Validate / Add
+                                                                Validate
                                                             </button>
                                                         </div>
                                                     </div>

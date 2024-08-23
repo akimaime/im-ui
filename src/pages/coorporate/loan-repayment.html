@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I&M Internet bank</title>
+    <link href="../../css/custom.css" rel="stylesheet">
+    <style>
+        .menu {
+            display: none;
+        }
+    </style>
+</head>
+<body class="">
+<div class="corp-bg">
+    <div class=" d-flex min-vh-100 gap-2 flex-column justify-content-between">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <div class="d-flex col-3 flex-column">
+                    <img src="../../assets/n_logo.png" class="img-fluid" alt="logo">
+                    <span class="text-white px-4 fs-4">Corporate</span>
+
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <h5 class="text-white my-0 ">Welcome to , Paper Print LTD</h5>
+                    <div class="position-relative">
+                        <div class="d-flex rounded-circle  bg-white bg-opacity-10 p-4 justify-content-center overflow-hidden align-items-center"
+                             style="height: 26px;width: 26px">
+                            <i class="bi bi-bell text-white fs-3"></i>
+                            <div class="badge bg-danger rounded-circle position-absolute" style="top: -5px;right: -10px">5</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="d-flex align-items-end flex-column">
+                                    <span class="text-sm fw-light">John Doe</span>
+                                    <small><i class="bi bi-hammer me-2"></i>Initiator</small>
+                                  </span>
+                            <img src="../../assets/prfl.png" alt="profile" class="object-fit-cover">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
+
+                            <!--                            <li class="my-2">-->
+                            <!--                                <a class="fw-normal dropdown-item" href="#">-->
+                            <!--                                    <i class="bi bi-gear"></i>-->
+                            <!--                                    Account Settings-->
+                            <!--                                </a>-->
+                            <!--                            </li>-->
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="#">
+                                    <i class="bi bi-gear"></i>
+                                    Account Settings
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="/">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <nav class=" navbar navbar-expand-lg">
+                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Dashboard
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../corporate-dashboard.html">Initiator
+                                    Dashboard</a></li>
+                                <li><a class="dropdown-item" href="dashboard/verifier-dashboard.html">Verifier Dashboard</a></li>
+                                <li><a class="dropdown-item" href="dashboard/approver-dashboard.html">Approver Dashboard </a></li>
+                                <li><a class="dropdown-item" href="../dashboard.html">Retail Dashboard</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Transfers
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="transfers/own-account.html">Transfer to your own
+                                    Accounts </a></li>
+                                <li><a class="dropdown-item" href="transfers/internal.html">Transfer from I&M to
+                                    I&M </a></li>
+                                <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to Local
+                                    Banks </a></li>
+                                <li><a class="dropdown-item" href="transfers/international.html">Transfer to
+                                    International </a></li>
+                                <li><a class="dropdown-item" href="transfers/momo.html">Transfer to Mobile </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Payments
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="payments/rra.html">RRA Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/irembo.html">Irembo Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/rssb.html">ISHEMA-RSSB Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/airtime.html">Airtime Top Up</a></li>
+                                <li><a class="dropdown-item" href="payments/utilities.html">Utilities Payment </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="bulk-payments.html" class="nav-link " id="bulk">
+                                Bulk Payments
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="beneficiaries.html" class="nav-link" id="Beneficiaries">Beneficiaries
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Service Requests
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="requests/chequebook.html">Chequebook Requests </a></li>
+                                <li><a class="dropdown-item" href="requests/certificates.html">Certificates Requests </a></li>
+                                <li><a class="dropdown-item" href="requests/paper-statement.html">Paper Statement Requests</a></li>
+                                <li><a class="dropdown-item" href="requests/overdraft.html">Bankers cheques/overdraft Demand Request </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="LoanSimulator.html" class="nav-link active" id="loanSimulator">Loan
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="administration.html" class="nav-link" id="administration">Administration
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Approval Center
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="initiated.html">Initiated </a></li>
+                                <li><a class="dropdown-item" href="Approvals.html">Pending</a></li>
+                                <li><a class="dropdown-item" href="approved.html">Approved</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="mx-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item "><a href="../corporate-dashboard.html">Dashboard</a></li>
+                    <li class="breadcrumb-item text-white" aria-current="page">Loan Repayment</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <div class="card rounded-4 border-0 h-100">
+                        <div class="card-body">
+                            <div class="container ">
+                                <h3>Loan Repayment</h3>
+
+                                <!-- Main Menu -->
+
+                                <!-- Loan Details -->
+                              <div class="row">
+                                  <div class="col-lg-7">
+                                      <div id="loanDetailsMenu" class="my-3" >
+                                          <h4>Loan Details</h4>
+                                          <table>
+                                              <tr>
+                                                  <th>Loan Account</th>
+                                                  <td id="loanAccount">23612271897189</td>
+                                              </tr>
+                                              <tr>
+                                                  <th>Principal</th>
+                                                  <td id="principal">Rwf 10,000,000</td>
+                                              </tr>
+                                              <tr>
+                                                  <th>Interest Rate</th>
+                                                  <td id="interestRate">18%</td>
+                                              </tr>
+                                              <tr>
+                                                  <th>Outstanding Balance</th>
+                                                  <td id="outstandingBalance">Rwf 4,000,000</td>
+                                              </tr>
+                                          </table>
+                                          <!--                                    <button onclick="showMainMenu()">Back to Main Menu</button>-->
+
+                                      </div>
+                                      <div class="card border-secondary border-opacity-25 card-body">
+                                          <h5>Payment Schedule</h5>
+                                          <div class="table-responsive">
+                                              <table class="table my-2 table-accounts  ">
+                                                  <thead>
+                                                  <tr class="">
+                                                      <th class="text-primary text-sm border-0  border-3 border-bottom  border-primary cursor-pointer">
+                                                          <div class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                              <span>Month</span>
+                                                              <div class="d-flex flex-column text-sm">
+                                                                  <i class="bi bi-chevron-up"></i>
+                                                                  <i class="bi bi-chevron-down"></i>
+                                                              </div>
+                                                          </div>
+
+                                                      </th>
+                                                      <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer ">
+                                                          <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                              <span>Payment</span>
+                                                              <div class="d-flex flex-column fs-9px">
+                                                                  <i class="bi bi-chevron-up "></i>
+                                                                  <i class="bi bi-chevron-down"></i>
+                                                              </div>
+                                                          </div>
+                                                      </th>
+                                                      <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer ">
+                                                          <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                              <span>Interest</span>
+                                                              <div class="d-flex flex-column fs-9px">
+                                                                  <i class="bi bi-chevron-up "></i>
+                                                                  <i class="bi bi-chevron-down"></i>
+                                                              </div>
+                                                          </div>
+                                                      </th>
+                                                      <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer ">
+                                                          <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                              <span>fees</span>
+                                                              <div class="d-flex flex-column fs-9px">
+                                                                  <i class="bi bi-chevron-up "></i>
+                                                                  <i class="bi bi-chevron-down"></i>
+                                                              </div>
+                                                          </div>
+                                                      </th>
+                                                      <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer ">
+                                                          <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                              <span>Principal</span>
+                                                              <div class="d-flex flex-column fs-9px">
+                                                                  <i class="bi bi-chevron-up "></i>
+                                                                  <i class="bi bi-chevron-down"></i>
+                                                              </div>
+                                                          </div>
+                                                      </th>
+
+
+                                                      <th class="text-primary  border-0 text-sm    border-3 border-bottom  border-primary cursor-pointer">
+                                                          <div class=" d-flex align-items-center justify-content-between ">
+                                                              <span>Balance</span>
+                                                              <div class="d-flex flex-column fs-9px">
+                                                                  <i class="bi bi-chevron-up "></i>
+                                                                  <i class="bi bi-chevron-down"></i>
+                                                              </div>
+                                                          </div>
+                                                      </th>
+                                                  </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                  <tr class="cursor-pointer js-account py-5">
+                                                      <td class="small">1</td>
+                                                      <td class="small">Rwf500</td>
+                                                      <td class="small">Rwf208.33</td>
+                                                      <td class="small">Rwf500</td>
+                                                      <td class="small">Rwf291.67</td>
+                                                      <td class="small">Rwf49,708.33</td>
+                                                  </tr>
+                                                  <tr class="cursor-pointer js-account py-5">
+                                                      <td class="small">2</td>
+                                                      <td class="small">Rwf500</td>
+                                                      <td class="small">Rwf207.12</td>
+                                                      <td class="small">Rwf400</td>
+                                                      <td class="small">Rwf292.88</td>
+                                                      <td class="small">Rwf49,415.45</td>
+                                                  </tr>
+                                                  <tr class="cursor-pointer js-account py-5">
+                                                      <td class="small">3</td>
+                                                      <td class="small">Rwf500</td>
+                                                      <td class="small">Rwf205.90</td>
+                                                      <td class="small">Rwf500</td>
+                                                      <td class="small">Rwf294.10</td>
+                                                      <td class="small">Rwf49,121.35</td>
+                                                  </tr>
+                                                  </tbody>
+                                              </table>
+                                              <nav aria-label="..." class="float-end mt-2">
+                                                  <ul class="pagination">
+                                                      <li class="page-item disabled">
+                                                          <a class="page-link">Previous</a>
+                                                      </li>
+                                                      <li class="page-item"><a class="page-link" href="#">1</a>
+                                                      </li>
+                                                      <li class="page-item active" aria-current="page">
+                                                          <a class="page-link" href="#">2</a>
+                                                      </li>
+                                                      <li class="page-item"><a class="page-link" href="#">3</a>
+                                                      </li>
+                                                      <li class="page-item">
+                                                          <a class="page-link" href="#">Next</a>
+                                                      </li>
+                                                  </ul>
+                                              </nav>
+                                          </div>
+                                      </div>
+
+
+                                  </div>
+                                  <div class="col-lg-5">
+                                      <div id="mainMenu" class="menu">
+                                          <!--                                        <button onclick="viewLoanDetails()">View Loan Details</button>-->
+
+                                          <button class="btn btn-outline-primary w-100 py-3 m-2" onclick="payLumpSum()">Pay Lump Sum <i class="bi bi-arrow-right ms-2"></i></button>
+                                          <button class="btn btn-outline-primary w-100 py-3 m-2" onclick="payBeforePayday()">Pay Before Payday <i class="bi bi-arrow-right ms-2"></i></button>
+                                      </div>
+                                      <!-- Repay Loan Menu -->
+                                      <div id="repayLoanMenu" class="menu">
+                                          <button class="btn btn-outline-primary w-100 py-3 m-2" onclick="payLumpSum()">Pay Lump Sum <i class="bi bi-arrow-right ms-2"></i></button>
+                                          <button class="btn btn-outline-primary w-100 py-3 m-2" onclick="payBeforePayday()">Pay Before Payday <i class="bi bi-arrow-right ms-2"></i></button>
+<!--                                          <button class="btn btn-primary m-2" onclick="showMainMenu()">Back to Main Menu</button>-->
+                                      </div>
+
+                                      <!-- Pay Lump Sum -->
+                                      <div id="payLumpSumMenu" class="menu">
+                                          <h4>Pay Lump Sum</h4>
+                                          <form>
+                                              <div class="form-group mb-3">
+                                                  <label for="lumpSumAmount">Enter the amount you wish to pay:</label>
+                                                  <input type="number" class="form-control bg-secondary bg-opacity-10 py-3 border-0" id="lumpSumAmount">
+                                              </div>
+                                              <div class="d-flex gap-2">
+                                              <button onclick="confirmPayment('lumpSum')" class="btn w-100 py-2 btn-primary">Confirm Payment</button>
+                                              <button onclick="showRepayLoanMenu()" class="btn w-100 py-2 btn-danger">Cancel</button>
+                                              </div>
+                                          </form>
+                                      </div>
+
+                                      <!-- Pay Before Payday -->
+                                      <div id="payBeforePaydayMenu" class="menu">
+                                          <h4>Pay Before Payday</h4>
+                                          <div class="form-group mb-3">
+                                              <label for="paydayAmount">Enter the amount you wish to pay:</label>
+                                              <input type="number" class="form-control bg-secondary bg-opacity-10 py-3 border-0" id="paydayAmount">
+                                          </div>
+                                          <div class="form-group mb-3">
+                                              <label for="paydayDate">Enter the date of payment (format: YYYY-MM-DD):</label>
+                                              <input type="date" class="form-control bg-secondary bg-opacity-10 py-3 border-0" id="paydayDate">
+                                          </div>
+                                          <div class="d-flex gap-2">
+                                              <button class="btn btn-primary w-100 py-2" onclick="confirmPayment('payday')">Confirm Payment</button>
+                                              <button class="btn btn-danger w-100 py-2" onclick="showRepayLoanMenu()">Cancel</button>
+                                          </div>
+                                      </div>
+
+                                      <!-- Confirmation -->
+                                      <div id="confirmationMenu" class="menu">
+                                          <p id="confirmationDetails"></p>
+                                          <button onclick="processPayment()">Confirm</button>
+                                          <button onclick="cancelPayment()">Cancel</button>
+                                      </div>
+
+                                      <!-- Result -->
+                                      <div id="resultMenu" class="menu">
+                                          <p id="resultMessage"></p>
+                                          <button onclick="showMainMenu()">Back to Main Menu</button>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="bg-primary d-flex justify-content-center w-100">
+                <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        showMainMenu();
+    });
+
+    function showMainMenu() {
+        hideAllMenus();
+        document.getElementById('mainMenu').style.display = 'block';
+    }
+
+    function showRepayLoanMenu() {
+        hideAllMenus();
+        document.getElementById('repayLoanMenu').style.display = 'block';
+    }
+
+    function payLumpSum() {
+        hideAllMenus();
+        document.getElementById('payLumpSumMenu').style.display = 'block';
+    }
+
+    function payBeforePayday() {
+        hideAllMenus();
+        document.getElementById('payBeforePaydayMenu').style.display = 'block';
+    }
+
+    function confirmPayment(type) {
+        hideAllMenus();
+        let details = '';
+        if (type === 'lumpSum') {
+            const amount = document.getElementById('lumpSumAmount').value;
+            details = `Amount: RwfRwf{amount}`;
+        } else if (type === 'payday') {
+            const amount = document.getElementById('paydayAmount').value;
+            const date = document.getElementById('paydayDate').value;
+            details = `Amount: RwfRwf{amount}<br>Date: Rwf{date}`;
+        }
+        document.getElementById('confirmationDetails').innerHTML = details;
+        document.getElementById('confirmationMenu').style.display = 'block';
+    }
+
+    function processPayment() {
+        // Simulate payment processing
+        const success = true; // Simulate a successful payment
+        hideAllMenus();
+        const resultMessage = success ? 'Your payment has been successfully processed.' : 'Your payment could not be processed. Please try again or contact customer support.';
+        document.getElementById('resultMessage').innerHTML = resultMessage;
+        document.getElementById('resultMenu').style.display = 'block';
+    }
+
+    function cancelPayment() {
+        showRepayLoanMenu();
+    }
+
+    function hideAllMenus() {
+        document.querySelectorAll('.menu').forEach(menu => {
+            menu.style.display = 'none';
+        });
+    }
+
+    function exitSystem() {
+        alert('Exiting...');
+        // Implement exit functionality as needed
+    }
+
+    function viewLoanDetails() {
+        hideAllMenus();
+        document.getElementById('loanDetailsMenu').style.display = 'block';
+    }
+
+</script>
+</body>
+</html>

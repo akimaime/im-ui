@@ -128,11 +128,22 @@
                                     type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cards
                             </button>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
-                                Requests
-                            </button>
+
+                        <li class="nav-item  dropdown">
+                            <a class="nav-link   dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Service Requests
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../requests/chequebook.html">Chequebook
+                                    Requests </a></li>
+                                <li><a class="dropdown-item" href="../requests/certificates.html">Certificates
+                                    Requests </a></li>
+                                <li><a class="dropdown-item" href="../requests/paper-statement.html">Paper Statement
+                                    Requests</a></li>
+                                <li><a class="dropdown-item" href="../requests/overdraft.html">Bankers
+                                    cheques/overdraft Demand Request </a></li>
+                            </ul>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="Beneficiaries" data-bs-toggle="pill"
@@ -148,6 +159,10 @@
                         </li>
                         <li class="nav-item" role="presentation">
                             <a href="../administration.html" class="nav-link" id="administration">Administration
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="../mail.html" class="nav-link" id="mail">Mail
                             </a>
                         </li>
                         <li class="nav-item dropdown">
@@ -238,7 +253,7 @@
                                 <div class="js-single-payment">
                                     <div class="callout callout-primary">
                                         <div class="mb-4 alert alert-primary">
-                                            For single airtime top up, please fill the form below and click Validate / Add. Note that you can add multiple phone numbers by clicking Validate / Add button
+                                            For single airtime top up, please fill the form below and click Validate. Note that you can add multiple phone numbers by clicking Validate button
                                         </div>
                                     </div>
                                     <div class="row align-items-center">
@@ -308,7 +323,7 @@
                                                                             <button type="button"
                                                                                     class="btn btn-primary rounded-default flex-shrink-0 btnAddPhoneNumbers">
                                                                                 <i class="bi bi-plus"></i>
-                                                                                Validate / Add
+                                                                                Validate
                                                                             </button>
                                                                         </div>
                                                                     </div>

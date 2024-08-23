@@ -140,6 +140,10 @@
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
+                            <a href="coorporate/mail.html" class="nav-link" id="mail">Mail
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
                             <a href="coorporate/LoanSimulator.html" class="nav-link" id="loan">Loan
                             </a>
                         </li>
@@ -176,35 +180,42 @@
                                                     <div class="card bg-transparent  border-0   rounded-4"
                                                          style="background-image: url('../assets/logo_primary.png');background-repeat: no-repeat;background-size: contain">
 
-                                                        <div class="card-body shadow-lg rounded-top-4 bg-success overflow-hidden">
+                                                        <div class="card-body shadow-lg rounded-top-4 bg-success ">
                                                             <div class=" object-fit-cover p-0">
-                                                                <div class="d-flex justify-content-between">
+                                                                <div class="d-flex justify-content-between align-items-center">
                                                                     <h5 class="text-white">
                                                                         Current Account <i class="bi bi-info-circle fs-6"></i>
                                                                     </h5>
+                                                                    <span class="badge dormantAccount bg-secondary d-none">Dormant</span>
+                                                                    <span class="badge inactiveAccount bg-danger d-none">Inactive</span>
                                                                     <div class=" dropdown">
-                                                                        <a class="dropdown-toggle text-decoration-none text-white text-sm"
+                                                                        <a class="dropdown-toggle fw-bold fs-6 text-decoration-none text-white text-sm"
                                                                            href="#" role="button" data-bs-toggle="dropdown"
                                                                            aria-expanded="false">
                                                                             Action
                                                                         </a>
                                                                         <ul class="dropdown-menu ">
-                                                                            <li><a class="dropdown-item" href="#">Transact</a></li>
+                                                                            <li><a class="dropdown-item other-menu" href="#">Apply for chequebook</a></li>
+                                                                            <li><a class="dropdown-item other-menu" href="#">Apply for card</a></li>
+                                                                            <li><a class="dropdown-item other-menu" href="#">Add funds</a></li>
+                                                                            <li><a class="dropdown-item other-menu" href="coorporate/full_statement.html">View statement</a></li>
+                                                                            <li><a class="dropdown-item reactivate d-none" href="#">Reactivate</a></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
                                                                 <label class="fw-medium mb-4 text-white">
                                                                     Select Account
-                                                                    <select class="form-select bg-transparent  text-white border-0 mx-0 ps-0 py-0"
-                                                                            style="font-size: 0.8rem">
-                                                                        <option class="bg-success">Mugisha - 23612271897189</option>
-                                                                        <option class="bg-success">Mcall - 10612271897189</option>
+                                                                    <select id="dormantAccount" class="form-select bg-success text-white border-0 mx-0 ps-0 py-0" style="font-size: 0.8rem">
+                                                                        <option class="bg-success" value="acc1" >Mugisha - 23612271897189</option>
+                                                                        <option class="bg-success" value="acc2" id="dormant" >Mcall - 10612271897189</option>
+                                                                        <option class="bg-success" value="acc3" id="inactive">Castro - 30612271897189</option>
                                                                     </select>
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                        <div class="text-primary d-flex justify-content-center align-items-center rounded-bottom-4 py-3 bg-primary-subtle">
+                                                        <div class="text-primary d-flex justify-content-center align-items-center gap-2 rounded-bottom-4 py-3 bg-primary-subtle">
                                                             <span class="fw-bold fs-5">20,000,000 RWF</span>
+                                                            <i class="bi bi-eye"></i>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -222,13 +233,13 @@
                                                                 Saving Account <i class="bi bi-info-circle fs-6"></i>
                                                             </h5>
                                                             <div class=" dropdown">
-                                                                <a class="dropdown-toggle text-decoration-none text-white text-sm"
+                                                                <a class="dropdown-toggle fw-bold fs-6 text-decoration-none text-white text-sm"
                                                                    href="#" role="button" data-bs-toggle="dropdown"
                                                                    aria-expanded="false">
                                                                     Action
                                                                 </a>
                                                                 <ul class="dropdown-menu ">
-                                                                    <li><a class="dropdown-item" href="#">Transact</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Apply for Debit Card</a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -242,8 +253,9 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="text-primary d-flex justify-content-center align-items-center rounded-bottom-4 py-3 bg-primary-subtle">
+                                                <div class="text-primary d-flex justify-content-center gap-2 align-items-center rounded-bottom-4 py-3 bg-primary-subtle">
                                                     <span class="fw-bold fs-5">40,000 RWF</span>
+                                                    <i class="bi bi-eye"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -258,13 +270,13 @@
                                                                 Loan Account <i class="bi bi-info-circle fs-6"></i>
                                                             </h5>
                                                             <div class=" dropdown">
-                                                                <a class="dropdown-toggle text-decoration-none text-white text-sm"
+                                                                <a class="dropdown-toggle fw-bold fs-6 text-decoration-none text-white text-sm"
                                                                    href="#" role="button" data-bs-toggle="dropdown"
                                                                    aria-expanded="false">
                                                                     Action
                                                                 </a>
                                                                 <ul class="dropdown-menu ">
-                                                                    <li><a class="dropdown-item" href="#">Transact</a></li>
+                                                                    <li><a class="dropdown-item" href="coorporate/loan-repayment.html">Pay loan</a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -285,6 +297,57 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="carousel-item h-100  rounded-4 active">
+                                            <div class="  rounded-4 ">
+                                                <div class="">
+                                                    <div class="card bg-transparent  border-0   rounded-4"
+                                                         style="background-image: url('../assets/logo_primary.png');background-repeat: no-repeat;background-size: contain">
+
+                                                        <div class="card-body shadow-lg rounded-top-4 bg-success ">
+                                                            <div class=" object-fit-cover p-0">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <h5 class="text-white">
+                                                                       Credit Card <i class="bi bi-info-circle fs-6"></i>
+                                                                    </h5>
+                                                                    <span class="badge dormantAccount bg-secondary d-none">Dormant</span>
+                                                                    <span class="badge inactiveAccount bg-danger d-none">Inactive</span>
+                                                                    <div class=" dropdown">
+                                                                        <a class="dropdown-toggle fw-bold fs-6 text-decoration-none text-white text-sm"
+                                                                           href="#" role="button" data-bs-toggle="dropdown"
+                                                                           aria-expanded="false">
+                                                                            Action
+                                                                        </a>
+                                                                        <ul class="dropdown-menu ">
+                                                                            <li><a class="dropdown-item other-menu" href="#">Apply for chequebook</a></li>
+                                                                            <li><a class="dropdown-item other-menu" href="#">Apply for card</a></li>
+                                                                            <li><a class="dropdown-item other-menu" href="#">Add funds</a></li>
+                                                                            <li><a class="dropdown-item other-menu" href="coorporate/full_statement.html">View statement</a></li>
+                                                                            <li><a class="dropdown-item reactivate d-none" href="#">Reactivate</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <label class="fw-medium mb-4 text-white">
+                                                                    Select Account
+                                                                    <select  class="form-select bg-success text-white border-0 mx-0 ps-0 py-0" style="font-size: 0.8rem">
+                                                                        <option class="bg-success" value="acc1" >Mugisha - 23612271897189</option>
+                                                                        <option class="bg-success" value="acc2" >Mcall - 10612271897189</option>
+                                                                        <option class="bg-success" value="acc3" >Castro - 30612271897189</option>
+                                                                    </select>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-primary d-flex flex-column justify-content-center align-items-center rounded-bottom-4 py-3 bg-primary-subtle">
+                                                            <span class="fw-bold">Remaining Balance</span>
+                                                            <div>
+                                                                <span class="fw-bold fs-5">20,000,000 RWF</span>
+                                                                <i class="bi bi-eye"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -1058,6 +1121,40 @@
             $('#hideTransactionsBtn').removeClass('d-none');
         });
     });
+</script>
+<script>
+        $(document).ready(function () {
+        $('#dormant').click(function () {
+            $('.dormant').addClass('bg-secondary');
+        });
+        $('#dormantAccount').change( function () {
+        if ($('#dormantAccount').val() === 'acc2') {
+        $('.dormantAccount').removeClass('d-none');
+        $('.inactiveAccount').addClass('d-none');
+        $('.reactivate').removeClass('d-none');
+        $('.other-menu').addClass('d-none');
+    }else if($(this).val()==='acc3'){
+        $('.inactiveAccount').removeClass('d-none');
+        $('.reactivate').removeClass('d-none');
+        $('.dormantAccount').addClass('d-none');
+        $('.other-menu').addClass('d-none');
+    }
+        else {
+        $('.dormantAccount').addClass('d-none');
+        $('.inactiveAccount').addClass('d-none');
+        $('.reactivate').addClass('d-none');
+        $('.other-menu').removeClass('d-none');
+    }
+    });
+        $('#dormantSaving').change( function () {
+        if ($('#dormantSaving').val() === 0) {
+        $('.dormantSaving').removeClass('d-none');
+    } else {
+        $('.dormantSaving').addClass('d-none');
+    }
+    });
+    });
+</script>
 </script>
 <script>
 
