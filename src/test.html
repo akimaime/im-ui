@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings & Term Deposits Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Savings & Term Deposits Calculator</h1>
+    <label for="principal">Initial Deposit Amount:</label>
+    <input type="number" id="principal" placeholder="Enter the amount" required>
+
+    <label for="rate">Annual Interest Rate (%):</label>
+    <input type="number" id="rate" step="0.01" placeholder="Enter the interest rate" required>
+
+    <label for="time">Time Period (in years):</label>
+    <input type="number" id="time" placeholder="Enter the number of years" required>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+    function calculate() {
+        // Get the values from the inputs
+        const principal = document.getElementById("principal").value;
+        const rate = document.getElementById("rate").value;
+        const time = document.getElementById("time").value;
+
+        // Validate input values
+        if (principal <= 0 || rate <= 0 || time <= 0) {
+            alert("Please enter positive values.");
+            return;
+        }
+
+        // Calculate the compound interest
+        const amount = principal * Math.pow((1 + rate / 100), time);
+        const interest = amount - principal;
+
+        // Display the result
+        document.getElementById("result").innerHTML =
+            `The total amount after ${time} years will be $${amount.toFixed(2)}.<br>
+         The interest earned is $${interest.toFixed(2)}.`;
+    }
+
+</script>
+</body>
+</html>
