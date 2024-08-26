@@ -151,48 +151,72 @@
             <div class="row">
                 <div class="col-lg-9 ">
                     <div class="card rounded-4 ">
+
                         <form action="" class="" id="ownAccountsForm">
                             <div class="card-body ">
-                                <div class="tab-pane card-body  active" id="pills-own-accounts" role="tabpanel">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <h4 class="text-info fw-bold ">Transfer to Local Banks</h4>
-                                            <p class="text-muted small">
-                                                Transfer money to any local bank account in Rwanda
-                                            </p>
-                                        </div>
-                                        <div class="alert less alert-danger" style="display: none">
+                                <div class="row single">
+                                    <div class="col-lg-6">
+                                        <h4 class="text-info fw-bold ">Transfer to Local Banks</h4>
+                                        <p class="text-muted small">
+                                            Transfer money to any local bank account in Rwanda
+                                        </p>
+                                    </div>
+                                    <div class="alert less alert-danger" style="display: none">
                                             <span class="text-danger small">
                                                 Please note that the minimum amount you can send is 1,000 RWF
                                             </span>
-                                        </div>
-                                        <div class="alert greater alert-danger" style="display: none">
+                                    </div>
+                                    <div class="alert greater alert-danger" style="display: none">
                                             <span class="text-danger small">
                                                 Please note that the maximum amount you can send is 1,000,000 RWF
                                             </span>
-                                        </div>
                                     </div>
+                                </div>
+                                <div class="row ekash d-none">
+                                    <div class="col-lg-6">
+                                        <h4 class="text-info fw-bold ">eKash Payment</h4>
+                                        <p class="text-muted small">
+                                            eKash is a mobile payment solution that allows you to send money to any mobile number in Rwanda.
+                                        </p>
+                                    </div>
+                                    <div class="alert less alert-danger" style="display: none">
+                                        <p class="text-danger small">
+                                            Please note that the minimum amount you can send is 1,000 RWF
+                                        </p>
+                                    </div>
+                                    <div class="alert greater alert-danger" style="display: none">
+                                        <p class="text-danger small">
+                                            Please note that the maximum amount you can send is 1,000,000 RWF
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rtgs" value="option1">
+                                        <label class="form-check-label text-sm" for="rtgs">RTGS</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="eft" value="option2">
+                                        <label class="form-check-label text-sm" for="eft">EFT</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                               id="eKash" value="option2">
+                                        <label class="form-check-label text-sm" for="eft">eKash</label>
+                                    </div>
+                                    <div class="alert alert-info rtgs_info" style="display: none" id="rtgs_info">
+                                        <p class="text-sm mb-0">
+                                            RTGS transactions are instant. A fee of RWF 600 applies.
+                                        </p>
+                                    </div>
+                                    <div class="alert alert-info" style="display: none" id="eft_info">
+                                        <p class="text-sm mb-0">
+                                            EFT transactions may take up to 24 hours to process. A fee of RWF200 applies.
+                                        </p>
+                                    </div>
+                                </div>
                                     <div class="js-single-payment" >
-                                        <div class="mb-3">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rtgs" value="option1">
-                                                <label class="form-check-label text-sm" for="rtgs">RTGS</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="eft" value="option2">
-                                                <label class="form-check-label text-sm" for="eft">EFT</label>
-                                            </div>
-                                            <div class="alert alert-info rtgs_info" style="display: none" id="rtgs_info">
-                                                <p class="text-sm mb-0">
-                                                    RTGS transactions are instant. A fee of RWF 600 applies.
-                                                </p>
-                                            </div>
-                                            <div class="alert alert-info" style="display: none" id="eft_info">
-                                                <p class="text-sm mb-0">
-                                                    EFT transactions may take up to 24 hours to process. A fee of RWF200 applies.
-                                                </p>
-                                            </div>
-                                        </div>
+
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <div class=" mb-3">
@@ -413,11 +437,233 @@
 
 
                                     </div>
+                                    <div class="ekash d-none">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class=" mb-3">
+                                                    <div class="d-flex">
+                                                        <label for="im_from_account"
+                                                               class=" text-sm fw-normal form-label">
+                                                            Make payment from:
+                                                        </label>
+                                                        <div style="display: none"
+                                                             class=" justify-content-between align-items-center mb-3 js-account-balance">
+                                                            <div class="d-flex flex-column">
+                                                                <div class=" text-muted  small ">Account Balance</div>
+                                                                <span class="text-info  small js-balance">*** *** ***
+                                                                ***</span>
+                                                            </div>
+                                                            <button type="button"
+                                                                    class=" btn btn-outline-primary border  js-toggle-balance">
+                                                                Show Balance
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <select class="form-select  py-3 bg-secondary border-0 bg-opacity-10    js-transfer-from"
+                                                            required id="im_from_account" name="from_account">
+                                                        <option value="">Select Account</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="account_name"
+                                                           class="form-label text-sm fw-normal  text-sm">Account Name:</label>
+                                                    <div class="input-group">
+
+                                                        <input type="text" name="amount" required id="account_name" disabled
+                                                               class="form-control flex-grow-1   py-3 bg-secondary border-0 bg-opacity-10 px-3 fw-semibold js-amount" />
+                                                    </div>
+                                                    <div class="js-conversion p-0" style="display:none">
+                                                        <div
+                                                                class="d-flex  flex-column flex-md-row gap-3  ">
+                                                            <div>
+                                                                <div class="fw-normal text-info fs-6">
+                                                                    Total Conversion:
+                                                                </div>
+                                                                <div
+                                                                        class="d-flex flex-shrink-0 align-items-center gap-2">
+                                                                    <span
+                                                                            class="text-muted fw-semibold text-xs js-converted-currency">USD</span>
+                                                                    <span
+                                                                            class="fs-13px fw-semibold text-xs text-info js-converted-amount">2763.38</span>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="fw-normal text-info fs-6">
+                                                                    Conversion Rate:
+                                                                </div>
+                                                                <div class="text-info">
+                                                                    (<span
+                                                                        class="text-info text-xs js-conversion-rate">0.000092</span>)
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
 
 
 
-                                </div>
 
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class=" ">
+                                                    <div class="d-flex justify-content-between">
+                                                        <label for="pay_to" class=" text-sm fw-normal form-label">
+                                                            Make payment to:
+                                                        </label>
+                                                        <!--                                                    <div class="form-check">-->
+                                                        <!--                                                        <input-->
+                                                        <!--                                                                class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"-->
+                                                        <!--                                                                type="checkbox" name="select_beneficiary"-->
+                                                        <!--                                                                id="home_beneficiary">-->
+                                                        <!--                                                        <label-->
+                                                        <!--                                                                class="form-check-label text-sm  fw-normal cursor-pointer"-->
+                                                        <!--                                                                for="home_beneficiary">-->
+                                                        <!--                                                            Select From Saved Beneficiaries-->
+                                                        <!--                                                        </label>-->
+                                                        <!--                                                    </div>-->
+                                                    </div>
+
+                                                    <div style="display: none" class="js-select-beneficiary">
+                                                        <select
+                                                                class="  text-sm  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold  form-select js-beneficiaries">
+                                                            <option value="">Select Beneficiary</option>
+
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-2 js-search-beneficiary">
+                                                        <div class="rounded-default gap-2  d-flex align-items-center p-1">
+
+                                                            <input type="text"
+                                                                   id="pay_to"
+                                                                   class="form-control  py-3 bg-secondary border-0 bg-opacity-10 shadow-none"
+                                                                   name="search" />
+                                                            <button type="button"
+                                                                    class="btn btn-info  py-3 px-3 js-verify">
+                                                                Validate
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="home_reason"
+                                                           class="form-label text-sm  fw-normal">Beneficiary Bank:</label>
+                                                    <input type="text" name="beneficiary_account" required id="ben_account" disabled
+                                                           class="form-control py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold" />
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div style="display: none"
+                                                     class=" justify-content-between align-items-center mb-3 js-account-balance">
+                                                    <div class="d-flex flex-column">
+                                                        <div class=" text-muted  small ">Account Balance</div>
+                                                        <span class="text-info  small js-balance">*** *** ***
+                                                                ***</span>
+                                                    </div>
+                                                    <button type="button"
+                                                            class=" btn btn-outline-primary border  js-toggle-balance">
+                                                        Show Balance
+                                                    </button>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="amount"
+                                                           class="form-label text-sm fw-normal  text-sm">Transaction Amount:</label>
+                                                    <div class="input-group">
+
+                                                        <input type="text" name="amount" required id="amount"
+                                                               class="form-control flex-grow-1   py-3 bg-secondary border-0 bg-opacity-10 px-3 fw-semibold js-amount" />
+                                                    </div>
+                                                    <div class="js-conversion p-0" style="display:none">
+                                                        <div
+                                                                class="d-flex  flex-column flex-md-row gap-3  ">
+                                                            <div>
+                                                                <div class="fw-normal text-info fs-6">
+                                                                    Total Conversion:
+                                                                </div>
+                                                                <div
+                                                                        class="d-flex flex-shrink-0 align-items-center gap-2">
+                                                                    <span
+                                                                            class="text-muted fw-semibold text-xs js-converted-currency">USD</span>
+                                                                    <span
+                                                                            class="fs-13px fw-semibold text-xs text-info js-converted-amount">2763.38</span>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="fw-normal text-info fs-6">
+                                                                    Conversion Rate:
+                                                                </div>
+                                                                <div class="text-info">
+                                                                    (<span
+                                                                        class="text-info text-xs js-conversion-rate">0.000092</span>)
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label for="home_reason"
+                                                           class="form-label text-sm  fw-normal">Narration:</label>
+                                                    <textarea rows="1" required
+                                                              class="form-control py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold"
+                                                              name="reason" id="home_reason"></textarea>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="py-2">
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input js-payment-schedule   " type="checkbox" role="switch"
+                                                               id="international_payment_schedule">
+
+                                                        <label class="form-check-label text-info small fw-normal "
+                                                               for="international_payment_schedule">
+                                                            Schedule Payment <span class="text-muted small">(To be
+                                                        processed
+                                                        on a specific date)</span>
+                                                        </label>
+
+                                                    </div>
+
+                                                    <div class="mb-1 js-schedule-container" style="display: none">
+                                                        <label for="own_date"
+                                                               class="form-label fw-normal text-sm">
+                                                            Date to process payment:
+                                                        </label>
+                                                        <input type="date" name="own_date" id="own_date"
+                                                               required
+                                                               class="form-control bg-secondary border-0 bg-opacity-10 py-3 px-3"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-check save_beneficiary" >
+                                                    <input
+                                                            class="form-check-input rounded-0 border-info  "
+                                                            type="checkbox" name="select_beneficiary"
+                                                            id="save_ben">
+                                                    <label
+                                                            class="form-check-label text-info fw-normal cursor-pointer"
+                                                            for="save_ben">
+                                                        Save As Beneficiary
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                             </div>
                             <div class="card-footer bg-transparent">
                                 <div class="row">
@@ -674,20 +920,36 @@
             $('.js-conversion').slideUp();
         }
     }
-    let rtgsInfo = $('.rtgs_info');
+    let rtgsInfo = $('#rtgs_info');
     let eftInfo = $('#eft_info');
+    let eKash=$('.ekash');
     $('#rtgs').on('change', function () {
         if ($(this).is(':checked')) {
             rtgsInfo.slideDown();
             eftInfo.slideUp();
+            eKash.addClass('d-none');
+            $('.js-single-payment').slideDown();
+            $('.single').removeClass('d-none');
         }
     });
     $('#eft').on('change', function () {
         if ($(this).is(':checked')) {
             eftInfo.slideDown();
             rtgsInfo.slideUp();
+            eKash.addClass('d-none');
+            $('.single').removeClass('d-none');
+            $('.js-single-payment').slideDown();
         }
     });
+    $('#eKash').on('change',function(){
+        if ($(this).is(':checked')) {
+            eKash.removeClass('d-none');
+            $('.single').addClass('d-none');
+            $('.js-single-payment').slideUp();
+        }else {
+            eKash.addClass('d-none');
+        }
+    })
 
     $(function () {
 
@@ -901,6 +1163,28 @@
             }
 
         })
+        $('.js-verify').on('click', function () {
+            //simulate ajax call
+            let btn = $(this);
+            let accountNameField = $('#account_name');
+            let benAccountField = $('#ben_account');
+            let bankNames = ['Equity', 'Bank of Kigali', 'Access Bank', 'Cagebank'];
+            let Names = ['Byukusenge Jean Paul', 'Ntare Yvan', 'Mugabe Alex', 'Rugamba Jean'];
+            let randomIndex = Math.floor(Math.random() * bankNames.length);
+            let randomNameIndex = Math.floor(Math.random() * Names.length);
+            // add spinner to button
+            btn.html(
+                `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                <span class="visually-hidden">Loading...</span>`
+            )
+                .prop('disabled', true);
+            setTimeout(function () {
+                $('.js-account-found').slideDown();
+                accountNameField.val(Names[randomNameIndex]);
+                benAccountField.val(bankNames[randomIndex]);
+                btn.html('Verify').prop('disabled', false);
+            }, 2000);
+        });
 
 
         $('.js-payment-schedule').on('change', function () {

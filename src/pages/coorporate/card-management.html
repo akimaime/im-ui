@@ -5,124 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>I&M Internet bank</title>
     <link href="../../css/custom.css" rel="stylesheet">
-    <style>
-        /* external css: flickity.css */
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: sans-serif;
-
-        }
-
-        .carousel {
-            margin: 1%;
-        }
-
-        .carousel-cell {
-            width: 90%;
-            border-radius: 5px;
-            counter-increment: gallery-cell;
-        }
-
-        /* cell number */
-        .carousel-cell:before {
-            display: block;
-            text-align: center;
-            line-height: 200px;
-            font-size: 80px;
-            color: #F59E0B;
-        }
-
-
-        /* big buttons, no circle */
-        .flickity-prev-next-button {
-            width: 50px;
-            height: 50px;
-            background: transparent;
-            border: solid 2px #F59E0B;
-        }
-
-        /* arrow color */
-        .flickity-prev-next-button .arrow {
-            fill: #F59E0B;
-        }
-
-        .flickity-prev-next-button.no-svg {
-            color: white;
-        }
-
-        .flickity-prev-next-button:hover {
-            background: transparent;
-        }
-
-        /* hide disabled button */
-        .flickity-prev-next-button:disabled {
-            display: none;
-        }
-
-        .flickity-page-dots {
-            bottom: 0px;
-            fill: #F59E0B;
-        }
-    </style>
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css'
-          rel='stylesheet' type='text/css'>
 </head>
 <body class="">
-<div class="d-flex min-vh-100 justify-content-between flex-column">
-    <div class="bg-color-height mb-4">
+<div class="corp-bg mb-4">
+    <div class="d-flex min-vh-100 justify-content-between flex-column">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-start py-4">
-                <div>
-                    <div class="d-flex col-lg-2 p-2 flex-column bg-white  rounded-1">
-                        <img src="../assets/b_logo.png" class="img-fluid" alt="logo">
-                    </div>
-                    <span class="text-white  fw-bold fs-2">Retail</span>
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <div class="d-flex col-3 flex-column">
+                    <img src="../../assets/n_logo.png" class="img-fluid" alt="logo">
+                    <span class="text-white px-4 fs-4">Corporate</span>
+
                 </div>
-                <div class="d-flex col-lg-3 align-items-center justify-content-end gap-2">
-                    <h5 class="text-white ">Welcome ,Jon Doe</h5>
-                    <div class="d-flex rounded-circle bg-dark bg-opacity-50 p-4 justify-content-center align-items-center"
-                         style="height: 16px;width: 16px">
-                        <i class="bi bi-person fs-5 text-white"></i>
+                <div class="d-flex align-items-center gap-2">
+                    <h5 class="text-white my-0 ">Welcome to , Paper Print LTD</h5>
+                    <div class="position-relative">
+                        <div class="d-flex rounded-circle  bg-white bg-opacity-10 p-4 justify-content-center overflow-hidden align-items-center"
+                             style="height: 26px;width: 26px">
+                            <i class="bi bi-bell text-white fs-3"></i>
+                            <div class="badge bg-danger rounded-circle position-absolute"
+                                 style="top: -5px;right: -10px">5
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="d-flex align-items-end flex-column">
+                                    <span class="text-sm fw-light">John Doe</span>
+                                    <small><i class="bi bi-hammer me-2"></i>Initiator</small>
+                                  </span>
+                            <img src="../../assets/prfl.png" alt="profile" class="object-fit-cover">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
+
+                            <!--                            <li class="my-2">-->
+                            <!--                                <a class="fw-normal dropdown-item" href="#">-->
+                            <!--                                    <i class="bi bi-gear"></i>-->
+                            <!--                                    Account Settings-->
+                            <!--                                </a>-->
+                            <!--                            </li>-->
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="#">
+                                    <i class="bi bi-gear"></i>
+                                    Account Settings
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="/">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
-            <nav class="mb-4 navbar navbar-expand-lg">
-                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class=" navbar navbar-expand-lg">
+                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <i class="navbar-toggler-icon text-white"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="dashboard.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
                                 Dashboard
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../corporate-dashboard.html">Initiator
+                                    Dashboard</a></li>
+                                <li><a class="dropdown-item" href="dashboard/verifier-dashboard.html">Verifier
+                                    Dashboard</a></li>
+                                <li><a class="dropdown-item" href="dashboard/approver-dashboard.html">Approver
+                                    Dashboard </a></li>
+                                <li><a class="dropdown-item" href="../dashboard.html">Retail Dashboard</a></li>
+
+                            </ul>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="corporate-dashboard.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">Corporate Dashboard
-                            </a>
-                        </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
                                 Transfers
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="transfers/own-account.html">Transfer to your own Accounts </a></li>
-                                <li><a class="dropdown-item" href="transfers/internal.html">Transfer from I&M to I&M </a></li>
-                                <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to Local Banks </a></li>
-                                <li><a class="dropdown-item" href="transfers/international.html">Transfer to International </a></li>
+                                <li><a class="dropdown-item" href="transfers/own-account.html">Transfer to your own
+                                    Accounts </a></li>
+                                <li><a class="dropdown-item" href="transfers/internal.html">Transfer from I&M to
+                                    I&M </a></li>
+                                <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to Local
+                                    Banks </a></li>
+                                <li><a class="dropdown-item" href="transfers/international.html">Transfer to
+                                    International </a></li>
                                 <li><a class="dropdown-item" href="transfers/momo.html">Transfer to Mobile </a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
                                 Payments
                             </a>
                             <ul class="dropdown-menu">
@@ -134,49 +120,84 @@
                             </ul>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active" href="card-management.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Manage Cards
+                            <a href="bulk-payments.html" class="nav-link " id="bulk">
+                                Bulk Payments
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="beneficiaries.html" class="nav-link " id="Beneficiaries">Beneficiaries
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="card-management.html" class="nav-link active" id="card">Manage Cards
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
                                 Service Requests
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="requests/chequebook.html">Chequebook Requests </a></li>
-                                <li><a class="dropdown-item" href="requests/certificates.html">Certificates Requests </a></li>
-                                <li><a class="dropdown-item" href="requests/paper-statement.html">Paper Statement Requests</a></li>
-                                <li><a class="dropdown-item" href="requests/overdraft.html">Bankers cheques/overdraft Demand Request </a></li>
+                                <li><a class="dropdown-item" href="requests/chequebook.html">Chequebook Requests </a>
+                                </li>
+                                <li><a class="dropdown-item" href="requests/certificates.html">Certificates
+                                    Requests </a></li>
+                                <li><a class="dropdown-item" href="requests/paper-statement.html">Paper Statement
+                                    Requests</a></li>
+                                <li><a class="dropdown-item" href="requests/overdraft.html">Bankers cheques/overdraft
+                                    Demand Request </a></li>
                             </ul>
                         </li>
 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Product Simulator
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href=" LoanSimulator.html">Loan Simulator</a></li>
+                                <li><a class="dropdown-item" href=" savingCalculator.html">Savings and term deposit
+                                    simulator</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Standing Orders
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href=" transfers-standingOrder.html">Transfer Standing
+                                    Orders </a></li>
+                                <li><a class="dropdown-item" href=" airtime-standingOrder.html">Airtime Standing
+                                    Orders</a></li>
+                                <li><a class="dropdown-item" href=" utilities-standingOrder.html">Utility Standing
+                                    Orders</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="beneficiaries.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Beneficiaries
+                            <a href="administration.html" class="nav-link" id="administration">Administration
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="LoanSimulator.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Loans
+                            <a href="mail.html" class="nav-link" id="mail">Mail
                             </a>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="mail.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Mails
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Approval Center
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="initiated.html">Initiated </a></li>
+                                <li><a class="dropdown-item" href="Approvals.html">Pending</a></li>
+                                <li><a class="dropdown-item" href="approved.html">Approved</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
+        <div class="container">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
@@ -196,9 +217,9 @@
                                                     </span>
                                                 </div>
                                                 <div class="d-flex flex-column gap-2">
-                                                    <img src="../assets/n_logo.png" class="" style="height: 25px"
+                                                    <img src="../../assets/n_logo.png" class="" style="height: 25px"
                                                          alt="master">
-                                                    <img src="../assets/images/nfc.svg" class="" style="height: 25px"
+                                                    <img src="../../assets/images/nfc.svg" class="" style="height: 25px"
                                                          alt="master">
                                                 </div>
                                             </div>
@@ -224,7 +245,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="d-flex align-items-center flex-column">
-                                                        <img src="../assets/master.png" class="img-fluid"
+                                                        <img src="../../assets/master.png" class="img-fluid"
                                                              style="height: 30px"
                                                              alt="master">
                                                     </div>
@@ -247,9 +268,9 @@
                                                     </span>
                                                 </div>
                                                 <div class="d-flex flex-column gap-2">
-                                                    <img src="../assets/n_logo.png" class="" style="height: 25px"
+                                                    <img src="../../assets/n_logo.png" class="" style="height: 25px"
                                                          alt="master">
-                                                    <img src="../assets/images/nfc.svg" class="" style="height: 25px"
+                                                    <img src="../../assets/images/nfc.svg" class="" style="height: 25px"
                                                          alt="master">
                                                 </div>
                                             </div>
@@ -296,9 +317,9 @@
                                                     </span>
                                                 </div>
                                                 <div class="d-flex flex-column gap-2">
-                                                    <img src="../assets/n_logo.png" class="" style="height: 25px"
+                                                    <img src="../../assets/n_logo.png" class="" style="height: 25px"
                                                          alt="master">
-                                                    <img src="../assets/images/nfc.svg" class="" style="height: 25px"
+                                                    <img src="../../assets/images/nfc.svg" class="" style="height: 25px"
                                                          alt="master">
                                                 </div>
                                             </div>
@@ -324,7 +345,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="d-flex align-items-center flex-column">
-                                                        <img src="../assets/master.png" class="img-fluid"
+                                                        <img src="../../assets/master.png" class="img-fluid"
                                                              style="height: 30px"
                                                              alt="master">
                                                     </div>
@@ -338,7 +359,8 @@
                     </div>
                     <div>
                         <button type="submit" data-bs-target="#apply" data-bs-toggle="modal"
-                                class="btn py-2  custom-btn shadow w-100"><i class="bi bi-plus-circle me-2"></i>Add new
+                                class="btn py-2  custom-btn shadow w-100"><i class="bi bi-plus-circle me-2"></i>Apply
+                            for
                             card
                         </button>
                     </div>
@@ -370,10 +392,10 @@
                                                     </span>
                                                                     </div>
                                                                     <div class="d-flex flex-column gap-2">
-                                                                        <img src="../assets/n_logo.png" class=""
+                                                                        <img src="../../assets/n_logo.png" class=""
                                                                              style="height: 25px"
                                                                              alt="master">
-                                                                        <img src="../assets/images/nfc.svg" class=""
+                                                                        <img src="../../assets/images/nfc.svg" class=""
                                                                              style="height: 35px"
                                                                              alt="master">
                                                                     </div>
@@ -400,7 +422,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="d-flex align-items-center flex-column">
-                                                                            <img src="../assets/master.png"
+                                                                            <img src="../../assets/master.png"
                                                                                  class="img-fluid"
                                                                                  style="height: 30px"
                                                                                  alt="master">
@@ -552,478 +574,16 @@
                                                                 </div>
                                                                 <div class="flex-grow-1">
                                                                     <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
-                                                                        <p class="mb-0 text-sm">-Rwf 15,000</p>
-                                                                        <span class="text-muted text-sm">26/06/21</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-group-item bg-primary bg-opacity-10   border-bottom-3 ">
-                                                            <div class="d-flex gap-2 align-items-center">
-                                                                <div class="d-flex  align-items-start">
-                                                                    <div class="bg-primary d-flex align-items-center rounded-circle justify-content-center "
-                                                                         style="height: 44px;width: 44px">
-                                                                        <i class=" text-white">
-                                                                            <svg width="20" height="20"
-                                                                                 viewBox="0 0 15 17" fill="none"
-                                                                                 xmlns="http://www.w3.org/2000/svg">
-                                                                                <path d="M1.24951 6.35059H9.06201"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M3.75 11.6211H5" stroke="white"
-                                                                                      stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M6.5625 11.6211H9.0625"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M13.7495 9.99465V11.3645C13.7495 13.6762 13.1933 14.2558 10.9745 14.2558H4.02451C1.80576 14.2558 1.24951 13.6762 1.24951 11.3645V5.95083C1.24951 3.63914 1.80576 3.05957 4.02451 3.05957H9.06201"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M12.4995 7.01118V3.05957L13.7495 4.37677"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M12.5 3.05957L11.25 4.37677"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                            </svg>
-                                                                        </i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="flex-grow-1">
-                                                                    <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
-                                                                        <p class="mb-0 text-sm">-Rwf 15,000</p>
-                                                                        <span class="text-muted text-sm">26/06/21</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-group-item bg-primary bg-opacity-10   border-bottom-3 ">
-                                                            <div class="d-flex gap-2 align-items-center">
-                                                                <div class="d-flex  align-items-start">
-                                                                    <div class="bg-primary d-flex align-items-center rounded-circle justify-content-center "
-                                                                         style="height: 44px;width: 44px">
-                                                                        <i class=" text-white">
-                                                                            <svg width="20" height="20"
-                                                                                 viewBox="0 0 15 17" fill="none"
-                                                                                 xmlns="http://www.w3.org/2000/svg">
-                                                                                <path d="M1.24951 6.35059H9.06201"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M3.75 11.6211H5" stroke="white"
-                                                                                      stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M6.5625 11.6211H9.0625"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M13.7495 9.99465V11.3645C13.7495 13.6762 13.1933 14.2558 10.9745 14.2558H4.02451C1.80576 14.2558 1.24951 13.6762 1.24951 11.3645V5.95083C1.24951 3.63914 1.80576 3.05957 4.02451 3.05957H9.06201"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M12.4995 7.01118V3.05957L13.7495 4.37677"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M12.5 3.05957L11.25 4.37677"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                            </svg>
-                                                                        </i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="flex-grow-1">
-                                                                    <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
-                                                                        <p class="mb-0 text-sm">-Rwf 15,000</p>
-                                                                        <span class="text-muted text-sm">26/06/21</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-group-item bg-primary bg-opacity-10   border-bottom-3 ">
-                                                            <div class="d-flex gap-2 align-items-center">
-                                                                <div class="d-flex  align-items-start">
-                                                                    <div class="bg-primary d-flex align-items-center rounded-circle justify-content-center "
-                                                                         style="height: 44px;width: 44px">
-                                                                        <i class=" text-white">
-                                                                            <svg width="20" height="20"
-                                                                                 viewBox="0 0 15 17" fill="none"
-                                                                                 xmlns="http://www.w3.org/2000/svg">
-                                                                                <path d="M1.24951 6.35059H9.06201"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M3.75 11.6211H5" stroke="white"
-                                                                                      stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M6.5625 11.6211H9.0625"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M13.7495 9.99465V11.3645C13.7495 13.6762 13.1933 14.2558 10.9745 14.2558H4.02451C1.80576 14.2558 1.24951 13.6762 1.24951 11.3645V5.95083C1.24951 3.63914 1.80576 3.05957 4.02451 3.05957H9.06201"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M12.4995 7.01118V3.05957L13.7495 4.37677"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M12.5 3.05957L11.25 4.37677"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                            </svg>
-                                                                        </i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="flex-grow-1">
-                                                                    <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
-                                                                        <p class="mb-0 text-sm">-Rwf 15,000</p>
-                                                                        <span class="text-muted text-sm">26/06/21</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-group-item bg-primary bg-opacity-10   border-bottom-3 ">
-                                                            <div class="d-flex gap-2 align-items-center">
-                                                                <div class="d-flex  align-items-start">
-                                                                    <div class="bg-primary d-flex align-items-center rounded-circle justify-content-center "
-                                                                         style="height: 44px;width: 44px">
-                                                                        <i class=" text-white">
-                                                                            <svg width="20" height="20"
-                                                                                 viewBox="0 0 15 17" fill="none"
-                                                                                 xmlns="http://www.w3.org/2000/svg">
-                                                                                <path d="M1.24951 6.35059H9.06201"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M3.75 11.6211H5" stroke="white"
-                                                                                      stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M6.5625 11.6211H9.0625"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M13.7495 9.99465V11.3645C13.7495 13.6762 13.1933 14.2558 10.9745 14.2558H4.02451C1.80576 14.2558 1.24951 13.6762 1.24951 11.3645V5.95083C1.24951 3.63914 1.80576 3.05957 4.02451 3.05957H9.06201"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M12.4995 7.01118V3.05957L13.7495 4.37677"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M12.5 3.05957L11.25 4.37677"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                            </svg>
-                                                                        </i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="flex-grow-1">
-                                                                    <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
-                                                                        <p class="mb-0 text-sm">-Rwf 15,000</p>
-                                                                        <span class="text-muted text-sm">26/06/21</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-group-item bg-primary bg-opacity-10   border-bottom-3 ">
-                                                            <div class="d-flex gap-2 align-items-center">
-                                                                <div class="d-flex  align-items-start">
-                                                                    <div class="bg-primary d-flex align-items-center rounded-circle justify-content-center "
-                                                                         style="height: 44px;width: 44px">
-                                                                        <i class=" text-white">
-                                                                            <svg width="20" height="20"
-                                                                                 viewBox="0 0 15 17" fill="none"
-                                                                                 xmlns="http://www.w3.org/2000/svg">
-                                                                                <path d="M1.24951 6.35059H9.06201"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M3.75 11.6211H5" stroke="white"
-                                                                                      stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M6.5625 11.6211H9.0625"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M13.7495 9.99465V11.3645C13.7495 13.6762 13.1933 14.2558 10.9745 14.2558H4.02451C1.80576 14.2558 1.24951 13.6762 1.24951 11.3645V5.95083C1.24951 3.63914 1.80576 3.05957 4.02451 3.05957H9.06201"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M12.4995 7.01118V3.05957L13.7495 4.37677"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M12.5 3.05957L11.25 4.37677"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                            </svg>
-                                                                        </i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="flex-grow-1">
-                                                                    <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
-                                                                        <p class="mb-0 text-sm">-Rwf 15,000</p>
-                                                                        <span class="text-muted text-sm">26/06/21</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-group-item bg-primary bg-opacity-10   border-bottom-3 ">
-                                                            <div class="d-flex gap-2 align-items-center">
-                                                                <div class="d-flex  align-items-start">
-                                                                    <div class="bg-primary d-flex align-items-center rounded-circle justify-content-center "
-                                                                         style="height: 44px;width: 44px">
-                                                                        <i class=" text-white">
-                                                                            <svg width="20" height="20"
-                                                                                 viewBox="0 0 15 17" fill="none"
-                                                                                 xmlns="http://www.w3.org/2000/svg">
-                                                                                <path d="M1.24951 6.35059H9.06201"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M3.75 11.6211H5" stroke="white"
-                                                                                      stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M6.5625 11.6211H9.0625"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M13.7495 9.99465V11.3645C13.7495 13.6762 13.1933 14.2558 10.9745 14.2558H4.02451C1.80576 14.2558 1.24951 13.6762 1.24951 11.3645V5.95083C1.24951 3.63914 1.80576 3.05957 4.02451 3.05957H9.06201"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M12.4995 7.01118V3.05957L13.7495 4.37677"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                                <path d="M12.5 3.05957L11.25 4.37677"
-                                                                                      stroke="white" stroke-width="1.5"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"/>
-                                                                            </svg>
-                                                                        </i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="flex-grow-1">
-                                                                    <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
-                                                                        <p class="mb-0 text-sm">-Rwf 15,000</p>
-                                                                        <span class="text-muted text-sm">26/06/21</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade h-100" id="v-pills-profile" role="tabpanel"
-                             aria-labelledby="v-pills-profile-tab" tabindex="0">
-                            <div class="card rounded-4 border-0 h-100">
-                                <div class="row">
-                                    <div class="col-lg-7">
-                                        <div class="card-body">
-                                            <div class="row  ">
-                                                <div class="d-flex justify-content-between   align-items-center">
-                                                    <div>
-                                                        <h4 class="uppercase fw-bolder  text-gray-700 ">
-                                                            Manage Cards
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-4">
-                                                    <div class="col-lg-12  mb-2">
-                                                        <div class="card h-100 card-bg overflow-hidden text-white shadow-md  rounded-4">
-                                                            <div class="card-body d-flex     bg-opacity-75 bg-warning justify-content-between gap-4 flex-column  ">
-                                                                <div class="d-flex align-items-start justify-content-between">
-                                                                    <div>
-                                                    <span class=" fw-bolder mb-0">
-                                                        Gold Credit
-                                                    </span>
-                                                                    </div>
-                                                                    <div class="d-flex flex-column gap-2">
-                                                                        <img src="../assets/n_logo.png" class=""
-                                                                             style="height: 25px"
-                                                                             alt="master">
-                                                                        <img src="../assets/images/nfc.svg" class=""
-                                                                             style="height: 35px"
-                                                                             alt="master">
-                                                                    </div>
-                                                                </div>
-                                                                <div>
-                                                                    <div class="d-flex gap-2 align-items-end">
-                                                                        <span class=" text-opacity-75 card-number  fw-bolder">4459 **** **** 7557</span>
-                                                                    </div>
-                                                                    <div class="d-flex mb-3 justify-content-between align-items-end">
-                                                                        <div class="d-flex gap-3">
-                                                                            <div class="d-flex justify-content-between gap-2  align-items-center">
-                                                                                <div class="d-flex flex-column">
-                                                                                    <span class=" text-opacity-75 mb-0 py-0 fw-lighter text-xs">Valid </span>
-                                                                                    <span class="text-opacity-25 mb-0 py-0 fw-lighter text-xs">UNTIL</span>
-                                                                                </div>
-                                                                                <span class=" text-opacity-75 small">7/25</span>
-                                                                            </div>
-                                                                            <div class="d-flex justify-content-between gap-2  align-items-center">
-                                                                                <div class="d-flex flex-column">
-                                                                                    <span class=" text-opacity-75  mb-0 py-0 fw-lighter text-xs">Valid </span>
-                                                                                    <span class="text-opacity-25 mb-0 py-0 fw-lighter text-xs">THRU</span>
-                                                                                </div>
-                                                                                <span class=" text-opacity-75 small">7/25</span>
-                                                                            </div>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">Netflix</span>
                                                                         </div>
-                                                                        <div class="d-flex fw-bold align-items-center flex-column">
-                                                                            VISA
-                                                                        </div>
+                                                                        <p class="mb-0 text-sm">-Rwf 15,000</p>
+                                                                        <span class="text-muted text-sm">26/06/21</span>
                                                                     </div>
-                                                                    <span class="text-white">Mugabe Alex</span>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="container">
-                                                <div class="row rounded ">
-                                                    <div class="col-lg-4">
-                                                        <a href="#"
-                                                           class="d-flex js-delete flex-column align-items-center text-decoration-none  border   btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
-                                                            <div class="d-flex  align-items-start">
-                                                                <div class="bg-secondary-subtle text-info d-flex align-items-center rounded-circle justify-content-center "
-                                                                     style="height: 44px;width: 44px">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                         height="16" fill="currentColor"
-                                                                         class="bi bi-ban"
-                                                                         viewBox="0 0 16 16">
-                                                                        <path d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                            <span class="text-xs">Block Card Temporary</span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <a href="#" data-bs-target="#pinRest" data-bs-toggle="modal"
-                                                           class="d-flex flex-column align-items-center text-decoration-none border btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
-                                                            <div class="d-flex  align-items-start">
-                                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
-                                                                     style="height: 44px;width: 44px">
-                                                                    <i class="bi bi-shield-lock fw-bolder text-info"></i>
-                                                                </div>
-                                                            </div>
-                                                            <span class="text-xs">Reset pin</span>
-                                                        </a>
-                                                    </div>
-<!--                                                    <div class="col-lg-4">-->
-<!--                                                        <a href="wallet.html"-->
-<!--                                                           class="d-flex flex-column align-items-center text-decoration-none  border  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">-->
-<!--                                                            <div class="d-flex  align-items-start">-->
-<!--                                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "-->
-<!--                                                                     style="height: 44px;width: 44px">-->
-<!--                                                                    <i class="bi bi-wallet fw-bolder text-info"></i>-->
-<!--                                                                </div>-->
-<!--                                                            </div>-->
-<!--                                                            <span class="text-xs">Manage wallets</span>-->
-<!--                                                        </a>-->
-<!--                                                    </div>-->
-<!--                                                    <div class="col-lg-4">-->
-<!--                                                        <a href="#" data-bs-target="#cardToCard" data-bs-toggle="modal"-->
-<!--                                                           class="d-flex flex-column align-items-center text-decoration-none  border  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">-->
-<!--                                                            <div class="d-flex  align-items-start">-->
-<!--                                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "-->
-<!--                                                                     style="height: 44px;width: 44px">-->
-<!--                                                                    <i class="bi bi-arrow-down-up fw-bolder text-info"></i>-->
-<!--                                                                </div>-->
-<!--                                                            </div>-->
-<!--                                                            <span class="text-xs">Card to card transfer</span>-->
-<!--                                                        </a>-->
-<!--                                                    </div>-->
-<!--                                                    <div class="col-lg-4">-->
-<!--                                                        <a href="#" data-bs-target="#load_prepaidCard"-->
-<!--                                                           data-bs-toggle="modal"-->
-<!--                                                           class="d-flex flex-column align-items-center text-decoration-none  border  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">-->
-<!--                                                            <div class="d-flex  align-items-start">-->
-<!--                                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "-->
-<!--                                                                     style="height: 44px;width: 44px">-->
-<!--                                                                    <i class="bi bi-arrow-clockwise fw-bolder text-info"></i>-->
-<!--                                                                </div>-->
-<!--                                                            </div>-->
-<!--                                                            <span class="text-xs">Load Prepaid Card</span>-->
-<!--                                                        </a>-->
-<!--                                                    </div>-->
-                                                    <div class="col-lg-4">
-                                                        <a href="manage_restrictions.html"
-                                                           class="d-flex flex-column align-items-center text-decoration-none  border  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
-                                                            <div class="d-flex  align-items-start">
-                                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
-                                                                     style="height: 44px;width: 44px">
-                                                                    <i class="bi bi-person-dash fw-bolder text-info"></i>
-                                                                </div>
-                                                            </div>
-                                                            <span class="text-xs">Manage Restrictions</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-5 mb-2">
-                                        <div class="card  rounded-4 h-100  border-0">
-                                            <div class="card-body ">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <h6 class="uppercase fw-bolder mb-3  text-gray-700 ">
-                                                            RECENT TRANSACTION
-                                                        </h6>
-                                                    </div>
-                                                </div>
-                                                <div class="list-group">
-                                                    <ul class="list-group list-group-flush rounded border-end-2 tw-border-gray-200 tw-list-none">
+                                                        </li>
                                                         <li class="list-group-item bg-primary bg-opacity-10   border-bottom-3 ">
                                                             <div class="d-flex gap-2 align-items-center">
                                                                 <div class="d-flex  align-items-start">
@@ -1066,7 +626,10 @@
                                                                 </div>
                                                                 <div class="flex-grow-1">
                                                                     <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">ATM</span>
+                                                                        </div>
                                                                         <p class="mb-0 text-sm">-Rwf 15,000</p>
                                                                         <span class="text-muted text-sm">26/06/21</span>
                                                                     </div>
@@ -1167,7 +730,10 @@
                                                                 </div>
                                                                 <div class="flex-grow-1">
                                                                     <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">Google storage </span>
+                                                                        </div>
                                                                         <p class="mb-0 text-sm">-Rwf 15,000</p>
                                                                         <span class="text-muted text-sm">26/06/21</span>
                                                                     </div>
@@ -1216,7 +782,10 @@
                                                                 </div>
                                                                 <div class="flex-grow-1">
                                                                     <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">Simba super market</span>
+                                                                        </div>
                                                                         <p class="mb-0 text-sm">-Rwf 15,000</p>
                                                                         <span class="text-muted text-sm">26/06/21</span>
                                                                     </div>
@@ -1265,7 +834,10 @@
                                                                 </div>
                                                                 <div class="flex-grow-1">
                                                                     <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">ATM</span>
+                                                                        </div>
                                                                         <p class="mb-0 text-sm">-Rwf 15,000</p>
                                                                         <span class="text-muted text-sm">26/06/21</span>
                                                                     </div>
@@ -1314,7 +886,234 @@
                                                                 </div>
                                                                 <div class="flex-grow-1">
                                                                     <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">Google storage </span>
+                                                                        </div>
+                                                                        <p class="mb-0 text-sm">-Rwf 15,000</p>
+                                                                        <span class="text-muted text-sm">26/06/21</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade h-100" id="v-pills-profile" role="tabpanel"
+                             aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <div class="card rounded-4 border-0 h-100">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="card-body">
+                                            <div class="row  ">
+                                                <div class="d-flex justify-content-between   align-items-center">
+                                                    <div>
+                                                        <h4 class="uppercase fw-bolder  text-gray-700 ">
+                                                            Manage Cards
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-lg-12  mb-2">
+                                                        <div class="card h-100 card-bg overflow-hidden text-white shadow-md  rounded-4">
+                                                            <div class="card-body d-flex     bg-opacity-75 bg-warning justify-content-between gap-4 flex-column  ">
+                                                                <div class="d-flex align-items-start justify-content-between">
+                                                                    <div>
+                                                    <span class=" fw-bolder mb-0">
+                                                        Gold Credit
+                                                    </span>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column gap-2">
+                                                                        <img src="../../../assets/n_logo.png" class=""
+                                                                             style="height: 25px"
+                                                                             alt="master">
+                                                                        <img src="../../../assets/images/nfc.svg"
+                                                                             class=""
+                                                                             style="height: 35px"
+                                                                             alt="master">
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="d-flex gap-2 align-items-end">
+                                                                        <span class=" text-opacity-75 card-number  fw-bolder">4459 **** **** 7557</span>
+                                                                    </div>
+                                                                    <div class="d-flex mb-3 justify-content-between align-items-end">
+                                                                        <div class="d-flex gap-3">
+                                                                            <div class="d-flex justify-content-between gap-2  align-items-center">
+                                                                                <div class="d-flex flex-column">
+                                                                                    <span class=" text-opacity-75 mb-0 py-0 fw-lighter text-xs">Valid </span>
+                                                                                    <span class="text-opacity-25 mb-0 py-0 fw-lighter text-xs">UNTIL</span>
+                                                                                </div>
+                                                                                <span class=" text-opacity-75 small">7/25</span>
+                                                                            </div>
+                                                                            <div class="d-flex justify-content-between gap-2  align-items-center">
+                                                                                <div class="d-flex flex-column">
+                                                                                    <span class=" text-opacity-75  mb-0 py-0 fw-lighter text-xs">Valid </span>
+                                                                                    <span class="text-opacity-25 mb-0 py-0 fw-lighter text-xs">THRU</span>
+                                                                                </div>
+                                                                                <span class=" text-opacity-75 small">7/25</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex fw-bold align-items-center flex-column">
+                                                                            VISA
+                                                                        </div>
+                                                                    </div>
+                                                                    <span class="text-white">Mugabe Alex</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="container">
+                                                <div class="row rounded ">
+                                                    <div class="col-lg-4">
+                                                        <a href="#"
+                                                           class="d-flex js-delete flex-column align-items-center text-decoration-none  border   btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                            <div class="d-flex  align-items-start">
+                                                                <div class="bg-secondary-subtle text-info d-flex align-items-center rounded-circle justify-content-center "
+                                                                     style="height: 44px;width: 44px">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                         height="16" fill="currentColor"
+                                                                         class="bi bi-ban"
+                                                                         viewBox="0 0 16 16">
+                                                                        <path d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-xs">Block Card Temporary</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <a href="#" data-bs-target="#pinRest" data-bs-toggle="modal"
+                                                           class="d-flex flex-column align-items-center text-decoration-none border btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                            <div class="d-flex  align-items-start">
+                                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                                     style="height: 44px;width: 44px">
+                                                                    <i class="bi bi-shield-lock fw-bolder text-info"></i>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-xs">Reset pin</span>
+                                                        </a>
+                                                    </div>
+                                                    <!--                                                    <div class="col-lg-4">-->
+                                                    <!--                                                        <a href="wallet.html"-->
+                                                    <!--                                                           class="d-flex flex-column align-items-center text-decoration-none  border  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">-->
+                                                    <!--                                                            <div class="d-flex  align-items-start">-->
+                                                    <!--                                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "-->
+                                                    <!--                                                                     style="height: 44px;width: 44px">-->
+                                                    <!--                                                                    <i class="bi bi-wallet fw-bolder text-info"></i>-->
+                                                    <!--                                                                </div>-->
+                                                    <!--                                                            </div>-->
+                                                    <!--                                                            <span class="text-xs">Manage wallets</span>-->
+                                                    <!--                                                        </a>-->
+                                                    <!--                                                    </div>-->
+                                                    <!--                                                    <div class="col-lg-4">-->
+                                                    <!--                                                        <a href="#" data-bs-target="#cardToCard" data-bs-toggle="modal"-->
+                                                    <!--                                                           class="d-flex flex-column align-items-center text-decoration-none  border  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">-->
+                                                    <!--                                                            <div class="d-flex  align-items-start">-->
+                                                    <!--                                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "-->
+                                                    <!--                                                                     style="height: 44px;width: 44px">-->
+                                                    <!--                                                                    <i class="bi bi-arrow-down-up fw-bolder text-info"></i>-->
+                                                    <!--                                                                </div>-->
+                                                    <!--                                                            </div>-->
+                                                    <!--                                                            <span class="text-xs">Card to card transfer</span>-->
+                                                    <!--                                                        </a>-->
+                                                    <!--                                                    </div>-->
+                                                    <!--                                                    <div class="col-lg-4">-->
+                                                    <!--                                                        <a href="#" data-bs-target="#load_prepaidCard"-->
+                                                    <!--                                                           data-bs-toggle="modal"-->
+                                                    <!--                                                           class="d-flex flex-column align-items-center text-decoration-none  border  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">-->
+                                                    <!--                                                            <div class="d-flex  align-items-start">-->
+                                                    <!--                                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "-->
+                                                    <!--                                                                     style="height: 44px;width: 44px">-->
+                                                    <!--                                                                    <i class="bi bi-arrow-clockwise fw-bolder text-info"></i>-->
+                                                    <!--                                                                </div>-->
+                                                    <!--                                                            </div>-->
+                                                    <!--                                                            <span class="text-xs">Load Prepaid Card</span>-->
+                                                    <!--                                                        </a>-->
+                                                    <!--                                                    </div>-->
+                                                    <div class="col-lg-4">
+                                                        <a href="manage_restrictions.html"
+                                                           class="d-flex flex-column align-items-center text-decoration-none  border  btn btn-outline-light text-black  mb-2 p-2 rounded-2 d-flex align-items-center gap-2">
+                                                            <div class="d-flex  align-items-start">
+                                                                <div class="bg-secondary-subtle d-flex align-items-center rounded-circle justify-content-center "
+                                                                     style="height: 44px;width: 44px">
+                                                                    <i class="bi bi-person-dash fw-bolder text-info"></i>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-xs">Manage Restrictions</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 mb-2">
+                                        <div class="card  rounded-4 h-100  border-0">
+                                            <div class="card-body ">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h6 class="uppercase fw-bolder mb-3  text-gray-700 ">
+                                                            RECENT TRANSACTION
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group">
+                                                    <ul class="list-group list-group-flush rounded border-end-2 tw-border-gray-200 tw-list-none">
+                                                        <li class="list-group-item bg-primary bg-opacity-10   border-bottom-3 ">
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <div class="d-flex  align-items-start">
+                                                                    <div class="bg-primary d-flex align-items-center rounded-circle justify-content-center "
+                                                                         style="height: 44px;width: 44px">
+                                                                        <i class=" text-white">
+                                                                            <svg width="20" height="20"
+                                                                                 viewBox="0 0 15 17" fill="none"
+                                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M1.24951 6.35059H9.06201"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M3.75 11.6211H5" stroke="white"
+                                                                                      stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M6.5625 11.6211H9.0625"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M13.7495 9.99465V11.3645C13.7495 13.6762 13.1933 14.2558 10.9745 14.2558H4.02451C1.80576 14.2558 1.24951 13.6762 1.24951 11.3645V5.95083C1.24951 3.63914 1.80576 3.05957 4.02451 3.05957H9.06201"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M12.4995 7.01118V3.05957L13.7495 4.37677"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M12.5 3.05957L11.25 4.37677"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                            </svg>
+                                                                        </i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flex-grow-1">
+                                                                    <div class="d-flex justify-content-between align-items-center">
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">Netflix</span>
+                                                                        </div>
                                                                         <p class="mb-0 text-sm">-Rwf 15,000</p>
                                                                         <span class="text-muted text-sm">26/06/21</span>
                                                                     </div>
@@ -1363,7 +1162,270 @@
                                                                 </div>
                                                                 <div class="flex-grow-1">
                                                                     <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">ATM</span>
+                                                                        </div>
+                                                                        <p class="mb-0 text-sm">-Rwf 15,000</p>
+                                                                        <span class="text-muted text-sm">26/06/21</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item bg-primary bg-opacity-10   border-bottom-3 ">
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <div class="d-flex  align-items-start">
+                                                                    <div class="bg-primary d-flex align-items-center rounded-circle justify-content-center "
+                                                                         style="height: 44px;width: 44px">
+                                                                        <i class=" text-white">
+                                                                            <svg width="20" height="20"
+                                                                                 viewBox="0 0 15 17" fill="none"
+                                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M1.24951 6.35059H9.06201"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M3.75 11.6211H5" stroke="white"
+                                                                                      stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M6.5625 11.6211H9.0625"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M13.7495 9.99465V11.3645C13.7495 13.6762 13.1933 14.2558 10.9745 14.2558H4.02451C1.80576 14.2558 1.24951 13.6762 1.24951 11.3645V5.95083C1.24951 3.63914 1.80576 3.05957 4.02451 3.05957H9.06201"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M12.4995 7.01118V3.05957L13.7495 4.37677"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M12.5 3.05957L11.25 4.37677"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                            </svg>
+                                                                        </i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flex-grow-1">
+                                                                    <div class="d-flex justify-content-between align-items-center">
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">Netflix</span>
+                                                                        </div>
+                                                                        <p class="mb-0 text-sm">-Rwf 15,000</p>
+                                                                        <span class="text-muted text-sm">26/06/21</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item bg-primary bg-opacity-10   border-bottom-3 ">
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <div class="d-flex  align-items-start">
+                                                                    <div class="bg-primary d-flex align-items-center rounded-circle justify-content-center "
+                                                                         style="height: 44px;width: 44px">
+                                                                        <i class=" text-white">
+                                                                            <svg width="20" height="20"
+                                                                                 viewBox="0 0 15 17" fill="none"
+                                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M1.24951 6.35059H9.06201"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M3.75 11.6211H5" stroke="white"
+                                                                                      stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M6.5625 11.6211H9.0625"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M13.7495 9.99465V11.3645C13.7495 13.6762 13.1933 14.2558 10.9745 14.2558H4.02451C1.80576 14.2558 1.24951 13.6762 1.24951 11.3645V5.95083C1.24951 3.63914 1.80576 3.05957 4.02451 3.05957H9.06201"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M12.4995 7.01118V3.05957L13.7495 4.37677"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M12.5 3.05957L11.25 4.37677"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                            </svg>
+                                                                        </i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flex-grow-1">
+                                                                    <div class="d-flex justify-content-between align-items-center">
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">Google storage </span>
+                                                                        </div>
+                                                                        <p class="mb-0 text-sm">-Rwf 15,000</p>
+                                                                        <span class="text-muted text-sm">26/06/21</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item bg-primary bg-opacity-10   border-bottom-3 ">
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <div class="d-flex  align-items-start">
+                                                                    <div class="bg-primary d-flex align-items-center rounded-circle justify-content-center "
+                                                                         style="height: 44px;width: 44px">
+                                                                        <i class=" text-white">
+                                                                            <svg width="20" height="20"
+                                                                                 viewBox="0 0 15 17" fill="none"
+                                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M1.24951 6.35059H9.06201"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M3.75 11.6211H5" stroke="white"
+                                                                                      stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M6.5625 11.6211H9.0625"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M13.7495 9.99465V11.3645C13.7495 13.6762 13.1933 14.2558 10.9745 14.2558H4.02451C1.80576 14.2558 1.24951 13.6762 1.24951 11.3645V5.95083C1.24951 3.63914 1.80576 3.05957 4.02451 3.05957H9.06201"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M12.4995 7.01118V3.05957L13.7495 4.37677"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M12.5 3.05957L11.25 4.37677"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                            </svg>
+                                                                        </i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flex-grow-1">
+                                                                    <div class="d-flex justify-content-between align-items-center">
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">Simba super market</span>
+                                                                        </div>
+                                                                        <p class="mb-0 text-sm">-Rwf 15,000</p>
+                                                                        <span class="text-muted text-sm">26/06/21</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item bg-primary bg-opacity-10   border-bottom-3 ">
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <div class="d-flex  align-items-start">
+                                                                    <div class="bg-primary d-flex align-items-center rounded-circle justify-content-center "
+                                                                         style="height: 44px;width: 44px">
+                                                                        <i class=" text-white">
+                                                                            <svg width="20" height="20"
+                                                                                 viewBox="0 0 15 17" fill="none"
+                                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M1.24951 6.35059H9.06201"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M3.75 11.6211H5" stroke="white"
+                                                                                      stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M6.5625 11.6211H9.0625"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M13.7495 9.99465V11.3645C13.7495 13.6762 13.1933 14.2558 10.9745 14.2558H4.02451C1.80576 14.2558 1.24951 13.6762 1.24951 11.3645V5.95083C1.24951 3.63914 1.80576 3.05957 4.02451 3.05957H9.06201"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M12.4995 7.01118V3.05957L13.7495 4.37677"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M12.5 3.05957L11.25 4.37677"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                            </svg>
+                                                                        </i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flex-grow-1">
+                                                                    <div class="d-flex justify-content-between align-items-center">
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">ATM</span>
+                                                                        </div>
+                                                                        <p class="mb-0 text-sm">-Rwf 15,000</p>
+                                                                        <span class="text-muted text-sm">26/06/21</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item bg-primary bg-opacity-10   border-bottom-3 ">
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <div class="d-flex  align-items-start">
+                                                                    <div class="bg-primary d-flex align-items-center rounded-circle justify-content-center "
+                                                                         style="height: 44px;width: 44px">
+                                                                        <i class=" text-white">
+                                                                            <svg width="20" height="20"
+                                                                                 viewBox="0 0 15 17" fill="none"
+                                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M1.24951 6.35059H9.06201"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M3.75 11.6211H5" stroke="white"
+                                                                                      stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M6.5625 11.6211H9.0625"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M13.7495 9.99465V11.3645C13.7495 13.6762 13.1933 14.2558 10.9745 14.2558H4.02451C1.80576 14.2558 1.24951 13.6762 1.24951 11.3645V5.95083C1.24951 3.63914 1.80576 3.05957 4.02451 3.05957H9.06201"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M12.4995 7.01118V3.05957L13.7495 4.37677"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                                <path d="M12.5 3.05957L11.25 4.37677"
+                                                                                      stroke="white" stroke-width="1.5"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"/>
+                                                                            </svg>
+                                                                        </i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flex-grow-1">
+                                                                    <div class="d-flex justify-content-between align-items-center">
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">Google storage </span>
+                                                                        </div>
                                                                         <p class="mb-0 text-sm">-Rwf 15,000</p>
                                                                         <span class="text-muted text-sm">26/06/21</span>
                                                                     </div>
@@ -1404,10 +1466,11 @@
                                                     </span>
                                                                     </div>
                                                                     <div class="d-flex flex-column gap-2">
-                                                                        <img src="../assets/n_logo.png" class=""
+                                                                        <img src="../../../assets/n_logo.png" class=""
                                                                              style="height: 25px"
                                                                              alt="master">
-                                                                        <img src="../assets/images/nfc.svg" class=""
+                                                                        <img src="../../../assets/images/nfc.svg"
+                                                                             class=""
                                                                              style="height: 35px"
                                                                              alt="master">
                                                                     </div>
@@ -1434,7 +1497,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="d-flex align-items-center flex-column">
-                                                                            <img src="../assets/master.png"
+                                                                            <img src="../../../assets/master.png"
                                                                                  class="img-fluid"
                                                                                  style="height: 30px"
                                                                                  alt="master">
@@ -1586,7 +1649,10 @@
                                                                 </div>
                                                                 <div class="flex-grow-1">
                                                                     <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">Netflix</span>
+                                                                        </div>
                                                                         <p class="mb-0 text-sm">-Rwf 15,000</p>
                                                                         <span class="text-muted text-sm">26/06/21</span>
                                                                     </div>
@@ -1635,7 +1701,10 @@
                                                                 </div>
                                                                 <div class="flex-grow-1">
                                                                     <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">ATM</span>
+                                                                        </div>
                                                                         <p class="mb-0 text-sm">-Rwf 15,000</p>
                                                                         <span class="text-muted text-sm">26/06/21</span>
                                                                     </div>
@@ -1684,7 +1753,10 @@
                                                                 </div>
                                                                 <div class="flex-grow-1">
                                                                     <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">Netflix</span>
+                                                                        </div>
                                                                         <p class="mb-0 text-sm">-Rwf 15,000</p>
                                                                         <span class="text-muted text-sm">26/06/21</span>
                                                                     </div>
@@ -1733,7 +1805,10 @@
                                                                 </div>
                                                                 <div class="flex-grow-1">
                                                                     <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">Google storage </span>
+                                                                        </div>
                                                                         <p class="mb-0 text-sm">-Rwf 15,000</p>
                                                                         <span class="text-muted text-sm">26/06/21</span>
                                                                     </div>
@@ -1782,7 +1857,10 @@
                                                                 </div>
                                                                 <div class="flex-grow-1">
                                                                     <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">Simba super market</span>
+                                                                        </div>
                                                                         <p class="mb-0 text-sm">-Rwf 15,000</p>
                                                                         <span class="text-muted text-sm">26/06/21</span>
                                                                     </div>
@@ -1831,7 +1909,10 @@
                                                                 </div>
                                                                 <div class="flex-grow-1">
                                                                     <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">ATM</span>
+                                                                        </div>
                                                                         <p class="mb-0 text-sm">-Rwf 15,000</p>
                                                                         <span class="text-muted text-sm">26/06/21</span>
                                                                     </div>
@@ -1880,7 +1961,10 @@
                                                                 </div>
                                                                 <div class="flex-grow-1">
                                                                     <div class="d-flex justify-content-between align-items-center">
-                                                                        <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                        <div class="d-flex flex-column">
+                                                                            <span class="text-primary text-sm ">#ghj477774-4440f--444</span>
+                                                                            <span class="text-muted text-sm">Google storage </span>
+                                                                        </div>
                                                                         <p class="mb-0 text-sm">-Rwf 15,000</p>
                                                                         <span class="text-muted text-sm">26/06/21</span>
                                                                     </div>
@@ -1899,16 +1983,17 @@
                     </div>
 
                 </div>
-                <img src="../assets/ads.png" class="img-fluid my-4" alt="ads">
+                <img src="../../assets/ads.png" class="img-fluid my-4" alt="ads">
             </div>
-        </div>
+        </div></div>
+        <footer>
+            <div class="bg-info d-flex justify-content-center w-100">
+                <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
+            </div>
+        </footer>
     </div>
 </div>
-<footer>
-    <div class="bg-info d-flex justify-content-center w-100">
-        <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
-    </div>
-</footer>
+
 <div class="modal   fade" id="apply" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content px-3 rounded-4">
@@ -2568,7 +2653,7 @@
             </div>
             <form action="" method="post" class="submitTransferForm">
                 <div class="modal-body py-0 px-lg-5"
-                     style="background-image: url(../assets/images/payments/bg_details.svg);background-position: top;background-repeat: no-repeat;background-size: 80%">
+                     style="background-image: url(../../../assets/images/payments/bg_details.svg);background-position: top;background-repeat: no-repeat;background-size: 80%">
                     <h6 class="text-info fw-bold py-3 border-top border-3 border-info">
                         Transfer From I&M Bank to I&M Bank
                     </h6>
