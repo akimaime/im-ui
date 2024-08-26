@@ -21,6 +21,10 @@ $theme-colors: (
   font-weight: normal !important;
   font-size: small;
 }
+.nav{
+  display: flex;
+  justify-content: center;
+}
 
 body {
   background-color: $gray-200;

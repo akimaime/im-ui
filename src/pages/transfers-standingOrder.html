@@ -344,9 +344,9 @@
                                             <div class="d-flex justify-content-between">
                                                 <h5 class="mx-3">Local banks Transfer Beneficiaries</h5>
                                                 <form action="" id="addLocalForm">
-                                                <button class="btn btn-info text-white rounded-pill px-4 py-1"><i
-                                                        class="bi bi-plus-circle me-2"></i>Add Beneficiary
-                                                </button>
+                                                    <button class="btn btn-info text-white rounded-pill px-4 py-1"><i
+                                                            class="bi bi-plus-circle me-2"></i>Add Beneficiary
+                                                    </button>
                                                 </form>
                                             </div>
                                             <div class="container-fluid ">
@@ -540,9 +540,9 @@
                                             <div class="d-flex justify-content-between">
                                                 <h5 class="mx-3">International banks Transfer Beneficiaries</h5>
                                                 <form action="" id="addInternationalForm">
-                                                <button class="btn btn-info text-white rounded-pill px-4 py-1"><i
-                                                        class="bi bi-plus-circle me-2"></i>Add Beneficiary
-                                                </button>
+                                                    <button class="btn btn-info text-white rounded-pill px-4 py-1"><i
+                                                            class="bi bi-plus-circle me-2"></i>Add Beneficiary
+                                                    </button>
                                                 </form>
                                             </div>
                                             <div class="container-fluid ">
@@ -1063,10 +1063,10 @@
 
                     </div>
 
-<!--                    <div class="form-group mb-3">-->
-<!--                        <label for="email">Email</label>-->
-<!--                        <input type="text" class="form-control py-3 bg-secondary border-0 bg-opacity-10" id="email" placeholder="Enter Beneficiary Email">-->
-<!--                    </div>-->
+                    <!--                    <div class="form-group mb-3">-->
+                    <!--                        <label for="email">Email</label>-->
+                    <!--                        <input type="text" class="form-control py-3 bg-secondary border-0 bg-opacity-10" id="email" placeholder="Enter Beneficiary Email">-->
+                    <!--                    </div>-->
                     <div class="row">
                         <div class="col-lg-6 offset-lg-6">
                             <div
@@ -1133,8 +1133,8 @@
                                    name="owner" placeholder="Enter Beneficiary Name">
 
 
-<!--                            <label for="localEmail">Email</label>-->
-<!--                            <input type="text" class="form-control py-3 bg-secondary border-0 bg-opacity-10 mb-4" id="localEmail" placeholder="Enter Email">-->
+                            <!--                            <label for="localEmail">Email</label>-->
+                            <!--                            <input type="text" class="form-control py-3 bg-secondary border-0 bg-opacity-10 mb-4" id="localEmail" placeholder="Enter Email">-->
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -1229,9 +1229,9 @@
                                 <option value="">BPR</option>
                                 <option value="">Ecobank</option>
                             </select>
-<!--                            <label for="localEmail">Email</label>-->
-<!--                            <input type="text" class="form-control py-3 bg-secondary border-0 bg-opacity-10 mb-4" id="InternEmail"-->
-<!--                                   placeholder="Enter Beneficiary Email">-->
+                            <!--                            <label for="localEmail">Email</label>-->
+                            <!--                            <input type="text" class="form-control py-3 bg-secondary border-0 bg-opacity-10 mb-4" id="InternEmail"-->
+                            <!--                                   placeholder="Enter Beneficiary Email">-->
                         </div>
                     </div>
 
@@ -1298,9 +1298,9 @@
 
 
                     <div class="form-group mb-3">
-<!--                        <label for="email">Email</label>-->
-<!--                        <input type="text" class="form-control py-3  rounded bg-secondary border-0 bg-opacity-10" id="airtimeBenEmail"-->
-<!--                               placeholder="Enter Beneficiary Email">-->
+                        <!--                        <label for="email">Email</label>-->
+                        <!--                        <input type="text" class="form-control py-3  rounded bg-secondary border-0 bg-opacity-10" id="airtimeBenEmail"-->
+                        <!--                               placeholder="Enter Beneficiary Email">-->
 
 
                     </div>
@@ -1523,126 +1523,6 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // $(function () {
-        //     $('.js-account').on('click', function () {
-        //         $('.js-account').find('td').removeClass('bg-primary text-white')
-        //             .find('.dropdown-toggle').removeClass('btn-outline-info').addClass('btn-outline-primary');
-        //         $(this).find('td').addClass('bg-primary text-white')
-        //             .find('.dropdown-toggle').addClass('btn-outline-info').removeClass('btn-outline-primary');
-        //
-        //         let $spinner = $('#spinner');
-        //         $spinner.show();
-        //         let $recentTransactionsTable = $('#recentTransactionsTable');
-        //         $recentTransactionsTable.hide();
-        //
-        //         setTimeout(function () {
-        //             $('#spinner').hide();
-        //             $recentTransactionsTable.show();
-        //             // scroll to $recentTransactionsTable
-        //         }, 2000);
-        //         $('html, body').animate({
-        //             scrollTop: $spinner.offset().top
-        //         }, 100);
-        //     });
-        // });
 
-        $('.js-check-balance').on('click', function () {
-            // find input sibling text
-            let btn = $(this);
-            let input = btn.siblings('input');
-            if (input.val() === '') {
-                return;
-            }
-            // find the parent div with class .js-parent
-            let parent = btn.parents('.js-parent');
-            // find the span with class .js-balance
-            let owner = parent.find('.js-owner');
-            let amount = parent.find('.js-amount');
-            // add spinner using bootstrap and simulate a request for 1 second and then remove spinner
-            btn.append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>')
-                .prop('disabled', true);
-            setTimeout(() => {
-                owner.val('John Fally Ipupa');
-                // generate random amount between 100 and 10000
-                amount.val(Math.floor(Math.random() * 10000) + 100);
-                btn.find('.spinner-border').remove();
-                btn.prop('disabled', false);
-            }, 1000);
-
-        });
-        let select1 = document.querySelector(".tab-select1");
-        let select = select1;
-        let tabs = document.getElementsByClassName("tab-contents");
-        // let selectedValue = select.options[select.selectedIndex].value;
-        // document.getElementById(selectedValue).style.display = "block";
-
-        // select.addEventListener("change", function () {
-        //     for (let i = 0; i < tabs.length; i++) {
-        //         tabs[i].style.display = "none";
-        //     }
-        //     document.getElementById(this.value).style.display = "block";
-        // });
-        let select2 = document.querySelector(".tab-select2");
-
-        let tabs2 = document.getElementsByClassName("tab-contents2");
-        // let selectedValue2 = select2.options[select2.selectedIndex].value;
-        // document.getElementById(selectedValue2).style.display = "block";
-
-        // select2.addEventListener("change", function () {
-        //     for (let i = 0; i < tabs2.length; i++) {
-        //         tabs2[i].style.display = "none";
-        //     }
-        //     document.getElementById(this.value).style.display = "block";
-        // });
-
-        let $showImModel = $('#addImForm');
-
-        $showImModel.on('submit', function (e) {
-            e.preventDefault();
-            $('#addIM').modal('show');
-            showOtpTimer();
-        });
-        let $showLocalModel = $('#addLocalForm');
-        $showLocalModel.on('submit', function (e) {
-            e.preventDefault();
-            $('#addLocal').modal('show');
-            showOtpTimer();
-        });
-        let $showInternationalModel = $('#addInternationalForm');
-        $showInternationalModel.on('submit', function (e) {
-            e.preventDefault();
-            $('#addInternational').modal('show');
-            showOtpTimer();
-        });
-        let $showAirtimeModel = $('#addAirtimeForm, #addMomoForm');
-        $showAirtimeModel.on('submit', function (e) {
-            e.preventDefault();
-            $('#addAirtime').modal('show');
-            showOtpTimer();
-        });
-        let $showElectricityModel = $('#postPaidForm, #prePaidForm');
-        $showElectricityModel.on('submit', function (e) {
-            e.preventDefault();
-            $('#addElectricity').modal('show');
-            showOtpTimer();
-        });
-        let $showWaterModel = $('#waterForm');
-        $showWaterModel.on('submit', function (e) {
-            e.preventDefault();
-            $('#addWater').modal('show');
-            showOtpTimer();
-        });
-        let $showTvModel = $('#dstvForm,#starTimesForm');
-        $showTvModel.on('submit', function (e) {
-            e.preventDefault();
-            $('#addTv').modal('show');
-            showOtpTimer();
-        });
-    });
-
-
-</script>
 </body>
 </html>

@@ -11855,6 +11855,11 @@ textarea.form-control-lg {
   font-size: small;
 }
 
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
 body {
   background-color: #e9ecef;
   font-family: "Rubik", sans-serif;
