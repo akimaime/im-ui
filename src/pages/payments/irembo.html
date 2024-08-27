@@ -91,7 +91,6 @@
                                     <li><a class="dropdown-item" href="irembo.html">Irembo Payment </a></li>
                                     <li><a class="dropdown-item" href="rssb.html">ISHEMA-RSSB Payment </a></li>
                                     <li><a class="dropdown-item" href="airtime.html">Airtime Top Up</a></li>
-                                    <li><a class="dropdown-item" href="eKash.html">eKash</a></li>
                                     <li><a class="dropdown-item" href="utilities.html">Utilities Payment </a></li>
                                 </ul>
                             </li>
@@ -183,7 +182,6 @@
                                                                    id="ref_number" name="search"/>
                                                             <button type="button"
                                                                     class="btn btn-info text-white rounded-default flex-shrink-0 js-verify">
-                                                                <i class="bi bi-plus"></i>
                                                                 Validate
                                                             </button>
                                                         </div>
@@ -900,12 +898,11 @@
 
             $('.js-verify').on('click', function () {
                 let ref_number = $('#ref_number').val();
-                //clear input field
+                // clear input field
                 $('#ref_number').val('');
                 if (!ref_number) {
                     return;
                 }
-
 
                 let loadBeneficiaries = function () {
                     let beneficiariesInput = $('.js-transfer-to');
@@ -918,11 +915,11 @@
 
                 loadBeneficiaries();
 
-                //simulate ajax call
+                // simulate ajax call
                 let btn = $(this);
                 // add spinner to button
                 let s = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-            <span class="visually-hidden">Loading...</span>`;
+<span class="visually-hidden">Loading...</span>`;
                 btn.append(s)
                     .prop('disabled', true);
                 setTimeout(function () {
@@ -933,25 +930,19 @@
                     // find the tbody of the table
                     let $tbody = $table.find('tbody');
 
-                    // split the reference number by comma
-                    // loop through the reference numbers and append to the table body as a row
-
                     // create a row
                     let $tr = $('<tr></tr>');
-                    //create a checkbox column
+                    // create a checkbox column
                     let checkbox = `<td><input type="checkbox" class="form-check-input rounded-0" checked></td>`;
                     // create a cell for the reference number
                     let $tdRefNumber = $(`<td>${ref_number}</td>`);
                     // create a cell for the amount
-                    // generate a random amount between 1000 and 100000
                     let amount = Math.floor(Math.random() * 100000) + 1000;
                     let $tdAmount = $(`<td class="fs-13px js-amount-tobe-paid">${amount.toLocaleString("en-US")}</td>`);
-                    // create a cell for amount to be edited
                     // create a cell for tax type as read only span
                     let currency = currencies[Math.floor(Math.random() * currencies.length)];
                     let $tdCurrency = $(`<td class="fs-13px"><span class="">Rwf</span></td>`);
                     // create a cell for company name as read only span
-                    // generate random company from companies array
                     let company = companies[Math.floor(Math.random() * companies.length)];
                     let $tdCompanyName = $(`<td class="fs-13px"><span class="">${company}</span></td>`);
                     // append the cells to the row
@@ -962,18 +953,17 @@
                     // find .js-amount-tobe-paid
                     let amountToBePaidInputs = document.querySelectorAll('.js-amount-tobe-paid');
                     let totalAmount = 0;
-                    console.log(amountToBePaidInputs);
-                    amountToBePaidInputs.forEach((element, index) => {
+                    amountToBePaidInputs.forEach((element) => {
                         let amountWithComma = $(element).text();
                         // remove commas from amountWithComma
-                        totalAmount += Number(amountWithComma.replace(",", ""))
+                        totalAmount += Number(amountWithComma.replace(",", ""));
                     });
                     let amountFormatted = totalAmount.toLocaleString("en-US");
                     $('#totalTaxToBePaid').text(amountFormatted);
                     $('#taxToPay').text(amountFormatted);
 
-                    btn.prop('disabled', false).find('.spinner-border')
-                        .remove();
+                    btn.prop('disabled', false).find('.spinner-border').remove();
+                    btn.html('<i class="bi bi-plus"></i> Add/Validate');
                 }, 2000);
             });
             $('.js-verify-2').on('click', function () {

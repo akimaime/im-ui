@@ -150,12 +150,6 @@
                                                 <label for="interestRate" class="text-sm">Interest Rate (%):</label>
                                                 <input type="number" class="form-control py-3 text-sm bg-secondary border-0 bg-opacity-10" id="interestRate" step="0.01" placeholder="Enter interest rate">
                                             </div>
-                                            <div class="form-group mb-3">
-                                                <label for="loanFees" class="text-sm">Fees Associated with the Loan:</label>
-                                                <div class="form-group mb-3">
-                                                    <input type="number" class="form-control py-3 text-sm bg-secondary border-0 bg-opacity-10" id="loanFees" placeholder="fees">
-                                                </div>
-                                            </div>
 
 
                                             <button id="calculateButton" class="btn py-2 w-100 btn-info mb-3 text-white">Calculate</button>
@@ -169,6 +163,7 @@
                                                 <p id="monthlyRepayment" class="small">Monthly Repayment: Rwf0.00</p>
                                                 <p id="totalInterest" class="small">Total Interest: Rwf0.00</p>
                                                 <p id="totalAmount" class="small">Total Amount to be Paid: Rwf0.00</p>
+                                                <p id="totalFees" class="small">Fees: Rwf0.00</p>
                                             </div>
                                         </div>
                                         <div class="card border-secondary border-opacity-25 card-body">
@@ -269,7 +264,6 @@
                                                     </ul>
                                                 </nav>
                                             </div>
-                                            <a href="loan-repayment.html" class="btn btn-info">Loan Repayment</a>
                                         </div>
 
                                     </div>
@@ -420,7 +414,7 @@
         }
 
         function calculateLoan() {
-            let loanAmount = parseFloat($('#loanAmount').val().replace(/,/g, ''));
+            let loanAmount = $('#loanAmount').val();
             let loanFees = parseFloat($('#loanFees').val()) || 0;
             let loanTenureType = $('#loanTenureType').val();
             let loanTenure = parseFloat($('#loanTenure').val());

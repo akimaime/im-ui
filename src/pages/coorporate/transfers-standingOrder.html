@@ -7,8 +7,8 @@
     <link href="../../css/custom.css" rel="stylesheet">
 </head>
 <body class="">
-<div class="d-flex min-vh-100 justify-content-between flex-column">
-    <div class="corp-bg mb-4">
+<div class="corp-bg mb-4">
+    <div class="d-flex gap-3 min-vh-100 justify-content-between flex-column">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center py-2">
                 <div class="d-flex col-3 flex-column">
@@ -422,8 +422,6 @@
                                                                     </div>
                                                                 </div>
                                                             </th>
-
-
                                                             <th class="text-primary  border-0    border-3 border-bottom  border-info cursor-pointer">
                                                                 <div class=" d-flex align-items-center justify-content-between ">
                                                                     <span>Amount</span>
@@ -603,7 +601,25 @@
 
                                                         </tbody>
                                                     </table>
+
                                                 </div>
+                                                <nav aria-label="..." class="float-end corp mt-2">
+                                                    <ul class="pagination corp">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link">Previous</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        </li>
+                                                        <li class="page-item active" aria-current="page">
+                                                            <a class="page-link" href="#">2</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        </li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade show  " id="nav-external" role="tabpanel"
@@ -835,6 +851,23 @@
                                                         </tbody>
                                                     </table>
                                                 </div>
+                                                <nav aria-label="..." class="float-end corp mt-2">
+                                                    <ul class="pagination corp">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link">Previous</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        </li>
+                                                        <li class="page-item active" aria-current="page">
+                                                            <a class="page-link" href="#">2</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        </li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="nav-international" role="tabpanel"
@@ -1062,9 +1095,266 @@
                                                     </tbody>
                                                 </table>
                                             </div>
+                                            <nav aria-label="..." class="float-end corp mt-2">
+                                                <ul class="pagination corp">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item active" aria-current="page">
+                                                        <a class="page-link" href="#">2</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
                                         </div>
-                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel"
-                                             aria-labelledby="nav-contact-tab" tabindex="0">hh
+                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                             aria-labelledby="nav-contact-tab" tabindex="0">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h5 class="text-primary fw-bold px-3 ">International Transfer Standing
+                                                    Orders</h5>
+                                                <form action="" id="addInternationalForm">
+                                                    <div class="d-flex px-5 ">
+                                                        <button class=" rounded-pill border-3 float-end btn btn-outline-primary px-4">
+                                                            <i class="bi bi-plus"></i>Add New
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table my-2 table-accounts  ">
+                                                    <thead>
+                                                    <tr class="">
+                                                        <th class="text-primary  border-0 border-3 border-bottom  border-info cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Sending Account</span>
+                                                                <div class="d-flex flex-column fs-9px">
+                                                                    <i class="bi bi-chevron-up"></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </th>
+                                                        <th class="text-primary  border-0   border-3 border-bottom  border-info cursor-pointer ">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Receiving Account</span>
+                                                                <div class="d-flex flex-column fs-9px">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th class="text-primary  border-0   border-3 border-bottom  border-info cursor-pointer ">
+                                                            <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                <span>Receiver Names</span>
+                                                                <div class="d-flex flex-column fs-9px">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+
+
+                                                        <th class="text-primary  border-0   border-3 border-bottom  border-info cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span>Amount</span>
+                                                                <div class="d-flex flex-column fs-9px">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th class="text-primary  border-0   border-3 border-bottom  border-info cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span>Frequency</span>
+                                                                <div class="d-flex flex-column fs-9px">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th class="text-primary  border-0   border-3 border-bottom  border-info cursor-pointer">
+                                                            <div class=" d-flex align-items-center justify-content-between ">
+                                                                <span>Status</span>
+                                                                <div class="d-flex flex-column fs-9px">
+                                                                    <i class="bi bi-chevron-up "></i>
+                                                                    <i class="bi bi-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th class="text-primary  border-0   border-3 border-bottom  border-info">
+                                                            Actions
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">7652678-54373-9636</td>
+                                                        <td class="fs-13px">4265267-36373-8383</td>
+                                                        <td class="fs-13px">Irene Macro</td>
+                                                        <td class="fs-13px">2,000,000</td>
+                                                        <td class="fs-13px">Daily</td>
+                                                        <td class="fs-13px"><span class="badge start text-bg-success">Active</span>
+                                                            <span class="badge text-bg-danger stop d-none">Deactivated</span>
+                                                        </td>
+
+                                                        <td class="fs-13px">
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                    <li><a class="dropdown-item"
+                                                                           data-bs-target="#InternDetails"
+                                                                           data-bs-toggle="modal">Details</a></li>
+                                                                    <li><a class="dropdown-item" href="#"
+                                                                           data-bs-target="#updateInternational"
+                                                                           data-bs-toggle="modal">Update</a></li>
+                                                                    <li><a class="dropdown-item js-delete  "> Cancel</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item js-start d-none  ">
+                                                                        Start</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">7652678-54373-9636</td>
+                                                        <td class="fs-13px">4265267-36373-8383</td>
+                                                        <td class="fs-13px">John Doe</td>
+                                                        <td class="fs-13px">100,220,000</td>
+                                                        <td class="fs-13px">Monthly</td>
+                                                        <td class="fs-13px"><span class="badge active text-bg-success">Active</span>
+                                                            <span class="badge text-bg-danger unactive d-none">Deactivated</span>
+                                                        </td>
+                                                        <td class="fs-13px">
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                    <li><a class="dropdown-item"
+                                                                           data-bs-target="#localDetails"
+                                                                           data-bs-toggle="modal">Details</a></li>
+                                                                    <li><a class="dropdown-item js-delete  "> Cancel</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item js-start d-none  ">
+                                                                        Start</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">7652678-54373-9636</td>
+                                                        <td class="fs-13px">7365267-36373-8398</td>
+                                                        <td class="fs-13px">Jane Doe</td>
+                                                        <td class="fs-13px">30,635,653</td>
+                                                        <td class="fs-13px">Weekly</td>
+                                                        <td class="fs-13px"><span class="badge start text-bg-success">Active</span>
+                                                            <span class="badge text-bg-danger stop d-none">Deactivated</span>
+                                                        </td>
+
+                                                        <td class="fs-13px">
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                    <li><a class="dropdown-item"
+                                                                           data-bs-target="#localDetails"
+                                                                           data-bs-toggle="modal">Details</a></li>
+                                                                    <li><a class="dropdown-item js-delete  "> Cancel</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item js-start d-none  ">
+                                                                        Start</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">7652678-54373-9636</td>
+                                                        <td class="fs-13px">6965267-36373-5298</td>
+                                                        <td class="fs-13px">John Doe</td>
+                                                        <td class="fs-13px">733,635,653</td>
+                                                        <td class="fs-13px">Daily</td>
+                                                        <td class="fs-13px"><span class="badge active text-bg-success">Active</span>
+                                                            <span class="badge text-bg-danger unactive d-none">Deactivated</span>
+                                                        </td>
+
+                                                        <td class="fs-12px">
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                    <li><a class="dropdown-item"
+                                                                           data-bs-target="#localDetails"
+                                                                           data-bs-toggle="modal">Details</a></li>
+                                                                    <li><a class="dropdown-item js-delete  "> Cancel</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item js-start d-none  ">
+                                                                        Start</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="cursor-pointer js-account py-5">
+                                                        <td class="fs-13px">7652678-54373-9636</td>
+                                                        <td class="fs-13px">7365267-36373-8398</td>
+                                                        <td class="fs-13px">Irene Macro</td>
+                                                        <td class="fs-13px">30,635,653</td>
+                                                        <td class="fs-13px">Weekly</td>
+                                                        <td class="fs-13px"><span class="badge start text-bg-success">Active</span>
+                                                            <span class="badge text-bg-danger stop d-none">Deactivated</span>
+                                                        </td>
+                                                        <td class="fs-13px">
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-outline-primary rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                        type="button" data-bs-toggle="dropdown">
+                                                                    Options
+                                                                </button>
+                                                                <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                    <li><a class="dropdown-item"
+                                                                           data-bs-target="#localDetails"
+                                                                           data-bs-toggle="modal">Details</a></li>
+                                                                    <li><a class="dropdown-item js-delete  "> Cancel</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item js-start d-none  ">
+                                                                        Start</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <nav aria-label="..." class="float-end corp mt-2">
+                                                <ul class="pagination corp">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item active" aria-current="page">
+                                                        <a class="page-link" href="#">2</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
                                         </div>
                                         <div class="tab-pane fade" id="nav-momo" role="tabpanel"
                                              aria-labelledby="nav-contact-tab" tabindex="0">
@@ -1274,6 +1564,23 @@
                                                     </tbody>
                                                 </table>
                                             </div>
+                                                <nav aria-label="..." class="float-end corp mt-2">
+                                                    <ul class="pagination corp">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link">Previous</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                                        </li>
+                                                        <li class="page-item active" aria-current="page">
+                                                            <a class="page-link" href="#">2</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                                        </li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
                                         </div>
                                     </div>
                                 </div>
@@ -1284,12 +1591,13 @@
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="bg-primary d-flex justify-content-center w-100">
+                <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
+            </div>
+        </footer>
     </div>
-    <footer>
-        <div class="bg-primary d-flex justify-content-center w-100">
-            <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
-        </div>
-    </footer>
+
 </div>
 <div class="modal fade" id="Details" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -1728,7 +2036,8 @@
                                             <div class="col-lg-12">
                                                 <label
                                                         class="form-label text-sm">Frequency</label>
-                                                <select name="frequency" class="form-select  py-3 bg-secondary border-0 bg-opacity-10">
+                                                <select name="frequency"
+                                                        class="form-select  py-3 bg-secondary border-0 bg-opacity-10">
                                                     <option value="">Select Frequency</option>
                                                     <option value="daily">Daily</option>
                                                     <option value="weekly">Weekly</option>
@@ -1744,7 +2053,8 @@
                                     <div class="col-md-6 ">
                                         <label
                                                 class="text-sm">Amount</label>
-                                        <input type="text" class="form-control  py-3 bg-secondary border-0 bg-opacity-10 ignore"
+                                        <input type="text"
+                                               class="form-control  py-3 bg-secondary border-0 bg-opacity-10 ignore"
                                                name="amount"
                                                placeholder="Amount"/>
                                     </div>
@@ -1820,7 +2130,9 @@
                             <div class="row mb-4">
                                 <div class="col-md-12">
                                     <label class="text-primary">Narration</label>
-                                    <textarea name="narration" class="form-control  py-3 bg-secondary border-0 bg-opacity-10" rows="3"></textarea>
+                                    <textarea name="narration"
+                                              class="form-control  py-3 bg-secondary border-0 bg-opacity-10"
+                                              rows="3"></textarea>
                                 </div>
 
                                 <div class="col-md-6 mb-5">
@@ -2248,6 +2560,248 @@
         </div>
     </div>
 </div>
+<div class="modal w-100 fade" id="addInternational" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content px-4 rounded-4">
+            <div class="modal-header justify-content-between border-bottom-0 align-items-center py-4 px-0 ">
+                <h1 class="modal-title fs-4 text-primary fw-semibold mb-0">
+                    Add New Sanding Order
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+            <form action="" class="" id="internationalForm">
+                <div class="row align-items-end mb-3">
+                    <div class="col-lg-4">
+                        <label for="international_from_account"
+                               class="text-sm form-label">
+                            Make payment from:
+                        </label>
+                        <select class="form-select py-3 bg-secondary bg-opacity-10 border-0 js-transfer-from"
+                                required id="international_from_account"
+                                name="from_account">
+                            <option value="">Select Account</option>
+                        </select>
+                        <div style="display: none"
+                             class=" justify-content-between align-items-center  js-account-balance">
+                            <div class="d-flex flex-column">
+                                <div class=" text-muted  small ">Account Balance</div>
+                                <span class="text-primary  small js-balance">*** *** ***
+                                                                ***</span>
+                            </div>
+                            <button type="button"
+                                    class=" btn btn-outline-primary border  js-toggle-balance">
+                                Show Balance
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-between">
+                            <label for="international_beneficiary"
+                                   class="text-sm form-label">
+                                Beneficiary Full Name:
+                            </label>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"
+                                        type="checkbox" name="select_beneficiary"
+                                        id="international_beneficiary">
+                                <label
+                                        class="form-check-label text-sm cursor-pointer"
+                                        for="international_beneficiary">
+                                    Select From Beneficiaries
+                                </label>
+                            </div>
+                        </div>
+                        <div style="display: none" class="js-select-beneficiary">
+                            <select id="beneficiary" name="beneficiary" required
+                                    class="  py-2 px-3 border-0 fw-semibold text-primary form-select js-beneficiaries">
+                                <option value="">Select Beneficiary</option>
+                            </select>
+                            <label id="beneficiary-error" class="error"
+                                   for="beneficiary"></label>
+
+                        </div>
+                        <div class=" js-search-beneficiary">
+                            <div class="">
+                                <input type="text" name="names" id="name" required
+                                       class="form-control   py-3 bg-secondary bg-opacity-10 border-0"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="country"
+                               class="form-label text-sm">Country:</label>
+                        <select id="country" name="country" required
+                                class="py-3 border-0 bg-secondary bg-opacity-10 form-select js-countries">
+                            <option value="">Select Country</option>
+                            <option value="1">Rwanda</option>
+                            <option value="2">Uganda</option>
+                            <option value="3">Kenya</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <label for="international_bank"
+                               class="form-label text-sm">Bank:</label>
+                        <select id="international_bank" name="bank" required
+                                class="py-3 bg-secondary bg-opacity-10 border-0 form-select js-banks">
+                            <option value="">Select Bank</option>
+                            <option value="1">1233456-Equity Bank</option>
+                            <option value="2">1233457- BK</option>
+                            <option value="3">1233458- Access Bank</option>
+                            <option value="4">1233459- Cogebanque</option>
+                            <option value="5">12334510- Ecobank</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="international_account_number"
+                               class="form-label text-sm">
+                            Beneficiary Account Number:
+                        </label>
+                        <input type="text" name="international_account_number" required
+                               id="international_account_number"
+                               class="form-control   py-3 bg-secondary border-0 bg-opacity-10 form-select"/>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="">
+                            <label for="international_beneficiary_email"
+                                   class="form-label text-sm">
+                                Beneficiary email <small
+                                    class="text-muted">(optional)</small>
+                            </label>
+                            <input type="email" name="beneficiary_email" required
+                                   id="international_beneficiary_email"
+                                   class="form-control   py-3 bg-secondary border-0 bg-opacity-10"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-6">
+                        <div class="">
+                            <label for="own_amount"
+                                   class="form-label text-sm">Amount:</label>
+                            <div class="input-group">
+
+                                <input type="text" name="amount" id="ow_amount2" required
+                                       class="form-control py-3 bg-secondary bg-opacity-10 border-0 js-amount"/>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+
+                        <div class="mb-3">
+                            <label for="frequency2"
+                                   class="form-label text-sm">Frequency</label>
+
+                            <select class="form-select py-3 bg-secondary bg-opacity-10 border-0" id="frequency2">
+                                <option value="">Select Frequency</option>
+                                <option value="2">Weekly</option>
+                                <option value="3">Monthly</option>
+                                <option value="3">Quarterly</option>
+                                <option value="4">Yearly</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-6">
+                        <div class="mb-1">
+                            <label for="own_amount"
+                                   class="form-label text-sm">Start Date</label>
+                            <div class="input-group">
+
+                                <input type="date" name="s_date" id="s_date" required
+                                       class="form-control py-3 bg-secondary bg-opacity-10 border-0 js-amount"/>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+
+                        <div class=" mb-3">
+                            <div class="d-flex justify-content-between">
+                                <label class="text-sm form-label">
+                                    End date:
+                                </label>
+                                <div class="form-check">
+                                    <input
+                                            class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"
+                                            type="checkbox" name="select_beneficiary"
+                                    >
+                                    <label
+                                            class="form-check-label text-primary fw-normal cursor-pointer"
+                                            for="Im_home_beneficiary">
+                                        Choose Number of installments
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div style="display: none" class="js-select-beneficiary">
+                                <select
+                                        class=" py-3 bg-secondary bg-opacity-10 border-0 form-select ">
+                                    <option value="">Select Number of installements</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+
+
+                                </select>
+                            </div>
+                            <div class="mb-3 js-search-beneficiary">
+                                <div
+                                        class="rounded-default d-flex align-items-center p-1">
+
+                                    <input type="date"
+                                           class="form-control py-3 bg-secondary bg-opacity-10 border-0 shadow-none"
+                                           name="search"/>
+
+                                </div>
+                            </div>
+
+                            <div class=" js-account-found" style="display: none">
+                                <div class="d-flex flex-shrink-0 align-items-center gap-2">
+                                    <span class="text-muted small fw-semibold">USD</span>
+                                    <span class=" fw-semibold small text-primary">Byukusenge
+                                                                    Jean Paul</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-12 ">
+                        <label class="text-sm" for="narration2">Narration</label>
+                        <textarea name="narration" id="narration2"
+                                  class="form-control py-3 bg-secondary bg-opacity-10 border-0" rows="3"></textarea>
+                    </div>
+
+                    <div class="col-md-6 mb-5">
+                    </div>
+                </div>
+                <div class="border-top border-3 mb-3"></div>
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-6">
+                        <div
+                                class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
+                            <a class="btn btn-info text-white px-lg-5" data-bs-target="#otpModal"
+                               data-bs-toggle="modal">
+                                Continue
+                            </a>
+                            <button type="reset" class="btn btn-outline-primary   px-lg-5">
+                                Clear
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 <div class="modal fade" id="otpModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content rounded-4">
@@ -2271,7 +2825,7 @@
                 </span>
 
             </div>
-            <form action="">
+            <form action="standing_order_added.html">
                 <div class="modal-body py-0 px-lg-5">
                     <div class="d-flex justify-content-between card-body gap-3">
                         <input type="text"
@@ -2303,7 +2857,7 @@
 
                 </div>
                 <div class="modal-footer border-0 px-lg-5 py-4 justify-content-between">
-                    <button type="button" class="btn btn-primary w-100 px-5 js-confirm py-2 text-white fw-semibold  ">
+                    <button type="submit" class="btn btn-primary w-100 px-5 js-confirm py-2 text-white fw-semibold  ">
                         Confirm
                     </button>
                 </div>
@@ -2382,15 +2936,6 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
 <script>
-    // $validator.addMethod("checkDate", function (value,element){
-    //     let $startDate = $(this).find('.start-date');
-    //     let $endDate = $(this).find('.end-date');
-    //
-    //     if($startDate > $endDate){
-    //         return true;
-    //     }
-    // })
-
     $('form').validate({
         rules: {
             password: {
@@ -2558,7 +3103,7 @@
                 text: "You want to stop this!",
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonColor: '#3085d6',
+                confirmButtonColor: '#243D94',
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Yes',
 
@@ -2579,7 +3124,7 @@
                 text: "You want to start the Schedule!",
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonColor: '#3085d6',
+                confirmButtonColor: '#243D94',
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Start',
             }).then((result) => {

@@ -219,7 +219,6 @@
                                                                    id="ref_number" name="search"/>
                                                             <button type="button"
                                                                     class="btn btn-primary text-white rounded-default flex-shrink-0 js-verify">
-                                                                <i class="bi bi-plus"></i>
                                                                 Validate
                                                             </button>
                                                         </div>
@@ -1103,8 +1102,7 @@
 
                     btn.prop('disabled', false).find('.spinner-border')
                         .remove();
-                    //clear input field
-
+                    btn.html('<i class="bi bi-plus"></i>Add/Validate');
                 }, 2000);
 
             });
