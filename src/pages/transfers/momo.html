@@ -265,7 +265,6 @@
                                                                         <div class="col-md-5 ">
                                                                             <button type="button"
                                                                                     class="btn btn-info rounded-default flex-shrink-0 btnAddPhoneNumbers">
-                                                                                <i class="bi bi-plus"></i>
                                                                                 Validate
                                                                             </button>
                                                                         </div>
@@ -733,6 +732,8 @@
                         }
                         btn.prop('disabled', false).find('.spinner-border')
                             .remove();
+                        btn.html('<i class="bi bi-plus"></i>Add/Validate');
+
                     }, 1000);
                 }
 
@@ -1020,8 +1021,8 @@
                     $('#totalTaxToBePaid').text(amountFormatted);
                     $('#taxToPay').text(amountFormatted);
 
-                    btn.prop('disabled', false).find('.spinner-border')
-                        .remove();
+                    btn.prop('disabled', false).find('.spinner-border').remove();
+                    btn.html('<i class="bi bi-plus"></i> Add/Validate');
                 }, 2000);
             });
             $('.js-verify-2').on('click', function () {

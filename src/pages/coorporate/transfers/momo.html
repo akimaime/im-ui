@@ -167,7 +167,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item "><a href="../../dashboard.html">Dashboard</a></li>
                         <li class="breadcrumb-item text-white" aria-current="page">Transfers</li>
-                        <li class="breadcrumb-item active" aria-current="page">Own Account Transfer</li>
+                        <li class="breadcrumb-item active" aria-current="page">Mobile Money Transfer</li>
                     </ol>
                 </nav>
             </div>
@@ -795,6 +795,7 @@
                         }
                         btn.prop('disabled', false).find('.spinner-border')
                             .remove();
+                        btn.html('<i class="bi bi-plus"></i>Add/Validate');
                     }, 1000);
                 }
 

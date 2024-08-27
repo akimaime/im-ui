@@ -131,27 +131,26 @@
                               <div class="row">
                                   <div class="col-lg-7">
                                       <div id="loanDetailsMenu" class="my-3" >
-                                          <h4>Loan Details</h4>
+                                          <h5>Loan Details</h5>
                                           <table>
-                                              <tr>
-                                                  <th>Loan Account</th>
-                                                  <td id="loanAccount">23612271897189</td>
-                                              </tr>
-                                              <tr>
-                                                  <th>Principal</th>
-                                                  <td id="principal">Rwf 10,000,000</td>
-                                              </tr>
-                                              <tr>
-                                                  <th>Interest Rate</th>
-                                                  <td id="interestRate">18%</td>
-                                              </tr>
-                                              <tr>
-                                                  <th>Outstanding Balance</th>
-                                                  <td id="outstandingBalance">Rwf 4,000,000</td>
-                                              </tr>
+                                              <div>
+                                                  <span class="small fw-semibold">Loan Account : </span>
+                                                  <span class="small">4000 0000 0000 0001</span>
+                                              </div>
+                                              <div>
+                                                  <span class="small fw-semibold">Principal : </span>
+                                                  <span class="small ">Rwf 10,000,000</span>
+                                              </div>
+                                              <div>
+                                                  <span class="small fw-semibold">Interest Rate : </span>
+                                                  <span class="small ">18%</span>
+                                              </div>
+                                              <div>
+                                                  <span class="small fw-semibold">Outstanding Balance : </span>
+                                                  <span class="small ">Rwf 4,000,000</span>
+                                              </div>
                                           </table>
                                           <!--                                    <button onclick="showMainMenu()">Back to Main Menu</button>-->
-
                                       </div>
                                       <div class="card border-secondary border-opacity-25 card-body">
                                           <h5>Payment Schedule</h5>
@@ -252,8 +251,6 @@
                                               </nav>
                                           </div>
                                       </div>
-
-
                                   </div>
                                   <div class="col-lg-5">
                                       <div id="mainMenu" class="menu">
@@ -274,12 +271,25 @@
                                           <h4>Pay Lump Sum</h4>
                                           <form>
                                               <div class="form-group mb-3">
-                                                  <label for="lumpSumAmount">Enter the amount you wish to pay:</label>
+                                                  <label for="lumpSumAmount" class=" text-sm fw-normal form-label">Enter the amount you wish to pay:</label>
                                                   <input type="number" class="form-control bg-secondary bg-opacity-10 py-3 border-0" id="lumpSumAmount">
                                               </div>
+                                              <div class=" mb-4">
+                                                  <label for="im_from_account"
+                                                         class=" text-sm fw-normal form-label">
+                                                      Make payment from:
+                                                  </label>
+                                                  <select class="form-select text-sm py-3 bg-secondary border-0 bg-opacity-10    js-transfer-from"
+                                                          required id="im_from_account" name="from_account">
+                                                      <option value="">Select Account</option>
+                                                      <option value="1">John-4000-0000-0001-200</option>
+                                                      <option value="2">John-4000-0000-0001-201</option>
+                                                      <option value="3">John-4000-0000-0001-202</option>
+                                                  </select>
+                                              </div>
                                               <div class="d-flex gap-2">
-                                              <button onclick="confirmPayment('lumpSum')" class="btn w-100 py-2 btn-info">Confirm Payment</button>
-                                              <button onclick="showRepayLoanMenu()" class="btn w-100 py-2 btn-danger">Cancel</button>
+                                                  <button type="button" onclick="confirmPayment()" class="btn w-100 py-2 btn-info">Confirm Payment</button>
+                                                  <button onclick="showRepayLoanMenu()" class="btn w-100 py-2 btn-danger">Cancel</button>
                                               </div>
                                           </form>
                                       </div>
@@ -288,19 +298,31 @@
                                       <div id="payBeforePaydayMenu" class="menu">
                                           <h4>Pay Before Payday</h4>
                                           <div class="form-group mb-3">
-                                              <label for="paydayAmount">Enter the amount you wish to pay:</label>
-                                              <input type="number" class="form-control bg-secondary bg-opacity-10 py-3 border-0" id="paydayAmount">
+                                              <label for="paydayAmount" class=" text-sm fw-normal form-label">Enter the amount you wish to pay:</label>
+                                              <input type="number" class="form-control bg-secondary text-sm bg-opacity-10 py-3 border-0" id="paydayAmount">
                                           </div>
                                           <div class="form-group mb-3">
-                                              <label for="paydayDate">Enter the date of payment (format: YYYY-MM-DD):</label>
-                                              <input type="date" class="form-control bg-secondary bg-opacity-10 py-3 border-0" id="paydayDate">
+                                              <label for="paydayDate" class=" text-sm fw-normal form-label">Enter the date of payment (format: YYYY-MM-DD):</label>
+                                              <input type="date" class="form-control text-sm bg-secondary bg-opacity-10 py-3 border-0" id="paydayDate">
+                                          </div>
+                                          <div class=" mb-4">
+                                              <label for="im_from_account"
+                                                     class=" text-sm fw-normal form-label">
+                                                  Make payment from:
+                                              </label>
+                                              <select class="form-select text-sm py-3 bg-secondary border-0 bg-opacity-10    js-transfer-from"
+                                                      required  name="from_account">
+                                                  <option value="">Select Account</option>
+                                                  <option value="">John-4000-0000-0001-200</option>
+                                                  <option value="">John-4000-0000-0001-201</option>
+                                                  <option value="">John-4000-0000-0001-202</option>
+                                              </select>
                                           </div>
                                           <div class="d-flex gap-2">
-                                              <button class="btn btn-info w-100 py-2" onclick="confirmPayment('payday')">Confirm Payment</button>
+                                              <button type="button" class="btn btn-info w-100 py-2" onclick="confirmPayment()">Confirm Payment</button>
                                               <button class="btn btn-danger w-100 py-2" onclick="showRepayLoanMenu()">Cancel</button>
                                           </div>
                                       </div>
-
                                       <!-- Confirmation -->
                                       <div id="confirmationMenu" class="menu">
                                           <p id="confirmationDetails"></p>
@@ -415,6 +437,72 @@
         </div>
     </footer>
 </div>
+<div class="modal fade" id="otpModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+            <div class="d-flex justify-content-center flex-column border-0 align-items-center py-4 px-lg-5">
+                <div class="position-relative">
+                    <div class="d-flex justify-content-center  align-items-center bg-primary rounded-circle"
+                         style="height: 84px;width: 84px">
+                        <i class="text-white bi bi-arrow-counterclockwise tw-object-cover display-2">
+                        </i>
+                        <span id="secondsRemain" class="position-absolute text-white tw-top-2 tw-right-2"></span>
+                    </div>
+                </div>
+                <span class="text-dark   fw-bold ">
+                        One Time Password
+                </span>
+                <span class="text-muted  mb-1  text-center">
+                        Please check your 4 digits sent to *********6723 and d********@gmail.com
+                </span>
+
+            </div>
+            <form action="payments/payment-loan-receipt.html">
+                <div class="modal-body py-0 px-lg-5">
+
+
+                    <div class="d-flex justify-content-between card-body gap-3">
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-primary  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-primary  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-primary  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-primary  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-primary  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                        <input type="text"
+                               class="form-control fs-3 border-0  border-bottom border-3  border-primary  rounded-0 h-7 text-center one-digit"
+                               required
+                               maxlength="1" minlength="1" max="9" min="0"/>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer border-top-0 px-lg-5 my-1  justify-content-center">
+                    <button type="button" class="btn btn-outline-primary  px-4 py-2 fw-semibold"
+                            data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary px-4 py-2 fw-semibold  text-white">
+                        Verify
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
@@ -449,19 +537,23 @@
         document.getElementById('payBeforePaydayMenu').style.display = 'block';
     }
 
-    function confirmPayment(type) {
-        hideAllMenus();
-        let details = '';
-        if (type === 'lumpSum') {
-            const amount = document.getElementById('lumpSumAmount').value;
-            details = `Amount: $${amount}`;
-        } else if (type === 'payday') {
-            const amount = document.getElementById('paydayAmount').value;
-            const date = document.getElementById('paydayDate').value;
-            details = `Amount: $${amount}<br>Date: ${date}`;
-        }
-        document.getElementById('confirmationDetails').innerHTML = details;
-        document.getElementById('confirmationMenu').style.display = 'block';
+    function confirmPayment() {
+        $('#otpModal').modal('show');
+        let $minutesRemain = $('#minutesRemain');
+        let minutes = Number($minutesRemain.text());
+        let seconds = 0;
+        let interval = setInterval(function () {
+            if (seconds === 0) {
+                minutes--;
+                seconds = 60;
+            }
+            seconds--;
+            $minutesRemain.text(minutes);
+            $('#secondsRemain').text(seconds);
+            if (minutes === 0 && seconds === 0) {
+                clearInterval(interval);
+            }
+        }, 1000);
     }
 
     function processPayment() {
