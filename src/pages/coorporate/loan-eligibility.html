@@ -14,7 +14,6 @@
                 <div class="d-flex col-3 flex-column">
                     <img src="../../assets/n_logo.png" class="img-fluid" alt="logo">
                     <span class="text-white px-4 fs-4">Corporate</span>
-
                 </div>
                 <div class="d-flex align-items-center gap-2">
                     <h5 class="text-white my-0 ">Welcome to , Paper Print LTD</h5>
@@ -134,9 +133,24 @@
                                 <li><a class="dropdown-item" href="requests/overdraft.html">Bankers cheques/overdraft Demand Request </a></li>
                             </ul>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <a href="LoanSimulator.html" class="nav-link " id="loanSimulator">Loan
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Product Simulator
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="LoanSimulator.html">Loan Simulator</a>
+                                </li>
+                                <li><a class="dropdown-item" href="savingCalculator.html">Savings
+                                    deposit simulator</a></li>
+                                <li><a class="dropdown-item" href="term-deposit.htm">Term
+                                    deposit simulator</a></li>
+                                <li>
+                                    <a class="dropdown-item active" href="loan-eligibility.html">
+                                        Loan Eligibility simulator
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a href="administration.html" class="nav-link" id="administration">Administration
@@ -155,12 +169,6 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-            <nav class="mx-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item "><a href="../corporate-dashboard.html">Dashboard</a></li>
-                    <li class="breadcrumb-item text-white" aria-current="page">Savings & Term Deposit <Calculator></Calculator></li>
-                </ol>
             </nav>
         </div>
         <div class="container">
@@ -266,84 +274,66 @@
 
                     </div>
                 </div>
-                <div class="col-lg-8 ">
+                <div class="col-lg-8">
                     <div class="card rounded-4 border-0 h-100">
                         <div class="card-body">
                             <div class="container ">
                                 <div class="row align-items-start">
                                     <div class="col-lg-6 border border-secondary border-opacity-25 rounded-3">
-                                        <div class="py-2">
-                                            <h4>Plan your savings</h4>
-                                            <p class="text-sm">
-                                                Find out how much you can save by making regular monthly deposits to
-                                                savings plan.
-                                            </p>
+                                        <h5 class="my-3">
+                                            How much loan can you borrow?
+                                        </h5>
+                                        <p class="text-sm text-muted">
+                                            The amount you can borrow depends on your total income the loan term and interest rate and a number of other factors.
+                                            Whilst lending criteria varies between lenders, this calculator can help you understand the dependencies.
+                                        </p>
+                                        <form id="loanForm">
+                                            <div class="form-group mb-2">
+                                                <label for="currency" class="text-sm">Currency</label>
+                                                <select id="currency" class="form-select py-3 border-0 bg-secondary bg-opacity-10 text-sm" required>
+                                                    <option value="Rwf">Rwf</option>
+                                                    <option value="USD">USD</option>
+                                                    <option value="UGX">UGX</option>
+                                                    <!-- Add more currencies as needed -->
+                                                </select>
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <label for="income" class="text-sm">Monthly Income</label>
+                                                <input type="number" id="income" class="form-control py-3 text-sm bg-secondary bg-opacity-10 border-0" required>
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <label for="repayments" class="text-sm">Existing Monthly Repayments</label>
+                                                <input type="number" id="repayments" class="form-control py-3 text-sm bg-secondary bg-opacity-10 border-0" required>
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <label for="expenses" class="text-sm">Other Monthly Expenses</label>
+                                                <input type="number" id="expenses" class="form-control py-3 text-sm bg-secondary bg-opacity-10 border-0" required>
+                                            </div>
                                             <div class="row">
-                                                <div class="col-lg-8">
-                                                    <label for="principal" class="text-sm">Initial Deposit
-                                                        Amount:</label>
-                                                    <input type="number"
-                                                           class="form-control text-sm bg-secondary bg-opacity-10 py-3 mb-3 border-0"
-                                                           id="principal" placeholder="Enter the amount" required>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="tenure" class="text-sm">Loan Tenure (in months)</label>
+                                                        <input type="number" id="tenure" class="form-control py-3 text-sm bg-secondary bg-opacity-10 border-0" required>
+                                                    </div>
                                                 </div>
-                                                <div class="col-lg-4">
-                                                    <label for="currency" class="text-sm">Currency:</label>
-                                                    <select class="form-select bg-secondary text-sm bg-opacity-10 py-3 mb-3 border-0"
-                                                            id="currency" required>
-                                                        <option value="RWF">RWF</option>
-                                                        <option value="USD">USD</option>
-                                                        <option value="EUR">UGX</option>
-                                                    </select>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="interestRate" class="text-sm">Interest Rate (%)</label>
+                                                        <input type="number" id="interestRate" class="form-control py-3 text-sm bg-secondary bg-opacity-10 border-0" required>
+                                                    </div>
                                                 </div>
                                             </div>
-
-                                            <label for="rate" class="text-sm">Annual Interest Rate (%):</label>
-                                            <input type="number"
-                                                   class="form-control text-sm bg-secondary bg-opacity-10 py-3 mb-3 border-0"
-                                                   id="rate" step="0.01" placeholder="Enter the interest rate" required>
-
-                                            <label for="time" class="text-sm">Saving Terms (months):</label>
-                                            <input type="number"
-                                                   class="form-control text-sm bg-secondary bg-opacity-10 py-3 mb-3 border-0"
-                                                   id="time" placeholder="Enter the number of months" required>
-                                            <div class="row">
-                                                <div class="col-lg-8">
-                                                    <label for="regular" class="text-sm">Regular Deposit :</label>
-                                                    <input type="number"
-                                                           class="form-control text-sm bg-secondary bg-opacity-10 py-3 mb-3 border-0"
-                                                           id="regular" placeholder="Enter the amount" required>
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <label for="frequency" class="text-sm">Frequency:</label>
-                                                    <select class="form-select bg-secondary text-sm bg-opacity-10 py-3 mb-3 border-0"
-                                                            id="frequency" required>
-                                                        <option value="monthly">Monthly</option>
-                                                        <option value="quarterly">Quarterly</option>
-                                                        <option value="semi-annually">Semi-annually</option>
-                                                        <option value="annually">Annually</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <button class="btn-primary btn w-100 py-2 mb-4" onclick="calculate()">
-                                                Calculate
-                                            </button>
-                                        </div>
-
+                                            <button type="button" class="btn btn-primary w-100 mb-3 py-2" onclick="calculateLoan()">Calculate</button>
+                                        </form>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="card border-secondary border-opacity-25 mb-3 card-body">
-                                            <h5>Savings Deposits summary</h5>
-                                            <div class="" id="">
-                                                <span class="text-sm">AER : </span>
-                                                <span class="text-sm" id="aer">0.00%</span>
-                                            </div>
-                                            <div>
-                                                <span class="text-sm">Total Interest Earned : </span>
-                                                <span class="text-sm" id="interest">0.00</span>
-                                            </div>
-                                            <div>
-                                                <span class="text-sm">Final Saving Amount : </span>
-                                                <span class="text-sm" id="total">0.00</span>
+                                            <h5>Loan Calculation summary</h5>
+                                            <div class="result" id="result">
+                                                <div class="  small text-black">
+                                                    <p>Amount you can borrow:</p>
+                                                    <p>Monthly Repayment:</p>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="alert alert-warning" role="alert">
@@ -377,35 +367,49 @@
 </div>
 
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-<script src="../js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../../js/main.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-    function calculate() {
-        // Get the values from the inputs
-        const principal = document.getElementById("principal").value;
-        const rate = document.getElementById("rate").value;
-        const time = document.getElementById("time").value;
+    function calculateLoan() {
+        const income = parseFloat(document.getElementById('income').value);
+        const repayments = parseFloat(document.getElementById('repayments').value);
+        const expenses = parseFloat(document.getElementById('expenses').value);
+        const tenure = parseInt(document.getElementById('tenure').value);
+        const interestRate = parseFloat(document.getElementById('interestRate').value);
 
-        // Validate input values
-        if (principal <= 0 || rate <= 0 || time <= 0) {
-            alert("Please enter positive values.");
-            return;
+        const availableIncome = income - repayments - expenses;
+        const monthlyInterestRate = interestRate / 100 / 12;
+
+        document.getElementById('income').addEventListener('keyup', function() {
+            let incomeValue = parseFloat(this.value);
+            if (!isNaN(incomeValue)) {
+                this.value = incomeValue.toLocaleString();
+            }
+        });
+
+        // Maximum affordable EMI
+        const maxEMI = availableIncome;
+
+        // Calculate the maximum loan amount using the formula: P = EMI / [ (r * (1 + r)^n) / ((1 + r)^n - 1) ]
+        const maxLoanAmount = maxEMI * ((1 - Math.pow(1 + monthlyInterestRate, -tenure)) / monthlyInterestRate);
+
+        // Check if the values are valid
+        if (isNaN(maxLoanAmount) || maxLoanAmount <= 0) {
+            document.getElementById('result').innerHTML = '<div class="alert alert-danger">Please enter valid input values.</div>';
+        } else {
+            // Display the maximum loan amount and the monthly repayment
+            document.getElementById('result').innerHTML = `
+                    <div class="alert alert-success text-black small">
+                        <p>Amount you can borrow: <strong>${Number(maxLoanAmount).toLocaleString()} ${document.getElementById('currency').value}</strong>.</p>
+                        <p>Monthly Repayment: <strong>${Number(maxEMI).toLocaleString()} ${document.getElementById('currency').value}</strong>.</p>
+                    </div>`;
         }
-
-        // Calculate the compound interest
-        const amount = principal * Math.pow((1 + rate / 100), time);
-        const interest = amount - principal;
-
-        document.getElementById("aer").innerHTML = `${rate}%`;
-        document.getElementById("interest").innerHTML = `Rwf ${Number(interest).toLocaleString()}`;
-        document.getElementById("total").innerHTML = `Rwf ${Number(amount).toLocaleString()}`;
     }
-
 </script>
 </body>
 </html>

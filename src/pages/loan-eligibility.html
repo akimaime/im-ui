@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I&M Internet bank</title>
+    <link href="../css/custom.css" rel="stylesheet">
+</head>
+<body class="">
+<div class="d-flex min-vh-100 justify-content-between flex-column">
+    <div class="bg-color-height mb-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center ">
+                <div>
+                    <div class="d-flex col-lg-3  flex-column py-2  rounded-1">
+                        <img src="../assets/logo.png" class="img-fluid" alt="logo">
+                    </div>
+                    <span class="text-white  fw-bold fs-2">Retail</span>
+                </div>
+                <div class="d-flex col-lg-3 align-items-center justify-content-end gap-2">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="d-flex flex-column">
+                                    <span class="text-sm fw-light">welcome</span>
+                                    <small>John Doe</small>
+                                  </span>
+                            <img src="../assets/images/otp/avatar.png" class="img-fluid h-6" alt="John Peter Musoni"/>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
+
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="#">
+                                    <i class="bi bi-gear"></i>
+                                    Account Settings
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="#">
+                                    <i class="bi bi-gear"></i>
+                                    Account Settings
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a class="fw-normal dropdown-item" href="/">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav class=" navbar rounded-4 bg-info mb-1 bg-opacity-50 navbar-expand-lg">
+                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="dashboard.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="corporate-dashboard.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">Corporate Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Transfers
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="transfers/own-account.html">Transfer to your own Accounts </a></li>
+                                <li><a class="dropdown-item" href="transfers/internal.html">Transfer from I&M to I&M </a></li>
+                                <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to Local Banks </a></li>
+                                <li><a class="dropdown-item" href="transfers/international.html">Transfer to International </a></li>
+                                <li><a class="dropdown-item" href="transfers/momo.html">Transfer to Mobile </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Payments
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="payments/rra.html">RRA Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/irembo.html">Irembo Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/rssb.html">ISHEMA-RSSB Payment </a></li>
+                                <li><a class="dropdown-item" href="payments/airtime.html">Airtime Top Up</a></li>
+                                <li><a class="dropdown-item" href="payments/utilities.html">Utilities Payment </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="card-management.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
+                                Manage Cards
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Service Requests
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="requests/chequebook.html">Chequebook Requests </a></li>
+                                <li><a class="dropdown-item" href="requests/certificates.html">Certificates Requests </a></li>
+                                <li><a class="dropdown-item" href="requests/paper-statement.html">Paper Statement Requests</a></li>
+                                <li><a class="dropdown-item" href="requests/overdraft.html">Bankers cheques/overdraft Demand Request </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="beneficiaries.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
+                                Beneficiaries
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Product Simulators
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="LoanSimulator.html">Loan Simulator </a></li>
+                                <li><a class="dropdown-item" href="savingCalculator.html">Savings simulator</a></li>
+                                <li><a class="dropdown-item" href="term-deposit.html">Term Deposit Simulator</a></li>
+                                <li><a class="dropdown-item active" href="loan-eligibility.html">Loan Eligibility Simulator</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link " href="mail.html"
+                               type="button" role="tab" aria-controls="pills-home"
+                               aria-selected="true">
+                                Mails
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 ">
+                    <div class="card rounded-4 border-0 h-100">
+                        <div class="card-body">
+                            <div class="container ">
+                                <div class="row align-items-start">
+                                    <div class="col-lg-6 border border-secondary border-opacity-25 rounded-3">
+                                        <h5 class="my-3">
+                                            How much loan can you borrow?
+                                        </h5>
+                                        <p class="text-sm text-muted">
+                                            The amount you can borrow depends on your total income the loan term and interest rate and a number of other factors.
+                                            Whilst lending criteria varies between lenders, this calculator can help you understand the dependencies.
+                                        </p>
+                                        <form id="loanForm">
+                                            <div class="form-group mb-2">
+                                                <label for="currency" class="text-sm">Currency</label>
+                                                <select id="currency" class="form-select py-3 border-0 bg-secondary bg-opacity-10 text-sm" required>
+                                                    <option value="Rwf">Rwf</option>
+                                                    <option value="USD">USD</option>
+                                                    <option value="UGX">UGX</option>
+                                                    <!-- Add more currencies as needed -->
+                                                </select>
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <label for="income" class="text-sm">Monthly Income</label>
+                                                <input type="number" id="income" class="form-control py-3 text-sm bg-secondary bg-opacity-10 border-0" required>
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <label for="repayments" class="text-sm">Existing Monthly Repayments</label>
+                                                <input type="number" id="repayments" class="form-control py-3 text-sm bg-secondary bg-opacity-10 border-0" required>
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <label for="expenses" class="text-sm">Other Monthly Expenses</label>
+                                                <input type="number" id="expenses" class="form-control py-3 text-sm bg-secondary bg-opacity-10 border-0" required>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="tenure" class="text-sm">Loan Tenure (in months)</label>
+                                                        <input type="number" id="tenure" class="form-control py-3 text-sm bg-secondary bg-opacity-10 border-0" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group mb-3">
+                                                        <label for="interestRate" class="text-sm">Interest Rate (%)</label>
+                                                        <input type="number" id="interestRate" class="form-control py-3 text-sm bg-secondary bg-opacity-10 border-0" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-info w-100 mb-3 py-2" onclick="calculateLoan()">Calculate</button>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card border-secondary border-opacity-25 mb-3 card-body">
+                                            <h5>Loan Calculation summary</h5>
+                                            <div class="result" id="result">
+                                                <div class="  small text-black">
+                                                    <p>Amount you can borrow:</p>
+                                                    <p>Monthly Repayment:</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="alert alert-warning" role="alert">
+                                            <span>Disclaimer : </span>
+                                            <p class="text-sm">
+                                                Please note that while reasonable care is taken to ensure that the
+                                                figures obtained are as close as possible to actual figures,the figures
+                                                obtained from this platform may be different from the actual sum.
+                                            </p>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <button type="submit" class="btn btn-warning w-100 py-2">Reset</button>
+                                            <button class="btn btn-outline-warning w-50 py-2">Print</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-2">
+                    <div class="card h-100 rounded-4  border-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6 quick-actions border-bottom border-end">
+                                    <a href="#"
+                                       class="mb-1 py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                                        <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                             style="height: 54px;width: 54px">
+                                            <img src="../assets/images/login/RRA.svg" class="h-75" alt="rra">
+                                        </div>
+                                        <span class="small text-primary fw-bold">Pay to</span>
+                                        <span class="small text-info fw-semibold">RRA</span>
+                                    </a>
+                                </div>
+                                <div class="col-6 quick-actions border-bottom">
+                                    <a href="#"
+                                       class=" mb-1 py-1 text-decoration-none d-flex justify-content-center align-items-center flex-column">
+                                        <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                             style="height: 54px;width: 54px">
+                                            <img src="../assets/images/dashboard/irembo.svg" class="h-75" alt="rra">
+                                        </div>
+                                        <span class="small text-primary fw-bold">Pay to</span>
+                                        <span class="small text-info fw-semibold">Irembo</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-6 py-2 quick-actions  border-end">
+                                    <a href="#"
+                                       class=" py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                                        <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                             style="height: 54px;width: 54px">
+                                            <i class="bi bi-meta"></i>
+                                        </div>
+                                        <span class="small text-primary fw-bold">Pay </span>
+                                        <span class="small text-info fw-semibold">Electricity</span>
+                                    </a>
+                                </div>
+                                <div class="col-6 quick-actions py-2 ">
+                                    <a href="#"
+                                       class="d-flex py-1 text-decoration-none justify-content-center align-items-center flex-column">
+                                        <div class="bg-white-subtle   d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                             style="height: 54px;width: 54px;">
+                                            <i class="bi bi-droplet"></i>
+
+                                        </div>
+                                        <span class="small text-primary fw-bold">Pay </span>
+                                        <span class=" text-info small fw-semibold">Water</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class=" bg-white bg-opacity-25  rounded-circle d-flex justify-content-center align-items-center"
+                                          style="height: 30px;width: 30px" aria-hidden="true">
+                                        <i class="bi bi-chevron-left fs-5"></i>
+                                    </span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                </div>
+                                <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class=" bg-white bg-opacity-25  rounded-circle d-flex justify-content-center align-items-center"
+                                      style="height: 30px;width: 30px" aria-hidden="true">
+                                        <i class="bi bi-chevron-right fs-5"></i>
+                                    </span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="bg-info d-flex justify-content-center w-100">
+            <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
+        </div>
+    </footer>
+</div>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function calculateLoan() {
+        const income = parseFloat(document.getElementById('income').value);
+        const repayments = parseFloat(document.getElementById('repayments').value);
+        const expenses = parseFloat(document.getElementById('expenses').value);
+        const tenure = parseInt(document.getElementById('tenure').value);
+        const interestRate = parseFloat(document.getElementById('interestRate').value);
+
+        const availableIncome = income - repayments - expenses;
+        const monthlyInterestRate = interestRate / 100 / 12;
+
+        // Maximum affordable EMI
+        const maxEMI = availableIncome;
+
+        // Calculate the maximum loan amount using the formula: P = EMI / [ (r * (1 + r)^n) / ((1 + r)^n - 1) ]
+        const maxLoanAmount = maxEMI * ((1 - Math.pow(1 + monthlyInterestRate, -tenure)) / monthlyInterestRate);
+
+        // Check if the values are valid
+        if (isNaN(maxLoanAmount) || maxLoanAmount <= 0) {
+            document.getElementById('result').innerHTML = '<div class="alert alert-danger">Please enter valid input values.</div>';
+        } else {
+            // Display the maximum loan amount and the monthly repayment
+            document.getElementById('result').innerHTML = `
+                    <div class="alert alert-success text-black small">
+                        <p>Amount you can borrow: <strong>${Number(maxLoanAmount).toLocaleString()} ${document.getElementById('currency').value}</strong>.</p>
+                        <p>Monthly Repayment: <strong>${Number(maxEMI).toLocaleString()} ${document.getElementById('currency').value}</strong>.</p>
+                    </div>`;
+        }
+    }
+</script>
+</body>
+</html>

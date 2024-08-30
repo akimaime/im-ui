@@ -10,10 +10,10 @@
 <div class="bg-color-height ">
     <div class="d-flex min-vh-100 gap-3 justify-content-between flex-column">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-start py-4">
+            <div class="d-flex justify-content-between align-items-center ">
                 <div>
-                    <div class="d-flex col-lg-3  flex-column   rounded-1">
-                        <img src="../assets/b_logo.png" class="img-fluid" alt="logo">
+                    <div class="d-flex col-lg-3  flex-column py-2  rounded-1">
+                        <img src="../assets/logo.png" class="img-fluid" alt="logo">
                     </div>
                     <span class="text-white  fw-bold fs-2">Retail</span>
                 </div>
@@ -60,7 +60,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active" href="dashboard.html"
+                            <a class="nav-link" href="dashboard.html"
                                type="button" role="tab" aria-controls="pills-home"
                                aria-selected="true">
                                 Dashboard
@@ -139,10 +139,11 @@
                                 Product Simulators
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item " href="LoanSimulator.html">Loan Simulator </a></li>
-                                <li><a class="dropdown-item " href="savingCalculator.html">Savings and term
-                                    deposit simulator</a></li>
-                                <li><a class="dropdown-item active" href="term-deapositCalculator.html">Term Deposit simulator</a>
+                                <li><a class="dropdown-item" href="LoanSimulator.html">Loan Simulator </a></li>
+                                <li><a class="dropdown-item" href="savingCalculator.html">Savings simulator</a></li>
+                                <li><a class="dropdown-item active" href="term-deposit.html">Term Deposit Simulator</a></li>
+                                <li><a class="dropdown-item " href="loan-eligibility.html">Loan Eligibility Simulator</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -194,8 +195,6 @@
                                             <input type="number"
                                                    class="form-control text-sm bg-secondary bg-opacity-10 py-3 mb-3 border-0"
                                                    id="rate" step="0.01" placeholder="Enter the interest rate" required>
-
-
                                             <div class="row">
                                                 <div class="col-lg-6">
                                                     <label for="time" class="text-sm">Term of Each Deposit(months):</label>
@@ -226,7 +225,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="card border-secondary border-opacity-25 mb-3 card-body">
-                                            <h5>Savings Deposits summary</h5>
+                                            <h5>Term Deposits summary</h5>
                                             <div class="" id="">
                                                 <span class="text-sm">AER : </span>
                                                 <span class="text-sm" id="aer">0.00%</span>

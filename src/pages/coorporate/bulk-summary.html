@@ -374,21 +374,18 @@
                          style="height: 84px;width: 84px">
                         <i class="text-white bi bi-arrow-counterclockwise tw-object-cover display-2">
                         </i>
-                        <span id="secondsRemain" class="position-absolute text-white tw-top-2 tw-right-2">65</span>
+                        <span id="secondsRemain" class="position-absolute text-white tw-top-2 tw-right-2"></span>
                     </div>
                 </div>
-                <span class="text-dark fs-3 text-center fw-bold ">
-<!--                    (OTP)<br>-->
+                <span class="text-dark   fw-bold ">
                         One Time Password
-
-
                 </span>
                 <span class="text-muted  mb-1  text-center">
                         Please check your 4 digits sent to *********6723 and d********@gmail.com
                 </span>
 
             </div>
-            <form action="">
+            <form action="../payments/payment-success.html">
                 <div class="modal-body py-0 px-lg-5">
                     <div class="d-flex justify-content-between card-body gap-3">
                         <input type="text"
@@ -419,9 +416,13 @@
 
 
                 </div>
-                <div class="modal-footer border-top-0 px-lg-5 py-4 justify-content-between">
-                    <button type="button" class="btn btn-primary w-100 px-5 js-confirm py-2 text-white fw-semibold  ">
-                        Confirm
+                <div class="modal-footer border-top-0 px-lg-5 my-1  justify-content-center">
+                    <button type="button" class="btn btn-outline-primary  px-4 py-2 fw-semibold"
+                            data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary px-4 py-2 fw-semibold  text-white">
+                        Verify
                     </button>
                 </div>
             </form>
