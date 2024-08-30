@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -6,26 +7,55 @@
     <link href="../../css/custom.css" rel="stylesheet">
 </head>
 <body class="">
-<div class="d-flex min-vh-100 justify-content-between flex-column">
-    <div class="bg-color-height mb-4">
-        <div class="container">
-            <div class="d-flex justify-content-between py-4">
-                <div class="d-flex flex-column">
-                    <img src="../../assets/logo.png" alt="logo">
-                    <span class="text-white px-4 fs-4">Retail</span>
+<div class="bg-color-height ">
+    <div class="d-flex min-vh-100 gap-2 justify-content-between flex-column">
+        <div>
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <div>
+                        <div class="d-flex col-lg-3  flex-column py-2  rounded-1">
+                            <img src="../../assets/logo.png" class="img-fluid" alt="logo">
+                        </div>
+                        <span class="text-white  fw-bold fs-2">Retail</span>
+                    </div>
+                    <div class="d-flex col-lg-3 align-items-center justify-content-end gap-2">
+                        <div class="nav-item dropdown">
+                            <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
+                               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="d-flex flex-column">
+                                    <span class="text-sm fw-light">welcome</span>
+                                    <small>John Doe</small>
+                                  </span>
+                                <img src="../../assets/images/otp/avatar.png" class="img-fluid h-6" alt="John Peter Musoni"/>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
 
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                    <h5 class="text-white ">Welcome back,Jon Doe</h5>
-                    <div class="d-flex rounded-circle bg-dark bg-opacity-50 p-4 justify-content-center align-items-center"
-                         style="height: 16px;width: 16px">
-                        <i class="bi bi-person fs-5 text-white"></i>
+                                <li class="my-2">
+                                    <a class="fw-normal dropdown-item" href="#">
+                                        <i class="bi bi-gear"></i>
+                                        Account Settings
+                                    </a>
+                                </li>
+                                <li class="my-2">
+                                    <a class="fw-normal dropdown-item" href="#">
+                                        <i class="bi bi-gear"></i>
+                                        Account Settings
+                                    </a>
+                                </li>
+                                <li class="my-2">
+                                    <a class="fw-normal dropdown-item" href="/">
+                                        <i class="bi bi-box-arrow-left"></i>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="bg-info mb-1 bg-opacity-50 rounded-4 p-1">
                 <nav class=" navbar navbar-expand-lg">
-                    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
                         <i class="navbar-toggler-icon text-white"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -44,19 +74,25 @@
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
                                     Transfers
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="own-account.html">Transfer to your own Accounts </a></li>
-                                    <li><a class="dropdown-item" href="internal.html">Transfer from I&M to I&M </a></li>
-                                    <li><a class="dropdown-item" href="local-bank.html">Transfer to Local Banks </a></li>
-                                    <li><a class="dropdown-item" href="international.html">Transfer to International </a></li>
-                                    <li><a class="dropdown-item" href="momo.html">Transfer to Mobile </a></li>
+                                    <li><a class="dropdown-item" href="own-account.html">Transfer to your own
+                                        Accounts </a></li>
+                                    <li><a class="dropdown-item " href="internal.html">Transfer from I&M to
+                                        I&M </a></li>
+                                    <li><a class="dropdown-item " href="local-bank.html">Transfer to Local
+                                        Banks </a></li>
+                                    <li><a class="dropdown-item " href="international.html">Transfer to
+                                        International </a></li>
+                                    <li><a class="dropdown-item active" href="momo.html">Transfer to Mobile </a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
                                     Payments
                                 </a>
                                 <ul class="dropdown-menu">
@@ -64,6 +100,7 @@
                                     <li><a class="dropdown-item" href="../payments/irembo.html">Irembo Payment </a></li>
                                     <li><a class="dropdown-item" href="../payments/rssb.html">ISHEMA-RSSB Payment </a></li>
                                     <li><a class="dropdown-item" href="../payments/airtime.html">Airtime Top Up</a></li>
+                                    <li><a class="dropdown-item" href="../payments/eKash.html">eKash</a></li>
                                     <li><a class="dropdown-item" href="../payments/utilities.html">Utilities Payment </a></li>
                                 </ul>
                             </li>
@@ -75,30 +112,54 @@
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
                                     Service Requests
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../requests/chequebook.html">Chequebook Requests </a></li>
-                                    <li><a class="dropdown-item" href="../requests/certificates.html">Certificates Requests </a></li>
-                                    <li><a class="dropdown-item" href="../requests/paper-statement.html">Paper Statement Requests</a></li>
-                                    <li><a class="dropdown-item" href="../requests/overdraft.html">Bankers cheques/overdraft Demand Request </a></li>
+                                    <li><a class="dropdown-item" href="../requests/chequebook.html">Chequebook Requests </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../requests/certificates.html">Certificates
+                                        Requests </a></li>
+                                    <li><a class="dropdown-item" href="../requests/paper-statement.html">Paper Statement
+                                        Requests</a></li>
+                                    <li><a class="dropdown-item" href="../requests/overdraft.html">Bankers cheques/overdraft
+                                        Demand Request </a></li>
                                 </ul>
                             </li>
-
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" href="../beneficiaries.html"
+                                <a class="nav-link " href="../beneficiaries.html"
                                    type="button" role="tab" aria-controls="pills-home"
                                    aria-selected="true">
                                     Beneficiaries
                                 </a>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link " href="../LoanSimulator.html"
-                                   type="button" role="tab" aria-controls="pills-home"
-                                   aria-selected="true">
-                                    Loans
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Product Simulators
                                 </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../LoanSimulator.html">Loan Simulator </a></li>
+                                    <li><a class="dropdown-item" href="../savingCalculator.html">Savings simulator</a></li>
+                                    <li><a class="dropdown-item" href="../term-deposit.html">Term Deposit Simulator</a></li>
+                                    <li><a class="dropdown-item" href="../loan-eligibility.html">Loan Eligibility Simulator</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Standing Orders
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../transfers-standingOrder.html">Transfer Standing
+                                        Orders </a></li>
+                                    <li><a class="dropdown-item" href="../airtime-standingOrder.html">Airtime Standing
+                                        Orders</a></li>
+                                    <li><a class="dropdown-item" href="../utilities-standingOrder.html">Utility Standing
+                                        Orders</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link " href="../mail.html"
@@ -110,306 +171,298 @@
                         </ul>
                     </div>
                 </nav>
-                <nav class="mx-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item "><a href="../dashboard.html">Dashboard</a></li>
-                        <li class="breadcrumb-item text-white" aria-current="page">Transfers</li>
-                        <li class="breadcrumb-item active" aria-current="page"> Transfer To Mobile</li>
-                    </ol>
-                </nav>
             </div>
-        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card rounded-4 ">
+                            <div class="card-body">
+                                <form action="momo_payment_summary.html" class="" id="mobileMoneyPaymentForm">
+                                    <h4>
+                                        Mobile Money Payment
+                                    </h4>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card rounded-4 ">
-                        <div class="card-body">
-                            <form action="momo_payment_summary.html" class="" id="mobileMoneyPaymentForm">
-                                <h4>
-                                    Mobile Money Payment
-                                </h4>
-
-                                <div class="form-check my-3">
-                                    <!--                                    <input class="form-check-input rounded-0 border-info js-bulk-toggle"-->
-                                    <!--                                           name="bulk_airtime_payment" type="checkbox"-->
-                                    <!--                                           id="momo_payment"/>-->
-                                    <!--                                    <label class="form-check-label text-info fw-normal "-->
-                                    <!--                                           for="bulk_airtime_payment">-->
-                                    <!--                                        Bulk Payment-->
-                                    <!--                                    </label>-->
-                                </div>
-                                <div style="display: none" class="js-bulk-payments">
-                                    <div class="callout py-1 callout-info mb-3 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
-                                        <p class="me-2 mb-0">
-                                            Upload Excel file which contain phone
-                                            numbers and amount.<br>Please Note that the format is flexible and may be
-                                            changed in the future.
-                                        </p>
-                                        <a href="" class="btn btn-sm btn-success rounded-1">
-                                            <i class="bi bi-download"></i> Download Template
-                                        </a>
+                                    <div class="form-check my-3">
+                                        <!--                                    <input class="form-check-input rounded-0 border-info js-bulk-toggle"-->
+                                        <!--                                           name="bulk_airtime_payment" type="checkbox"-->
+                                        <!--                                           id="momo_payment"/>-->
+                                        <!--                                    <label class="form-check-label text-info fw-normal "-->
+                                        <!--                                           for="bulk_airtime_payment">-->
+                                        <!--                                        Bulk Payment-->
+                                        <!--                                    </label>-->
                                     </div>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="row">
-                                                <div class="col-11">
-                                                    <div class="">
-                                                        <div class="input-group ">
-                                                            <input type="file" class="form-control" required>
-                                                            <button class="btn btn-info" type="button">
-                                                                Upload
-                                                                <span class="bi bi-cloud-upload"></span>
-                                                            </button>
+                                    <div style="display: none" class="js-bulk-payments">
+                                        <div class="callout py-1 callout-info mb-3 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                                            <p class="me-2 mb-0">
+                                                Upload Excel file which contain phone
+                                                numbers and amount.<br>Please Note that the format is flexible and may be
+                                                changed in the future.
+                                            </p>
+                                            <a href="" class="btn btn-sm btn-success rounded-1">
+                                                <i class="bi bi-download"></i> Download Template
+                                            </a>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="row">
+                                                    <div class="col-11">
+                                                        <div class="">
+                                                            <div class="input-group ">
+                                                                <input type="file" class="form-control" required>
+                                                                <button class="btn btn-info" type="button">
+                                                                    Upload
+                                                                    <span class="bi bi-cloud-upload"></span>
+                                                                </button>
 
+                                                            </div>
+                                                            <label class="error"
+                                                                   for="formFile"></label>
                                                         </div>
-                                                        <label class="error"
-                                                               for="formFile"></label>
                                                     </div>
-                                                </div>
-                                                <div class="col-1">
+                                                    <div class="col-1">
                                                                <span class="mt-2 d-inline-block"
                                                                      data-bs-toggle="tooltip" data-bs-placement="right"
                                                                      data-bs-custom-class="custom-tooltip"
                                                                      data-bs-title="Upload file and click upload button.">
                                                                 <i class="bi bi-info-circle"></i>
                                                             </span>
+                                                    </div>
                                                 </div>
+
                                             </div>
+                                            <div class="col-lg-6">
+                                            </div>
+                                        </div>
 
-                                        </div>
-                                        <div class="col-lg-6">
-                                        </div>
                                     </div>
-
-                                </div>
-                                <div class="js-single-payment">
-                                    <div class="callout callout-info">
-                                        <div class="mb-4 alert alert-info">
-                                            For single Mobile Money Payment, please fill the form below and click
-                                            Validate.
-                                            Note that you can add multiple phone numbers by clicking Validate
-                                            button
+                                    <div class="js-single-payment">
+                                        <div class="callout callout-info">
+                                            <div class="mb-4 alert alert-info">
+                                                For single Mobile Money Payment, please fill the form below and click
+                                                Validate.
+                                                Note that you can add multiple phone numbers by clicking Validate
+                                                button
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-4">
-                                            <div class="d-flex flex-column   mb-3">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="d-flex flex-column   mb-3">
 
-                                                <div class="formAddNumbers ">
-                                                    <div class="row g-3 justify-content-end">
-                                                        <div class="col-md-12">
-                                                            <label
-                                                                    class="visually-hidden">Phone</label>
+                                                    <div class="formAddNumbers ">
+                                                        <div class="row g-3 justify-content-end">
+                                                            <div class="col-md-12">
+                                                                <label
+                                                                        class="visually-hidden">Phone</label>
 
-                                                            <div class="row">
-                                                                <div class=" mb-3">
-                                                                    <div class="d-flex justify-content-between  mb-2">
+                                                                <div class="row">
+                                                                    <div class=" mb-3">
+                                                                        <div class="d-flex justify-content-between  mb-2">
 
-                                                                        <div class="form-check">
-                                                                            <input
-                                                                                    class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"
-                                                                                    type="checkbox"
-                                                                                    name="select_beneficiary"
-                                                                                    id="hhome_beneficiary">
-                                                                            <label
-                                                                                    class="form-check-label text-info fw-normal cursor-pointer"
-                                                                                    for="home_beneficiary">
-                                                                                Select From Saved Beneficiaries
-                                                                            </label>
+                                                                            <div class="form-check">
+                                                                                <input
+                                                                                        class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"
+                                                                                        type="checkbox"
+                                                                                        name="select_beneficiary"
+                                                                                        id="hhome_beneficiary">
+                                                                                <label
+                                                                                        class="form-check-label text-info fw-normal cursor-pointer"
+                                                                                        for="home_beneficiary">
+                                                                                    Select From Saved Beneficiaries
+                                                                                </label>
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
 
-                                                                    <div style="display: none"
-                                                                         class="js-select-beneficiary">
-                                                                        <select name="phon" maxlength="9"
-                                                                                class=" select2   py-2 px-3 border fw-semibold text-info form-select js-beneficiaries">
-                                                                            <option value="">Select Beneficiary</option>
-                                                                            <option value="0780007101"
-                                                                                    data-name="Dushimimana Eric">
-                                                                                DUSHIMANA Eric<br> 0780007101
-                                                                            </option>
-                                                                            <option value="0789874799"
-                                                                                    data-name="Mugabo Elias">Mugabo
-                                                                                Elias <br> 0789874799
-                                                                            </option>
-                                                                            <option value="0789874834"
-                                                                                    data-name="Rugamba Alex">Rugamba
-                                                                                Alex <br> 0789874834
-                                                                            </option>
+                                                                        <div style="display: none"
+                                                                             class="js-select-beneficiary">
+                                                                            <select name="phon" maxlength="9"
+                                                                                    class=" select2   py-2 px-3 border fw-semibold text-info form-select js-beneficiaries">
+                                                                                <option value="">Select Beneficiary</option>
+                                                                                <option value="0780007101"
+                                                                                        data-name="Dushimimana Eric">
+                                                                                    DUSHIMANA Eric<br> 0780007101
+                                                                                </option>
+                                                                                <option value="0789874799"
+                                                                                        data-name="Mugabo Elias">Mugabo
+                                                                                    Elias <br> 0789874799
+                                                                                </option>
+                                                                                <option value="0789874834"
+                                                                                        data-name="Rugamba Alex">Rugamba
+                                                                                    Alex <br> 0789874834
+                                                                                </option>
 
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col-lg-7">
-                                                                            <div class="mb-2 js-search-beneficiary">
-                                                                                <div class="input-group js-search-beneficiary">
-                                                                                    <span class="input-group-text">+250</span>
-                                                                                    <input type="tel" id="phone"
-                                                                                           class="form-control rounded-end ignore"
-                                                                                           name="phone" maxlength="9"
-                                                                                           minlength="9"
-                                                                                           placeholder="Phone number"/>
-                                                                                    <label class="pherror text-danger error text-sm"
-                                                                                           for="phone"></label>
-                                                                                </div>
-                                                                                <div class=" js-name-found d-none">
-                                                                                    <div class="d-flex flex-shrink-0 align-items-center gap-2">
-                                                                                        <span class="text-muted small fw-semibold">USD</span>
-                                                                                        <span class=" fw-semibold small text-info">Byukusenge
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-lg-7">
+                                                                                <div class="mb-2 js-search-beneficiary">
+                                                                                    <div class="input-group js-search-beneficiary">
+                                                                                        <span class="input-group-text">+250</span>
+                                                                                        <input type="tel" id="phone"
+                                                                                               class="form-control rounded-end ignore"
+                                                                                               name="phone" maxlength="9"
+                                                                                               minlength="9"
+                                                                                               placeholder="Phone number"/>
+                                                                                        <label class="pherror text-danger error text-sm"
+                                                                                               for="phone"></label>
+                                                                                    </div>
+                                                                                    <div class=" js-name-found d-none">
+                                                                                        <div class="d-flex flex-shrink-0 align-items-center gap-2">
+                                                                                            <span class="text-muted small fw-semibold">USD</span>
+                                                                                            <span class=" fw-semibold small text-info">Byukusenge
                                                                     Jean Paul</span>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
-                                                                        <div class="col-md-5 ">
-                                                                            <button type="button"
-                                                                                    class="btn btn-info rounded-default flex-shrink-0 btnAddPhoneNumbers">
-                                                                                Validate
-                                                                            </button>
+                                                                            <div class="col-md-5 ">
+                                                                                <button type="button"
+                                                                                        class="btn btn-info rounded-default flex-shrink-0 btnAddPhoneNumbers">
+                                                                                    Validate
+                                                                                </button>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-md-12 ">
-                                                            <label
-                                                                    class="visually-hidden">Amount</label>
-                                                            <input type="text" class="form-control ignore"
-                                                                   name="amount"
-                                                                   id="amount"
-                                                                   placeholder="Amount"/>
-                                                            <label class="text-danger error text-sm"
-                                                                   id="amountErr"></label>
-                                                        </div>
+                                                            <div class="col-md-12 ">
+                                                                <label
+                                                                        class="visually-hidden">Amount</label>
+                                                                <input type="text" class="form-control ignore"
+                                                                       name="amount"
+                                                                       id="amount"
+                                                                       placeholder="Amount"/>
+                                                                <label class="text-danger error text-sm"
+                                                                       id="amountErr"></label>
+                                                            </div>
 
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-8">
-                                            <div class="table-responsive">
-                                                <table class="table mb-3 table-accounts js-bulk-table">
-                                                    <thead>
-                                                    <tr class="">
-                                                        <th class="text-info  border-0  border-3 border-bottom  border-info cursor-pointer"></th>
-                                                        <th class="text-info  border-0  border-3 border-bottom  border-info cursor-pointer">
-                                                            <div
-                                                                    class=" d-flex align-items-center justify-content-between border-end pe-2">
-                                                                <span>Full Name</span>
-                                                            </div>
-                                                        </th>
-                                                        <th
-                                                                class="text-info  border-0  border-3 border-bottom  border-info cursor-pointer">
-                                                            <div
-                                                                    class=" d-flex align-items-center justify-content-between border-end pe-2">
-                                                                <span>Phone number</span>
-                                                            </div>
-                                                        </th>
-                                                        <th
-                                                                class="text-info  border-0    border-3 border-bottom  border-info cursor-pointer ">
-                                                            <div
-                                                                    class="d-flex align-items-center justify-content-between border-end pe-2">
-                                                                <span>Amount</span>
-                                                            </div>
-                                                        </th>
+                                            <div class="col-lg-8">
+                                                <div class="table-responsive">
+                                                    <table class="table mb-3 table-accounts js-bulk-table">
+                                                        <thead>
+                                                        <tr class="">
+                                                            <th class="text-info  border-0  border-3 border-bottom  border-info cursor-pointer"></th>
+                                                            <th class="text-info  border-0  border-3 border-bottom  border-info cursor-pointer">
+                                                                <div
+                                                                        class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                                    <span>Full Name</span>
+                                                                </div>
+                                                            </th>
+                                                            <th
+                                                                    class="text-info  border-0  border-3 border-bottom  border-info cursor-pointer">
+                                                                <div
+                                                                        class=" d-flex align-items-center justify-content-between border-end pe-2">
+                                                                    <span>Phone number</span>
+                                                                </div>
+                                                            </th>
+                                                            <th
+                                                                    class="text-info  border-0    border-3 border-bottom  border-info cursor-pointer ">
+                                                                <div
+                                                                        class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                                    <span>Amount</span>
+                                                                </div>
+                                                            </th>
 
 
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
 
-                                                    </tbody>
-                                                    <tfoot>
-                                                    <tr>
-                                                        <td colspan="3" class="text-end">
-                                                            Total Amount:
-                                                        </td>
-                                                        <td>
-                                                            <span class="fw-bold">10,000 RWF</span>
-                                                        </td>
-                                                    </tr>
-                                                    </tfoot>
-                                                </table>
+                                                        </tbody>
+                                                        <tfoot>
+                                                        <tr>
+                                                            <td colspan="3" class="text-end">
+                                                                Total Amount:
+                                                            </td>
+                                                            <td>
+                                                                <span class="fw-bold">10,000 RWF</span>
+                                                            </td>
+                                                        </tr>
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
+
                                     </div>
 
-                                </div>
-
-                                <div class="mt-3">
-                                    <div class="row ">
-                                        <div class="col-lg-6">
-                                            <div class="mb-3">
-                                                <label for="momo_payment_from_account"
-                                                       class="text-info fw-normal form-label">
-                                                    Make payment from:
-                                                </label>
-                                                <select
-                                                        class="form-select py-2    js-transfer-from"
-                                                        required id="momo_payment_from_account" name="from_account">
-                                                    <option value="">Select Account</option>
-                                                </select>
-                                                <div class="mt-1 d-flex justify-content-between align-items-center mb-3 mb-lg-0 js-account-balance">
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-info  small js-balance">*** *** *** ***</span>
+                                    <div class="mt-3">
+                                        <div class="row ">
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label for="momo_payment_from_account"
+                                                           class="text-info fw-normal form-label">
+                                                        Make payment from:
+                                                    </label>
+                                                    <select
+                                                            class="form-select py-2    js-transfer-from"
+                                                            required id="momo_payment_from_account" name="from_account">
+                                                        <option value="">Select Account</option>
+                                                    </select>
+                                                    <div class="mt-1 d-flex justify-content-between align-items-center mb-3 mb-lg-0 js-account-balance">
+                                                        <div class="d-flex flex-column">
+                                                            <span class="text-info  small js-balance">*** *** *** ***</span>
+                                                        </div>
+                                                        <button type="button"
+                                                                class="btn-sm btn btn-outline-info border  js-toggle-balance">
+                                                            Show Balance
+                                                        </button>
                                                     </div>
-                                                    <button type="button"
-                                                            class="btn-sm btn btn-outline-info border  js-toggle-balance">
-                                                        Show Balance
-                                                    </button>
-                                                </div>
-                                                <div class="js-conversion p-0">
-                                                    <div
-                                                            class="d-flex  flex-column flex-md-row gap-3  ">
-                                                        <div>
-                                                            <div class="fw-normal text-info fs-6">
-                                                                Total Conversion:
-                                                            </div>
-                                                            <div
-                                                                    class="d-flex flex-shrink-0 align-items-center gap-2">
+                                                    <div class="js-conversion p-0">
+                                                        <div
+                                                                class="d-flex  flex-column flex-md-row gap-3  ">
+                                                            <div>
+                                                                <div class="fw-normal text-info fs-6">
+                                                                    Total Conversion:
+                                                                </div>
+                                                                <div
+                                                                        class="d-flex flex-shrink-0 align-items-center gap-2">
                                                                     <span
                                                                             class="text-muted fw-semibold small js-converted-currency">USD</span>
-                                                                <span
-                                                                        class="fs-13px fw-semibold small text-info js-converted-amount">2763.38</span>
+                                                                    <span
+                                                                            class="fs-13px fw-semibold small text-info js-converted-amount">2763.38</span>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="fw-normal text-info fs-6">
-                                                                Conversion Rate:
-                                                            </div>
-                                                            <div class="text-info">
-                                                                (<span
-                                                                    class="text-info small js-conversion-rate">0.000092</span>)
+                                                            <div>
+                                                                <div class="fw-normal text-info fs-6">
+                                                                    Conversion Rate:
+                                                                </div>
+                                                                <div class="text-info">
+                                                                    (<span
+                                                                        class="text-info small js-conversion-rate">0.000092</span>)
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
                                             </div>
 
                                         </div>
-
                                     </div>
-                                </div>
-                                <div class="border-top border-2 mb-3"></div>
-                                <div class="row">
-                                    <div class="col-lg-6 offset-lg-6">
-                                        <div
-                                                class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
-                                            <button type="submit" class="btn btn-info text-white px-lg-5">
-                                                Continue
-                                            </button>
-                                            <button type="reset" class="btn btn-outline-info   px-lg-5">
-                                                Clear
-                                            </button>
+                                    <div class="border-top border-2 mb-3"></div>
+                                    <div class="row">
+                                        <div class="col-lg-6 offset-lg-6">
+                                            <div
+                                                    class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
+                                                <button type="submit" class="btn btn-info text-white px-lg-5">
+                                                    Continue
+                                                </button>
+                                                <button type="reset" class="btn btn-outline-info   px-lg-5">
+                                                    Clear
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -670,11 +723,10 @@
                 if (phone === '') {
                     $('#phone').addClass('is-invalid');
                     $('.pherror').text('Phone number is required');
-                } else if(amount===''){
+                } else if (amount === '') {
                     $('#amount').addClass('is-invalid');
                     $('#amountErr').text('Amount is required')
-                }
-                else if (phone.length !== 9) {
+                } else if (phone.length !== 9) {
                     $('#phone').addClass('is-invalid');
                     $('.pherror').text('Phone number must be 9 digits');
                 } else {
