@@ -221,7 +221,7 @@
                                                 <div class="input-group">
 
                                                     <input type="text" name="amount" id="own_amount" required
-                                                           class="form-control flex-grow-1 py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold js-amount"/>
+                                                           class="form-control flex-grow-1 py-3 bg-secondary border-0 bg-opacity-10 px-3   js-amount"/>
                                                 </div>
                                                 <div class="js-conversion p-0" style="display:none">
                                                     <div
@@ -569,6 +569,15 @@
             let accountText = `${abbr}-4000-0000-0001-200${index}-Ntare`;
             jsBeneficiaries.append(`<option value="${abbr}">${accountText}</option>`);
 
+        });
+        $('#own_amount').on('keyup', function () {
+            let amount = $(this).val();
+            // Remove any non-digit characters
+            amount = amount.replace(/\D/g, '');
+            // Format the number with commas
+            amount = Number(amount).toLocaleString();
+            // Set the formatted value back to the input
+            $(this).val(amount);
         });
 
 

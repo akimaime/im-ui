@@ -204,12 +204,12 @@
                                                id="eKash" value="option2">
                                         <label class="form-check-label text-sm" for="eft">eKash</label>
                                     </div>
-                                    <div class="alert alert-info rtgs_info" style="display: none" id="rtgs_info">
+                                    <div class="alert alert-info rtgs_info" style="display: none" >
                                         <p class="text-sm mb-0">
                                             RTGS transactions are instant. A fee of RWF 600 applies.
                                         </p>
                                     </div>
-                                    <div class="alert alert-info" style="display: none" id="eft_info">
+                                    <div class="alert alert-info" style="display: none">
                                         <p class="text-sm mb-0">
                                             EFT transactions may take up to 24 hours to process. A fee of RWF200 applies.
                                         </p>
@@ -347,7 +347,7 @@
                                                     <div class="input-group">
 
                                                         <input type="text" name="amount" required id="local_amount"
-                                                               class="form-control flex-grow-1  py-3 bg-secondary border-0 bg-opacity-10 px-3 js-amount" />
+                                                               class="form-control flex-grow-1  py-3 local_amount bg-secondary border-0 bg-opacity-10 px-3 js-amount" />
                                                     </div>
                                                     <div class="js-conversion p-0" >
                                                         <div
@@ -378,7 +378,7 @@
 
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6 rtgs_info">
+                                            <div class="col-lg-6 ">
                                                 <div class="mb-3">
                                                     <label for="local_reason"
                                                            class="form-label text-sm fw-normal">Reason:</label>
@@ -387,11 +387,11 @@
                                                               name="reason" id="local_reason"></textarea>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6 mb-3 rtgs_info" style="display: none" >
+                                            <div class="col-lg-6 mb-3 rtgs_info" style="display: none">
                                                 <label for="idFile"
                                                        class="form-label fw-normal text-sm">Supporting document (optional):</label>
                                                 <div class="input-group ">
-                                                    <input type="file" class="form-control" required
+                                                    <input type="file" class="form-control py-2" required
                                                            id="idFile">
                                                     <button class="btn btn-info " type="button">
                                                         Upload
@@ -522,7 +522,7 @@
                                                 <div class=" ">
                                                     <div class="d-flex justify-content-between">
                                                         <label for="pay_to" class=" text-sm fw-normal form-label">
-                                                            Make payment to:
+                                                            Make payment to(eKash id & Account number):
                                                         </label>
                                                         <!--                                                    <div class="form-check">-->
                                                         <!--                                                        <input-->
@@ -587,7 +587,7 @@
                                                     <div class="input-group">
 
                                                         <input type="text" name="amount" required id="amount"
-                                                               class="form-control flex-grow-1   py-3 bg-secondary border-0 bg-opacity-10 px-3 fw-semibold js-amount" />
+                                                               class="form-control flex-grow-1 local_amount  py-3 bg-secondary border-0 bg-opacity-10 px-3  js-amount" />
                                                     </div>
                                                     <div class="js-conversion p-0" style="display:none">
                                                         <div
@@ -931,8 +931,8 @@
             $('.js-conversion').slideUp();
         }
     }
-    let rtgsInfo = $('#rtgs_info');
-    let eftInfo = $('#eft_info');
+    let rtgsInfo = $('.rtgs_info');
+    let eftInfo = $('.eft_info');
     let eKash=$('.ekash');
     $('#rtgs').on('change', function () {
         if ($(this).is(':checked')) {
@@ -1010,6 +1010,15 @@
                 balanceElement.text(hideBalanceSymbol);
                 $(this).text('Show Balance');
             }
+        });
+        $('.local_amount').on('keyup', function () {
+            let amount = $(this).val();
+            // Remove any non-digit characters
+            amount = amount.replace(/\D/g, '');
+            // Format the number with commas
+            amount = Number(amount).toLocaleString();
+            // Set the formatted value back to the input
+            $(this).val(amount);
         });
 
 

@@ -590,6 +590,10 @@ body {
   display: block;
 }
 .table-responsive {
-  overflow-x: scroll !important;
+  overflow: hidden !important; /* Hide scrollbar by default */
+}
+
+.table-responsive:hover {
+  overflow-x: auto !important; /* Show scrollbar on hover when content overflows */
 }
 

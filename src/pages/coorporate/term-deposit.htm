@@ -134,9 +134,24 @@
                                 <li><a class="dropdown-item" href="requests/overdraft.html">Bankers cheques/overdraft Demand Request </a></li>
                             </ul>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <a href="LoanSimulator.html" class="nav-link " id="loanSimulator">Loan
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Product Simulator
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="LoanSimulator.html">Loan Simulator</a>
+                                </li>
+                                <li><a class="dropdown-item" href="savingCalculator.html">Savings
+                                    deposit simulator</a></li>
+                                <li><a class="dropdown-item active" href="term-deposit.htm">Term
+                                    deposit simulator</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="loan-eligibility.html">
+                                        Loan Eligibility simulator
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a href="administration.html" class="nav-link" id="administration">Administration
@@ -159,7 +174,7 @@
             <nav class="mx-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item "><a href="../corporate-dashboard.html">Dashboard</a></li>
-                    <li class="breadcrumb-item text-white" aria-current="page">Savings & Term Deposit <Calculator></Calculator></li>
+                    <li class="breadcrumb-item text-white" aria-current="page">Term Deposits Calculator</li>
                 </ol>
             </nav>
         </div>
@@ -270,10 +285,11 @@
                     <div class="card rounded-4 border-0 h-100">
                         <div class="card-body">
                             <div class="container ">
+
                                 <div class="row align-items-start">
                                     <div class="col-lg-6 border border-secondary border-opacity-25 rounded-3">
                                         <div class="py-2">
-                                            <h4>Plan your savings</h4>
+                                            <h4>Term Deposit Calculator</h4>
                                             <p class="text-sm">
                                                 Find out how much you can save by making regular monthly deposits to
                                                 savings plan.
@@ -297,34 +313,33 @@
                                                 </div>
                                             </div>
 
-                                            <label for="rate" class="text-sm">Annual Interest Rate (%):</label>
+                                            <label for="rate" class="text-sm"> Interest Rate (%):</label>
                                             <input type="number"
                                                    class="form-control text-sm bg-secondary bg-opacity-10 py-3 mb-3 border-0"
                                                    id="rate" step="0.01" placeholder="Enter the interest rate" required>
-
-                                            <label for="time" class="text-sm">Saving Terms (months):</label>
-                                            <input type="number"
-                                                   class="form-control text-sm bg-secondary bg-opacity-10 py-3 mb-3 border-0"
-                                                   id="time" placeholder="Enter the number of months" required>
                                             <div class="row">
-                                                <div class="col-lg-8">
-                                                    <label for="regular" class="text-sm">Regular Deposit :</label>
+                                                <div class="col-lg-6">
+                                                    <label for="time" class="text-sm">Term of Each Deposit(months):</label>
+                                                    <input type="number"
+                                                           class="form-control text-sm bg-secondary bg-opacity-10 py-3 mb-3 border-0"
+                                                           id="time" placeholder="Enter the number of months" required>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label for="frequency" class="text-sm">Total investment term(months)</label>
+                                                    <input type="number"
+                                                           class="form-control text-sm bg-secondary bg-opacity-10 py-3 mb-3 border-0"
+                                                           id="month" placeholder="Enter the number of months" required>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <label for="regular" class="text-sm">Reinvestment Interest Earned</label>
                                                     <input type="number"
                                                            class="form-control text-sm bg-secondary bg-opacity-10 py-3 mb-3 border-0"
                                                            id="regular" placeholder="Enter the amount" required>
                                                 </div>
-                                                <div class="col-lg-4">
-                                                    <label for="frequency" class="text-sm">Frequency:</label>
-                                                    <select class="form-select bg-secondary text-sm bg-opacity-10 py-3 mb-3 border-0"
-                                                            id="frequency" required>
-                                                        <option value="monthly">Monthly</option>
-                                                        <option value="quarterly">Quarterly</option>
-                                                        <option value="semi-annually">Semi-annually</option>
-                                                        <option value="annually">Annually</option>
-                                                    </select>
-                                                </div>
                                             </div>
-                                            <button class="btn-primary btn w-100 py-2 mb-4" onclick="calculate()">
+                                            <button class="btn-info btn w-100 py-2 mb-4" onclick="calculate()">
                                                 Calculate
                                             </button>
                                         </div>
@@ -332,7 +347,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="card border-secondary border-opacity-25 mb-3 card-body">
-                                            <h5>Savings Deposits summary</h5>
+                                            <h5>Term Deposits summary</h5>
                                             <div class="" id="">
                                                 <span class="text-sm">AER : </span>
                                                 <span class="text-sm" id="aer">0.00%</span>

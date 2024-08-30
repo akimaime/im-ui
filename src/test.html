@@ -3,47 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Format Validation</title>
+    <title>Loan Eligibility Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .result {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-<h2>Upload a File</h2>
-<form id="uploadForm">
-    <label for="fileInput">Choose a file:</label>
-    <input type="file" id="fileInput" name="fileInput" required>
-    <br><br>
-    <button type="submit">Upload</button>
-    <p id="errorMessage" style="color:red;"></p>
-</form>
+<div class="container mt-5">
+    <h2>Loan Eligibility Calculator</h2>
+    <form id="loanForm">
+        <div class="form-group">
+            <label for="currency">Currency</label>
+            <select id="currency" class="form-control" required>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <!-- Add more currencies as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="income">Monthly Income</label>
+            <input type="number" id="income" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="repayments">Existing Monthly Repayments</label>
+            <input type="number" id="repayments" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="expenses">Other Monthly Expenses</label>
+            <input type="number" id="expenses" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="tenure">Loan Tenure (in months)</label>
+            <input type="number" id="tenure" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="interestRate">Interest Rate (%)</label>
+            <input type="number" id="interestRate" class="form-control" required>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="calculateLoan()">Calculate</button>
+    </form>
+    <div class="result" id="result"></div>
+</div>
 
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- JavaScript for Loan Calculation -->
 <script>
-    const form = document.getElementById('uploadForm');
-    const fileInput = document.getElementById('fileInput');
-    const errorMessage = document.getElementById('errorMessage');
+    function calculateLoan() {
+        const income = parseFloat(document.getElementById('income').value);
+        const repayments = parseFloat(document.getElementById('repayments').value);
+        const expenses = parseFloat(document.getElementById('expenses').value);
+        const tenure = parseInt(document.getElementById('tenure').value);
+        const interestRate = parseFloat(document.getElementById('interestRate').value);
 
-    form.addEventListener('submit', function(event) {
-        // Clear previous error message
-        errorMessage.textContent = '';
+        const availableIncome = income - repayments - expenses;
+        const monthlyInterestRate = interestRate / 100 / 12;
 
-        // Get the file object from the input
-        const file = fileInput.files[0];
+        // Maximum affordable EMI
+        const maxEMI = availableIncome;
 
-        // Define allowed file types for Excel and Word documents
-        const allowedTypes = [
-            'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', // .xlsx
-            'application/vnd.ms-excel', // .xls
-            'application/vnd.openxmlformats-officedocument.wordprocessingml.document', // .docx
-            'application/msword' // .doc
-        ];
+        // Calculate the maximum loan amount using the formula: P = EMI / [ (r * (1 + r)^n) / ((1 + r)^n - 1) ]
+        const maxLoanAmount = maxEMI * ((1 - Math.pow(1 + monthlyInterestRate, -tenure)) / monthlyInterestRate);
 
-        // Check if the file type is allowed
-        if (file && !allowedTypes.includes(file.type)) {
-            // Prevent form submission
-            event.preventDefault();
-
-            // Show error message
-            errorMessage.textContent = 'Invalid file format. Please upload an Excel (.xls, .xlsx) or Word (.doc, .docx) file.';
+        // Check if the values are valid
+        if (isNaN(maxLoanAmount) || maxLoanAmount <= 0) {
+            document.getElementById('result').innerHTML = '<div class="alert alert-danger">Please enter valid input values.</div>';
+        } else {
+            // Display the maximum loan amount and the monthly repayment
+            document.getElementById('result').innerHTML = `
+                    <div class="alert alert-success">
+                        <p>You are eligible for a loan amount up to: <strong>${Number(maxLoanAmount).toLocaleString()} ${document.getElementById('currency').value}</strong>.</p>
+                        <p>Your estimated monthly repayment (EMI) will be: <strong>${Number(maxEMI).toLocaleString()} ${document.getElementById('currency').value}</strong>.</p>
+                    </div>`;
         }
-    });
+    }
 </script>
 </body>
 </html>
