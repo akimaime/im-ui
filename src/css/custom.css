@@ -11904,11 +11904,11 @@ body {
 }
 
 .nav-pills .nav-link {
-  color: #e9ecef;
+  color: #fff;
   background-color: var(--bs-nav-pills-link-bg);
   border-radius: 0;
-  font-weight: lighter;
-  border-bottom: 1px solid #ced4da;
+  font-weight: normal;
+  border-bottom: 0.1px solid #ced4da;
   margin-right: 0;
 }
 
@@ -11948,6 +11948,14 @@ body {
   background-position: left top;
 }
 
+.collapsed > .bi.toggle-submenu-icon {
+  transform: rotate(180deg) !important;
+}
+
+.toggle-submenu-icon {
+  transition: all 0.4s ease !important;
+}
+
 .v-cards .nav-pills .nav-link.active .bn .card {
   color: #fff !important;
   border: 4px solid #0099A8 !important;
@@ -11966,8 +11974,8 @@ body {
   margin-right: 0 !important;
   font-weight: bolder;
   background: transparent;
-  border-radius: 0;
-  border-bottom: 3px solid #fff !important;
+  border-radius: 2px;
+  border-bottom: 4px solid #fff !important;
 }
 
 .admin .nav-pills .nav-link {

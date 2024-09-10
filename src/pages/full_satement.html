@@ -1,100 +1,198 @@
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>I&M Internet bank</title>
     <link href="../css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href=
-            "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 </head>
 <body class="">
-<div class="d-flex min-vh-100 justify-content-between flex-column">
-    <div class="bg-color-height mb-4">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-start py-4">
-                <div>
-                    <div class="d-flex col-lg-2 p-2 flex-column bg-white  rounded-1">
-                        <img src="../assets/b_logo.png" class="img-fluid" alt="logo">
+<div class="bg-color-height ">
+    <div class="d-flex min-vh-100 gap-2 justify-content-between flex-column">
+        <div>
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <div>
+                        <div class="d-flex col-lg-3  flex-column py-2  rounded-1">
+                            <a href="dashboard.html">
+                                <img src="../assets/logo.png" class="img-fluid" alt="logo">
+                            </a>
+                        </div>
+                        <span class="text-white  fw-bold fs-2">Retail</span>
                     </div>
-                    <span class="text-white  fw-bold fs-2">Retail</span>
-                </div>
-                <div class="d-flex col-lg-3 align-items-center justify-content-end gap-2">
-                    <h5 class="text-white ">Welcome ,Jon Doe</h5>
-                    <div class="d-flex rounded-circle bg-dark bg-opacity-50 p-4 justify-content-center align-items-center"
-                         style="height: 16px;width: 16px">
-                        <i class="bi bi-person fs-5 text-white"></i>
+                    <div class="d-flex col-lg-3 align-items-center justify-content-end gap-2">
+                        <div class="nav-item dropdown">
+                            <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
+                               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="d-flex flex-column">
+                                    <span class="text-sm fw-light">welcome</span>
+                                    <small>John Doe</small>
+                                  </span>
+                                <img src="../assets/images/otp/avatar.png" class="img-fluid h-6"
+                                     alt="John Peter Musoni"/>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
+
+                                <li class="my-2">
+                                    <a class="fw-normal dropdown-item" href="#">
+                                        <i class="bi bi-gear"></i>
+                                        Account Settings
+                                    </a>
+                                </li>
+                                <li class="my-2">
+                                    <a class="fw-normal dropdown-item" href="#">
+                                        <i class="bi bi-gear"></i>
+                                        Account Settings
+                                    </a>
+                                </li>
+                                <li class="my-2">
+                                    <a class="fw-normal dropdown-item" href="/">
+                                        <i class="bi bi-box-arrow-left"></i>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <nav class=" navbar navbar-expand-lg">
+                    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="navbar-toggler-icon text-white"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Dashboard
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item " href="#">Retail Dashboard</a></li>
+                                    <li><a class="dropdown-item"
+                                           href="corporate-dashboard.html">Corporate
+                                        Dashboard</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Transfers
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="transfers/own-account.html">Transfer to your own
+                                        Accounts </a></li>
+                                    <li><a class="dropdown-item" href="transfers/internal.html">Transfer from I&M to
+                                        I&M </a></li>
+                                    <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to Local
+                                        Banks </a></li>
+                                    <li><a class="dropdown-item" href="transfers/international.html">Transfer to
+                                        International </a></li>
+                                    <li><a class="dropdown-item" href="transfers/momo.html">Transfer to Mobile </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Payments
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="payments/rra.html">RRA Payment </a></li>
+                                    <li><a class="dropdown-item" href="payments/irembo.html">Irembo Payment </a></li>
+                                    <li><a class="dropdown-item" href="payments/rssb.html">ISHEMA-RSSB Payment </a></li>
+                                    <li><a class="dropdown-item" href="payments/airtime.html">Airtime Top Up</a></li>
+                                    <li><a class="dropdown-item" href="payments/eKash.html">eKash</a></li>
+                                    <li><a class="dropdown-item" href="payments/utilities.html">Utilities Payment </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" role="presentation">
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Service Requests
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="requests/chequebook.html">Chequebook
+                                        Requests </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="requests/certificates.html">Certificates
+                                        Requests </a></li>
+                                    <li><a class="dropdown-item" href="requests/paper-statement.html">Paper Statement
+                                        Requests</a></li>
+                                    <li><a class="dropdown-item" href="requests/overdraft.html">Bankers
+                                        cheques/overdraft
+                                        Demand Request </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" role="presentation">
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Product Simulators
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="LoanSimulator.html">Loan Simulator </a></li>
+                                    <li><a class="dropdown-item" href="savingCalculator.html">Savings simulator</a></li>
+                                    <li><a class="dropdown-item" href="term-deposit.html">Term Deposit Simulator</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="loan-eligibility.html">Loan Eligibility
+                                        Simulator</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Standing Orders
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="transfers-standingOrder.html">Transfer Standing
+                                        Orders </a></li>
+                                    <li><a class="dropdown-item" href="airtime-standingOrder.html">Airtime Standing
+                                        Orders</a></li>
+                                    <li><a class="dropdown-item" href="utilities-standingOrder.html">Utility Standing
+                                        Orders</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Other Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item " href="card-management.html"
+                                           type="button" role="tab" aria-controls="pills-home"
+                                           aria-selected="true">
+                                            Manage Cards
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item " href="beneficiaries.html"
+                                           type="button" role="tab" aria-controls="pills-home"
+                                           aria-selected="true">
+                                            Manage Beneficiaries
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item " href="mail.html"
+                                           type="button" role="tab" aria-controls="pills-home"
+                                           aria-selected="true">
+                                            Mails
+                                        </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <nav class="mb-4 navbar navbar-expand-lg">
-                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="navbar-toggler-icon text-white"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="/"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Dashboard
-                            </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="../pages/corporate-dashboard.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">Corporate Dashboard
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Transfers
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../pages/transfers/own-account.html">Transfer to your own Accounts </a></li>
-                                <li><a class="dropdown-item" href="../pages/transfers/internal.html">Transfer from I&M to I&M </a></li>
-                                <li><a class="dropdown-item" href="../pages/transfers/local-bank.html">Transfer to Local Banks </a></li>
-                                <li><a class="dropdown-item" href="../pages/transfers/international.html">Transfer to International </a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Payments
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../pages/payments/rra.html">RRA Payment </a></li>
-                                <li><a class="dropdown-item" href="../pages/payments/irembo.html">Irembo Payment </a></li>
-                                <li><a class="dropdown-item" href="../pages/payments/airtime.html">Airtime Top Up</a></li>
-                                <li><a class="dropdown-item" href="../pages/transfers/local-bank.html">Mobile Money Payment </a></li>
-                                <li><a class="dropdown-item" href="../pages/payments/utilities.html">Utilities Payment </a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Cards" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cards
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="service" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service
-                                Requests
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="beneficiaries.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Beneficiaries
-                            </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Mails" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mails
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
 
         <div class="container">
             <div class="row">
@@ -501,6 +599,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
     <footer>
