@@ -335,9 +335,107 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-check py-2 ">
+                                                    <input class="form-check-input js-payment-schedule   " type="checkbox"
+                                                           id="recurringTransfer">
+
+                                                    <label class="form-check-label text-info border-info small fw-normal "
+                                                           for="recurringTransfer">
+                                                        Recurring Payment
+
+                                                        <span class="text-muted small">(
+                                                            Set up a recurring payment)
+                                                            )</span>
+                                                    </label>
+
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class="recurring" style="display: none">
+                                            <div class="row">
+                                                <div class="col-lg-6 mb-3">
+                                                    <label
+                                                            class="form-label text-sm" for="frequency">Frequency</label>
+                                                    <select name="frequency"
+                                                            class="form-select bg-secondary bg-opacity-10 border-0 py-3"
+                                                            id="frequency">
+                                                        <option value="">Select Frequency</option>
+                                                        <option value="daily">Daily</option>
+                                                        <option value="weekly">Weekly</option>
+                                                        <option value="monthly">Monthly</option>
+                                                        <option value="monthly">Quarterly</option>
+                                                        <option value="yearly">Yearly</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-lg-6">
+                                                    <div class="mb-1">
+                                                        <label for="own_amount"
+                                                               class="form-label text-sm">Start Date</label>
+                                                        <div class="input-group">
+
+                                                            <input type="date" name="s_date" id="s_date" required
+                                                                   class="form-control bg-secondary bg-opacity-10 border-0 py-3 js-amount"/>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+
+                                                    <div class="">
+                                                        <div class="d-flex justify-content-between">
+                                                            <label class="text-sm form-label">
+                                                                End date:
+                                                            </label>
+                                                            <div class="form-check">
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"
+                                                                        type="checkbox" name="select_beneficiary"
+                                                                >
+                                                                <label
+                                                                        class="form-check-label text-info fw-normal cursor-pointer"
+                                                                        for="Im_home_beneficiary">
+                                                                    Choose Number of installments
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div style="display: none" class="js-select-beneficiary">
+                                                            <select
+                                                                    class="  bg-secondary bg-opacity-10 border-0 py-3 form-select ">
+                                                                <option value="">Select Number of installements</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
 
 
+                                                            </select>
+                                                        </div>
+                                                        <div class="mb-3 js-search-beneficiary">
+                                                            <div
+                                                                    class="rounded-default    border-0 d-flex align-items-center p-1">
+
+                                                                <input type="date"
+                                                                       class="form-control bg-secondary bg-opacity-10 border-0 py-3 shadow-none"
+                                                                       name="search"/>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class=" js-account-found" style="display: none">
+                                                            <div class="d-flex flex-shrink-0 align-items-center gap-2">
+                                                                <span class="text-muted small fw-semibold">USD</span>
+                                                                <span class=" fw-semibold small text-info">Byukusenge
+                                                                        Jean Paul</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -725,6 +823,13 @@
                     alphanumeric: true,
                 }
             },
+        });
+        $('#recurringTransfer').on('change', function () {
+            if ($(this).is(':checked')) {
+                $('.recurring').slideDown();
+            } else {
+                $('.recurring').slideUp();
+            }
         });
 
         $internationalForm.on('submit', function (e) {
