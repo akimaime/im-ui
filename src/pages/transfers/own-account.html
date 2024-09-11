@@ -106,13 +106,6 @@
                                     <li><a class="dropdown-item" href="../payments/utilities.html">Utilities Payment </a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link " href="../card-management.html"
-                                   type="button" role="tab" aria-controls="pills-home"
-                                   aria-selected="true">
-                                    Manage Cards
-                                </a>
-                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                    aria-expanded="false">
@@ -128,13 +121,6 @@
                                     <li><a class="dropdown-item" href="../requests/overdraft.html">Bankers cheques/overdraft
                                         Demand Request </a></li>
                                 </ul>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link " href="../beneficiaries.html"
-                                   type="button" role="tab" aria-controls="pills-home"
-                                   aria-selected="true">
-                                    Beneficiaries
-                                </a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -163,12 +149,33 @@
                                         Orders</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link " href="../mail.html"
-                                   type="button" role="tab" aria-controls="pills-home"
-                                   aria-selected="true">
-                                    Mails
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Other Services
                                 </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item " href="../card-management.html"
+                                           type="button" role="tab" aria-controls="pills-home"
+                                           aria-selected="true">
+                                            Manage Cards
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item " href="../beneficiaries.html"
+                                           type="button" role="tab" aria-controls="pills-home"
+                                           aria-selected="true">
+                                            Manage Beneficiaries
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item " href="../mail.html"
+                                           type="button" role="tab" aria-controls="pills-home"
+                                           aria-selected="true">
+                                            Mails
+                                        </a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -278,6 +285,15 @@
                                                     </div>
 
                                                 </div>
+                                                <div class="">
+                                                    <label
+                                                            class="form-label text-sm fw-normal  text-sm">Negotiated rate id:</label>
+                                                    <div class="input-group">
+
+                                                        <input type="text" name="amount" required
+                                                               class="form-control flex-grow-1 home_amount  py-3 bg-secondary border-0 bg-opacity-10 px-3 fw-semibold js-amount"/>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                             <div class="col-lg-6">
@@ -319,9 +335,107 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-check py-2 ">
+                                                    <input class="form-check-input js-payment-schedule   " type="checkbox"
+                                                           id="recurringTransfer">
+
+                                                    <label class="form-check-label text-info border-info small fw-normal "
+                                                           for="recurringTransfer">
+                                                        Recurring Payment
+
+                                                        <span class="text-muted small">(
+                                                            Set up a recurring payment)
+                                                            )</span>
+                                                    </label>
+
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class="recurring" style="display: none">
+                                            <div class="row">
+                                                <div class="col-lg-6 mb-3">
+                                                    <label
+                                                            class="form-label text-sm" for="frequency">Frequency</label>
+                                                    <select name="frequency"
+                                                            class="form-select bg-secondary bg-opacity-10 border-0 py-3"
+                                                            id="frequency">
+                                                        <option value="">Select Frequency</option>
+                                                        <option value="daily">Daily</option>
+                                                        <option value="weekly">Weekly</option>
+                                                        <option value="monthly">Monthly</option>
+                                                        <option value="monthly">Quarterly</option>
+                                                        <option value="yearly">Yearly</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-lg-6">
+                                                    <div class="mb-1">
+                                                        <label for="own_amount"
+                                                               class="form-label text-sm">Start Date</label>
+                                                        <div class="input-group">
+
+                                                            <input type="date" name="s_date" id="s_date" required
+                                                                   class="form-control bg-secondary bg-opacity-10 border-0 py-3 js-amount"/>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+
+                                                    <div class="">
+                                                        <div class="d-flex justify-content-between">
+                                                            <label class="text-sm form-label">
+                                                                End date:
+                                                            </label>
+                                                            <div class="form-check">
+                                                                <input
+                                                                        class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"
+                                                                        type="checkbox" name="select_beneficiary"
+                                                                >
+                                                                <label
+                                                                        class="form-check-label text-info fw-normal cursor-pointer"
+                                                                        for="Im_home_beneficiary">
+                                                                    Choose Number of installments
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div style="display: none" class="js-select-beneficiary">
+                                                            <select
+                                                                    class="  bg-secondary bg-opacity-10 border-0 py-3 form-select ">
+                                                                <option value="">Select Number of installements</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
 
 
+                                                            </select>
+                                                        </div>
+                                                        <div class="mb-3 js-search-beneficiary">
+                                                            <div
+                                                                    class="rounded-default    border-0 d-flex align-items-center p-1">
+
+                                                                <input type="date"
+                                                                       class="form-control bg-secondary bg-opacity-10 border-0 py-3 shadow-none"
+                                                                       name="search"/>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class=" js-account-found" style="display: none">
+                                                            <div class="d-flex flex-shrink-0 align-items-center gap-2">
+                                                                <span class="text-muted small fw-semibold">USD</span>
+                                                                <span class=" fw-semibold small text-info">Byukusenge
+                                                                        Jean Paul</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -709,6 +823,13 @@
                     alphanumeric: true,
                 }
             },
+        });
+        $('#recurringTransfer').on('change', function () {
+            if ($(this).is(':checked')) {
+                $('.recurring').slideDown();
+            } else {
+                $('.recurring').slideUp();
+            }
         });
 
         $internationalForm.on('submit', function (e) {
