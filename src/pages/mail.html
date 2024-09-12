@@ -218,9 +218,11 @@
             width: 100%;
 
         }
-        .mail-list:hover{
+
+        .mail-list:hover {
             background-color: #e6e9ed;
         }
+
         .email-wrapper .mail-list-container .mail-list:last-child {
             border-bottom: none;
         }
@@ -356,394 +358,537 @@
     </style>
 </head>
 <body class="">
-<div class="d-flex min-vh-100 justify-content-between flex-column">
-    <div class="bg-color-height mb-4">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-start py-4">
-                <div>
-                    <div class="d-flex col-lg-2 p-2 flex-column bg-white  rounded-1">
-                        <img src="../assets/b_logo.png" class="img-fluid" alt="logo">
+<div class="bg-color-height gap-3">
+    <div class="d-flex min-vh-100 justify-content-between flex-column">
+        <div>
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <div>
+                        <div class="d-flex col-lg-3  flex-column py-2  rounded-1">
+                            <a href="dashboard.html">
+                                <img src="../assets/logo.png" class="img-fluid" alt="logo">
+                            </a>
+                        </div>
+                        <span class="text-white  fw-bold fs-2">Retail</span>
                     </div>
-                    <span class="text-white  fw-bold fs-2">Retail</span>
-                </div>
-                <div class="d-flex col-lg-3 align-items-center justify-content-end gap-2">
-                    <h5 class="text-white ">Welcome ,Jon Doe</h5>
-                    <div class="d-flex rounded-circle bg-dark bg-opacity-50 p-4 justify-content-center align-items-center"
-                         style="height: 16px;width: 16px">
-                        <i class="bi bi-person fs-5 text-white"></i>
+                    <div class="d-flex col-lg-3 align-items-center justify-content-end gap-2">
+                        <div class="nav-item dropdown">
+                            <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
+                               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="d-flex flex-column">
+                                    <span class="text-sm fw-light">welcome</span>
+                                    <small>John Doe</small>
+                                  </span>
+                                <img src="../assets/images/otp/avatar.png" class="img-fluid h-6"
+                                     alt="John Peter Musoni"/>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
+
+                                <li class="my-2">
+                                    <a class="fw-normal dropdown-item" href="#">
+                                        <i class="bi bi-gear"></i>
+                                        Account Settings
+                                    </a>
+                                </li>
+                                <li class="my-2">
+                                    <a class="fw-normal dropdown-item" href="#">
+                                        <i class="bi bi-gear"></i>
+                                        Account Settings
+                                    </a>
+                                </li>
+                                <li class="my-2">
+                                    <a class="fw-normal dropdown-item" href="/">
+                                        <i class="bi bi-box-arrow-left"></i>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <nav class=" navbar navbar-expand-lg">
+                    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="navbar-toggler-icon text-white"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link   dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Dashboard
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item " href="dashboard.html">Retail Dashboard</a></li>
+                                    <li><a class="dropdown-item"
+                                           href="corporate-dashboard.html">Corporate
+                                        Dashboard</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Transfers
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="transfers/own-account.html">Transfer to your own
+                                        Accounts </a></li>
+                                    <li><a class="dropdown-item" href="transfers/internal.html">Transfer from I&M to
+                                        I&M </a></li>
+                                    <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to Local
+                                        Banks </a></li>
+                                    <li><a class="dropdown-item" href="transfers/international.html">Transfer to
+                                        International </a></li>
+                                    <li><a class="dropdown-item" href="transfers/momo.html">Transfer to Mobile </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Payments
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="payments/rra.html">RRA Payment </a></li>
+                                    <li><a class="dropdown-item" href="payments/irembo.html">Irembo Payment </a></li>
+                                    <li><a class="dropdown-item" href="payments/rssb.html">ISHEMA-RSSB Payment </a></li>
+                                    <li><a class="dropdown-item" href="payments/airtime.html">Airtime Top Up</a></li>
+                                    <li><a class="dropdown-item" href="payments/eKash.html">eKash</a></li>
+                                    <li><a class="dropdown-item" href="payments/utilities.html">Utilities Payment </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" role="presentation">
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Service Requests
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="requests/chequebook.html">Chequebook
+                                        Requests </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="requests/certificates.html">Certificates
+                                        Requests </a></li>
+                                    <li><a class="dropdown-item" href="requests/paper-statement.html">Paper Statement
+                                        Requests</a></li>
+                                    <li><a class="dropdown-item" href="requests/overdraft.html">Bankers
+                                        cheques/overdraft
+                                        Demand Request </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" role="presentation">
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Product Simulators
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="LoanSimulator.html">Loan Simulator </a></li>
+                                    <li><a class="dropdown-item" href="savingCalculator.html">Savings simulator</a></li>
+                                    <li><a class="dropdown-item" href="term-deposit.html">Term Deposit Simulator</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="loan-eligibility.html">Loan Eligibility
+                                        Simulator</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Standing Orders
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="transfers-standingOrder.html">Transfer Standing
+                                        Orders </a></li>
+                                    <li><a class="dropdown-item" href="airtime-standingOrder.html">Airtime Standing
+                                        Orders</a></li>
+                                    <li><a class="dropdown-item" href="utilities-standingOrder.html">Utility Standing
+                                        Orders</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Other Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item " href="card-management.html"
+                                           type="button" role="tab" aria-controls="pills-home"
+                                           aria-selected="true">
+                                            Manage Cards
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item " href="beneficiaries.html"
+                                           type="button" role="tab" aria-controls="pills-home"
+                                           aria-selected="true">
+                                            Manage Beneficiaries
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item active " href="mail.html"
+                                           type="button" role="tab" aria-controls="pills-home"
+                                           aria-selected="true">
+                                            Mails
+                                        </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <nav class="mb-4 navbar rounded-4 bg-info mb-1 bg-opacity-50 navbar-expand-lg">
-                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="navbar-toggler-icon text-white"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" href="dashboard.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Dashboard
-                            </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="corporate-dashboard.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">Corporate Dashboard
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Transfers
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="transfers/own-account.html">Transfer to your own Accounts </a></li>
-                                <li><a class="dropdown-item" href="transfers/internal.html">Transfer from I&M to I&M </a></li>
-                                <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to Local Banks </a></li>
-                                <li><a class="dropdown-item" href="transfers/international.html">Transfer to International </a></li>
-                                <li><a class="dropdown-item" href="transfers/momo.html">Transfer to Mobile </a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Payments
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="payments/rra.html">RRA Payment </a></li>
-                                <li><a class="dropdown-item" href="payments/irembo.html">Irembo Payment </a></li>
-                                <li><a class="dropdown-item" href="payments/rssb.html">ISHEMA-RSSB Payment </a></li>
-                                <li><a class="dropdown-item" href="payments/airtime.html">Airtime Top Up</a></li>
-                                <li><a class="dropdown-item" href="payments/utilities.html">Utilities Payment </a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="card-management.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Manage Cards
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Service Requests
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="requests/chequebook.html">Chequebook Requests </a></li>
-                                <li><a class="dropdown-item" href="requests/certificates.html">Certificates Requests </a></li>
-                                <li><a class="dropdown-item" href="requests/paper-statement.html">Paper Statement Requests</a></li>
-                                <li><a class="dropdown-item" href="requests/overdraft.html">Bankers cheques/overdraft Demand Request </a></li>
-                            </ul>
-                        </li>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 ">
+                        <div class="card rounded-4 border-0 h-100">
+                            <div class="card-body">
+                                <div class="row my-3">
+                                    <div class="container  bg-white rounded-4">
+                                        <div class="content-wrapper p-1 bg-white rounded-4">
+                                            <div class="email-wrapper rounded-4 p-1 bg-white wrapper">
+                                                <div class="row align-items-stretch">
+                                                    <div class="mail-sidebar d-none d-lg-block col-md-2 pt-3 bg-white">
+                                                        <div class="menu-bar rounded-1">
+                                                            <ul class="menu-items">
+                                                                <li class="compose mb-3">
+                                                                    <button class="btn btn-info rounded-pill d-flex gap-1 align-items-center"
+                                                                            data-bs-toggle="modal"
+                                                                            data-bs-target="#myModal"><span class=""><i
+                                                                            class="bi bi-plus"></i></span> Compose
+                                                                    </button>
+                                                                </li>
+                                                                <li class="active"><a href="#"><i
+                                                                        class="mdi mdi-email-outline"></i> Inbox</a><span
+                                                                        class="badge   bg-primary ">10</span></li>
+                                                                <li><a href="#"><i class="mdi mdi-share"></i> Sent</a></li>
+                                                                <li><a href="#"><i class="mdi mdi-file-outline"></i>
+                                                                    Draft</a><span
+                                                                        class="badge badge-pill badge-warning">4</span></li>
+                                                                <li><a href="#"><i class="mdi mdi-upload"></i>
+                                                                    Outbox</a><span
+                                                                        class="badge badge-pill badge-danger">3</span></li>
+                                                                <li><a href="#"><i class="mdi mdi-star-outline"></i> Starred</a>
+                                                                </li>
+                                                                <li><a href="#"><i class="mdi mdi-delete"></i> Trash</a>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="wrapper">
+                                                                <div class="online-status d-flex justify-content-between align-items-center">
+                                                                    <p class="chat">Chats</p> <span
+                                                                        class="status offline online"></span></div>
+                                                            </div>
 
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="beneficiaries.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Beneficiaries
-                            </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link " href="LoanSimulator.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Loans
-                            </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" href="mail.html"
-                               type="button" role="tab" aria-controls="pills-home"
-                               aria-selected="true">
-                                Mails
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 ">
-                    <div class="card rounded-4 border-0 h-100">
-                        <div class="card-body">
-                            <div class="row my-3">
-                                <div class="container  bg-white rounded-4">
-                                    <div class="content-wrapper p-1 bg-white rounded-4">
-                                        <div class="email-wrapper rounded-4 p-1 bg-white wrapper">
-                                            <div class="row align-items-stretch">
-                                                <div class="mail-sidebar d-none d-lg-block col-md-2 pt-3 bg-white">
-                                                    <div class="menu-bar rounded-1">
-                                                        <ul class="menu-items">
-                                                            <li class="compose mb-3"><button class="btn btn-info rounded-pill d-flex gap-1 align-items-center" data-bs-toggle="modal" data-bs-target="#myModal"><span class=""><i class="bi bi-plus"></i></span> Compose </button></li>
-                                                            <li class="active"><a href="#"><i class="mdi mdi-email-outline"></i> Inbox</a><span class="badge   bg-primary ">10</span></li>
-                                                            <li><a href="#"><i class="mdi mdi-share"></i> Sent</a></li>
-                                                            <li><a href="#"><i class="mdi mdi-file-outline"></i> Draft</a><span class="badge badge-pill badge-warning">4</span></li>
-                                                            <li><a href="#"><i class="mdi mdi-upload"></i> Outbox</a><span class="badge badge-pill badge-danger">3</span></li>
-                                                            <li><a href="#"><i class="mdi mdi-star-outline"></i> Starred</a></li>
-                                                            <li><a href="#"><i class="mdi mdi-delete"></i> Trash</a></li>
-                                                        </ul>
-                                                        <div class="wrapper">
-                                                            <div class="online-status d-flex justify-content-between align-items-center">
-                                                                <p class="chat">Chats</p> <span class="status offline online"></span></div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <div class="mail-list-container col-md-3 pt-4 pb-4 border-right bg-white">
-                                                    <div class="border-bottom pb-4 mb-3 px-3">
-                                                        <div class="form-group">
-                                                            <input class="form-control w-100 border-primary rounded-pill" type="search" placeholder="Search mail" id="Mail-rearch">
                                                         </div>
                                                     </div>
-                                                    <div class="mail-list text-sm new_mail">
-                                                        <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input"> <i class="input-helper"></i></label></div>
-                                                        <div class="content">
-                                                            <p class="sender-name">Severin Rutayisire</p>
-                                                            <p class="message_text">Hi Aime, Please be informed that the new project presentation is due Monday.</p>
+                                                    <div class="mail-list-container col-md-3 pt-4 pb-4 border-right bg-white">
+                                                        <div class="border-bottom pb-4 mb-3 px-3">
+                                                            <div class="form-group">
+                                                                <input class="form-control w-100 border-primary rounded-pill"
+                                                                       type="search" placeholder="Search mail"
+                                                                       id="Mail-rearch">
+                                                            </div>
                                                         </div>
-                                                        <div class="details">
-                                                            <i class="mdi mdi-star-outline"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mail-list new_mail text-sm">
-                                                        <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input" checked> <i class="input-helper"></i></label></div>
-                                                        <div class="content">
-                                                            <p class="sender-name">Microsoft Account Password Change</p>
-                                                            <p class="message_text">Change the password for your Microsoft Account using the security code 35525</p>
-                                                        </div>
-                                                        <div class="details">
-                                                            <i class="mdi mdi-star favorite"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mail-list new_mail text-sm">
-                                                        <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input"> <i class="input-helper"></i></label></div>
-                                                        <div class="content">
-                                                            <p class="sender-name">Manzi Pacifique</p>
-                                                            <p class="message_text">Hello, last date for registering for the annual music event is closing in</p>
-                                                        </div>
-                                                        <div class="details">
-                                                            <i class="mdi mdi-star-outline"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mail-list text-sm">
-                                                        <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input"> <i class="input-helper"></i></label></div>
-                                                        <div class="content">
-                                                            <p class="sender-name">Dushimimana Eric</p>
-                                                            <p class="message_text">FYI</p>
-                                                        </div>
-                                                        <div class="details">
-                                                            <i class="mdi mdi-star favorite"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mail-list text-sm">
-                                                        <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input"> <i class="input-helper"></i></label></div>
-                                                        <div class="content">
-                                                            <p class="sender-name">David Bayingana</p>
-                                                            <p class="message_text">Hi, Please find this week’s update..</p>
-                                                        </div>
-                                                        <div class="details">
-                                                            <i class="mdi mdi-star-outline"></i>
-                                                        </div>
-                                                    </div>
-                                                    <!--                                    <div class="mail-list">-->
-                                                    <!--                                        <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input"> <i class="input-helper"></i></label></div>-->
-                                                    <!--                                        <div class="content">-->
-                                                    <!--                                            <p class="sender-name">Bruno King</p>-->
-                                                    <!--                                            <p class="message_text">Hi, Please find this week’s monitoring report in the attachment.</p>-->
-                                                    <!--                                        </div>-->
-                                                    <!--                                        <div class="details">-->
-                                                    <!--                                            <i class="mdi mdi-star-outline"></i>-->
-                                                    <!--                                        </div>-->
-                                                    <!--                                    </div>-->
-                                                    <!--                                    <div class="mail-list">-->
-                                                    <!--                                        <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input"> <i class="input-helper"></i></label></div>-->
-                                                    <!--                                        <div class="content">-->
-                                                    <!--                                            <p class="sender-name">Me, Mark</p>-->
-                                                    <!--                                            <p class="message_text">Hi, Testing is complete. The system is ready to go live.</p>-->
-                                                    <!--                                        </div>-->
-                                                    <!--                                        <div class="details">-->
-                                                    <!--                                            <i class="mdi mdi-star-outline"></i>-->
-                                                    <!--                                        </div>-->
-                                                    <!--                                    </div>-->
-                                                    <!--                                    <div class="mail-list">-->
-                                                    <!--                                        <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input"> <i class="input-helper"></i></label></div>-->
-                                                    <!--                                        <div class="content">-->
-                                                    <!--                                            <p class="sender-name">Catherine Myers</p>-->
-                                                    <!--                                            <p class="message_text">Template Market: Limited Period Offer!!! 50% Discount on all Templates.</p>-->
-                                                    <!--                                        </div>-->
-                                                    <!--                                        <div class="details">-->
-                                                    <!--                                            <i class="mdi mdi-star favorite"></i>-->
-                                                    <!--                                        </div>-->
-                                                    <!--                                    </div>-->
-
-                                                </div>
-                                                <div class="mail-view d-none d-md-block col-md-9 col-lg-7 bg-white">
-                                                    <div class="row">
-
-                                                    </div>
-                                                    <div class="message-body">
-                                                        <div class="sender-details">
+                                                        <div class="mail-list text-sm new_mail">
+                                                            <div class="form-check"><label class="form-check-label"> <input
+                                                                    type="checkbox" class="form-check-input"> <i
+                                                                    class="input-helper"></i></label></div>
+                                                            <div class="content">
+                                                                <p class="sender-name">Severin Rutayisire</p>
+                                                                <p class="message_text">Hi Aime, Please be informed that the
+                                                                    new project presentation is due Monday.</p>
+                                                            </div>
                                                             <div class="details">
-                                                                <p class="msg-subject text-info">
-                                                                    Weekly Update - Week 19 (July 1, 2024 - July 5, 2024)
-                                                                </p>
-                                                                <p class="sender-email text-info fw-bold">
-                                                                    Akim Aime
-                                                                    <a href="#"><span class="__cf_email__" data-cfemail="4f263b3c222a3c2e3d2e277d79770f28222e2623612c2022">[email&#160;protected]</span></a>
-                                                                    &nbsp;<i class="mdi mdi-account-multiple-plus"></i>
-                                                                </p>
+                                                                <i class="mdi mdi-star-outline"></i>
                                                             </div>
                                                         </div>
-                                                        <div class="message-content text-sm">
-                                                            <p>Hi John,</p>
-                                                            <p>I am writing to you regarding an issue with my bank account. On [Date], I noticed that there was a discrepancy in my account balance, which led me to believe that an unauthorized transaction had taken place. After conducting a thorough investigation, I have come to the conclusion that my account has indeed been compromised.</p>
-                                                            <p>I would like to request that you take immediate action to rectify this issue and ensure that the unauthorized transaction is reversed. Furthermore, I would appreciate it if you could take measures to prevent any future breaches of my account's security.</p>
-                                                            <p>Regards,Jean Paul</p>
-                                                        </div>
-                                                        <div class="col-md-12 mb-4 ">
-                                                            <div class="btn-toolbar">
-                                                                <div class="btn-group rounded-0">
-                                                                    <button type="button" class="btn btn-sm border-0 btn-outline-primary rounded-0"><i class="mdi mdi-reply text-primary mr-1"></i> Reply</button>
-                                                                    <button type="button" class="btn btn-sm border-0 btn-outline-primary rounded-0"><i class="mdi mdi-reply-all text-primary mr-1"></i>Reply All</button>
-                                                                    <button type="button" class="btn btn-sm border-0 btn-outline-primary rounded-0"><i class="mdi mdi-share text-primary mr-1"></i>Forward</button>
-                                                                </div>
-                                                                <div class="btn-group">
-                                                                    <button type="button" class="btn btn-sm border-0 btn-outline-primary rounded-0"><i class="mdi mdi-attachment text-primary mr-1"></i>Attach</button>
-                                                                    <button type="button" class="btn btn-sm border-0 btn-outline-primary rounded-0"><i class="mdi mdi-delete text-primary mr-1"></i>Delete</button>
-                                                                </div>
+                                                        <div class="mail-list new_mail text-sm">
+                                                            <div class="form-check"><label class="form-check-label"> <input
+                                                                    type="checkbox" class="form-check-input" checked> <i
+                                                                    class="input-helper"></i></label></div>
+                                                            <div class="content">
+                                                                <p class="sender-name">Microsoft Account Password Change</p>
+                                                                <p class="message_text">Change the password for your
+                                                                    Microsoft Account using the security code 35525</p>
+                                                            </div>
+                                                            <div class="details">
+                                                                <i class="mdi mdi-star favorite"></i>
                                                             </div>
                                                         </div>
-                                                        <!--                                        <div class="attachments-sections">-->
-                                                        <!--                                            <ul>-->
-                                                        <!--                                                <li>-->
-                                                        <!--                                                    <div class="thumb"><i class="mdi mdi-file-pdf"></i></div>-->
-                                                        <!--                                                    <div class="details">-->
-                                                        <!--                                                        <p class="file-name">Seminar Reports.pdf</p>-->
-                                                        <!--                                                        <div class="buttons">-->
-                                                        <!--                                                            <p class="file-size">678Kb</p>-->
-                                                        <!--                                                            <a href="#" class="view">View</a>-->
-                                                        <!--                                                            <a href="#" class="download">Download</a>-->
-                                                        <!--                                                        </div>-->
-                                                        <!--                                                    </div>-->
-                                                        <!--                                                </li>-->
-                                                        <!--                                                <li>-->
-                                                        <!--                                                    <div class="thumb"><i class="mdi mdi-file-image"></i></div>-->
-                                                        <!--                                                    <div class="details">-->
-                                                        <!--                                                        <p class="file-name">Product Design.jpg</p>-->
-                                                        <!--                                                        <div class="buttons">-->
-                                                        <!--                                                            <p class="file-size">1.96Mb</p>-->
-                                                        <!--                                                            <a href="#" class="view">View</a>-->
-                                                        <!--                                                            <a href="#" class="download">Download</a>-->
-                                                        <!--                                                        </div>-->
-                                                        <!--                                                    </div>-->
-                                                        <!--                                                </li>-->
-                                                        <!--                                            </ul>-->
+                                                        <div class="mail-list new_mail text-sm">
+                                                            <div class="form-check"><label class="form-check-label"> <input
+                                                                    type="checkbox" class="form-check-input"> <i
+                                                                    class="input-helper"></i></label></div>
+                                                            <div class="content">
+                                                                <p class="sender-name">Manzi Pacifique</p>
+                                                                <p class="message_text">Hello, last date for registering for
+                                                                    the annual music event is closing in</p>
+                                                            </div>
+                                                            <div class="details">
+                                                                <i class="mdi mdi-star-outline"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mail-list text-sm">
+                                                            <div class="form-check"><label class="form-check-label"> <input
+                                                                    type="checkbox" class="form-check-input"> <i
+                                                                    class="input-helper"></i></label></div>
+                                                            <div class="content">
+                                                                <p class="sender-name">Dushimimana Eric</p>
+                                                                <p class="message_text">FYI</p>
+                                                            </div>
+                                                            <div class="details">
+                                                                <i class="mdi mdi-star favorite"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mail-list text-sm">
+                                                            <div class="form-check"><label class="form-check-label"> <input
+                                                                    type="checkbox" class="form-check-input"> <i
+                                                                    class="input-helper"></i></label></div>
+                                                            <div class="content">
+                                                                <p class="sender-name">David Bayingana</p>
+                                                                <p class="message_text">Hi, Please find this week’s
+                                                                    update..</p>
+                                                            </div>
+                                                            <div class="details">
+                                                                <i class="mdi mdi-star-outline"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!--                                    <div class="mail-list">-->
+                                                        <!--                                        <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input"> <i class="input-helper"></i></label></div>-->
+                                                        <!--                                        <div class="content">-->
+                                                        <!--                                            <p class="sender-name">Bruno King</p>-->
+                                                        <!--                                            <p class="message_text">Hi, Please find this week’s monitoring report in the attachment.</p>-->
                                                         <!--                                        </div>-->
+                                                        <!--                                        <div class="details">-->
+                                                        <!--                                            <i class="mdi mdi-star-outline"></i>-->
+                                                        <!--                                        </div>-->
+                                                        <!--                                    </div>-->
+                                                        <!--                                    <div class="mail-list">-->
+                                                        <!--                                        <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input"> <i class="input-helper"></i></label></div>-->
+                                                        <!--                                        <div class="content">-->
+                                                        <!--                                            <p class="sender-name">Me, Mark</p>-->
+                                                        <!--                                            <p class="message_text">Hi, Testing is complete. The system is ready to go live.</p>-->
+                                                        <!--                                        </div>-->
+                                                        <!--                                        <div class="details">-->
+                                                        <!--                                            <i class="mdi mdi-star-outline"></i>-->
+                                                        <!--                                        </div>-->
+                                                        <!--                                    </div>-->
+                                                        <!--                                    <div class="mail-list">-->
+                                                        <!--                                        <div class="form-check"> <label class="form-check-label"> <input type="checkbox" class="form-check-input"> <i class="input-helper"></i></label></div>-->
+                                                        <!--                                        <div class="content">-->
+                                                        <!--                                            <p class="sender-name">Catherine Myers</p>-->
+                                                        <!--                                            <p class="message_text">Template Market: Limited Period Offer!!! 50% Discount on all Templates.</p>-->
+                                                        <!--                                        </div>-->
+                                                        <!--                                        <div class="details">-->
+                                                        <!--                                            <i class="mdi mdi-star favorite"></i>-->
+                                                        <!--                                        </div>-->
+                                                        <!--                                    </div>-->
+
+                                                    </div>
+                                                    <div class="mail-view d-none d-md-block col-md-9 col-lg-7 bg-white">
+                                                        <div class="row">
+
+                                                        </div>
+                                                        <div class="message-body">
+                                                            <div class="sender-details">
+                                                                <div class="details">
+                                                                    <p class="msg-subject text-info">
+                                                                        Weekly Update - Week 19 (July 1, 2024 - July 5,
+                                                                        2024)
+                                                                    </p>
+                                                                    <p class="sender-email text-info fw-bold">
+                                                                        Akim Aime
+                                                                        <a href="#"><span class="__cf_email__"
+                                                                                          data-cfemail="4f263b3c222a3c2e3d2e277d79770f28222e2623612c2022">[email&#160;protected]</span></a>
+                                                                        &nbsp;<i class="mdi mdi-account-multiple-plus"></i>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="message-content text-sm">
+                                                                <p>Hi John,</p>
+                                                                <p>I am writing to you regarding an issue with my bank
+                                                                    account. On [Date], I noticed that there was a
+                                                                    discrepancy in my account balance, which led me to
+                                                                    believe that an unauthorized transaction had taken
+                                                                    place. After conducting a thorough investigation, I have
+                                                                    come to the conclusion that my account has indeed been
+                                                                    compromised.</p>
+                                                                <p>I would like to request that you take immediate action to
+                                                                    rectify this issue and ensure that the unauthorized
+                                                                    transaction is reversed. Furthermore, I would appreciate
+                                                                    it if you could take measures to prevent any future
+                                                                    breaches of my account's security.</p>
+                                                                <p>Regards,Jean Paul</p>
+                                                            </div>
+                                                            <div class="col-md-12 mb-4 ">
+                                                                <div class="btn-toolbar">
+                                                                    <div class="btn-group rounded-0">
+                                                                        <button type="button"
+                                                                                class="btn btn-sm border-0 btn-outline-primary rounded-0">
+                                                                            <i class="mdi mdi-reply text-primary mr-1"></i>
+                                                                            Reply
+                                                                        </button>
+                                                                        <button type="button"
+                                                                                class="btn btn-sm border-0 btn-outline-primary rounded-0">
+                                                                            <i class="mdi mdi-reply-all text-primary mr-1"></i>Reply
+                                                                            All
+                                                                        </button>
+                                                                        <button type="button"
+                                                                                class="btn btn-sm border-0 btn-outline-primary rounded-0">
+                                                                            <i class="mdi mdi-share text-primary mr-1"></i>Forward
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="btn-group">
+                                                                        <button type="button"
+                                                                                class="btn btn-sm border-0 btn-outline-primary rounded-0">
+                                                                            <i class="mdi mdi-attachment text-primary mr-1"></i>Attach
+                                                                        </button>
+                                                                        <button type="button"
+                                                                                class="btn btn-sm border-0 btn-outline-primary rounded-0">
+                                                                            <i class="mdi mdi-delete text-primary mr-1"></i>Delete
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--                                        <div class="attachments-sections">-->
+                                                            <!--                                            <ul>-->
+                                                            <!--                                                <li>-->
+                                                            <!--                                                    <div class="thumb"><i class="mdi mdi-file-pdf"></i></div>-->
+                                                            <!--                                                    <div class="details">-->
+                                                            <!--                                                        <p class="file-name">Seminar Reports.pdf</p>-->
+                                                            <!--                                                        <div class="buttons">-->
+                                                            <!--                                                            <p class="file-size">678Kb</p>-->
+                                                            <!--                                                            <a href="#" class="view">View</a>-->
+                                                            <!--                                                            <a href="#" class="download">Download</a>-->
+                                                            <!--                                                        </div>-->
+                                                            <!--                                                    </div>-->
+                                                            <!--                                                </li>-->
+                                                            <!--                                                <li>-->
+                                                            <!--                                                    <div class="thumb"><i class="mdi mdi-file-image"></i></div>-->
+                                                            <!--                                                    <div class="details">-->
+                                                            <!--                                                        <p class="file-name">Product Design.jpg</p>-->
+                                                            <!--                                                        <div class="buttons">-->
+                                                            <!--                                                            <p class="file-size">1.96Mb</p>-->
+                                                            <!--                                                            <a href="#" class="view">View</a>-->
+                                                            <!--                                                            <a href="#" class="download">Download</a>-->
+                                                            <!--                                                        </div>-->
+                                                            <!--                                                    </div>-->
+                                                            <!--                                                </li>-->
+                                                            <!--                                            </ul>-->
+                                                            <!--                                        </div>-->
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 mb-2">
-                    <div class="card h-100 rounded-4  border-0">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-6 quick-actions border-bottom border-end">
-                                    <a href="#"
-                                       class="mb-1 py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
-                                        <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
-                                             style="height: 54px;width: 54px">
-                                            <img src="../assets/images/login/RRA.svg" class="h-75" alt="rra">
-                                        </div>
-                                        <span class="small text-primary fw-bold">Pay to</span>
-                                        <span class="small text-info fw-semibold">RRA</span>
-                                    </a>
+                    <div class="col-lg-3 mb-2">
+                        <div class="card h-100 rounded-4  border-0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6 quick-actions border-bottom border-end">
+                                        <a href="#"
+                                           class="mb-1 py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                                            <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                                 style="height: 54px;width: 54px">
+                                                <img src="../assets/images/login/RRA.svg" class="h-75" alt="rra">
+                                            </div>
+                                            <span class="small text-primary fw-bold">Pay to</span>
+                                            <span class="small text-info fw-semibold">RRA</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-6 quick-actions border-bottom">
+                                        <a href="#"
+                                           class=" mb-1 py-1 text-decoration-none d-flex justify-content-center align-items-center flex-column">
+                                            <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                                 style="height: 54px;width: 54px">
+                                                <img src="../assets/images/dashboard/irembo.svg" class="h-75" alt="rra">
+                                            </div>
+                                            <span class="small text-primary fw-bold">Pay to</span>
+                                            <span class="small text-info fw-semibold">Irembo</span>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="col-6 quick-actions border-bottom">
-                                    <a href="#"
-                                       class=" mb-1 py-1 text-decoration-none d-flex justify-content-center align-items-center flex-column">
-                                        <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
-                                             style="height: 54px;width: 54px">
-                                            <img src="../assets/images/dashboard/irembo.svg" class="h-75" alt="rra">
-                                        </div>
-                                        <span class="small text-primary fw-bold">Pay to</span>
-                                        <span class="small text-info fw-semibold">Irembo</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row mb-4">
-                                <div class="col-6 py-2 quick-actions  border-end">
-                                    <a href="#"
-                                       class=" py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
-                                        <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
-                                             style="height: 54px;width: 54px">
-                                            <i class="bi bi-meta"></i>
-                                        </div>
-                                        <span class="small text-primary fw-bold">Pay </span>
-                                        <span class="small text-info fw-semibold">Electricity</span>
-                                    </a>
-                                </div>
-                                <div class="col-6 quick-actions py-2 ">
-                                    <a href="#"
-                                       class="d-flex py-1 text-decoration-none justify-content-center align-items-center flex-column">
-                                        <div class="bg-white-subtle   d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
-                                             style="height: 54px;width: 54px;">
-                                            <i class="bi bi-droplet"></i>
+                                <div class="row mb-4">
+                                    <div class="col-6 py-2 quick-actions  border-end">
+                                        <a href="#"
+                                           class=" py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                                            <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                                 style="height: 54px;width: 54px">
+                                                <i class="bi bi-meta"></i>
+                                            </div>
+                                            <span class="small text-primary fw-bold">Pay </span>
+                                            <span class="small text-info fw-semibold">Electricity</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-6 quick-actions py-2 ">
+                                        <a href="#"
+                                           class="d-flex py-1 text-decoration-none justify-content-center align-items-center flex-column">
+                                            <div class="bg-white-subtle   d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                                 style="height: 54px;width: 54px;">
+                                                <i class="bi bi-droplet"></i>
 
+                                            </div>
+                                            <span class="small text-primary fw-bold">Pay </span>
+                                            <span class=" text-info small fw-semibold">Water</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
                                         </div>
-                                        <span class="small text-primary fw-bold">Pay </span>
-                                        <span class=" text-info small fw-semibold">Water</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-item">
+                                            <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                        </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                                     <span class=" bg-white bg-opacity-25  rounded-circle d-flex justify-content-center align-items-center"
                                           style="height: 30px;width: 30px" aria-hidden="true">
                                         <i class="bi bi-chevron-left fs-5"></i>
                                     </span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                </div>
-                                <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                    </div>
+                                    <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
                                 <span class=" bg-white bg-opacity-25  rounded-circle d-flex justify-content-center align-items-center"
                                       style="height: 30px;width: 30px" aria-hidden="true">
                                         <i class="bi bi-chevron-right fs-5"></i>
                                     </span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="bg-info d-flex justify-content-center w-100">
+                <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
+            </div>
+        </footer>
     </div>
-    <footer>
-        <div class="bg-info d-flex justify-content-center w-100">
-            <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
-        </div>
-    </footer>
+
 </div>
 <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl" style="position:absolute;bottom: 0;right: 0.5em;  ">
@@ -767,97 +912,100 @@
                             <label class="form-check-label" for="inlineCheckbox2">Digital Champions</label>
                         </div>
                         <div class="form-check form-check-inline text-xs">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">General</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">General</label>
+                        </div>
                     </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex">
                         <div class="form-check form-check-inline text-xs">
                             <input class="form-check-input" type="checkbox" id="other" value="other">
                             <label class="form-check-label" for="inlineCheckbox2">Other</label>
                         </div>
                     </div>
-                    <div class="form-row mb-1 other" style="display: none" >
+                    <div class="form-row mb-1 other" style="display: none">
                         <label for="cc" class="col-2 col-sm-1 col-form-label text-sm">Email:</label>
                         <div class="">
-                            <input type="email" class="form-control bg-secondary bg-opacity-10 py-2 border-0 small" id="email" placeholder="Type email">
+                            <input type="email" class="form-control bg-secondary bg-opacity-10 py-2 border-0 small"
+                                   id="email" placeholder="Type email">
                         </div>
                     </div>
                     <div class="form-row mb-1">
                         <label for="cc" class="col-2 col-sm-1 col-form-label text-sm">CC:</label>
                         <div class="">
-                            <input type="email" class="form-control bg-secondary bg-opacity-10 py-2 border-0 small" id="cc" placeholder="Type email">
+                            <input type="email" class="form-control bg-secondary bg-opacity-10 py-2 border-0 small"
+                                   id="cc" placeholder="Type email">
                         </div>
                     </div>
                 </form>
                 <div class="row">
                     <div class=" ml-auto">
-<!--                        <div class="toolbar" role="toolbar">-->
-<!--                            <div class="btn-group">-->
-<!--                                <button type="button" class="btn btn-light">-->
-<!--                                    <span class="fa fa-bold"></span>-->
-<!--                                </button>-->
-<!--                                <button type="button" class="btn btn-light">-->
-<!--                                    <span class="fa fa-italic"></span>-->
-<!--                                </button>-->
-<!--                                <button type="button" class="btn btn-light">-->
-<!--                                    <span class="fa fa-underline"></span>-->
-<!--                                </button>-->
-<!--                            </div>-->
-<!--                            <div class="btn-group">-->
-<!--                                <button type="button" class="btn btn-light">-->
-<!--                                    <span class="fa fa-align-left"></span>-->
-<!--                                </button>-->
-<!--                                <button type="button" class="btn btn-light">-->
-<!--                                    <span class="fa fa-align-right"></span>-->
-<!--                                </button>-->
-<!--                                <button type="button" class="btn btn-light">-->
-<!--                                    <span class="fa fa-align-center"></span>-->
-<!--                                </button>-->
-<!--                                <button type="button" class="btn btn-light">-->
-<!--                                    <span class="fa fa-align-justify"></span>-->
-<!--                                </button>-->
-<!--                            </div>-->
-<!--                            <div class="btn-group">-->
-<!--                                <button type="button" class="btn btn-light">-->
-<!--                                    <span class="fa fa-indent"></span>-->
-<!--                                </button>-->
-<!--                                <button type="button" class="btn btn-light">-->
-<!--                                    <span class="fa fa-outdent"></span>-->
-<!--                                </button>-->
-<!--                            </div>-->
-<!--                            <div class="btn-group">-->
-<!--                                <button type="button" class="btn btn-light">-->
-<!--                                    <span class="fa fa-list-ul"></span>-->
-<!--                                </button>-->
-<!--                                <button type="button" class="btn btn-light">-->
-<!--                                    <span class="fa fa-list-ol"></span>-->
-<!--                                </button>-->
-<!--                            </div>-->
-<!--                            <button type="button" class="btn btn-light">-->
-<!--                                <span class="fa fa-trash-o"></span>-->
-<!--                            </button>-->
-<!--                            <button type="button" class="btn btn-light">-->
-<!--                                <span class="fa fa-paperclip"></span>-->
-<!--                            </button>-->
-<!--                            <div class="btn-group">-->
-<!--                                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">-->
-<!--                                    <span class="fa fa-tags"></span>-->
-<!--                                    <span class="caret"></span>-->
-<!--                                </button>-->
-<!--                                <div class="dropdown-menu">-->
-<!--                                    <a class="dropdown-item" href="#">add label <span-->
-<!--                                            class="badge badge-danger"> Home</span></a>-->
-<!--                                    <a class="dropdown-item" href="#">add label <span-->
-<!--                                            class="badge badge-info"> Job</span></a>-->
-<!--                                    <a class="dropdown-item" href="#">add label <span class="badge badge-success"> Clients</span></a>-->
-<!--                                    <a class="dropdown-item" href="#">add label <span-->
-<!--                                            class="badge badge-warning"> News</span></a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
+                        <!--                        <div class="toolbar" role="toolbar">-->
+                        <!--                            <div class="btn-group">-->
+                        <!--                                <button type="button" class="btn btn-light">-->
+                        <!--                                    <span class="fa fa-bold"></span>-->
+                        <!--                                </button>-->
+                        <!--                                <button type="button" class="btn btn-light">-->
+                        <!--                                    <span class="fa fa-italic"></span>-->
+                        <!--                                </button>-->
+                        <!--                                <button type="button" class="btn btn-light">-->
+                        <!--                                    <span class="fa fa-underline"></span>-->
+                        <!--                                </button>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="btn-group">-->
+                        <!--                                <button type="button" class="btn btn-light">-->
+                        <!--                                    <span class="fa fa-align-left"></span>-->
+                        <!--                                </button>-->
+                        <!--                                <button type="button" class="btn btn-light">-->
+                        <!--                                    <span class="fa fa-align-right"></span>-->
+                        <!--                                </button>-->
+                        <!--                                <button type="button" class="btn btn-light">-->
+                        <!--                                    <span class="fa fa-align-center"></span>-->
+                        <!--                                </button>-->
+                        <!--                                <button type="button" class="btn btn-light">-->
+                        <!--                                    <span class="fa fa-align-justify"></span>-->
+                        <!--                                </button>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="btn-group">-->
+                        <!--                                <button type="button" class="btn btn-light">-->
+                        <!--                                    <span class="fa fa-indent"></span>-->
+                        <!--                                </button>-->
+                        <!--                                <button type="button" class="btn btn-light">-->
+                        <!--                                    <span class="fa fa-outdent"></span>-->
+                        <!--                                </button>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="btn-group">-->
+                        <!--                                <button type="button" class="btn btn-light">-->
+                        <!--                                    <span class="fa fa-list-ul"></span>-->
+                        <!--                                </button>-->
+                        <!--                                <button type="button" class="btn btn-light">-->
+                        <!--                                    <span class="fa fa-list-ol"></span>-->
+                        <!--                                </button>-->
+                        <!--                            </div>-->
+                        <!--                            <button type="button" class="btn btn-light">-->
+                        <!--                                <span class="fa fa-trash-o"></span>-->
+                        <!--                            </button>-->
+                        <!--                            <button type="button" class="btn btn-light">-->
+                        <!--                                <span class="fa fa-paperclip"></span>-->
+                        <!--                            </button>-->
+                        <!--                            <div class="btn-group">-->
+                        <!--                                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">-->
+                        <!--                                    <span class="fa fa-tags"></span>-->
+                        <!--                                    <span class="caret"></span>-->
+                        <!--                                </button>-->
+                        <!--                                <div class="dropdown-menu">-->
+                        <!--                                    <a class="dropdown-item" href="#">add label <span-->
+                        <!--                                            class="badge badge-danger"> Home</span></a>-->
+                        <!--                                    <a class="dropdown-item" href="#">add label <span-->
+                        <!--                                            class="badge badge-info"> Job</span></a>-->
+                        <!--                                    <a class="dropdown-item" href="#">add label <span class="badge badge-success"> Clients</span></a>-->
+                        <!--                                    <a class="dropdown-item" href="#">add label <span-->
+                        <!--                                            class="badge badge-warning"> News</span></a>-->
+                        <!--                                </div>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
                         <div class="form-group mt-4">
-                            <textarea class="form-control bg-secondary bg-opacity-10 py-2 border-0 small" id="message" name="body" rows="4"
+                            <textarea class="form-control bg-secondary bg-opacity-10 py-2 border-0 small" id="message"
+                                      name="body" rows="4"
                                       placeholder="Click here to reply"></textarea>
                         </div>
                     </div>
@@ -865,18 +1013,18 @@
             </div>
             <div class="modal-footer">
                 <div class="flex flex-wrap gap-3">
-                    <Button type="button"  class="flex btn items-center gap-2">
-                        <i class="w-4 h-4 bi bi-paperclip" ></i>
+                    <Button type="button" class="flex btn items-center gap-2">
+                        <i class="w-4 h-4 bi bi-paperclip"></i>
                         Attach File
                     </Button>
-                    <Button type="button"  class="flex btn items-center gap-2">
-                        <i class="w-4 h-4 bi bi-save2" ></i>
+                    <Button type="button" class="flex btn items-center gap-2">
+                        <i class="w-4 h-4 bi bi-save2"></i>
                         Save Draft
                     </Button>
                 </div>
                 <div class="flex flex-wrap gap-3">
                     <Button type="submit" class="flex btn btn-info text-white items-center gap-2">
-                        <i class="w-4 h-4 bi bi-send" ></i>
+                        <i class="w-4 h-4 bi bi-send"></i>
                         Send Email
                     </Button>
                 </div>
