@@ -207,257 +207,130 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9 ">
-                        <div class="card rounded-4 ">
-                            <form action="eKash-confirmation.html" >
+                        <div class="card rounded-4 h-100 ">
                                 <div class="card-body ">
-                                    <div class="alert m-3 alert-success" style="display: none">
+
+                                    <h5 class=" border-bottom pb-3 mb-5">eKash Subscriptions</h5>
+                                    <div class="alert  alert-success" style="display: none">
                                         <p class="text-success mb-0 small">
                                             The Entered Details has been submitted successfully.<br>
                                             The confirmation will be sent shortly to your registered phone number.
                                         </p>
                                     </div>
-                                    <div class="tab-pane card-body  active" id="pills-own-accounts" role="tabpanel">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <h4 class="text-info fw-bold ">eKash Subscription</h4>
-                                                <p class="text-muted small">
-                                                    eKash is a mobile payment solution that allows you to send money to any mobile number in Rwanda.
-                                                </p>
-                                            </div>
-                                            <div class="alert less alert-danger" style="display: none">
-                                                <p class="text-danger small">
-                                                    Please note that the minimum amount you can send is 1,000 RWF
-                                                </p>
-                                            </div>
-                                            <div class="alert greater alert-danger" style="display: none">
-                                                <p class="text-danger small">
-                                                    Please note that the maximum amount you can send is 1,000,000 RWF
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class=" mb-3">
-                                                    <div class="d-flex">
-                                                        <label for="im_from_account"
-                                                               class=" text-sm fw-normal form-label">
-                                                            Account Number:
-                                                        </label>
-                                                        <div style="display: none"
-                                                             class=" justify-content-between align-items-center mb-3 js-account-balance">
-                                                            <div class="d-flex flex-column">
-                                                                <div class=" text-muted  small ">Account Balance</div>
-                                                                <span class="text-info  small js-balance">*** *** ***
-                                                                ***</span>
+                                    <div class="d-flex  justify-content-end">
+                                        <form action="eKashSub-form.html" id="">
+                                            <button type="submit" class="btn btn-info  text-white rounded-pill px-4 py-1"><i
+                                                    class="bi bi-plus-circle me-2"></i>New Subscription
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="container-fluid ">
+                                        <div class="table-responsive">
+                                            <table class="table my-2 table-accounts  ">
+                                                <thead>
+                                                <tr class="">
+                                                    <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                        <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                            <span>Request ID</span>
+                                                            <div class="d-flex flex-column fs-9px">
+                                                                <i class="bi bi-chevron-up "></i>
+                                                                <i class="bi bi-chevron-down"></i>
                                                             </div>
-                                                            <button type="button"
-                                                                    class=" btn btn-outline-primary border  js-toggle-balance">
-                                                                Show Balance
+                                                        </div>
+                                                    </th>
+                                                    <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                        <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                            <span>Account Number</span>
+                                                            <div class="d-flex flex-column fs-9px">
+                                                                <i class="bi bi-chevron-up "></i>
+                                                                <i class="bi bi-chevron-down"></i>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                        <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                            <span>Currency</span>
+                                                            <div class="d-flex flex-column fs-9px">
+                                                                <i class="bi bi-chevron-up "></i>
+                                                                <i class="bi bi-chevron-down"></i>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer ">
+                                                        <div class="d-flex align-items-center justify-content-between border-end pe-2">
+                                                            <span>Mobile Number</span>
+                                                            <div class="d-flex flex-column fs-9px">
+                                                                <i class="bi bi-chevron-up "></i>
+                                                                <i class="bi bi-chevron-down"></i>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+
+
+                                                    <th class="text-info  border-0 text-sm    border-3 border-bottom  border-info cursor-pointer">
+                                                        <div class=" d-flex align-items-center justify-content-between ">
+                                                            <span>Status</span>
+                                                            <div class="d-flex flex-column fs-9px">
+                                                                <i class="bi bi-chevron-up "></i>
+                                                                <i class="bi bi-chevron-down"></i>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th class="text-info  border-0  text-sm  border-3 border-bottom  border-info">
+                                                        Actions
+                                                    </th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="cursor-pointer js-account py-5">
+                                                    <td class="text-sm">3903</td>
+                                                    <td class="text-sm">42652678-36373-8383</td>
+                                                    <td class="text-sm">GBP</td>
+                                                    <td class="text-sm">0789874779</td>
+                                                    <td class="">
+                                                        <span class="badge bg-success rounded-pill">Success</span>
+                                                    </td>
+
+                                                    <td class="small">
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-outline-info rounded-pill btn-sm fs-12px dropdown-toggle"
+                                                                    type="button" data-bs-toggle="dropdown">
+                                                                Options
                                                             </button>
+                                                            <ul class="dropdown-menu col-1 justify-content-center dropdown-menu-end">
+                                                                <li><a class="dropdown-item" href="eKash-modification.html">
+                                                                    Modify
+                                                                </a></li>
+                                                                <li class=""><a class="dropdown-item " href="#">
+                                                                    Delete
+                                                                </a></li>
+                                                            </ul>
                                                         </div>
-                                                    </div>
-                                                    <select class="form-select  py-3 bg-secondary border-0 bg-opacity-10    js-transfer-from"
-                                                            required id="im_from_account" name="from_account">
-                                                        <option value="">Select Account</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="mb-3">
-                                                    <label for="account_name"
-                                                           class="form-label text-sm fw-normal  text-sm">Account Name:</label>
-                                                    <div class="input-group">
-
-                                                        <input type="text" name="amount" required id="account_name" disabled
-                                                               class="form-control flex-grow-1   py-3 bg-secondary border-0 bg-opacity-10 px-3 fw-semibold js-amount" />
-                                                    </div>
-                                                    <div class="js-conversion p-0" style="display:none">
-                                                        <div
-                                                                class="d-flex  flex-column flex-md-row gap-3  ">
-                                                            <div>
-                                                                <div class="fw-normal text-info fs-6">
-                                                                    Total Conversion:
-                                                                </div>
-                                                                <div
-                                                                        class="d-flex flex-shrink-0 align-items-center gap-2">
-                                                                    <span
-                                                                            class="text-muted fw-semibold text-xs js-converted-currency">USD</span>
-                                                                    <span
-                                                                            class="fs-13px fw-semibold text-xs text-info js-converted-amount">2763.38</span>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <div class="fw-normal text-info fs-6">
-                                                                    Conversion Rate:
-                                                                </div>
-                                                                <div class="text-info">
-                                                                    (<span
-                                                                        class="text-info text-xs js-conversion-rate">0.000092</span>)
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-
-
-
-                                            </div>
-
-                                            <div class="col-lg-6">
-                                                <div class=" ">
-                                                    <div class="d-flex justify-content-between">
-                                                        <label for="pay_to" class=" text-sm fw-normal form-label">
-                                                            eKash ID(eg:123456789IM):
-                                                        </label>
-                                                        <!--                                                    <div class="form-check">-->
-                                                        <!--                                                        <input-->
-                                                        <!--                                                                class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"-->
-                                                        <!--                                                                type="checkbox" name="select_beneficiary"-->
-                                                        <!--                                                                id="home_beneficiary">-->
-                                                        <!--                                                        <label-->
-                                                        <!--                                                                class="form-check-label text-sm  fw-normal cursor-pointer"-->
-                                                        <!--                                                                for="home_beneficiary">-->
-                                                        <!--                                                            Select From Saved Beneficiaries-->
-                                                        <!--                                                        </label>-->
-                                                        <!--                                                    </div>-->
-                                                    </div>
-
-                                                    <div style="display: none" class="js-select-beneficiary">
-                                                        <select
-                                                                class="  text-sm  py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold  form-select js-beneficiaries">
-                                                            <option value="">Select Beneficiary</option>
-
-                                                        </select>
-                                                    </div>
-                                                    <div class="mb-2 js-search-beneficiary">
-                                                        <div class="rounded-default gap-2  d-flex align-items-center p-1">
-
-                                                            <input type="text"
-                                                                   id="pay_to"
-                                                                   class="form-control  py-3 bg-secondary border-0 bg-opacity-10 shadow-none"
-                                                                   name="search" />
-                                                            <button type="button"
-                                                                    class="btn btn-info  py-3 px-3 js-verify">
-                                                                Validate
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="home_reason"
-                                                           class="form-label text-sm  fw-normal">Mobile Number:</label>
-                                                    <input type="text" name="beneficiary_account" required id="ben_account" disabled
-                                                           class="form-control py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold" />
-                                                </div>
-
-                                            </div>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <nav aria-label="..." class="float-end mt-5">
+                                                <ul class="pagination">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item active" aria-current="page">
+                                                        <a class="page-link" href="#">2</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div style="display: none"
-                                                     class=" justify-content-between align-items-center mb-3 js-account-balance">
-                                                    <div class="d-flex flex-column">
-                                                        <div class=" text-muted  small ">Account Balance</div>
-                                                        <span class="text-info  small js-balance">*** *** ***
-                                                                ***</span>
-                                                    </div>
-                                                    <button type="button"
-                                                            class=" btn btn-outline-primary border  js-toggle-balance">
-                                                        Show Balance
-                                                    </button>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="amount"
-                                                           class="form-label text-sm fw-normal  text-sm">Email:</label>
-                                                    <div class="input-group">
-
-                                                        <input type="text" name="amount" required id="amount"
-                                                               class="form-control flex-grow-1   py-3 bg-secondary border-0 bg-opacity-10 px-3 fw-semibold js-amount" disabled />
-                                                    </div>
-                                                    <div class="js-conversion p-0" style="display:none">
-                                                        <div
-                                                                class="d-flex  flex-column flex-md-row gap-3  ">
-                                                            <div>
-                                                                <div class="fw-normal text-info fs-6">
-                                                                    Total Conversion:
-                                                                </div>
-                                                                <div
-                                                                        class="d-flex flex-shrink-0 align-items-center gap-2">
-                                                                    <span
-                                                                            class="text-muted fw-semibold text-xs js-converted-currency">USD</span>
-                                                                    <span
-                                                                            class="fs-13px fw-semibold text-xs text-info js-converted-amount">2763.38</span>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <div class="fw-normal text-info fs-6">
-                                                                    Conversion Rate:
-                                                                </div>
-                                                                <div class="text-info">
-                                                                    (<span
-                                                                        class="text-info text-xs js-conversion-rate">0.000092</span>)
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-
-
-                                            </div>
-
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label for="home_reason"
-                                                           class="form-label text-sm  fw-normal">National/Passport ID:</label>
-                                                    <input  required
-                                                              class="form-control py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold" disabled
-                                                              name="reason" id="home_reason">
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="form-check save_beneficiary" >
-                                                    <input
-                                                            class="form-check-input rounded-1 border-info  "
-                                                            type="checkbox" name="select_beneficiary"
-                                                            id="save_ben">
-                                                    <label
-                                                            class="form-check-label text-info fs-6 cursor-pointer"
-                                                            for="save_ben">
-                                                        Agree terms and conditions
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
                                     </div>
 
                                 </div>
-                                <div class="card-footer bg-transparent">
-                                    <div class="row">
-                                        <div class="col-lg-6 py-3 offset-lg-6">
-                                            <div
-                                                    class="mb-3 d-flex gap-4 align-items-center  justify-content-end">
-                                                <button type="reset"
-                                                        class="btn btn-outline-primary rounded py-2   px-lg-5">
-                                                    Clear
-                                                </button>
-                                                <button type="submit"
-                                                        class="btn btn-info rounded py-2 text-white px-lg-5">
-                                                    Continue
-                                                </button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
                         </div>
                     </div>
                     <div class="col-lg-3 my-2">
