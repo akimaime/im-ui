@@ -4,47 +4,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>I&M Internet bank</title>
-    <link href="../../css/custom.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
 </head>
 <body class="">
-<div class="corp-bg">
-    <div class="d-flex min-vh-100 gap-3 justify-content-between flex-column">
+<div class="bg-color-height ">
+    <div class="d-flex min-vh-100 gap-2 justify-content-between flex-column">
         <div>
             <div class="container">
-                <div class="d-flex flex-wrap justify-content-between align-items-center py-2">
-                    <div class="d-flex col-3 col-lg-2 flex-column">
-                        <img src="../../assets/n_logo.png" class="img-fluid" alt="logo">
-                        <span class="text-white px-4 fs-4">Corporate</span>
-
-                    </div>
-                    <div class="d-flex align-items-center gap-2 d-lg-none">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                            <i class="bi bi-list fs-1 text-white"></i>
-                        </button>
-                    </div>
-                    <div class="d-none d-lg-flex align-items-center gap-2">
-                        <h5 class="text-white my-0 ">Welcome to , Paper Print LTD</h5>
-                        <div class="position-relative">
-                            <div class="d-flex rounded-circle  bg-white bg-opacity-10 p-4 justify-content-center overflow-hidden align-items-center"
-                                 style="height: 26px;width: 26px">
-                                <i class="bi bi-bell text-white fs-3"></i>
-                                <div class="badge bg-danger rounded-circle position-absolute"
-                                     style="top: -5px;right: -10px">5
-                                </div>
-                            </div>
+                <div class="d-flex justify-content-between align-items-center ">
+                    <div>
+                        <div class="d-flex col-lg-3  flex-column py-2  rounded-1">
+                            <a href="dashboard.html">
+                                <img src="../assets/logo.png" class="img-fluid" alt="logo">
+                            </a>
                         </div>
+                        <span class="text-white  fw-bold fs-2">Retail</span>
                     </div>
-                    <div class="d-none d-lg-flex align-items-center gap-2">
+                    <div class="d-flex col-lg-3 align-items-center justify-content-end gap-2">
                         <div class="nav-item dropdown">
                             <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <span class="d-flex align-items-end flex-column">
-                                    <span class="text-sm fw-light">John Doe</span>
-                                    <small><i class="bi bi-hammer me-2"></i>Initiator</small>
+                                  <span class="d-flex flex-column">
+                                    <span class="text-sm fw-light">welcome</span>
+                                    <small>John Doe</small>
                                   </span>
-                                <img src="../../assets/prfl.png" alt="profile" class="object-fit-cover">
+                                <img src="../assets/images/otp/avatar.png" class="img-fluid h-6"
+                                     alt="John Peter Musoni"/>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
+
+                                <li class="my-2">
+                                    <a class="fw-normal dropdown-item" href="#">
+                                        <i class="bi bi-gear"></i>
+                                        Account Settings
+                                    </a>
+                                </li>
                                 <li class="my-2">
                                     <a class="fw-normal dropdown-item" href="#">
                                         <i class="bi bi-gear"></i>
@@ -61,29 +55,24 @@
                         </div>
                     </div>
                 </div>
-                <nav class="mb-2 navbar navbar-expand-lg">
-<!--                    <button class="navbar-toggler text-white border border-0" type="button" data-bs-toggle="collapse"-->
-<!--                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"-->
-<!--                            aria-expanded="false" aria-label="Toggle navigation">-->
-<!--                        <i class="bi bi-list text-white"></i>-->
-<!--                    </button>-->
+                <nav class=" navbar navbar-expand-lg">
+                    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="navbar-toggler-icon text-white"></i>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav nav-pills  mb-3" id="pills-tab" role="tablist">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link   dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                    aria-expanded="false">
                                     Dashboard
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item " href="../corporate-dashboard.html">Initiator
-                                        Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="#">Retail Dashboard</a></li>
                                     <li><a class="dropdown-item"
-                                           href="dashboard/verifier-dashboard.html">Verifier
+                                           href="corporate-dashboard.html">Corporate
                                         Dashboard</a></li>
-                                    <li><a class="dropdown-item"
-                                           href="dashboard/approver-dashboard.html">Approver
-                                        Dashboard </a></li>
-                                    <li><a class="dropdown-item" href="../dashboard.html">Retail Dashboard</a></li>
 
                                 </ul>
                             </li>
@@ -93,22 +82,15 @@
                                     Transfers
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="transfers/own-account.html">Transfer
-                                        to
-                                        your own
+                                    <li><a class="dropdown-item" href="transfers/own-account.html">Transfer to your own
                                         Accounts </a></li>
-                                    <li><a class="dropdown-item" href="transfers/internal.html">Transfer from
-                                        I&M
-                                        to
+                                    <li><a class="dropdown-item" href="transfers/internal.html">Transfer from I&M to
                                         I&M </a></li>
-                                    <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to
-                                        Local
+                                    <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to Local
                                         Banks </a></li>
-                                    <li><a class="dropdown-item" href="transfers/international.html">Transfer
-                                        to
+                                    <li><a class="dropdown-item" href="transfers/international.html">Transfer to
                                         International </a></li>
-                                    <li><a class="dropdown-item" href="transfers/momo.html">Transfer to
-                                        Mobile </a></li>
+                                    <li><a class="dropdown-item" href="transfers/momo.html">Transfer to Mobile </a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -117,23 +99,14 @@
                                     Payments
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="payments/rra.html">RRA Payment </a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="payments/irembo.html">Irembo
-                                        Payment </a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="payments/rssb.html">ISHEMA-RSSB
-                                        Payment </a></li>
-                                    <li><a class="dropdown-item" href="payments/airtime.html">Airtime Top
-                                        Up</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="payments/utilities.html">Utilities
-                                        Payment </a></li>
+                                    <li><a class="dropdown-item" href="payments/rra.html">RRA Payment </a></li>
+                                    <li><a class="dropdown-item" href="payments/irembo.html">Irembo Payment </a></li>
+                                    <li><a class="dropdown-item" href="payments/rssb.html">ISHEMA-RSSB Payment </a></li>
+                                    <li><a class="dropdown-item" href="payments/airtime.html">Airtime Top Up</a></li>
                                     <li><a class="dropdown-item" href="payments/eKash.html">eKash</a></li>
+                                    <li><a class="dropdown-item" href="payments/utilities.html">Utilities Payment </a>
+                                    </li>
                                 </ul>
-                            </li>
-                            <li class="nav-item" role="presentation">
-
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -146,7 +119,9 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li class="nav-item" role="presentation">
 
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                    aria-expanded="false">
@@ -154,31 +129,32 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="requests/chequebook.html">Chequebook
-                                        Requests </a></li>
+                                        Requests </a>
+                                    </li>
                                     <li><a class="dropdown-item" href="requests/certificates.html">Certificates
                                         Requests </a></li>
-                                    <li><a class="dropdown-item" href="requests/paper-statement.html">Paper
-                                        Statement Requests</a></li>
+                                    <li><a class="dropdown-item" href="requests/paper-statement.html">Paper Statement
+                                        Requests</a></li>
                                     <li><a class="dropdown-item" href="requests/overdraft.html">Bankers
-                                        cheques/overdraft Demand Request </a></li>
+                                        cheques/overdraft
+                                        Demand Request </a></li>
                                 </ul>
+                            </li>
+                            <li class="nav-item" role="presentation">
+
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                    aria-expanded="false">
-                                    Product Simulator
+                                    Product Simulators
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="LoanSimulator.html">Loan Simulator</a>
+                                    <li><a class="dropdown-item" href="LoanSimulator.html">Loan Simulator </a></li>
+                                    <li><a class="dropdown-item" href="savingCalculator.html">Savings simulator</a></li>
+                                    <li><a class="dropdown-item" href="term-deposit.html">Term Deposit Simulator</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="savingCalculator.html">Savings
-                                        deposit simulator</a></li>
-                                    <li><a class="dropdown-item" href="term-deposit.htm">Term
-                                        deposit simulator</a></li>
-                                    <li>
-                                        <a class="dropdown-item" href="loan-eligibility.html">
-                                            Loan Eligibility simulator
-                                        </a>
+                                    <li><a class="dropdown-item" href="loan-eligibility.html">Loan Eligibility
+                                        Simulator</a>
                                     </li>
                                 </ul>
                             </li>
@@ -188,59 +164,40 @@
                                     Standing Orders
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="transfers-standingOrder.html">Transfer
-                                        Standing Orders </a></li>
-                                    <li><a class="dropdown-item" href="airtime-standingOrder.html">Airtime
-                                        Standing Orders</a></li>
-                                    <li><a class="dropdown-item" href="utilities-standingOrder.html">Utility
-                                        Standing Orders</a></li>
+                                    <li><a class="dropdown-item" href="transfers-standingOrder.html">Transfer Standing
+                                        Orders </a></li>
+                                    <li><a class="dropdown-item" href="airtime-standingOrder.html">Airtime Standing
+                                        Orders</a></li>
+                                    <li><a class="dropdown-item" href="utilities-standingOrder.html">Utility Standing
+                                        Orders</a></li>
                                 </ul>
                             </li>
-
-                            <li class="nav-item" role="presentation">
-
-                            </li>
-                            <li class="nav-item" role="presentation">
-
-                            </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" role="button"
-                                   data-bs-toggle="dropdown"
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                    aria-expanded="false">
                                     Other Services
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="bulk-payments.html" class="dropdown-item" id="bulk">
-                                            Bulk Payments
+                                        <a class="dropdown-item " href="card-management.html"
+                                           type="button" role="tab" aria-controls="pills-home"
+                                           aria-selected="true">
+                                            Manage Cards
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="card-management.html" class="dropdown-item" id="card">Manage
-                                            Cards
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="beneficiaries.html" class="dropdown-item " id="beneficiary">
+                                        <a class="dropdown-item " href="beneficiaries.html"
+                                           type="button" role="tab" aria-controls="pills-home"
+                                           aria-selected="true">
                                             Manage Beneficiaries
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="administration.html" class="dropdown-item"
-                                           id="administration">
-                                            Administration
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="mail.html" class="dropdown-item" id="mail">
-                                            Mail
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="inquires.html" class="dropdown-item" id="inquires">
-                                            Inquires
-                                        </a>
-                                    </li>
+                                        <a class="dropdown-item " href="mail.html"
+                                           type="button" role="tab" aria-controls="pills-home"
+                                           aria-selected="true">
+                                            Mails
+                                        </a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -249,150 +206,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4  mb-2">
-                        <div class="card   rounded-4 mb-3 ">
-                            <div class="card-body justify-content-center d-flex flex-column align-items-center ">
-                                <div class="container mb-2">
-                                    <div class="row mb-2">
-                                        <div class="col-lg-3  col-6">
-                                            <a href="../transfers/own-account.html"
-                                               class="d-flex text-decoration-none flex-column justify-content-center align-items-center ">
-                                                <div class="border d-flex align-items-center rounded justify-content-center "
-                                                     style="height: 46px;width: 48px">
-                                                    <i class=" fs-4  text-primary">
-                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M2 9H14.5" stroke="#20408F" stroke-width="1.5"
-                                                                  stroke-miterlimit="10" stroke-linecap="round"
-                                                                  stroke-linejoin="round"/>
-                                                            <path d="M6 17H8" stroke="#20408F" stroke-width="1.5"
-                                                                  stroke-miterlimit="10" stroke-linecap="round"
-                                                                  stroke-linejoin="round"/>
-                                                            <path d="M10.5 17H14.5" stroke="#20408F" stroke-width="1.5"
-                                                                  stroke-miterlimit="10" stroke-linecap="round"
-                                                                  stroke-linejoin="round"/>
-                                                            <path d="M22 14.53V16.61C22 20.12 21.11 21 17.56 21H6.44C2.89 21 2 20.12 2 16.61V8.39C2 4.88 2.89 4 6.44 4H14.5"
-                                                                  stroke="#20408F" stroke-width="1.5"
-                                                                  stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M20 10V4L22 6" stroke="#20408F" stroke-width="1.5"
-                                                                  stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M20 4L18 6" stroke="#20408F" stroke-width="1.5"
-                                                                  stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-
-                                                    </i>
-                                                </div>
-                                                <span class="text-primary text-sm text-center fw-bold">Own account</span>
-                                                <span class="text-xs text-info fw-semibold">transfer</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-3  col-6">
-                                            <a href="../transfers/local-bank.html"
-                                               class="d-flex text-decoration-none flex-column justify-content-center align-items-center">
-                                                <div class="border d-flex align-items-center rounded justify-content-center "
-                                                     style="height: 46px;width: 48px">
-                                                    <i class=" fs-4  text-primary">
-                                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M2.3335 8.5H14.8335" stroke="#20408F"
-                                                                  stroke-width="1.5" stroke-miterlimit="10"
-                                                                  stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M6.3335 16.5H8.3335" stroke="#20408F"
-                                                                  stroke-width="1.5" stroke-miterlimit="10"
-                                                                  stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M10.8335 16.5H14.8335" stroke="#20408F"
-                                                                  stroke-width="1.5" stroke-miterlimit="10"
-                                                                  stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M22.3335 14.03V16.11C22.3335 19.62 21.4435 20.5 17.8935 20.5H6.7735C3.2235 20.5 2.3335 19.62 2.3335 16.11V7.89C2.3335 4.38 3.2235 3.5 6.7735 3.5H14.8335"
-                                                                  stroke="#20408F" stroke-width="1.5"
-                                                                  stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M20.3335 3.5V9.5L22.3335 7.5" stroke="#20408F"
-                                                                  stroke-width="1.5" stroke-linecap="round"
-                                                                  stroke-linejoin="round"/>
-                                                            <path d="M20.3335 9.5L18.3335 7.5" stroke="#20408F"
-                                                                  stroke-width="1.5" stroke-linecap="round"
-                                                                  stroke-linejoin="round"/>
-                                                        </svg>
-
-
-                                                    </i>
-                                                </div>
-                                                <span class=" text-primary text-sm fw-bold">Local</span>
-                                                <span class="text-xs text-info fw-semibold">Transfer</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-3  col-6">
-                                            <a href="#"
-                                               class="d-flex text-decoration-none flex-column justify-content-center align-items-center">
-                                                <div class="border d-flex align-items-center rounded justify-content-center "
-                                                     style="height: 46px;width: 48px">
-                                                    <i class=" fs-4  text-primary">
-                                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M7.39626 19.7C8.21626 18.82 9.46626 18.89 10.1863 19.85L11.1963 21.2C12.0063 22.27 13.3163 22.27 14.1263 21.2L15.1363 19.85C15.8563 18.89 17.1063 18.82 17.9263 19.7C19.7063 21.6 21.1563 20.97 21.1563 18.31V7.04C21.1663 3.01 20.2263 2 16.4463 2H8.88626C5.10626 2 4.16626 3.01 4.16626 7.04V18.3C4.16626 20.97 5.62626 21.59 7.39626 19.7Z"
-                                                                  stroke="#20408F" stroke-width="1.5"
-                                                                  stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M8.66626 7H16.6663" stroke="#20408F"
-                                                                  stroke-width="1.5" stroke-linecap="round"
-                                                                  stroke-linejoin="round"/>
-                                                            <path d="M9.66626 11H15.6663" stroke="#20408F"
-                                                                  stroke-width="1.5" stroke-linecap="round"
-                                                                  stroke-linejoin="round"/>
-                                                        </svg>
-
-
-                                                    </i>
-                                                </div>
-                                                <span class=" text-primary text-sm fw-bold">Bulk Payments</span>
-                                                <span class="text-xs text-info fw-semibold"></span>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-3  col-6">
-                                            <a href="approved.html"
-                                               class="d-flex text-decoration-none flex-column justify-content-center align-items-center">
-                                                <div class="border d-flex align-items-center rounded justify-content-center "
-                                                     style="height: 46px;width: 48px">
-                                                    <i class=" fs-4  text-primary">
-                                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M7.39626 19.7C8.21626 18.82 9.46626 18.89 10.1863 19.85L11.1963 21.2C12.0063 22.27 13.3163 22.27 14.1263 21.2L15.1363 19.85C15.8563 18.89 17.1063 18.82 17.9263 19.7C19.7063 21.6 21.1563 20.97 21.1563 18.31V7.04C21.1663 3.01 20.2263 2 16.4463 2H8.88626C5.10626 2 4.16626 3.01 4.16626 7.04V18.3C4.16626 20.97 5.62626 21.59 7.39626 19.7Z"
-                                                                  stroke="#20408F" stroke-width="1.5"
-                                                                  stroke-linecap="round" stroke-linejoin="round"/>
-                                                            <path d="M8.66626 7H16.6663" stroke="#20408F"
-                                                                  stroke-width="1.5" stroke-linecap="round"
-                                                                  stroke-linejoin="round"/>
-                                                            <path d="M9.66626 11H15.6663" stroke="#20408F"
-                                                                  stroke-width="1.5" stroke-linecap="round"
-                                                                  stroke-linejoin="round"/>
-                                                        </svg>
-
-
-                                                    </i>
-                                                </div>
-                                                <span class=" text-primary text-sm fw-bold">Completed</span>
-                                                <span class="text-xs text-info fw-semibold">transactions</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="../../assets/images/ads.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../../assets/images/ads.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../../assets/images/ads.png" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-8 ">
+                    <div class="col-lg-9 ">
                         <div class="card rounded-4 ">
                             <form action="eKash-confirmation.html" >
                                 <div class="card-body ">
@@ -405,7 +219,7 @@
                                     <div class="tab-pane card-body  active" id="pills-own-accounts" role="tabpanel">
                                         <div class="row">
                                             <div class="col-lg-6">
-                                                <h4 class="text-primary fw-bold ">eKash Subscription</h4>
+                                                <h4 class="text-info fw-bold ">eKash Subscription</h4>
                                                 <p class="text-muted small">
                                                     eKash is a mobile payment solution that allows you to send money to any mobile number in Rwanda.
                                                 </p>
@@ -433,7 +247,7 @@
                                                              class=" justify-content-between align-items-center mb-3 js-account-balance">
                                                             <div class="d-flex flex-column">
                                                                 <div class=" text-muted  small ">Account Balance</div>
-                                                                <span class="text-primary  small js-balance">*** *** ***
+                                                                <span class="text-info  small js-balance">*** *** ***
                                                                 ***</span>
                                                             </div>
                                                             <button type="button"
@@ -460,7 +274,7 @@
                                                         <div
                                                                 class="d-flex  flex-column flex-md-row gap-3  ">
                                                             <div>
-                                                                <div class="fw-normal text-primary fs-6">
+                                                                <div class="fw-normal text-info fs-6">
                                                                     Total Conversion:
                                                                 </div>
                                                                 <div
@@ -468,16 +282,16 @@
                                                                     <span
                                                                             class="text-muted fw-semibold text-xs js-converted-currency">USD</span>
                                                                     <span
-                                                                            class="fs-13px fw-semibold text-xs text-primary js-converted-amount">2763.38</span>
+                                                                            class="fs-13px fw-semibold text-xs text-info js-converted-amount">2763.38</span>
                                                                 </div>
                                                             </div>
                                                             <div>
-                                                                <div class="fw-normal text-primary fs-6">
+                                                                <div class="fw-normal text-info fs-6">
                                                                     Conversion Rate:
                                                                 </div>
-                                                                <div class="text-primary">
+                                                                <div class="text-info">
                                                                     (<span
-                                                                        class="text-primary text-xs js-conversion-rate">0.000092</span>)
+                                                                        class="text-info text-xs js-conversion-rate">0.000092</span>)
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -498,7 +312,7 @@
                                                         </label>
                                                         <!--                                                    <div class="form-check">-->
                                                         <!--                                                        <input-->
-                                                        <!--                                                                class="form-check-input rounded-0 border-primary  js-check-saved-beneficiaries"-->
+                                                        <!--                                                                class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"-->
                                                         <!--                                                                type="checkbox" name="select_beneficiary"-->
                                                         <!--                                                                id="home_beneficiary">-->
                                                         <!--                                                        <label-->
@@ -541,7 +355,7 @@
                                                      class=" justify-content-between align-items-center mb-3 js-account-balance">
                                                     <div class="d-flex flex-column">
                                                         <div class=" text-muted  small ">Account Balance</div>
-                                                        <span class="text-primary  small js-balance">*** *** ***
+                                                        <span class="text-info  small js-balance">*** *** ***
                                                                 ***</span>
                                                     </div>
                                                     <button type="button"
@@ -561,7 +375,7 @@
                                                         <div
                                                                 class="d-flex  flex-column flex-md-row gap-3  ">
                                                             <div>
-                                                                <div class="fw-normal text-primary fs-6">
+                                                                <div class="fw-normal text-info fs-6">
                                                                     Total Conversion:
                                                                 </div>
                                                                 <div
@@ -569,16 +383,16 @@
                                                                     <span
                                                                             class="text-muted fw-semibold text-xs js-converted-currency">USD</span>
                                                                     <span
-                                                                            class="fs-13px fw-semibold text-xs text-primary js-converted-amount">2763.38</span>
+                                                                            class="fs-13px fw-semibold text-xs text-info js-converted-amount">2763.38</span>
                                                                 </div>
                                                             </div>
                                                             <div>
-                                                                <div class="fw-normal text-primary fs-6">
+                                                                <div class="fw-normal text-info fs-6">
                                                                     Conversion Rate:
                                                                 </div>
-                                                                <div class="text-primary">
+                                                                <div class="text-info">
                                                                     (<span
-                                                                        class="text-primary text-xs js-conversion-rate">0.000092</span>)
+                                                                        class="text-info text-xs js-conversion-rate">0.000092</span>)
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -595,8 +409,8 @@
                                                     <label for="home_reason"
                                                            class="form-label text-sm  fw-normal">National/Passport ID:</label>
                                                     <input  required
-                                                              class="form-control py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold" disabled
-                                                              name="reason" id="home_reason">
+                                                            class="form-control py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold" disabled
+                                                            name="reason" id="home_reason">
                                                 </div>
 
                                             </div>
@@ -605,11 +419,11 @@
                                             <div class="col-lg-6">
                                                 <div class="form-check save_beneficiary" >
                                                     <input
-                                                            class="form-check-input rounded-1 border-primary  "
+                                                            class="form-check-input rounded-1 border-info  "
                                                             type="checkbox" name="select_beneficiary"
                                                             id="save_ben">
                                                     <label
-                                                            class="form-check-label text-primary fs-6 cursor-pointer"
+                                                            class="form-check-label text-info fs-6 cursor-pointer"
                                                             for="save_ben">
                                                         Agree terms and conditions
                                                     </label>
@@ -631,7 +445,7 @@
                                                     Clear
                                                 </button>
                                                 <button type="submit"
-                                                        class="btn btn-primary rounded py-2 text-white px-lg-5">
+                                                        class="btn btn-info rounded py-2 text-white px-lg-5">
                                                     Continue
                                                 </button>
 
@@ -642,247 +456,100 @@
                             </form>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div class="bg-primary d-flex justify-content-center w-100">
-                <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
-            </div>
-        </footer>
-    </div>
-</div>
-<div class="offcanvas offcanvas-start bg-primary" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <button type="button" class="btn text-white p-0 d-flex justify-content-end border-0 " data-bs-dismiss="offcanvas" aria-label="Close">
-        <i class="bi bi-x fs-3"></i>
-    </button>
-    <div class="offcanvas-header">
+                    <div class="col-lg-3 my-2">
+                        <div class="card h-100 rounded-4  border-0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6 quick-actions border-bottom border-end">
+                                        <a href="#"
+                                           class="mb-1 py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                                            <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                                 style="height: 54px;width: 54px">
+                                                <img src="../assets/images/login/RRA.svg" class="h-75" alt="rra">
+                                            </div>
+                                            <span class="small text-primary fw-bold">Pay to</span>
+                                            <span class="small text-info fw-semibold">RRA</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-6 quick-actions border-bottom">
+                                        <a href="#"
+                                           class=" mb-1 py-1 text-decoration-none d-flex justify-content-center align-items-center flex-column">
+                                            <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                                 style="height: 54px;width: 54px">
+                                                <img src="../assets/images/dashboard/irembo.svg" class="h-75" alt="rra">
+                                            </div>
+                                            <span class="small text-primary fw-bold">Pay to</span>
+                                            <span class="small text-info fw-semibold">Irembo</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-6 py-2 quick-actions  border-end">
+                                        <a href="#"
+                                           class=" py-1 text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                                            <div class="bg-white-subtle  d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                                 style="height: 54px;width: 54px">
+                                                <i class="bi bi-meta"></i>
+                                            </div>
+                                            <span class="small text-primary fw-bold">Pay </span>
+                                            <span class="small text-info fw-semibold">Electricity</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-6 quick-actions py-2 ">
+                                        <a href="#"
+                                           class="d-flex py-1 text-decoration-none justify-content-center align-items-center flex-column">
+                                            <div class="bg-white-subtle   d-flex align-items-center border border-5 rounded-circle   border-info justify-content-center "
+                                                 style="height: 54px;width: 54px;">
+                                                <i class="bi bi-droplet"></i>
 
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-            <div class="d-flex col-5 flex-column">
-                <img src="../../assets/n_logo.png" class="img-fluid" alt="logo">
-                <span class="text-white px-4 fs-4">Corporate</span>
-
-            </div>
-        </h5>
-
-        <div class="d-flex align-items-center gap-2">
-            <div class="nav-item dropdown">
-                <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
-                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <span class="d-flex align-items-end flex-column">
-                        <span class="text-sm fw-light">John Doe</span>
-                        <small><i class="bi bi-hammer me-2"></i>Initiator</small>
-                      </span>
-                    <img src="../../assets/prfl.png" alt="profile" class="object-fit-cover">
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
-                    <li class="my-2">
-                        <a class="fw-normal dropdown-item" href="#">
-                            <i class="bi bi-gear"></i>
-                            Account Settings
-                        </a>
-                    </li>
-                    <li class="my-2">
-                        <a class="fw-normal dropdown-item" href="/">
-                            <i class="bi bi-box-arrow-left"></i>
-                            Logout
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="offcanvas-body">
-        <div class="d-flex align-items-center gap-2">
-            <h5 class="text-white my-0 ">Welcome to , Paper Print LTD</h5>
-            <div class="position-relative">
-                <div class="d-flex rounded-circle  bg-white bg-opacity-10 p-4 justify-content-center overflow-hidden align-items-center"
-                     style="height: 26px;width: 26px">
-                    <i class="bi bi-bell text-white fs-3"></i>
-                    <div class="badge bg-danger rounded-circle position-absolute"
-                         style="top: -5px;right: -10px">5
+                                            </div>
+                                            <span class="small text-primary fw-bold">Pay </span>
+                                            <span class=" text-info small fw-semibold">Water</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../assets/images/ads.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class=" bg-white bg-opacity-25  rounded-circle d-flex justify-content-center align-items-center"
+                                          style="height: 30px;width: 30px" aria-hidden="true">
+                                        <i class="bi bi-chevron-left fs-5"></i>
+                                    </span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                    </div>
+                                    <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class=" bg-white bg-opacity-25  rounded-circle d-flex justify-content-center align-items-center"
+                                      style="height: 30px;width: 30px" aria-hidden="true">
+                                        <i class="bi bi-chevron-right fs-5"></i>
+                                    </span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <ul class="nav nav-pills d-flex flex-column gap-3  mb-3"  role="tablist">
-            <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                   aria-expanded="false">
-                    Dashboard
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item " href="../corporate-dashboard.html">Initiator
-                        Dashboard</a></li>
-                    <li><a class="dropdown-item"
-                           href="dashboard/verifier-dashboard.html">Verifier
-                        Dashboard</a></li>
-                    <li><a class="dropdown-item"
-                           href="dashboard/approver-dashboard.html">Approver
-                        Dashboard </a></li>
-                    <li><a class="dropdown-item" href="../dashboard.html">Retail Dashboard</a></li>
-
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                   aria-expanded="false">
-                    Transfers
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="transfers/own-account.html">Transfer
-                        to
-                        your own
-                        Accounts </a></li>
-                    <li><a class="dropdown-item" href="transfers/internal.html">Transfer from
-                        I&M
-                        to
-                        I&M </a></li>
-                    <li><a class="dropdown-item" href="transfers/local-bank.html">Transfer to
-                        Local
-                        Banks </a></li>
-                    <li><a class="dropdown-item" href="transfers/international.html">Transfer
-                        to
-                        International </a></li>
-                    <li><a class="dropdown-item" href="transfers/momo.html">Transfer to
-                        Mobile </a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                   aria-expanded="false">
-                    Payments
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="payments/rra.html">RRA Payment </a>
-                    </li>
-                    <li><a class="dropdown-item" href="payments/irembo.html">Irembo
-                        Payment </a>
-                    </li>
-                    <li><a class="dropdown-item" href="payments/rssb.html">ISHEMA-RSSB
-                        Payment </a></li>
-                    <li><a class="dropdown-item" href="payments/airtime.html">Airtime Top
-                        Up</a>
-                    </li>
-                    <li><a class="dropdown-item" href="payments/utilities.html">Utilities
-                        Payment </a></li>
-                    <li><a class="dropdown-item" href="payments/eKash.html">eKash</a></li>
-                </ul>
-            </li>
-            <li class="nav-item" role="presentation">
-
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                   aria-expanded="false">
-                    eKash
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item active" href="ekashSub.html">Subscription</a></li>
-                    <li><a class="dropdown-item" href="payments/eKash.html"> Payment </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                   aria-expanded="false">
-                    Service Requests
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="requests/chequebook.html">Chequebook
-                        Requests </a></li>
-                    <li><a class="dropdown-item" href="requests/certificates.html">Certificates
-                        Requests </a></li>
-                    <li><a class="dropdown-item" href="requests/paper-statement.html">Paper
-                        Statement Requests</a></li>
-                    <li><a class="dropdown-item" href="requests/overdraft.html">Bankers
-                        cheques/overdraft Demand Request </a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                   aria-expanded="false">
-                    Product Simulator
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="LoanSimulator.html">Loan Simulator</a>
-                    </li>
-                    <li><a class="dropdown-item" href="savingCalculator.html">Savings
-                        deposit simulator</a></li>
-                    <li><a class="dropdown-item" href="term-deposit.htm">Term
-                        deposit simulator</a></li>
-                    <li>
-                        <a class="dropdown-item" href="loan-eligibility.html">
-                            Loan Eligibility simulator
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                   aria-expanded="false">
-                    Standing Orders
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="transfers-standingOrder.html">Transfer
-                        Standing Orders </a></li>
-                    <li><a class="dropdown-item" href="airtime-standingOrder.html">Airtime
-                        Standing Orders</a></li>
-                    <li><a class="dropdown-item" href="utilities-standingOrder.html">Utility
-                        Standing Orders</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-item" role="presentation">
-
-            </li>
-            <li class="nav-item" role="presentation">
-
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" role="button"
-                   data-bs-toggle="dropdown"
-                   aria-expanded="false">
-                    Other Services
-                </a>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="bulk-payments.html" class="dropdown-item" id="bulk">
-                            Bulk Payments
-                        </a>
-                    </li>
-                    <li>
-                        <a href="card-management.html" class="dropdown-item" id="card">Manage
-                            Cards
-                        </a>
-                    </li>
-                    <li>
-                        <a href="beneficiaries.html" class="dropdown-item " id="beneficiary">
-                            Manage Beneficiaries
-                        </a>
-                    </li>
-                    <li>
-                        <a href="administration.html" class="dropdown-item"
-                           id="administration">
-                            Administration
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mail.html" class="dropdown-item" id="mail">
-                            Mail
-                        </a>
-                    </li>
-                    <li>
-                        <a href="inquires.html" class="dropdown-item" id="inquires">
-                            Inquires
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+        <footer>
+            <div class="bg-info d-flex justify-content-center w-100">
+                <span class="text-white text-center text-sm py-1">I&M BANK RWANDA</span>
+            </div>
+        </footer>
     </div>
 </div>
 
@@ -1149,7 +816,7 @@
             }
         });
 
-        $('.js-verify').on('click', function () {
+        $('#im_from_account').on('change', function () {
             //simulate ajax call
             let btn = $(this);
             let accountNameField = $('#account_name');
@@ -1166,19 +833,12 @@
             let randomEmailIndex = Math.floor(Math.random() * emails.length);
             let randomIdIndex = Math.floor(Math.random() * ids.length);
             // add spinner to button
-            btn.html(
-                `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                <span class="visually-hidden">Loading...</span>`
-            )
-                .prop('disabled', true);
-            setTimeout(function () {
-                $('.js-account-found').slideDown();
-                accountNameField.val(Names[randomNameIndex]);
-                benAccountField.val(bankNames[randomIndex]);
-                emailField.val(emails[randomEmailIndex]);
-                idField.val(ids[randomIdIndex]);
-                btn.html('Verify').prop('disabled', false);
-            }, 2000);
+
+            $('.js-account-found').slideDown();
+            accountNameField.val(Names[randomNameIndex]);
+            benAccountField.val(bankNames[randomIndex]);
+            emailField.val(emails[randomEmailIndex]);
+            idField.val(ids[randomIdIndex]);
         });
 
         let loadBeneficiaries = function () {
