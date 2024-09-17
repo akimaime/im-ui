@@ -219,10 +219,7 @@
                                     <div class="tab-pane card-body  active" id="pills-own-accounts" role="tabpanel">
                                         <div class="row">
                                             <div class="col-lg-6">
-                                                <h4 class="text-info fw-bold ">eKash Subscription</h4>
-                                                <p class="text-muted small">
-                                                    eKash is a mobile payment solution that allows you to send money to any mobile number in Rwanda.
-                                                </p>
+                                                <h4 class="text-info fw-bold mb-3">eKash Modification</h4>
                                             </div>
                                             <div class="alert less alert-danger" style="display: none">
                                                 <p class="text-danger small">
@@ -256,10 +253,15 @@
                                                             </button>
                                                         </div>
                                                     </div>
-                                                    <select class="form-select  py-3 bg-secondary border-0 bg-opacity-10    js-transfer-from"
-                                                            required id="im_from_account" name="from_account">
-                                                        <option value="">Select Account</option>
-                                                    </select>
+                                                    <div class="rounded-default gap-2   p-1">
+
+                                                        <input type="text"
+                                                               id="pay_from"
+                                                               value="RWF-4000-0000-0000-0001-Jean Paul"
+                                                               disabled
+                                                               class="form-control  py-3 bg-secondary border-0 bg-opacity-10 shadow-none"
+                                                               name="search" />
+                                                    </div>
                                                 </div>
 
                                                 <div class="mb-3">
@@ -309,22 +311,10 @@
 
                                             <div class="col-lg-6">
                                                 <div class=" ">
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="">
                                                         <label for="pay_to" class=" text-sm fw-normal form-label">
                                                             eKash ID(eg:123456789IM):
                                                         </label>
-                                                        <!--                                                    <div class="form-check">-->
-                                                        <!--                                                        <input-->
-                                                        <!--                                                                class="form-check-input rounded-0 border-info  js-check-saved-beneficiaries"-->
-                                                        <!--                                                                type="checkbox" name="select_beneficiary"-->
-                                                        <!--                                                                id="home_beneficiary">-->
-                                                        <!--                                                        <label-->
-                                                        <!--                                                                class="form-check-label text-sm  fw-normal cursor-pointer"-->
-                                                        <!--                                                                for="home_beneficiary">-->
-                                                        <!--                                                            Select From Saved Beneficiaries-->
-                                                        <!--                                                        </label>-->
-                                                        <!--                                                    </div>-->
-                                                    </div>
 
                                                     <div style="display: none" class="js-select-beneficiary">
                                                         <select
@@ -334,16 +324,13 @@
                                                         </select>
                                                     </div>
                                                     <div class="mb-2 js-search-beneficiary">
-                                                        <div class="rounded-default gap-2  d-flex align-items-center p-1">
+                                                        <div class="rounded-default gap-2   p-1">
 
                                                             <input type="text"
                                                                    id="pay_to"
+                                                                   value="123456789IM"
                                                                    class="form-control  py-3 bg-secondary border-0 bg-opacity-10 shadow-none"
                                                                    name="search" />
-                                                            <button type="button"
-                                                                    class="btn btn-info  py-3 px-3 js-verify">
-                                                                Validate
-                                                            </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -378,35 +365,10 @@
                                                     <div class="input-group">
 
                                                         <input type="text" name="amount" required id="amount"
-                                                                value=""
+                                                                value="dece@gmail.com"
                                                                class="form-control flex-grow-1   py-3 bg-secondary border-0 bg-opacity-10 px-3 fw-semibold js-amount" disabled />
                                                     </div>
-                                                    <div class="js-conversion p-0" style="display:none">
-                                                        <div
-                                                                class="d-flex  flex-column flex-md-row gap-3  ">
-                                                            <div>
-                                                                <div class="fw-normal text-info fs-6">
-                                                                    Total Conversion:
-                                                                </div>
-                                                                <div
-                                                                        class="d-flex flex-shrink-0 align-items-center gap-2">
-                                                                    <span
-                                                                            class="text-muted fw-semibold text-xs js-converted-currency">USD</span>
-                                                                    <span
-                                                                            class="fs-13px fw-semibold text-xs text-info js-converted-amount">2763.38</span>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <div class="fw-normal text-info fs-6">
-                                                                    Conversion Rate:
-                                                                </div>
-                                                                <div class="text-info">
-                                                                    (<span
-                                                                        class="text-info text-xs js-conversion-rate">0.000092</span>)
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+
                                                 </div>
 
 
@@ -419,6 +381,7 @@
                                                     <label for="home_reason"
                                                            class="form-label text-sm  fw-normal">National/Passport ID:</label>
                                                     <input  required
+                                                            value="11987654327767"
                                                             class="form-control py-3 bg-secondary border-0 bg-opacity-10 px-3  fw-semibold" disabled
                                                             name="reason" id="home_reason">
                                                 </div>
@@ -462,6 +425,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                                 </div>
                             </form>
                         </div>
@@ -826,7 +790,7 @@
             }
         });
 
-        $('.js-verify').on('click', function () {
+        $('#im_from_account').on('click', function () {
             //simulate ajax call
             let btn = $(this);
             let accountNameField = $('#account_name');
@@ -842,20 +806,11 @@
             let randomNameIndex = Math.floor(Math.random() * Names.length);
             let randomEmailIndex = Math.floor(Math.random() * emails.length);
             let randomIdIndex = Math.floor(Math.random() * ids.length);
-            // add spinner to button
-            btn.html(
-                `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                <span class="visually-hidden">Loading...</span>`
-            )
-                .prop('disabled', true);
-            setTimeout(function () {
                 $('.js-account-found').slideDown();
                 accountNameField.val(Names[randomNameIndex]);
                 benAccountField.val(bankNames[randomIndex]);
                 emailField.val(emails[randomEmailIndex]);
                 idField.val(ids[randomIdIndex]);
-                btn.html('Verify').prop('disabled', false);
-            }, 2000);
         });
 
         let loadBeneficiaries = function () {
