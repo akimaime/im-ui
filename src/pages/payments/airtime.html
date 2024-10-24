@@ -262,7 +262,7 @@
                                                 Validate button
                                             </div>
                                         </div>
-                                        <div class="row align-items-center">
+                                        <div class="row">
                                             <div class="col-lg-4">
                                                 <div class="d-flex flex-column   mb-3">
 
@@ -338,16 +338,16 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-12 ">
-                                                                <label
-                                                                        class="visually-hidden">Amount</label>
-                                                                <input type="text" class="form-control ignore"
-                                                                       name="amount"
-                                                                       id="amount"
-                                                                       placeholder="Amount"/>
-                                                                <label class="text-danger error text-sm"
-                                                                       id="amountErr"></label>
-                                                            </div>
+<!--                                                            <div class="col-md-12 ">-->
+<!--                                                                <label-->
+<!--                                                                        class="visually-hidden">Amount</label>-->
+<!--                                                                <input type="text" class="form-control ignore"-->
+<!--                                                                       name="amount"-->
+<!--                                                                       id="amount"-->
+<!--                                                                       placeholder="Amount"/>-->
+<!--                                                                <label class="text-danger error text-sm"-->
+<!--                                                                       id="amountErr"></label>-->
+<!--                                                            </div>-->
 
 
                                                         </div>
@@ -393,7 +393,7 @@
                                                                 Total Amount:
                                                             </td>
                                                             <td>
-                                                                <span class="fw-bold">10,000 RWF</span>
+                                                                <span class="fw-bold total-amount"></span>
                                                             </td>
                                                         </tr>
                                                         </tfoot>
@@ -862,6 +862,7 @@
                         if ($parentDiv.find('input[name="select_beneficiary"]').is(':checked')) {
                             let $beneficial_name = $parentDiv.find('select[name="phon"]').find('option:selected').data('name');
                             let beneficial_name = $beneficial_name;
+                            let total
                             let html = `<tr>
                             <td>
                             <div class="form-check">
@@ -870,7 +871,7 @@
                             </td>
                             <td>${beneficial_name}</td>
                             <td>${phone}</td>
-                            <td><input type="text" value="${amount}" class="form-control w-25">
+                            <td><input type="text" value="${amount}" class="form-control  w-25">
                             </td>
  //
                         </tr>
@@ -893,7 +894,7 @@
                             </td>
                             <td>${name}</td>
                             <td>${phone}</td>
-                            <td><input type="text" value="${amount}" class="form-control w-25">
+                            <td  class="d-flex justify-content-center"><input type="text" value="1000" class="form-control w-25 money">
                             </td>
 
                         </tr>`;
@@ -910,6 +911,26 @@
 
 
             });
+            function updateTotalAmount() {
+                let totalAmount = 0;
+                document.querySelectorAll('.money').forEach(input => {
+                    let value = parseFloat(input.value.replace(/,/g, ''));
+                    if (!isNaN(value)) {
+                        totalAmount += value;
+                    }
+                    document.querySelector('.total-amount').textContent = $value + " RWF";
+                });
+                document.querySelector('.total-amount').textContent = totalAmount.toLocaleString() + " RWF";
+            }
+
+            // Add event listener to input fields
+            document.querySelectorAll('.money').forEach(input => {
+                input.addEventListener('change', updateTotalAmount);
+            });
+
+            // Initial calculation
+            updateTotalAmount();
+
 
 
             currencies.forEach(function (currency, index) {
