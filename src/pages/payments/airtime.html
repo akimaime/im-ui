@@ -312,42 +312,54 @@
                                                                             </select>
                                                                         </div>
                                                                         <div class="row">
-                                                                            <div class="col-lg-7">
+                                                                            <div class="col-lg-8">
                                                                                 <div class="mb-2 js-search-beneficiary">
                                                                                     <div class="input-group js-search-beneficiary">
                                                                                         <span class="input-group-text">+250</span>
                                                                                         <input type="tel" id="phone"
                                                                                                class="form-control rounded-end ignore"
-                                                                                               name="phone"
-                                                                                               maxlength="10"
+                                                                                               name="phone" maxlength="10"
                                                                                                minlength="9"
                                                                                                placeholder="Phone number"/>
                                                                                         <label class="pherror text-danger error text-sm"
                                                                                                for="phone"></label>
                                                                                     </div>
                                                                                 </div>
+
                                                                             </div>
-                                                                            <div class="col-md-5 ">
+
+                                                                            <div class="col-md-4 ">
                                                                                 <button type="button"
-                                                                                        class="btn btn-info rounded-default flex-shrink-0 btnAddPhoneNumbers">
-                                                                                    <i class="bi bi-plus"></i>
+                                                                                        class="btn btn-info rounded-default flex-shrink-0 js-validate-phone">
                                                                                     Validate
                                                                                 </button>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class=" js-account-found" style="display: none">
+                                                                            <div class="d-flex flex-shrink-0 align-items-center gap-2">
+                                                                                <span class=" fw-semibold small text-info">Byukusenge
+                                                                    Jean Paul</span>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-<!--                                                            <div class="col-md-12 ">-->
-<!--                                                                <label-->
-<!--                                                                        class="visually-hidden">Amount</label>-->
-<!--                                                                <input type="text" class="form-control ignore"-->
-<!--                                                                       name="amount"-->
-<!--                                                                       id="amount"-->
-<!--                                                                       placeholder="Amount"/>-->
-<!--                                                                <label class="text-danger error text-sm"-->
-<!--                                                                       id="amountErr"></label>-->
-<!--                                                            </div>-->
+                                                            <div class="col-md-12 ">
+                                                                <label
+                                                                        class="visually-hidden">Amount</label>
+                                                                <input type="text" class="form-control mb-1 ignore"
+                                                                       name="amount"
+                                                                       id="amount"
+                                                                       placeholder="Amount"/>
+                                                                <label class="text-danger error text-sm"
+                                                                       id="amountErr"></label>
+                                                                <button type="button"
+                                                                        class="btn btn-info w-100 rounded-default flex-shrink-0 js-validate  btnAddPhoneNumbers">
+                                                                    <i class="bi bi-plus"></i>
+                                                                    Add
+                                                                </button>
+                                                            </div>
 
 
                                                         </div>
@@ -388,16 +400,17 @@
 
                                                         </tbody>
                                                         <tfoot>
-                                                        <tr>
-                                                            <td colspan="3" class="text-end">
-                                                                Total Amount:
-                                                            </td>
-                                                            <td>
-                                                                <span class="fw-bold total-amount"></span>
-                                                            </td>
-                                                        </tr>
+
                                                         </tfoot>
                                                     </table>
+                                                    <div  class="d-flex  justify-content-end px-3">
+                                                        <div style="display: none" class="t-amount">
+                                                            <span   class="text-end ">
+                                                            Total Amount:
+                                                        </span>
+                                                            <input class="fw-bold bg-transparent  border-0 tt-amount" disabled >
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -832,6 +845,26 @@
             $(document).on('click', '.js-remove', function () {
                 $(this).closest('tr').remove();
             });
+            $('.js-validate-phone').on('click', function (e) {
+                e.preventDefault();
+                let btn = $(this);
+                let $nameFound = $('.js-account-found');
+                let s = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="visually-hidden">Loading...</span>`;
+                btn.append(s)
+                    .prop('disabled', true);
+                setTimeout(() => {
+                    //show the div with class js-name
+                    $nameFound.removeClass('d-none');
+                    $nameFound.addClass('d-block');
+                    btn.prop('disabled', false).find('.spinner-border')
+                        .remove();
+
+
+                }, 1000);
+
+
+            });
             $('.btnAddPhoneNumbers').on('click', function (e) {
                 e.preventDefault();
                 let btn = $(this);
@@ -894,7 +927,7 @@
                             </td>
                             <td>${name}</td>
                             <td>${phone}</td>
-                            <td  class="d-flex justify-content-center"><input type="text" value="1000" class="form-control w-25 money">
+                            <td  class="d-flex justify-content-center"><input type="text" value="${amount}" class="form-control w-25 money">
                             </td>
 
                         </tr>`;
@@ -906,11 +939,19 @@
                         }
                         btn.prop('disabled', false).find('.spinner-border')
                             .remove();
+                        $('.t-amount').slideDown();
+
+
                     }, 1000);
                 }
-
+                $('.tt-amount').val(amount);
 
             });
+            $(document).on('change', '.money', function() {
+                let moneyValue = 'Rwf'+$(this).val();
+
+            });
+
             function updateTotalAmount() {
                 let totalAmount = 0;
                 document.querySelectorAll('.money').forEach(input => {
