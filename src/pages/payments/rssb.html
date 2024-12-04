@@ -13,26 +13,37 @@
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center ">
                     <div>
-                        <div class="d-flex col-lg-3  flex-column py-2  rounded-1">
-                              <a href="../dashboard.html">
+                        <div class="d-flex col-4 col-lg-2 flex-column py-2  rounded-1">
+                            <a href="../dashboard.html">
                                 <img src="../../assets/logo.png" class="img-fluid" alt="logo">
                             </a>
                         </div>
                         <span class="text-white  fw-bold fs-2">Retail</span>
                     </div>
-                    <div class="d-flex col-lg-3 align-items-center justify-content-end gap-2">
+                    <div class="d-none d-lg-flex align-items-center gap-4">
+                        <div class="d-none d-lg-flex align-items-center gap-3">
+                            <div class="position-relative">
+                                <div class="d-flex    bg-opacity-10 p-4 justify-content-center overflow-hidden align-items-center"
+                                     style="height: 26px;width: 26px">
+                                    <a class="text-white fw-semibold text-decoration-none" href="../mail.html">
+                                        <i class="bi bi-envelope fs-4"></i>
+                                    </a>
+                                    <div class="badge bg-danger rounded-circle position-absolute"
+                                         style="top: -5px;right: -10px">5
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="nav-item dropdown">
                             <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <span class="d-flex flex-column">
+                                  <span class="d-flex align-items-end flex-column">
                                     <span class="text-sm fw-light">welcome</span>
                                     <small>John Doe</small>
                                   </span>
-                                <img src="../../assets/images/otp/avatar.png" class="img-fluid h-6"
-                                     alt="John Peter Musoni"/>
+                                <img src="../../assets/prfl.png" alt="profile" class="object-fit-cover">
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
-
                                 <li class="my-2">
                                     <a class="fw-normal dropdown-item" href="#">
                                         <i class="bi bi-gear"></i>
@@ -40,13 +51,7 @@
                                     </a>
                                 </li>
                                 <li class="my-2">
-                                    <a class="fw-normal dropdown-item" href="#">
-                                        <i class="bi bi-gear"></i>
-                                        Account Settings
-                                    </a>
-                                </li>
-                                <li class="my-2">
-                                    <a class="fw-normal dropdown-item" href="/">
+                                    <a class="fw-normal dropdown-item" href="../../index.html">
                                         <i class="bi bi-box-arrow-left"></i>
                                         Logout
                                     </a>
@@ -82,8 +87,7 @@
                                     Transfers
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../transfers/own-account.html">Transfer to your
-                                        own
+                                    <li><a class="dropdown-item" href="../transfers/own-account.html">Transfer to your own
                                         Accounts </a></li>
                                     <li><a class="dropdown-item " href="../transfers/internal.html">Transfer from I&M to
                                         I&M </a></li>
@@ -91,19 +95,17 @@
                                         Banks </a></li>
                                     <li><a class="dropdown-item " href="../transfers/international.html">Transfer to
                                         International </a></li>
-                                    <li><a class="dropdown-item " href="../transfers/momo.html">Transfer to Mobile </a>
-                                    </li>
+                                    <li><a class="dropdown-item " href="../transfers/momo.html">Transfer to Mobile </a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" href="#" role="button"
-                                   data-bs-toggle="dropdown"
+                                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                    aria-expanded="false">
                                     Payments
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item " href="rra.html">RRA Payment </a></li>
-                                    <li><a class="dropdown-item " href="irembo.html">Irembo Payment </a></li>
+                                    <li><a class="dropdown-item" href="irembo.html">Irembo Payment </a></li>
                                     <li><a class="dropdown-item active" href="rssb.html">ISHEMA-RSSB Payment </a></li>
                                     <li><a class="dropdown-item" href="airtime.html">Airtime Top Up</a></li>
                                     <li><a class="dropdown-item" href="utilities.html">Utilities Payment </a></li>
@@ -115,15 +117,13 @@
                                     Service Requests
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../requests/chequebook.html">Chequebook
-                                        Requests </a>
+                                    <li><a class="dropdown-item" href="../requests/chequebook.html">Chequebook Requests </a>
                                     </li>
                                     <li><a class="dropdown-item" href="../requests/certificates.html">Certificates
                                         Requests </a></li>
                                     <li><a class="dropdown-item" href="../requests/paper-statement.html">Paper Statement
                                         Requests</a></li>
-                                    <li><a class="dropdown-item" href="../requests/overdraft.html">Bankers
-                                        cheques/overdraft
+                                    <li><a class="dropdown-item" href="../requests/overdraft.html">Bankers cheques/overdraft
                                         Demand Request </a></li>
                                 </ul>
                             </li>
@@ -134,12 +134,9 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="../LoanSimulator.html">Loan Simulator </a></li>
-                                    <li><a class="dropdown-item" href="../savingCalculator.html">Savings simulator</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="../term-deposit.html">Term Deposit Simulator</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="../loan-eligibility.html">Loan Eligibility
-                                        Simulator</a>
+                                    <li><a class="dropdown-item" href="../savingCalculator.html">Savings simulator</a></li>
+                                    <li><a class="dropdown-item" href="../term-deposit.html">Term Deposit Simulator</a></li>
+                                    <li><a class="dropdown-item" href="../loan-eligibility.html">Loan Eligibility Simulator</a>
                                     </li>
                                 </ul>
                             </li>
@@ -149,8 +146,7 @@
                                     Standing Orders
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../transfers-standingOrder.html">Transfer
-                                        Standing
+                                    <li><a class="dropdown-item" href="../transfers-standingOrder.html">Transfer Standing
                                         Orders </a></li>
                                     <li><a class="dropdown-item" href="../airtime-standingOrder.html">Airtime Standing
                                         Orders</a></li>
