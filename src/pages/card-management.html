@@ -13,26 +13,37 @@
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center ">
                     <div>
-                        <div class="d-flex col-lg-3  flex-column py-2  rounded-1">
+                        <div class="d-flex col-4 col-lg-2 flex-column py-2  rounded-1">
                             <a href="dashboard.html">
                                 <img src="../assets/logo.png" class="img-fluid" alt="logo">
                             </a>
                         </div>
                         <span class="text-white  fw-bold fs-2">Retail</span>
                     </div>
-                    <div class="d-flex col-lg-3 align-items-center justify-content-end gap-2">
+                    <div class="d-none d-lg-flex align-items-center gap-4">
+                        <div class="d-none d-lg-flex align-items-center gap-3">
+                            <div class="position-relative">
+                                <div class="d-flex    bg-opacity-10 p-4 justify-content-center overflow-hidden align-items-center"
+                                     style="height: 26px;width: 26px">
+                                    <a class="text-white fw-semibold text-decoration-none" href="mail.html">
+                                        <i class="bi bi-envelope fs-4"></i>
+                                    </a>
+                                    <div class="badge bg-danger rounded-circle position-absolute"
+                                         style="top: -5px;right: -10px">5
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="nav-item dropdown">
                             <a class="nav-link d-flex text-white align-items-center gap-2 dropdown-toggle" href="#"
                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <span class="d-flex flex-column">
+                                  <span class="d-flex align-items-end flex-column">
                                     <span class="text-sm fw-light">welcome</span>
                                     <small>John Doe</small>
                                   </span>
-                                <img src="../assets/images/otp/avatar.png" class="img-fluid h-6"
-                                     alt="John Peter Musoni"/>
+                                <img src="../assets/prfl.png" alt="profile" class="object-fit-cover">
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end shadow rounded-4">
-
                                 <li class="my-2">
                                     <a class="fw-normal dropdown-item" href="#">
                                         <i class="bi bi-gear"></i>
@@ -40,13 +51,7 @@
                                     </a>
                                 </li>
                                 <li class="my-2">
-                                    <a class="fw-normal dropdown-item" href="#">
-                                        <i class="bi bi-gear"></i>
-                                        Account Settings
-                                    </a>
-                                </li>
-                                <li class="my-2">
-                                    <a class="fw-normal dropdown-item" href="/">
+                                    <a class="fw-normal dropdown-item" href="../index.html">
                                         <i class="bi bi-box-arrow-left"></i>
                                         Logout
                                     </a>
@@ -66,13 +71,13 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link   dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                    aria-expanded="false">
-                                    Dashboard
+                                    Home
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item " href="dashboard.html">Retail Dashboard</a></li>
+                                    <li><a class="dropdown-item " href="#">Retail </a></li>
                                     <li><a class="dropdown-item"
                                            href="corporate-dashboard.html">Corporate
-                                        Dashboard</a></li>
+                                    </a></li>
 
                                 </ul>
                             </li>
@@ -108,6 +113,17 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    eKash
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="ekashSub.html">Subscription</a></li>
+                                    <li><a class="dropdown-item" href="payments/eKash.html"> Payment </a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="nav-item" role="presentation">
 
                             </li>
@@ -129,23 +145,10 @@
                                         Demand Request </a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item" role="presentation">
-
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                   aria-expanded="false">
-                                    Product Simulators
+                            <li class="nav-item active" role="presentation">
+                                <a class="nav-link active" href="card-management.html" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                    Manage Cards
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="LoanSimulator.html">Loan Simulator </a></li>
-                                    <li><a class="dropdown-item" href="savingCalculator.html">Savings simulator</a></li>
-                                    <li><a class="dropdown-item" href="term-deposit.html">Term Deposit Simulator</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="loan-eligibility.html">Loan Eligibility
-                                        Simulator</a>
-                                    </li>
-                                </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -162,31 +165,34 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                   aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Other Services
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item active" href="card-management.html"
-                                           type="button" role="tab" aria-controls="pills-home"
-                                           aria-selected="true">
-                                            Manage Cards
-                                        </a>
+
                                     </li>
                                     <li>
-                                        <a class="dropdown-item " href="beneficiaries.html"
-                                           type="button" role="tab" aria-controls="pills-home"
-                                           aria-selected="true">
+                                        <a class="dropdown-item" href="beneficiaries.html" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
                                             Manage Beneficiaries
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item " href="mail.html"
-                                           type="button" role="tab" aria-controls="pills-home"
-                                           aria-selected="true">
-                                            Mails
-                                        </a></li>
+                                        <a class="dropdown-item" href="account-activities.html" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                            Account Activities
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Product Simulators
+                                        </a>
+                                        <ul class="dropdown-submenu">
+                                            <li><a class="dropdown-item" href="LoanSimulator.html">Loan Simulator</a></li>
+                                            <li><a class="dropdown-item" href="savingCalculator.html">Savings simulator</a></li>
+                                            <li><a class="dropdown-item" href="term-deposit.html">Term Deposit Simulator</a></li>
+                                            <li><a class="dropdown-item" href="loan-eligibility.html">Loan Eligibility Simulator</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
